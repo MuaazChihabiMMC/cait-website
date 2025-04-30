@@ -8,6 +8,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        fontFamily: {
+      sans: ['Inter', 'sans-serif'],
+    },
         green: {
           50: '#30AF5B',
           90: '#292C27',
