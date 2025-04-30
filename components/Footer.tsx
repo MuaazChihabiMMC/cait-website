@@ -46,7 +46,7 @@ export default function Footer() {
         ))}
 
         <div className="md:col-span-2 text-center text-sm text-blue-100 pt-10">
-          &copy; {new Date().getFullYear()} CAITSocialMedia. Alle Rechte vorbehalten.
+          &copy; {new Date().getFullYear()} CAIT Social Media. Alle Rechte vorbehalten.
         </div>
       </div>
     </footer>
