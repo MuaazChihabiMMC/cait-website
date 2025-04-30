@@ -1,10 +1,18 @@
 // components/SeoFeatures.tsx
+import Link from 'next/link';
 
 const features = [
   {
     title: '🧠 Keyword-Recherche & Suchintention',
-    description:
-      'Wir analysieren, wonach deine Kunden suchen – und warum. Damit du nicht nur Klicks bekommst, sondern relevanten Traffic, der konvertiert.',
+    description: (
+      <>
+        Wir analysieren, wonach deine Kunden suchen – und warum. Damit du nicht nur Klicks bekommst, sondern
+        relevanten Traffic, der konvertiert.{' '}
+        <Link href="/seo/keyword-recherche" className="text-blue-500 underline">
+          Mehr erfahren
+        </Link>
+      </>
+    ),
   },
   {
     title: '🛠️ OnPage-SEO',
