@@ -14,7 +14,7 @@ export const NAV_LINKS = [
       { key: 'social', label: 'Social Media', href: '/social-media' },
     ],
   },
-  { href: '/', key: 'Über uns', label: 'Über uns' },
+  { href: '/ueber-uns', key: 'Über uns', label: 'Über uns' },
   { href: '/kontakt', key: 'kontakt', label: 'kontakt' },
 ];
 
