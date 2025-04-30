@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import LayoutWrapper from './LayoutWrapper';
+import { SpeedInsights } from "@vercel/speed-insights/next"
+
 
 export const metadata: Metadata = {
   title: 'Travel',
@@ -14,6 +16,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 <meta name="google-site-verification" content="9xauJxQ8qmfHv9TK92pcGdFhdMPVBgyYoIVW1bT4ZR0" />       </head>
       <body>
         <LayoutWrapper>{children}</LayoutWrapper>
+        <SpeedInsights />
       </body>
     </html>
   );
