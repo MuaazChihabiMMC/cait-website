@@ -188,9 +188,9 @@ export default function HomePage() {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ delay: 0.1 }}
-        className="text-base md:text-lg mb-6 text-blue-800"
+        className="text-base md:text-lg mb-6 text-blue-600"
       >
-        <strong>93% aller Online-Erlebnisse beginnen mit einer Suchmaschine (HubSpot).</strong> SEO ist der nachhaltigste Weg, um qualifizierten Traffic auf Ihre Website zu leiten.
+        <strong>93% aller Online-Erlebnisse beginnen mit einer Suchmaschine .</strong> SEO ist der nachhaltigste Weg, um qualifizierten Traffic auf Ihre Website zu leiten.
       </motion.p>
       
       <div className="space-y-6">
