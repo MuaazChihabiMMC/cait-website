@@ -180,7 +180,7 @@ export default function HomePage() {
         <div className="bg-blue-100 p-2 md:p-3 rounded-full mr-3 md:mr-4">
           <FaSearch className="text-blue-600 text-xl md:text-2xl" />
         </div>
-        <h2 className="text-2xl md:text-3xl font-bold break-words max-w-full">
+        <h2 className="text-xl md:text-2xl lg:text-3xl font-bold break-words max-w-full">
   Suchmaschinenoptimierung (SEO)
 </h2>
       </motion.div>
