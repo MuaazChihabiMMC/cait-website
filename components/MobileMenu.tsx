@@ -1,43 +1,62 @@
 'use client'
 import { useState } from "react";
 import Image from "next/image";
-import { NAV_LINKS } from "@/constants";
 import Link from "next/link";
+import { NAV_LINKS } from "@/constants";
 
 const MobileMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
   const toggleDropdown = (key: string) => {
-    setOpenDropdown((prev) => (prev === key ? null : key));
+    setOpenDropdown(prev => (prev === key ? null : key));
   };
 
   return (
     <>
-      {/* Toggle Button */}
-      <button onClick={() => setIsOpen(!isOpen)} className="z-50 lg:hidden">
-        <Image src="/menu.svg" alt="menu" width={32} height={32} />
-      </button>
+      {/* Burger Icon */}
+      {!isOpen && (
+        <button
+          onClick={() => setIsOpen(true)}
+          className="z-50 lg:hidden transition-transform duration-300"
+        >
+          <Image src="/menu.svg" alt="menu" width={32} height={32} />
+        </button>
+      )}
 
       {/* Slide-in Menu */}
-      {isOpen && (
-        <div className="fixed inset-0 z-40 bg-blue-800/70 backdrop-blur-sm text-white p-6 overflow-y-auto">
+      <div
+        className={`fixed top-0 left-0 z-40 h-screen w-full bg-blue-900/70 backdrop-blur-xl text-white p-6 transition-transform duration-500 ${
+          isOpen ? 'translate-x-0' : '-translate-x-full'
+        }`}
+      >
+        {/* Close Button */}
+        <div className="flex justify-between items-center mb-6">
+          <span className="text-xl font-semibold">Menü</span>
+          <button onClick={() => setIsOpen(false)}>
+            <Image src="/close.svg" alt="close" width={28} height={28} />
+          </button>
+        </div>
+
+        {/* Nav Items */}
+        <nav className="flex flex-col gap-4 text-lg">
           {NAV_LINKS.map((link) =>
             link.children ? (
-              <div key={link.key} className="w-full">
+              <div key={link.key}>
                 <button
                   onClick={() => toggleDropdown(link.key)}
-                  className="w-full text-left font-medium py-2"
+                  className="w-full text-left font-medium flex justify-between items-center"
                 >
-                  {link.label} ▾
+                  {link.label}
+                  <span>{openDropdown === link.key ? '▴' : '▾'}</span>
                 </button>
                 {openDropdown === link.key && (
-                  <ul className="ml-4 mt-2 flex flex-col gap-2">
+                  <ul className="mt-2 ml-2 space-y-2 text-base">
                     {link.children.map((child) => (
                       <li key={child.key}>
                         <Link
                           href={child.href}
-                          className="block py-1 text-sm"
+                          className="block hover:text-blue-300"
                           onClick={() => setIsOpen(false)}
                         >
                           {child.label}
@@ -51,15 +70,15 @@ const MobileMenu = () => {
               <Link
                 key={link.key}
                 href={link.href}
-                className="block py-2 font-medium"
+                className="hover:text-blue-300"
                 onClick={() => setIsOpen(false)}
               >
                 {link.label}
               </Link>
             )
           )}
-        </div>
-      )}
+        </nav>
+      </div>
     </>
   );
 };
