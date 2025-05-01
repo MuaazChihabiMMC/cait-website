@@ -24,7 +24,7 @@ export default function KeywordRecherchePage() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             href="/kontakt"
-            className="inline-block bg-blue-600 text-white px-8 py-4 rounded-full font-bold shadow-lg hover:shadow-xl transition-all flex items-center gap-2"
+            className="inline-block bg-blue-600 text-white px-8 py-4 rounded-full font-bold shadow-lg hover:shadow-xl transition-all items-center gap-2"
           >
             Beratung zur Keyword-Recherche anfordern <FaArrowRight />
           </motion.a>
@@ -130,7 +130,7 @@ export default function KeywordRecherchePage() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             href="/kontakt"
-            className="inline-block bg-white text-blue-600 px-8 py-4 rounded-full font-bold shadow-lg hover:shadow-xl transition-all flex items-center gap-2"
+            className="bg-white text-blue-600 px-8 py-4 rounded-full font-bold shadow-lg hover:shadow-xl transition-all flex items-center gap-2"
           >
             Beratung vereinbaren <FaArrowRight />
           </motion.a>

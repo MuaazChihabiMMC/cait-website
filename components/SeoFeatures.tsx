@@ -38,23 +38,47 @@ const features = [
   },
   {
     title: '⚙️ Technisches SEO',
-    description:
-      'Core Web Vitals, Mobile Optimierung, Fehleranalyse, Indexierung und Crawling: Wir sorgen für einen einwandfreien technischen Unterbau.',
+    description: (
+      <>
+        Core Web Vitals, Mobile Optimierung, Fehleranalyse, Indexierung und Crawling: Wir sorgen für einen einwandfreien technischen Unterbau.{' '}
+        <Link href="/seo/technisches-seo" className="text-blue-500 underline">
+          Mehr erfahren
+        </Link>
+      </>
+    ),
   },
   {
     title: '📍 Lokale SEO',
-    description:
-      'Ideal für lokale Dienstleister: Optimierung deines Google-Profils, lokaler Content und Sichtbarkeit in deiner Region.',
+    description: (
+      <>
+        Ideal für lokale Dienstleister: Optimierung deines Google-Profils, lokaler Content und Sichtbarkeit in deiner Region.{' '}
+        <Link href="/seo/lokale-seo" className="text-blue-500 underline">
+          Mehr erfahren
+        </Link>
+      </>
+    ),
   },
   {
     title: '📝 SEO-Content-Erstellung',
-    description:
-      'Wir schreiben Inhalte, die Google liebt und Nutzer lesen wollen – von Blogbeiträgen bis zu Landingpages.',
+    description: (
+      <>
+        Wir schreiben Inhalte, die Google liebt und Nutzer lesen wollen – von Blogbeiträgen bis zu Landingpages.{' '}
+        <Link href="/seo/content-erstellung" className="text-blue-500 underline">
+          Mehr erfahren
+        </Link>
+      </>
+    ),
   },
   {
     title: '📊 Monitoring & Reporting',
-    description:
-      'Echtzeit-Analysen, monatliche Reports, Handlungsempfehlungen: Du weißt jederzeit, was wir tun – und was es bringt.',
+    description: (
+      <>
+        Echtzeit-Analysen, monatliche Reports, Handlungsempfehlungen: Du weißt jederzeit, was wir tun – und was es bringt.{' '}
+        <Link href="/seo/monitoring-reporting" className="text-blue-500 underline">
+          Mehr erfahren
+        </Link>
+      </>
+    ),
   },
 ];
 
