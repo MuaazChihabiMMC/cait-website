@@ -1,15 +1,16 @@
 'use client';
 import { motion } from 'framer-motion';
 import { FaSearch, FaAd, FaLaptopCode, FaHashtag, FaChartLine, FaLightbulb, FaUsers, FaMobileAlt, FaShoppingCart, FaArrowRight, FaPaintBrush, FaCode, FaServer } from 'react-icons/fa';
+
 export default function HomePage() {
   return (
-    <main className="px-4 py-12 md:px-6 max-w-7xl mx-auto bg-white text-blue-900 space-y-24">
-      {/* Hero Section with Enhanced Animation */}
+    <main className="px-4 py-12 md:px-6 max-w-7xl mx-auto bg-white text-blue-900 space-y-12 md:space-y-24">
+      {/* Hero Section */}
       <motion.section
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="text-center py-20 bg-gradient-to-b from-blue-50 to-white rounded-3xl px-6 relative overflow-hidden"
+        className="text-center py-12 md:py-20 bg-gradient-to-b from-blue-50 to-white rounded-3xl px-4 md:px-6 relative overflow-hidden"
       >
         <motion.div 
           className="absolute inset-0 opacity-10"
@@ -33,7 +34,7 @@ export default function HomePage() {
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-blue-900">
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 text-blue-900">
               <motion.span 
                 className="text-blue-600"
                 animate={{ 
@@ -54,7 +55,7 @@ export default function HomePage() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4 }}
-            className="text-xl md:text-2xl mb-8 text-blue-800"
+            className="text-lg md:text-xl lg:text-2xl mb-6 md:mb-8 text-blue-800"
           >
             Cait Marketing - Ihre Full-Service Agentur für messbare Ergebnisse in <span className="font-semibold text-blue-600">SEO</span>, <span className="font-semibold text-blue-500">Google Ads</span>, <span className="font-semibold text-blue-400">Webdesign</span> und <span className="font-semibold text-blue-300">Social Media</span>
           </motion.p>
@@ -71,9 +72,9 @@ export default function HomePage() {
               }}
               whileTap={{ scale: 0.95 }}
               href="/kontakt"
-              className="inline-block bg-blue-600 text-white px-8 py-4 rounded-full font-bold shadow-lg hover:shadow-xl transition-all items-center gap-2"
+              className="inline-block bg-blue-600 text-white px-6 py-3 md:px-8 md:py-4 rounded-full font-bold shadow-lg hover:shadow-xl transition-all flex items-center gap-2 mx-auto"
             >
-              Kostenlose Erstberatung anfordern
+              Kostenlose Erstberatung
               <motion.span
                 animate={{
                   x: [0, 5, 0]
@@ -82,6 +83,7 @@ export default function HomePage() {
                   duration: 1.5,
                   repeat: Infinity
                 }}
+                className="hidden sm:inline-block"
               >
                 <FaArrowRight />
               </motion.span>
@@ -90,16 +92,16 @@ export default function HomePage() {
         </div>
       </motion.section>
 
-      {/* USP Section with Staggered Animations */}
+      {/* USP Section */}
       <motion.section
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
-        className="max-w-6xl mx-auto"
+        className="max-w-6xl mx-auto px-4"
       >
         <motion.h2 
-          className="text-3xl font-bold text-center mb-12"
+          className="text-2xl md:text-3xl font-bold text-center mb-8 md:mb-12"
           initial={{ y: 20, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true }}
@@ -108,7 +110,7 @@ export default function HomePage() {
           Warum Unternehmen uns vertrauen
         </motion.h2>
         
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
           {[
             {
               icon: <FaChartLine className="text-3xl" />,
@@ -141,7 +143,7 @@ export default function HomePage() {
                 y: -5,
                 boxShadow: "0 10px 25px rgba(37, 99, 235, 0.1)"
               }}
-              className="bg-white p-8 rounded-xl shadow-md border border-blue-100 text-center"
+              className="bg-white p-6 md:p-8 rounded-xl shadow-md border border-blue-100 text-center"
             >
               <div className="text-blue-600 mb-4 flex justify-center">
                 <motion.div
@@ -150,14 +152,14 @@ export default function HomePage() {
                   {item.icon}
                 </motion.div>
               </div>
-              <h3 className="text-xl font-bold mb-3">{item.title}</h3>
-              <p className="text-blue-800">{item.content}</p>
+              <h3 className="text-lg md:text-xl font-bold mb-3">{item.title}</h3>
+              <p className="text-blue-800 text-sm md:text-base">{item.content}</p>
             </motion.div>
           ))}
         </div>
       </motion.section>
 
-      {/* SEO Section with Enhanced Content */}
+      {/* SEO Section */}
       <motion.section
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -165,19 +167,19 @@ export default function HomePage() {
         transition={{ duration: 0.8 }}
         className="bg-blue-50 rounded-3xl overflow-hidden"
       >
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="p-10 lg:p-14">
+        <div className="grid lg:grid-cols-2 gap-8 md:gap-12">
+          <div className="p-6 md:p-10 lg:p-14">
             <motion.div 
-              className="flex items-center mb-6"
+              className="flex items-center mb-4 md:mb-6"
               initial={{ x: -20, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
             >
-              <div className="bg-blue-100 p-3 rounded-full mr-4">
-                <FaSearch className="text-blue-600 text-2xl" />
+              <div className="bg-blue-100 p-2 md:p-3 rounded-full mr-3 md:mr-4">
+                <FaSearch className="text-blue-600 text-xl md:text-2xl" />
               </div>
-              <h2 className="text-3xl font-bold">Suchmaschinenoptimierung (SEO)</h2>
+              <h2 className="text-2xl md:text-3xl font-bold">Suchmaschinenoptimierung (SEO)</h2>
             </motion.div>
             
             <motion.p
@@ -185,44 +187,44 @@ export default function HomePage() {
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
-              className="text-lg mb-6 text-blue-800"
+              className="text-base md:text-lg mb-4 md:mb-6 text-blue-800"
             >
-              <strong>93% aller Online-Erlebnisse beginnen mit einer Suchmaschine (HubSpot).</strong> SEO ist der nachhaltigste Weg, um qualifizierten Traffic auf Ihre Website zu leiten. Im Gegensatz zu bezahlter Werbung generieren Sie hier <strong>kostenlose Besucher</strong>, die aktiv nach Ihren Lösungen suchen.
+              <strong>93% aller Online-Erlebnisse beginnen mit einer Suchmaschine (HubSpot).</strong> SEO ist der nachhaltigste Weg, um qualifizierten Traffic auf Ihre Website zu leiten.
             </motion.p>
             
-            <div className="space-y-8">
+            <div className="space-y-6 md:space-y-8">
               {[
                 {
                   title: "1. OnPage-Optimierung",
                   content: "Die technische und inhaltliche Optimierung Ihrer Website bildet das Fundament für erfolgreiches SEO:",
                   items: [
-                    "Umfassende Keyword-Recherche mit Fokus auf kommerzielle und informative Suchintentionen",
-                    "Content-Strategie mit thematischen Clustern für bessere thematische Relevanz",
-                    "Technische Optimierung aller Meta-Tags, URL-Strukturen und Heading-Hierarchien",
-                    "Ladezeitenoptimierung durch Code-Minification, Caching und Bildkompression",
-                    "Mobile Optimierung mit Responsive Design für alle Geräteklassen"
+                    "Umfassende Keyword-Recherche",
+                    "Content-Strategie mit thematischen Clustern",
+                    "Technische Optimierung aller Meta-Tags",
+                    "Ladezeitenoptimierung",
+                    "Mobile Optimierung"
                   ]
                 },
                 {
                   title: "2. OffPage-Optimierung",
                   content: "Der Aufbau von Autorität und Vertrauen durch hochwertige Backlinks:",
                   items: [
-                    "Natürlicher Linkaufbau durch Content-Marketing und PR-Arbeit",
-                    "Lokale SEO für regionale Unternehmen mit Google My Business Optimierung",
-                    "Strategisches Brand Building durch Markenerwähnungen",
-                    "Regelmäßiges Link-Audit zur Identifikation toxischer Links"
+                    "Natürlicher Linkaufbau",
+                    "Lokale SEO für regionale Unternehmen",
+                    "Strategisches Brand Building",
+                    "Regelmäßiges Link-Audit"
                   ]
                 },
                 {
                   title: "3. Technisches SEO",
-                  content: "Die technische Infrastruktur für maximale Crawlbarkeit und Indexierung:",
+                  content: "Die technische Infrastruktur für maximale Crawlbarkeit:",
                   items: [
-                    "Implementierung von strukturierten Daten (Schema.org)",
-                    "Optimierung der Crawling-Effizienz durch XML-Sitemaps",
-                    "Strategische Steuerung der Indexierung mit robots.txt",
-                    "Fachgerechte Durchführung von Website-Migrationen"
+                    "Strukturierte Daten (Schema.org)",
+                    "Optimierung der Crawling-Effizienz",
+                    "Steuerung der Indexierung",
+                    "Website-Migrationen"
                   ],
-                  example: "Ein mittelständischer B2B-Anbieter steigerte seinen organischen Traffic um 240% in 9 Monaten durch unsere ganzheitliche SEO-Strategie."
+                  example: "Ein mittelständischer B2B-Anbieter steigerte seinen organischen Traffic um 240% in 9 Monaten."
                 }
               ].map((section, index) => (
                 <motion.div
@@ -232,9 +234,9 @@ export default function HomePage() {
                   viewport={{ once: true }}
                   transition={{ delay: 0.1 * index }}
                 >
-                  <h3 className="font-bold text-xl mb-3">{section.title}</h3>
-                  <p className="text-blue-800 mb-4">{section.content}</p>
-                  <ul className="list-disc list-inside space-y-3 pl-4 text-blue-800">
+                  <h3 className="font-bold text-lg md:text-xl mb-2 md:mb-3">{section.title}</h3>
+                  <p className="text-blue-800 text-sm md:text-base mb-3 md:mb-4">{section.content}</p>
+                  <ul className="list-disc list-inside space-y-2 pl-4 text-blue-800 text-sm md:text-base">
                     {section.items.map((item, i) => (
                       <motion.li
                         key={i}
@@ -253,7 +255,7 @@ export default function HomePage() {
                       whileInView={{ opacity: 1 }}
                       viewport={{ once: true }}
                       transition={{ delay: 0.3 }}
-                      className="mt-4 p-4 bg-blue-100 rounded-lg border border-blue-200"
+                      className="mt-3 md:mt-4 p-3 md:p-4 bg-blue-100 rounded-lg border border-blue-200 text-sm md:text-base"
                     >
                       <p className="text-blue-800"><strong>Erfolgsbeispiel:</strong> {section.example}</p>
                     </motion.div>
@@ -263,7 +265,7 @@ export default function HomePage() {
             </div>
             
             <motion.div 
-              className="mt-10"
+              className="mt-8 md:mt-10"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
@@ -275,16 +277,16 @@ export default function HomePage() {
                   boxShadow: "0 5px 15px rgba(37, 99, 235, 0.3)"
                 }}
                 href="/seo"
-                className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold shadow hover:shadow-xl transition flex items-center gap-2"
+                className="bg-blue-600 text-white px-5 py-2 md:px-6 md:py-3 rounded-lg font-semibold shadow hover:shadow-xl transition flex items-center gap-2 text-sm md:text-base w-full sm:w-auto justify-center"
               >
                 SEO-Strategie entwickeln
                 <FaArrowRight />
               </motion.a>
-              <p className="text-sm text-blue-700 mt-2">Durchschnittliche Traffic-Steigerung unserer Kunden: <strong>+187%</strong> in 12 Monaten</p>
+              <p className="text-xs md:text-sm text-blue-700 mt-2 text-center sm:text-left">Durchschnittliche Traffic-Steigerung: <strong>+187%</strong> in 12 Monaten</p>
             </motion.div>
           </div>
           
-          <div className="h-full min-h-[500px] hidden lg:block relative">
+          <div className="h-full min-h-[300px] md:min-h-[500px] hidden lg:block relative">
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
@@ -303,11 +305,11 @@ export default function HomePage() {
                   repeat: Infinity,
                   repeatType: "reverse"
                 }}
-                className="relative z-10 text-center p-8"
+                className="relative z-10 text-center p-6 md:p-8"
               >
-                <div className="text-6xl mb-4">📈</div>
-                <h3 className="text-xl font-bold mb-2 text-blue-900">SEO-Erfolgsmessung</h3>
-                <ul className="text-left max-w-xs mx-auto space-y-2 text-blue-900">
+                <div className="text-4xl md:text-6xl mb-3 md:mb-4">📈</div>
+                <h3 className="text-lg md:text-xl font-bold mb-2 text-blue-900">SEO-Erfolgsmessung</h3>
+                <ul className="text-left max-w-xs mx-auto space-y-2 text-blue-900 text-sm md:text-base">
                   {[
                     "Organische Sichtbarkeit",
                     "Keyword-Rankings",
@@ -333,7 +335,7 @@ export default function HomePage() {
         </div>
       </motion.section>
 
-      {/* Google Ads Section with Enhanced Animations */}
+      {/* Google Ads Section */}
       <motion.section
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -341,8 +343,8 @@ export default function HomePage() {
         transition={{ duration: 0.8 }}
         className="bg-white rounded-3xl overflow-hidden border border-blue-100"
       >
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="h-full min-h-[500px] order-2 lg:order-1 relative">
+        <div className="grid lg:grid-cols-2 gap-8 md:gap-12">
+          <div className="h-full min-h-[300px] md:min-h-[500px] order-2 lg:order-1 relative">
             <motion.div
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -361,11 +363,11 @@ export default function HomePage() {
                   repeat: Infinity,
                   repeatType: "reverse"
                 }}
-                className="relative z-10 text-center p-8"
+                className="relative z-10 text-center p-6 md:p-8"
               >
-                <div className="text-6xl mb-4">🔍</div>
-                <h3 className="text-xl font-bold mb-2 text-blue-900">Google Ads Dashboard</h3>
-                <ul className="text-left max-w-xs mx-auto space-y-2 text-blue-900">
+                <div className="text-4xl md:text-6xl mb-3 md:mb-4">🔍</div>
+                <h3 className="text-lg md:text-xl font-bold mb-2 text-blue-900">Google Ads Dashboard</h3>
+                <ul className="text-left max-w-xs mx-auto space-y-2 text-blue-900 text-sm md:text-base">
                   {[
                     "Kosten pro Conversion",
                     "Klickrate (CTR)",
@@ -389,18 +391,18 @@ export default function HomePage() {
             </motion.div>
           </div>
           
-          <div className="p-10 lg:p-14 order-1 lg:order-2">
+          <div className="p-6 md:p-10 lg:p-14 order-1 lg:order-2">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="flex items-center mb-6"
+              className="flex items-center mb-4 md:mb-6"
             >
-              <div className="bg-blue-100 p-3 rounded-full mr-4">
-                <FaAd className="text-blue-600 text-2xl" />
+              <div className="bg-blue-100 p-2 md:p-3 rounded-full mr-3 md:mr-4">
+                <FaAd className="text-blue-600 text-xl md:text-2xl" />
               </div>
-              <h2 className="text-3xl font-bold">Google Ads Management</h2>
+              <h2 className="text-2xl md:text-3xl font-bold">Google Ads Management</h2>
             </motion.div>
             
             <motion.p
@@ -408,43 +410,43 @@ export default function HomePage() {
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="text-lg mb-6 text-blue-800"
+              className="text-base md:text-lg mb-4 md:mb-6 text-blue-800"
             >
-              <strong>Unternehmen verdienen durchschnittlich $2 für jeden $1, den sie für Google Ads ausgeben.</strong> Unsere zielgerichteten Kampagnen bringen sofort Sichtbarkeit und messbare Conversions - Sie zahlen nur für tatsächliche Klicks.
+              <strong>Unternehmen verdienen durchschnittlich $2 für jeden $1, den sie für Google Ads ausgeben.</strong> Unsere zielgerichteten Kampagnen bringen sofort Sichtbarkeit.
             </motion.p>
             
-            <div className="space-y-8">
+            <div className="space-y-6 md:space-y-8">
               {[
                 {
                   title: "1. Search Kampagnen",
                   content: "Textbasierte Anzeigen bei relevanten Suchanfragen Ihrer Zielgruppe:",
                   items: [
-                    "Präzise Keyword-Strategie mit verschiedenen Match-Types",
-                    "Hochkonvertierende Anzeigentexte mit USP-Hervorhebungen",
-                    "Optimierte Landingpages für maximale Conversion Rate",
-                    "Strategischer Einsatz von Smart Bidding für optimale Ergebnisse"
+                    "Präzise Keyword-Strategie",
+                    "Hochkonvertierende Anzeigentexte",
+                    "Optimierte Landingpages",
+                    "Smart Bidding Strategien"
                   ]
                 },
                 {
                   title: "2. Display & Video Kampagnen",
                   content: "Visuelle Werbung zur Steigerung der Markenbekanntheit:",
                   items: [
-                    "Zielgruppen-Targeting nach Demografie und Interessen",
-                    "Remarketing zur Wiedergewinnung von Besuchern",
-                    "YouTube Videoanzeigen für verschiedene Marketingziele",
-                    "A/B-Testing verschiedener Bannerformate"
+                    "Zielgruppen-Targeting",
+                    "Remarketing",
+                    "YouTube Videoanzeigen",
+                    "A/B-Testing"
                   ]
                 },
                 {
                   title: "3. Shopping Kampagnen",
                   content: "Produktanzeigen direkt in den Suchergebnissen für E-Commerce:",
                   items: [
-                    "Optimierung der Produktdaten-Feeds",
-                    "Logische Produktgruppierung für gezieltes Bidding",
-                    "Dynamisches Remarketing für angesehene Produkte",
-                    "Nutzung von Performance Max für maximale Reichweite"
+                    "Optimierung der Produktdaten",
+                    "Produktgruppierung",
+                    "Dynamisches Remarketing",
+                    "Performance Max"
                   ],
-                  example: "Ein E-Commerce-Unternehmen reduzierte seine Customer Acquisition Costs um 35% bei gleichzeitiger Steigerung der Conversion Rate um 22%."
+                  example: "Ein E-Commerce-Unternehmen reduzierte seine Customer Acquisition Costs um 35%."
                 }
               ].map((section, index) => (
                 <motion.div
@@ -454,9 +456,9 @@ export default function HomePage() {
                   viewport={{ once: true }}
                   transition={{ delay: 0.1 * index }}
                 >
-                  <h3 className="font-bold text-xl mb-3">{section.title}</h3>
-                  <p className="text-blue-800 mb-4">{section.content}</p>
-                  <ul className="list-disc list-inside space-y-3 pl-4 text-blue-800">
+                  <h3 className="font-bold text-lg md:text-xl mb-2 md:mb-3">{section.title}</h3>
+                  <p className="text-blue-800 text-sm md:text-base mb-3 md:mb-4">{section.content}</p>
+                  <ul className="list-disc list-inside space-y-2 pl-4 text-blue-800 text-sm md:text-base">
                     {section.items.map((item, i) => (
                       <motion.li
                         key={i}
@@ -475,7 +477,7 @@ export default function HomePage() {
                       whileInView={{ opacity: 1 }}
                       viewport={{ once: true }}
                       transition={{ delay: 0.3 }}
-                      className="mt-4 p-4 bg-blue-100 rounded-lg border border-blue-200"
+                      className="mt-3 md:mt-4 p-3 md:p-4 bg-blue-100 rounded-lg border border-blue-200 text-sm md:text-base"
                     >
                       <p className="text-blue-800"><strong>Erfolgsbeispiel:</strong> {section.example}</p>
                     </motion.div>
@@ -485,7 +487,7 @@ export default function HomePage() {
             </div>
             
             <motion.div 
-              className="mt-10"
+              className="mt-8 md:mt-10"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
@@ -497,24 +499,24 @@ export default function HomePage() {
                   boxShadow: "0 5px 15px rgba(37, 99, 235, 0.3)"
                 }}
                 href="/google-ads"
-                className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold shadow hover:shadow-xl transition flex items-center gap-2"
+                className="bg-blue-600 text-white px-5 py-2 md:px-6 md:py-3 rounded-lg font-semibold shadow hover:shadow-xl transition flex items-center gap-2 text-sm md:text-base w-full sm:w-auto justify-center"
               >
                 Google Ads Strategie anfordern
                 <FaArrowRight />
               </motion.a>
-              <p className="text-sm text-blue-700 mt-2">Durchschnittliche Steigerung der Conversion Rate: <strong>+35%</strong></p>
+              <p className="text-xs md:text-sm text-blue-700 mt-2 text-center sm:text-left">Durchschnittliche Steigerung der Conversion Rate: <strong>+35%</strong></p>
             </motion.div>
           </div>
         </div>
       </motion.section>
 
-      {/* Final CTA Section with Enhanced Animation */}
+      {/* Final CTA Section */}
       <motion.section
         initial={{ opacity: 0, scale: 0.9 }}
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
-        className="bg-blue-600 text-white rounded-3xl p-12 text-center relative overflow-hidden"
+        className="bg-blue-600 text-white rounded-3xl p-6 md:p-12 text-center relative overflow-hidden"
       >
         <motion.div 
           className="absolute inset-0 opacity-10"
@@ -528,8 +530,8 @@ export default function HomePage() {
             repeatType: "reverse"
           }}
         >
-          <div className="absolute top-0 left-0 w-64 h-64 bg-white rounded-full mix-blend-overlay filter blur-xl"></div>
-          <div className="absolute bottom-0 right-0 w-64 h-64 bg-white rounded-full mix-blend-overlay filter blur-xl"></div>
+          <div className="absolute top-0 left-0 w-32 h-32 md:w-64 md:h-64 bg-white rounded-full mix-blend-overlay filter blur-xl"></div>
+          <div className="absolute bottom-0 right-0 w-32 h-32 md:w-64 md:h-64 bg-white rounded-full mix-blend-overlay filter blur-xl"></div>
         </motion.div>
         
         <div className="max-w-4xl mx-auto relative">
@@ -538,7 +540,7 @@ export default function HomePage() {
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="text-3xl font-bold mb-4"
+            className="text-2xl md:text-3xl font-bold mb-4"
           >
             Starten Sie jetzt durch mit Cait Marketing
           </motion.h3>
@@ -548,9 +550,9 @@ export default function HomePage() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="text-xl mb-8"
+            className="text-base md:text-xl mb-6 md:mb-8"
           >
-            Unser Expertenteam steht bereit, um Ihr Business auf das nächste Level zu heben. Vereinbaren Sie ein kostenloses Beratungsgespräch und erfahren Sie, wie wir Ihnen zu mehr Sichtbarkeit, Leads und Umsatz verhelfen können.
+            Unser Expertenteam steht bereit, um Ihr Business auf das nächste Level zu heben. Vereinbaren Sie ein kostenloses Beratungsgespräch.
           </motion.p>
           
           <motion.div
@@ -558,7 +560,7 @@ export default function HomePage() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.4 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center"
+            className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center"
           >
             <motion.a
               whileHover={{ 
@@ -567,7 +569,7 @@ export default function HomePage() {
               }}
               whileTap={{ scale: 0.95 }}
               href="/kontakt"
-              className="bg-white text-blue-600 px-8 py-4 rounded-full font-bold shadow-lg hover:shadow-xl transition flex items-center gap-2"
+              className="bg-white text-blue-600 px-6 py-3 md:px-8 md:py-4 rounded-full font-bold shadow-lg hover:shadow-xl transition flex items-center gap-2 text-sm md:text-base justify-center"
             >
               Jetzt Termin vereinbaren
               <motion.span
@@ -578,6 +580,7 @@ export default function HomePage() {
                   duration: 1.5,
                   repeat: Infinity
                 }}
+                className="hidden sm:inline-block"
               >
                 <FaArrowRight />
               </motion.span>
@@ -590,10 +593,10 @@ export default function HomePage() {
               }}
               whileTap={{ scale: 0.95 }}
               href="/leistungen"
-              className="bg-transparent border-2 border-white px-8 py-4 rounded-full font-bold hover:bg-white hover:text-blue-600 transition flex items-center gap-2"
+              className="bg-transparent border-2 border-white px-6 py-3 md:px-8 md:py-4 rounded-full font-bold hover:bg-white hover:text-blue-600 transition flex items-center gap-2 text-sm md:text-base justify-center"
             >
               Leistungen im Detail
-              <FaArrowRight />
+              <FaArrowRight className="hidden sm:inline-block" />
             </motion.a>
           </motion.div>
           
@@ -602,21 +605,20 @@ export default function HomePage() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.6 }}
-            className="mt-6 text-blue-100"
+            className="mt-4 md:mt-6 text-blue-100 text-sm md:text-base"
           >
             Oder rufen Sie uns direkt an: <span className="font-semibold">+49 123 456 789</span>
           </motion.p>
         </div>
       </motion.section>
 
-
+      {/* Digital Solutions Section */}
       <motion.section
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="text-center py-20 bg-gradient-to-b from-blue-50 to-white rounded-3xl px-6 relative overflow-hidden"
+        className="text-center py-12 md:py-20 bg-gradient-to-b from-blue-50 to-white rounded-3xl px-4 md:px-6 relative overflow-hidden"
       >
-        {/* Background animation elements */}
         <motion.div 
           className="absolute inset-0 opacity-10"
           animate={{
@@ -638,7 +640,7 @@ export default function HomePage() {
             initial={{ scale: 0.9, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-4xl md:text-6xl font-bold mb-6"
+            className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6"
           >
             <motion.span 
               className="text-blue-600"
@@ -659,7 +661,7 @@ export default function HomePage() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4 }}
-            className="text-xl md:text-2xl mb-8 text-blue-800"
+            className="text-lg md:text-xl lg:text-2xl mb-6 md:mb-8 text-blue-800"
           >
             Cait Marketing - Ihr Full-Service Partner für <span className="font-semibold text-blue-600">Webentwicklung</span>, <span className="font-semibold text-blue-500">Design</span>, <span className="font-semibold text-blue-400">Marketing</span> und <span className="font-semibold text-blue-300">Social Media</span>
           </motion.p>
@@ -676,7 +678,7 @@ export default function HomePage() {
               }}
               whileTap={{ scale: 0.95 }}
               href="/kontakt"
-              className="bg-blue-600 text-white px-8 py-4 rounded-full font-bold shadow-lg hover:shadow-xl transition-all flex items-center gap-2"
+              className="bg-blue-600 text-white px-6 py-3 md:px-8 md:py-4 rounded-full font-bold shadow-lg hover:shadow-xl transition-all flex items-center gap-2 mx-auto"
             >
               Kostenlos beraten lassen
               <motion.span
@@ -687,6 +689,7 @@ export default function HomePage() {
                   duration: 1.5,
                   repeat: Infinity
                 }}
+                className="hidden sm:inline-block"
               >
                 <FaArrowRight />
               </motion.span>
@@ -703,19 +706,19 @@ export default function HomePage() {
         transition={{ duration: 0.8 }}
         className="bg-blue-50 rounded-3xl overflow-hidden"
       >
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="p-10 lg:p-14">
+        <div className="grid lg:grid-cols-2 gap-8 md:gap-12">
+          <div className="p-6 md:p-10 lg:p-14">
             <motion.div 
-              className="flex items-center mb-6"
+              className="flex items-center mb-4 md:mb-6"
               initial={{ x: -20, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
             >
-              <div className="bg-blue-100 p-3 rounded-full mr-4">
-                <FaCode className="text-blue-600 text-2xl" />
+              <div className="bg-blue-100 p-2 md:p-3 rounded-full mr-3 md:mr-4">
+                <FaCode className="text-blue-600 text-xl md:text-2xl" />
               </div>
-              <h2 className="text-3xl font-bold">Professionelle Webentwicklung</h2>
+              <h2 className="text-2xl md:text-3xl font-bold">Professionelle Webentwicklung</h2>
             </motion.div>
             
             <motion.p
@@ -723,22 +726,22 @@ export default function HomePage() {
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="text-lg mb-6 text-blue-800"
+              className="text-base md:text-lg mb-4 md:mb-6 text-blue-800"
             >
-              <strong>Eine moderne Website ist Ihr digitales Aushängeschild.</strong> Wir entwickeln hochperformante, sichere und skalierbare Webanwendungen mit modernsten Technologien.
+              <strong>Eine moderne Website ist Ihr digitales Aushängeschild.</strong> Wir entwickeln hochperformante, sichere und skalierbare Webanwendungen.
             </motion.p>
             
-            <div className="space-y-8">
+            <div className="space-y-6 md:space-y-8">
               {[
                 {
                   title: "Frontend-Entwicklung",
                   content: "Ansprechende Benutzeroberflächen mit modernen Frameworks:",
                   items: [
-                        "React.js/Next.js für dynamische Single-Page-Applications",
-                        "Mobile-First Responsive Design",
-                        "Progressive Web Apps (PWA) für App-ähnliches Erlebnis",
-                        "Barrierefreie Umsetzung (WCAG 2.1)",
-                        "Ladezeitenoptimierung unter 2 Sekunden"
+                    "React.js/Next.js",
+                    "Mobile-First Responsive Design",
+                    "Progressive Web Apps",
+                    "Barrierefreie Umsetzung",
+                    "Ladezeitenoptimierung"
                   ],
                   icon: <FaMobileAlt className="text-blue-500" />
                 },
@@ -746,11 +749,11 @@ export default function HomePage() {
                   title: "Backend-Entwicklung",
                   content: "Leistungsstarke Server-Architekturen und APIs:",
                   items: [
-                        "Node.js mit Express oder NestJS",
-                        "Datenbanken: MongoDB, PostgreSQL, MySQL",
-                        "RESTful und GraphQL APIs",
-                        "Microservices-Architekturen",
-                        "Serverless-Funktionen (AWS Lambda)"
+                    "Node.js mit Express",
+                    "Datenbanken: MongoDB, PostgreSQL",
+                    "RESTful und GraphQL APIs",
+                    "Microservices-Architekturen",
+                    "Serverless-Funktionen"
                   ],
                   icon: <FaServer className="text-blue-500" />
                 },
@@ -758,13 +761,12 @@ export default function HomePage() {
                   title: "E-Commerce Lösungen",
                   content: "Hochverfügbare Online-Shops mit hoher Conversion-Rate:",
                   items: [
-                        "Shopify & WooCommerce Integrationen",
-                        "Custom Shop-Entwicklung",
-                        "Zahlungsgateways (Stripe, PayPal)",
-                        "Warenwirtschaftssystem-Anbindung",
-                        "Checkout-Optimierung"
+                    "Shopify & WooCommerce",
+                    "Custom Shop-Entwicklung",
+                    "Zahlungsgateways",
+                    "Warenwirtschaftssystem-Anbindung"
                   ],
-                  example: "Ein Mode-Label steigerte seinen Online-Umsatz um 150% nach Relaunch durch unser Team."
+                  example: "Ein Mode-Label steigerte seinen Online-Umsatz um 150% nach Relaunch."
                 }
               ].map((section, index) => (
                 <motion.div
@@ -777,10 +779,10 @@ export default function HomePage() {
                 >
                   <div className="flex items-center gap-3 mb-2">
                     {section.icon && section.icon}
-                    <h3 className="font-bold text-xl">{section.title}</h3>
+                    <h3 className="font-bold text-lg md:text-xl">{section.title}</h3>
                   </div>
-                  <p className="text-blue-800 mb-3">{section.content}</p>
-                  <ul className="list-disc list-inside space-y-2 pl-4 text-blue-800">
+                  <p className="text-blue-800 text-sm md:text-base mb-3">{section.content}</p>
+                  <ul className="list-disc list-inside space-y-2 pl-4 text-blue-800 text-sm md:text-base">
                     {section.items.map((item, i) => (
                       <motion.li
                         key={i}
@@ -799,7 +801,7 @@ export default function HomePage() {
                       whileInView={{ opacity: 1 }}
                       viewport={{ once: true }}
                       transition={{ delay: 0.3 }}
-                      className="mt-3 p-3 bg-blue-100 rounded border border-blue-200"
+                      className="mt-3 p-3 bg-blue-100 rounded border border-blue-200 text-sm md:text-base"
                     >
                       <p className="text-blue-800"><strong>Erfolgsbeispiel:</strong> {section.example}</p>
                     </motion.div>
@@ -809,7 +811,7 @@ export default function HomePage() {
             </div>
           </div>
           
-          <div className="h-full min-h-[500px] hidden lg:block relative">
+          <div className="h-full min-h-[300px] md:min-h-[500px] hidden lg:block relative">
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
@@ -828,11 +830,11 @@ export default function HomePage() {
                   repeat: Infinity,
                   repeatType: "reverse"
                 }}
-                className="relative z-10 text-center p-8"
+                className="relative z-10 text-center p-6 md:p-8"
               >
-                <div className="text-6xl mb-4">💻</div>
-                <h3 className="text-xl font-bold mb-2 text-blue-900">Unsere Technologien</h3>
-                <ul className="text-left max-w-xs mx-auto space-y-2 text-blue-900">
+                <div className="text-4xl md:text-6xl mb-3 md:mb-4">💻</div>
+                <h3 className="text-lg md:text-xl font-bold mb-2 text-blue-900">Unsere Technologien</h3>
+                <ul className="text-left max-w-xs mx-auto space-y-2 text-blue-900 text-sm md:text-base">
                   {[
                     "React.js / Next.js",
                     "Node.js / Express",
@@ -867,8 +869,8 @@ export default function HomePage() {
         transition={{ duration: 0.8 }}
         className="bg-white rounded-3xl overflow-hidden border border-blue-100"
       >
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="h-full min-h-[500px] order-2 lg:order-1 relative">
+        <div className="grid lg:grid-cols-2 gap-8 md:gap-12">
+          <div className="h-full min-h-[300px] md:min-h-[500px] order-2 lg:order-1 relative">
             <motion.div
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -887,11 +889,11 @@ export default function HomePage() {
                   repeat: Infinity,
                   repeatType: "reverse"
                 }}
-                className="relative z-10 text-center p-8"
+                className="relative z-10 text-center p-6 md:p-8"
               >
-                <div className="text-6xl mb-4">🎨</div>
-                <h3 className="text-xl font-bold mb-2 text-blue-900">Design-Prozess</h3>
-                <ol className="text-left max-w-xs mx-auto space-y-3 text-blue-900">
+                <div className="text-4xl md:text-6xl mb-3 md:mb-4">🎨</div>
+                <h3 className="text-lg md:text-xl font-bold mb-2 text-blue-900">Design-Prozess</h3>
+                <ol className="text-left max-w-xs mx-auto space-y-3 text-blue-900 text-sm md:text-base">
                   {[
                     "1. Analyse & Konzept",
                     "2. Wireframing",
@@ -915,18 +917,18 @@ export default function HomePage() {
             </motion.div>
           </div>
           
-          <div className="p-10 lg:p-14 order-1 lg:order-2">
+          <div className="p-6 md:p-10 lg:p-14 order-1 lg:order-2">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="flex items-center mb-6"
+              className="flex items-center mb-4 md:mb-6"
             >
-              <div className="bg-blue-100 p-3 rounded-full mr-4">
-                <FaPaintBrush className="text-blue-600 text-2xl" />
+              <div className="bg-blue-100 p-2 md:p-3 rounded-full mr-3 md:mr-4">
+                <FaPaintBrush className="text-blue-600 text-xl md:text-2xl" />
               </div>
-              <h2 className="text-3xl font-bold">Modernes Webdesign</h2>
+              <h2 className="text-2xl md:text-3xl font-bold">Modernes Webdesign</h2>
             </motion.div>
             
             <motion.p
@@ -934,12 +936,12 @@ export default function HomePage() {
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="text-lg mb-6 text-blue-800"
+              className="text-base md:text-lg mb-4 md:mb-6 text-blue-800"
             >
               <strong>Gutes Design ist mehr als nur Ästhetik.</strong> Wir schaffen visuelle Erlebnisse, die Nutzer begeistern und Conversion-Raten steigern.
             </motion.p>
             
-            <div className="space-y-8">
+            <div className="space-y-6 md:space-y-8">
               {[
                 {
                   title: "UI/UX Design",
@@ -947,20 +949,20 @@ export default function HomePage() {
                   items: [
                     "Mobile-First Responsive Design",
                     "Prototyping & User Flows",
-                    "A/B Testing von Designvarianten",
+                    "A/B Testing",
                     "Conversion-Optimierte Layouts",
-                    "Barrierefreie Gestaltung (WCAG)"
+                    "Barrierefreie Gestaltung"
                   ]
                 },
                 {
                   title: "Brand Identity",
                   content: "Konsistente Markenauftritte über alle Kanäle:",
                   items: [
-                    "Logo-Design & Corporate Identity",
+                    "Logo-Design & CI",
                     "Farbpaletten & Typografie",
                     "Bildsprache & Fotostil",
-                    "Tone of Voice & Markenbotschaft",
-                    "Styleguides & Designsysteme"
+                    "Tone of Voice",
+                    "Styleguides"
                   ]
                 },
                 {
@@ -984,9 +986,9 @@ export default function HomePage() {
                   transition={{ delay: 0.1 * index }}
                   className="bg-white p-4 rounded-lg border border-blue-100"
                 >
-                  <h3 className="font-bold text-xl mb-2">{section.title}</h3>
-                  <p className="text-blue-800 mb-3">{section.content}</p>
-                  <ul className="list-disc list-inside space-y-2 pl-4 text-blue-800">
+                  <h3 className="font-bold text-lg md:text-xl mb-2">{section.title}</h3>
+                  <p className="text-blue-800 text-sm md:text-base mb-3">{section.content}</p>
+                  <ul className="list-disc list-inside space-y-2 pl-4 text-blue-800 text-sm md:text-base">
                     {section.items.map((item, i) => (
                       <motion.li
                         key={i}
@@ -1005,7 +1007,7 @@ export default function HomePage() {
                       whileInView={{ opacity: 1 }}
                       viewport={{ once: true }}
                       transition={{ delay: 0.3 }}
-                      className="mt-3 p-3 bg-blue-100 rounded border border-blue-200"
+                      className="mt-3 p-3 bg-blue-100 rounded border border-blue-200 text-sm md:text-base"
                     >
                       <p className="text-blue-800"><strong>Erfolgsbeispiel:</strong> {section.example}</p>
                     </motion.div>
@@ -1025,19 +1027,19 @@ export default function HomePage() {
         transition={{ duration: 0.8 }}
         className="bg-blue-50 rounded-3xl overflow-hidden"
       >
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="p-10 lg:p-14">
+        <div className="grid lg:grid-cols-2 gap-8 md:gap-12">
+          <div className="p-6 md:p-10 lg:p-14">
             <motion.div 
-              className="flex items-center mb-6"
+              className="flex items-center mb-4 md:mb-6"
               initial={{ x: -20, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
             >
-              <div className="bg-blue-100 p-3 rounded-full mr-4">
-                <FaHashtag className="text-blue-600 text-2xl" />
+              <div className="bg-blue-100 p-2 md:p-3 rounded-full mr-3 md:mr-4">
+                <FaHashtag className="text-blue-600 text-xl md:text-2xl" />
               </div>
-              <h2 className="text-3xl font-bold">Social Media Management</h2>
+              <h2 className="text-2xl md:text-3xl font-bold">Social Media Management</h2>
             </motion.div>
             
             <motion.p
@@ -1045,12 +1047,12 @@ export default function HomePage() {
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="text-lg mb-6 text-blue-800"
+              className="text-base md:text-lg mb-4 md:mb-6 text-blue-800"
             >
-              <strong>Social Media ist das neue Schaufenster Ihres Unternehmens.</strong> Wir entwickeln Strategien, die echte Communities aufbauen und messbare Ergebnisse liefern.
+              <strong>Social Media ist das neue Schaufenster Ihres Unternehmens.</strong> Wir entwickeln Strategien, die echte Communities aufbauen.
             </motion.p>
             
-            <div className="space-y-8">
+            <div className="space-y-6 md:space-y-8">
               {[
                 {
                   title: "Content-Strategie",
@@ -1058,9 +1060,9 @@ export default function HomePage() {
                   items: [
                     "Plattformspezifische Content-Konzepte",
                     "Redaktionsplan & Content-Kalender",
-                    "Community Management Strategie",
+                    "Community Management",
                     "Influencer-Kooperationen",
-                    "Performance-Analyse & Optimierung"
+                    "Performance-Analyse"
                   ]
                 },
                 {
@@ -1068,9 +1070,9 @@ export default function HomePage() {
                   content: "Professionelle Erstellung von Inhalten:",
                   items: [
                     "Fotografie & Videoproduktion",
-                    "Grafikdesign für Posts & Stories",
+                    "Grafikdesign für Posts",
                     "Animierte Content-Formate",
-                    "User-Generated Content Kampagnen",
+                    "User-Generated Content",
                     "Live-Streaming Konzepte"
                   ]
                 },
@@ -1095,9 +1097,9 @@ export default function HomePage() {
                   transition={{ delay: 0.1 * index }}
                   className="bg-white p-4 rounded-lg border border-blue-100"
                 >
-                  <h3 className="font-bold text-xl mb-2">{section.title}</h3>
-                  <p className="text-blue-800 mb-3">{section.content}</p>
-                  <ul className="list-disc list-inside space-y-2 pl-4 text-blue-800">
+                  <h3 className="font-bold text-lg md:text-xl mb-2">{section.title}</h3>
+                  <p className="text-blue-800 text-sm md:text-base mb-3">{section.content}</p>
+                  <ul className="list-disc list-inside space-y-2 pl-4 text-blue-800 text-sm md:text-base">
                     {section.items.map((item, i) => (
                       <motion.li
                         key={i}
@@ -1116,7 +1118,7 @@ export default function HomePage() {
                       whileInView={{ opacity: 1 }}
                       viewport={{ once: true }}
                       transition={{ delay: 0.3 }}
-                      className="mt-3 p-3 bg-blue-100 rounded border border-blue-200"
+                      className="mt-3 p-3 bg-blue-100 rounded border border-blue-200 text-sm md:text-base"
                     >
                       <p className="text-blue-800"><strong>Erfolgsbeispiel:</strong> {section.example}</p>
                     </motion.div>
@@ -1126,7 +1128,7 @@ export default function HomePage() {
             </div>
           </div>
           
-          <div className="h-full min-h-[500px] hidden lg:block relative">
+          <div className="h-full min-h-[300px] md:min-h-[500px] hidden lg:block relative">
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
@@ -1145,11 +1147,11 @@ export default function HomePage() {
                   repeat: Infinity,
                   repeatType: "reverse"
                 }}
-                className="relative z-10 text-center p-8"
+                className="relative z-10 text-center p-6 md:p-8"
               >
-                <div className="text-6xl mb-4">📱</div>
-                <h3 className="text-xl font-bold mb-2 text-blue-900">Social Media KPIs</h3>
-                <ul className="text-left max-w-xs mx-auto space-y-2 text-blue-900">
+                <div className="text-4xl md:text-6xl mb-3 md:mb-4">📱</div>
+                <h3 className="text-lg md:text-xl font-bold mb-2 text-blue-900">Social Media KPIs</h3>
+                <ul className="text-left max-w-xs mx-auto space-y-2 text-blue-900 text-sm md:text-base">
                   {[
                     "Engagement Rate",
                     "Reichweite & Impressionen",
@@ -1182,7 +1184,7 @@ export default function HomePage() {
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
-        className="bg-blue-600 text-white rounded-3xl p-12 text-center relative overflow-hidden"
+        className="bg-blue-600 text-white rounded-3xl p-6 md:p-12 text-center relative overflow-hidden"
       >
         <motion.div 
           className="absolute inset-0 opacity-10"
@@ -1196,8 +1198,8 @@ export default function HomePage() {
             repeatType: "reverse"
           }}
         >
-          <div className="absolute top-0 left-0 w-64 h-64 bg-white rounded-full mix-blend-overlay filter blur-xl"></div>
-          <div className="absolute bottom-0 right-0 w-64 h-64 bg-white rounded-full mix-blend-overlay filter blur-xl"></div>
+          <div className="absolute top-0 left-0 w-32 h-32 md:w-64 md:h-64 bg-white rounded-full mix-blend-overlay filter blur-xl"></div>
+          <div className="absolute bottom-0 right-0 w-32 h-32 md:w-64 md:h-64 bg-white rounded-full mix-blend-overlay filter blur-xl"></div>
         </motion.div>
         
         <div className="max-w-4xl mx-auto relative">
@@ -1206,7 +1208,7 @@ export default function HomePage() {
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="text-3xl font-bold mb-4"
+            className="text-2xl md:text-3xl font-bold mb-4"
           >
             Bereit für Ihre digitale Transformation?
           </motion.h3>
@@ -1216,7 +1218,7 @@ export default function HomePage() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="text-xl mb-8"
+            className="text-base md:text-xl mb-6 md:mb-8"
           >
             Kontaktieren Sie uns für ein kostenloses Beratungsgespräch und lassen Sie uns gemeinsam Ihre digitale Strategie entwickeln.
           </motion.p>
@@ -1226,7 +1228,7 @@ export default function HomePage() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.4 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center"
+            className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center"
           >
             <motion.a
               whileHover={{ 
@@ -1235,7 +1237,7 @@ export default function HomePage() {
               }}
               whileTap={{ scale: 0.95 }}
               href="/kontakt"
-              className="bg-white text-blue-600 px-8 py-4 rounded-full font-bold shadow-lg hover:shadow-xl transition flex items-center gap-2"
+              className="bg-white text-blue-600 px-6 py-3 md:px-8 md:py-4 rounded-full font-bold shadow-lg hover:shadow-xl transition flex items-center gap-2 text-sm md:text-base justify-center"
             >
               Jetzt Termin vereinbaren
               <motion.span
@@ -1246,6 +1248,7 @@ export default function HomePage() {
                   duration: 1.5,
                   repeat: Infinity
                 }}
+                className="hidden sm:inline-block"
               >
                 <FaArrowRight />
               </motion.span>
@@ -1258,10 +1261,10 @@ export default function HomePage() {
               }}
               whileTap={{ scale: 0.95 }}
               href="/leistungen"
-              className="bg-transparent border-2 border-white px-8 py-4 rounded-full font-bold hover:bg-white hover:text-blue-600 transition flex items-center gap-2"
+              className="bg-transparent border-2 border-white px-6 py-3 md:px-8 md:py-4 rounded-full font-bold hover:bg-white hover:text-blue-600 transition flex items-center gap-2 text-sm md:text-base justify-center"
             >
               Alle Leistungen
-              <FaArrowRight />
+              <FaArrowRight className="hidden sm:inline-block" />
             </motion.a>
           </motion.div>
           
@@ -1270,7 +1273,7 @@ export default function HomePage() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.6 }}
-            className="mt-6 text-blue-100"
+            className="mt-4 md:mt-6 text-blue-100 text-sm md:text-base"
           >
             Telefon: <span className="font-semibold">+49 123 456 789</span> | Email: <span className="font-semibold">info@cait-marketing.de</span>
           </motion.p>
