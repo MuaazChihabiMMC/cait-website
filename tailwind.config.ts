@@ -7,10 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+      },
       colors: {
-        fontFamily: {
-      sans: ['Inter', 'sans-serif'],
-    },
         green: {
           50: '#30AF5B',
           90: '#292C27',

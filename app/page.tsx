@@ -676,7 +676,7 @@ export default function HomePage() {
               }}
               whileTap={{ scale: 0.95 }}
               href="/kontakt"
-              className="inline-block bg-blue-600 text-white px-8 py-4 rounded-full font-bold shadow-lg hover:shadow-xl transition-all flex items-center gap-2"
+              className="bg-blue-600 text-white px-8 py-4 rounded-full font-bold shadow-lg hover:shadow-xl transition-all flex items-center gap-2"
             >
               Kostenlos beraten lassen
               <motion.span
