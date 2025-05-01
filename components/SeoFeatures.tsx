@@ -16,13 +16,25 @@ const features = [
   },
   {
     title: '🛠️ OnPage-SEO',
-    description:
-      'Optimierung deiner Website-Struktur, Inhalte, Meta-Tags, internen Verlinkungen und technischen Basis. Schnell, sauber, suchmaschinenfreundlich.',
+    description: (
+      <>
+        Optimierung deiner Website-Struktur, Inhalte, Meta-Tags, internen Verlinkungen und technischen Basis. Schnell, sauber, suchmaschinenfreundlich.{' '}
+        <Link href="/seo/onpage-seo" className="text-blue-500 underline">
+          Mehr erfahren
+        </Link>
+      </>
+    ),
   },
   {
     title: '🌍 OffPage-SEO & Backlinkaufbau',
-    description:
-      'Wir stärken deine Domain-Autorität mit qualitativen Backlinks, PR-Erwähnungen und strategischer OffPage-Optimierung.',
+    description: (
+      <>
+        Wir stärken deine Domain-Autorität mit qualitativen Backlinks, PR-Erwähnungen und strategischer OffPage-Optimierung.{' '}
+        <Link href="/seo/offpage-seo" className="text-blue-500 underline">
+          Mehr erfahren
+        </Link>
+      </>
+    ),
   },
   {
     title: '⚙️ Technisches SEO',
