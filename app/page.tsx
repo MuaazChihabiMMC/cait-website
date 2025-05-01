@@ -72,7 +72,7 @@ export default function HomePage() {
               }}
               whileTap={{ scale: 0.95 }}
               href="/kontakt"
-              className="inline-block bg-blue-600 text-white px-6 py-3 md:px-8 md:py-4 rounded-full font-bold shadow-lg hover:shadow-xl transition-all flex items-center gap-2 mx-auto"
+              className="inline-block bg-blue-600 text-white px-6 py-3 md:px-8 md:py-4 rounded-full font-bold shadow-lg hover:shadow-xl transition-all items-center gap-2 mx-auto"
             >
               Kostenlose Erstberatung
               <motion.span
@@ -159,181 +159,188 @@ export default function HomePage() {
         </div>
       </motion.section>
 
-      {/* SEO Section */}
-      <motion.section
+     {/* SEO Section - Updated to match Web Development design */}
+<motion.section
+  initial={{ opacity: 0 }}
+  whileInView={{ opacity: 1 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.8 }}
+  className="bg-blue-50 rounded-3xl overflow-hidden"
+>
+  <div className="grid lg:grid-cols-2 gap-8 md:gap-12">
+    <div className="p-6 md:p-10 lg:p-14">
+      <motion.div 
+        className="flex items-center mb-4 md:mb-6"
+        initial={{ x: -20, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+      >
+        <div className="bg-blue-100 p-2 md:p-3 rounded-full mr-3 md:mr-4">
+          <FaSearch className="text-blue-600 text-xl md:text-2xl" />
+        </div>
+        <h2 className="text-2xl md:text-3xl font-bold">Suchmaschinenoptimierung (SEO)</h2>
+      </motion.div>
+      
+      <motion.p
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.8 }}
-        className="bg-blue-50 rounded-3xl overflow-hidden"
+        transition={{ delay: 0.1 }}
+        className="text-base md:text-lg mb-4 md:mb-6 text-blue-800"
       >
-        <div className="grid lg:grid-cols-2 gap-8 md:gap-12">
-          <div className="p-6 md:p-10 lg:p-14">
-            <motion.div 
-              className="flex items-center mb-4 md:mb-6"
-              initial={{ x: -20, opacity: 0 }}
-              whileInView={{ x: 0, opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-            >
-              <div className="bg-blue-100 p-2 md:p-3 rounded-full mr-3 md:mr-4">
-                <FaSearch className="text-blue-600 text-xl md:text-2xl" />
-              </div>
-              <h2 className="text-2xl md:text-3xl font-bold">Suchmaschinenoptimierung (SEO)</h2>
-            </motion.div>
-            
-            <motion.p
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.2 }}
-              className="text-base md:text-lg mb-4 md:mb-6 text-blue-800"
-            >
-              <strong>93% aller Online-Erlebnisse beginnen mit einer Suchmaschine (HubSpot).</strong> SEO ist der nachhaltigste Weg, um qualifizierten Traffic auf Ihre Website zu leiten.
-            </motion.p>
-            
-            <div className="space-y-6 md:space-y-8">
-              {[
-                {
-                  title: "1. OnPage-Optimierung",
-                  content: "Die technische und inhaltliche Optimierung Ihrer Website bildet das Fundament für erfolgreiches SEO:",
-                  items: [
-                    "Umfassende Keyword-Recherche",
-                    "Content-Strategie mit thematischen Clustern",
-                    "Technische Optimierung aller Meta-Tags",
-                    "Ladezeitenoptimierung",
-                    "Mobile Optimierung"
-                  ]
-                },
-                {
-                  title: "2. OffPage-Optimierung",
-                  content: "Der Aufbau von Autorität und Vertrauen durch hochwertige Backlinks:",
-                  items: [
-                    "Natürlicher Linkaufbau",
-                    "Lokale SEO für regionale Unternehmen",
-                    "Strategisches Brand Building",
-                    "Regelmäßiges Link-Audit"
-                  ]
-                },
-                {
-                  title: "3. Technisches SEO",
-                  content: "Die technische Infrastruktur für maximale Crawlbarkeit:",
-                  items: [
-                    "Strukturierte Daten (Schema.org)",
-                    "Optimierung der Crawling-Effizienz",
-                    "Steuerung der Indexierung",
-                    "Website-Migrationen"
-                  ],
-                  example: "Ein mittelständischer B2B-Anbieter steigerte seinen organischen Traffic um 240% in 9 Monaten."
-                }
-              ].map((section, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: 0.1 * index }}
-                >
-                  <h3 className="font-bold text-lg md:text-xl mb-2 md:mb-3">{section.title}</h3>
-                  <p className="text-blue-800 text-sm md:text-base mb-3 md:mb-4">{section.content}</p>
-                  <ul className="list-disc list-inside space-y-2 pl-4 text-blue-800 text-sm md:text-base">
-                    {section.items.map((item, i) => (
-                      <motion.li
-                        key={i}
-                        initial={{ x: -10, opacity: 0 }}
-                        whileInView={{ x: 0, opacity: 1 }}
-                        viewport={{ once: true }}
-                        transition={{ delay: 0.05 * i }}
-                      >
-                        {item}
-                      </motion.li>
-                    ))}
-                  </ul>
-                  {section.example && (
-                    <motion.div
-                      initial={{ opacity: 0 }}
-                      whileInView={{ opacity: 1 }}
-                      viewport={{ once: true }}
-                      transition={{ delay: 0.3 }}
-                      className="mt-3 md:mt-4 p-3 md:p-4 bg-blue-100 rounded-lg border border-blue-200 text-sm md:text-base"
-                    >
-                      <p className="text-blue-800"><strong>Erfolgsbeispiel:</strong> {section.example}</p>
-                    </motion.div>
-                  )}
-                </motion.div>
-              ))}
+        <strong>93% aller Online-Erlebnisse beginnen mit einer Suchmaschine (HubSpot).</strong> SEO ist der nachhaltigste Weg, um qualifizierten Traffic auf Ihre Website zu leiten.
+      </motion.p>
+      
+      <div className="space-y-6 md:space-y-8">
+        {[
+          {
+            title: "1. OnPage-Optimierung",
+            content: "Die technische und inhaltliche Optimierung Ihrer Website bildet das Fundament für erfolgreiches SEO:",
+            items: [
+              "Umfassende Keyword-Recherche",
+              "Content-Strategie mit thematischen Clustern",
+              "Technische Optimierung aller Meta-Tags",
+              "Ladezeitenoptimierung",
+              "Mobile Optimierung"
+            ],
+            icon: <FaChartLine className="text-blue-500" />
+          },
+          {
+            title: "2. OffPage-Optimierung",
+            content: "Der Aufbau von Autorität und Vertrauen durch hochwertige Backlinks:",
+            items: [
+              "Natürlicher Linkaufbau",
+              "Lokale SEO für regionale Unternehmen",
+              "Strategisches Brand Building",
+              "Regelmäßiges Link-Audit"
+            ],
+            icon: <FaHashtag className="text-blue-500" />
+          },
+          {
+            title: "3. Technisches SEO",
+            content: "Die technische Infrastruktur für maximale Crawlbarkeit:",
+            items: [
+              "Strukturierte Daten (Schema.org)",
+              "Optimierung der Crawling-Effizienz",
+              "Steuerung der Indexierung",
+              "Website-Migrationen"
+            ],
+            example: "Ein mittelständischer B2B-Anbieter steigerte seinen organischen Traffic um 240% in 9 Monaten.",
+            icon: <FaCode className="text-blue-500" />
+          }
+        ].map((section, index) => (
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.1 * index }}
+            className="bg-white p-4 rounded-lg border border-blue-100"
+          >
+            <div className="flex items-center gap-3 mb-2">
+              {section.icon && section.icon}
+              <h3 className="font-bold text-lg md:text-xl">{section.title}</h3>
             </div>
-            
-            <motion.div 
-              className="mt-8 md:mt-10"
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.4 }}
-            >
-              <motion.a
-                whileHover={{ 
-                  scale: 1.03,
-                  boxShadow: "0 5px 15px rgba(37, 99, 235, 0.3)"
-                }}
-                href="/seo"
-                className="bg-blue-600 text-white px-5 py-2 md:px-6 md:py-3 rounded-lg font-semibold shadow hover:shadow-xl transition flex items-center gap-2 text-sm md:text-base w-full sm:w-auto justify-center"
-              >
-                SEO-Strategie entwickeln
-                <FaArrowRight />
-              </motion.a>
-              <p className="text-xs md:text-sm text-blue-700 mt-2 text-center sm:text-left">Durchschnittliche Traffic-Steigerung: <strong>+187%</strong> in 12 Monaten</p>
-            </motion.div>
-          </div>
-          
-          <div className="h-full min-h-[300px] md:min-h-[500px] hidden lg:block relative">
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="absolute inset-0 bg-blue-100 flex items-center justify-center rounded-l-3xl overflow-hidden"
-            >
-              <div className="absolute inset-0 opacity-20 bg-gradient-to-r from-blue-400 to-blue-600"></div>
+            <p className="text-blue-800 text-sm md:text-base mb-3">{section.content}</p>
+            <ul className="list-disc list-inside space-y-2 pl-4 text-blue-800 text-sm md:text-base">
+              {section.items.map((item, i) => (
+                <motion.li
+                  key={i}
+                  initial={{ x: -10, opacity: 0 }}
+                  whileInView={{ x: 0, opacity: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.05 * i }}
+                >
+                  {item}
+                </motion.li>
+              ))}
+            </ul>
+            {section.example && (
               <motion.div
-                animate={{
-                  y: [0, -10, 0],
-                  rotate: [0, 2, 0]
-                }}
-                transition={{
-                  duration: 8,
-                  repeat: Infinity,
-                  repeatType: "reverse"
-                }}
-                className="relative z-10 text-center p-6 md:p-8"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.3 }}
+                className="mt-3 p-3 bg-blue-100 rounded border border-blue-200 text-sm md:text-base"
               >
-                <div className="text-4xl md:text-6xl mb-3 md:mb-4">📈</div>
-                <h3 className="text-lg md:text-xl font-bold mb-2 text-blue-900">SEO-Erfolgsmessung</h3>
-                <ul className="text-left max-w-xs mx-auto space-y-2 text-blue-900 text-sm md:text-base">
-                  {[
-                    "Organische Sichtbarkeit",
-                    "Keyword-Rankings",
-                    "Klickrate (CTR)",
-                    "Conversions",
-                    "Backlink-Wachstum"
-                  ].map((item, index) => (
-                    <motion.li
-                      key={index}
-                      className="flex items-center gap-2"
-                      initial={{ x: -20, opacity: 0 }}
-                      whileInView={{ x: 0, opacity: 1 }}
-                      viewport={{ once: true }}
-                      transition={{ delay: 0.1 * index }}
-                    >
-                      <span className="text-blue-600">✔</span> {item}
-                    </motion.li>
-                  ))}
-                </ul>
+                <p className="text-blue-800"><strong>Erfolgsbeispiel:</strong> {section.example}</p>
               </motion.div>
-            </motion.div>
-          </div>
-        </div>
-      </motion.section>
+            )}
+          </motion.div>
+        ))}
+      </div>
+      
+      <motion.div 
+        className="mt-8 md:mt-10"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ delay: 0.4 }}
+      >
+        <motion.a
+          whileHover={{ 
+            scale: 1.03,
+            boxShadow: "0 5px 15px rgba(37, 99, 235, 0.3)"
+          }}
+          href="/seo"
+          className="bg-blue-600 text-white px-5 py-2 md:px-6 md:py-3 rounded-lg font-semibold shadow hover:shadow-xl transition flex items-center gap-2 text-sm md:text-base w-full sm:w-auto justify-center"
+        >
+          SEO-Strategie entwickeln
+          <FaArrowRight />
+        </motion.a>
+        <p className="text-xs md:text-sm text-blue-700 mt-2 text-center sm:text-left">Durchschnittliche Traffic-Steigerung: <strong>+187%</strong> in 12 Monaten</p>
+      </motion.div>
+    </div>
+    
+    <div className="h-full min-h-[300px] md:min-h-[500px] hidden lg:block relative">
+      <motion.div
+        initial={{ opacity: 0, scale: 0.9 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+        className="absolute inset-0 bg-blue-100 flex items-center justify-center rounded-l-3xl overflow-hidden"
+      >
+        <div className="absolute inset-0 opacity-20 bg-gradient-to-r from-blue-400 to-blue-600"></div>
+        <motion.div
+          animate={{
+            y: [0, -10, 0],
+            rotate: [0, 2, 0]
+          }}
+          transition={{
+            duration: 8,
+            repeat: Infinity,
+            repeatType: "reverse"
+          }}
+          className="relative z-10 text-center p-6 md:p-8"
+        >
+          <div className="text-4xl md:text-6xl mb-3 md:mb-4">📈</div>
+          <h3 className="text-lg md:text-xl font-bold mb-2 text-blue-900">SEO-Erfolgsmessung</h3>
+          <ul className="text-left max-w-xs mx-auto space-y-2 text-blue-900 text-sm md:text-base">
+            {[
+              "Organische Sichtbarkeit",
+              "Keyword-Rankings",
+              "Klickrate (CTR)",
+              "Conversions",
+              "Backlink-Wachstum"
+            ].map((item, index) => (
+              <motion.li
+                key={index}
+                className="flex items-center gap-2"
+                initial={{ x: -20, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.1 * index }}
+              >
+                <span className="text-blue-600">✔</span> {item}
+              </motion.li>
+            ))}
+          </ul>
+        </motion.div>
+      </motion.div>
+    </div>
+  </div>
+</motion.section>
 
       {/* Google Ads Section */}
       <motion.section
