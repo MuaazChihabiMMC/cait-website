@@ -5,7 +5,7 @@ import MobileMenu from '@/components/MobileMenu';
 import AnimatedSection from '@/components/AnimatedSection';
 
 export const metadata = {
-  title: 'CAITSocialMedia | Agentur für SEO, Webdesign, Google Ads & Social Media',
+  title: 'CAIT Social Media | Agentur für SEO, Webdesign, Google Ads & Social Media',
   description:
     'Deine Agentur für ganzheitliches Online-Marketing: SEO, Webentwicklung, Google Ads, Social Media. Alles aus einer Hand – mit Strategie, Design & Performance.',
 };

@@ -26,19 +26,19 @@ export default function SeoPage() {
         <SeoWhy />
       </AnimatedSection>
 
-      <AnimatedSection delay={0.2}>
+      <AnimatedSection delay={0.1}>
         <SeoFeatures />
       </AnimatedSection>
 
-      <AnimatedSection delay={0.3}>
+      <AnimatedSection delay={0.1}>
         <SeoBenefits />
       </AnimatedSection>
 
-      <AnimatedSection delay={0.4}>
+      <AnimatedSection delay={0.1}>
         <SeoFaq />
       </AnimatedSection>
 
-      <AnimatedSection delay={0.5}>
+      <AnimatedSection delay={0.1}>
         <SeoCta />
       </AnimatedSection>
     </>
