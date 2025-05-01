@@ -18,6 +18,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="de">
       <head>
+        
         {/* Google Tag Manager */}
         <Script id="gtm-head" strategy="afterInteractive">
           {`
@@ -28,6 +29,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             })(window,document,'script','dataLayer','GTM-NP9D459K');
           `}
         </Script>
+
+        
       </head>
 
       <body>
