@@ -72,7 +72,7 @@ export default function HomePage() {
               }}
               whileTap={{ scale: 0.95 }}
               href="/kontakt"
-              className="inline-block bg-blue-600 text-white px-8 py-4 rounded-full font-bold shadow-lg hover:shadow-xl transition-all flex items-center gap-2"
+              className="inline-block bg-blue-600 text-white px-8 py-4 rounded-full font-bold shadow-lg hover:shadow-xl transition-all items-center gap-2"
             >
               Kostenlose Erstberatung anfordern
               <motion.span
@@ -276,7 +276,7 @@ export default function HomePage() {
                   boxShadow: "0 5px 15px rgba(37, 99, 235, 0.3)"
                 }}
                 href="/seo"
-                className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold shadow hover:shadow-xl transition flex items-center gap-2"
+                className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold shadow hover:shadow-xl transition flex items-center gap-2"
               >
                 SEO-Strategie entwickeln
                 <FaArrowRight />
@@ -498,7 +498,7 @@ export default function HomePage() {
                   boxShadow: "0 5px 15px rgba(37, 99, 235, 0.3)"
                 }}
                 href="/google-ads"
-                className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold shadow hover:shadow-xl transition flex items-center gap-2"
+                className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold shadow hover:shadow-xl transition flex items-center gap-2"
               >
                 Google Ads Strategie anfordern
                 <FaArrowRight />
