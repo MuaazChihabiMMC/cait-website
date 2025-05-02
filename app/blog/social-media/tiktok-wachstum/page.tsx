@@ -157,10 +157,10 @@ export default function TikTokGrowthPage() {
           ))}
         </div>
 
-        {/* Author Bio */}
         <div className="mt-16 p-6 md:p-8 bg-gray-50 rounded-xl">
           <div className="flex flex-col md:flex-row items-center gap-6">
-            <div className="w-24 h-24 md:w-32 md:h-32 relative rounded-full overflow-hidden border-4 border-white shadow-lg">
+            {/* Autor Bild - Jetzt richtig proportioniert */}
+            <div className="w-24 h-24 md:w-60 md:h-32 relative rounded-full overflow-hidden border-4 border-white shadow-lg">
               <Image
                 src={post.author.image}
                 alt={`Portrait von ${post.author.name}`}
@@ -198,7 +198,7 @@ export default function TikTokGrowthPage() {
           <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow">
             <div className="relative h-48">
               <Image
-                src="/instagram-reels.webp"
+                src="/instagram-strategien.webp"
                 alt="Instagram Reels Strategien"
                 fill
                 className="object-cover"
@@ -218,22 +218,25 @@ export default function TikTokGrowthPage() {
               </Link>
             </div>
           </div>
-          <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-            <div className="relative h-48">
-              <Image
-                src="/linkedin-strategies.webp"
-                alt="LinkedIn Marketing"
-                fill
-                className="object-cover"
-              />
-            </div>
+            <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                     <div className="relative h-48">
+                       <Image
+                         src="/socialmediacontent.webp"
+                         alt="Content Strategie"
+                         fill
+                         className="object-cover"
+                       />
+                     </div>
             <div className="p-6">
               <span className="inline-block px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs font-medium mb-2">
-                LinkedIn
+                Content
               </span>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">B2B Marketing auf LinkedIn</h3>
-              <p className="text-gray-600 mb-4">Wie Sie als Experte wahrgenommen werden</p>
-              <Link href="/blog/social-media/linkedin-strategien" className="text-blue-600 hover:text-blue-800 font-medium flex items-center">
+              <span className="inline-block px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs font-medium mb-2">
+                Strategie
+              </span>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Content Strategien für Social Media</h3>
+              <p className="text-gray-600 mb-4">Plattformspezifische Inhalte erstellen für maximale Reichweite</p>
+              <Link href="/blog/social-media/content-strategien" className="text-blue-600 hover:text-blue-800 font-medium flex items-center">
                 Weiterlesen
                 <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>

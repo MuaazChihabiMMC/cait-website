@@ -27,7 +27,7 @@ const socialMediaPosts = [
     slug: 'instagram-reels',
     title: 'Instagram Reels: Professionell produzieren',
     excerpt: 'Wie Sie mit Reels neue Zielgruppen erreichen',
-    image: '/instagram-reels.svg',
+    image: '/instagram-strategien.webp',
     tags: ['Instagram', 'Reels'],
     readTime: '7 min',
   },
