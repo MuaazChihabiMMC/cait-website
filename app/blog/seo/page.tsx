@@ -1,0 +1,127 @@
+import Link from 'next/link';
+import Image from 'next/image';
+
+export const metadata = {
+  title: 'SEO Strategien | CAITSocialMedia Blog',
+  description: 'Aktuelle SEO-Tipps für bessere Rankings - Technische SEO, Content Marketing und Linkbuilding',
+};
+
+const seoPosts = [
+  {
+    slug: 'technische-seo',
+    title: 'Technische SEO 2024: Die wichtigsten Faktoren',
+    excerpt: 'Ladezeiten optimieren, Core Web Vitals verbessern und Indexierung kontrollieren',
+    image: '/seo-technical.webp',
+    tags: ['Technical SEO', 'Performance'],
+    readTime: '8 min',
+  },
+  {
+    slug: 'content-marketing',
+    title: 'Content Marketing für SEO: So ranken Ihre Inhalte',
+    excerpt: 'Keyword-Recherche, Content-Cluster und semantische Optimierung',
+    image: '/seo-content.jpg',
+    tags: ['Content', 'Keywords'],
+    readTime: '10 min',
+  },
+  {
+    slug: 'linkbuilding-strategien',
+    title: 'Backlink-Strategien die wirklich funktionieren',
+    excerpt: 'Natürliches Linkbuilding ohne Risiko - unsere Top-Methoden',
+    image: '/seo-links.jpg',
+    tags: ['Linkbuilding', 'Off-Page'],
+    readTime: '12 min',
+  },
+];
+
+export default function SeoBlogPage() {
+  return (
+    <section className="bg-gradient-to-b from-gray-50 to-white py-20 px-6">
+      <div className="max-w-6xl mx-auto">
+        {/* Hero Header */}
+        <div className="text-center mb-16 animate-fade-in">
+          <span className="inline-block px-4 py-2 bg-green-100 text-green-800 rounded-full text-sm font-semibold mb-4">
+            SEO-Ressourcen
+          </span>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
+            <span className="bg-gradient-to-r from-green-600 to-green-400 bg-clip-text text-transparent">
+              SEO-Wissen
+            </span>{' '}
+            für bessere Rankings
+          </h1>
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            Aktuelle Strategien für technische SEO, Content-Marketing und Linkbuilding
+          </p>
+        </div>
+
+        {/* Blog Posts Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {seoPosts.map((post) => (
+            <article 
+              key={post.slug}
+              className="group relative bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden"
+            >
+              <Link href={`/blog/seo/${post.slug}`} className="block h-full">
+                <div className="relative h-48 overflow-hidden">
+                  <Image
+                    src={post.image}
+                    alt={post.title}
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent" />
+                </div>
+                
+                <div className="p-6">
+                  <div className="flex flex-wrap gap-2 mb-3">
+                    {post.tags.map((tag) => (
+                      <span 
+                        key={tag} 
+                        className="px-3 py-1 bg-green-50 text-green-700 text-xs font-medium rounded-full"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                  
+                  <h2 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-green-600 transition-colors">
+                    {post.title}
+                  </h2>
+                  
+                  <p className="text-gray-600 mb-4">{post.excerpt}</p>
+                  
+                  <div className="flex items-center justify-between">
+                    <span className="text-sm text-gray-500">{post.readTime} Lesezeit</span>
+                    <button className="text-green-600 font-medium flex items-center group-hover:translate-x-1 transition-transform">
+                      Mehr lesen
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </Link>
+            </article>
+          ))}
+        </div>
+
+        {/* Newsletter CTA */}
+        <div className="mt-20 bg-gradient-to-r from-green-500 to-green-600 rounded-xl p-8 md:p-10 text-white shadow-lg animate-float">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-2xl md:text-3xl font-bold mb-4">SEO-Updates direkt in Ihr Postfach</h2>
+            <p className="text-green-100 mb-6">Abonnieren Sie unseren Newsletter für exklusive SEO-Tipps</p>
+            <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+              <input 
+                type="email" 
+                placeholder="Ihre E-Mail-Adresse" 
+                className="flex-grow px-4 py-3 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-green-300"
+              />
+              <button className="px-6 py-3 bg-white text-green-700 font-semibold rounded-lg hover:bg-gray-100 transition-colors">
+                Abonnieren
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

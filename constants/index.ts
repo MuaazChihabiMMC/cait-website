@@ -2,11 +2,11 @@
 
 export const NAV_LINKS = [
   { href: '/', key: 'home', label: 'Home' },
-  { href: '/', key: 'Blog', label: 'Blog' },
+  { href: '/blog', key: 'Blog', label: 'Blog' },
   {
     key: 'services',
     label: 'Services',
-    href: '#',
+    href: '/services',
     children: [
       { key: 'seo', label: 'SEO Optimierung', href: '/seo' },
       { key: 'google', label: 'Google Ads', href: '/google-ads' },

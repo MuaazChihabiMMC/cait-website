@@ -15,7 +15,7 @@ const footerLinks = [
   {
     title: 'Unternehmen',
     links: [
-      { label: 'Über uns', href: '/' },
+      { label: 'Über uns', href: '/ueber-uns' },
       { label: 'Kontakt', href: '/kontakt' },
       { label: 'Impressum', href: '/impressum' },
       { label: 'Datenschutz', href: '/datenschutz' },

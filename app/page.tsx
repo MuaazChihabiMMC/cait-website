@@ -46,8 +46,8 @@ export default function HomePage() {
                   repeatType: "reverse"
                 }}
               >
-                Digitale Marketinglösungen
-              </motion.span> für nachhaltigen Erfolg
+                CAIT Agentur
+              </motion.span> Webdesign, Social Media, Google Ads und SEO Agentur
             </h1>
           </motion.div>
           
@@ -1219,7 +1219,7 @@ export default function HomePage() {
                 backgroundColor: "rgba(255, 255, 255, 0.1)"
               }}
               whileTap={{ scale: 0.95 }}
-              href="/leistungen"
+              href="/services"
               className="bg-transparent border-2 border-white px-6 py-3 md:px-8 md:py-4 rounded-full font-bold hover:bg-white hover:text-blue-600 transition flex items-center gap-2 text-sm md:text-base justify-center"
             >
               Alle Leistungen
@@ -1234,7 +1234,7 @@ export default function HomePage() {
             transition={{ delay: 0.6 }}
             className="mt-4 md:mt-6 text-blue-100 text-sm md:text-base"
           >
-            Telefon: <span className="font-semibold">+49 123 456 789</span> | Email: <span className="font-semibold">info@cait-marketing.de</span>
+            Telefon: <span className="font-semibold">+49 3022689840</span> | Email: <span className="font-semibold">info@caitsocialmedia.com</span>
           </motion.p>
         </div>
       </motion.section>
