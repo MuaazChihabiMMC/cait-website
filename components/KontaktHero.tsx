@@ -22,7 +22,7 @@ export default function KontaktHero() {
           </a>
           
           <a
-            href="tel:+49123456789"
+            href="tel:+493022689840"
             className="inline-flex items-center justify-center bg-transparent border-2 border-white text-white font-semibold px-8 py-4 rounded-full shadow hover:bg-white hover:text-blue-800 transition"
           >
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">

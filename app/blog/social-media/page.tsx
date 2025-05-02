@@ -2,65 +2,65 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export const metadata = {
-  title: 'SEO Strategien | CAITSocialMedia Blog',
-  description: 'Aktuelle SEO-Tipps für bessere Rankings - Technische SEO, Content Marketing und Linkbuilding',
+  title: 'Social Media Strategien | CAITSocialMedia Blog',
+  description: 'Aktuelle Tipps für Instagram, TikTok & LinkedIn - Content-Strategien und organisches Wachstum',
 };
 
-const seoPosts = [
+const socialMediaPosts = [
   {
-    slug: 'technische-seo',
-    title: 'Technische SEO 2024: Die wichtigsten Faktoren',
-    excerpt: 'Ladezeiten optimieren, Core Web Vitals verbessern und Indexierung kontrollieren',
-    image: '/seo-technical.webp',
-    tags: ['Technical SEO', 'Performance'],
-    readTime: '8 min',
+    slug: 'content-strategien',
+    title: 'Content-Strategien für Social Media 2024',
+    excerpt: 'Plattformspezifische Inhalte erstellen für maximale Reichweite',
+    image: '/socialmediacontent.webp',
+    tags: ['Content', 'Strategie'],
+    readTime: '9 min',
   },
   {
-    slug: 'content-marketing',
-    title: 'Content Marketing für SEO: So ranken Ihre Inhalte',
-    excerpt: 'Keyword-Recherche, Content-Cluster und semantische Optimierung',
-    image: '/seo-content.svg',
-    tags: ['Content', 'Keywords'],
-    readTime: '10 min',
+    slug: 'tiktok-wachstum',
+    title: 'TikTok Growth: Virale Reichweite erzielen',
+    excerpt: 'Algorithmus verstehen und für Ihr Business nutzen',
+    image: '/tiktokPhoto.webp',
+    tags: ['TikTok', 'Video'],
+    readTime: '11 min',
   },
   {
-    slug: 'linkbuilding-strategien',
-    title: 'Backlink-Strategien die wirklich funktionieren',
-    excerpt: 'Natürliches Linkbuilding ohne Risiko - unsere Top-Methoden',
-    image: '/link-building.svg',
-    tags: ['Linkbuilding', 'Off-Page'],
-    readTime: '12 min',
+    slug: 'instagram-reels',
+    title: 'Instagram Reels: Professionell produzieren',
+    excerpt: 'Wie Sie mit Reels neue Zielgruppen erreichen',
+    image: '/instagram-reels.svg',
+    tags: ['Instagram', 'Reels'],
+    readTime: '7 min',
   },
 ];
 
-export default function SeoBlogPage() {
+export default function SocialMediaBlogPage() {
   return (
     <section className="bg-gradient-to-b from-gray-50 to-white py-20 px-6">
       <div className="max-w-6xl mx-auto">
         {/* Hero Header */}
         <div className="text-center mb-16 animate-fade-in">
-          <span className="inline-block px-4 py-2 bg-green-100 text-green-800 rounded-full text-sm font-semibold mb-4">
-            SEO-Ressourcen
+          <span className="inline-block px-4 py-2 bg-purple-100 text-purple-800 rounded-full text-sm font-semibold mb-4">
+            Social Media
           </span>
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
-            <span className="bg-gradient-to-r from-green-600 to-green-400 bg-clip-text text-transparent">
-              SEO-Wissen
+            <span className="bg-gradient-to-r from-purple-600 to-purple-400 bg-clip-text text-transparent">
+              Social Media
             </span>{' '}
-            für bessere Rankings
+            für Business-Wachstum
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Aktuelle Strategien für technische SEO, Content-Marketing und Linkbuilding
+            Aktuelle Strategien für Instagram, TikTok und LinkedIn Marketing
           </p>
         </div>
 
         {/* Blog Posts Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {seoPosts.map((post) => (
+          {socialMediaPosts.map((post) => (
             <article 
               key={post.slug}
               className="group relative bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden"
             >
-              <Link href={`/blog/seo/${post.slug}`} className="block h-full">
+              <Link href={`/blog/social-media/${post.slug}`} className="block h-full">
                 <div className="relative h-48 overflow-hidden">
                   <Image
                     src={post.image}
@@ -76,14 +76,14 @@ export default function SeoBlogPage() {
                     {post.tags.map((tag) => (
                       <span 
                         key={tag} 
-                        className="px-3 py-1 bg-green-50 text-green-700 text-xs font-medium rounded-full"
+                        className="px-3 py-1 bg-purple-50 text-purple-700 text-xs font-medium rounded-full"
                       >
                         {tag}
                       </span>
                     ))}
                   </div>
                   
-                  <h2 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-green-600 transition-colors">
+                  <h2 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-purple-600 transition-colors">
                     {post.title}
                   </h2>
                   
@@ -91,7 +91,7 @@ export default function SeoBlogPage() {
                   
                   <div className="flex items-center justify-between">
                     <span className="text-sm text-gray-500">{post.readTime} Lesezeit</span>
-                    <button className="text-green-600 font-medium flex items-center group-hover:translate-x-1 transition-transform">
+                    <button className="text-purple-600 font-medium flex items-center group-hover:translate-x-1 transition-transform">
                       Mehr lesen
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -105,17 +105,17 @@ export default function SeoBlogPage() {
         </div>
 
         {/* Newsletter CTA */}
-        <div className="mt-20 bg-gradient-to-r from-green-500 to-green-600 rounded-xl p-8 md:p-10 text-white shadow-lg animate-float">
+        <div className="mt-20 bg-gradient-to-r from-purple-500 to-purple-600 rounded-xl p-8 md:p-10 text-white shadow-lg animate-float">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4">SEO-Updates direkt in Ihr Postfach</h2>
-            <p className="text-green-100 mb-6">Abonnieren Sie unseren Newsletter für exklusive SEO-Tipps</p>
+            <h2 className="text-2xl md:text-3xl font-bold mb-4">Social Media Updates erhalten</h2>
+            <p className="text-purple-100 mb-6">Abonnieren Sie unseren Newsletter für exklusive Strategien</p>
             <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
               <input 
                 type="email" 
                 placeholder="Ihre E-Mail-Adresse" 
-                className="flex-grow px-4 py-3 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-green-300"
+                className="flex-grow px-4 py-3 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-purple-300"
               />
-              <button className="px-6 py-3 bg-white text-green-700 font-semibold rounded-lg hover:bg-gray-100 transition-colors">
+              <button className="px-6 py-3 bg-white text-purple-700 font-semibold rounded-lg hover:bg-gray-100 transition-colors">
                 Abonnieren
               </button>
             </div>

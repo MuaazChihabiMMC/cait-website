@@ -22,7 +22,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 w-full transition-all duration-300 z-30 ${scrolled ? "bg-white shadow-md py-2" : "bg-white/90 backdrop-blur-sm py-4"}`}>
+    <nav className={`fixed top-0 left-0 right-0 w-full transition-all duration-300 z-30 ${scrolled ? "bg-white shadow-md py-1" : "bg-white/90 backdrop-blur-sm py-2"}`}>
       <div className="max-container padding-container relative flex items-center justify-between mx-auto">
         {/* Mobile: Invisible box to reserve space left */}
         <div className="w-[32px] lg:hidden" />
@@ -36,8 +36,8 @@ const Navbar = () => {
           <Image
             src="/cait logo tran black.svg"
             alt="CAIT Social Media Logo"
-            width={scrolled ? 90 : 100}
-            height={scrolled ? 26 : 29}
+            width={scrolled ? 80 : 90}
+            height={scrolled ? 23 : 26}
             priority
             className="transition-all duration-300"
           />
