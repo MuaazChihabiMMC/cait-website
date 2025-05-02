@@ -13,13 +13,17 @@ const Navbar = () => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 10);
     };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    
+    // Only add event listener on client-side
+    if (typeof window !== 'undefined') {
+      window.addEventListener("scroll", handleScroll, { passive: true });
+      return () => window.removeEventListener("scroll", handleScroll);
+    }
   }, []);
 
   return (
-    <nav className={`fixed w-full transition-all duration-300 z-30 ${scrolled ? "bg-white shadow-md py-3" : "bg-white/90 backdrop-blur-sm py-5"}`}>
-      <div className="max-container padding-container relative flex items-center justify-between">
+    <nav className={`fixed top-0 left-0 right-0 w-full transition-all duration-300 z-30 ${scrolled ? "bg-white shadow-md py-2" : "bg-white/90 backdrop-blur-sm py-4"}`}>
+      <div className="max-container padding-container relative flex items-center justify-between mx-auto">
         {/* Mobile: Invisible box to reserve space left */}
         <div className="w-[32px] lg:hidden" />
 
@@ -27,10 +31,11 @@ const Navbar = () => {
         <Link
           href="/"
           className="absolute left-1/2 transform -translate-x-1/2 lg:static lg:transform-none transition-transform hover:scale-105"
+          aria-label="Home"
         >
           <Image
             src="/cait logo tran black.svg"
-            alt="logo"
+            alt="CAIT Social Media Logo"
             width={scrolled ? 90 : 100}
             height={scrolled ? 26 : 29}
             priority
