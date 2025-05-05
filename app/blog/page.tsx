@@ -129,19 +129,22 @@ export default function BlogPage() {
             <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow">
               <div className="relative h-48">
                 <Image
-                  src="/featured-social.jpg"
-                  alt="Social Media Strategien"
+                  src="/google-ads-guide.webp"
+                  alt="Google Ads Strategien"
                   fill
                   className="object-cover"
                 />
               </div>
               <div className="p-6">
                 <span className="inline-block px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs font-medium mb-2">
-                  Social Media
+                  Google Ads
                 </span>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Content-Strategien für TikTok</h3>
-                <p className="text-gray-600 mb-4">Wie Sie virale Reichweite erzielen</p>
-                <Link href="/blog/social-media/tiktok-strategien" className="text-blue-600 hover:text-blue-800 font-medium flex items-center">
+                <span className="inline-block px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs font-medium mb-2">
+                  SEA Basics
+                </span>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Google Ads Guide 2024: So starten Sie richtig</h3>
+                <p className="text-gray-600 mb-4">Von der Kontoerstellung bis zu ersten Kampagnen – der Einstieg in bezahlte Suchanzeigen leicht gemacht.</p>
+                <Link href="/blog/google-ads/google-ads-einsteiger-guide" className="text-blue-600 hover:text-blue-800 font-medium flex items-center">
                   Weiterlesen
                   <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
