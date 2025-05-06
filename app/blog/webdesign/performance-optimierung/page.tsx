@@ -22,131 +22,131 @@ const post = {
   },
   content: `
     <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">Warum Website-Performance entscheidend ist</h2>
-    <p class="text-gray-700 mb-6">Die Ladezeit einer Website ist direkt mit Conversion-Raten, Nutzerzufriedenheit und SEO-Rankings verbunden. Studien zeigen, dass schon eine Verzögerung von einer Sekunde die Conversion-Rate um 7% reduzieren kann.</p>
+<p class="text-gray-700 mb-6">Die Ladezeit einer Website ist direkt mit Conversion-Raten, Nutzerzufriedenheit und SEO-Rankings verbunden. Studien zeigen, dass schon eine Verzögerung von einer Sekunde die Conversion-Rate um 7% reduzieren kann.</p>
 
-    <div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-6 rounded-r">
-      <strong class="block font-semibold text-blue-800">Wichtige Kennzahlen:</strong>
-      <ul class="text-blue-700 mt-1 space-y-1">
-        <li>• <strong>Largest Contentful Paint (LCP):</strong> Sollte unter 2.5 Sekunden liegen</li>
-        <li>• <strong>First Input Delay (FID):</strong> Sollte unter 100ms liegen</li>
-        <li>• <strong>Cumulative Layout Shift (CLS):</strong> Sollte unter 0.1 liegen</li>
-      </ul>
-    </div>
+<div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-6 rounded-r">
+  <p class="font-semibold text-blue-800 mb-2">Wichtige Kennzahlen:</p>
+  <ul class="text-blue-700 space-y-1">
+    <li>• <span class="font-medium">Largest Contentful Paint (LCP):</span> Sollte unter 2.5 Sekunden liegen</li>
+    <li>• <span class="font-medium">First Input Delay (FID):</span> Sollte unter 100ms liegen</li>
+    <li>• <span class="font-medium">Cumulative Layout Shift (CLS):</span> Sollte unter 0.1 liegen</li>
+  </ul>
+</div>
 
-    <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">1. Asset-Optimierung</h3>
-    <p class="text-gray-700 mb-4">Die größten Performance-Gewinne erzielen Sie durch Optimierung Ihrer Assets:</p>
-    
-    <h4 class="font-bold text-gray-800 mt-6 mb-3">Bildoptimierung</h4>
-    <div class="grid md:grid-cols-2 gap-6 my-6">
-      <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
-        <h5 class="font-bold text-blue-600 mb-3">Moderne Formate</h5>
-        <ul class="space-y-2 text-gray-700">
-          <li>• <strong>WebP:</strong> 30% kleiner als JPEG bei gleicher Qualität</li>
-          <li>• <strong>AVIF:</strong> Noch bessere Kompression für unterstützte Browser</li>
-          <li>• <strong>SVG:</strong> Für Vektorgrafiken und Icons</li>
-        </ul>
-      </div>
-      <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
-        <h5 class="font-bold text-blue-600 mb-3">Optimierungstechniken</h5>
-        <ul class="space-y-2 text-gray-700">
-          <li>• <strong>Responsive Bilder:</strong> srcset und sizes Attribute</li>
-          <li>• <strong>Lazy Loading:</strong> loading="lazy" für unterhalb des Folds</li>
-          <li>• <strong>Komprimierung:</strong> Tools wie Squoosh oder ImageOptim</li>
-        </ul>
-      </div>
-    </div>
+<h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">1. Asset-Optimierung</h3>
+<p class="text-gray-700 mb-4">Die größten Performance-Gewinne erzielen Sie durch Optimierung Ihrer Assets:</p>
 
-    <h4 class="font-bold text-gray-800 mt-6 mb-3">JavaScript & CSS</h4>
-    <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
-      <li><strong>Code-Splitting:</strong> Nur notwendigen Code laden</li>
-      <li><strong>Minifizierung:</strong> Tools wie Terser oder CSSNano</li>
-      <li><strong>Tree Shaking:</strong> Unbenutzten Code entfernen</li>
-      <li><strong>Critical CSS:</strong> Above-the-fold CSS inline einbinden</li>
+<h4 class="font-bold text-gray-800 mt-6 mb-3">Bildoptimierung</h4>
+<div class="grid md:grid-cols-2 gap-6 my-6">
+  <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
+    <h5 class="font-bold text-blue-600 mb-3">Moderne Formate</h5>
+    <ul class="space-y-2 text-gray-700">
+      <li>• <span class="font-medium">WebP:</span> 30% kleiner als JPEG bei gleicher Qualität</li>
+      <li>• <span class="font-medium">AVIF:</span> Noch bessere Kompression für unterstützte Browser</li>
+      <li>• <span class="font-medium">SVG:</span> Für Vektorgrafiken und Icons</li>
     </ul>
-
-    <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">2. Server-Optimierung</h3>
-    <p class="text-gray-700 mb-4">Die Server-Konfiguration hat großen Einfluss auf die Performance:</p>
-
-    <div class="overflow-x-auto">
-      <table class="min-w-full bg-white rounded-lg overflow-hidden mb-6">
-        <thead class="bg-gray-100">
-          <tr>
-            <th class="py-3 px-4 text-left font-semibold text-gray-700">Technologie</th>
-            <th class="py-3 px-4 text-left font-semibold text-gray-700">Wirkung</th>
-            <th class="py-3 px-4 text-left font-semibold text-gray-700">Implementierung</th>
-          </tr>
-        </thead>
-        <tbody class="divide-y divide-gray-200">
-          <tr>
-            <td class="py-3 px-4 text-gray-700 font-medium">HTTP/2</td>
-            <td class="py-3 px-4 text-gray-700">Multiplexing von Requests</td>
-            <td class="py-3 px-4 text-gray-700">Server-Konfiguration</td>
-          </tr>
-          <tr>
-            <td class="py-3 px-4 text-gray-700 font-medium">Brotli-Kompression</td>
-            <td class="py-3 px-4 text-gray-700">Bessere Kompression als Gzip</td>
-            <td class="py-3 px-4 text-gray-700">.htaccess oder Server Config</td>
-          </tr>
-          <tr>
-            <td class="py-3 px-4 text-gray-700 font-medium">Edge Caching</td>
-            <td class="py-3 px-4 text-gray-700">Reduziert Server-Last</td>
-            <td class="py-3 px-4 text-gray-700">CDN wie Cloudflare</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">3. Caching-Strategien</h3>
-    <p class="text-gray-700 mb-4">Durch effektives Caching können Sie wiederkehrende Besucher deutlich schneller bedienen:</p>
-
-    <div class="bg-green-50 border-l-4 border-green-500 p-4 my-6 rounded-r">
-      <strong class="block font-semibold text-green-800">Best Practice:</strong>
-      <p class="text-green-700 mt-1">Setzen Sie Cache-Control Header mit max-age von mindestens 1 Jahr für statische Assets (CSS, JS, Bilder) und implementieren Sie Versionierung im Dateinamen.</p>
-    </div>
-
-    <div class="grid md:grid-cols-2 gap-6 my-8">
-      <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
-        <h4 class="font-bold text-blue-600 mb-3">Client-seitiges Caching</h4>
-        <ul class="space-y-2 text-gray-700">
-          <li>• Browser-Caching via HTTP-Header</li>
-          <li>• Service Worker für Offline-Funktionalität</li>
-          <li>• localStorage für kleine Datenmengen</li>
-        </ul>
-      </div>
-      <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
-        <h4 class="font-bold text-blue-600 mb-3">Server-seitiges Caching</h4>
-        <ul class="space-y-2 text-gray-700">
-          <li>• CDN-Caching für statische Inhalte</li>
-          <li>• Redis/Memcached für dynamische Inhalte</li>
-          <li>• Full-Page-Caching wo möglich</li>
-        </ul>
-      </div>
-    </div>
-
-    <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">4. Monitoring und Tools</h3>
-    <p class="text-gray-700 mb-4">Regelmäßige Überwachung ist essenziell für dauerhaft gute Performance:</p>
-
-    <div class="bg-purple-50 border-l-4 border-purple-500 p-4 my-6 rounded-r">
-      <strong class="block font-semibold text-purple-800">Tipp:</strong>
-      <p class="text-purple-700 mt-1">Richten Sie Performance-Budgets ein und integrieren Sie Performance-Checks in Ihren CI/CD-Prozess.</p>
-    </div>
-
-    <h4 class="font-bold text-gray-800 mt-6 mb-3">Wichtige Tools</h4>
-    <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
-      <li><strong>Lighthouse:</strong> Umfassende Audits direkt in Chrome DevTools</li>
-      <li><strong>WebPageTest:</strong> Detaillierte Tests von verschiedenen Standorten</li>
-      <li><strong>Chrome User Experience Report:</strong> Reale Nutzerdaten</li>
-      <li><strong>New Relic/Datadog:</strong> Echtzeit-Monitoring</li>
+  </div>
+  <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
+    <h5 class="font-bold text-blue-600 mb-3">Optimierungstechniken</h5>
+    <ul class="space-y-2 text-gray-700">
+      <li>• <span class="font-medium">Responsive Bilder:</span> srcset und sizes Attribute</li>
+      <li>• <span class="font-medium">Lazy Loading:</span> loading="lazy" für unterhalb des Folds</li>
+      <li>• <span class="font-medium">Komprimierung:</span> Tools wie Squoosh oder ImageOptim</li>
     </ul>
+  </div>
+</div>
 
-    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-6">Zukunft der Web-Performance</h2>
-    <p class="text-gray-700 mb-6">Neue Technologien versprechen weitere Verbesserungen:</p>
-    <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
-      <li><strong>HTTP/3:</strong> Schnellere Verbindungsaufnahme mit QUIC</li>
-      <li><strong>ES Modules:</strong> Native Browser-Module für bessere Caching</li>
-      <li><strong>Partytown:</strong> Auslagern von Third-Party-Skripts in Web Worker</li>
-      <li><strong>Islands Architecture:</strong> Teil-Hydration für bessere Interaktivität</li>
+<h4 class="font-bold text-gray-800 mt-6 mb-3">JavaScript & CSS</h4>
+<ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
+  <li><span class="font-medium">Code-Splitting:</span> Nur notwendigen Code laden</li>
+  <li><span class="font-medium">Minifizierung:</span> Tools wie Terser oder CSSNano</li>
+  <li><span class="font-medium">Tree Shaking:</span> Unbenutzten Code entfernen</li>
+  <li><span class="font-medium">Critical CSS:</span> Above-the-fold CSS inline einbinden</li>
+</ul>
+
+<h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">2. Server-Optimierung</h3>
+<p class="text-gray-700 mb-4">Die Server-Konfiguration hat großen Einfluss auf die Performance:</p>
+
+<div class="overflow-x-auto">
+  <table class="min-w-full bg-white rounded-lg overflow-hidden mb-6">
+    <thead class="bg-gray-100">
+      <tr>
+        <th class="py-3 px-4 text-left font-semibold text-gray-700">Technologie</th>
+        <th class="py-3 px-4 text-left font-semibold text-gray-700">Wirkung</th>
+        <th class="py-3 px-4 text-left font-semibold text-gray-700">Implementierung</th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-gray-200">
+      <tr>
+        <td class="py-3 px-4 text-gray-700 font-medium">HTTP/2</td>
+        <td class="py-3 px-4 text-gray-700">Multiplexing von Requests</td>
+        <td class="py-3 px-4 text-gray-700">Server-Konfiguration</td>
+      </tr>
+      <tr>
+        <td class="py-3 px-4 text-gray-700 font-medium">Brotli-Kompression</td>
+        <td class="py-3 px-4 text-gray-700">Bessere Kompression als Gzip</td>
+        <td class="py-3 px-4 text-gray-700">.htaccess oder Server Config</td>
+      </tr>
+      <tr>
+        <td class="py-3 px-4 text-gray-700 font-medium">Edge Caching</td>
+        <td class="py-3 px-4 text-gray-700">Reduziert Server-Last</td>
+        <td class="py-3 px-4 text-gray-700">CDN wie Cloudflare</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">3. Caching-Strategien</h3>
+<p class="text-gray-700 mb-4">Durch effektives Caching können Sie wiederkehrende Besucher deutlich schneller bedienen:</p>
+
+<div class="bg-green-50 border-l-4 border-green-500 p-4 my-6 rounded-r">
+  <p class="font-semibold text-green-800 mb-1">Best Practice:</p>
+  <p class="text-green-700">Setzen Sie Cache-Control Header mit max-age von mindestens 1 Jahr für statische Assets (CSS, JS, Bilder) und implementieren Sie Versionierung im Dateinamen.</p>
+</div>
+
+<div class="grid md:grid-cols-2 gap-6 my-8">
+  <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
+    <h4 class="font-bold text-blue-600 mb-3">Client-seitiges Caching</h4>
+    <ul class="space-y-2 text-gray-700">
+      <li>• Browser-Caching via HTTP-Header</li>
+      <li>• Service Worker für Offline-Funktionalität</li>
+      <li>• localStorage für kleine Datenmengen</li>
     </ul>
+  </div>
+  <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
+    <h4 class="font-bold text-blue-600 mb-3">Server-seitiges Caching</h4>
+    <ul class="space-y-2 text-gray-700">
+      <li>• CDN-Caching für statische Inhalte</li>
+      <li>• Redis/Memcached für dynamische Inhalte</li>
+      <li>• Full-Page-Caching wo möglich</li>
+    </ul>
+  </div>
+</div>
+
+<h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">4. Monitoring und Tools</h3>
+<p class="text-gray-700 mb-4">Regelmäßige Überwachung ist essenziell für dauerhaft gute Performance:</p>
+
+<div class="bg-purple-50 border-l-4 border-purple-500 p-4 my-6 rounded-r">
+  <p class="font-semibold text-purple-800 mb-1">Tipp:</p>
+  <p class="text-purple-700">Richten Sie Performance-Budgets ein und integrieren Sie Performance-Checks in Ihren CI/CD-Prozess.</p>
+</div>
+
+<h4 class="font-bold text-gray-800 mt-6 mb-3">Wichtige Tools</h4>
+<ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
+  <li><span class="font-medium">Lighthouse:</span> Umfassende Audits direkt in Chrome DevTools</li>
+  <li><span class="font-medium">WebPageTest:</span> Detaillierte Tests von verschiedenen Standorten</li>
+  <li><span class="font-medium">Chrome User Experience Report:</span> Reale Nutzerdaten</li>
+  <li><span class="font-medium">New Relic/Datadog:</span> Echtzeit-Monitoring</li>
+</ul>
+
+<h2 class="text-2xl font-bold text-gray-900 mt-12 mb-6">Zukunft der Web-Performance</h2>
+<p class="text-gray-700 mb-6">Neue Technologien versprechen weitere Verbesserungen:</p>
+<ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
+  <li><span class="font-medium">HTTP/3:</span> Schnellere Verbindungsaufnahme mit QUIC</li>
+  <li><span class="font-medium">ES Modules:</span> Native Browser-Module für bessere Caching</li>
+  <li><span class="font-medium">Partytown:</span> Auslagern von Third-Party-Skripts in Web Worker</li>
+  <li><span class="font-medium">Islands Architecture:</span> Teil-Hydration für bessere Interaktivität</li>
+</ul>
   `
 };
 

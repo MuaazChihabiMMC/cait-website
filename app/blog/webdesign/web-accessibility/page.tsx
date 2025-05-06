@@ -22,158 +22,158 @@ const post = {
   },
   content: `
     <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">Warum Barrierefreiheit im Web essenziell ist</h2>
-    <p class="text-gray-700 mb-6">Barrierefreies Webdesign ermöglicht etwa 20% der Bevölkerung mit Behinderungen den gleichberechtigten Zugang zu digitalen Inhalten. Neben der gesetzlichen Verpflichtung (z.B. BITV in Deutschland) bietet es auch wirtschaftliche Vorteile durch eine größere Zielgruppe.</p>
+<p class="text-gray-700 mb-6">Barrierefreies Webdesign ermöglicht etwa 20% der Bevölkerung mit Behinderungen den gleichberechtigten Zugang zu digitalen Inhalten. Neben der gesetzlichen Verpflichtung (z.B. BITV in Deutschland) bietet es auch wirtschaftliche Vorteile durch eine größere Zielgruppe.</p>
 
-    <div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-6 rounded-r">
-      <strong class="block font-semibold text-blue-800">Statistik:</strong>
-      <p class="text-blue-700 mt-1">Laut WHO leben weltweit über 1 Milliarde Menschen mit einer Form von Behinderung - das sind 15% der Weltbevölkerung.</p>
-    </div>
+<div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-6 rounded-r">
+  <p class="font-semibold text-blue-800 mb-1">Statistik:</p>
+  <p class="text-blue-700">Laut WHO leben weltweit über 1 Milliarde Menschen mit einer Form von Behinderung - das sind 15% der Weltbevölkerung.</p>
+</div>
 
-    <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">1. WCAG-Richtlinien verstehen</h3>
-    <p class="text-gray-700 mb-4">Die Web Content Accessibility Guidelines (WCAG) 2.1 sind der internationale Standard:</p>
-    
-    <div class="overflow-x-auto">
-      <table class="min-w-full bg-white rounded-lg overflow-hidden mb-6">
-        <thead class="bg-gray-100">
-          <tr>
-            <th class="py-3 px-4 text-left font-semibold text-gray-700">Prinzip</th>
-            <th class="py-3 px-4 text-left font-semibold text-gray-700">Beschreibung</th>
-            <th class="py-3 px-4 text-left font-semibold text-gray-700">Beispiele</th>
-          </tr>
-        </thead>
-        <tbody class="divide-y divide-gray-200">
-          <tr>
-            <td class="py-3 px-4 text-gray-700 font-medium">Wahrnehmbar</td>
-            <td class="py-3 px-4 text-gray-700">Informationen müssen präsentierbar sein</td>
-            <td class="py-3 px-4 text-gray-700">Alt-Texte, Kontrastverhältnis</td>
-          </tr>
-          <tr>
-            <td class="py-3 px-4 text-gray-700 font-medium">Bedienbar</td>
-            <td class="py-3 px-4 text-gray-700">Navigation muss funktionieren</td>
-            <td class="py-3 px-4 text-gray-700">Tastaturbedienbarkeit</td>
-          </tr>
-          <tr>
-            <td class="py-3 px-4 text-gray-700 font-medium">Verständlich</td>
-            <td class="py-3 px-4 text-gray-700">Inhalte müssen nachvollziehbar sein</td>
-            <td class="py-3 px-4 text-gray-700">Klare Sprache</td>
-          </tr>
-          <tr>
-            <td class="py-3 px-4 text-gray-700 font-medium">Robust</td>
-            <td class="py-3 px-4 text-gray-700">Kompatibilität mit Hilfstechnologien</td>
-            <td class="py-3 px-4 text-gray-700">Semantisches HTML</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+<h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">1. WCAG-Richtlinien verstehen</h3>
+<p class="text-gray-700 mb-4">Die Web Content Accessibility Guidelines (WCAG) 2.1 sind der internationale Standard:</p>
 
-    <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">2. Praktische Umsetzung</h3>
-    <p class="text-gray-700 mb-4">So setzen Sie Barrierefreiheit technisch um:</p>
+<div class="overflow-x-auto">
+  <table class="min-w-full bg-white rounded-lg overflow-hidden mb-6">
+    <thead class="bg-gray-100">
+      <tr>
+        <th class="py-3 px-4 text-left font-semibold text-gray-700">Prinzip</th>
+        <th class="py-3 px-4 text-left font-semibold text-gray-700">Beschreibung</th>
+        <th class="py-3 px-4 text-left font-semibold text-gray-700">Beispiele</th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-gray-200">
+      <tr>
+        <td class="py-3 px-4 text-gray-700 font-medium">Wahrnehmbar</td>
+        <td class="py-3 px-4 text-gray-700">Informationen müssen präsentierbar sein</td>
+        <td class="py-3 px-4 text-gray-700">Alt-Texte, Kontrastverhältnis</td>
+      </tr>
+      <tr>
+        <td class="py-3 px-4 text-gray-700 font-medium">Bedienbar</td>
+        <td class="py-3 px-4 text-gray-700">Navigation muss funktionieren</td>
+        <td class="py-3 px-4 text-gray-700">Tastaturbedienbarkeit</td>
+      </tr>
+      <tr>
+        <td class="py-3 px-4 text-gray-700 font-medium">Verständlich</td>
+        <td class="py-3 px-4 text-gray-700">Inhalte müssen nachvollziehbar sein</td>
+        <td class="py-3 px-4 text-gray-700">Klare Sprache</td>
+      </tr>
+      <tr>
+        <td class="py-3 px-4 text-gray-700 font-medium">Robust</td>
+        <td class="py-3 px-4 text-gray-700">Kompatibilität mit Hilfstechnologien</td>
+        <td class="py-3 px-4 text-gray-700">Semantisches HTML</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
-    <div class="grid md:grid-cols-2 gap-6 my-8">
-      <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
-        <h4 class="font-bold text-blue-600 mb-3">Semantisches HTML</h4>
-        <ul class="space-y-2 text-gray-700">
-          <li>• Korrekte Heading-Hierarchie (h1-h6)</li>
-          <li>• ARIA-Labels für komplexe Komponenten</li>
-          <li>• Landmark-Rollen (header, main, nav, footer)</li>
-          <li>• Formularlabels mit for-Attribut</li>
-        </ul>
-      </div>
-      <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
-        <h4 class="font-bold text-blue-600 mb-3">Design & Interaktion</h4>
-        <ul class="space-y-2 text-gray-700">
-          <li>• Kontrastverhältnis mindestens 4.5:1</li>
-          <li>• Fokus-Indikatoren für Tastaturnavigation</li>
-          <li>• Keine reine Farbkodierung von Informationen</li>
-          <li>• Ausreichend große Klickflächen</li>
-        </ul>
-      </div>
-    </div>
+<h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">2. Praktische Umsetzung</h3>
+<p class="text-gray-700 mb-4">So setzen Sie Barrierefreiheit technisch um:</p>
 
-    <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">3. Barrierefreie Medien</h3>
-    <p class="text-gray-700 mb-4">Multimedia-Inhalte für alle zugänglich machen:</p>
-
-    <div class="bg-green-50 border-l-4 border-green-500 p-4 my-6 rounded-r">
-      <strong class="block font-semibold text-green-800">Best Practice:</strong>
-      <p class="text-green-700 mt-1">Bieten Sie für Videos Untertitel, Transkripte und Audiodeskription an. Für Bilder verwenden Sie aussagekräftige Alt-Texte.</p>
-    </div>
-
-    <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
-      <li><strong>Bilder:</strong> Alt-Texte für informative Bilder, leere Alt-Attribute für dekorative</li>
-      <li><strong>Videos:</strong> Untertitel für Dialoge und wichtige Geräusche</li>
-      <li><strong>Audio:</strong> Transkripte für Podcasts und Audio-Inhalte</li>
-      <li><strong>Infografiken:</strong> Textalternative oder detaillierte Beschreibung</li>
+<div class="grid md:grid-cols-2 gap-6 my-8">
+  <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
+    <h4 class="font-bold text-blue-600 mb-3">Semantisches HTML</h4>
+    <ul class="space-y-2 text-gray-700">
+      <li>• Korrekte Heading-Hierarchie (h1-h6)</li>
+      <li>• ARIA-Labels für komplexe Komponenten</li>
+      <li>• Landmark-Rollen (header, main, nav, footer)</li>
+      <li>• Formularlabels mit for-Attribut</li>
     </ul>
-
-    <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">4. Testing & Validierung</h3>
-    <p class="text-gray-700 mb-4">So testen Sie die Barrierefreiheit Ihrer Website:</p>
-
-    <div class="grid md:grid-cols-2 gap-6 my-8">
-      <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
-        <h4 class="font-bold text-blue-600 mb-3">Automatisierte Tools</h4>
-        <ul class="space-y-2 text-gray-700">
-          <li>• WAVE Evaluation Tool</li>
-          <li>• axe DevTools Browser Extension</li>
-          <li>• Lighthouse Accessibility Audit</li>
-          <li>• Pa11y für automatisierte Tests</li>
-        </ul>
-      </div>
-      <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
-        <h4 class="font-bold text-blue-600 mb-3">Manuelle Tests</h4>
-        <ul class="space-y-2 text-gray-700">
-          <li>• Tastaturnavigation ohne Maus</li>
-          <li>• Screenreader-Tests (NVDA, VoiceOver)</li>
-          <li>• Zoom auf 200% testen</li>
-          <li>• Farbkontrast-Checker</li>
-        </ul>
-      </div>
-    </div>
-
-    <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">5. Häufige Barrieren & Lösungen</h3>
-    <p class="text-gray-700 mb-4">Typische Probleme und wie Sie sie beheben:</p>
-
-    <div class="overflow-x-auto">
-      <table class="min-w-full bg-white rounded-lg overflow-hidden mb-6">
-        <thead class="bg-gray-100">
-          <tr>
-            <th class="py-3 px-4 text-left font-semibold text-gray-700">Problem</th>
-            <th class="py-3 px-4 text-left font-semibold text-gray-700">Betroffene Gruppe</th>
-            <th class="py-3 px-4 text-left font-semibold text-gray-700">Lösung</th>
-          </tr>
-        </thead>
-        <tbody class="divide-y divide-gray-200">
-          <tr>
-            <td class="py-3 px-4 text-gray-700 font-medium">Fehlende Alt-Texte</td>
-            <td class="py-3 px-4 text-gray-700">Sehbehinderte</td>
-            <td class="py-3 px-4 text-gray-700">Beschreibende Alt-Attribute</td>
-          </tr>
-          <tr>
-            <td class="py-3 px-4 text-gray-700 font-medium">Schlechter Kontrast</td>
-            <td class="py-3 px-4 text-gray-700">Farbenblinde</td>
-            <td class="py-3 px-4 text-gray-700">Mindestens 4.5:1 Kontrast</td>
-          </tr>
-          <tr>
-            <td class="py-3 px-4 text-gray-700 font-medium">Keine Tastaturbedienbarkeit</td>
-            <td class="py-3 px-4 text-gray-700">Mobilitätseingeschränkte</td>
-            <td class="py-3 px-4 text-gray-700">Tab-Reihenfolge, Fokus-States</td>
-          </tr>
-          <tr>
-            <td class="py-3 px-4 text-gray-700 font-medium">Komplexe Sprache</td>
-            <td class="py-3 px-4 text-gray-700">Kognitiv Eingeschränkte</td>
-            <td class="py-3 px-4 text-gray-700">Einfache Sprache, klare Struktur</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-6">Zukunft der Barrierefreiheit</h2>
-    <p class="text-gray-700 mb-6">Neue Entwicklungen im Bereich inklusives Design:</p>
-    <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
-      <li><strong>AI-gestützte Accessibility:</strong> Automatische Alt-Texte für Bilder</li>
-      <li><strong>Adaptive Interfaces:</strong> Dynamische Anpassung an Nutzerbedürfnisse</li>
-      <li><strong>Voice User Interfaces:</strong> Sprachsteuerung als Standard</li>
-      <li><strong>WCAG 3.0:</strong> Geplante Erweiterungen der Richtlinien</li>
+  </div>
+  <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
+    <h4 class="font-bold text-blue-600 mb-3">Design & Interaktion</h4>
+    <ul class="space-y-2 text-gray-700">
+      <li>• Kontrastverhältnis mindestens 4.5:1</li>
+      <li>• Fokus-Indikatoren für Tastaturnavigation</li>
+      <li>• Keine reine Farbkodierung von Informationen</li>
+      <li>• Ausreichend große Klickflächen</li>
     </ul>
+  </div>
+</div>
+
+<h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">3. Barrierefreie Medien</h3>
+<p class="text-gray-700 mb-4">Multimedia-Inhalte für alle zugänglich machen:</p>
+
+<div class="bg-green-50 border-l-4 border-green-500 p-4 my-6 rounded-r">
+  <p class="font-semibold text-green-800 mb-1">Best Practice:</p>
+  <p class="text-green-700">Bieten Sie für Videos Untertitel, Transkripte und Audiodeskription an. Für Bilder verwenden Sie aussagekräftige Alt-Texte.</p>
+</div>
+
+<ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
+  <li><span class="font-medium">Bilder:</span> Alt-Texte für informative Bilder, leere Alt-Attribute für dekorative</li>
+  <li><span class="font-medium">Videos:</span> Untertitel für Dialoge und wichtige Geräusche</li>
+  <li><span class="font-medium">Audio:</span> Transkripte für Podcasts und Audio-Inhalte</li>
+  <li><span class="font-medium">Infografiken:</span> Textalternative oder detaillierte Beschreibung</li>
+</ul>
+
+<h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">4. Testing & Validierung</h3>
+<p class="text-gray-700 mb-4">So testen Sie die Barrierefreiheit Ihrer Website:</p>
+
+<div class="grid md:grid-cols-2 gap-6 my-8">
+  <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
+    <h4 class="font-bold text-blue-600 mb-3">Automatisierte Tools</h4>
+    <ul class="space-y-2 text-gray-700">
+      <li>• WAVE Evaluation Tool</li>
+      <li>• axe DevTools Browser Extension</li>
+      <li>• Lighthouse Accessibility Audit</li>
+      <li>• Pa11y für automatisierte Tests</li>
+    </ul>
+  </div>
+  <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
+    <h4 class="font-bold text-blue-600 mb-3">Manuelle Tests</h4>
+    <ul class="space-y-2 text-gray-700">
+      <li>• Tastaturnavigation ohne Maus</li>
+      <li>• Screenreader-Tests (NVDA, VoiceOver)</li>
+      <li>• Zoom auf 200% testen</li>
+      <li>• Farbkontrast-Checker</li>
+    </ul>
+  </div>
+</div>
+
+<h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">5. Häufige Barrieren & Lösungen</h3>
+<p class="text-gray-700 mb-4">Typische Probleme und wie Sie sie beheben:</p>
+
+<div class="overflow-x-auto">
+  <table class="min-w-full bg-white rounded-lg overflow-hidden mb-6">
+    <thead class="bg-gray-100">
+      <tr>
+        <th class="py-3 px-4 text-left font-semibold text-gray-700">Problem</th>
+        <th class="py-3 px-4 text-left font-semibold text-gray-700">Betroffene Gruppe</th>
+        <th class="py-3 px-4 text-left font-semibold text-gray-700">Lösung</th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-gray-200">
+      <tr>
+        <td class="py-3 px-4 text-gray-700 font-medium">Fehlende Alt-Texte</td>
+        <td class="py-3 px-4 text-gray-700">Sehbehinderte</td>
+        <td class="py-3 px-4 text-gray-700">Beschreibende Alt-Attribute</td>
+      </tr>
+      <tr>
+        <td class="py-3 px-4 text-gray-700 font-medium">Schlechter Kontrast</td>
+        <td class="py-3 px-4 text-gray-700">Farbenblinde</td>
+        <td class="py-3 px-4 text-gray-700">Mindestens 4.5:1 Kontrast</td>
+      </tr>
+      <tr>
+        <td class="py-3 px-4 text-gray-700 font-medium">Keine Tastaturbedienbarkeit</td>
+        <td class="py-3 px-4 text-gray-700">Mobilitätseingeschränkte</td>
+        <td class="py-3 px-4 text-gray-700">Tab-Reihenfolge, Fokus-States</td>
+      </tr>
+      <tr>
+        <td class="py-3 px-4 text-gray-700 font-medium">Komplexe Sprache</td>
+        <td class="py-3 px-4 text-gray-700">Kognitiv Eingeschränkte</td>
+        <td class="py-3 px-4 text-gray-700">Einfache Sprache, klare Struktur</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h2 class="text-2xl font-bold text-gray-900 mt-12 mb-6">Zukunft der Barrierefreiheit</h2>
+<p class="text-gray-700 mb-6">Neue Entwicklungen im Bereich inklusives Design:</p>
+<ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
+  <li><span class="font-medium">AI-gestützte Accessibility:</span> Automatische Alt-Texte für Bilder</li>
+  <li><span class="font-medium">Adaptive Interfaces:</span> Dynamische Anpassung an Nutzerbedürfnisse</li>
+  <li><span class="font-medium">Voice User Interfaces:</span> Sprachsteuerung als Standard</li>
+  <li><span class="font-medium">WCAG 3.0:</span> Geplante Erweiterungen der Richtlinien</li>
+</ul>
   `
 };
 

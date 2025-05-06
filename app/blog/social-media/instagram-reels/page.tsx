@@ -8,92 +8,92 @@ const instagramPost = {
     metaDescription: 'Bewährte Methoden für organische Reichweite auf Instagram - Algorithmus verstehen, Reels optimieren und Engagement steigern',
     content: `
       <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">Instagram Marketing im Jahr 2024</h2>
-      <p class="text-gray-700 mb-6">Mit über 2 Milliarden monatlich aktiven Nutzern bleibt Instagram eine der wichtigsten Plattformen für Marken. Doch der Algorithmus hat sich verändert - wir zeigen Ihnen, wie Sie organische Reichweite erzielen.</p>
+<p class="text-gray-700 mb-6">Mit über 2 Milliarden monatlich aktiven Nutzern bleibt Instagram eine der wichtigsten Plattformen für Marken. Doch der Algorithmus hat sich verändert - wir zeigen Ihnen, wie Sie organische Reichweite erzielen.</p>
 
-      <div class="bg-gradient-to-r from-purple-50 to-pink-50 border-l-4 border-purple-500 p-4 my-6 rounded-r">
-        <strong class="block font-semibold text-purple-800">Statistik:</strong>
-        <p class="text-purple-700 mt-1">Instagram Reels erhalten 40% mehr Reichweite als normale Posts.</p>
-      </div>
+<div class="bg-gradient-to-r from-purple-50 to-pink-50 border-l-4 border-purple-500 p-4 my-6 rounded-r">
+  <p class="font-semibold text-purple-800 mb-1">Statistik:</p>
+  <p class="text-purple-700">Instagram Reels erhalten 40% mehr Reichweite als normale Posts.</p>
+</div>
 
-      <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">1. Den Instagram-Algorithmus verstehen</h3>
-      <p class="text-gray-700 mb-4">So funktioniert die Content-Verteilung 2024:</p>
-      <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
-        <li><strong>Engagement:</strong> Likes, Kommentare, Shares und Saves</li>
-        <li><strong>Watch Time:</strong> Wie lange Nutzer Ihre Videos anschauen</li>
-        <li><strong>Beziehungen:</strong> Interaktion mit Followern</li>
-        <li><strong>Timeliness:</strong> Aktualität der Inhalte</li>
-      </ul>
+<h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">1. Den Instagram-Algorithmus verstehen</h3>
+<p class="text-gray-700 mb-4">So funktioniert die Content-Verteilung 2024:</p>
+<ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
+  <li><span class="font-medium">Engagement:</span> Likes, Kommentare, Shares und Saves</li>
+  <li><span class="font-medium">Watch Time:</span> Wie lange Nutzer Ihre Videos anschauen</li>
+  <li><span class="font-medium">Beziehungen:</span> Interaktion mit Followern</li>
+  <li><span class="font-medium">Timeliness:</span> Aktualität der Inhalte</li>
+</ul>
 
-      <div class="grid md:grid-cols-2 gap-6 my-8">
-        <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
-          <h4 class="font-bold text-purple-600 mb-3">Optimale Posting-Zeiten</h4>
-          <ul class="space-y-2 text-gray-700">
-            <li>• 9-11 Uhr Wochentage</li>
-            <li>• 19-21 Uhr Abends</li>
-            <li>• 11-13 Uhr Sonntage</li>
-          </ul>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
-          <h4 class="font-bold text-purple-600 mb-3">Content-Mix Empfehlung</h4>
-          <ul class="space-y-2 text-gray-700">
-            <li>• 50% Reels</li>
-            <li>• 30% Stories</li>
-            <li>• 20% Feed-Posts</li>
-          </ul>
-        </div>
-      </div>
+<div class="grid md:grid-cols-2 gap-6 my-8">
+  <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
+    <h4 class="font-bold text-purple-600 mb-3">Optimale Posting-Zeiten</h4>
+    <ul class="space-y-2 text-gray-700">
+      <li>• 9-11 Uhr Wochentage</li>
+      <li>• 19-21 Uhr Abends</li>
+      <li>• 11-13 Uhr Sonntage</li>
+    </ul>
+  </div>
+  <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
+    <h4 class="font-bold text-purple-600 mb-3">Content-Mix Empfehlung</h4>
+    <ul class="space-y-2 text-gray-700">
+      <li>• 50% Reels</li>
+      <li>• 30% Stories</li>
+      <li>• 20% Feed-Posts</li>
+    </ul>
+  </div>
+</div>
 
-      <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">2. Reels-Strategien die funktionieren</h3>
-      <p class="text-gray-700 mb-4">So erstellen Sie virale Instagram Reels:</p>
-      
-      <div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-6 rounded-r">
-        <strong class="block font-semibold text-blue-800">Profi-Tipp:</strong>
-        <p class="text-blue-700 mt-1">Die ersten 3 Sekunden entscheiden über 70% des Erfolgs - starten Sie mit einer starken Hook!</p>
-      </div>
+<h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">2. Reels-Strategien die funktionieren</h3>
+<p class="text-gray-700 mb-4">So erstellen Sie virale Instagram Reels:</p>
 
-      <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
-        <li><strong>Trending Audio:</strong> Nutzen Sie aktuelle Sounds</li>
-        <li><strong>Text-Overlays:</strong> Für stummes Zuschauen</li>
-        <li><strong>Captions:</strong> Fügen Sie Untertitel hinzu</li>
-        <li><strong>CTA:</strong> Klare Handlungsaufforderung</li>
-      </ul>
+<div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-6 rounded-r">
+  <p class="font-semibold text-blue-800 mb-1">Profi-Tipp:</p>
+  <p class="text-blue-700">Die ersten 3 Sekunden entscheiden über 70% des Erfolgs - starten Sie mit einer starken Hook!</p>
+</div>
 
-      <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">3. Instagram Stories für Engagement</h3>
-      <p class="text-gray-700 mb-4">Stories haben eine 15-25% höhere Interaktionsrate:</p>
+<ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
+  <li><span class="font-medium">Trending Audio:</span> Nutzen Sie aktuelle Sounds</li>
+  <li><span class="font-medium">Text-Overlays:</span> Für stummes Zuschauen</li>
+  <li><span class="font-medium">Captions:</span> Fügen Sie Untertitel hinzu</li>
+  <li><span class="font-medium">CTA:</span> Klare Handlungsaufforderung</li>
+</ul>
 
-      <div class="grid md:grid-cols-3 gap-4 my-6">
-        <div class="bg-white p-4 rounded-lg shadow border border-gray-200 text-center">
-          <div class="text-purple-500 mb-2 text-2xl">📊</div>
-          <h4 class="font-bold text-purple-600 mb-2">Umfragen</h4>
-          <p class="text-gray-700 text-sm">Steigern Interaktion</p>
-        </div>
-        <div class="bg-white p-4 rounded-lg shadow border border-gray-200 text-center">
-          <div class="text-purple-500 mb-2 text-2xl">🔄</div>
-          <h4 class="font-bold text-purple-600 mb-2">Swipe-Up</h4>
-          <p class="text-gray-700 text-sm">Für Link-Klicks</p>
-        </div>
-        <div class="bg-white p-4 rounded-lg shadow border border-gray-200 text-center">
-          <div class="text-purple-500 mb-2 text-2xl">💬</div>
-          <h4 class="font-bold text-purple-600 mb-2">Fragen</h4>
-          <p class="text-gray-700 text-sm">Generieren DMs</p>
-        </div>
-      </div>
+<h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">3. Instagram Stories für Engagement</h3>
+<p class="text-gray-700 mb-4">Stories haben eine 15-25% höhere Interaktionsrate:</p>
 
-      <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">4. Hashtag-Strategie</h3>
-      <p class="text-gray-700 mb-4">Die perfekte Hashtag-Kombination:</p>
-      <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
-        <li>3-5 große Hashtags (500k+ Posts)</li>
-        <li>5-7 mittlere Hashtags (50k-500k Posts)</li>
-        <li>3-5 Nischen-Hashtags (<50k Posts)</li>
-        <li>1-2 Branded Hashtags</li>
-      </ul>
+<div class="grid md:grid-cols-3 gap-4 my-6">
+  <div class="bg-white p-4 rounded-lg shadow border border-gray-200 text-center">
+    <div class="text-purple-500 mb-2 text-2xl">📊</div>
+    <h4 class="font-bold text-purple-600 mb-2">Umfragen</h4>
+    <p class="text-gray-700 text-sm">Steigern Interaktion</p>
+  </div>
+  <div class="bg-white p-4 rounded-lg shadow border border-gray-200 text-center">
+    <div class="text-purple-500 mb-2 text-2xl">🔄</div>
+    <h4 class="font-bold text-purple-600 mb-2">Swipe-Up</h4>
+    <p class="text-gray-700 text-sm">Für Link-Klicks</p>
+  </div>
+  <div class="bg-white p-4 rounded-lg shadow border border-gray-200 text-center">
+    <div class="text-purple-500 mb-2 text-2xl">💬</div>
+    <h4 class="font-bold text-purple-600 mb-2">Fragen</h4>
+    <p class="text-gray-700 text-sm">Generieren DMs</p>
+  </div>
+</div>
 
-      <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">5. Instagram SEO optimieren</h3>
-      <p class="text-gray-700 mb-4">So werden Sie in Suchen gefunden:</p>
-      <div class="bg-yellow-50 border-l-4 border-yellow-500 p-4 my-6 rounded-r">
-        <strong class="block font-semibold text-yellow-800">Keywords einbinden:</strong>
-        <p class="text-yellow-700 mt-1">In Bio, Captions, Alt-Text und Hashtags. Nutzen Sie spezifische Suchbegriffe Ihrer Zielgruppe.</p>
-      </div>
+<h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">4. Hashtag-Strategie</h3>
+<p class="text-gray-700 mb-4">Die perfekte Hashtag-Kombination:</p>
+<ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
+  <li>3-5 große Hashtags (500k+ Posts)</li>
+  <li>5-7 mittlere Hashtags (50k-500k Posts)</li>
+  <li>3-5 Nischen-Hashtags (<50k Posts)</li>
+  <li>1-2 Branded Hashtags</li>
+</ul>
+
+<h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">5. Instagram SEO optimieren</h3>
+<p class="text-gray-700 mb-4">So werden Sie in Suchen gefunden:</p>
+<div class="bg-yellow-50 border-l-4 border-yellow-500 p-4 my-6 rounded-r">
+  <p class="font-semibold text-yellow-800 mb-1">Keywords einbinden:</p>
+  <p class="text-yellow-700">In Bio, Captions, Alt-Text und Hashtags. Nutzen Sie spezifische Suchbegriffe Ihrer Zielgruppe.</p>
+</div>
     `,
     author: {
       name: 'Muaaz Chihabi',

@@ -6,103 +6,103 @@ const seoPosts = {
     title: 'Backlink-Strategien die wirklich funktionieren',
     metaDescription: 'Natürliches Linkbuilding ohne Risiko - bewährte Methoden für hochwertige Backlinks die Ihre Rankings verbessern',
     content: `
-      <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">Warum hochwertige Backlinks entscheidend sind</h2>
-      <p class="text-gray-700 mb-6">Backlinks bleiben einer der wichtigsten Ranking-Faktoren bei Google. Doch nicht alle Links sind gleich wertvoll. Wir zeigen Ihnen strategische Ansätze, die nachhaltig und ohne Risiko hochwertige Backlinks generieren - ganz ohne Black-Hat-SEO oder Spam-Taktiken.</p>
+     <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">Warum hochwertige Backlinks entscheidend sind</h2>
+<p class="text-gray-700 mb-6">Backlinks bleiben einer der wichtigsten Ranking-Faktoren bei Google. Doch nicht alle Links sind gleich wertvoll. Wir zeigen Ihnen strategische Ansätze, die nachhaltig und ohne Risiko hochwertige Backlinks generieren - ganz ohne Black-Hat-SEO oder Spam-Taktiken.</p>
 
-      <div class="bg-orange-50 border-l-4 border-orange-500 p-4 my-6 rounded-r">
-        <strong class="block font-semibold text-orange-800">Statistik:</strong>
-        <p class="text-orange-700 mt-1">Websites mit hochwertigen Backlinks ranken 3x häufiger in den Top-3 Suchergebnissen.</p>
-      </div>
+<div class="bg-orange-50 border-l-4 border-orange-500 p-4 my-6 rounded-r">
+  <p class="font-semibold text-orange-800 mb-1">Statistik:</p>
+  <p class="text-orange-700">Websites mit hochwertigen Backlinks ranken 3x häufiger in den Top-3 Suchergebnissen.</p>
+</div>
 
-      <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">1. Content-Marketing als Linkmagnet</h3>
-      <p class="text-gray-700 mb-4">Die beste Linkbuilding-Strategie beginnt mit herausragendem Content:</p>
-      <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
-        <li><strong>Ultimative Guides:</strong> Umfassende Ressourcen (>3.000 Wörter) werden 3x häufiger verlinkt</li>
-        <li><strong>Originalstudien:</strong> Eigene Daten und Forschungsergebnisse</li>
-        <li><strong>Visuelle Inhalte:</strong> Infografiken erhalten 2x mehr Backlinks</li>
-        <li><strong>Interaktive Tools:</strong> Kostenlose Rechner oder Check-Listen</li>
-      </ul>
+<h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">1. Content-Marketing als Linkmagnet</h3>
+<p class="text-gray-700 mb-4">Die beste Linkbuilding-Strategie beginnt mit herausragendem Content:</p>
+<ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
+  <li><span class="font-medium">Ultimative Guides:</span> Umfassende Ressourcen (>3.000 Wörter) werden 3x häufiger verlinkt</li>
+  <li><span class="font-medium">Originalstudien:</span> Eigene Daten und Forschungsergebnisse</li>
+  <li><span class="font-medium">Visuelle Inhalte:</span> Infografiken erhalten 2x mehr Backlinks</li>
+  <li><span class="font-medium">Interaktive Tools:</span> Kostenlose Rechner oder Check-Listen</li>
+</ul>
 
-      <div class="grid md:grid-cols-2 gap-6 my-8">
-        <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
-          <h4 class="font-bold text-orange-600 mb-3">Top Content-Typen für Links</h4>
-          <ul class="space-y-2 text-gray-700">
-            <li>• "Skyscraper"-Content</li>
-            <li>• Experten-Roundups</li>
-            <li>• Case Studies</li>
-            <li>• Aktuelle Forschung</li>
-          </ul>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
-          <h4 class="font-bold text-orange-600 mb-3">Link-KPI-Monitoring</h4>
-          <ul class="space-y-2 text-gray-700">
-            <li>• Domain Authority (DA)</li>
-            <li>• Spam Score</li>
-            <li>• Traffic des Linkgebers</li>
-            <li>• Anchor-Text-Diversität</li>
-          </ul>
-        </div>
-      </div>
+<div class="grid md:grid-cols-2 gap-6 my-8">
+  <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
+    <h4 class="font-bold text-orange-600 mb-3">Top Content-Typen für Links</h4>
+    <ul class="space-y-2 text-gray-700">
+      <li>• "Skyscraper"-Content</li>
+      <li>• Experten-Roundups</li>
+      <li>• Case Studies</li>
+      <li>• Aktuelle Forschung</li>
+    </ul>
+  </div>
+  <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
+    <h4 class="font-bold text-orange-600 mb-3">Link-KPI-Monitoring</h4>
+    <ul class="space-y-2 text-gray-700">
+      <li>• Domain Authority (DA)</li>
+      <li>• Spam Score</li>
+      <li>• Traffic des Linkgebers</li>
+      <li>• Anchor-Text-Diversität</li>
+    </ul>
+  </div>
+</div>
 
-      <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">2. Gastbeiträge mit Mehrwert</h3>
-      <p class="text-gray-700 mb-4">Qualitativ hochwertige Gastartikel auf relevanten Seiten:</p>
-      
-      <div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-6 rounded-r">
-        <strong class="block font-semibold text-blue-800">Best Practice:</strong>
-        <p class="text-blue-700 mt-1">Bieten Sie echten Mehrwert statt generischer Artikel. 80% Ihrer Gastbeiträge sollten auf den Leser der Zielseite zugeschnitten sein, nur 20% Eigenwerbung.</p>
-      </div>
+<h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">2. Gastbeiträge mit Mehrwert</h3>
+<p class="text-gray-700 mb-4">Qualitativ hochwertige Gastartikel auf relevanten Seiten:</p>
 
-      <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
-        <li><strong>Relevante Blogs finden:</strong> Mit Tools wie Ahrefs oder BuzzSumo</li>
-        <li><strong>Persönliche Ansprache:</strong> Keine Standard-Pitches</li>
-        <li><strong>Reciprocal Links:</strong> In Maßen und natürlich</li>
-        <li><strong>Autor-Box:</strong> Mit Link zu Ihrer Seite</li>
-      </ul>
+<div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-6 rounded-r">
+  <p class="font-semibold text-blue-800 mb-1">Best Practice:</p>
+  <p class="text-blue-700">Bieten Sie echten Mehrwert statt generischer Artikel. 80% Ihrer Gastbeiträge sollten auf den Leser der Zielseite zugeschnitten sein, nur 20% Eigenwerbung.</p>
+</div>
 
-      <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">3. Broken Link Building</h3>
-      <p class="text-gray-700 mb-4">Finden und reparieren Sie tote Links in Ihrer Nische:</p>
+<ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
+  <li><span class="font-medium">Relevante Blogs finden:</span> Mit Tools wie Ahrefs oder BuzzSumo</li>
+  <li><span class="font-medium">Persönliche Ansprache:</span> Keine Standard-Pitches</li>
+  <li><span class="font-medium">Reciprocal Links:</span> In Maßen und natürlich</li>
+  <li><span class="font-medium">Autor-Box:</span> Mit Link zu Ihrer Seite</li>
+</ul>
 
-      <div class="bg-green-50 border-l-4 border-green-500 p-4 my-6 rounded-r">
-        <strong class="block font-semibold text-green-800">Profi-Tipp:</strong>
-        <p class="text-green-700 mt-1">Nutzen Sie den Chrome Extension "Check My Links" um schnell defekte Links auf relevanten Seiten zu finden.</p>
-      </div>
+<h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">3. Broken Link Building</h3>
+<p class="text-gray-700 mb-4">Finden und reparieren Sie tote Links in Ihrer Nische:</p>
 
-      <ol class="list-decimal pl-6 mb-6 space-y-2 text-gray-700">
-        <li>Finden Sie relevante Ressourcen-Seiten in Ihrer Branche</li>
-        <li>Identifizieren Sie tote Links mit Tools</li>
-        <li>Erstellen Sie besseren/beständigeren Content</li>
-        <li>Kontaktieren Sie den Webmaster mit einer freundlichen Nachricht</li>
-      </ol>
+<div class="bg-green-50 border-l-4 border-green-500 p-4 my-6 rounded-r">
+  <p class="font-semibold text-green-800 mb-1">Profi-Tipp:</p>
+  <p class="text-green-700">Nutzen Sie den Chrome Extension "Check My Links" um schnell defekte Links auf relevanten Seiten zu finden.</p>
+</div>
 
-      <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">4. HARO - Help a Reporter Out</h3>
-      <p class="text-gray-700 mb-4">Werden Sie als Experte zitiert:</p>
-      
-      <div class="grid md:grid-cols-3 gap-4 my-6">
-        <div class="bg-white p-4 rounded-lg shadow border border-gray-200 text-center">
-          <div class="text-orange-500 mb-2 text-2xl">📰</div>
-          <h4 class="font-bold text-orange-600 mb-2">Medienanfragen</h4>
-          <p class="text-gray-700 text-sm">Täglich neue Anfragen</p>
-        </div>
-        <div class="bg-white p-4 rounded-lg shadow border border-gray-200 text-center">
-          <div class="text-orange-500 mb-2 text-2xl">🔍</div>
-          <h4 class="font-bold text-orange-600 mb-2">Expertenstatus</h4>
-          <p class="text-gray-700 text-sm">Steigert Ihre Autorität</p>
-        </div>
-        <div class="bg-white p-4 rounded-lg shadow border border-gray-200 text-center">
-          <div class="text-orange-500 mb-2 text-2xl">🔗</div>
-          <h4 class="font-bold text-orange-600 mb-2">Wertvolle Links</h4>
-          <p class="text-gray-700 text-sm">Von vertrauenswürdigen Domains</p>
-        </div>
-      </div>
+<ol class="list-decimal pl-6 mb-6 space-y-2 text-gray-700">
+  <li>Finden Sie relevante Ressourcen-Seiten in Ihrer Branche</li>
+  <li>Identifizieren Sie tote Links mit Tools</li>
+  <li>Erstellen Sie besseren/beständigeren Content</li>
+  <li>Kontaktieren Sie den Webmaster mit einer freundlichen Nachricht</li>
+</ol>
 
-      <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">5. Lokales Linkbuilding</h3>
-      <p class="text-gray-700 mb-4">Für Unternehmen mit regionalem Fokus:</p>
-      <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
-        <li><strong>Lokale Verzeichnisse:</strong> Einträge in regionalen Branchenbüchern</li>
-        <li><strong>Sponsoring:</strong> Unterstützung lokaler Veranstaltungen</li>
-        <li><strong>Pressearbeit:</strong> Meldungen an Lokalzeitungen</li>
-        <li><strong>Google My Business:</strong> Optimiertes Profil mit Backlink</li>
-      </ul>
+<h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">4. HARO - Help a Reporter Out</h3>
+<p class="text-gray-700 mb-4">Werden Sie als Experte zitiert:</p>
+
+<div class="grid md:grid-cols-3 gap-4 my-6">
+  <div class="bg-white p-4 rounded-lg shadow border border-gray-200 text-center">
+    <div class="text-orange-500 mb-2 text-2xl">📰</div>
+    <h4 class="font-bold text-orange-600 mb-2">Medienanfragen</h4>
+    <p class="text-gray-700 text-sm">Täglich neue Anfragen</p>
+  </div>
+  <div class="bg-white p-4 rounded-lg shadow border border-gray-200 text-center">
+    <div class="text-orange-500 mb-2 text-2xl">🔍</div>
+    <h4 class="font-bold text-orange-600 mb-2">Expertenstatus</h4>
+    <p class="text-gray-700 text-sm">Steigert Ihre Autorität</p>
+  </div>
+  <div class="bg-white p-4 rounded-lg shadow border border-gray-200 text-center">
+    <div class="text-orange-500 mb-2 text-2xl">🔗</div>
+    <h4 class="font-bold text-orange-600 mb-2">Wertvolle Links</h4>
+    <p class="text-gray-700 text-sm">Von vertrauenswürdigen Domains</p>
+  </div>
+</div>
+
+<h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">5. Lokales Linkbuilding</h3>
+<p class="text-gray-700 mb-4">Für Unternehmen mit regionalem Fokus:</p>
+<ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
+  <li><span class="font-medium">Lokale Verzeichnisse:</span> Einträge in regionalen Branchenbüchern</li>
+  <li><span class="font-medium">Sponsoring:</span> Unterstützung lokaler Veranstaltungen</li>
+  <li><span class="font-medium">Pressearbeit:</span> Meldungen an Lokalzeitungen</li>
+  <li><span class="font-medium">Google My Business:</span> Optimiertes Profil mit Backlink</li>
+</ul>
     `,
     author: {
       name: 'Muaaz Chihabi',

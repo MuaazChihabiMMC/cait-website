@@ -6,103 +6,103 @@ const seoPosts = {
     title: 'Content Marketing 2024: So ranken deine Inhalte',
     metaDescription: 'Content-SEO mit Strategie: Keywords, Cluster & semantische Optimierung für Top-Rankings einfach erklärt.',
     content: `
-      <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">Warum Content der entscheidende Ranking-Faktor ist</h2>
-      <p class="text-gray-700 mb-6">Content Marketing hat sich zum wichtigsten Instrument der Suchmaschinenoptimierung entwickelt. Hochwertige Inhalte, die Nutzerintentionen treffen, generieren nicht nur organischen Traffic, sondern auch wertvolle Backlinks und Social Signals - alles Faktoren, die Google bei der Bewertung Ihrer Domain berücksichtigt.</p>
+     <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">Warum Content der entscheidende Ranking-Faktor ist</h2>
+<p class="text-gray-700 mb-6">Content Marketing hat sich zum wichtigsten Instrument der Suchmaschinenoptimierung entwickelt. Hochwertige Inhalte, die Nutzerintentionen treffen, generieren nicht nur organischen Traffic, sondern auch wertvolle Backlinks und Social Signals - alles Faktoren, die Google bei der Bewertung Ihrer Domain berücksichtigt.</p>
 
-      <div class="bg-purple-50 border-l-4 border-purple-500 p-4 my-6 rounded-r">
-        <strong class="block font-semibold text-purple-800">Statistik:</strong>
-        <p class="text-purple-700 mt-1">Websites mit regelmäßig aktualisiertem Blog-Content erhalten 434% mehr indexierte Seiten.</p>
-      </div>
+<div class="bg-purple-50 border-l-4 border-purple-500 p-4 my-6 rounded-r">
+  <p class="font-semibold text-purple-800 mb-1">Statistik:</p>
+  <p class="text-purple-700">Websites mit regelmäßig aktualisiertem Blog-Content erhalten 434% mehr indexierte Seiten.</p>
+</div>
 
-      <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">1. Strategische Keyword-Recherche</h3>
-      <p class="text-gray-700 mb-4">Die Basis für erfolgreichen SEO-Content:</p>
-      <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
-        <li><strong>Buyer Intent Analyse:</strong> Informational, Commercial, Transactional oder Navigational?</li>
-        <li><strong>Long-Tail-Keywords:</strong> Weniger Wettbewerb, höhere Conversion-Raten</li>
-        <li><strong>Semantische Wortfelder:</strong> Verwandte Begriffe und Synonyme identifizieren</li>
-        <li><strong>Konkurrenzanalyse:</strong> Lücken im Content der Top-10-Rankingseiten finden</li>
-      </ul>
+<h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">1. Strategische Keyword-Recherche</h3>
+<p class="text-gray-700 mb-4">Die Basis für erfolgreichen SEO-Content:</p>
+<ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
+  <li><span class="font-medium">Buyer Intent Analyse:</span> Informational, Commercial, Transactional oder Navigational?</li>
+  <li><span class="font-medium">Long-Tail-Keywords:</span> Weniger Wettbewerb, höhere Conversion-Raten</li>
+  <li><span class="font-medium">Semantische Wortfelder:</span> Verwandte Begriffe und Synonyme identifizieren</li>
+  <li><span class="font-medium">Konkurrenzanalyse:</span> Lücken im Content der Top-10-Rankingseiten finden</li>
+</ul>
 
-      <div class="grid md:grid-cols-2 gap-6 my-8">
-        <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
-          <h4 class="font-bold text-purple-600 mb-3">Top Tools für Content-Strategen</h4>
-          <ul class="space-y-2 text-gray-700">
-            <li>• Ahrefs Content Explorer</li>
-            <li>• SEMrush Topic Research</li>
-            <li>• AnswerThePublic</li>
-            <li>• Google People Also Ask</li>
-          </ul>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
-          <h4 class="font-bold text-purple-600 mb-3">Content-KPIs für SEO</h4>
-          <ul class="space-y-2 text-gray-700">
-            <li>• Organische Klickrate (CTR)</li>
-            <li>• Durchschnittliche Verweildauer</li>
-            <li>• Backlink-Akquise-Rate</li>
-            <li>• Keyword-Rankings</li>
-          </ul>
-        </div>
-      </div>
+<div class="grid md:grid-cols-2 gap-6 my-8">
+  <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
+    <h4 class="font-bold text-purple-600 mb-3">Top Tools für Content-Strategen</h4>
+    <ul class="space-y-2 text-gray-700">
+      <li>• Ahrefs Content Explorer</li>
+      <li>• SEMrush Topic Research</li>
+      <li>• AnswerThePublic</li>
+      <li>• Google People Also Ask</li>
+    </ul>
+  </div>
+  <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
+    <h4 class="font-bold text-purple-600 mb-3">Content-KPIs für SEO</h4>
+    <ul class="space-y-2 text-gray-700">
+      <li>• Organische Klickrate (CTR)</li>
+      <li>• Durchschnittliche Verweildauer</li>
+      <li>• Backlink-Akquise-Rate</li>
+      <li>• Keyword-Rankings</li>
+    </ul>
+  </div>
+</div>
 
-      <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">2. Content-Cluster Modell</h3>
-      <p class="text-gray-700 mb-4">So strukturieren Sie Themen für maximale SEO-Wirkung:</p>
-      
-      <div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-6 rounded-r">
-        <strong class="block font-semibold text-blue-800">Beispiel Cluster:</strong>
-        <p class="text-blue-700 mt-1">Pillar Page: "Content Marketing" → Subtopics: "Blog-Strategien", "SEO-Texte", "Video-Marketing", "E-A-T-Prinzip"</p>
-      </div>
+<h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">2. Content-Cluster Modell</h3>
+<p class="text-gray-700 mb-4">So strukturieren Sie Themen für maximale SEO-Wirkung:</p>
 
-      <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
-        <li><strong>Pillar Content:</strong> Umfassender Leitfaden zum Kernthema (2.000-5.000 Wörter)</li>
-        <li><strong>Cluster Content:</strong> Detaillierte Artikel zu Subthemen (800-1.500 Wörter)</li>
-        <li><strong>Content-Hub:</strong> Logische Verlinkungsstruktur zwischen allen Artikeln</li>
-        <li><strong>Content-Refresh:</strong> Regelmäßige Aktualisierungen (alle 6-12 Monate)</li>
-      </ul>
+<div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-6 rounded-r">
+  <p class="font-semibold text-blue-800 mb-1">Beispiel Cluster:</p>
+  <p class="text-blue-700">Pillar Page: "Content Marketing" → Subtopics: "Blog-Strategien", "SEO-Texte", "Video-Marketing", "E-A-T-Prinzip"</p>
+</div>
 
-      <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">3. Semantische Optimierung</h3>
-      <p class="text-gray-700 mb-4">Google versteht Kontext - so optimieren Sie dafür:</p>
+<ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
+  <li><span class="font-medium">Pillar Content:</span> Umfassender Leitfaden zum Kernthema (2.000-5.000 Wörter)</li>
+  <li><span class="font-medium">Cluster Content:</span> Detaillierte Artikel zu Subthemen (800-1.500 Wörter)</li>
+  <li><span class="font-medium">Content-Hub:</span> Logische Verlinkungsstruktur zwischen allen Artikeln</li>
+  <li><span class="font-medium">Content-Refresh:</span> Regelmäßige Aktualisierungen (alle 6-12 Monate)</li>
+</ul>
 
-      <div class="bg-yellow-50 border-l-4 border-yellow-500 p-4 my-6 rounded-r">
-        <strong class="block font-semibold text-yellow-800">Best Practice:</strong>
-        <p class="text-yellow-700 mt-1">Verwenden Sie natürlich eingebaute semantische Wortfelder und themenrelevante Entities für besseres Context Understanding.</p>
-      </div>
+<h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">3. Semantische Optimierung</h3>
+<p class="text-gray-700 mb-4">Google versteht Kontext - so optimieren Sie dafür:</p>
 
-      <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
-        <li>LSI-Keywords (Latent Semantic Indexing) integrieren</li>
-        <li>Natürliche Sprachmuster statt Keyword-Stuffing</li>
-        <li>Entities und Themenrelevanz durch Schema.org Markup</li>
-        <li>TF-IDF Analyse für inhaltliche Vollständigkeit</li>
-      </ul>
+<div class="bg-yellow-50 border-l-4 border-yellow-500 p-4 my-6 rounded-r">
+  <p class="font-semibold text-yellow-800 mb-1">Best Practice:</p>
+  <p class="text-yellow-700">Verwenden Sie natürlich eingebaute semantische Wortfelder und themenrelevante Entities für besseres Context Understanding.</p>
+</div>
 
-      <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">4. Content-Formate mit SEO-Power</h3>
-      <p class="text-gray-700 mb-4">Diversifizieren Sie für maximale Reichweite:</p>
-      
-      <div class="grid md:grid-cols-3 gap-4 my-6">
-        <div class="bg-white p-4 rounded-lg shadow border border-gray-200 text-center">
-          <div class="text-purple-500 mb-2 text-2xl">📝</div>
-          <h4 class="font-bold text-purple-600 mb-2">Längere Guides</h4>
-          <p class="text-gray-700 text-sm">Ranken 3x besser als kurze Posts</p>
-        </div>
-        <div class="bg-white p-4 rounded-lg shadow border border-gray-200 text-center">
-          <div class="text-purple-500 mb-2 text-2xl">📊</div>
-          <h4 class="font-bold text-purple-600 mb-2">Datenstudien</h4>
-          <p class="text-gray-700 text-sm">Hohe Backlink-Wahrscheinlichkeit</p>
-        </div>
-        <div class="bg-white p-4 rounded-lg shadow border border-gray-200 text-center">
-          <div class="text-purple-500 mb-2 text-2xl">🎥</div>
-          <h4 class="font-bold text-purple-600 mb-2">Video-Tutorials</h4>
-          <p class="text-gray-700 text-sm">53% höhere Engagement-Rate</p>
-        </div>
-      </div>
+<ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
+  <li>LSI-Keywords (Latent Semantic Indexing) integrieren</li>
+  <li>Natürliche Sprachmuster statt Keyword-Stuffing</li>
+  <li>Entities und Themenrelevanz durch Schema.org Markup</li>
+  <li>TF-IDF Analyse für inhaltliche Vollständigkeit</li>
+</ul>
 
-      <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">5. E-A-T Prinzip umsetzen</h3>
-      <p class="text-gray-700 mb-4">Expertise, Authoritativeness, Trustworthiness:</p>
-      <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
-        <li><strong>Autoren-Boxen:</strong> Mit Qualifikationen und Erfahrung</li>
-        <li><strong>Quellenangaben:</strong> Studien und Experten-Zitate</li>
-        <li><strong>Transparenz:</strong> Über den Autor/Unternehmen</li>
-        <li><strong>Aktualität:</strong> Regelmäßige Content-Updates</li>
-      </ul>
+<h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">4. Content-Formate mit SEO-Power</h3>
+<p class="text-gray-700 mb-4">Diversifizieren Sie für maximale Reichweite:</p>
+
+<div class="grid md:grid-cols-3 gap-4 my-6">
+  <div class="bg-white p-4 rounded-lg shadow border border-gray-200 text-center">
+    <div class="text-purple-500 mb-2 text-2xl">📝</div>
+    <h4 class="font-bold text-purple-600 mb-2">Längere Guides</h4>
+    <p class="text-gray-700 text-sm">Ranken 3x besser als kurze Posts</p>
+  </div>
+  <div class="bg-white p-4 rounded-lg shadow border border-gray-200 text-center">
+    <div class="text-purple-500 mb-2 text-2xl">📊</div>
+    <h4 class="font-bold text-purple-600 mb-2">Datenstudien</h4>
+    <p class="text-gray-700 text-sm">Hohe Backlink-Wahrscheinlichkeit</p>
+  </div>
+  <div class="bg-white p-4 rounded-lg shadow border border-gray-200 text-center">
+    <div class="text-purple-500 mb-2 text-2xl">🎥</div>
+    <h4 class="font-bold text-purple-600 mb-2">Video-Tutorials</h4>
+    <p class="text-gray-700 text-sm">53% höhere Engagement-Rate</p>
+  </div>
+</div>
+
+<h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">5. E-A-T Prinzip umsetzen</h3>
+<p class="text-gray-700 mb-4">Expertise, Authoritativeness, Trustworthiness:</p>
+<ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
+  <li><span class="font-medium">Autoren-Boxen:</span> Mit Qualifikationen und Erfahrung</li>
+  <li><span class="font-medium">Quellenangaben:</span> Studien und Experten-Zitate</li>
+  <li><span class="font-medium">Transparenz:</span> Über den Autor/Unternehmen</li>
+  <li><span class="font-medium">Aktualität:</span> Regelmäßige Content-Updates</li>
+</ul>
     `,
     author: {
       name: 'Muaaz Chihabi',

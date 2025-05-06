@@ -6,133 +6,133 @@ const googleAdsPosts = {
     title: 'Effektives Budgetmanagement in Google Ads',
     metaDescription: 'Lernen Sie, wie Sie Ihr Werbebudget gezielt einsetzen und Streuverluste vermeiden.',
     content: `
-      <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">Warum Budgetmanagement über Erfolg oder Misserfolg entscheidet</h2>
-      <p class="text-gray-700 mb-6">Die richtige Budgetverteilung in Google Ads ist entscheidend für den ROI Ihrer Werbekampagnen. Ohne strategische Planung verbrennen Sie schnell Budget ohne messbare Ergebnisse.</p>
+     <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">Warum Budgetmanagement über Erfolg oder Misserfolg entscheidet</h2>
+<p class="text-gray-700 mb-6">Die richtige Budgetverteilung in Google Ads ist entscheidend für den ROI Ihrer Werbekampagnen. Ohne strategische Planung verbrennen Sie schnell Budget ohne messbare Ergebnisse.</p>
 
-      <div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-6 rounded-r">
-        <strong class="block font-semibold text-blue-800">Statistik:</strong>
-        <p class="text-blue-700 mt-1">Über 60% der Google Ads-Nutzer verschwenden Budget durch falsche Kampagnenstruktur und ineffiziente Gebote.</p>
-      </div>
+<div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-6 rounded-r">
+  <p class="font-semibold text-blue-800 mb-1">Statistik:</p>
+  <p class="text-blue-700">Über 60% der Google Ads-Nutzer verschwenden Budget durch falsche Kampagnenstruktur und ineffiziente Gebote.</p>
+</div>
 
-      <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">1. Budgetplanung: So legen Sie Ihr Budget richtig fest</h3>
-      <p class="text-gray-700 mb-4">Grundlagen für eine sinnvolle Budgetplanung:</p>
-      <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
-        <li><strong>Branchenbenchmarks:</strong> Durchschnittliche CPCs Ihrer Branche kennen</li>
-        <li><strong>Umsatzziele:</strong> Budget anhand gewünschter Umsätze kalkulieren</li>
-        <li><strong>Testphase:</strong> 20-30% des Budgets für Tests reservieren</li>
-        <li><strong>Saisonalität:</strong> Budgetschwankungen im Jahresverlauf berücksichtigen</li>
-      </ul>
+<h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">1. Budgetplanung: So legen Sie Ihr Budget richtig fest</h3>
+<p class="text-gray-700 mb-4">Grundlagen für eine sinnvolle Budgetplanung:</p>
+<ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
+  <li><span class="font-medium">Branchenbenchmarks:</span> Durchschnittliche CPCs Ihrer Branche kennen</li>
+  <li><span class="font-medium">Umsatzziele:</span> Budget anhand gewünschter Umsätze kalkulieren</li>
+  <li><span class="font-medium">Testphase:</span> 20-30% des Budgets für Tests reservieren</li>
+  <li><span class="font-medium">Saisonalität:</span> Budgetschwankungen im Jahresverlauf berücksichtigen</li>
+</ul>
 
-      <div class="grid md:grid-cols-2 gap-6 my-8">
-        <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
-          <h4 class="font-bold text-blue-600 mb-3">Budget-Kalkulationsformel</h4>
-          <div class="text-gray-700">
-            <p>Tagesbudget = (Gewünschte Conversions × Durchschnittlicher CPA) / 30</p>
-            <p class="mt-2 text-sm text-gray-500">CPA = Kosten pro Acquisition</p>
-          </div>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
-          <h4 class="font-bold text-blue-600 mb-3">Budget-Fallen</h4>
-          <ul class="space-y-2 text-gray-700">
-            <li>• Zu kleine Budgets für aussagekräftige Daten</li>
-            <li>• Gleichmäßige Verteilung ohne Priorisierung</li>
-            <li>• Keine Budgetpuffer für Skalierung</li>
-            <li>• Ignorieren von Wochentag-Effekten</li>
-          </ul>
-        </div>
-      </div>
+<div class="grid md:grid-cols-2 gap-6 my-8">
+  <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
+    <h4 class="font-bold text-blue-600 mb-3">Budget-Kalkulationsformel</h4>
+    <div class="text-gray-700">
+      <p>Tagesbudget = (Gewünschte Conversions × Durchschnittlicher CPA) / 30</p>
+      <p class="mt-2 text-sm text-gray-500">CPA = Kosten pro Acquisition</p>
+    </div>
+  </div>
+  <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
+    <h4 class="font-bold text-blue-600 mb-3">Budget-Fallen</h4>
+    <ul class="space-y-2 text-gray-700">
+      <li>• Zu kleine Budgets für aussagekräftige Daten</li>
+      <li>• Gleichmäßige Verteilung ohne Priorisierung</li>
+      <li>• Keine Budgetpuffer für Skalierung</li>
+      <li>• Ignorieren von Wochentag-Effekten</li>
+    </ul>
+  </div>
+</div>
 
-      <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">2. Kampagnenbudgets strategisch verteilen</h3>
-      <p class="text-gray-700 mb-4">Priorisieren Sie nach Performance und Potenzial:</p>
-      
-      <div class="bg-orange-50 border-l-4 border-orange-500 p-4 my-6 rounded-r">
-        <strong class="block font-semibold text-orange-800">Tipp:</strong>
-        <p class="text-orange-700 mt-1">Verwenden Sie die 70-20-10 Regel: 70% des Budgets für bewährte Kampagnen, 20% für Optimierungen, 10% für Tests.</p>
-      </div>
+<h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">2. Kampagnenbudgets strategisch verteilen</h3>
+<p class="text-gray-700 mb-4">Priorisieren Sie nach Performance und Potenzial:</p>
 
-      <div class="overflow-x-auto">
-        <table class="min-w-full bg-white rounded-lg overflow-hidden mb-6">
-          <thead class="bg-gray-100">
-            <tr>
-              <th class="py-3 px-4 text-left font-semibold text-gray-700">Kampagnentyp</th>
-              <th class="py-3 px-4 text-left font-semibold text-gray-700">Budgetanteil</th>
-              <th class="py-3 px-4 text-left font-semibold text-gray-700">Begründung</th>
-            </tr>
-          </thead>
-          <tbody class="divide-y divide-gray-200">
-            <tr>
-              <td class="py-3 px-4 text-gray-700 font-medium">Bewährte Performancer</td>
-              <td class="py-3 px-4 text-gray-700">50-70%</td>
-              <td class="py-3 px-4 text-gray-700">Sichere Rendite, stabile Ergebnisse</td>
-            </tr>
-            <tr>
-              <td class="py-3 px-4 text-gray-700 font-medium">Wachstumspotenziale</td>
-              <td class="py-3 px-4 text-gray-700">20-30%</td>
-              <td class="py-3 px-4 text-gray-700">Skalierung erfolgreicher Ansätze</td>
-            </tr>
-            <tr>
-              <td class="py-3 px-4 text-gray-700 font-medium">Experimente</td>
-              <td class="py-3 px-4 text-gray-700">10-20%</td>
-              <td class="py-3 px-4 text-gray-700">Neue Zielgruppen/Formate testen</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+<div class="bg-orange-50 border-l-4 border-orange-500 p-4 my-6 rounded-r">
+  <p class="font-semibold text-orange-800 mb-1">Tipp:</p>
+  <p class="text-orange-700">Verwenden Sie die 70-20-10 Regel: 70% des Budgets für bewährte Kampagnen, 20% für Optimierungen, 10% für Tests.</p>
+</div>
 
-      <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">3. Automatisierte Bidding-Strategien für optimales Budgetmanagement</h3>
-      <p class="text-gray-700 mb-4">Google's KI-gestützte Gebotsstrategien:</p>
+<div class="overflow-x-auto">
+  <table class="min-w-full bg-white rounded-lg overflow-hidden mb-6">
+    <thead class="bg-gray-100">
+      <tr>
+        <th class="py-3 px-4 text-left font-semibold text-gray-700">Kampagnentyp</th>
+        <th class="py-3 px-4 text-left font-semibold text-gray-700">Budgetanteil</th>
+        <th class="py-3 px-4 text-left font-semibold text-gray-700">Begründung</th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-gray-200">
+      <tr>
+        <td class="py-3 px-4 text-gray-700 font-medium">Bewährte Performancer</td>
+        <td class="py-3 px-4 text-gray-700">50-70%</td>
+        <td class="py-3 px-4 text-gray-700">Sichere Rendite, stabile Ergebnisse</td>
+      </tr>
+      <tr>
+        <td class="py-3 px-4 text-gray-700 font-medium">Wachstumspotenziale</td>
+        <td class="py-3 px-4 text-gray-700">20-30%</td>
+        <td class="py-3 px-4 text-gray-700">Skalierung erfolgreicher Ansätze</td>
+      </tr>
+      <tr>
+        <td class="py-3 px-4 text-gray-700 font-medium">Experimente</td>
+        <td class="py-3 px-4 text-gray-700">10-20%</td>
+        <td class="py-3 px-4 text-gray-700">Neue Zielgruppen/Formate testen</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
-      <div class="bg-green-50 border-l-4 border-green-500 p-4 my-6 rounded-r">
-        <strong class="block font-semibold text-green-800">Wichtig:</strong>
-        <p class="text-green-700 mt-1">Automatisierte Strategien benötigen mindestens 15-30 Conversion pro Woche für zuverlässige Ergebnisse.</p>
-      </div>
+<h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">3. Automatisierte Bidding-Strategien für optimales Budgetmanagement</h3>
+<p class="text-gray-700 mb-4">Google's KI-gestützte Gebotsstrategien:</p>
 
-      <ol class="list-decimal pl-6 mb-6 space-y-2 text-gray-700">
-        <li><strong>Target CPA (tCPA):</strong> Festgelegte Kosten pro Conversion</li>
-        <li><strong>Target ROAS (tROAS):</strong> Ziel-Umsatzrendite für E-Commerce</li>
-        <li><strong>Maximize Conversions:</strong> Möglichst viele Conversions innerhalb des Budgets</li>
-        <li><strong>Maximize Conversion Value:</strong> Umsatzmaximierung bei festem Budget</li>
-        <li><strong>Enhanced CPC (eCPC):</strong> Manuelle Gebote mit automatischen Anpassungen</li>
-      </ol>
+<div class="bg-green-50 border-l-4 border-green-500 p-4 my-6 rounded-r">
+  <p class="font-semibold text-green-800 mb-1">Wichtig:</p>
+  <p class="text-green-700">Automatisierte Strategien benötigen mindestens 15-30 Conversion pro Woche für zuverlässige Ergebnisse.</p>
+</div>
 
-      <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">4. Budget-Kontrollmechanismen</h3>
-      <p class="text-gray-700 mb-4">Tools zur Budgetüberwachung und -steuerung:</p>
-      
-      <div class="grid md:grid-cols-2 gap-6 my-6">
-        <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
-          <h4 class="font-bold text-blue-600 mb-3">Proaktive Kontrollen</h4>
-          <ul class="space-y-2 text-gray-700">
-            <li>• Tägliche Budgetüberprüfungen</li>
-            <li>• Alarme bei ungewöhnlichen Ausgaben</li>
-            <li>• Kampagnen-Ausgabenlimits</li>
-            <li>• Shared Budgets für Kampagnengruppen</li>
-          </ul>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
-          <h4 class="font-bold text-blue-600 mb-3">Google Ads-Tools</h4>
-          <ul class="space-y-2 text-gray-700">
-            <li>• Budgetgruppen</li>
-            <li>• Automatische Regeln</li>
-            <li>• Scripts für erweiterte Steuerung</li>
-            <li>• Drittanbieter-Tools für Budgetmanagement</li>
-          </ul>
-        </div>
-      </div>
+<ol class="list-decimal pl-6 mb-6 space-y-2 text-gray-700">
+  <li><span class="font-medium">Target CPA (tCPA):</span> Festgelegte Kosten pro Conversion</li>
+  <li><span class="font-medium">Target ROAS (tROAS):</span> Ziel-Umsatzrendite für E-Commerce</li>
+  <li><span class="font-medium">Maximize Conversions:</span> Möglichst viele Conversions innerhalb des Budgets</li>
+  <li><span class="font-medium">Maximize Conversion Value:</span> Umsatzmaximierung bei festem Budget</li>
+  <li><span class="font-medium">Enhanced CPC (eCPC):</span> Manuelle Gebote mit automatischen Anpassungen</li>
+</ol>
 
-      <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">5. Budget-Optimierung im Zeitverlauf</h3>
-      <p class="text-gray-700 mb-4">So passen Sie Budgets dynamisch an:</p>
-      <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
-        <li><strong>Tageszeit-Optimierung:</strong> Budgetfokus auf konversionsstarke Stunden</li>
-        <li><strong>Wochentag-Anpassungen:</strong> Mehr Budget an starken Tagen</li>
-        <li><strong>Saisonale Schwankungen:</strong> Vorwegnahme von Nachfragespitzen</li>
-        <li><strong>Konkurrenzmonitoring:</strong> Budgetanpassungen bei verändertem Wettbewerb</li>
-        <li><strong>Performance-Review:</strong> Monatliche Budgetneuverteilung basierend auf KPIs</li>
-      </ul>
+<h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">4. Budget-Kontrollmechanismen</h3>
+<p class="text-gray-700 mb-4">Tools zur Budgetüberwachung und -steuerung:</p>
 
-      <div class="bg-purple-50 border-l-4 border-purple-500 p-4 my-6 rounded-r">
-        <strong class="block font-semibold text-purple-800">Experten-Tipp:</strong>
-        <p class="text-purple-700 mt-1">Nutzen Sie Google Ads Scripts für automatische Budgetanpassungen basierend auf Performance-Kennzahlen. So können Sie z.B. Budget von unterperformenden Kampagnen automatisch zu Top-Performern umverteilen.</p>
-      </div>
+<div class="grid md:grid-cols-2 gap-6 my-6">
+  <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
+    <h4 class="font-bold text-blue-600 mb-3">Proaktive Kontrollen</h4>
+    <ul class="space-y-2 text-gray-700">
+      <li>• Tägliche Budgetüberprüfungen</li>
+      <li>• Alarme bei ungewöhnlichen Ausgaben</li>
+      <li>• Kampagnen-Ausgabenlimits</li>
+      <li>• Shared Budgets für Kampagnengruppen</li>
+    </ul>
+  </div>
+  <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
+    <h4 class="font-bold text-blue-600 mb-3">Google Ads-Tools</h4>
+    <ul class="space-y-2 text-gray-700">
+      <li>• Budgetgruppen</li>
+      <li>• Automatische Regeln</li>
+      <li>• Scripts für erweiterte Steuerung</li>
+      <li>• Drittanbieter-Tools für Budgetmanagement</li>
+    </ul>
+  </div>
+</div>
+
+<h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">5. Budget-Optimierung im Zeitverlauf</h3>
+<p class="text-gray-700 mb-4">So passen Sie Budgets dynamisch an:</p>
+<ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
+  <li><span class="font-medium">Tageszeit-Optimierung:</span> Budgetfokus auf konversionsstarke Stunden</li>
+  <li><span class="font-medium">Wochentag-Anpassungen:</span> Mehr Budget an starken Tagen</li>
+  <li><span class="font-medium">Saisonale Schwankungen:</span> Vorwegnahme von Nachfragespitzen</li>
+  <li><span class="font-medium">Konkurrenzmonitoring:</span> Budgetanpassungen bei verändertem Wettbewerb</li>
+  <li><span class="font-medium">Performance-Review:</span> Monatliche Budgetneuverteilung basierend auf KPIs</li>
+</ul>
+
+<div class="bg-purple-50 border-l-4 border-purple-500 p-4 my-6 rounded-r">
+  <p class="font-semibold text-purple-800 mb-1">Experten-Tipp:</p>
+  <p class="text-purple-700">Nutzen Sie Google Ads Scripts für automatische Budgetanpassungen basierend auf Performance-Kennzahlen. So können Sie z.B. Budget von unterperformenden Kampagnen automatisch zu Top-Performern umverteilen.</p>
+</div>
     `,
     author: {
       name: 'Muaaz Chihabi',

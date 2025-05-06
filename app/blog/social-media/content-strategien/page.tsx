@@ -8,85 +8,85 @@ const socialMediaPosts = {
     metaDescription: 'Aktuelle Content-Strategien für Instagram, TikTok & LinkedIn - Wie Sie organische Reichweite steigern',
     content: `
       <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">Warum Content-Strategien entscheidend sind</h2>
-      <p class="text-gray-700 mb-6">In der schnelllebigen Welt der sozialen Medien entscheidet Ihre Content-Strategie über Erfolg oder Unsichtbarkeit. Wir zeigen Ihnen bewährte Methoden, um organische Reichweite zu generieren und eine treue Community aufzubauen.</p>
+<p class="text-gray-700 mb-6">In der schnelllebigen Welt der sozialen Medien entscheidet Ihre Content-Strategie über Erfolg oder Unsichtbarkeit. Wir zeigen Ihnen bewährte Methoden, um organische Reichweite zu generieren und eine treue Community aufzubauen.</p>
 
-      <div class="bg-purple-50 border-l-4 border-purple-500 p-4 my-6 rounded-r">
-        <strong class="block font-semibold text-purple-800">Statistik:</strong>
-        <p class="text-purple-700 mt-1">Marken mit konsistenter Content-Strategie verzeichnen 3x höhere Engagement-Raten.</p>
-      </div>
+<div class="bg-purple-50 border-l-4 border-purple-500 p-4 my-6 rounded-r">
+  <p class="font-semibold text-purple-800 mb-1">Statistik:</p>
+  <p class="text-purple-700">Marken mit konsistenter Content-Strategie verzeichnen 3x höhere Engagement-Raten.</p>
+</div>
 
-      <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">1. Plattformspezifische Inhalte erstellen</h3>
-      <p class="text-gray-700 mb-4">Jede Plattform erfordert einen eigenen Ansatz:</p>
-      <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
-        <li><strong>Instagram:</strong> Hochwertige Visuals + Story-Highlights</li>
-        <li><strong>TikTok:</strong> Authentische, unterhaltsame Kurzvideos</li>
-        <li><strong>LinkedIn:</strong> Fachwissen + Karriere-Insights</li>
-        <li><strong>Facebook:</strong> Gemeinschaftsorientierte Inhalte</li>
-      </ul>
+<h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">1. Plattformspezifische Inhalte erstellen</h3>
+<p class="text-gray-700 mb-4">Jede Plattform erfordert einen eigenen Ansatz:</p>
+<ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
+  <li><span class="font-medium">Instagram:</span> Hochwertige Visuals + Story-Highlights</li>
+  <li><span class="font-medium">TikTok:</span> Authentische, unterhaltsame Kurzvideos</li>
+  <li><span class="font-medium">LinkedIn:</span> Fachwissen + Karriere-Insights</li>
+  <li><span class="font-medium">Facebook:</span> Gemeinschaftsorientierte Inhalte</li>
+</ul>
 
-      <div class="grid md:grid-cols-2 gap-6 my-8">
-        <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
-          <h4 class="font-bold text-purple-600 mb-3">Optimale Posting-Zeiten</h4>
-          <ul class="space-y-2 text-gray-700">
-            <li>• Instagram: 11-13 Uhr Wochentage</li>
-            <li>• TikTok: 16-18 Uhr Wochenenden</li>
-            <li>• LinkedIn: 8-10 Uhr Dienstag/Mittwoch</li>
-          </ul>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
-          <h4 class="font-bold text-purple-600 mb-3">Content-Mix Empfehlung</h4>
-          <ul class="space-y-2 text-gray-700">
-            <li>• 50% wertvolle Infos</li>
-            <li>• 30% Community-Inhalte</li>
-            <li>• 20% Promotion</li>
-          </ul>
-        </div>
-      </div>
+<div class="grid md:grid-cols-2 gap-6 my-8">
+  <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
+    <h4 class="font-bold text-purple-600 mb-3">Optimale Posting-Zeiten</h4>
+    <ul class="space-y-2 text-gray-700">
+      <li>• Instagram: 11-13 Uhr Wochentage</li>
+      <li>• TikTok: 16-18 Uhr Wochenenden</li>
+      <li>• LinkedIn: 8-10 Uhr Dienstag/Mittwoch</li>
+    </ul>
+  </div>
+  <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
+    <h4 class="font-bold text-purple-600 mb-3">Content-Mix Empfehlung</h4>
+    <ul class="space-y-2 text-gray-700">
+      <li>• 50% wertvolle Infos</li>
+      <li>• 30% Community-Inhalte</li>
+      <li>• 20% Promotion</li>
+    </ul>
+  </div>
+</div>
 
-      <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">2. TikTok Growth Strategien</h3>
-      <p class="text-gray-700 mb-4">So gewinnen Sie virale Reichweite:</p>
-      
-      <div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-6 rounded-r">
-        <strong class="block font-semibold text-blue-800">Profi-Tipp:</strong>
-        <p class="text-blue-700 mt-1">Nutzen Sie aktuelle Sounds und Challenges, aber fügen Sie immer einen einzigartigen Twist hinzu.</p>
-      </div>
+<h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">2. TikTok Growth Strategien</h3>
+<p class="text-gray-700 mb-4">So gewinnen Sie virale Reichweite:</p>
 
-      <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
-        <li><strong>Nischen-Hashtags:</strong> 3-5 mittelgroße Hashtags</li>
-        <li><strong>Erste Kommentare:</strong> Algorithmus-Boost durch Engagement</li>
-        <li><strong>Duette/Reacts:</strong> Interaktion mit größeren Accounts</li>
-        <li><strong>Consistency:</strong> 3-5 Posts pro Woche</li>
-      </ul>
+<div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-6 rounded-r">
+  <p class="font-semibold text-blue-800 mb-1">Profi-Tipp:</p>
+  <p class="text-blue-700">Nutzen Sie aktuelle Sounds und Challenges, aber fügen Sie immer einen einzigartigen Twist hinzu.</p>
+</div>
 
-      <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">3. Instagram Reels Optimierung</h3>
-      <p class="text-gray-700 mb-4">Maximieren Sie Ihre Sichtbarkeit:</p>
+<ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
+  <li><span class="font-medium">Nischen-Hashtags:</span> 3-5 mittelgroße Hashtags</li>
+  <li><span class="font-medium">Erste Kommentare:</span> Algorithmus-Boost durch Engagement</li>
+  <li><span class="font-medium">Duette/Reacts:</span> Interaktion mit größeren Accounts</li>
+  <li><span class="font-medium">Consistency:</span> 3-5 Posts pro Woche</li>
+</ul>
 
-      <div class="grid md:grid-cols-3 gap-4 my-6">
-        <div class="bg-white p-4 rounded-lg shadow border border-gray-200 text-center">
-          <div class="text-purple-500 mb-2 text-2xl">👁️</div>
-          <h4 class="font-bold text-purple-600 mb-2">Aufmerksamkeit</h4>
-          <p class="text-gray-700 text-sm">Erste 3 Sekunden entscheidend</p>
-        </div>
-        <div class="bg-white p-4 rounded-lg shadow border border-gray-200 text-center">
-          <div class="text-purple-500 mb-2 text-2xl">🔄</div>
-          <h4 class="font-bold text-purple-600 mb-2">Wiedergabezeit</h4>
-          <p class="text-gray-700 text-sm">Mindestens 75% Completion Rate</p>
-        </div>
-        <div class="bg-white p-4 rounded-lg shadow border border-gray-200 text-center">
-          <div class="text-purple-500 mb-2 text-2xl">💬</div>
-          <h4 class="font-bold text-purple-600 mb-2">Interaktion</h4>
-          <p class="text-gray-700 text-sm">Fragen in Captions stellen</p>
-        </div>
-      </div>
+<h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">3. Instagram Reels Optimierung</h3>
+<p class="text-gray-700 mb-4">Maximieren Sie Ihre Sichtbarkeit:</p>
 
-      <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">4. LinkedIn für B2B-Marketing</h3>
-      <p class="text-gray-700 mb-4">So positionieren Sie sich als Experte:</p>
-      <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
-        <li>Lösungsorientierte Case Studies teilen</li>
-        <li>Persönliche Erfolgsgeschichten</li>
-        <li>Kommentare auf relevanten Posts</li>
-        <li>Newsletter-Integration</li>
-      </ul>
+<div class="grid md:grid-cols-3 gap-4 my-6">
+  <div class="bg-white p-4 rounded-lg shadow border border-gray-200 text-center">
+    <div class="text-purple-500 mb-2 text-2xl">👁️</div>
+    <h4 class="font-bold text-purple-600 mb-2">Aufmerksamkeit</h4>
+    <p class="text-gray-700 text-sm">Erste 3 Sekunden entscheidend</p>
+  </div>
+  <div class="bg-white p-4 rounded-lg shadow border border-gray-200 text-center">
+    <div class="text-purple-500 mb-2 text-2xl">🔄</div>
+    <h4 class="font-bold text-purple-600 mb-2">Wiedergabezeit</h4>
+    <p class="text-gray-700 text-sm">Mindestens 75% Completion Rate</p>
+  </div>
+  <div class="bg-white p-4 rounded-lg shadow border border-gray-200 text-center">
+    <div class="text-purple-500 mb-2 text-2xl">💬</div>
+    <h4 class="font-bold text-purple-600 mb-2">Interaktion</h4>
+    <p class="text-gray-700 text-sm">Fragen in Captions stellen</p>
+  </div>
+</div>
+
+<h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">4. LinkedIn für B2B-Marketing</h3>
+<p class="text-gray-700 mb-4">So positionieren Sie sich als Experte:</p>
+<ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
+  <li>Lösungsorientierte Case Studies teilen</li>
+  <li>Persönliche Erfolgsgeschichten</li>
+  <li>Kommentare auf relevanten Posts</li>
+  <li>Newsletter-Integration</li>
+</ul>
     `,
     author: {
       name: 'Muaaz Chihabi',

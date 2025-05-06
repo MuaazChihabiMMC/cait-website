@@ -8,93 +8,93 @@ const tiktokPost = {
     metaDescription: 'Wie Sie den TikTok-Algorithmus verstehen und für Ihr Business nutzen - Strategien für organisches Wachstum',
     content: `
       <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">Warum TikTok für Ihr Business unverzichtbar ist</h2>
-      <p class="text-gray-700 mb-6">Mit über 1 Milliarde aktiven Nutzern bietet TikTok einzigartige Möglichkeiten für virale Reichweite. Im Gegensatz zu anderen Plattformen kann hier auch ohne große Follower-Basis organisches Wachstum erzielt werden - wenn Sie den Algorithmus verstehen.</p>
+<p class="text-gray-700 mb-6">Mit über 1 Milliarde aktiven Nutzern bietet TikTok einzigartige Möglichkeiten für virale Reichweite. Im Gegensatz zu anderen Plattformen kann hier auch ohne große Follower-Basis organisches Wachstum erzielt werden - wenn Sie den Algorithmus verstehen.</p>
 
-      <div class="bg-pink-50 border-l-4 border-pink-500 p-4 my-6 rounded-r">
-        <strong class="block font-semibold text-pink-800">Statistik:</strong>
-        <p class="text-pink-700 mt-1">TikTok-Videos erhalten durchschnittlich 17% höhere Engagement-Raten als Instagram Reels.</p>
-      </div>
+<div class="bg-pink-50 border-l-4 border-pink-500 p-4 my-6 rounded-r">
+  <p class="font-semibold text-pink-800 mb-1">Statistik:</p>
+  <p class="text-pink-700">TikTok-Videos erhalten durchschnittlich 17% höhere Engagement-Raten als Instagram Reels.</p>
+</div>
 
-      <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">1. Den TikTok-Algorithmus verstehen</h3>
-      <p class="text-gray-700 mb-4">So funktioniert die TikTok-For-You-Page (FYP):</p>
-      <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
-        <li><strong>Completion Rate:</strong> Videos die bis zum Ende geschaut werden, werden bevorzugt</li>
-        <li><strong>Wiedergabelisten:</strong> Videos die mehrfach angesehen werden</li>
-        <li><strong>Interaktionen:</strong> Likes, Kommentare, Shares und Bookmarks</li>
-        <li><strong>Relevanz:</strong> Hashtags, Captions und Audio-Trends</li>
-      </ul>
+<h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">1. Den TikTok-Algorithmus verstehen</h3>
+<p class="text-gray-700 mb-4">So funktioniert die TikTok-For-You-Page (FYP):</p>
+<ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
+  <li><span class="font-medium">Completion Rate:</span> Videos die bis zum Ende geschaut werden, werden bevorzugt</li>
+  <li><span class="font-medium">Wiedergabelisten:</span> Videos die mehrfach angesehen werden</li>
+  <li><span class="font-medium">Interaktionen:</span> Likes, Kommentare, Shares und Bookmarks</li>
+  <li><span class="font-medium">Relevanz:</span> Hashtags, Captions und Audio-Trends</li>
+</ul>
 
-      <div class="grid md:grid-cols-2 gap-6 my-8">
-        <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
-          <h4 class="font-bold text-pink-600 mb-3">Optimale Video-Länge</h4>
-          <ul class="space-y-2 text-gray-700">
-            <li>• 21-34 Sekunden für maximale Completion Rate</li>
-            <li>• 7-15 Sekunden für schnelle Botschaften</li>
-            <li>• 55+ Sekunden für Tutorials/How-Tos</li>
-          </ul>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
-          <h4 class="font-bold text-pink-600 mb-3">Wichtige KPIs</h4>
-          <ul class="space-y-2 text-gray-700">
-            <li>• 50-80% Completion Rate</li>
-            <li>• 5-10% Like-Rate</li>
-            <li>• 1-3% Share-Rate</li>
-          </ul>
-        </div>
-      </div>
+<div class="grid md:grid-cols-2 gap-6 my-8">
+  <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
+    <h4 class="font-bold text-pink-600 mb-3">Optimale Video-Länge</h4>
+    <ul class="space-y-2 text-gray-700">
+      <li>• 21-34 Sekunden für maximale Completion Rate</li>
+      <li>• 7-15 Sekunden für schnelle Botschaften</li>
+      <li>• 55+ Sekunden für Tutorials/How-Tos</li>
+    </ul>
+  </div>
+  <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
+    <h4 class="font-bold text-pink-600 mb-3">Wichtige KPIs</h4>
+    <ul class="space-y-2 text-gray-700">
+      <li>• 50-80% Completion Rate</li>
+      <li>• 5-10% Like-Rate</li>
+      <li>• 1-3% Share-Rate</li>
+    </ul>
+  </div>
+</div>
 
-      <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">2. Content-Strategien die viral gehen</h3>
-      <p class="text-gray-700 mb-4">Bewährte Formate für Business-Accounts:</p>
-      
-      <div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-6 rounded-r">
-        <strong class="block font-semibold text-blue-800">Profi-Tipp:</strong>
-        <p class="text-blue-700 mt-1">Nutzen Sie den "3-2-1 Ansatz": 3 Unterhaltungsvideos, 2 informative Videos, 1 Verkaufsvideo pro Woche.</p>
-      </div>
+<h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">2. Content-Strategien die viral gehen</h3>
+<p class="text-gray-700 mb-4">Bewährte Formate für Business-Accounts:</p>
 
-      <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
-        <li><strong>Before/After:</strong> Produktdemonstrationen</li>
-        <li><strong>Day-in-the-Life:</strong> Hinter den Kulissen</li>
-        <li><strong>Challenges:</strong> Markenspezifische Trends</li>
-        <li><strong>Duette:</strong> Interaktion mit Kunden</li>
-        <li><strong>How-Tos:</strong> Problemlösungen zeigen</li>
-      </ul>
+<div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-6 rounded-r">
+  <p class="font-semibold text-blue-800 mb-1">Profi-Tipp:</p>
+  <p class="text-blue-700">Nutzen Sie den "3-2-1 Ansatz": 3 Unterhaltungsvideos, 2 informative Videos, 1 Verkaufsvideo pro Woche.</p>
+</div>
 
-      <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">3. Hashtag-Strategie</h3>
-      <p class="text-gray-700 mb-4">So finden Sie die perfekten Hashtags:</p>
+<ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
+  <li><span class="font-medium">Before/After:</span> Produktdemonstrationen</li>
+  <li><span class="font-medium">Day-in-the-Life:</span> Hinter den Kulissen</li>
+  <li><span class="font-medium">Challenges:</span> Markenspezifische Trends</li>
+  <li><span class="font-medium">Duette:</span> Interaktion mit Kunden</li>
+  <li><span class="font-medium">How-Tos:</span> Problemlösungen zeigen</li>
+</ul>
 
-      <div class="grid md:grid-cols-3 gap-4 my-6">
-        <div class="bg-white p-4 rounded-lg shadow border border-gray-200 text-center">
-          <div class="text-pink-500 mb-2 text-2xl">#️⃣</div>
-          <h4 class="font-bold text-pink-600 mb-2">1 Mega-Hashtag</h4>
-          <p class="text-gray-700 text-sm">500M+ Aufrufe (z.B. #fyp)</p>
-        </div>
-        <div class="bg-white p-4 rounded-lg shadow border border-gray-200 text-center">
-          <div class="text-pink-500 mb-2 text-2xl">#️⃣</div>
-          <h4 class="font-bold text-pink-600 mb-2">3 Mid-Range</h4>
-          <p class="text-gray-700 text-sm">1-10M Aufrufe</p>
-        </div>
-        <div class="bg-white p-4 rounded-lg shadow border border-gray-200 text-center">
-          <div class="text-pink-500 mb-2 text-2xl">#️⃣</div>
-          <h4 class="font-bold text-pink-600 mb-2">2 Nischen-Hashtags</h4>
-          <p class="text-gray-700 text-sm">10k-500k Aufrufe</p>
-        </div>
-      </div>
+<h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">3. Hashtag-Strategie</h3>
+<p class="text-gray-700 mb-4">So finden Sie die perfekten Hashtags:</p>
 
-      <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">4. Audio-Trends nutzen</h3>
-      <p class="text-gray-700 mb-4">Sound ist entscheidend für virales Potenzial:</p>
-      <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
-        <li>Trending Sounds in der Discover-Sektion finden</li>
-        <li>Originale Audio-Creation für Markenidentität</li>
-        <li>Voiceovers für bessere Zugänglichkeit</li>
-        <li>Lautstärke anpassen (80% Musik, 100% Voice)</li>
-      </ul>
+<div class="grid md:grid-cols-3 gap-4 my-6">
+  <div class="bg-white p-4 rounded-lg shadow border border-gray-200 text-center">
+    <div class="text-pink-500 mb-2 text-2xl">#️⃣</div>
+    <h4 class="font-bold text-pink-600 mb-2">1 Mega-Hashtag</h4>
+    <p class="text-gray-700 text-sm">500M+ Aufrufe (z.B. #fyp)</p>
+  </div>
+  <div class="bg-white p-4 rounded-lg shadow border border-gray-200 text-center">
+    <div class="text-pink-500 mb-2 text-2xl">#️⃣</div>
+    <h4 class="font-bold text-pink-600 mb-2">3 Mid-Range</h4>
+    <p class="text-gray-700 text-sm">1-10M Aufrufe</p>
+  </div>
+  <div class="bg-white p-4 rounded-lg shadow border border-gray-200 text-center">
+    <div class="text-pink-500 mb-2 text-2xl">#️⃣</div>
+    <h4 class="font-bold text-pink-600 mb-2">2 Nischen-Hashtags</h4>
+    <p class="text-gray-700 text-sm">10k-500k Aufrufe</p>
+  </div>
+</div>
 
-      <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">5. Posting-Zeiten optimieren</h3>
-      <p class="text-gray-700 mb-4">Beste Zeiten für Engagement:</p>
-      <div class="bg-yellow-50 border-l-4 border-yellow-500 p-4 my-6 rounded-r">
-        <strong class="block font-semibold text-yellow-800">Zeitplan:</strong>
-        <p class="text-yellow-700 mt-1">Deutschland: 16-20 Uhr Wochentage, 10-14 Uhr Wochenenden | B2B: 8-10 Uhr Dienstag-Donnerstag</p>
-      </div>
+<h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">4. Audio-Trends nutzen</h3>
+<p class="text-gray-700 mb-4">Sound ist entscheidend für virales Potenzial:</p>
+<ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
+  <li>Trending Sounds in der Discover-Sektion finden</li>
+  <li>Originale Audio-Creation für Markenidentität</li>
+  <li>Voiceovers für bessere Zugänglichkeit</li>
+  <li>Lautstärke anpassen (80% Musik, 100% Voice)</li>
+</ul>
+
+<h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">5. Posting-Zeiten optimieren</h3>
+<p class="text-gray-700 mb-4">Beste Zeiten für Engagement:</p>
+<div class="bg-yellow-50 border-l-4 border-yellow-500 p-4 my-6 rounded-r">
+  <p class="font-semibold text-yellow-800 mb-1">Zeitplan:</p>
+  <p class="text-yellow-700">Deutschland: 16-20 Uhr Wochentage, 10-14 Uhr Wochenenden | B2B: 8-10 Uhr Dienstag-Donnerstag</p>
+</div>
     `,
     author: {
       name: 'Muaaz Chihabi',

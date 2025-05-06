@@ -22,151 +22,151 @@ const post = {
   },
   content: `
     <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">Die Evolution des Responsive Webdesigns</h2>
-    <p class="text-gray-700 mb-6">Responsive Webdesign hat sich von einem einfachen Media-Query-Konzept zu einer umfassenden Designphilosophie entwickelt. 2024 erwarten Nutzer nahtlose Erlebnisse über Smartphones, Tablets, Desktop-Computer und sogar Smart-TVs hinweg.</p>
+<p class="text-gray-700 mb-6">Responsive Webdesign hat sich von einem einfachen Media-Query-Konzept zu einer umfassenden Designphilosophie entwickelt. 2024 erwarten Nutzer nahtlose Erlebnisse über Smartphones, Tablets, Desktop-Computer und sogar Smart-TVs hinweg.</p>
 
-    <div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-6 rounded-r">
-      <strong class="block font-semibold text-blue-800">Studienergebnis:</strong>
-      <p class="text-blue-700 mt-1">Laut Google haben responsive Websites eine um 67% höhere Conversion-Rate auf Mobilgeräten im Vergleich zu nicht-responsiven Alternativen.</p>
-    </div>
+<div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-6 rounded-r">
+  <p class="font-semibold text-blue-800 mb-1">Studienergebnis:</p>
+  <p class="text-blue-700">Laut Google haben responsive Websites eine um 67% höhere Conversion-Rate auf Mobilgeräten im Vergleich zu nicht-responsiven Alternativen.</p>
+</div>
 
-    <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">1. Mobile-First: Vom Konzept zur Praxis</h3>
-    <p class="text-gray-700 mb-4">Der Mobile-First Ansatz ist 2024 nicht mehr optional. So setzen Sie ihn effektiv um:</p>
-    
-    <h4 class="font-bold text-gray-800 mt-6 mb-3">Design-Prinzipien</h4>
-    <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
-      <li><strong>Content-Priorisierung:</strong> Wichtige Inhalte zuerst für mobile Nutzer</li>
-      <li><strong>Touch-Optimierung:</strong> Mindestens 48×48px große interaktive Elemente</li>
-      <li><strong>Performance:</strong> Kritische Ressourcen unter 150KB für 3G-Netzwerke</li>
+<h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">1. Mobile-First: Vom Konzept zur Praxis</h3>
+<p class="text-gray-700 mb-4">Der Mobile-First Ansatz ist 2024 nicht mehr optional. So setzen Sie ihn effektiv um:</p>
+
+<h4 class="font-bold text-gray-800 mt-6 mb-3">Design-Prinzipien</h4>
+<ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
+  <li><span class="font-medium">Content-Priorisierung:</span> Wichtige Inhalte zuerst für mobile Nutzer</li>
+  <li><span class="font-medium">Touch-Optimierung:</span> Mindestens 48×48px große interaktive Elemente</li>
+  <li><span class="font-medium">Performance:</span> Kritische Ressourcen unter 150KB für 3G-Netzwerke</li>
+</ul>
+
+<h4 class="font-bold text-gray-800 mt-6 mb-3">Technische Umsetzung</h4>
+<div class="grid md:grid-cols-2 gap-6 my-6">
+  <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
+    <h5 class="font-bold text-blue-600 mb-3">CSS-Technologien</h5>
+    <ul class="space-y-2 text-gray-700">
+      <li>• Fluid Grids mit Prozentwerten</li>
+      <li>• Flexible Bilder (max-width: 100%)</li>
+      <li>• Media Queries für Breakpoints</li>
+      <li>• Container Queries (neu 2024)</li>
     </ul>
-
-    <h4 class="font-bold text-gray-800 mt-6 mb-3">Technische Umsetzung</h4>
-    <div class="grid md:grid-cols-2 gap-6 my-6">
-      <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
-        <h5 class="font-bold text-blue-600 mb-3">CSS-Technologien</h5>
-        <ul class="space-y-2 text-gray-700">
-          <li>• Fluid Grids mit Prozentwerten</li>
-          <li>• Flexible Bilder (max-width: 100%)</li>
-          <li>• Media Queries für Breakpoints</li>
-          <li>• Container Queries (neu 2024)</li>
-        </ul>
-      </div>
-      <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
-        <h5 class="font-bold text-blue-600 mb-3">Performance-Tools</h5>
-        <ul class="space-y-2 text-gray-700">
-          <li>• Chrome Lighthouse</li>
-          <li>• WebPageTest.org</li>
-          <li>• Google PageSpeed Insights</li>
-          <li>• BrowserStack für Cross-Device-Tests</li>
-        </ul>
-      </div>
-    </div>
-
-    <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">2. Moderne Layout-Systeme</h3>
-    <p class="text-gray-700 mb-4">2024 setzen Profis auf diese Technologien:</p>
-
-    <div class="overflow-x-auto">
-      <table class="min-w-full bg-white rounded-lg overflow-hidden mb-6">
-        <thead class="bg-gray-100">
-          <tr>
-            <th class="py-3 px-4 text-left font-semibold text-gray-700">Technologie</th>
-            <th class="py-3 px-4 text-left font-semibold text-gray-700">Einsatzgebiet</th>
-            <th class="py-3 px-4 text-left font-semibold text-gray-700">Vorteile</th>
-          </tr>
-        </thead>
-        <tbody class="divide-y divide-gray-200">
-          <tr>
-            <td class="py-3 px-4 text-gray-700 font-medium">CSS Grid</td>
-            <td class="py-3 px-4 text-gray-700">Komplexe 2D-Layouts</td>
-            <td class="py-3 px-4 text-gray-700">Präzise Kontrolle ohne Media Queries</td>
-          </tr>
-          <tr>
-            <td class="py-3 px-4 text-gray-700 font-medium">Flexbox</td>
-            <td class="py-3 px-4 text-gray-700">Ein-dimensionale Layouts</td>
-            <td class="py-3 px-4 text-gray-700">Dynamische Ausrichtung</td>
-          </tr>
-          <tr>
-            <td class="py-3 px-4 text-gray-700 font-medium">Container Queries</td>
-            <td class="py-3 px-4 text-gray-700">Komponenten-basiert</td>
-            <td class="py-3 px-4 text-gray-700">Echte Komponenten-Unabhängigkeit</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">3. Responsive Bilder und Medien</h3>
-    <p class="text-gray-700 mb-4">Bildoptimierung ist entscheidend für Performance:</p>
-
-    <div class="bg-green-50 border-l-4 border-green-500 p-4 my-6 rounded-r">
-      <strong class="block font-semibold text-green-800">Best Practice:</strong>
-      <p class="text-green-700 mt-1">Verwenden Sie das &lt;picture&gt;-Element mit WebP-Format und Fallback zu JPEG/PNG für maximale Browserkompatibilität.</p>
-    </div>
-
-    <div class="grid md:grid-cols-2 gap-6 my-8">
-      <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
-        <h4 class="font-bold text-blue-600 mb-3">Bildformate</h4>
-        <ul class="space-y-3 text-gray-700">
-          <li><strong>WebP:</strong> 30% kleiner als JPEG bei gleicher Qualität</li>
-          <li><strong>AVIF:</strong> Neues Format für hohe Kompression</li>
-          <li><strong>SVG:</strong> Für Vektorgrafiken und Icons</li>
-        </ul>
-      </div>
-      <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
-        <h4 class="font-bold text-blue-600 mb-3">Optimierungstechniken</h4>
-        <ul class="space-y-3 text-gray-700">
-          <li><strong>srcset:</strong> Gerätespezifische Bildvarianten</li>
-          <li><strong>Lazy Loading:</strong> loading="lazy" Attribut</li>
-          <li><strong>Art Direction:</strong> Unterschiedliche Bildausschnitte</li>
-        </ul>
-      </div>
-    </div>
-
-    <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">4. Responsive Typografie</h3>
-    <p class="text-gray-700 mb-4">Schriftgrößen müssen auf allen Geräten lesbar sein:</p>
-
-    <div class="bg-purple-50 border-l-4 border-purple-500 p-4 my-6 rounded-r">
-      <strong class="block font-semibold text-purple-800">Tipp:</strong>
-      <p class="text-purple-700 mt-1">Verwenden Sie clamp() für fließende Schriftgrößen: font-size: clamp(1rem, 2vw, 1.5rem);</p>
-    </div>
-
-    <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">5. Progressive Enhancement Strategie</h3>
-    <p class="text-gray-700 mb-4">So stellen Sie Kompatibilität sicher:</p>
-    <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
-      <li><strong>Feature Detection:</strong> Modernizr oder @supports</li>
-      <li><strong>Fallbacks:</strong> Für ältere Browser bereitstellen</li>
-      <li><strong>Polyfills:</strong> Nur bei Bedarf laden</li>
+  </div>
+  <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
+    <h5 class="font-bold text-blue-600 mb-3">Performance-Tools</h5>
+    <ul class="space-y-2 text-gray-700">
+      <li>• Chrome Lighthouse</li>
+      <li>• WebPageTest.org</li>
+      <li>• Google PageSpeed Insights</li>
+      <li>• BrowserStack für Cross-Device-Tests</li>
     </ul>
+  </div>
+</div>
 
-    <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">6. Testing und Debugging</h3>
-    <p class="text-gray-700 mb-4">Umfassende Tests sind unerlässlich:</p>
+<h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">2. Moderne Layout-Systeme</h3>
+<p class="text-gray-700 mb-4">2024 setzen Profis auf diese Technologien:</p>
 
-    <div class="grid md:grid-cols-2 gap-6 my-8">
-      <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
-        <h4 class="font-bold text-blue-600 mb-3">Testmethoden</h4>
-        <ul class="space-y-2 text-gray-700">
-          <li>• Chrome DevTools Device Mode</li>
-          <li>• Responsive Design Checker</li>
-          <li>• Echte Gerätetests</li>
-          <li>• User Testing mit verschiedenen Geräten</li>
-        </ul>
-      </div>
-      <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
-        <h4 class="font-bold text-blue-600 mb-3">Häufige Probleme</h4>
-        <ul class="space-y-2 text-gray-700">
-          <li>• Viewport-Meta-Tag fehlt</li>
-          <li>• Feste Bildgrößen</li>
-          <li>• Nicht-responsive Tabellen</li>
-          <li>• Media Query Lücken</li>
-        </ul>
-      </div>
-    </div>
+<div class="overflow-x-auto">
+  <table class="min-w-full bg-white rounded-lg overflow-hidden mb-6">
+    <thead class="bg-gray-100">
+      <tr>
+        <th class="py-3 px-4 text-left font-semibold text-gray-700">Technologie</th>
+        <th class="py-3 px-4 text-left font-semibold text-gray-700">Einsatzgebiet</th>
+        <th class="py-3 px-4 text-left font-semibold text-gray-700">Vorteile</th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-gray-200">
+      <tr>
+        <td class="py-3 px-4 text-gray-700 font-medium">CSS Grid</td>
+        <td class="py-3 px-4 text-gray-700">Komplexe 2D-Layouts</td>
+        <td class="py-3 px-4 text-gray-700">Präzise Kontrolle ohne Media Queries</td>
+      </tr>
+      <tr>
+        <td class="py-3 px-4 text-gray-700 font-medium">Flexbox</td>
+        <td class="py-3 px-4 text-gray-700">Ein-dimensionale Layouts</td>
+        <td class="py-3 px-4 text-gray-700">Dynamische Ausrichtung</td>
+      </tr>
+      <tr>
+        <td class="py-3 px-4 text-gray-700 font-medium">Container Queries</td>
+        <td class="py-3 px-4 text-gray-700">Komponenten-basiert</td>
+        <td class="py-3 px-4 text-gray-700">Echte Komponenten-Unabhängigkeit</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
-    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-6">Zukunft des Responsive Designs</h2>
-    <p class="text-gray-700 mb-6">Die Entwicklung geht hin zu noch flexibleren Ansätzen:</p>
-    <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
-      <li><strong>CSS Container Queries:</strong> Komponenten reagieren auf ihren Container</li>
-      <li><strong>Viewport Units:</strong> dvh, lvh, svh für bessere Mobile-Experience</li>
-      <li><strong>Adaptive Designs:</strong> KI-gestützte Layoutanpassungen</li>
+<h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">3. Responsive Bilder und Medien</h3>
+<p class="text-gray-700 mb-4">Bildoptimierung ist entscheidend für Performance:</p>
+
+<div class="bg-green-50 border-l-4 border-green-500 p-4 my-6 rounded-r">
+  <p class="font-semibold text-green-800 mb-1">Best Practice:</p>
+  <p class="text-green-700">Verwenden Sie das &lt;picture&gt;-Element mit WebP-Format und Fallback zu JPEG/PNG für maximale Browserkompatibilität.</p>
+</div>
+
+<div class="grid md:grid-cols-2 gap-6 my-8">
+  <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
+    <h4 class="font-bold text-blue-600 mb-3">Bildformate</h4>
+    <ul class="space-y-3 text-gray-700">
+      <li><span class="font-medium">WebP:</span> 30% kleiner als JPEG bei gleicher Qualität</li>
+      <li><span class="font-medium">AVIF:</span> Neues Format für hohe Kompression</li>
+      <li><span class="font-medium">SVG:</span> Für Vektorgrafiken und Icons</li>
     </ul>
+  </div>
+  <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
+    <h4 class="font-bold text-blue-600 mb-3">Optimierungstechniken</h4>
+    <ul class="space-y-3 text-gray-700">
+      <li><span class="font-medium">srcset:</span> Gerätespezifische Bildvarianten</li>
+      <li><span class="font-medium">Lazy Loading:</span> loading="lazy" Attribut</li>
+      <li><span class="font-medium">Art Direction:</span> Unterschiedliche Bildausschnitte</li>
+    </ul>
+  </div>
+</div>
+
+<h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">4. Responsive Typografie</h3>
+<p class="text-gray-700 mb-4">Schriftgrößen müssen auf allen Geräten lesbar sein:</p>
+
+<div class="bg-purple-50 border-l-4 border-purple-500 p-4 my-6 rounded-r">
+  <p class="font-semibold text-purple-800 mb-1">Tipp:</p>
+  <p class="text-purple-700">Verwenden Sie clamp() für fließende Schriftgrößen: font-size: clamp(1rem, 2vw, 1.5rem);</p>
+</div>
+
+<h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">5. Progressive Enhancement Strategie</h3>
+<p class="text-gray-700 mb-4">So stellen Sie Kompatibilität sicher:</p>
+<ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
+  <li><span class="font-medium">Feature Detection:</span> Modernizr oder @supports</li>
+  <li><span class="font-medium">Fallbacks:</span> Für ältere Browser bereitstellen</li>
+  <li><span class="font-medium">Polyfills:</span> Nur bei Bedarf laden</li>
+</ul>
+
+<h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">6. Testing und Debugging</h3>
+<p class="text-gray-700 mb-4">Umfassende Tests sind unerlässlich:</p>
+
+<div class="grid md:grid-cols-2 gap-6 my-8">
+  <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
+    <h4 class="font-bold text-blue-600 mb-3">Testmethoden</h4>
+    <ul class="space-y-2 text-gray-700">
+      <li>• Chrome DevTools Device Mode</li>
+      <li>• Responsive Design Checker</li>
+      <li>• Echte Gerätetests</li>
+      <li>• User Testing mit verschiedenen Geräten</li>
+    </ul>
+  </div>
+  <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
+    <h4 class="font-bold text-blue-600 mb-3">Häufige Probleme</h4>
+    <ul class="space-y-2 text-gray-700">
+      <li>• Viewport-Meta-Tag fehlt</li>
+      <li>• Feste Bildgrößen</li>
+      <li>• Nicht-responsive Tabellen</li>
+      <li>• Media Query Lücken</li>
+    </ul>
+  </div>
+</div>
+
+<h2 class="text-2xl font-bold text-gray-900 mt-12 mb-6">Zukunft des Responsive Designs</h2>
+<p class="text-gray-700 mb-6">Die Entwicklung geht hin zu noch flexibleren Ansätzen:</p>
+<ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
+  <li><span class="font-medium">CSS Container Queries:</span> Komponenten reagieren auf ihren Container</li>
+  <li><span class="font-medium">Viewport Units:</span> dvh, lvh, svh für bessere Mobile-Experience</li>
+  <li><span class="font-medium">Adaptive Designs:</span> KI-gestützte Layoutanpassungen</li>
+</ul>
   `
 };
 

@@ -21,129 +21,129 @@ const post = {
     bio: 'Muaaz Chihabi ist ein passionierter CSS-Spezialist mit über 7 Jahren Erfahrung in modernen Web-Layouts. Er hat sich auf die Entwicklung responsiver, barrierefreier und performanter Benutzeroberflächen spezialisiert, die sowohl ästhetisch als auch funktional überzeugen. '
   },
   content: `
-    <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">Die Evolution von CSS</h2>
-    <p class="text-gray-700 mb-6">CSS hat sich in den letzten Jahren rasant weiterentwickelt. Während wir früher mit Float-basierten Layouts kämpften, stehen uns heute mächtige Tools wie Grid, Flexbox und Container Queries zur Verfügung, die das Webdesign revolutioniert haben.</p>
+   <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">Die Evolution von CSS</h2>
+<p class="text-gray-700 mb-6">CSS hat sich in den letzten Jahren rasant weiterentwickelt. Während wir früher mit Float-basierten Layouts kämpften, stehen uns heute mächtige Tools wie Grid, Flexbox und Container Queries zur Verfügung, die das Webdesign revolutioniert haben.</p>
 
-    <div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-6 rounded-r">
-      <strong class="block font-semibold text-blue-800">Statistik:</strong>
-      <p class="text-blue-700 mt-1">Laut State of CSS 2023 verwenden bereits 87% der Entwickler CSS Grid und 92% Flexbox in ihren Projekten.</p>
-    </div>
+<div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-6 rounded-r">
+  <p class="font-semibold text-blue-800 mb-1">Statistik:</p>
+  <p class="text-blue-700">Laut State of CSS 2023 verwenden bereits 87% der Entwickler CSS Grid und 92% Flexbox in ihren Projekten.</p>
+</div>
 
-    <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">1. CSS Grid: Das ultimative Layout-Tool</h3>
-    <p class="text-gray-700 mb-4">CSS Grid ermöglicht komplexe zweidimensionale Layouts mit minimalem Code:</p>
-    
-    <div class="grid md:grid-cols-2 gap-6 my-8">
-      <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
-        <h4 class="font-bold text-blue-600 mb-3">Grid-Grundlagen</h4>
-        <ul class="space-y-2 text-gray-700">
-          <li>• <code>display: grid</code> aktiviert Grid</li>
-          <li>• <code>grid-template-columns</code> definiert Spalten</li>
-          <li>• <code>grid-template-rows</code> definiert Zeilen</li>
-          <li>• <code>gap</code> für Abstände zwischen Elementen</li>
-        </ul>
-      </div>
-      <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
-        <h4 class="font-bold text-blue-600 mb-3">Fortgeschrittene Techniken</h4>
-        <ul class="space-y-2 text-gray-700">
-          <li>• <code>grid-template-areas</code> für semantische Layouts</li>
-          <li>• <code>minmax()</code> für flexible Größen</li>
-          <li>• <code>auto-fit</code> und <code>auto-fill</code></li>
-          <li>• Subgrid für verschachtelte Grids</li>
-        </ul>
-      </div>
-    </div>
+<h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">1. CSS Grid: Das ultimative Layout-Tool</h3>
+<p class="text-gray-700 mb-4">CSS Grid ermöglicht komplexe zweidimensionale Layouts mit minimalem Code:</p>
 
-    <div class="bg-orange-50 border-l-4 border-orange-500 p-4 my-6 rounded-r">
-      <strong class="block font-semibold text-orange-800">Beispiel:</strong>
-      <pre class="text-orange-700 mt-1 bg-gray-800 p-4 rounded overflow-x-auto">
+<div class="grid md:grid-cols-2 gap-6 my-8">
+  <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
+    <h4 class="font-bold text-blue-600 mb-3">Grid-Grundlagen</h4>
+    <ul class="space-y-2 text-gray-700">
+      <li>• <code>display: grid</code> aktiviert Grid</li>
+      <li>• <code>grid-template-columns</code> definiert Spalten</li>
+      <li>• <code>grid-template-rows</code> definiert Zeilen</li>
+      <li>• <code>gap</code> für Abstände zwischen Elementen</li>
+    </ul>
+  </div>
+  <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
+    <h4 class="font-bold text-blue-600 mb-3">Fortgeschrittene Techniken</h4>
+    <ul class="space-y-2 text-gray-700">
+      <li>• <code>grid-template-areas</code> für semantische Layouts</li>
+      <li>• <code>minmax()</code> für flexible Größen</li>
+      <li>• <code>auto-fit</code> und <code>auto-fill</code></li>
+      <li>• Subgrid für verschachtelte Grids</li>
+    </ul>
+  </div>
+</div>
+
+<div class="bg-orange-50 border-l-4 border-orange-500 p-4 my-6 rounded-r">
+  <p class="font-semibold text-orange-800 mb-1">Beispiel:</p>
+  <pre class="text-orange-700 bg-gray-800 p-4 rounded overflow-x-auto">
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1rem;
 }</pre>
-    </div>
+</div>
 
-    <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">2. Container Queries: Der Game-Changer</h3>
-    <p class="text-gray-700 mb-4">Container Queries ermöglichen es Komponenten, ihr Layout basierend auf der verfügbaren Containergröße anzupassen:</p>
+<h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">2. Container Queries: Der Game-Changer</h3>
+<p class="text-gray-700 mb-4">Container Queries ermöglichen es Komponenten, ihr Layout basierend auf der verfügbaren Containergröße anzupassen:</p>
 
-    <div class="overflow-x-auto">
-      <table class="min-w-full bg-white rounded-lg overflow-hidden mb-6">
-        <thead class="bg-gray-100">
-          <tr>
-            <th class="py-3 px-4 text-left font-semibold text-gray-700">Feature</th>
-            <th class="py-3 px-4 text-left font-semibold text-gray-700">Beschreibung</th>
-            <th class="py-3 px-4 text-left font-semibold text-gray-700">Browser-Support</th>
-          </tr>
-        </thead>
-        <tbody class="divide-y divide-gray-200">
-          <tr>
-            <td class="py-3 px-4 text-gray-700 font-medium">@container</td>
-            <td class="py-3 px-4 text-gray-700">Definiert den Container-Kontext</td>
-            <td class="py-3 px-4 text-gray-700">Chrome, Edge, Firefox, Safari</td>
-          </tr>
-          <tr>
-            <td class="py-3 px-4 text-gray-700 font-medium">container-type</td>
-            <td class="py-3 px-4 text-gray-700">Legt die Art des Containers fest</td>
-            <td class="py-3 px-4 text-gray-700">Chrome, Edge, Firefox, Safari</td>
-          </tr>
-          <tr>
-            <td class="py-3 px-4 text-gray-700 font-medium">container-name</td>
-            <td class="py-3 px-4 text-gray-700">Benennt Container für spezifische Queries</td>
-            <td class="py-3 px-4 text-gray-700">Chrome, Edge, Firefox, Safari</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+<div class="overflow-x-auto">
+  <table class="min-w-full bg-white rounded-lg overflow-hidden mb-6">
+    <thead class="bg-gray-100">
+      <tr>
+        <th class="py-3 px-4 text-left font-semibold text-gray-700">Feature</th>
+        <th class="py-3 px-4 text-left font-semibold text-gray-700">Beschreibung</th>
+        <th class="py-3 px-4 text-left font-semibold text-gray-700">Browser-Support</th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-gray-200">
+      <tr>
+        <td class="py-3 px-4 text-gray-700 font-medium">@container</td>
+        <td class="py-3 px-4 text-gray-700">Definiert den Container-Kontext</td>
+        <td class="py-3 px-4 text-gray-700">Chrome, Edge, Firefox, Safari</td>
+      </tr>
+      <tr>
+        <td class="py-3 px-4 text-gray-700 font-medium">container-type</td>
+        <td class="py-3 px-4 text-gray-700">Legt die Art des Containers fest</td>
+        <td class="py-3 px-4 text-gray-700">Chrome, Edge, Firefox, Safari</td>
+      </tr>
+      <tr>
+        <td class="py-3 px-4 text-gray-700 font-medium">container-name</td>
+        <td class="py-3 px-4 text-gray-700">Benennt Container für spezifische Queries</td>
+        <td class="py-3 px-4 text-gray-700">Chrome, Edge, Firefox, Safari</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
-    <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">3. Neue CSS-Features 2024</h3>
-    <p class="text-gray-700 mb-4">Diese modernen CSS-Features sollten Sie kennen:</p>
+<h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">3. Neue CSS-Features 2024</h3>
+<p class="text-gray-700 mb-4">Diese modernen CSS-Features sollten Sie kennen:</p>
 
-    <div class="grid md:grid-cols-2 gap-6 my-8">
-      <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
-        <h4 class="font-bold text-blue-600 mb-3">Layout & Design</h4>
-        <ul class="space-y-2 text-gray-700">
-          <li>• <strong>CSS Nesting:</strong> Verschachtelung von Selektoren</li>
-          <li>• <strong>:has():</strong> Elternselektor für komplexe Bedingungen</li>
-          <li>• <strong>Viewport Units:</strong> dvh, lvh, svh für mobile Geräte</li>
-          <li>• <strong>Scroll Snap:</strong> Präzise Scroll-Positionierung</li>
-        </ul>
-      </div>
-      <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
-        <h4 class="font-bold text-blue-600 mb-3">Animation & Interaktion</h4>
-        <ul class="space-y-2 text-gray-700">
-          <li>• <strong>View Transitions API:</strong> Native Seitenübergänge</li>
-          <li>• <strong>@scroll-timeline:</strong> Animationen basierend auf Scroll</li>
-          <li>• <strong>color-mix():</strong> Dynamische Farbmischung</li>
-          <li>• <strong>accent-color:</strong> Styling von Formularelementen</li>
-        </ul>
-      </div>
-    </div>
-
-    <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">4. CSS vs. CSS-in-JS: Aktuelle Trends</h3>
-    <p class="text-gray-700 mb-4">Die Debatte um die beste Styling-Methode:</p>
-
-    <div class="bg-green-50 border-l-4 border-green-500 p-4 my-6 rounded-r">
-      <strong class="block font-semibold text-green-800">Erkenntnis:</strong>
-      <p class="text-green-700 mt-1">Native CSS-Features wie Cascade Layers und Scoping reduzieren den Bedarf an CSS-in-JS für viele Anwendungsfälle, während Tools wie Panda CSS eine Brücke zwischen beiden Welten schlagen.</p>
-    </div>
-
-    <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">5. Performance-Optimierung mit modernem CSS</h3>
-    <p class="text-gray-700 mb-4">So machen Sie Ihr CSS performant:</p>
-    <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
-      <li><strong>Reduzierte Reflows:</strong> CSS Triggers vermeiden</li>
-      <li><strong>Effiziente Selektoren:</strong> Spezifität und Komplexität minimieren</li>
-      <li><strong>Critical CSS:</strong> Above-the-fold Styling priorisieren</li>
-      <li><strong>Modernes Laden:</strong> @import vermeiden, lieber link-Tags</li>
+<div class="grid md:grid-cols-2 gap-6 my-8">
+  <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
+    <h4 class="font-bold text-blue-600 mb-3">Layout & Design</h4>
+    <ul class="space-y-2 text-gray-700">
+      <li>• <span class="font-medium">CSS Nesting:</span> Verschachtelung von Selektoren</li>
+      <li>• <span class="font-medium">:has():</span> Elternselektor für komplexe Bedingungen</li>
+      <li>• <span class="font-medium">Viewport Units:</span> dvh, lvh, svh für mobile Geräte</li>
+      <li>• <span class="font-medium">Scroll Snap:</span> Präzise Scroll-Positionierung</li>
     </ul>
-
-    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-6">Zukunft von CSS</h2>
-    <p class="text-gray-700 mb-6">Was uns in naher Zukunft erwartet:</p>
-    <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
-      <li><strong>CSS Scope:</strong> Besserer Styling-Scope ohne Spezifitätsprobleme</li>
-      <li><strong>CSS Toggles:</strong> Zustandsmanagement direkt in CSS</li>
-      <li><strong>Container Units:</strong> Relative Einheiten basierend auf Container</li>
-      <li><strong>CSS-Module:</strong> Native Unterstützung für komponentenbasierte Stile</li>
+  </div>
+  <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
+    <h4 class="font-bold text-blue-600 mb-3">Animation & Interaktion</h4>
+    <ul class="space-y-2 text-gray-700">
+      <li>• <span class="font-medium">View Transitions API:</span> Native Seitenübergänge</li>
+      <li>• <span class="font-medium">@scroll-timeline:</span> Animationen basierend auf Scroll</li>
+      <li>• <span class="font-medium">color-mix():</span> Dynamische Farbmischung</li>
+      <li>• <span class="font-medium">accent-color:</span> Styling von Formularelementen</li>
     </ul>
+  </div>
+</div>
+
+<h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">4. CSS vs. CSS-in-JS: Aktuelle Trends</h3>
+<p class="text-gray-700 mb-4">Die Debatte um die beste Styling-Methode:</p>
+
+<div class="bg-green-50 border-l-4 border-green-500 p-4 my-6 rounded-r">
+  <p class="font-semibold text-green-800 mb-1">Erkenntnis:</p>
+  <p class="text-green-700">Native CSS-Features wie Cascade Layers und Scoping reduzieren den Bedarf an CSS-in-JS für viele Anwendungsfälle, während Tools wie Panda CSS eine Brücke zwischen beiden Welten schlagen.</p>
+</div>
+
+<h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">5. Performance-Optimierung mit modernem CSS</h3>
+<p class="text-gray-700 mb-4">So machen Sie Ihr CSS performant:</p>
+<ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
+  <li><span class="font-medium">Reduzierte Reflows:</span> CSS Triggers vermeiden</li>
+  <li><span class="font-medium">Effiziente Selektoren:</span> Spezifität und Komplexität minimieren</li>
+  <li><span class="font-medium">Critical CSS:</span> Above-the-fold Styling priorisieren</li>
+  <li><span class="font-medium">Modernes Laden:</span> @import vermeiden, lieber link-Tags</li>
+</ul>
+
+<h2 class="text-2xl font-bold text-gray-900 mt-12 mb-6">Zukunft von CSS</h2>
+<p class="text-gray-700 mb-6">Was uns in naher Zukunft erwartet:</p>
+<ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
+  <li><span class="font-medium">CSS Scope:</span> Besserer Styling-Scope ohne Spezifitätsprobleme</li>
+  <li><span class="font-medium">CSS Toggles:</span> Zustandsmanagement direkt in CSS</li>
+  <li><span class="font-medium">Container Units:</span> Relative Einheiten basierend auf Container</li>
+  <li><span class="font-medium">CSS-Module:</span> Native Unterstützung für komponentenbasierte Stile</li>
+</ul>
   `
 };
 

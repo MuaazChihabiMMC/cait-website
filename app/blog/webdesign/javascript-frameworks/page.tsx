@@ -22,40 +22,40 @@ const post = {
   },
   content: `
     <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">Die JavaScript-Framework-Landschaft 2024</h2>
-    <p class="text-gray-700 mb-6">Die Wahl des richtigen JavaScript-Frameworks kann über den Erfolg Ihres Projekts entscheiden. Während React nach wie vor Marktführer ist, haben sich Vue, Angular und Svelte zu ernstzunehmenden Alternativen entwickelt, die jeweils ihre eigenen Stärken haben.</p>
+<p class="text-gray-700 mb-6">Die Wahl des richtigen JavaScript-Frameworks kann über den Erfolg Ihres Projekts entscheiden. Während React nach wie vor Marktführer ist, haben sich Vue, Angular und Svelte zu ernstzunehmenden Alternativen entwickelt, die jeweils ihre eigenen Stärken haben.</p>
 
-    <div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-6 rounded-r">
-      <strong class="block font-semibold text-blue-800">Statistik:</strong>
-      <p class="text-blue-700 mt-1">Laut State of JS 2023 verwenden 82% der Entwickler React, 46% Vue, 23% Angular und 18% Svelte in ihren Projekten.</p>
-    </div>
+<div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-6 rounded-r">
+  <p class="font-semibold text-blue-800 mb-1">Statistik:</p>
+  <p class="text-blue-700">Laut State of JS 2023 verwenden 82% der Entwickler React, 46% Vue, 23% Angular und 18% Svelte in ihren Projekten.</p>
+</div>
 
-    <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">1. React: Der unangefochtene Marktführer</h3>
-    <p class="text-gray-700 mb-4">React ist nach wie vor das beliebteste Frontend-Framework mit einer riesigen Community:</p>
-    
-    <div class="grid md:grid-cols-2 gap-6 my-8">
-      <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
-        <h4 class="font-bold text-blue-600 mb-3">Vorteile</h4>
-        <ul class="space-y-2 text-gray-700">
-          <li>• Große Community und Ökosystem</li>
-          <li>• Flexibles, komponentenbasiertes Design</li>
-          <li>• Virtual DOM für gute Performance</li>
-          <li>• Wiederverwendbare Komponenten</li>
-        </ul>
-      </div>
-      <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
-        <h4 class="font-bold text-blue-600 mb-3">Nachteile</h4>
-        <ul class="space-y-2 text-gray-700">
-          <li>• JSX hat steile Lernkurve</li>
-          <li>• Häufige Breaking Changes</li>
-          <li>• Zustandsmanagement erfordert externe Bibliotheken</li>
-          <li>• Große Bundle-Größe</li>
-        </ul>
-      </div>
-    </div>
+<h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">1. React: Der unangefochtene Marktführer</h3>
+<p class="text-gray-700 mb-4">React ist nach wie vor das beliebteste Frontend-Framework mit einer riesigen Community:</p>
 
-    <div class="bg-orange-50 border-l-4 border-orange-500 p-4 my-6 rounded-r">
-      <strong class="block font-semibold text-orange-800">Beispiel:</strong>
-      <pre class="text-orange-700 mt-1 bg-gray-800 p-4 rounded overflow-x-auto">
+<div class="grid md:grid-cols-2 gap-6 my-8">
+  <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
+    <h4 class="font-bold text-blue-600 mb-3">Vorteile</h4>
+    <ul class="space-y-2 text-gray-700">
+      <li>• Große Community und Ökosystem</li>
+      <li>• Flexibles, komponentenbasiertes Design</li>
+      <li>• Virtual DOM für gute Performance</li>
+      <li>• Wiederverwendbare Komponenten</li>
+    </ul>
+  </div>
+  <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
+    <h4 class="font-bold text-blue-600 mb-3">Nachteile</h4>
+    <ul class="space-y-2 text-gray-700">
+      <li>• JSX hat steile Lernkurve</li>
+      <li>• Häufige Breaking Changes</li>
+      <li>• Zustandsmanagement erfordert externe Bibliotheken</li>
+      <li>• Große Bundle-Größe</li>
+    </ul>
+  </div>
+</div>
+
+<div class="bg-orange-50 border-l-4 border-orange-500 p-4 my-6 rounded-r">
+  <p class="font-semibold text-orange-800 mb-1">Beispiel:</p>
+  <pre class="text-orange-700 bg-gray-800 p-4 rounded overflow-x-auto">
 function Counter() {
   const [count, setCount] = useState(0);
   return (
@@ -64,89 +64,89 @@ function Counter() {
     &lt;/button&gt;
   );
 }</pre>
-    </div>
+</div>
 
-    <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">2. Vue: Der aufstrebende Herausforderer</h3>
-    <p class="text-gray-700 mb-4">Vue kombiniert die besten Aspekte von React und Angular:</p>
+<h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">2. Vue: Der aufstrebende Herausforderer</h3>
+<p class="text-gray-700 mb-4">Vue kombiniert die besten Aspekte von React und Angular:</p>
 
-    <div class="overflow-x-auto">
-      <table class="min-w-full bg-white rounded-lg overflow-hidden mb-6">
-        <thead class="bg-gray-100">
-          <tr>
-            <th class="py-3 px-4 text-left font-semibold text-gray-700">Feature</th>
-            <th class="py-3 px-4 text-left font-semibold text-gray-700">Vue 3</th>
-            <th class="py-3 px-4 text-left font-semibold text-gray-700">React 18</th>
-          </tr>
-        </thead>
-        <tbody class="divide-y divide-gray-200">
-          <tr>
-            <td class="py-3 px-4 text-gray-700 font-medium">Performance</td>
-            <td class="py-3 px-4 text-gray-700">Sehr gut (Composition API)</td>
-            <td class="py-3 px-4 text-gray-700">Gut (Virtual DOM)</td>
-          </tr>
-          <tr>
-            <td class="py-3 px-4 text-gray-700 font-medium">Lernkurve</td>
-            <td class="py-3 px-4 text-gray-700">Einfach</td>
-            <td class="py-3 px-4 text-gray-700">Mittel</td>
-          </tr>
-          <tr>
-            <td class="py-3 px-4 text-gray-700 font-medium">Bundle-Größe</td>
-            <td class="py-3 px-4 text-gray-700">~22KB</td>
-            <td class="py-3 px-4 text-gray-700">~43KB</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+<div class="overflow-x-auto">
+  <table class="min-w-full bg-white rounded-lg overflow-hidden mb-6">
+    <thead class="bg-gray-100">
+      <tr>
+        <th class="py-3 px-4 text-left font-semibold text-gray-700">Feature</th>
+        <th class="py-3 px-4 text-left font-semibold text-gray-700">Vue 3</th>
+        <th class="py-3 px-4 text-left font-semibold text-gray-700">React 18</th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-gray-200">
+      <tr>
+        <td class="py-3 px-4 text-gray-700 font-medium">Performance</td>
+        <td class="py-3 px-4 text-gray-700">Sehr gut (Composition API)</td>
+        <td class="py-3 px-4 text-gray-700">Gut (Virtual DOM)</td>
+      </tr>
+      <tr>
+        <td class="py-3 px-4 text-gray-700 font-medium">Lernkurve</td>
+        <td class="py-3 px-4 text-gray-700">Einfach</td>
+        <td class="py-3 px-4 text-gray-700">Mittel</td>
+      </tr>
+      <tr>
+        <td class="py-3 px-4 text-gray-700 font-medium">Bundle-Größe</td>
+        <td class="py-3 px-4 text-gray-700">~22KB</td>
+        <td class="py-3 px-4 text-gray-700">~43KB</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
-    <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">3. Angular: Das Enterprise-Framework</h3>
-    <p class="text-gray-700 mb-4">Angular bietet ein vollständiges Framework für große Anwendungen:</p>
+<h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">3. Angular: Das Enterprise-Framework</h3>
+<p class="text-gray-700 mb-4">Angular bietet ein vollständiges Framework für große Anwendungen:</p>
 
-    <div class="grid md:grid-cols-2 gap-6 my-8">
-      <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
-        <h4 class="font-bold text-blue-600 mb-3">Stärken</h4>
-        <ul class="space-y-2 text-gray-700">
-          <li>• All-in-One-Lösung (Routing, Forms etc.)</li>
-          <li>• TypeScript-first</li>
-          <li>• Geeignet für große Teams</li>
-          <li>• Strikte Architekturvorgaben</li>
-        </ul>
-      </div>
-      <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
-        <h4 class="font-bold text-blue-600 mb-3">Schwächen</h4>
-        <ul class="space-y-2 text-gray-700">
-          <li>• Steile Lernkurve</li>
-          <li>• Komplexe Konzepte (Zones, Change Detection)</li>
-          <li>• Größere Bundle-Größe</li>
-          <li>• Weniger flexibel als React/Vue</li>
-        </ul>
-      </div>
-    </div>
-
-    <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">4. Svelte: Der innovative Ansatz</h3>
-    <p class="text-gray-700 mb-4">Svelte verfolgt einen radikal anderen Ansatz ohne Virtual DOM:</p>
-
-    <div class="bg-green-50 border-l-4 border-green-500 p-4 my-6 rounded-r">
-      <strong class="block font-semibold text-green-800">Innovation:</strong>
-      <p class="text-green-700 mt-1">Svelte kompiliert Ihren Code zu hochoptimiertem JavaScript zur Build-Zeit, anstatt eine Laufzeitbibliothek einzubinden. Dies führt zu kleineren Bundle-Größen und besserer Performance.</p>
-    </div>
-
-    <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">5. Framework-Vergleich: Wann welches Framework?</h3>
-    <p class="text-gray-700 mb-4">Die beste Wahl hängt von Ihren Anforderungen ab:</p>
-    <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
-      <li><strong>React:</strong> Flexible Projekte, große Teams, viele Third-Party-Integrationen</li>
-      <li><strong>Vue:</strong> Progressive Adoption, einfache Lernkurve, mittelgroße Projekte</li>
-      <li><strong>Angular:</strong> Enterprise-Anwendungen, strikte Architektur, TypeScript</li>
-      <li><strong>Svelte:</strong> Performance-kritische Anwendungen, kleine Bundle-Größe</li>
+<div class="grid md:grid-cols-2 gap-6 my-8">
+  <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
+    <h4 class="font-bold text-blue-600 mb-3">Stärken</h4>
+    <ul class="space-y-2 text-gray-700">
+      <li>• All-in-One-Lösung (Routing, Forms etc.)</li>
+      <li>• TypeScript-first</li>
+      <li>• Geeignet für große Teams</li>
+      <li>• Strikte Architekturvorgaben</li>
     </ul>
-
-    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-6">Zukunft der JavaScript-Frameworks</h2>
-    <p class="text-gray-700 mb-6">Trends und zukünftige Entwicklungen:</p>
-    <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
-      <li><strong>Islands Architecture:</strong> Teilhydrierung von Seiten</li>
-      <li><strong>Compiler-first:</strong> Mehr Frameworks wie Svelte</li>
-      <li><strong>Web Components:</strong> Bessere Integration mit Frameworks</li>
-      <li><strong>Server Components:</strong> React führt den Weg</li>
+  </div>
+  <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
+    <h4 class="font-bold text-blue-600 mb-3">Schwächen</h4>
+    <ul class="space-y-2 text-gray-700">
+      <li>• Steile Lernkurve</li>
+      <li>• Komplexe Konzepte (Zones, Change Detection)</li>
+      <li>• Größere Bundle-Größe</li>
+      <li>• Weniger flexibel als React/Vue</li>
     </ul>
+  </div>
+</div>
+
+<h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">4. Svelte: Der innovative Ansatz</h3>
+<p class="text-gray-700 mb-4">Svelte verfolgt einen radikal anderen Ansatz ohne Virtual DOM:</p>
+
+<div class="bg-green-50 border-l-4 border-green-500 p-4 my-6 rounded-r">
+  <p class="font-semibold text-green-800 mb-1">Innovation:</p>
+  <p class="text-green-700">Svelte kompiliert Ihren Code zu hochoptimiertem JavaScript zur Build-Zeit, anstatt eine Laufzeitbibliothek einzubinden. Dies führt zu kleineren Bundle-Größen und besserer Performance.</p>
+</div>
+
+<h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">5. Framework-Vergleich: Wann welches Framework?</h3>
+<p class="text-gray-700 mb-4">Die beste Wahl hängt von Ihren Anforderungen ab:</p>
+<ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
+  <li><span class="font-medium">React:</span> Flexible Projekte, große Teams, viele Third-Party-Integrationen</li>
+  <li><span class="font-medium">Vue:</span> Progressive Adoption, einfache Lernkurve, mittelgroße Projekte</li>
+  <li><span class="font-medium">Angular:</span> Enterprise-Anwendungen, strikte Architektur, TypeScript</li>
+  <li><span class="font-medium">Svelte:</span> Performance-kritische Anwendungen, kleine Bundle-Größe</li>
+</ul>
+
+<h2 class="text-2xl font-bold text-gray-900 mt-12 mb-6">Zukunft der JavaScript-Frameworks</h2>
+<p class="text-gray-700 mb-6">Trends und zukünftige Entwicklungen:</p>
+<ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
+  <li><span class="font-medium">Islands Architecture:</span> Teilhydrierung von Seiten</li>
+  <li><span class="font-medium">Compiler-first:</span> Mehr Frameworks wie Svelte</li>
+  <li><span class="font-medium">Web Components:</span> Bessere Integration mit Frameworks</li>
+  <li><span class="font-medium">Server Components:</span> React führt den Weg</li>
+</ul>
   `
 };
 

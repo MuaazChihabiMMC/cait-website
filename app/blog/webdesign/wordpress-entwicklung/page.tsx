@@ -22,40 +22,40 @@ const post = {
   },
   content: `
     <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">Die Evolution von WordPress</h2>
-    <p class="text-gray-700 mb-6">WordPress hat sich vom einfachen Blogging-System zum vollwertigen Content-Management-System entwickelt. Mit dem Block-Editor, Full Site Editing und modernen API-Möglichkeiten bietet WordPress heute Technologien für anspruchsvolle Webprojekte.</p>
+<p class="text-gray-700 mb-6">WordPress hat sich vom einfachen Blogging-System zum vollwertigen Content-Management-System entwickelt. Mit dem Block-Editor, Full Site Editing und modernen API-Möglichkeiten bietet WordPress heute Technologien für anspruchsvolle Webprojekte.</p>
 
-    <div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-6 rounded-r">
-      <strong class="block font-semibold text-blue-800">Statistik:</strong>
-      <p class="text-blue-700 mt-1">Laut W3Techs nutzen 43% aller Websites WordPress - das sind über 810 Millionen Websites weltweit (Stand 2024).</p>
-    </div>
+<div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-6 rounded-r">
+  <p class="font-semibold text-blue-800 mb-1">Statistik:</p>
+  <p class="text-blue-700">Laut W3Techs nutzen 43% aller Websites WordPress - das sind über 810 Millionen Websites weltweit (Stand 2024).</p>
+</div>
 
-    <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">1. Block-Themes und Full Site Editing</h3>
-    <p class="text-gray-700 mb-4">Mit WordPress 5.9 wurde das Full Site Editing eingeführt, das das Design der gesamten Website mit Blöcken ermöglicht:</p>
-    
-    <div class="grid md:grid-cols-2 gap-6 my-8">
-      <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
-        <h4 class="font-bold text-blue-600 mb-3">Vorteile von Block-Themes</h4>
-        <ul class="space-y-2 text-gray-700">
-          <li>• Kein Theme-Code mehr notwendig</li>
-          <li>• Visuelles Bearbeiten aller Website-Bereiche</li>
-          <li>• Einheitlicher Workflow für Inhalte und Design</li>
-          <li>• Wiederverwendbare Block-Muster</li>
-        </ul>
-      </div>
-      <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
-        <h4 class="font-bold text-blue-600 mb-3">Wichtige Block-Typen</h4>
-        <ul class="space-y-2 text-gray-700">
-          <li>• Template Parts (Header, Footer etc.)</li>
-          <li>• Query Loop für dynamische Inhalte</li>
-          <li>• Global Styles für Design-Systeme</li>
-          <li>• Theme Blocks für Navigationen</li>
-        </ul>
-      </div>
-    </div>
+<h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">1. Block-Themes und Full Site Editing</h3>
+<p class="text-gray-700 mb-4">Mit WordPress 5.9 wurde das Full Site Editing eingeführt, das das Design der gesamten Website mit Blöcken ermöglicht:</p>
 
-    <div class="bg-orange-50 border-l-4 border-orange-500 p-4 my-6 rounded-r">
-      <strong class="block font-semibold text-orange-800">Beispiel:</strong>
-      <pre class="text-orange-700 mt-1 bg-gray-800 p-4 rounded overflow-x-auto">
+<div class="grid md:grid-cols-2 gap-6 my-8">
+  <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
+    <h4 class="font-bold text-blue-600 mb-3">Vorteile von Block-Themes</h4>
+    <ul class="space-y-2 text-gray-700">
+      <li>• Kein Theme-Code mehr notwendig</li>
+      <li>• Visuelles Bearbeiten aller Website-Bereiche</li>
+      <li>• Einheitlicher Workflow für Inhalte und Design</li>
+      <li>• Wiederverwendbare Block-Muster</li>
+    </ul>
+  </div>
+  <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
+    <h4 class="font-bold text-blue-600 mb-3">Wichtige Block-Typen</h4>
+    <ul class="space-y-2 text-gray-700">
+      <li>• Template Parts (Header, Footer etc.)</li>
+      <li>• Query Loop für dynamische Inhalte</li>
+      <li>• Global Styles für Design-Systeme</li>
+      <li>• Theme Blocks für Navigationen</li>
+    </ul>
+  </div>
+</div>
+
+<div class="bg-orange-50 border-l-4 border-orange-500 p-4 my-6 rounded-r">
+  <p class="font-semibold text-orange-800 mb-1">Beispiel:</p>
+  <pre class="text-orange-700 bg-gray-800 p-4 rounded overflow-x-auto">
 /*
  * Theme.json für globale Design-Einstellungen
  */
@@ -69,89 +69,89 @@ const post = {
     }
   }
 }</pre>
-    </div>
+</div>
 
-    <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">2. Headless WordPress als CMS</h3>
-    <p class="text-gray-700 mb-4">Die REST API macht WordPress zu einem leistungsfähigen Backend für moderne Frontends:</p>
+<h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">2. Headless WordPress als CMS</h3>
+<p class="text-gray-700 mb-4">Die REST API macht WordPress zu einem leistungsfähigen Backend für moderne Frontends:</p>
 
-    <div class="overflow-x-auto">
-      <table class="min-w-full bg-white rounded-lg overflow-hidden mb-6">
-        <thead class="bg-gray-100">
-          <tr>
-            <th class="py-3 px-4 text-left font-semibold text-gray-700">Ansatz</th>
-            <th class="py-3 px-4 text-left font-semibold text-gray-700">Vorteile</th>
-            <th class="py-3 px-4 text-left font-semibold text-gray-700">Technologien</th>
-          </tr>
-        </thead>
-        <tbody class="divide-y divide-gray-200">
-          <tr>
-            <td class="py-3 px-4 text-gray-700 font-medium">Frontend-Framework</td>
-            <td class="py-3 px-4 text-gray-700">Beste Performance, moderne UX</td>
-            <td class="py-3 px-4 text-gray-700">React, Vue, Next.js</td>
-          </tr>
-          <tr>
-            <td class="py-3 px-4 text-gray-700 font-medium">Static Site Gen.</td>
-            <td class="py-3 px-4 text-gray-700">Höchste Sicherheit & Geschwindigkeit</td>
-            <td class="py-3 px-4 text-gray-700">Next.js, Gatsby</td>
-          </tr>
-          <tr>
-            <td class="py-3 px-4 text-gray-700 font-medium">Hybrid</td>
-            <td class="py-3 px-4 text-gray-700">Kombiniert Vorteile beider Welten</td>
-            <td class="py-3 px-4 text-gray-700">Frontity, Faust.js</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+<div class="overflow-x-auto">
+  <table class="min-w-full bg-white rounded-lg overflow-hidden mb-6">
+    <thead class="bg-gray-100">
+      <tr>
+        <th class="py-3 px-4 text-left font-semibold text-gray-700">Ansatz</th>
+        <th class="py-3 px-4 text-left font-semibold text-gray-700">Vorteile</th>
+        <th class="py-3 px-4 text-left font-semibold text-gray-700">Technologien</th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-gray-200">
+      <tr>
+        <td class="py-3 px-4 text-gray-700 font-medium">Frontend-Framework</td>
+        <td class="py-3 px-4 text-gray-700">Beste Performance, moderne UX</td>
+        <td class="py-3 px-4 text-gray-700">React, Vue, Next.js</td>
+      </tr>
+      <tr>
+        <td class="py-3 px-4 text-gray-700 font-medium">Static Site Gen.</td>
+        <td class="py-3 px-4 text-gray-700">Höchste Sicherheit & Geschwindigkeit</td>
+        <td class="py-3 px-4 text-gray-700">Next.js, Gatsby</td>
+      </tr>
+      <tr>
+        <td class="py-3 px-4 text-gray-700 font-medium">Hybrid</td>
+        <td class="py-3 px-4 text-gray-700">Kombiniert Vorteile beider Welten</td>
+        <td class="py-3 px-4 text-gray-700">Frontity, Faust.js</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
-    <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">3. Performance-Optimierung</h3>
-    <p class="text-gray-700 mb-4">Moderne Techniken für schnelle WordPress-Sites:</p>
+<h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">3. Performance-Optimierung</h3>
+<p class="text-gray-700 mb-4">Moderne Techniken für schnelle WordPress-Sites:</p>
 
-    <div class="grid md:grid-cols-2 gap-6 my-8">
-      <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
-        <h4 class="font-bold text-blue-600 mb-3">Server & Caching</h4>
-        <ul class="space-y-2 text-gray-700">
-          <li>• Object Caching (Redis, Memcached)</li>
-          <li>• Page Caching (FastCGI, Nginx)</li>
-          <li>• CDN-Integration (Cloudflare, BunnyCDN)</li>
-          <li>• PHP 8.3 mit OPcache</li>
-        </ul>
-      </div>
-      <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
-        <h4 class="font-bold text-blue-600 mb-3">Frontend</h4>
-        <ul class="space-y-2 text-gray-700">
-          <li>• Critical CSS und Lazy Loading</li>
-          <li>• WebP-Bilder und AVIF-Unterstützung</li>
-          <li>• JavaScript-Optimierung (Defer, Async)</li>
-          <li>• Ressourcen-Hinting (Preload, Preconnect)</li>
-        </ul>
-      </div>
-    </div>
-
-    <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">4. Sicherheit für WordPress</h3>
-    <p class="text-gray-700 mb-4">Best Practices für sichere WordPress-Installationen:</p>
-
-    <div class="bg-green-50 border-l-4 border-green-500 p-4 my-6 rounded-r">
-      <strong class="block font-semibold text-green-800">Wichtig:</strong>
-      <p class="text-green-700 mt-1">90% aller WordPress-Hacks wären durch einfache Maßnahmen wie regelmäßige Updates, starke Passwörter und Zwei-Faktor-Authentifizierung vermeidbar.</p>
-    </div>
-
-    <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">5. Moderne Entwicklungspraktiken</h3>
-    <p class="text-gray-700 mb-4">So entwickeln Sie professionell mit WordPress:</p>
-    <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
-      <li><strong>Composer:</strong> Dependency Management für Plugins</li>
-      <li><strong>Bedrock:</strong> WordPress als Composer-Paket</li>
-      <li><strong>Docker:</strong> Konsistente Entwicklungsumgebungen</li>
-      <li><strong>CI/CD:</strong> Automatisierte Tests und Deployments</li>
+<div class="grid md:grid-cols-2 gap-6 my-8">
+  <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
+    <h4 class="font-bold text-blue-600 mb-3">Server & Caching</h4>
+    <ul class="space-y-2 text-gray-700">
+      <li>• Object Caching (Redis, Memcached)</li>
+      <li>• Page Caching (FastCGI, Nginx)</li>
+      <li>• CDN-Integration (Cloudflare, BunnyCDN)</li>
+      <li>• PHP 8.3 mit OPcache</li>
     </ul>
-
-    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-6">Die Zukunft von WordPress</h2>
-    <p class="text-gray-700 mb-6">Entwicklungen, die WordPress prägen werden:</p>
-    <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
-      <li><strong>Phase 3:</strong> Mehrsprachigkeit und Workflows</li>
-      <li><strong>Block-Directory:</strong> Plugins direkt im Editor</li>
-      <li><strong>Web3:</strong> Integration von Blockchain-Technologien</li>
-      <li><strong>AI:</strong> KI-gestützte Inhaltserstellung</li>
+  </div>
+  <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
+    <h4 class="font-bold text-blue-600 mb-3">Frontend</h4>
+    <ul class="space-y-2 text-gray-700">
+      <li>• Critical CSS und Lazy Loading</li>
+      <li>• WebP-Bilder und AVIF-Unterstützung</li>
+      <li>• JavaScript-Optimierung (Defer, Async)</li>
+      <li>• Ressourcen-Hinting (Preload, Preconnect)</li>
     </ul>
+  </div>
+</div>
+
+<h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">4. Sicherheit für WordPress</h3>
+<p class="text-gray-700 mb-4">Best Practices für sichere WordPress-Installationen:</p>
+
+<div class="bg-green-50 border-l-4 border-green-500 p-4 my-6 rounded-r">
+  <p class="font-semibold text-green-800 mb-1">Wichtig:</p>
+  <p class="text-green-700">90% aller WordPress-Hacks wären durch einfache Maßnahmen wie regelmäßige Updates, starke Passwörter und Zwei-Faktor-Authentifizierung vermeidbar.</p>
+</div>
+
+<h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">5. Moderne Entwicklungspraktiken</h3>
+<p class="text-gray-700 mb-4">So entwickeln Sie professionell mit WordPress:</p>
+<ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
+  <li><span class="font-medium">Composer:</span> Dependency Management für Plugins</li>
+  <li><span class="font-medium">Bedrock:</span> WordPress als Composer-Paket</li>
+  <li><span class="font-medium">Docker:</span> Konsistente Entwicklungsumgebungen</li>
+  <li><span class="font-medium">CI/CD:</span> Automatisierte Tests und Deployments</li>
+</ul>
+
+<h2 class="text-2xl font-bold text-gray-900 mt-12 mb-6">Die Zukunft von WordPress</h2>
+<p class="text-gray-700 mb-6">Entwicklungen, die WordPress prägen werden:</p>
+<ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
+  <li><span class="font-medium">Phase 3:</span> Mehrsprachigkeit und Workflows</li>
+  <li><span class="font-medium">Block-Directory:</span> Plugins direkt im Editor</li>
+  <li><span class="font-medium">Web3:</span> Integration von Blockchain-Technologien</li>
+  <li><span class="font-medium">AI:</span> KI-gestützte Inhaltserstellung</li>
+</ul>
   `
 };
 

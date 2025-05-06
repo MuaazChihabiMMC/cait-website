@@ -6,140 +6,140 @@ const googleAdsPosts = {
     title: 'Google Ads Einstieg 2024 | CAIT Agentur Berlin',
     metaDescription: 'Konto erstellen, Kampagne starten, Ergebnisse sehen dein schneller Einstieg in Google Ads.',
     content: `
-      <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">Warum Google Ads für Ihr Business unverzichtbar ist</h2>
-      <p class="text-gray-700 mb-6">Google Ads ist das leistungsstärkste Tool für gezielte Werbung im Suchmaschinenmarkt. Mit einem Marktanteil von über 90% bei Suchanfragen bietet Google Ihnen Zugang zu potenziellen Kunden genau dann, wenn sie nach Ihren Produkten oder Dienstleistungen suchen.</p>
+     <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">Warum Google Ads für Ihr Business unverzichtbar ist</h2>
+<p class="text-gray-700 mb-6">Google Ads ist das leistungsstärkste Tool für gezielte Werbung im Suchmaschinenmarkt. Mit einem Marktanteil von über 90% bei Suchanfragen bietet Google Ihnen Zugang zu potenziellen Kunden genau dann, wenn sie nach Ihren Produkten oder Dienstleistungen suchen.</p>
 
-      <div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-6 rounded-r">
-        <strong class="block font-semibold text-blue-800">Statistik:</strong>
-        <p class="text-blue-700 mt-1">Unternehmen, die Google Ads nutzen, verzeichnen durchschnittlich 2x mehr Conversions als mit organischem Traffic allein.</p>
-      </div>
+<div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-6 rounded-r">
+  <p class="font-semibold text-blue-800 mb-1">Statistik:</p>
+  <p class="text-blue-700">Unternehmen, die Google Ads nutzen, verzeichnen durchschnittlich 2x mehr Conversions als mit organischem Traffic allein.</p>
+</div>
 
-      <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">1. Kontoerstellung und erste Schritte</h3>
-      <p class="text-gray-700 mb-4">So richten Sie Ihr Google Ads Konto richtig ein:</p>
-      <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
-        <li><strong>Google-Konto:</strong> Nutzen Sie ein geschäftliches Google-Konto</li>
-        <li><strong>Zahlungsmethode:</strong> Kreditkarte oder Lastschrift hinterlegen</li>
-        <li><strong>Zielsetzung:</strong> Klare Kampagnenziele definieren (Leads, Verkäufe, Branding)</li>
-        <li><strong>Conversion-Tracking:</strong> Unbedingt von Anfang an einrichten</li>
-      </ul>
+<h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">1. Kontoerstellung und erste Schritte</h3>
+<p class="text-gray-700 mb-4">So richten Sie Ihr Google Ads Konto richtig ein:</p>
+<ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
+  <li><span class="font-medium">Google-Konto:</span> Nutzen Sie ein geschäftliches Google-Konto</li>
+  <li><span class="font-medium">Zahlungsmethode:</span> Kreditkarte oder Lastschrift hinterlegen</li>
+  <li><span class="font-medium">Zielsetzung:</span> Klare Kampagnenziele definieren (Leads, Verkäufe, Branding)</li>
+  <li><span class="font-medium">Conversion-Tracking:</span> Unbedingt von Anfang an einrichten</li>
+</ul>
 
-      <div class="grid md:grid-cols-2 gap-6 my-8">
-        <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
-          <h4 class="font-bold text-blue-600 mb-3">Konto-Typen</h4>
-          <ul class="space-y-2 text-gray-700">
-            <li>• Standard-Konto</li>
-            <li>• Manager-Konto (für Agenturen)</li>
-            <li>• Smart-Kampagnen (automatisiert)</li>
-          </ul>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
-          <h4 class="font-bold text-blue-600 mb-3">Wichtige Einstellungen</h4>
-          <ul class="space-y-2 text-gray-700">
-            <li>• Zielgruppe definieren</li>
-            <li>• Tagesbudget festlegen</li>
-            <li>• Standort-Targeting</li>
-            <li>• Geräte-Anpassung</li>
-          </ul>
-        </div>
-      </div>
+<div class="grid md:grid-cols-2 gap-6 my-8">
+  <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
+    <h4 class="font-bold text-blue-600 mb-3">Konto-Typen</h4>
+    <ul class="space-y-2 text-gray-700">
+      <li>• Standard-Konto</li>
+      <li>• Manager-Konto (für Agenturen)</li>
+      <li>• Smart-Kampagnen (automatisiert)</li>
+    </ul>
+  </div>
+  <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
+    <h4 class="font-bold text-blue-600 mb-3">Wichtige Einstellungen</h4>
+    <ul class="space-y-2 text-gray-700">
+      <li>• Zielgruppe definieren</li>
+      <li>• Tagesbudget festlegen</li>
+      <li>• Standort-Targeting</li>
+      <li>• Geräte-Anpassung</li>
+    </ul>
+  </div>
+</div>
 
-      <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">2. Kampagnentypen im Überblick</h3>
-      <p class="text-gray-700 mb-4">Wählen Sie den passenden Kampagnentyp für Ihre Ziele:</p>
-      
-      <div class="bg-orange-50 border-l-4 border-orange-500 p-4 my-6 rounded-r">
-        <strong class="block font-semibold text-orange-800">Tipp:</strong>
-        <p class="text-orange-700 mt-1">Für Einsteiger empfehlen wir Suchnetzwerk-Kampagnen mit manuellen Geboten für maximale Kontrolle.</p>
-      </div>
+<h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">2. Kampagnentypen im Überblick</h3>
+<p class="text-gray-700 mb-4">Wählen Sie den passenden Kampagnentyp für Ihre Ziele:</p>
 
-      <div class="overflow-x-auto">
-        <table class="min-w-full bg-white rounded-lg overflow-hidden mb-6">
-          <thead class="bg-gray-100">
-            <tr>
-              <th class="py-3 px-4 text-left font-semibold text-gray-700">Kampagnentyp</th>
-              <th class="py-3 px-4 text-left font-semibold text-gray-700">Beschreibung</th>
-              <th class="py-3 px-4 text-left font-semibold text-gray-700">CPC*</th>
-            </tr>
-          </thead>
-          <tbody class="divide-y divide-gray-200">
-            <tr>
-              <td class="py-3 px-4 text-gray-700 font-medium">Suchnetzwerk</td>
-              <td class="py-3 px-4 text-gray-700">Textanzeigen in Suchergebnissen</td>
-              <td class="py-3 px-4 text-gray-700">€0.50-€5</td>
-            </tr>
-            <tr>
-              <td class="py-3 px-4 text-gray-700 font-medium">Displaynetzwerk</td>
-              <td class="py-3 px-4 text-gray-700">Bannerwerbung auf Websites</td>
-              <td class="py-3 px-4 text-gray-700">€0.20-€2</td>
-            </tr>
-            <tr>
-              <td class="py-3 px-4 text-gray-700 font-medium">Shopping</td>
-              <td class="py-3 px-4 text-gray-700">Produktanzeigen mit Bildern</td>
-              <td class="py-3 px-4 text-gray-700">€0.30-€3</td>
-            </tr>
-            <tr>
-              <td class="py-3 px-4 text-gray-700 font-medium">Video</td>
-              <td class="py-3 px-4 text-gray-700">YouTube-Werbung</td>
-              <td class="py-3 px-4 text-gray-700">€0.10-€1</td>
-            </tr>
-          </tbody>
-        </table>
-        <p class="text-sm text-gray-500 mb-6">*Durchschnittliche Kosten pro Klick (CPC) variieren je nach Branche</p>
-      </div>
+<div class="bg-orange-50 border-l-4 border-orange-500 p-4 my-6 rounded-r">
+  <p class="font-semibold text-orange-800 mb-1">Tipp:</p>
+  <p class="text-orange-700">Für Einsteiger empfehlen wir Suchnetzwerk-Kampagnen mit manuellen Geboten für maximale Kontrolle.</p>
+</div>
 
-      <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">3. Keyword-Recherche für Anfänger</h3>
-      <p class="text-gray-700 mb-4">Finden Sie die richtigen Keywords für Ihre Anzeigen:</p>
+<div class="overflow-x-auto">
+  <table class="min-w-full bg-white rounded-lg overflow-hidden mb-6">
+    <thead class="bg-gray-100">
+      <tr>
+        <th class="py-3 px-4 text-left font-semibold text-gray-700">Kampagnentyp</th>
+        <th class="py-3 px-4 text-left font-semibold text-gray-700">Beschreibung</th>
+        <th class="py-3 px-4 text-left font-semibold text-gray-700">CPC*</th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-gray-200">
+      <tr>
+        <td class="py-3 px-4 text-gray-700 font-medium">Suchnetzwerk</td>
+        <td class="py-3 px-4 text-gray-700">Textanzeigen in Suchergebnissen</td>
+        <td class="py-3 px-4 text-gray-700">€0.50-€5</td>
+      </tr>
+      <tr>
+        <td class="py-3 px-4 text-gray-700 font-medium">Displaynetzwerk</td>
+        <td class="py-3 px-4 text-gray-700">Bannerwerbung auf Websites</td>
+        <td class="py-3 px-4 text-gray-700">€0.20-€2</td>
+      </tr>
+      <tr>
+        <td class="py-3 px-4 text-gray-700 font-medium">Shopping</td>
+        <td class="py-3 px-4 text-gray-700">Produktanzeigen mit Bildern</td>
+        <td class="py-3 px-4 text-gray-700">€0.30-€3</td>
+      </tr>
+      <tr>
+        <td class="py-3 px-4 text-gray-700 font-medium">Video</td>
+        <td class="py-3 px-4 text-gray-700">YouTube-Werbung</td>
+        <td class="py-3 px-4 text-gray-700">€0.10-€1</td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="text-sm text-gray-500 mb-6">*Durchschnittliche Kosten pro Klick (CPC) variieren je nach Branche</p>
+</div>
 
-      <div class="bg-green-50 border-l-4 border-green-500 p-4 my-6 rounded-r">
-        <strong class="block font-semibold text-green-800">Wichtig:</strong>
-        <p class="text-green-700 mt-1">Nutzen Sie den Google Keyword Planner für erste Ideen, aber verlassen Sie sich nicht ausschließlich auf diese Daten.</p>
-      </div>
+<h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">3. Keyword-Recherche für Anfänger</h3>
+<p class="text-gray-700 mb-4">Finden Sie die richtigen Keywords für Ihre Anzeigen:</p>
 
-      <ol class="list-decimal pl-6 mb-6 space-y-2 text-gray-700">
-        <li>Brainstorming: Notieren Sie 10-20 relevante Begriffe zu Ihrem Angebot</li>
-        <li>Nutzen Sie den Google Keyword Planner für Volumen-Daten</li>
-        <li>Analysieren Sie die Keywords Ihrer Konkurrenten mit Tools wie SEMrush</li>
-        <li>Gruppieren Sie Keywords nach Themen für spätere Anzeigengruppen</li>
-      </ol>
+<div class="bg-green-50 border-l-4 border-green-500 p-4 my-6 rounded-r">
+  <p class="font-semibold text-green-800 mb-1">Wichtig:</p>
+  <p class="text-green-700">Nutzen Sie den Google Keyword Planner für erste Ideen, aber verlassen Sie sich nicht ausschließlich auf diese Daten.</p>
+</div>
 
-      <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">4. Anzeigentext-Optimierung</h3>
-      <p class="text-gray-700 mb-4">So schreiben Sie überzeugende Google Ads:</p>
-      
-      <div class="grid md:grid-cols-2 gap-6 my-6">
-        <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
-          <h4 class="font-bold text-blue-600 mb-3">Aufbau einer Textanzeige</h4>
-          <div class="border-l-2 border-blue-400 pl-4">
-            <p class="font-bold text-gray-800">Überschrift 1 (max 30 Zeichen)</p>
-            <p class="font-bold text-gray-800">Überschrift 2 (max 30 Zeichen)</p>
-            <p class="font-bold text-gray-800">Überschrift 3 (max 30 Zeichen)</p>
-            <p class="text-gray-700 mt-2">Beschreibungstext (max 90 Zeichen) mit klarem Call-to-Action</p>
-            <p class="text-gray-500 text-sm mt-2">Anzeigenerweiterungen nicht vergessen!</p>
-          </div>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
-          <h4 class="font-bold text-blue-600 mb-3">Best Practices</h4>
-          <ul class="space-y-2 text-gray-700">
-            <li>• Keywords in Überschriften verwenden</li>
-            <li>• Einzigartige Verkaufsargumente (USPs)</li>
-            <li>• Zahlen und Prozentzahlen</li>
-            <li>• Klare Handlungsaufforderung</li>
-            <li>• A/B-Tests durchführen</li>
-          </ul>
-        </div>
-      </div>
+<ol class="list-decimal pl-6 mb-6 space-y-2 text-gray-700">
+  <li>Brainstorming: Notieren Sie 10-20 relevante Begriffe zu Ihrem Angebot</li>
+  <li>Nutzen Sie den Google Keyword Planner für Volumen-Daten</li>
+  <li>Analysieren Sie die Keywords Ihrer Konkurrenten mit Tools wie SEMrush</li>
+  <li>Gruppieren Sie Keywords nach Themen für spätere Anzeigengruppen</li>
+</ol>
 
-      <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">5. Budgetierung und Gebotsstrategien</h3>
-      <p class="text-gray-700 mb-4">So setzen Sie Ihr Budget optimal ein:</p>
-      <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
-        <li><strong>Tagesbudget:</strong> Beginnen Sie mit €10-€20 pro Tag</li>
-        <li><strong>Gebotsstrategien:</strong> Für Einsteiger "Manuelles CPC" empfehlenswert</li>
-        <li><strong>Bid Adjustments:</strong> Anpassungen für Geräte, Standorte, Zeiten</li>
-        <li><strong>Conversion-Optimierung:</strong> Erst nach 15-30 Conversions aktivieren</li>
-      </ul>
+<h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">4. Anzeigentext-Optimierung</h3>
+<p class="text-gray-700 mb-4">So schreiben Sie überzeugende Google Ads:</p>
 
-      <div class="bg-purple-50 border-l-4 border-purple-500 p-4 my-6 rounded-r">
-        <strong class="block font-semibold text-purple-800">Budget-Tipp:</strong>
-        <p class="text-purple-700 mt-1">Starten Sie mit einem Testbudget von €300-€500 für die ersten 2 Wochen, um Daten zu sammeln bevor Sie skalieren.</p>
-      </div>
+<div class="grid md:grid-cols-2 gap-6 my-6">
+  <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
+    <h4 class="font-bold text-blue-600 mb-3">Aufbau einer Textanzeige</h4>
+    <div class="border-l-2 border-blue-400 pl-4">
+      <p class="font-medium text-gray-800">Überschrift 1 (max 30 Zeichen)</p>
+      <p class="font-medium text-gray-800">Überschrift 2 (max 30 Zeichen)</p>
+      <p class="font-medium text-gray-800">Überschrift 3 (max 30 Zeichen)</p>
+      <p class="text-gray-700 mt-2">Beschreibungstext (max 90 Zeichen) mit klarem Call-to-Action</p>
+      <p class="text-gray-500 text-sm mt-2">Anzeigenerweiterungen nicht vergessen!</p>
+    </div>
+  </div>
+  <div class="bg-white p-6 rounded-lg shadow border border-gray-200">
+    <h4 class="font-bold text-blue-600 mb-3">Best Practices</h4>
+    <ul class="space-y-2 text-gray-700">
+      <li>• Keywords in Überschriften verwenden</li>
+      <li>• Einzigartige Verkaufsargumente (USPs)</li>
+      <li>• Zahlen und Prozentzahlen</li>
+      <li>• Klare Handlungsaufforderung</li>
+      <li>• A/B-Tests durchführen</li>
+    </ul>
+  </div>
+</div>
+
+<h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">5. Budgetierung und Gebotsstrategien</h3>
+<p class="text-gray-700 mb-4">So setzen Sie Ihr Budget optimal ein:</p>
+<ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
+  <li><span class="font-medium">Tagesbudget:</span> Beginnen Sie mit €10-€20 pro Tag</li>
+  <li><span class="font-medium">Gebotsstrategien:</span> Für Einsteiger "Manuelles CPC" empfehlenswert</li>
+  <li><span class="font-medium">Bid Adjustments:</span> Anpassungen für Geräte, Standorte, Zeiten</li>
+  <li><span class="font-medium">Conversion-Optimierung:</span> Erst nach 15-30 Conversions aktivieren</li>
+</ul>
+
+<div class="bg-purple-50 border-l-4 border-purple-500 p-4 my-6 rounded-r">
+  <p class="font-semibold text-purple-800 mb-1">Budget-Tipp:</p>
+  <p class="text-purple-700">Starten Sie mit einem Testbudget von €300-€500 für die ersten 2 Wochen, um Daten zu sammeln bevor Sie skalieren.</p>
+</div>
     `,
     author: {
         name: 'Muaaz Chihabi',
