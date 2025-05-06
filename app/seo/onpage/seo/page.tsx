@@ -1,4 +1,4 @@
-'use client';
+
 import { motion } from 'framer-motion';
 import { Metadata } from 'next';
 import React from 'react';

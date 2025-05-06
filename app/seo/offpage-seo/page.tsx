@@ -1,4 +1,4 @@
-'use client';
+
 import { motion } from 'framer-motion';
 import { FaLink, FaArrowRight } from 'react-icons/fa';
 import Link from 'next/link';
