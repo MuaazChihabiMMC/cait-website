@@ -1,8 +1,13 @@
 'use client';
 import { motion } from 'framer-motion';
+import { Metadata } from 'next';
 import React from 'react';
 import { FaArrowRight, FaCheckCircle, FaCode, FaLink, FaMobileAlt, FaRocket, FaSitemap } from 'react-icons/fa';
-
+export const metadata: Metadata = {
+  title: 'CAIT SEO Agentur | SEO Agentur Berlin ',
+  description: 'Deine SEO Agentur für onpage SEO .',
+ 
+}
 export default function OnPageSEOPage() {
   return (
     <main className="px-4 py-12 md:px-6 max-w-7xl mx-auto bg-white text-blue-900 space-y-24">
@@ -28,7 +33,7 @@ export default function OnPageSEOPage() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2 }}
           >
-            Struktur, Inhalt und Technik perfekt abgestimmt – so optimieren wir Ihre Website von innen heraus.
+            Struktur, Inhalt und Technik perfekt abgestimmt.So optimieren wir Ihre Website von innen heraus.
           </motion.p>
           <motion.a
             href="/kontakt"

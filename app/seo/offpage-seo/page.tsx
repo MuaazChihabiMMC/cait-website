@@ -2,7 +2,12 @@
 import { motion } from 'framer-motion';
 import { FaLink, FaArrowRight } from 'react-icons/fa';
 import Link from 'next/link';
-
+import { Metadata } from 'next';
+export const metadata: Metadata = {
+  title: 'CAIT SEO Agentur | SEO Agentur Berlin ',
+  description: 'Deine SEO Agentur für OFFpage SEO .',
+ 
+}
 export default function OffPageSeoPage() {
   return (
     <main className="px-4 py-12 md:px-6 max-w-5xl mx-auto bg-white text-blue-900 space-y-16">

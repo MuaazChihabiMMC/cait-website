@@ -7,8 +7,8 @@ import LayoutWrapper from './LayoutWrapper'
 import Script from 'next/script'
 
 export const metadata: Metadata = {
-  title: 'CAITSocialMedia | Agentur für SEO, Google Ads, Webdesign & Social Media',
-  description: 'Deine Agentur für Online-Marketing mit Strategie, Performance und Design.',
+  title: 'CAIT Agentur | SEO Agentur, Google Ads, Webdesign ',
+  description: 'Deine Agentur für Online-Marketing SEO und Google Ads.',
   verification: {
     google: 'G-WFV8MYNPQ6', // Nur falls du Google Search Console nutzen willst
   },
