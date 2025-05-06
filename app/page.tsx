@@ -4,6 +4,7 @@ import { FaSearch, FaAd, FaLaptopCode, FaHashtag, FaChartLine, FaLightbulb, FaUs
 
 export default function HomePage() {
   return (
+    
     <main className="px-4 py-12 md:px-6 max-w-7xl mx-auto bg-white text-blue-900 space-y-12 md:space-y-24">
       {/* Hero Section */}
       <motion.section
@@ -551,7 +552,7 @@ export default function HomePage() {
                 backgroundColor: "rgba(255, 255, 255, 0.1)"
               }}
               whileTap={{ scale: 0.95 }}
-              href="/leistungen"
+              href="/services"
               className="bg-transparent border-2 border-white px-6 py-3 md:px-8 md:py-4 rounded-full font-bold hover:bg-white hover:text-blue-600 transition flex items-center gap-2 text-sm md:text-base justify-center"
             >
               Leistungen im Detail
@@ -566,7 +567,7 @@ export default function HomePage() {
             transition={{ delay: 0.6 }}
             className="mt-4 md:mt-6 text-blue-100 text-sm md:text-base"
           >
-            Oder rufen Sie uns direkt an: <span className="font-semibold">+49 123 456 789</span>
+            Oder rufen Sie uns direkt an: <span className="font-semibold">+49 3022689840</span>
           </motion.p>
         </div>
       </motion.section>

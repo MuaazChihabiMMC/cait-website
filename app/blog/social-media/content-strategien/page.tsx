@@ -202,7 +202,7 @@ export default function SocialMediaPage() {
               </span>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Virale TikTok-Strategien</h3>
               <p className="text-gray-600 mb-4">Wie Sie den Algorithmus verstehen und nutzen</p>
-              <Link href="/blog/social-media/tiktok-strategien" className="text-purple-600 hover:text-purple-800 font-medium flex items-center">
+              <Link href="/blog/social-media/tiktok-wachstum" className="text-purple-600 hover:text-purple-800 font-medium flex items-center">
                 Weiterlesen
                 <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
