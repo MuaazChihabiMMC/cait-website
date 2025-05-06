@@ -210,7 +210,7 @@ export default function ContentMarketingPage() {
 export async function generateMetadata() {
   const post = seoPosts['content-marketing'];
   return {
-    title: `${post.title} | CAITSocialMedia`,
+    title: `${post.title} `,
     description: post.metaDescription,
     openGraph: {
       title: post.title,
