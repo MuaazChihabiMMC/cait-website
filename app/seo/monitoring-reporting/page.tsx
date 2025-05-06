@@ -1,9 +1,14 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { Metadata } from 'next';
 import Link from 'next/link';
 import { FaChartLine, FaArrowRight } from 'react-icons/fa';
-
+export const metadata: Metadata = {
+  title: 'CAIT SEO Agentur | Monitoring SEO Agentur Berlin ',
+  description: 'SEO Agentur für Monitoring SEO .',
+ 
+}
 export default function MonitoringReportingPage() {
   return (
     <main className="px-4 py-12 md:px-6 max-w-5xl mx-auto text-blue-900">

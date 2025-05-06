@@ -4,7 +4,12 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { FaPenNib } from 'react-icons/fa';
 import Link from 'next/link';
-
+import { Metadata } from 'next';
+export const metadata: Metadata = {
+  title: 'CAIT SEO Agentur | Content Erstellung Agentur Berlin ',
+  description: 'Deine SEO Agentur für Content SEO .',
+ 
+}
 export default function SEOContentPage() {
   return (
     <main className="max-w-4xl mx-auto px-4 py-16 text-blue-900">

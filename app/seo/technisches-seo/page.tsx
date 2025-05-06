@@ -3,7 +3,12 @@
 import React from 'react';
 import { FaTools, FaArrowRight } from 'react-icons/fa';
 import Link from 'next/link';
-
+import { Metadata } from 'next';
+export const metadata: Metadata = {
+  title: 'CAIT SEO Agentur | SEO Agentur Berlin ',
+  description: 'Deine SEO Agentur für technisches SEO .',
+ 
+}
 export default function TechnischesSEOPage() {
   return (
     <main className="px-4 py-12 md:px-6 max-w-4xl mx-auto bg-white text-blue-900">

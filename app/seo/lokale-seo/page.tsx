@@ -3,7 +3,12 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { FaMapMarkerAlt, FaArrowRight } from 'react-icons/fa';
 import Link from 'next/link';
-
+import { Metadata } from 'next';
+export const metadata: Metadata = {
+  title: 'CAIT SEO Agentur | technisches SEO Agentur Berlin ',
+  description: 'Deine SEO Agentur für Lokale SEO in Berlin .',
+ 
+}
 export default function LokaleSEOPage() {
   return (
     <main className="px-4 py-12 md:px-6 max-w-6xl mx-auto bg-white text-blue-900 space-y-16">
