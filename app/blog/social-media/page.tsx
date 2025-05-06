@@ -14,6 +14,7 @@ const socialMediaPosts = [
     image: '/socialmediacontent.webp',
     tags: ['Content', 'Strategie'],
     readTime: '9 min',
+    ctaText: 'Content-Strategien ansehen'
   },
   {
     slug: 'tiktok-wachstum',
@@ -22,6 +23,7 @@ const socialMediaPosts = [
     image: '/tiktokPhoto.webp',
     tags: ['TikTok', 'Video'],
     readTime: '11 min',
+    ctaText: 'TikTok-Tipps entdecken'
   },
   {
     slug: 'instagram-reels',
@@ -30,6 +32,7 @@ const socialMediaPosts = [
     image: '/instagram-strategien.webp',
     tags: ['Instagram', 'Reels'],
     readTime: '7 min',
+    ctaText: 'Reels-Guide lesen'
   },
 ];
 
@@ -60,13 +63,18 @@ export default function SocialMediaBlogPage() {
               key={post.slug}
               className="group relative bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden"
             >
-              <Link href={`/blog/social-media/${post.slug}`} className="block h-full">
+              <Link 
+                href={`/blog/social-media/${post.slug}`} 
+                className="block h-full"
+                aria-label={`Mehr über ${post.title} erfahren`}
+              >
                 <div className="relative h-48 overflow-hidden">
                   <Image
                     src={post.image}
-                    alt={post.title}
+                    alt={`Coverbild für ${post.title}`}
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    priority={post.slug === 'content-strategien'} // Erstes Bild priorisieren
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent" />
                 </div>
@@ -91,12 +99,12 @@ export default function SocialMediaBlogPage() {
                   
                   <div className="flex items-center justify-between">
                     <span className="text-sm text-gray-500">{post.readTime} Lesezeit</span>
-                    <button className="text-purple-600 font-medium flex items-center group-hover:translate-x-1 transition-transform">
-                      Mehr lesen
+                    <span className="text-purple-600 font-medium flex items-center group-hover:translate-x-1 transition-transform">
+                      {post.ctaText}
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                       </svg>
-                    </button>
+                    </span>
                   </div>
                 </div>
               </Link>
@@ -114,8 +122,12 @@ export default function SocialMediaBlogPage() {
                 type="email" 
                 placeholder="Ihre E-Mail-Adresse" 
                 className="flex-grow px-4 py-3 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-purple-300"
+                aria-label="E-Mail für Social Media Newsletter"
               />
-              <button className="px-6 py-3 bg-white text-purple-700 font-semibold rounded-lg hover:bg-gray-100 transition-colors">
+              <button 
+                className="px-6 py-3 bg-white text-purple-700 font-semibold rounded-lg hover:bg-gray-100 transition-colors"
+                aria-label="Newsletter abonnieren"
+              >
                 Abonnieren
               </button>
             </div>

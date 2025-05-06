@@ -214,12 +214,8 @@ export default function JavaScriptFrameworksPage() {
               <p className="text-blue-600 font-medium mb-2 md:mb-3">{post.author.role}</p>
               <p className="text-gray-700 text-sm md:text-base">{post.author.bio}</p>
               <div className="flex justify-center md:justify-start space-x-4 mt-4">
-                <a href="#" className="text-blue-500 hover:text-blue-700 transition-colors">
-                  <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
-                  </svg>
-                </a>
-                <a href="#" className="text-blue-500 hover:text-blue-700 transition-colors">
+               
+                <a href="https://www.linkedin.com/in/muaaz-chihabi/" className="text-blue-500 hover:text-blue-700 transition-colors">
                   <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
                   </svg>
@@ -229,119 +225,147 @@ export default function JavaScriptFrameworksPage() {
           </div>
         </div>
       </article>
-
-      {/* Related Articles & Newsletter */}
-      <section className="max-w-6xl mx-auto px-6 mb-20">
-        <h2 className="text-2xl font-bold text-gray-900 mb-8">Weitere Frontend-Artikel</h2>
-        <div className="grid md:grid-cols-3 gap-6 mb-16">
-          <article className="group relative bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden">
-            <Link href="/blog/webdesign/responsives-webdesign" className="block h-full">
-              <div className="relative h-48 overflow-hidden">
-                <Image
-                  src="/responsive-design.svg"
-                  alt="Responsive Webdesign"
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent" />
-              </div>
-              <div className="p-6">
-                <div className="flex flex-wrap gap-2 mb-3">
-                  <span className="px-3 py-1 bg-blue-50 text-blue-700 text-xs font-medium rounded-full">Responsive</span>
-                  <span className="px-3 py-1 bg-blue-50 text-blue-700 text-xs font-medium rounded-full">UI/UX</span>
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">
-                  Responsive Webdesign: Best Practices 2024
-                </h3>
-                <p className="text-gray-600 mb-4">Moderne Techniken für Websites, die auf allen Geräten perfekt aussehen.</p>
-                <div className="flex items-center justify-between">
-                  <span className="text-sm text-gray-500">7 min Lesezeit</span>
-                  <span className="text-blue-600 font-medium flex items-center group-hover:translate-x-1 transition-transform">
-                    Mehr lesen
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </span>
-                </div>
-              </div>
-            </Link>
-          </article>
-
-          <article className="group relative bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden">
-            <Link href="/blog/webdesign/modernes-css" className="block h-full">
-              <div className="relative h-48 overflow-hidden">
-                <Image
-                  src="/css-trends.webp"
-                  alt="Moderne CSS-Techniken"
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent" />
-              </div>
-              <div className="p-6">
-                <div className="flex flex-wrap gap-2 mb-3">
-                  <span className="px-3 py-1 bg-blue-50 text-blue-700 text-xs font-medium rounded-full">CSS</span>
-                  <span className="px-3 py-1 bg-blue-50 text-blue-700 text-xs font-medium rounded-full">Frontend</span>
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">
-                  Moderne CSS-Techniken 2024
-                </h3>
-                <p className="text-gray-600 mb-4">CSS Grid, Container Queries und neue Features effektiv nutzen.</p>
-                <div className="flex items-center justify-between">
-                  <span className="text-sm text-gray-500">8 min Lesezeit</span>
-                  <span className="text-blue-600 font-medium flex items-center group-hover:translate-x-1 transition-transform">
-                    Mehr lesen
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </span>
-                </div>
-              </div>
-            </Link>
-          </article>
-
-          <article className="group relative bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden">
-            <Link href="/blog/webdesign/performance-optimierung" className="block h-full">
-              <div className="relative h-48 overflow-hidden">
-                <Image
-                  src="/website-speed.webp"
-                  alt="Website Performance"
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent" />
-              </div>
-              <div className="p-6">
-                <div className="flex flex-wrap gap-2 mb-3">
-                  <span className="px-3 py-1 bg-blue-50 text-blue-700 text-xs font-medium rounded-full">Performance</span>
-                  <span className="px-3 py-1 bg-blue-50 text-blue-700 text-xs font-medium rounded-full">Optimierung</span>
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">
-                  Website-Performance maximieren
-                </h3>
-                <p className="text-gray-600 mb-4">Wie Sie Ladezeiten reduzieren und die User Experience verbessern.</p>
-                <div className="flex items-center justify-between">
-                  <span className="text-sm text-gray-500">9 min Lesezeit</span>
-                  <span className="text-blue-600 font-medium flex items-center group-hover:translate-x-1 transition-transform">
-                    Mehr lesen
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </span>
-                </div>
-              </div>
-            </Link>
-          </article>
+{/* Related Articles & Newsletter */}
+<section className="max-w-6xl mx-auto px-6 mb-20">
+  <h2 className="text-2xl font-bold text-gray-900 mb-8">Weitere Frontend-Artikel</h2>
+  <div className="grid md:grid-cols-3 gap-6 mb-16">
+    {/* Responsive Webdesign Article */}
+    <article className="group relative bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden">
+      <Link 
+        href="/blog/webdesign/responsives-webdesign" 
+        className="block h-full"
+        aria-label="Zu Responsive Webdesign Best Practices"
+      >
+        <div className="relative h-48 overflow-hidden">
+          <Image
+            src="/responsive-design.svg"
+            alt="Responsive Webdesign Techniken für verschiedene Geräte"
+            fill
+            className="object-cover transition-transform duration-500 group-hover:scale-105"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent" />
         </div>
-
-        {/* Newsletter CTA */}
-        <div className="bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl p-8 md:p-10 text-white shadow-lg">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4">Frontend Updates erhalten</h2>
-            <p className="text-blue-100 mb-6">Abonnieren Sie unseren Newsletter für exklusive Technologie-Tipps</p>
+        <div className="p-6">
+          <div className="flex flex-wrap gap-2 mb-3">
+            <span className="px-3 py-1 bg-blue-50 text-blue-700 text-xs font-medium rounded-full">Responsive</span>
+            <span className="px-3 py-1 bg-blue-50 text-blue-700 text-xs font-medium rounded-full">UI/UX</span>
+          </div>
+          <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">
+            Responsive Webdesign: Best Practices 2024
+          </h3>
+          <p className="text-gray-600 mb-4">Moderne Techniken für Websites, die auf allen Geräten perfekt aussehen.</p>
+          <div className="flex items-center justify-between">
+            <span className="text-sm text-gray-500">7 min Lesezeit</span>
+            <span className="text-blue-600 font-medium flex items-center group-hover:translate-x-1 transition-transform">
+              Best Practices entdecken
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </span>
           </div>
         </div>
-      </section>
+      </Link>
+    </article>
+
+    {/* Modern CSS Article */}
+    <article className="group relative bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden">
+      <Link 
+        href="/blog/webdesign/modernes-css" 
+        className="block h-full"
+        aria-label="Zu modernen CSS-Techniken"
+      >
+        <div className="relative h-48 overflow-hidden">
+          <Image
+            src="/css-trends.webp"
+            alt="Moderne CSS-Techniken mit Grid und Container Queries"
+            fill
+            className="object-cover transition-transform duration-500 group-hover:scale-105"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent" />
+        </div>
+        <div className="p-6">
+          <div className="flex flex-wrap gap-2 mb-3">
+            <span className="px-3 py-1 bg-blue-50 text-blue-700 text-xs font-medium rounded-full">CSS</span>
+            <span className="px-3 py-1 bg-blue-50 text-blue-700 text-xs font-medium rounded-full">Frontend</span>
+          </div>
+          <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">
+            Moderne CSS-Techniken 2024
+          </h3>
+          <p className="text-gray-600 mb-4">CSS Grid, Container Queries und neue Features effektiv nutzen.</p>
+          <div className="flex items-center justify-between">
+            <span className="text-sm text-gray-500">8 min Lesezeit</span>
+            <span className="text-blue-600 font-medium flex items-center group-hover:translate-x-1 transition-transform">
+              CSS-Trends ansehen
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </span>
+          </div>
+        </div>
+      </Link>
+    </article>
+
+    {/* Performance Optimization Article */}
+    <article className="group relative bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden">
+      <Link 
+        href="/blog/webdesign/performance-optimierung" 
+        className="block h-full"
+        aria-label="Zu Website Performance Optimierung"
+      >
+        <div className="relative h-48 overflow-hidden">
+          <Image
+            src="/website-speed.webp"
+            alt="Website Performance Optimierung - Ladezeiten verbessern"
+            fill
+            className="object-cover transition-transform duration-500 group-hover:scale-105"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent" />
+        </div>
+        <div className="p-6">
+          <div className="flex flex-wrap gap-2 mb-3">
+            <span className="px-3 py-1 bg-blue-50 text-blue-700 text-xs font-medium rounded-full">Performance</span>
+            <span className="px-3 py-1 bg-blue-50 text-blue-700 text-xs font-medium rounded-full">Optimierung</span>
+          </div>
+          <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">
+            Website-Performance maximieren
+          </h3>
+          <p className="text-gray-600 mb-4">Wie Sie Ladezeiten reduzieren und die User Experience verbessern.</p>
+          <div className="flex items-center justify-between">
+            <span className="text-sm text-gray-500">9 min Lesezeit</span>
+            <span className="text-blue-600 font-medium flex items-center group-hover:translate-x-1 transition-transform">
+              Optimierungstipps
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </span>
+          </div>
+        </div>
+      </Link>
+    </article>
+  </div>
+
+  {/* Newsletter CTA */}
+  <div className="bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl p-8 md:p-10 text-white shadow-lg">
+    <div className="max-w-3xl mx-auto text-center">
+      <h2 className="text-2xl md:text-3xl font-bold mb-4">Frontend Updates erhalten</h2>
+      <p className="text-blue-100 mb-6">Abonnieren Sie unseren Newsletter für exklusive Technologie-Tipps</p>
+      <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+        <input 
+          type="email" 
+          placeholder="Ihre E-Mail-Adresse" 
+          className="flex-grow px-4 py-3 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-300"
+          aria-label="E-Mail-Adresse für Newsletter"
+        />
+        <button 
+          className="px-6 py-3 bg-white text-blue-700 font-semibold rounded-lg hover:bg-gray-100 transition-colors"
+          aria-label="Newsletter abonnieren"
+        >
+          Jetzt anmelden
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
     </div>
   );
 }

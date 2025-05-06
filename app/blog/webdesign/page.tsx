@@ -14,7 +14,8 @@ const webDesignPosts = [
     image: '/responsive-design.svg',
     tags: ['Responsive', 'UI/UX'],
     readTime: '7 min',
-    date: '15. November 2024'
+    date: '15. November 2024',
+    ctaText: 'Responsive Design lernen'
   },
   {
     slug: 'performance-optimierung',
@@ -23,7 +24,8 @@ const webDesignPosts = [
     image: '/website-speed.webp',
     tags: ['Performance', 'Optimierung'],
     readTime: '9 min',
-    date: '5. November 2024'
+    date: '5. November 2024',
+    ctaText: 'Performance-Tipps sehen'
   },
   {
     slug: 'web-accessibility',
@@ -32,7 +34,8 @@ const webDesignPosts = [
     image: '/accessibility.webp',
     tags: ['Accessibility', 'UI/UX'],
     readTime: '8 min',
-    date: '28. Oktober 2024'
+    date: '28. Oktober 2024',
+    ctaText: 'Zum Accessibility-Guide'
   },
   {
     slug: 'modernes-css',
@@ -41,7 +44,8 @@ const webDesignPosts = [
     image: '/css-trends.webp',
     tags: ['CSS', 'Frontend'],
     readTime: '6 min',
-    date: '20. Oktober 2024'
+    date: '20. Oktober 2024',
+    ctaText: 'CSS-Techniken entdecken'
   },
   {
     slug: 'javascript-frameworks',
@@ -50,7 +54,8 @@ const webDesignPosts = [
     image: '/js-frameworks.webp',
     tags: ['JavaScript', 'Frameworks'],
     readTime: '10 min',
-    date: '12. Oktober 2024'
+    date: '12. Oktober 2024',
+    ctaText: 'Frameworks vergleichen'
   },
   {
     slug: 'wordpress-entwicklung',
@@ -59,7 +64,8 @@ const webDesignPosts = [
     image: '/wordpress-dev.webp',
     tags: ['WordPress', 'CMS'],
     readTime: '8 min',
-    date: '5. Oktober 2024'
+    date: '5. Oktober 2024',
+    ctaText: 'WordPress-Tipps lesen'
   }
 ];
 
@@ -90,13 +96,18 @@ export default function WebDesignBlogPage() {
               key={post.slug}
               className="group relative bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden"
             >
-              <Link href={`/blog/webdesign/${post.slug}`} className="block h-full">
+              <Link 
+                href={`/blog/webdesign/${post.slug}`} 
+                className="block h-full"
+                aria-label={`Mehr über ${post.title} erfahren`}
+              >
                 <div className="relative h-48 overflow-hidden">
                   <Image
                     src={post.image}
-                    alt={post.title}
+                    alt={`Coverbild für ${post.title}`}
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    priority={post.slug === 'responsives-webdesign'} // Erstes Bild priorisieren
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent" />
                 </div>
@@ -121,12 +132,12 @@ export default function WebDesignBlogPage() {
                   
                   <div className="flex items-center justify-between">
                     <span className="text-sm text-gray-500">{post.readTime} Lesezeit • {post.date}</span>
-                    <button className="text-blue-600 font-medium flex items-center group-hover:translate-x-1 transition-transform">
-                      Mehr lesen
+                    <span className="text-blue-600 font-medium flex items-center group-hover:translate-x-1 transition-transform">
+                      {post.ctaText}
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                       </svg>
-                    </button>
+                    </span>
                   </div>
                 </div>
               </Link>
@@ -144,8 +155,12 @@ export default function WebDesignBlogPage() {
                 type="email" 
                 placeholder="Ihre E-Mail-Adresse" 
                 className="flex-grow px-4 py-3 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-300"
+                aria-label="E-Mail für Webdesign-Newsletter"
               />
-              <button className="px-6 py-3 bg-white text-blue-700 font-semibold rounded-lg hover:bg-gray-100 transition-colors">
+              <button 
+                className="px-6 py-3 bg-white text-blue-700 font-semibold rounded-lg hover:bg-gray-100 transition-colors"
+                aria-label="Newsletter abonnieren"
+              >
                 Abonnieren
               </button>
             </div>

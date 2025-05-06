@@ -10,10 +10,11 @@ const googleAdsPosts = [
   {
     slug: 'google-ads-einsteiger-guide',
     title: 'Google Ads Guide 2024: So starten Sie richtig',
-    excerpt: 'Von der Kontoerstellung bis zu ersten Kampagnen. der Einstieg in bezahlte Suchanzeigen leicht gemacht.',
+    excerpt: 'Von der Kontoerstellung bis zu ersten Kampagnen. Der Einstieg in bezahlte Suchanzeigen leicht gemacht.',
     image: '/google-ads-guide.webp',
     tags: ['Google Ads', 'SEA Basics'],
     readTime: '7 min',
+    ctaText: 'Zum Google Ads Guide'
   },
   {
     slug: 'conversion-optimierung-ads',
@@ -22,6 +23,7 @@ const googleAdsPosts = [
     image: '/google-ads-guide.webp',
     tags: ['Conversions', 'Landingpages'],
     readTime: '9 min',
+    ctaText: 'Conversion-Tipps lesen'
   },
   {
     slug: 'google-ads-budget-strategien',
@@ -30,6 +32,7 @@ const googleAdsPosts = [
     image: '/google-ads-guide.webp',
     tags: ['Budgetierung', 'Kampagnen'],
     readTime: '8 min',
+    ctaText: 'Budgetstrategien entdecken'
   },
 ];
 
@@ -45,7 +48,8 @@ export default function GoogleAdsBlogPage() {
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
             <span className="bg-gradient-to-r from-yellow-500 to-yellow-400 bg-clip-text text-transparent">
               Google Ads Strategien
-            </span>{' '}für profitables Wachstum
+            </span>{' '}
+            für profitables Wachstum
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Praxisnahe Tipps zu Kampagnenaufbau, Budgetierung und Optimierung Ihrer Google-Anzeigen
@@ -59,13 +63,18 @@ export default function GoogleAdsBlogPage() {
               key={post.slug}
               className="group relative bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden"
             >
-              <Link href={`/blog/google-ads/${post.slug}`} className="block h-full">
+              <Link 
+                href={`/blog/google-ads/${post.slug}`} 
+                className="block h-full"
+                aria-label={`Mehr über ${post.title} erfahren`}
+              >
                 <div className="relative h-48 overflow-hidden">
                   <Image
                     src={post.image}
-                    alt={post.title}
+                    alt={`Coverbild für ${post.title}`}
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    priority={post.slug === 'google-ads-einsteiger-guide'}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent" />
                 </div>
@@ -90,12 +99,12 @@ export default function GoogleAdsBlogPage() {
 
                   <div className="flex items-center justify-between">
                     <span className="text-sm text-gray-500">{post.readTime} Lesezeit</span>
-                    <button className="text-yellow-600 font-medium flex items-center group-hover:translate-x-1 transition-transform">
-                      Mehr lesen
+                    <span className="text-yellow-600 font-medium flex items-center group-hover:translate-x-1 transition-transform">
+                      {post.ctaText}
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                       </svg>
-                    </button>
+                    </span>
                   </div>
                 </div>
               </Link>
@@ -113,8 +122,12 @@ export default function GoogleAdsBlogPage() {
                 type="email" 
                 placeholder="Ihre E-Mail-Adresse" 
                 className="flex-grow px-4 py-3 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-yellow-300"
+                aria-label="E-Mail für Google Ads Newsletter"
               />
-              <button className="px-6 py-3 bg-white text-yellow-700 font-semibold rounded-lg hover:bg-gray-100 transition-colors">
+              <button 
+                className="px-6 py-3 bg-white text-yellow-700 font-semibold rounded-lg hover:bg-gray-100 transition-colors"
+                aria-label="Newsletter abonnieren"
+              >
                 Abonnieren
               </button>
             </div>
