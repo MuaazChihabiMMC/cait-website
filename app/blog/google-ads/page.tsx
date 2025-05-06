@@ -3,14 +3,14 @@ import Image from 'next/image';
 
 export const metadata = {
   title: 'Google Ads Strategien | CAITSocialMedia Blog',
-  description: 'Erfolgreiche SEA-Taktiken mit Google Ads – Anzeigenerstellung, Conversion-Optimierung & Budgetkontrolle',
+  description: 'Erfolgreiche SEA-Taktiken mit Google Ads. Anzeigenerstellung, Conversion-Optimierung & Budgetkontrolle',
 };
 
 const googleAdsPosts = [
   {
     slug: 'google-ads-einsteiger-guide',
     title: 'Google Ads Guide 2024: So starten Sie richtig',
-    excerpt: 'Von der Kontoerstellung bis zu ersten Kampagnen – der Einstieg in bezahlte Suchanzeigen leicht gemacht.',
+    excerpt: 'Von der Kontoerstellung bis zu ersten Kampagnen. der Einstieg in bezahlte Suchanzeigen leicht gemacht.',
     image: '/google-ads-guide.webp',
     tags: ['Google Ads', 'SEA Basics'],
     readTime: '7 min',
