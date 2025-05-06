@@ -3,30 +3,30 @@ import { notFound } from 'next/navigation';
 
 const seoPosts = {
   'technische-seo': {
-    title: 'Technische SEO 2024: Die wichtigsten Ranking-Faktoren',
-    metaDescription: 'Umfassender Leitfaden zu technischer SEO - Ladezeiten, Core Web Vitals, Mobile Usability und Indexierung',
+    title: 'Technische SEO 2024: Ranking verbessern mit Technik',
+    metaDescription: 'Ladezeiten, Core Web Vitals & Indexierung die technischen SEO-Grundlagen für Top-Rankings im Überblick.',
     content: `
       <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">Warum technische SEO der Grundstein ist</h2>
       <p class="text-gray-700 mb-6">Bevor Sie mit Content-Marketing oder Linkbuilding beginnen, muss Ihre Website technisch einwandfrei sein. Google belohnt Seiten, die schnell laden, mobil optimiert sind und korrekt indexiert werden. Technische SEO ist das Fundament jeder erfolgreichen SEO-Strategie.</p>
 
       <div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-6 rounded-r">
-        <strong class="block font-semibold text-blue-800">Wussten Sie schon?</strong>
-        <p class="text-blue-700 mt-1">Websites, die unter 2 Sekunden laden, haben durchschnittlich 30% höhere Conversion-Raten.</p>
+        <p class="font-semibold text-blue-800 mb-1">Wussten Sie schon?</p>
+        <p class="text-blue-700">Websites, die unter 2 Sekunden laden, haben durchschnittlich 30% höhere Conversion-Raten.</p>
       </div>
 
       <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">1. Ladegeschwindigkeit optimieren</h3>
       <p class="text-gray-700 mb-4">Google bevorzugt Websites, die schnell laden. So verbessern Sie Ihre Performance:</p>
       <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
-        <li><strong>Bildoptimierung:</strong> Komprimieren Sie Bilder mit modernen Formaten wie WebP oder AVIF</li>
-        <li><strong>Lazy Loading:</strong> Implementieren Sie verzögertes Laden für nicht sichtbare Inhalte</li>
-        <li><strong>Code-Optimierung:</strong> Nutzen Sie Code-Splitting und serverseitiges Rendering</li>
-        <li><strong>JavaScript:</strong> Eliminieren Sie unnötiges JavaScript und CSS</li>
-        <li><strong>CDN:</strong> Verwenden Sie ein Content Delivery Network für globale Reichweite</li>
+        <li>Bildoptimierung: Komprimieren Sie Bilder mit modernen Formaten wie WebP oder AVIF</li>
+        <li>Lazy Loading: Implementieren Sie verzögertes Laden für nicht sichtbare Inhalte</li>
+        <li>Code-Optimierung: Nutzen Sie Code-Splitting und serverseitiges Rendering</li>
+        <li>JavaScript: Eliminieren Sie unnötiges JavaScript und CSS</li>
+        <li>CDN: Verwenden Sie ein Content Delivery Network für globale Reichweite</li>
       </ul>
 
       <div class="bg-green-50 border-l-4 border-green-500 p-4 my-6 rounded-r">
-        <strong class="block font-semibold text-green-800">Profi-Tipp:</strong>
-        <p class="text-green-700 mt-1">Nutzen Sie <a href="https://pagespeed.web.dev" target="_blank" rel="noopener noreferrer" class="text-green-600 hover:text-green-800 underline">Google PageSpeed Insights</a> und <a href="https://gtmetrix.com" target="_blank" rel="noopener noreferrer" class="text-green-600 hover:text-green-800 underline">GTmetrix</a> für detaillierte Performance-Analysen.</p>
+        <p class="font-semibold text-green-800 mb-1">Profi-Tipp:</p>
+        <p class="text-green-700">Nutzen Sie <a href="https://pagespeed.web.dev" target="_blank" rel="noopener noreferrer" class="text-green-600 hover:text-green-800 underline">Google PageSpeed Insights</a> und <a href="https://gtmetrix.com" target="_blank" rel="noopener noreferrer" class="text-green-600 hover:text-green-800 underline">GTmetrix</a> für detaillierte Performance-Analysen.</p>
       </div>
 
       <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">2. Mobile Usability & Core Web Vitals</h3>
@@ -34,15 +34,15 @@ const seoPosts = {
       
       <div class="grid md:grid-cols-3 gap-4 my-6">
         <div class="bg-white p-4 rounded-lg shadow border border-gray-200">
-          <h4 class="font-bold text-blue-600 mb-2">LCP</h4>
+          <h4 class="font-semibold text-blue-600 mb-2">LCP</h4>
           <p class="text-gray-700 text-sm">Largest Contentful Paint sollte unter 2.5 Sekunden liegen</p>
         </div>
         <div class="bg-white p-4 rounded-lg shadow border border-gray-200">
-          <h4 class="font-bold text-blue-600 mb-2">FID</h4>
+          <h4 class="font-semibold text-blue-600 mb-2">FID</h4>
           <p class="text-gray-700 text-sm">First Input Delay sollte unter 100ms bleiben</p>
         </div>
         <div class="bg-white p-4 rounded-lg shadow border border-gray-200">
-          <h4 class="font-bold text-blue-600 mb-2">CLS</h4>
+          <h4 class="font-semibold text-blue-600 mb-2">CLS</h4>
           <p class="text-gray-700 text-sm">Cumulative Layout Shift unter 0.1 halten</p>
         </div>
       </div>
@@ -50,16 +50,16 @@ const seoPosts = {
       <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">3. Crawling & Indexierung</h3>
       <p class="text-gray-700 mb-4">Technische Fehler können dazu führen, dass Ihre Seiten nicht indexiert werden:</p>
       <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
-        <li><strong>robots.txt:</strong> Korrekt konfigurieren ohne versehentliches Blockieren</li>
-        <li><strong>XML-Sitemaps:</strong> Regelmäßig aktualisieren und in Search Console einreichen</li>
-        <li><strong>Canonical Tags:</strong> Vermeiden Sie Duplicate Content Probleme</li>
-        <li><strong>Statuscodes:</strong> 404, 301 und 302 richtig einsetzen</li>
+        <li>robots.txt: Korrekt konfigurieren ohne versehentliches Blockieren</li>
+        <li>XML-Sitemaps: Regelmäßig aktualisiert in Search Console einreichen</li>
+        <li>Canonical Tags: Vermeiden Sie Duplicate Content Probleme</li>
+        <li>Statuscodes: 404, 301 und 302 richtig einsetzen</li>
       </ul>
 
       <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">4. Strukturierte Daten & Schema.org</h3>
       <p class="text-gray-700 mb-4">Rich Snippets können Ihre Klickrate in den Suchergebnissen deutlich erhöhen:</p>
       <div class="bg-yellow-50 border-l-4 border-yellow-500 p-4 my-6 rounded-r">
-        <strong class="block font-semibold text-yellow-800">Beispiel:</strong>
+        <p class="font-semibold text-yellow-800 mb-2">Beispiel:</p>
      <pre class="bg-white p-3 rounded mt-2 overflow-x-auto text-sm">
   &lt;script type="application/ld+json"&gt;
   {
@@ -145,52 +145,45 @@ export default function SeoPostPage() {
           ))}
         </div>
 
-    {/* Author Bio - Responsive Design */}
-<div className="mt-16 p-6 md:p-8 bg-gray-50 rounded-xl">
-  <div className="flex flex-col md:flex-row items-center gap-6">
-    {/* Autor Bild - Jetzt richtig proportioniert */}
-    <div className="w-24 h-24 md:w-60 md:h-32 relative rounded-full overflow-hidden border-4 border-white shadow-lg">
-      <Image
-        src={post.author.image}
-        alt={`Portrait von ${post.author.name}`}
-        fill
-        className="object-cover"
-        sizes="(max-width: 768px) 96px, 128px"
-        priority
-      />
-    </div>
-    
-    {/* Autor Info */}
-    <div className="text-center md:text-left">
-      <h3 className="text-xl font-bold text-gray-900">{post.author.name}</h3>
-      <p className="text-blue-600 font-medium mb-2 md:mb-3">{post.author.role}</p>
-      <p className="text-gray-700 text-sm md:text-base">{post.author.bio}</p>
-      
-      {/* Social Links - Zentriert auf Mobile */}
-      <div className="flex justify-center md:justify-start space-x-4 mt-4">
-        <a href="#" className="text-blue-500 hover:text-blue-700 transition-colors">
-          <span className="sr-only">Twitter</span>
-          <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
-          </svg>
-        </a>
-        <a href="#" className="text-blue-500 hover:text-blue-700 transition-colors">
-          <span className="sr-only">LinkedIn</span>
-          <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-          </svg>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
+        {/* Author Bio */}
+        <div className="mt-16 p-6 md:p-8 bg-gray-50 rounded-xl">
+          <div className="flex flex-col md:flex-row items-center gap-6">
+            <div className="w-24 h-24 md:w-60 md:h-32 relative rounded-full overflow-hidden border-4 border-white shadow-lg">
+              <Image
+                src={post.author.image}
+                alt={`Portrait von ${post.author.name}`}
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 96px, 128px"
+                priority
+              />
+            </div>
+            <div className="text-center md:text-left">
+              <h3 className="text-xl font-bold text-gray-900">{post.author.name}</h3>
+              <p className="text-blue-600 font-medium mb-2 md:mb-3">{post.author.role}</p>
+              <p className="text-gray-700 text-sm md:text-base">{post.author.bio}</p>
+              <div className="flex justify-center md:justify-start space-x-4 mt-4">
+                <a href="#" className="text-blue-500 hover:text-blue-700 transition-colors">
+                  <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                  </svg>
+                </a>
+                <a href="#" className="text-blue-500 hover:text-blue-700 transition-colors">
+                  <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </article>
 
       {/* Related Articles */}
       <section className="max-w-4xl mx-auto px-6 mb-20">
         <h2 className="text-2xl font-bold text-gray-900 mb-8">Weitere SEO-Artikel</h2>
         <div className="grid md:grid-cols-2 gap-6">
-          {/* Hier würden verwandte Artikel eingefügt werden */}
+          {/* Related articles would be placed here */}
         </div>
       </section>
     </div>
@@ -221,11 +214,4 @@ export async function generateMetadata() {
       images: ['/seo-technical.webp'],
     },
   };
-
-  
-
-
-
-
-
 }

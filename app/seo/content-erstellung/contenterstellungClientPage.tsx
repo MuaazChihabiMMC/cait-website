@@ -3,8 +3,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'CAIT SEO Agentur | Content Erstellung Agentur Berlin',
-  description: 'Deine SEO Agentur für Content SEO.',
+  title: 'CAIT SEO Agentur Berlin | Content-Erstellung & SEO-Texte',
+  description: 'Starke Inhalte für bessere Rankings: Keyword-optimierte Texte, Content-Strategie & SEO-Beratung alles aus einer Hand von CAIT Berlin.',
 };
 
 export default function ContentErstellungPage() {

@@ -3,8 +3,8 @@ import { notFound } from 'next/navigation';
 
 const googleAdsPosts = {
   'google-ads-einsteiger-guide': {
-    title: 'Google Ads Guide 2024: So starten Sie richtig',
-    metaDescription: 'Von der Kontoerstellung bis zu ersten Kampagnen – der Einstieg in bezahlte Suchanzeigen leicht gemacht.',
+    title: 'Google Ads Einstieg 2024: Schnell & einfach starten',
+    metaDescription: 'Konto erstellen, Kampagne starten, Ergebnisse sehen dein schneller Einstieg in Google Ads.',
     content: `
       <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">Warum Google Ads für Ihr Business unverzichtbar ist</h2>
       <p class="text-gray-700 mb-6">Google Ads ist das leistungsstärkste Tool für gezielte Werbung im Suchmaschinenmarkt. Mit einem Marktanteil von über 90% bei Suchanfragen bietet Google Ihnen Zugang zu potenziellen Kunden genau dann, wenn sie nach Ihren Produkten oder Dienstleistungen suchen.</p>

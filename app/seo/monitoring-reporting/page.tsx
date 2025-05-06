@@ -3,9 +3,10 @@ import type { Metadata } from 'next';
 import MonitoringReportingClient from './MonitoringReportingClient';
 
 export const metadata: Metadata = {
-  title: 'CAIT SEO Agentur | Monitoring SEO Agentur Berlin',
-  description: 'SEO Agentur für Monitoring SEO',
+  title: 'SEO Monitoring Agentur Berlin | CAIT SEO Experten',
+  description: 'Mit professionellem SEO Monitoring behalten wir Rankings, Sichtbarkeit & Performance im Blick. CAIT ist deine Agentur für datengetriebene SEO.',
 };
+
 
 export default function MonitoringReportingPage() {
   return <MonitoringReportingClient />;

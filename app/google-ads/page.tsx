@@ -6,9 +6,9 @@ import GoogleAdsCta from '@/components/GoogleAdsCta';
 import AnimatedSection from '@/components/AnimatedSection';
 
 export const metadata = {
-  title: 'Google Ads Agentur – Mehr Reichweite & Conversions mit CAITSocialMedia',
+  title: 'Google Ads Agentur Berlin | CAIT für mehr Leads & Umsatz',
   description:
-    'Erreiche mit gezielter Google Ads Werbung deine Zielgruppe. Wir bieten Kampagnen-Setup, Optimierung, Monitoring und messbare Ergebnisse. Jetzt starten!',
+    'Kampagnen, Optimierung & Performance mit CAIT erreichst du deine Zielgruppe gezielt über Google Ads. Jetzt durchstarten!',
 };
 
 export default function GoogleAdsPage() {

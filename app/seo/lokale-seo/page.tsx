@@ -4,8 +4,8 @@ import Link from 'next/link';
 import LokaleSEOPageClient from './LokaleSEOPageClient';
 
 export const metadata: Metadata = {
-  title: 'CAIT SEO Agentur | technisches SEO Agentur Berlin',
-  description: 'Deine SEO Agentur für Lokale SEO in Berlin',
+  title: 'Lokale SEO Agentur Berlin | CAIT SEO Experten',
+  description: 'Mehr Sichtbarkeit in deiner Stadt: CAIT ist deine Agentur für lokale SEO in Berlin. Wir bringen dein Business bei Google nach vorn.',
 };
 
 export default function LokaleSEOPage() {

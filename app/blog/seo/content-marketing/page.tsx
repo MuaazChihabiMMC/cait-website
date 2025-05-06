@@ -3,8 +3,8 @@ import { notFound } from 'next/navigation';
 
 const seoPosts = {
   'content-marketing': {
-    title: 'Content Marketing für SEO: So ranken Ihre Inhalte',
-    metaDescription: 'Strategien für contentbasiertes SEO - Keyword-Recherche, Content-Cluster und semantische Optimierung für bessere Rankings',
+    title: 'Content Marketing SEO: So ranken Inhalte 2024',
+    metaDescription: 'Content-SEO mit Strategie: Keywords, Cluster & semantische Optimierung für Top-Rankings einfach erklärt.',
     content: `
       <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">Warum Content der entscheidende Ranking-Faktor ist</h2>
       <p class="text-gray-700 mb-6">Content Marketing hat sich zum wichtigsten Instrument der Suchmaschinenoptimierung entwickelt. Hochwertige Inhalte, die Nutzerintentionen treffen, generieren nicht nur organischen Traffic, sondern auch wertvolle Backlinks und Social Signals - alles Faktoren, die Google bei der Bewertung Ihrer Domain berücksichtigt.</p>
