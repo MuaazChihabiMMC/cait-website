@@ -6,7 +6,8 @@ export const metadata = {
   export default function ImpressumPage() {
     return (
       <section className="px-6 py-20 max-w-4xl mx-auto text-black">
-        <h1 className="text-3xl font-bold mb-8">Impressum</h1>
+        <h1 className="text-3xl font-bold mb-8">Impressum der CAIT Social Media Agentur
+        </h1>
   
         <h2 className="text-xl font-semibold mt-8 mb-2">Angaben gemäß § 5 TMG</h2>
         <p>

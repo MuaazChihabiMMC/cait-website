@@ -48,7 +48,7 @@ export default function HomePage() {
                 }}
               >
                 CAIT Agentur
-              </motion.span> Webdesign, Social Media, Google Ads und SEO Agentur
+              </motion.span> CAIT Agentur Webdesign, Social Media, Google Ads und SEO Agentur
             </h1>
           </motion.div>
           
@@ -596,7 +596,7 @@ export default function HomePage() {
         </motion.div>
         
         <div className="max-w-4xl mx-auto relative">
-          <motion.h1 
+          <motion.h2 
             initial={{ scale: 0.9, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
@@ -615,7 +615,7 @@ export default function HomePage() {
             >
               Komplette Digital-Lösungen
             </motion.span> für Ihr Business
-          </motion.h1>
+          </motion.h2>
           
           <motion.p
             initial={{ opacity: 0 }}

@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation';
 
 const seoPosts = {
   'technische-seo': {
-    title: 'Technische SEO 2024: Ranking verbessern mit Technik',
+    title: 'Technische SEO| CAIT Agentur Berlin',
     metaDescription: 'Ladezeiten, Core Web Vitals & Indexierung die technischen SEO-Grundlagen für Top-Rankings im Überblick.',
     content: `
       <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">Warum technische SEO der Grundstein ist</h2>

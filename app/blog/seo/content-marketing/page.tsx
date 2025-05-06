@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation';
 
 const seoPosts = {
   'content-marketing': {
-    title: 'Content Marketing SEO: So ranken Inhalte 2024',
+    title: 'Content Marketing 2024: So ranken deine Inhalte',
     metaDescription: 'Content-SEO mit Strategie: Keywords, Cluster & semantische Optimierung für Top-Rankings einfach erklärt.',
     content: `
       <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">Warum Content der entscheidende Ranking-Faktor ist</h2>

@@ -13,7 +13,7 @@ export default function TechnischesSeoClient() {
           <div className="bg-blue-100 p-3 rounded-full mr-4">
             <FaTools className="text-blue-600 text-2xl" />
           </div>
-          <h1 className="text-3xl md:text-4xl font-bold">🔧 Technisches SEO</h1>
+          <h1 className="text-3xl md:text-4xl font-bold">🔧Technisches SEO erklärtm, So wird deine Website schneller und sichtbarer</h1>
         </div>
 
         <p className="text-lg text-blue-800 mb-6">

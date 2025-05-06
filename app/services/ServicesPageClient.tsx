@@ -3,8 +3,8 @@ import { motion } from 'framer-motion';
 import { FaSearch, FaAd, FaLaptopCode, FaHashtag, FaChartLine, FaLightbulb, FaUsers, FaMobileAlt, FaShoppingCart, FaArrowRight, FaPaintBrush, FaCode, FaServer } from 'react-icons/fa';
 
 export const metadata = {
-  title: 'Services | CAIT Marketing',
-  description: 'Unsere Leistungen: SEO, Google Ads, Webentwicklung & Social Media Marketing. Maßgeschneiderte Lösungen für Ihr Business.',
+  title: 'Leistungen | CAIT Marketing Agentur für SEO & Google Ads',
+  description: 'Unsere Agentur bietet SEO, Google Ads, Webdesign & Social Media individuell abgestimmt auf dein Business. Jetzt Leistungen entdecken.',
 };
 
 export default function ServicesPage() {
@@ -40,7 +40,7 @@ export default function ServicesPage() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 text-blue-900"
           >
-            Unsere <span className="text-blue-600">Leistungen</span>
+            Unsere Leistungen<span className="text-blue-600">im Bereich SEO, Google Ads & Webdesign</span>
           </motion.h1>
           
           <motion.p

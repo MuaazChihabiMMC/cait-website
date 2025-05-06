@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation';
 
 const googleAdsPosts = {
   'google-ads-einsteiger-guide': {
-    title: 'Google Ads Einstieg 2024: Schnell & einfach starten',
+    title: 'Google Ads Einstieg 2024 | CAIT Agentur Berlin',
     metaDescription: 'Konto erstellen, Kampagne starten, Ergebnisse sehen dein schneller Einstieg in Google Ads.',
     content: `
       <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">Warum Google Ads für Ihr Business unverzichtbar ist</h2>
