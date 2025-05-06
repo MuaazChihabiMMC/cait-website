@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export const metadata = {
   title: 'SEO Strategien | CAITSocialMedia Blog',
-  description: 'Aktuelle SEO-Tipps für bessere Rankings - Technische SEO, Content Marketing und Linkbuilding',
+  description: 'Aktuelle SEO-Tipps für bessere Rankings, Technische SEO, Content Marketing und Linkbuilding',
 };
 
 const seoPosts = [
