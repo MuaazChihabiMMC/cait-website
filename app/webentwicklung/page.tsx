@@ -11,7 +11,7 @@ export const metadata = {
   description:
     'Maßgeschneiderte Websites mit modernen Technologien, klarer Struktur und optimaler Performance. Wir entwickeln digitale Erlebnisse, die funktionieren.',
 };
-<meta name="seobility" content="1c042f5ea33996f2bddc2b223ead5944"></meta>
+
 export default function WebDevPage() {
   return (
     <>

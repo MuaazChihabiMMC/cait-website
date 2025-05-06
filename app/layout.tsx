@@ -18,7 +18,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="de">
       <head>
-        
+      <meta name="seobility" content="1c042f5ea33996f2bddc2b223ead5944"></meta>
         {/* Google Tag Manager */}
         <Script id="gtm-head" strategy="afterInteractive">
           {`
