@@ -58,59 +58,60 @@ export default function GoogleAdsBlogPage() {
 
         {/* Blog Posts Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {googleAdsPosts.map((post) => (
-            <article 
-              key={post.slug}
-              className="group relative bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden"
+  {googleAdsPosts.map((post) => (
+    <article 
+      key={post.slug}
+      className="group relative bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden"
+    >
+      <div className="relative h-48 overflow-hidden">
+        <Image
+          src={post.image}
+          alt={`Coverbild für ${post.title}`}
+          fill
+          className="object-cover transition-transform duration-500 group-hover:scale-105"
+          priority={post.slug === 'google-ads-einsteiger-guide'}
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent" />
+      </div>
+
+      <div className="p-6">
+        <div className="flex flex-wrap gap-2 mb-3">
+          {post.tags.map((tag) => (
+            <span 
+              key={tag} 
+              className="px-3 py-1 bg-yellow-50 text-yellow-700 text-xs font-medium rounded-full"
             >
-              <Link 
-                href={`/blog/google-ads/${post.slug}`} 
-                className="block h-full"
-                aria-label={`Mehr über ${post.title} erfahren`}
-              >
-                <div className="relative h-48 overflow-hidden">
-                  <Image
-                    src={post.image}
-                    alt={`Coverbild für ${post.title}`}
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
-                    priority={post.slug === 'google-ads-einsteiger-guide'}
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent" />
-                </div>
-
-                <div className="p-6">
-                  <div className="flex flex-wrap gap-2 mb-3">
-                    {post.tags.map((tag) => (
-                      <span 
-                        key={tag} 
-                        className="px-3 py-1 bg-yellow-50 text-yellow-700 text-xs font-medium rounded-full"
-                      >
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-
-                  <h2 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-yellow-600 transition-colors">
-                    {post.title}
-                  </h2>
-
-                  <p className="text-gray-600 mb-4">{post.excerpt}</p>
-
-                  <div className="flex items-center justify-between">
-                    <span className="text-sm text-gray-500">{post.readTime} Lesezeit</span>
-                    <span className="text-yellow-600 font-medium flex items-center group-hover:translate-x-1 transition-transform">
-                      {post.ctaText}
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                      </svg>
-                    </span>
-                  </div>
-                </div>
-              </Link>
-            </article>
+              {tag}
+            </span>
           ))}
         </div>
+
+        <h2 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-yellow-600 transition-colors">
+          {post.title}
+        </h2>
+
+        <p className="text-gray-600 mb-4">{post.excerpt}</p>
+
+        <div className="flex items-center justify-between">
+          <span className="text-sm text-gray-500">{post.readTime} Lesezeit</span>
+
+          {/* Nur CTA ist klickbarer SEO-Link */}
+          <Link 
+            href={`/blog/google-ads/${post.slug}`} 
+            className="text-yellow-600 font-medium flex items-center group-hover:translate-x-1 transition-transform"
+            aria-label={`Mehr erfahren über ${post.title}`}
+          >
+            {post.ctaText}
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </Link>
+        </div>
+      </div>
+    </article>
+  ))}
+</div>
+
 
         {/* Newsletter CTA */}
         <div className="mt-20 bg-gradient-to-r from-yellow-500 to-yellow-600 rounded-xl p-8 md:p-10 text-white shadow-lg animate-float">

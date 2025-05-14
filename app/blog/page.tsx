@@ -119,7 +119,7 @@ export default function BlogPage() {
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Technische SEO 2024</h3>
                 <p className="text-gray-600 mb-4">Die wichtigsten Ranking-Faktoren für Ihre Website</p>
                 <Link href="/blog/seo/technische-seo" className="text-blue-600 hover:text-blue-800 font-medium flex items-center">
-                  Weiterlesen
+                  Technische SEO lernen
                   <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
                   </svg>
@@ -145,7 +145,7 @@ export default function BlogPage() {
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Google Ads Guide 2024: So starten Sie richtig</h3>
                 <p className="text-gray-600 mb-4">Von der Kontoerstellung bis zu ersten Kampagnen – der Einstieg in bezahlte Suchanzeigen leicht gemacht.</p>
                 <Link href="/blog/google-ads/google-ads-einsteiger-guide" className="text-blue-600 hover:text-blue-800 font-medium flex items-center">
-                  Weiterlesen
+                  Zum Google Ads Guide die wichtigsten faktoren
                   <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
                   </svg>

@@ -4,7 +4,7 @@ import { notFound } from 'next/navigation';
 const seoPosts = {
   'technische-seo': {
     title: 'Technische SEO| CAIT Agentur Berlin',
-    metaDescription: 'Ladezeiten, Core Web Vitals & Indexierung die technischen SEO-Grundlagen für Top-Rankings im Überblick.',
+    metaDescription: 'Ladezeiten, Core Web Vitals & Indexierung die technischen SEO Grundlagen für Top Rankings im Überblick.',
     content: `
       <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">Warum technische SEO der Grundstein ist</h2>
       <p class="text-gray-700 mb-6">Bevor Sie mit Content-Marketing oder Linkbuilding beginnen, muss Ihre Website technisch einwandfrei sein. Google belohnt Seiten, die schnell laden, mobil optimiert sind und korrekt indexiert werden. Technische SEO ist das Fundament jeder erfolgreichen SEO-Strategie.</p>
