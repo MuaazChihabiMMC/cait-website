@@ -226,123 +226,106 @@ export default function PerformanceOptimizationPage() {
         </div>
       </article>
 
-     {/* Related Articles & Newsletter */}
 <section className="max-w-6xl mx-auto px-6 mb-20">
   <h2 className="text-2xl font-bold text-gray-900 mb-8">Weitere Performance-Artikel</h2>
   <div className="grid md:grid-cols-3 gap-6 mb-16">
-    {/* Responsive Webdesign Article */}
+
+    {/* Artikel 1 */}
     <article className="group relative bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden">
-      <Link 
-        href="/blog/webdesign/responsives-webdesign" 
-        className="block h-full"
-        aria-label="Responsive Webdesign Best Practices 2024"
-      >
-        <div className="relative h-48 overflow-hidden">
-          <Image
-            src="/responsive-design.svg"
-            alt="Responsive Webdesign Techniken für alle Geräte"
-            fill
-            className="object-cover transition-transform duration-500 group-hover:scale-105"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent" />
+      <div className="relative h-48 overflow-hidden">
+        <Image
+          src="/responsive-design.svg"
+          alt="Responsive Webdesign Techniken für alle Geräte"
+          fill
+          className="object-cover transition-transform duration-500 group-hover:scale-105"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent" />
+      </div>
+      <div className="p-6">
+        <div className="flex flex-wrap gap-2 mb-3">
+          <span className="px-3 py-1 bg-blue-50 text-blue-700 text-xs font-medium rounded-full">Responsive</span>
+          <span className="px-3 py-1 bg-blue-50 text-blue-700 text-xs font-medium rounded-full">UI/UX</span>
         </div>
-        <div className="p-6">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="px-3 py-1 bg-blue-50 text-blue-700 text-xs font-medium rounded-full">Responsive</span>
-            <span className="px-3 py-1 bg-blue-50 text-blue-700 text-xs font-medium rounded-full">UI/UX</span>
-          </div>
-          <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">
-            Responsive Webdesign: Best Practices 2024
-          </h3>
-          <p className="text-gray-600 mb-4">Moderne Techniken für Websites, die auf allen Geräten perfekt aussehen.</p>
-          <div className="flex items-center justify-between">
-            <span className="text-sm text-gray-500">7 min Lesezeit</span>
+        <h3 className="text-xl font-bold text-gray-900 mb-2">Responsive Webdesign: Best Practices 2024</h3>
+        <p className="text-gray-600 mb-4">Moderne Techniken für Websites, die auf allen Geräten perfekt aussehen.</p>
+        <div className="flex items-center justify-between">
+          <span className="text-sm text-gray-500">7 min Lesezeit</span>
+          <Link href="/blog/webdesign/responsives-webdesign" aria-label="Responsive Techniken Artikel öffnen">
             <span className="text-blue-600 font-medium flex items-center group-hover:translate-x-1 transition-transform">
               Responsive Techniken
               <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
             </span>
-          </div>
+          </Link>
         </div>
-      </Link>
+      </div>
     </article>
 
-    {/* JavaScript Frameworks Article */}
+    {/* Artikel 2 */}
     <article className="group relative bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden">
-      <Link 
-        href="/blog/webdesign/javascript-frameworks" 
-        className="block h-full"
-        aria-label="JavaScript Frameworks Vergleich"
-      >
-        <div className="relative h-48 overflow-hidden">
-          <Image
-            src="/js-frameworks.webp"
-            alt="Vergleich von JavaScript Frameworks: React, Vue, Angular, Svelte"
-            fill
-            className="object-cover transition-transform duration-500 group-hover:scale-105"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent" />
+      <div className="relative h-48 overflow-hidden">
+        <Image
+          src="/js-frameworks.webp"
+          alt="Vergleich von JavaScript Frameworks: React, Vue, Angular, Svelte"
+          fill
+          className="object-cover transition-transform duration-500 group-hover:scale-105"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent" />
+      </div>
+      <div className="p-6">
+        <div className="flex flex-wrap gap-2 mb-3">
+          <span className="px-3 py-1 bg-blue-50 text-blue-700 text-xs font-medium rounded-full">JavaScript</span>
+          <span className="px-3 py-1 bg-blue-50 text-blue-700 text-xs font-medium rounded-full">Frameworks</span>
         </div>
-        <div className="p-6">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="px-3 py-1 bg-blue-50 text-blue-700 text-xs font-medium rounded-full">JavaScript</span>
-            <span className="px-3 py-1 bg-blue-50 text-blue-700 text-xs font-medium rounded-full">Frameworks</span>
-          </div>
-          <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">
-            JavaScript Frameworks im Vergleich
-          </h3>
-          <p className="text-gray-600 mb-4">React, Vue, Angular oder Svelte? Die beste Wahl für Ihr Projekt.</p>
-          <div className="flex items-center justify-between">
-            <span className="text-sm text-gray-500">10 min Lesezeit</span>
+        <h3 className="text-xl font-bold text-gray-900 mb-2">JavaScript Frameworks im Vergleich</h3>
+        <p className="text-gray-600 mb-4">React, Vue, Angular oder Svelte? Die beste Wahl für Ihr Projekt.</p>
+        <div className="flex items-center justify-between">
+          <span className="text-sm text-gray-500">10 min Lesezeit</span>
+          <Link href="/blog/webdesign/javascript-frameworks" aria-label="Framework-Vergleich Artikel öffnen">
             <span className="text-blue-600 font-medium flex items-center group-hover:translate-x-1 transition-transform">
               Framework-Vergleich
               <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
             </span>
-          </div>
+          </Link>
         </div>
-      </Link>
+      </div>
     </article>
 
-    {/* WordPress Development Article */}
+    {/* Artikel 3 */}
     <article className="group relative bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden">
-      <Link 
-        href="/blog/webdesign/wordpress-entwicklung" 
-        className="block h-full"
-        aria-label="Moderne WordPress Entwicklung"
-      >
-        <div className="relative h-48 overflow-hidden">
-          <Image
-            src="/wordpress-dev.webp"
-            alt="Moderne WordPress Entwicklung mit Block-Themes und Headless CMS"
-            fill
-            className="object-cover transition-transform duration-500 group-hover:scale-105"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent" />
+      <div className="relative h-48 overflow-hidden">
+        <Image
+          src="/wordpress-dev.webp"
+          alt="Moderne WordPress Entwicklung mit Block-Themes und Headless CMS"
+          fill
+          className="object-cover transition-transform duration-500 group-hover:scale-105"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent" />
+      </div>
+      <div className="p-6">
+        <div className="flex flex-wrap gap-2 mb-3">
+          <span className="px-3 py-1 bg-blue-50 text-blue-700 text-xs font-medium rounded-full">WordPress</span>
+          <span className="px-3 py-1 bg-blue-50 text-blue-700 text-xs font-medium rounded-full">CMS</span>
         </div>
-        <div className="p-6">
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span className="px-3 py-1 bg-blue-50 text-blue-700 text-xs font-medium rounded-full">WordPress</span>
-            <span className="px-3 py-1 bg-blue-50 text-blue-700 text-xs font-medium rounded-full">CMS</span>
-          </div>
-          <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">
-            Moderne WordPress-Entwicklung
-          </h3>
-          <p className="text-gray-600 mb-4">Block-Themes, Headless CMS und Performance-Tuning für WordPress.</p>
-          <div className="flex items-center justify-between">
-            <span className="text-sm text-gray-500">8 min Lesezeit</span>
+        <h3 className="text-xl font-bold text-gray-900 mb-2">Moderne WordPress-Entwicklung</h3>
+        <p className="text-gray-600 mb-4">Block-Themes, Headless CMS und Performance-Tuning für WordPress.</p>
+        <div className="flex items-center justify-between">
+          <span className="text-sm text-gray-500">8 min Lesezeit</span>
+          <Link href="/blog/webdesign/wordpress-entwicklung" aria-label="WordPress-Tipps Artikel öffnen">
             <span className="text-blue-600 font-medium flex items-center group-hover:translate-x-1 transition-transform">
               WordPress-Tipps
               <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
             </span>
-          </div>
+          </Link>
         </div>
-      </Link>
+      </div>
     </article>
+
   </div>
 
   {/* Newsletter CTA */}
@@ -367,6 +350,7 @@ export default function PerformanceOptimizationPage() {
     </div>
   </div>
 </section>
+
     </div>
   );
 }
