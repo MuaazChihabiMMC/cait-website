@@ -8,22 +8,22 @@ const faqs = [
   {
     question: 'Was kostet eine professionelle Website bei CAITSocialMedia?',
     answer:
-      'Die Kosten hängen vom Umfang ab. Eine einfache Unternehmenswebsite startet ab ca. 1.500 €, komplexe Systeme wie Shops oder Portale liegen entsprechend höher. Du erhältst von uns ein individuelles Angebot.',
+      'Die Kosten hängen vom Umfang ab. Eine einfache Unternehmenswebsite startet ab ca. 1.500 €, komplexe Systeme wie Shops oder Portale liegen entsprechend höher. Du erhältst von uns ein individuelles Angebot.',
   },
   {
     question: 'Wie lange dauert die Entwicklung einer Website?',
     answer:
-      'Das hängt vom Projekt ab. Eine Standardseite dauert in der Regel 3–6 Wochen. Bei komplexen Projekten (z. B. Shop + CRM + API) können es 8–12 Wochen sein.',
+      'Das hängt vom Projekt ab. Eine Standardseite dauert in der Regel 3 bis 6 Wochen. Bei komplexen Projekten (z.B. Shop + CRM + API) können es 8 bis 12 Wochen sein.',
   },
   {
     question: 'Ist die Website responsiv (für Handy & Tablet)?',
     answer:
-      'Ja, 100 %. Jede Website ist bei uns für mobile Geräte optimiert – für ein perfektes Nutzererlebnis auf Smartphone, Tablet und Desktop.',
+      'Ja, 100 %. Jede Website ist bei uns für mobile Geräte optimiert, für ein perfektes Nutzererlebnis auf Smartphone, Tablet und Desktop.',
   },
   {
-    question: 'Bietet ihr auch Webdesign an – oder nur Entwicklung?',
+    question: 'Bietet ihr auch Webdesign an oder nur Entwicklung?',
     answer:
-      'Beides! Wir gestalten individuelle UI/UX-Designs und setzen sie technisch sauber um – Full-Service aus einer Hand.',
+      'Beides! Wir gestalten individuelle UI/UX-Designs und setzen sie technisch sauber um Full-Service aus einer Hand.',
   },
   {
     question: 'Arbeitet ihr mit WordPress oder baut ihr alles selbst?',
@@ -33,12 +33,12 @@ const faqs = [
   {
     question: 'Könnt ihr bestehende Websites überarbeiten oder modernisieren?',
     answer:
-      'Ja. Ob Redesign, Performance-Tuning oder technisches Update – wir analysieren Ihre aktuelle Website und bringen sie auf den neuesten Stand.',
+      'Ja. Ob Redesign, Performance-Tuning oder technisches Update, wir analysieren Ihre aktuelle Website und bringen sie auf den neuesten Stand.',
   },
   {
     question: 'Baut ihr auch Online-Shops?',
     answer:
-      'Ja, wir entwickeln Shops mit Shopify, WooCommerce, Shopware oder Headless-Commerce-Ansätzen – mobiloptimiert, schnell & konvertierend.',
+      'Ja, wir entwickeln Shops mit Shopify, WooCommerce, Shopware oder Headless-Commerce-Ansätzen, mobiloptimiert, schnell & konvertierend.',
   },
   {
     question: 'Ist SEO bei der Website inklusive?',
@@ -53,12 +53,12 @@ const faqs = [
   {
     question: 'Ist ein Kontaktformular oder Newsletter-Integration möglich?',
     answer:
-      'Ja. Wir binden alle gängigen Tools ein – ob Kontaktformular mit E-Mail-Versand, Terminbuchung, Newsletter oder CRM-Anbindung.',
+      'Ja. Wir binden alle gängigen Tools ein, ob Kontaktformular mit E-Mail-Versand, Terminbuchung, Newsletter oder CRM-Anbindung.',
   },
   {
     question: 'Welche Technologien verwendet ihr?',
     answer:
-      'Je nach Projekt setzen wir auf React, Next.js, Tailwind, Node.js, WordPress, PHP, SQL, Headless CMS, REST APIs u. v. m.',
+      'Je nach Projekt setzen wir auf React, Next.js, Tailwind, Node.js, WordPress, PHP, SQL, Headless CMS, REST APIs u.v.m.',
   },
   {
     question: 'Ist Hosting auch Teil des Angebots?',
@@ -68,7 +68,7 @@ const faqs = [
   {
     question: 'Was ist, wenn ich später Änderungen brauche?',
     answer:
-      'Kein Problem. Wir bieten flexible Wartungs- und Supportpakete – oder setzen Änderungswünsche auf Anfrage um.',
+      'Kein Problem. Wir bieten flexible Wartungs- und Supportpakete, oder setzen Änderungswünsche auf Anfrage um.',
   },
   {
     question: 'Wird meine Website DSGVO-konform?',
@@ -83,7 +83,7 @@ const faqs = [
   {
     question: 'Wie funktioniert die Zusammenarbeit?',
     answer:
-      'Briefing → Design → Entwicklung → Feedback → Go-Live. Wir arbeiten agil, transparent und persönlich – mit fester Ansprechperson.',
+      'Briefing → Design → Entwicklung → Feedback → Go-Live. Wir arbeiten agil, transparent und persönlich mit fester Ansprechperson.',
   },
   {
     question: 'Was ist eine Headless-Website?',

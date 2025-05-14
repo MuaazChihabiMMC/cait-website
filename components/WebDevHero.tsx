@@ -8,13 +8,13 @@ export default function WebDevHero() {
             Webentwicklung, die wirkt.
           </h1>
           <p className="text-lg md:text-xl text-blue-100 mb-10 max-w-3xl mx-auto">
-            Wir entwickeln performante, mobiloptimierte Websites mit klarem Design, schneller Ladezeit und messbarem Mehrwert – abgestimmt auf deine Ziele und Zielgruppen.
+            Wir entwickeln performante, mobiloptimierte Websites mit klarem Design, schneller Ladezeit und messbarem Mehrwert, abgestimmt auf deine Ziele und Zielgruppen.
           </p>
           <a
             href="/kontakt"
             className="inline-block bg-white text-blue-800 font-semibold px-8 py-4 rounded-full shadow hover:bg-blue-100 transition"
           >
-            Jetzt Website-Projekt starten
+            Jetzt Website Projekt starten
           </a>
         </div>
   

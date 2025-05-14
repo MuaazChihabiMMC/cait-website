@@ -6,9 +6,9 @@ export default function WebPageExpanded() {
         <div className="max-w-6xl mx-auto space-y-14">
   
           <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
-              Webentwicklung & Design von CAITSocialMedia
-            </h1>
+            <h2 className="text-4xl md:text-5xl font-extrabold mb-4">
+              Webentwicklung & Design von CAIT Agentur
+            </h2>
             <p className="text-lg max-w-3xl mx-auto">
               Maßgeschneiderte digitale Lösungen, die überzeugen, performen und mit deinem Unternehmen wachsen. Professionell umgesetzt von Experten.
             </p>
