@@ -8,14 +8,16 @@ import Link from 'next/link';
 export default function TechnischesSeoClient() {
   return (
     <main className="px-4 py-12 md:px-6 max-w-4xl mx-auto bg-white text-blue-900">
-      <section className="bg-blue-50 rounded-3xl p-8 md:p-12 shadow-lg">
+      <section className="pt-32 md:pt-40 bg-blue-50 rounded-3xl p-8 md:p-12 shadow-lg">
         <div className="flex items-center mb-6">
           <div className="bg-blue-100 p-3 rounded-full mr-4">
             <FaTools className="text-blue-600 text-2xl" />
           </div>
           <h1 className="text-3xl md:text-4xl font-bold">🔧Technisches SEO erklärtm, So wird deine Website schneller und sichtbarer</h1>
         </div>
-
+<p className="text-base text-blue-800 mt-4">
+  Als <strong>technische SEO Agentur</strong> mit Sitz in Berlin sorgt die <strong>CAIT SEO Berlin</strong> für sauberen Code, schnelle Ladezeiten und optimale Indexierung – damit deine Website nicht nur schön aussieht, sondern auch rankt.
+</p>
         <p className="text-lg text-blue-800 mb-6">
           Core Web Vitals, Mobile Optimierung, Fehleranalyse, Indexierung und Crawling: Wir sorgen für einen
           einwandfreien technischen Unterbau, damit deine Website nicht nur gut aussieht, sondern auch technisch

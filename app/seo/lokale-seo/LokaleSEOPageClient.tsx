@@ -19,10 +19,12 @@ export default function LokaleSEOPageClient() {
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
             📍 Lokale SEO für mehr Sichtbarkeit in deiner Region
           </h1>
-          <p className="text-xl md:text-2xl text-blue-800">
-            Ideal für lokale Dienstleister: Wir optimieren deinen Google-Eintrag, erstellen regionalen Content
-            und steigern deine lokale Auffindbarkeit – damit du von potenziellen Kunden vor Ort gefunden wirst.
-          </p>
+         <p className="text-xl md:text-2xl text-blue-800">
+  Ideal für lokale Dienstleister: Wir optimieren deinen Google-Eintrag, erstellen regionalen Content und fügen lokale Backlinks hinzu.
+</p>
+<p className="text-base text-blue-800 mt-4">
+  Unsere <strong>lokale SEO Agentur in Berlin</strong>, die <strong>CAIT SEO Experten</strong> , bringt dein Unternehmen dorthin, wo Kunden dich wirklich finden: ganz oben bei Google in deiner Stadt.
+</p>
         </div>
       </motion.section>
 

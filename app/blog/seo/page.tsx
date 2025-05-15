@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export const metadata = {
-  title: 'SEO Strategien | CAIT Agentur Blog',
+  title: 'SEO Strategien | CAIT SEO Agentur Blog',
   description: 'Aktuelle SEO Tipps für bessere Rankings, Technische SEO, Content Marketing und Linkbuilding',
 };
 
@@ -52,6 +52,9 @@ export default function SeoBlogPage() {
             </span>{' '}
             für bessere Rankings
           </h1>
+          <p className="text-sm text-gray-500 mt-4">
+  Willkommen im <strong>CAIT SEO Agentur Blog</strong>, hier findest du fundierte <strong>SEO Strategien</strong> für nachhaltige Rankings, technische Optimierung und effektives Linkbuilding.
+</p>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Aktuelle Strategien für technische SEO, Content-Marketing und Linkbuilding
           </p>

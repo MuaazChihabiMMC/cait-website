@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 export default function ContentErstellungClient() {
   return (
-    <main className="max-w-4xl mx-auto px-4 py-16 text-blue-900">
+    <main className="max-w-4xl mx-auto px-4 pt-32 md:pt-40 pb-16 text-blue-900">
       <motion.h1 
         initial={{ opacity: 0, y: 20 }} 
         animate={{ opacity: 1, y: 0 }} 
@@ -16,14 +16,16 @@ export default function ContentErstellungClient() {
       >
         <FaPenNib className="text-blue-600" /> SEO Content Erstellung für Top Rankings & Sichtbarkeit
       </motion.h1>
-
+<p className="text-base text-blue-800 mt-2">
+  Die <strong>CAIT SEO Agentur Berlin</strong> unterstützt dich mit professioneller <strong>Content-Erstellung und SEO Texten</strong>, die Google lieben wird, datengestützt, zielgerichtet und wirkungsvoll.
+</p>
       <motion.p 
         initial={{ opacity: 0 }} 
         animate={{ opacity: 1 }} 
         transition={{ delay: 0.2 }}
         className="text-lg mb-6 text-blue-800"
       >
-        Wir schreiben Inhalte, die Google liebt und Nutzer lesen wollen – von informativen Blogartikeln über Service-Seiten bis hin zu überzeugenden Landingpages.
+        Wir schreiben Inhalte, die Google liebt und Nutzer lesen wollen, von informativen Blogartikeln über Service-Seiten bis hin zu überzeugenden Landingpages.
       </motion.p>
 
       <motion.section

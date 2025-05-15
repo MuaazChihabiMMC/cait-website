@@ -7,19 +7,24 @@ import { FaChartLine, FaArrowRight } from 'react-icons/fa';
 
 export default function MonitoringReportingClient() {
   return (
-    <main className="px-4 py-12 md:px-6 max-w-5xl mx-auto text-blue-900">
+    <main className="px-4 pt-32 md:pt-40 pb-12 md:px-6 max-w-5xl mx-auto text-blue-900">
       <motion.section
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         className="space-y-6"
       >
-        <h1 className="text-3xl md:text-4xl font-bold flex items-center gap-3">
-          <FaChartLine className="text-blue-600" /> Monitoring & Reporting
-        </h1>
-        <p className="text-lg text-blue-800">
-          Echtzeit-Analysen, monatliche Reports, Handlungsempfehlungen: Du weißt jederzeit, was wir tun – und was es bringt.
-        </p>
+      <h1 className="text-3xl md:text-4xl font-bold flex items-center gap-3">
+  <FaChartLine className="text-blue-600" /> Monitoring & Reporting
+</h1>
+
+<p className="text-base text-blue-800 mt-2">
+  Als erfahrene <strong>SEO Monitoring Agentur in Berlin</strong> bieten die <strong>CAIT SEO Experten</strong> dir volle Transparenz, datenbasierte Entscheidungen und klare Handlungsempfehlungen – in Echtzeit.
+</p>
+
+<p className="text-lg text-blue-800">
+  Echtzeit-Analysen, monatliche Reports, Handlungsempfehlungen: Du weißt jederzeit, was wir tun, und was es bringt.
+</p>
 
         <div className="space-y-4">
           <h2 className="text-2xl font-semibold">Was wir bieten:</h2>

@@ -6,9 +6,11 @@ export default function KontaktHero() {
       <h1 className="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
           Deine Agentur für SEO & Marketing . Kontaktiere uns
       </h1>
-        <p className="text-lg md:text-xl text-blue-100 mb-10">
-          Wir freuen uns auf deine Anfrage. Egal ob Erstberatung, Projektidee oder Zusammenarbeit - schreib uns einfach oder ruf uns an.
-        </p>
+    <p className="text-lg md:text-xl text-blue-100 mb-10">
+  Wir freuen uns auf deine Anfrage. Egal ob Erstberatung, Projektidee oder Zusammenarbeit – schreib uns einfach oder ruf uns an.  
+  <br />
+  Die <strong>CAIT Social Media Agentur Berlin</strong> ist gerne für dich da.
+</p>
         
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <a

@@ -32,6 +32,10 @@ export default function OnPageSeoClient() {
           >
             Struktur, Inhalt und Technik perfekt abgestimmt.So optimieren wir Ihre Website von innen heraus.
           </motion.p>
+
+          <p className="text-base text-blue-800 mt-4">
+  Als erfahrene <strong>OnPage SEO Agentur</strong> übernehmen wir die <strong>technische & inhaltliche Optimierung</strong> deiner Website – für bessere Rankings und Nutzerfreundlichkeit.
+</p>
           <motion.a
             href="/kontakt"
             whileHover={{ scale: 1.05 }}

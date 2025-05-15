@@ -33,8 +33,8 @@ export default function KontaktForm() {
         <h2 className="text-3xl font-bold mb-8 text-center text-black">Kontaktformular</h2>
         {submitted ? (
           <div className="text-center text-green-700 font-semibold text-lg">
-            Vielen Dank! Wir melden uns in Kürze bei dir.
-          </div>
+  Vielen Dank! Die <strong>CAIT Social Media Agentur Berlin</strong> meldet sich in Kürze bei dir.
+</div>
         ) : (
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>

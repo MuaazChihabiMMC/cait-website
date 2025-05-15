@@ -12,14 +12,15 @@ export default function OffPageSeoClient() {
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="text-center"
+        className="text-center pt-32 md:pt-40 bg-white"
       >
         <h1 className="text-4xl md:text-5xl font-bold mb-4 text-blue-700">
           🌐 OffPage-SEO & Backlinkaufbau
         </h1>
-        <p className="text-xl text-blue-800">
-          Erhöhe deine Sichtbarkeit durch Autorität. Wir sorgen für starke Backlinks und Vertrauen bei Google.
-        </p>
+      <p className="text-base text-blue-800 mt-4">
+  Die <strong>CAIT SEO Agentur in Berlin</strong> ist spezialisiert auf <strong>OffPage SEO & Linkaufbau</strong>. Wir helfen dir dabei, Autorität im Web aufzubauen und durch hochwertige Backlinks langfristig zu ranken.
+</p>
+
       </motion.section>
 
       <motion.section
