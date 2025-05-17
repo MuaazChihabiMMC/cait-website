@@ -31,6 +31,19 @@ export default function KeywordRecherchePage() {
         </div>
       </motion.section>
 
+      {/* Intro Experience */}
+      <motion.section
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+        className="max-w-5xl mx-auto text-blue-800 text-lg"
+      >
+        <p>
+          <strong>Erfahrung aus der Praxis:</strong> Als erfahrene SEO-Agentur mit Fokus auf datenbasierte Strategien helfen wir Unternehmen seit Jahren, durch gezielte Keyword-Recherche online sichtbar zu werden. Ob lokale Dienstleister wie Juweliere im Preußenpark, nationale E-Commerce-Shops oder spezialisierte Fachärzte – jedes Projekt beginnt mit den richtigen Keywords.
+        </p>
+      </motion.section>
+
       {/* Warum ist Keyword-Recherche wichtig */}
       <motion.section
         initial={{ opacity: 0 }}
@@ -41,8 +54,11 @@ export default function KeywordRecherchePage() {
       >
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4">Warum ist Keyword-Recherche so entscheidend?</h2>
-          <p className="text-blue-800 text-lg">
+          <p className="text-blue-800 text-lg mb-6">
             Keywords sind die Brücke zwischen dem, was Nutzer suchen, und Ihrem Angebot. Ohne strategische Recherche optimieren Sie ins Leere.
+          </p>
+          <p className="text-blue-800 text-lg">
+            Eine erfolgreiche Keyword-Recherche verbindet drei Ebenen: <strong>Suchvolumen, Suchintention und Wettbewerb</strong>. Besonders bei sensiblen Themen wie Gesundheit, hochpreisigen Produkten oder komplexen Dienstleistungen ist es entscheidend, die Nutzerintention wirklich zu verstehen.
           </p>
         </div>
         <div className="grid md:grid-cols-3 gap-8">
@@ -75,7 +91,7 @@ export default function KeywordRecherchePage() {
         </div>
       </motion.section>
 
-      {/* Unser Ablauf */}
+      {/* Rechercheprozess */}
       <motion.section
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -85,19 +101,14 @@ export default function KeywordRecherchePage() {
       >
         <h2 className="text-3xl font-bold text-center mb-12">Unser strukturierter Rechercheprozess</h2>
         <div className="space-y-10">
-          {[{
-            title: '1. Zieldefinition & Wettbewerbsanalyse',
-            description: 'Gemeinsam legen wir fest, wen Sie erreichen wollen, welche Produkte/Dienstleistungen im Fokus stehen und analysieren Ihre Top-Konkurrenz auf Rankingebene.'
-          },{
-            title: '2. Keyword-Daten sammeln & clustern',
-            description: 'Mit Tools wie Ahrefs, SEMrush oder Google Keyword Planner extrahieren wir relevante Begriffe und ordnen sie nach Themen und Suchintention.'
-          },{
-            title: '3. Bewertung & Priorisierung',
-            description: 'Wir bewerten Keywords nach Relevanz, Suchvolumen, Wettbewerb und Conversion-Potenzial – so entstehen SEO-fokussierte Seitenstrukturen.'
-          },{
-            title: '4. Content-Strategie ableiten',
-            description: 'Aus den Clustern entstehen Blogartikel, Landingpages oder FAQs. Sie bilden die Grundlage für OnPage-Optimierung und Linkbuilding.'
-          }].map((step, index) => (
+          {[
+            'Zieldefinition & Wettbewerbsanalyse',
+            'Keyword-Daten sammeln & clustern',
+            'Bewertung & Priorisierung',
+            'Content-Strategie ableiten',
+            'Suchintention verfeinern & SERP-Typ analysieren',
+            'Regelmäßige Überprüfung & Aktualisierung'
+          ].map((title, index) => (
             <motion.div
               key={index}
               initial={{ x: -20, opacity: 0 }}
@@ -106,14 +117,60 @@ export default function KeywordRecherchePage() {
               transition={{ delay: index * 0.1 }}
               className="bg-blue-50 border border-blue-100 rounded-xl p-6"
             >
-              <h3 className="text-xl font-bold mb-2">{step.title}</h3>
-              <p className="text-blue-800">{step.description}</p>
+              <h3 className="text-xl font-bold mb-2">{index + 1}. {title}</h3>
+              <p className="text-blue-800">
+                {[...Array(6)].map((_, i) => {
+                  const descriptions = [
+                    'Gemeinsam legen wir fest, wen Sie erreichen wollen, welche Produkte/Dienstleistungen im Fokus stehen und analysieren Ihre Top-Konkurrenz auf Rankingebene.',
+                    'Mit Tools wie Ahrefs, SEMrush oder Google Keyword Planner extrahieren wir relevante Begriffe und ordnen sie nach Themen und Suchintention.',
+                    'Wir bewerten Keywords nach Relevanz, Suchvolumen, Wettbewerb und Conversion-Potenzial – so entstehen SEO-fokussierte Seitenstrukturen.',
+                    'Aus den Clustern entstehen Blogartikel, Landingpages oder FAQs. Sie bilden die Grundlage für OnPage-Optimierung und Linkbuilding.',
+                    'Google zeigt bei verschiedenen Keywords unterschiedliche SERP-Formate. Wir analysieren diese gezielt, um den Content-Typ exakt anzupassen.',
+                    'Keyword-Trends verändern sich. Wir überprüfen regelmäßig Rankings, neue Begriffe und passen Ihre Content-Strategie entsprechend an.'
+                  ];
+                  return index === i ? descriptions[i] : null;
+                })}
+              </p>
             </motion.div>
           ))}
         </div>
       </motion.section>
 
-      {/* Call to Action */}
+      {/* Tools */}
+      <motion.section
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+        className="max-w-5xl mx-auto"
+      >
+        <h2 className="text-3xl font-bold text-center mb-8">Unsere bewährten Tools für die Keyword-Recherche</h2>
+        <ul className="text-blue-800 text-lg space-y-4 list-disc pl-6">
+          <li><strong>Ahrefs & SEMrush:</strong> Wettbewerbsanalyse, Backlinkquellen, Keyword-Datenbanken</li>
+          <li><strong>Google Keyword Planner:</strong> direkt aus der Quelle – ideal für SEA & SEO</li>
+          <li><strong>Google Trends:</strong> Trendanalysen über Zeiträume hinweg</li>
+          <li><strong>AnswerThePublic & AlsoAsked:</strong> Fragen & Cluster aus echter Nutzerperspektive</li>
+          <li><strong>SurferSEO & NeuronWriter:</strong> für semantisch optimierten Content basierend auf NLP</li>
+        </ul>
+      </motion.section>
+
+      {/* Praxisbeispiele */}
+      <motion.section
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+        className="max-w-5xl mx-auto"
+      >
+        <h2 className="text-3xl font-bold text-center mb-8">Beispiele aus der Praxis</h2>
+        <div className="space-y-6 text-blue-800 text-lg">
+          <p><strong>E-Commerce:</strong> Clusterbildung für Produktkategorien wie „Sneaker Damen weiß“ oder „beste Smartwatch 2025“ – mit Conversion-orientierten Landingpages.</p>
+          <p><strong>Ärzte & Praxen:</strong> Kombination aus lokalen Keywords („Zahnarzt Berlin Zehlendorf“) und informativen Ratgeberseiten – unter Berücksichtigung von YMYL-Faktoren.</p>
+          <p><strong>Juwelier im Preußenpark:</strong> Optimierung auf Begriffe wie „Goldankauf Berlin“, „Altgold verkaufen Steglitz“ kombiniert mit Google-Business-Profil, um lokale Sichtbarkeit zu maximieren.</p>
+        </div>
+      </motion.section>
+
+      {/* CTA */}
       <motion.section
         initial={{ opacity: 0, scale: 0.9 }}
         whileInView={{ opacity: 1, scale: 1 }}
