@@ -8,7 +8,10 @@ export const metadata = {
       <section className="px-6 py-20 max-w-4xl mx-auto text-black">
         <h1 className="text-3xl font-bold mb-8">Impressum der CAIT Social Media Agentur
         </h1>
-  
+  <p className="text-blue-900 text-base mb-6">
+  Auf dieser Seite findest du die gesetzlich vorgeschriebenen Angaben gemäß § 5 TMG zur CAIT Social Media Agentur.
+  Als verantwortungsbewusstes Unternehmen informieren wir transparent über Inhaber, Kontaktwege sowie rechtliche Hinweise.
+</p>
         <h2 className="text-xl font-semibold mt-8 mb-2">Angaben gemäß § 5 TMG</h2>
         <p>
           Muaaz Chihabi<br />
