@@ -56,6 +56,23 @@ export default function SocialMediaBlogPage() {
           </p>
         </div>
 
+        {/* SEO-Text für Sichtbarkeit */}
+<div className="max-w-3xl mx-auto text-gray-700 text-lg leading-relaxed mb-16">
+  <h2 className="text-2xl font-bold text-gray-900 mb-4">Warum Social Media heute entscheidend ist</h2>
+  <p className="mb-4">
+    Ob TikTok, Instagram oder LinkedIn, soziale Netzwerke bieten enorme Chancen für organisches Wachstum, Community-Aufbau und Markenbekanntheit. Doch ohne klare Strategie bleibt Reichweite oft aus.
+  </p>
+  <p className="mb-4">
+    Auf unserem Blog beleuchten wir aktuelle Trends im Social-Media-Marketing, zeigen erfolgreiche Content-Strategien und geben praktische Tipps für Unternehmen, Selbstständige und Agenturen. 
+    Von viralen Reels über TikTok-Algorithmen bis hin zu B2B-Strategien auf LinkedIn, wir liefern fundiertes Wissen, das auf Erfahrung und datengetriebener Analyse basiert.
+  </p>
+  <p>
+    Als Agentur mit Fokus auf <strong>Social Media Marketing</strong> entwickeln wir täglich Strategien für verschiedenste Branchen, und geben unsere Erkenntnisse hier weiter. 
+    Dieser Bereich ist Teil unseres <Link href="/blog" className="text-purple-600 underline">CAIT Blogs</Link>, der Unternehmen in der digitalen Welt unterstützt.
+  </p>
+</div>
+
+
         {/* Blog Posts Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
   {socialMediaPosts.map((post) => (

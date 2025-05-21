@@ -89,6 +89,22 @@ export default function WebDesignBlogPage() {
           </p>
         </div>
 
+                    {/* SEO-Text für Sichtbarkeit */}
+          <div className="max-w-3xl mx-auto text-gray-700 text-lg leading-relaxed mb-16">
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">Webdesign & Webentwicklung im Wandel</h2>
+            <p className="mb-4">
+              In einer digitalen Welt, die sich rasant verändert, ist modernes Webdesign mehr als nur Ästhetik. Es geht um Performance, Barrierefreiheit, Usability und technologische Innovation. 
+              Ob Sie eine Landingpage optimieren, ein komplettes CMS entwickeln oder Ihr Frontend mit React, Tailwind oder WordPress neu denken – hier finden Sie Impulse und bewährte Strategien.
+            </p>
+            <p className="mb-4">
+              Als Agentur für <strong>Webdesign & Entwicklung</strong> begleiten wir Kunden vom Konzept über das Design bis zur technischen Umsetzung. Unser Blog behandelt Themen wie <strong>Responsive Design</strong>, <strong>Page Speed</strong>, <strong>Barrierefreiheit</strong>, <strong>JavaScript Frameworks</strong> und moderne <strong>WordPress-Entwicklung</strong>.
+            </p>
+            <p>
+              Dieser Bereich ist Teil unseres <Link href="/blog" className="text-blue-600 underline">CAIT Blogs</Link> – Ihrer Quelle für hochwertiges Wissen rund um professionelle Webseiten.
+            </p>
+          </div>
+
+
         {/* Blog Posts Grid */}
    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
   {webDesignPosts.map((post) => (
