@@ -54,6 +54,24 @@ export default function ServicesPage() {
         </div>
       </motion.section>
 
+            {/* SEO-Fließtext für Sichtbarkeit & Vertrauen */}
+<section className="max-w-4xl mx-auto text-blue-900 text-lg leading-relaxed px-4 md:px-0 mt-4 md:mt-0">
+  <h2 className="text-2xl font-bold mb-4 text-blue-800">Ganzheitliches Online-Marketing aus Berlin</h2>
+  <p className="mb-4">
+    Die <strong>CAIT Social Media Agentur</strong> bietet dir umfassende Leistungen rund um <strong>Suchmaschinenoptimierung (SEO)</strong>, <strong>Google Ads</strong>, <strong>Webdesign</strong> und <strong>Social Media Marketing</strong>.
+    Unsere Arbeit basiert auf datengetriebenen Strategien, individueller Beratung und jahrelanger Erfahrung mit kleinen, mittleren und großen Unternehmen.
+  </p>
+  <p className="mb-4">
+    Als Digitalagentur mit Fokus auf Performance und Qualität setzen wir nicht auf Standardlösungen, sondern auf maßgeschneiderte Strategien, die zu deiner Zielgruppe, deinem Markt und deinen Zielen passen.
+    Dabei achten wir besonders auf <strong>technische Umsetzbarkeit, Nutzerfreundlichkeit und Conversion-Potenziale</strong>.
+  </p>
+  <p>
+    Ob du gerade erst startest oder dein bestehendes Marketing skalieren möchtest – wir sind dein Partner für <strong>nachhaltiges Wachstum im digitalen Raum</strong>.
+  </p>
+</section>
+
+
+
       {/* Services Grid */}
       <motion.section
         initial={{ opacity: 0 }}

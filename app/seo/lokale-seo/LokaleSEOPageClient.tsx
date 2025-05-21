@@ -28,6 +28,23 @@ export default function LokaleSEOPageClient() {
         </div>
       </motion.section>
 
+{/* SEO-Fließtext mit lokalem Fokus */}
+<section className="max-w-3xl mx-auto text-blue-900 text-lg leading-relaxed px-4 md:px-0">
+  <h2 className="text-2xl font-bold mb-4 text-blue-800">Warum lokale SEO heute entscheidend ist</h2>
+  <p className="mb-4">
+    Wenn potenzielle Kunden nach <strong>„Friseur in Berlin-Mitte“</strong> oder <strong>„Zahnarzt Charlottenburg“</strong> suchen, entscheiden oft nur wenige Positionen in den Google-Ergebnissen über einen neuen Kundenkontakt.
+    Mit einer gezielten <strong>lokalen SEO-Strategie</strong> sorgen wir dafür, dass dein Unternehmen in der Kartenansicht („Local Pack“) und bei organischen Treffern sichtbar wird.
+  </p>
+  <p className="mb-4">
+    Als erfahrene <strong>Local SEO Agentur aus Berlin</strong> arbeiten wir mit kleinen und mittleren Unternehmen, Praxen, Kanzleien und lokalen Dienstleistern zusammen. Unsere Maßnahmen zielen darauf ab, deine <strong>Google-Unternehmensprofile zu optimieren</strong>, 
+    <strong>lokalen Content</strong> aufzubauen und deine Seite in <strong>regionalen Verzeichnissen</strong> sichtbar zu machen.
+  </p>
+  <p>
+    Besonders für Standorte mit viel Konkurrenz – z. B. in Großstädten – kann gezielte lokale Optimierung den entscheidenden Unterschied machen. 
+    Wir kombinieren <strong>technisches SEO</strong>, <strong>Content-Marketing</strong> und <strong>Backlink-Strategien</strong> für nachhaltige Sichtbarkeit.
+  </p>
+</section>
+
       <section className="space-y-12">
         <div className="space-y-4">
           <h2 className="text-2xl font-bold flex items-center gap-2">
