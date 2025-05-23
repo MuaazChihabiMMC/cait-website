@@ -4,6 +4,7 @@ import SocialMediaBenefits from '@/components/SocialMediaBenefits';
 import SocialMediaCta from '@/components/SocialMediaCta';
 import SocialMediaFaq from '@/components/SocialMediaFaq';
 import AnimatedSection from '@/components/AnimatedSection';
+import SocialMediaSeoText from '@/components/SocialMediaSeoText';
 
 export const metadata = {
   title: 'Social Media Marketing | CAITSocialMedia',
@@ -23,6 +24,11 @@ export default function SocialMediaPage() {
       <AnimatedSection delay={0.1}>
         <SocialMediaBenefits />
       </AnimatedSection>
+
+      <AnimatedSection delay={0.15}>
+      <SocialMediaSeoText />
+      </AnimatedSection>
+
 
       <AnimatedSection delay={0.2}>
         <SocialMediaCta />

@@ -54,6 +54,80 @@ export default function ServicesPage() {
         </div>
       </motion.section>
 
+
+<section className="max-w-4xl mx-auto text-blue-900 text-lg leading-relaxed px-4 md:px-0 mt-4 md:mt-0">
+  <h2 className="text-2xl font-bold mb-4 text-blue-800">Ganzheitliches Online-Marketing aus Berlin</h2>
+  <p className="mb-4">
+    Die <strong>CAIT Marketing Agentur</strong> bietet dir umfassende Leistungen in den Bereichen <strong>Suchmaschinenoptimierung (SEO)</strong>, <strong>Google Ads</strong>, <strong>Webentwicklung</strong> und <strong>Social Media Marketing</strong>. 
+    Unsere Strategien sind auf nachhaltige Sichtbarkeit und messbare Erfolge ausgelegt – maßgeschneidert für Unternehmen in Berlin und deutschlandweit.
+  </p>
+  <p className="mb-4">
+    Als <strong>Performance-Agentur</strong> setzen wir auf datenbasierte Entscheidungen, kreative Ansätze und neueste Technologien, um für dein Unternehmen echte Resultate zu erzielen. 
+    Wir denken kanalübergreifend und verbinden klassische Maßnahmen wie <strong>OnPage-SEO</strong> oder <strong>Google Ads Optimierung</strong> mit modernen Tools wie <strong>KI-gestützten Analysen</strong> oder <strong>User-Generated Content</strong>.
+  </p>
+  <p>
+    CAIT steht für Klarheit, Agilität, Innovation und Technik – vier Prinzipien, die wir in jedem Projekt leben.
+  </p>
+
+  <h3 className="text-xl font-bold mt-10 mb-4">1. Sichtbarkeit durch Suchmaschinenoptimierung (SEO)</h3>
+  <p className="mb-4">
+    Unsere <strong>SEO Agentur in Berlin</strong> entwickelt für jede Branche eine individuelle Strategie. Dabei kombinieren wir <strong>technisches SEO</strong> mit gezieltem Content-Marketing, 
+    hochwertigem Linkbuilding und strukturierten Analysen. Ob Keyword-Recherche, Core Web Vitals oder Local SEO – wir verbessern dauerhaft deine organische Sichtbarkeit.
+  </p>
+  <p className="mb-4">
+    Unser Anspruch: Google soll dich nicht nur finden – es soll dich lieben. Deshalb optimieren wir für Mensch und Maschine gleichermaßen. Die <strong>SEO-Strategien</strong> werden regelmäßig an neue Google Updates angepasst.
+  </p>
+  <p className="mb-4">
+    Wir nutzen Tools wie Sistrix, Ahrefs, SEMrush, Google Search Console und Screaming Frog, um technische Barrieren zu beseitigen und neue Chancen frühzeitig zu erkennen.
+  </p>
+
+  <h3 className="text-xl font-bold mt-10 mb-4">2. Google Ads: Sofortige Sichtbarkeit mit Conversion-Fokus</h3>
+  <p className="mb-4">
+    Als <strong>Google Ads Agentur Berlin</strong> planen, erstellen und optimieren wir performante Kampagnen für maximale Wirkung. Unser Ziel ist nicht der Klick – sondern dein Erfolg.
+  </p>
+  <p className="mb-4">
+    Wir setzen auf intelligente <strong>Kampagnenstruktur, A/B-Tests, Conversion-Tracking</strong> und <strong>datengetriebene Optimierung</strong>. Ob Search Ads, Display, YouTube oder Performance Max – 
+    wir machen dein Angebot zur ersten Wahl bei relevanten Suchanfragen.
+  </p>
+  <p className="mb-4">
+    Durch smarte Kombination von Zielgruppen-Segmentierung und Budgetsteuerung erzielen wir für viele Kunden ein <strong>ROAS von 400 % bis über 1000 %</strong>.
+  </p>
+
+  <h3 className="text-xl font-bold mt-10 mb-4">3. Webdesign & Webentwicklung aus Berlin</h3>
+  <p className="mb-4">
+    Deine Website ist dein digitaler Vertriebsmitarbeiter – und sollte auch so funktionieren. Als <strong>Webdesign Agentur Berlin</strong> bauen wir performante, schnelle und nutzerfreundliche Websites mit Fokus auf <strong>Conversion</strong>.
+  </p>
+  <p className="mb-4">
+    Mit <strong>Next.js, TailwindCSS</strong>, WordPress, Shopify oder individuell in React entwickeln wir Websites, die nicht nur gut aussehen, sondern performen. 
+    Wir achten auf <strong>SEO-freundliche Struktur, Ladezeitoptimierung und Mobilfähigkeit</strong> – alles aus einer Hand.
+  </p>
+  <p className="mb-4">
+    Ob du einen Relaunch planst, eine neue Landingpage brauchst oder dein Online-Shop technisch auf das nächste Level bringen willst – wir unterstützen dich vom Konzept bis zur finalen Umsetzung.
+  </p>
+
+  <h3 className="text-xl font-bold mt-10 mb-4">4. Social Media Agentur Berlin: Relevanz statt Reichweite</h3>
+  <p className="mb-4">
+    Reichweite allein bringt dir keine Kunden. Deshalb entwickelt unsere <strong>Social Media Agentur Berlin</strong> Inhalte, die relevant sind – für dich, deine Community und deine Ziele.
+  </p>
+  <p className="mb-4">
+    Ob TikTok, Instagram, LinkedIn oder YouTube: Wir planen kanalübergreifend und arbeiten mit Creators, Ads und organischem Content. Dabei setzen wir auf Reels, UGC, Community Management, Redaktionspläne und datenbasierte Optimierung.
+  </p>
+  <p className="mb-4">
+    Unser Fokus liegt auf Social Selling, Markenaufbau und langfristiger Kundenbindung – für B2C, B2B und alles dazwischen.
+  </p>
+
+  <h3 className="text-xl font-bold mt-10 mb-4">5. Beratung, Analyse & laufende Betreuung</h3>
+  <p className="mb-4">
+    Wir sind keine Blackbox-Agentur. Als Partner auf Augenhöhe erklären wir dir, was wir tun – und warum. Regelmäßige <strong>Reportings</strong>, transparente Kommunikation und direkte Ansprechpartner sind für uns selbstverständlich.
+  </p>
+  <p className="mb-4">
+    Jede Maßnahme wird datenbasiert geplant, umgesetzt und laufend optimiert. Unsere Berichte enthalten <strong>echte KPIs, messbare Fortschritte</strong> und klare Empfehlungen.
+  </p>
+  <p>
+    Egal ob du deine Sichtbarkeit steigern, deinen Umsatz skalieren oder deine Website modernisieren willst – mit <strong>CAIT</strong> hast du eine Agentur, die mit dir denkt, mit dir wächst und mit dir gewinnt.
+  </p>
+</section>
+
             {/* SEO-Fließtext für Sichtbarkeit & Vertrauen */}
 <section className="max-w-4xl mx-auto text-blue-900 text-lg leading-relaxed px-4 md:px-0 mt-4 md:mt-0">
   <h2 className="text-2xl font-bold mb-4 text-blue-800">Ganzheitliches Online-Marketing aus Berlin</h2>

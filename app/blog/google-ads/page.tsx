@@ -176,6 +176,68 @@ export default function GoogleAdsBlogPage() {
     </div>
   </div>
 
+{/* SEO-Textblock für Google Ads Agentur Berlin */}
+<section className="mt-24 max-w-5xl mx-auto text-gray-800 text-lg leading-relaxed space-y-6 px-4 md:px-0">
+  <h2 className="text-3xl font-bold text-gray-900">
+    Deine Google Ads Agentur Berlin für messbare Erfolge
+  </h2>
+
+  <p>
+    Als <strong>Google Ads Agentur Berlin</strong> bieten wir dir nicht nur standardisierte Anzeigenkampagnen, sondern individuelle, datengetriebene Strategien für nachhaltige Performance. In der heutigen digitalen Welt reicht es nicht aus, einfach nur online zu werben. Der Unterschied liegt in der richtigen Keyword-Auswahl, einer klugen Kampagnenstruktur und laufender Optimierung.
+  </p>
+
+  <h3 className="text-2xl font-semibold mt-8">Was macht unsere SEA Agentur besonders?</h3>
+  <p>
+    Unsere SEA-Spezialisten in Berlin arbeiten eng mit dir zusammen, um maßgeschneiderte Kampagnen zu entwickeln. Wir setzen auf kontinuierliche A/B-Tests, Conversion-Tracking und eine klare Zielgruppenansprache. Dabei spielen Tools wie Google Analytics, der Google Tag Manager und das Zusammenspiel mit deiner Website eine zentrale Rolle.
+  </p>
+
+  <h3 className="text-2xl font-semibold mt-8">Welche Branchen profitieren besonders?</h3>
+  <ul className="list-disc ml-6">
+    <li><strong>Ärzte & Praxen:</strong> Lokale Sichtbarkeit in Berlin für neue Patienten.</li>
+    <li><strong>Onlineshops:</strong> Skalierung mit Google Shopping & Performance Max.</li>
+    <li><strong>Rechtsanwälte:</strong> Hochkonvertierende Suchanzeigen mit rechtssicherer Ansprache.</li>
+    <li><strong>Handwerker & Dienstleister:</strong> Gezielte Leads in deiner Region durch Google Ads Local Services.</li>
+  </ul>
+
+  <h3 className="text-2xl font-semibold mt-8">Unsere Leistungen als Google Ads Agentur:</h3>
+  <ul className="list-disc ml-6">
+    <li>Marktanalyse & Zielgruppenbestimmung</li>
+    <li>Keyword-Recherche & Anzeigengruppen-Struktur</li>
+    <li>Responsive Suchanzeigen & Erweiterungen</li>
+    <li>Google Shopping-Kampagnen für E-Commerce</li>
+    <li>Conversion-Tracking & Zielvorhaben in Analytics</li>
+    <li>Remarketing-Strategien mit hoher Relevanz</li>
+    <li>Performance Max Kampagnen & lokale Werbung</li>
+    <li>Laufende Optimierung & transparente Reportings</li>
+  </ul>
+
+  <h3 className="text-2xl font-semibold mt-8">Fehler, die wir als erfahrene Agentur vermeiden:</h3>
+  <p>
+    Viele Unternehmen verbrennen Werbebudget, weil sie ihre Kampagnen nicht regelmäßig prüfen. Oft fehlen Conversion-Ziele, das Keyword-Match ist zu breit oder Anzeigen haben keine Relevanz zur Landingpage. Als <strong>Google Ads Agentur Berlin</strong> wissen wir, wie man diese Fehler vermeidet – mit Erfahrung, Analyse und einem strukturierten Vorgehen.
+  </p>
+
+  <h3 className="text-2xl font-semibold mt-8">Warum in Google Ads investieren?</h3>
+  <p>
+    Google Ads ist eines der effektivsten Tools, um kurzfristig Sichtbarkeit und Leads zu generieren – gerade in einem wettbewerbsintensiven Umfeld wie Berlin. Es ermöglicht dir, gezielt Kunden zu erreichen, die bereits aktiv nach deinen Leistungen suchen. Als <Link href="/kontakt" className="text-yellow-600 hover:underline">SEA Agentur</Link> begleiten wir dich von der Planung bis zum Reporting.
+  </p>
+
+  <h3 className="text-2xl font-semibold mt-8">Was kostet eine Google Ads Agentur in Berlin?</h3>
+  <p>
+    Unsere Leistungen sind transparent und skalierbar. Du kannst bereits mit kleinen Budgets starten und diese nach Erfolg ausbauen. Wir bieten sowohl projektbezogene Unterstützung als auch laufende Betreuungspakete – perfekt abgestimmt auf Start-ups, KMUs und wachsende Unternehmen.
+  </p>
+
+  <h3 className="text-2xl font-semibold mt-8">Jetzt durchstarten mit deiner Ads Agentur Berlin</h3>
+  <p>
+    Möchtest du mehr qualifizierte Anfragen, mehr Verkäufe oder einfach nur mehr Sichtbarkeit? Dann sprich mit uns – deiner erfahrenen <strong>Google Ads Agentur Berlin</strong>. Wir analysieren deine aktuelle Situation, entwickeln eine passende Strategie und begleiten dich bei jedem Schritt.
+  </p>
+
+  <div className="mt-8">
+    <Link href="/kontakt" className="inline-block bg-yellow-500 text-white px-6 py-3 rounded-full font-bold hover:bg-yellow-600 transition">
+      Jetzt Google Ads Beratung sichern
+    </Link>
+  </div>
+</section>
+
         {/* Additional SEO text block (hidden on mobile) */}
         <div className="mt-16 hidden md:block">
           <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">

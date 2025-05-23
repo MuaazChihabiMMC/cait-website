@@ -161,6 +161,73 @@ export default function WebDesignBlogPage() {
   ))}
 </div>
 
+{/* SEO Textblock – Sichtbarkeit für Webdesign Berlin erhöhen */}
+<div className="mt-24 max-w-4xl mx-auto text-gray-800 text-lg leading-relaxed space-y-6">
+  <h2 className="text-3xl font-bold text-gray-900">Professionelles Webdesign & Entwicklung für Berlin</h2>
+
+  <p>
+    Als <strong>Webdesign Agentur in Berlin</strong> bieten wir maßgeschneiderte Lösungen für Unternehmen, Startups und Selbstständige, die Wert auf moderne Technologie, Design und Performance legen. Unser Fokus liegt auf Benutzerfreundlichkeit, Schnelligkeit und responsivem Design, das auf allen Geräten überzeugt – vom Smartphone bis zum Desktop.
+  </p>
+
+  <p>
+    Die Anforderungen an Webseiten verändern sich ständig. Neben einem ansprechenden Design kommt es auch auf die technische Basis an. Unsere Experten nutzen moderne Frameworks wie <strong>React</strong>, <strong>Next.js</strong>, <strong>Tailwind CSS</strong> und <strong>WordPress</strong>, um performante und SEO-optimierte Websites zu erstellen, die Ihre Zielgruppe direkt ansprechen.
+  </p>
+
+  <h3 className="text-2xl font-bold text-gray-900">Warum CAIT als Webdesign Agentur?</h3>
+
+  <ul className="list-disc pl-5 space-y-2">
+    <li>Individuelles Webdesign nach Markenidentität</li>
+    <li>Optimierung für PageSpeed und Core Web Vitals</li>
+    <li>Mobile First & Responsive Webdesign</li>
+    <li>SEO-Strategien integriert von Anfang an</li>
+    <li>Barrierefreies Design nach WCAG</li>
+    <li>Performance-orientierte Entwicklung mit React/Next.js</li>
+    <li>Integration von CMS-Systemen wie WordPress & Headless CMS</li>
+  </ul>
+
+  <p>
+    Wir entwickeln nicht nur optisch ansprechende Seiten – sondern leistungsstarke digitale Erlebnisse. Besonders für Berliner Unternehmen ist eine <strong>moderne Website</strong> heute ein Muss, um Kunden zu gewinnen und online sichtbar zu bleiben. Dabei analysieren wir Nutzerverhalten, Wettbewerber und setzen technische Best Practices konsequent um.
+  </p>
+
+  <h3 className="text-2xl font-bold text-gray-900">Webentwicklung trifft Strategie</h3>
+
+  <p>
+    Als erfahrene <strong>Webentwickler Berlin</strong> arbeiten wir eng mit unseren Kunden zusammen, um Websites zu bauen, die messbare Ergebnisse erzielen. Von der Konzeption bis zum Livegang – bei uns ist alles auf Conversion, Nutzerfreundlichkeit und Google-Ranking ausgelegt. Mit gezielten SEO-Maßnahmen und strukturiertem Code schaffen wir die Grundlage für langfristigen Erfolg.
+  </p>
+
+  <p>
+    Unsere Entwickler berücksichtigen dabei sämtliche Aspekte der modernen Webentwicklung: von <strong>technischem SEO</strong> über Performance-Optimierung bis hin zur Einbindung von Tracking-Systemen wie Google Analytics oder dem Google Tag Manager.
+  </p>
+
+  <h3 className="text-2xl font-bold text-gray-900">Unsere Leistungen im Bereich Webdesign Berlin:</h3>
+
+  <ul className="list-disc pl-5 space-y-2">
+    <li>Corporate Websites, Blogs und Landingpages</li>
+    <li>E-Commerce Lösungen mit Shopify, WooCommerce oder Headless</li>
+    <li>UX/UI Design mit Fokus auf Nutzerverhalten</li>
+    <li>Barrierefreiheit & Accessibility</li>
+    <li>Content-Strategie & SEO von Anfang an</li>
+    <li>Wartung, Updates und technische Weiterentwicklung</li>
+  </ul>
+
+  <p>
+    Besonders stolz sind wir auf unsere Partnerschaften mit Berliner Unternehmen aus den unterschiedlichsten Branchen – vom Einzelhandel über medizinische Einrichtungen bis hin zu kreativen Startups. Unsere Mission: <strong>Digitale Präsenz, die wirkt</strong>.
+  </p>
+
+  <h3 className="text-2xl font-bold text-gray-900">Mehr als nur Webdesign: Digitale Strategien, die funktionieren</h3>
+
+  <p>
+    Unsere Agentur ist nicht nur auf <strong>Webdesign</strong> spezialisiert, sondern integriert auch <strong>Google Ads</strong>, <strong>SEO</strong> und <strong>Social Media</strong> in Ihre Online-Strategie. So entsteht ein ganzheitlicher Auftritt, der nicht nur schön aussieht, sondern auch konvertiert.
+  </p>
+
+  <p>
+    Jetzt kostenlose Beratung anfragen und gemeinsam ein Webprojekt starten, das Nutzer begeistert und Google überzeugt.
+  </p>
+
+  <Link href="/kontakt" className="inline-block bg-blue-600 text-white px-6 py-3 mt-4 rounded-full hover:bg-blue-700 transition font-semibold">
+    Jetzt Website-Projekt starten
+  </Link>
+</div>
 
         {/* Newsletter CTA */}
         <div className="mt-20 bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl p-8 md:p-10 text-white shadow-lg animate-float">

@@ -8,7 +8,7 @@ export default function SocialMediaHero() {
             Social Media, die verbindet.
           </h1>
           <p className="text-lg md:text-xl text-blue-100 mb-10 max-w-3xl mx-auto">
-            Ob Instagram, TikTok, LinkedIn oder YouTube – wir entwickeln individuelle Strategien, um deine Marke sichtbar, relevant und erfolgreich zu machen.
+            Ob Instagram, TikTok, LinkedIn oder YouTube, wir entwickeln individuelle Strategien, um deine Marke sichtbar, relevant und erfolgreich zu machen.
           </p>
           <a
             href="/kontakt"
