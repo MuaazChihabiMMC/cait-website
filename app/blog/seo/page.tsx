@@ -135,15 +135,35 @@ export default function SeoBlogPage() {
           </div>
         </div>
 
-        {/* Additional SEO text block (hidden on mobile) */}
-        <div className="mt-16 hidden md:block">
-          <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">CAIT - Ihre SEO Agentur in Berlin</h2>
-            <p className="text-gray-700 mb-3">
+        {/* Additional SEO text block */}
+        <div className="mt-16">
+          <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100 space-y-6 text-gray-700 text-lg leading-relaxed">
+            <h2 className="text-2xl font-bold text-gray-900">CAIT - Ihre SEO Agentur in Berlin</h2>
+            <p>
               Als erfahrene <strong>SEO Agentur Berlin</strong> bieten wir ganzheitliche <strong>SEO Optimierung</strong> für Unternehmen jeder Größe. Unsere <strong>SEO Agentur</strong> Spezialisten kombinieren technisches Know-how mit strategischem Content Marketing und effektivem Linkbuilding.
             </p>
-            <p className="text-gray-700">
+            <p>
               Egal ob Sie eine <strong>SEO Agentur</strong> für technische Optimierung suchen oder eine <strong>SEO Optimierung Berlin</strong> für bessere Rankings benötigen - wir entwickeln maßgeschneiderte Lösungen für Ihr Business.
+            </p>
+            <h3 className="text-xl font-semibold text-gray-900 mt-6">Technische SEO Optimierung</h3>
+            <p>
+              Unsere technische SEO Beratung sorgt dafür, dass Ihre Website in puncto Crawling, Indexierung, Ladezeiten und interner Verlinkung Bestwerte erzielt. Wir analysieren und optimieren Ihre Seitenstruktur, um die Sichtbarkeit in Suchmaschinen zu erhöhen.
+            </p>
+            <h3 className="text-xl font-semibold text-gray-900 mt-6">Content Marketing Strategien</h3>
+            <p>
+              Mit gezieltem Content Marketing stärken wir Ihre Online-Präsenz. Wir erstellen hochwertige Inhalte, die sowohl für Ihre Zielgruppe als auch für Suchmaschinen relevant sind, und unterstützen Sie bei der Entwicklung einer effektiven Content-Strategie.
+            </p>
+            <h3 className="text-xl font-semibold text-gray-900 mt-6">Linkbuilding Methoden</h3>
+            <p>
+              Natürliches Linkbuilding ist ein zentraler Bestandteil unserer SEO-Strategie. Wir setzen auf bewährte Methoden, um hochwertige Backlinks zu generieren, die Ihre Domain-Autorität stärken und Ihre Rankings verbessern.
+            </p>
+            <h3 className="text-xl font-semibold text-gray-900 mt-6">Lokale SEO für Berliner Unternehmen</h3>
+            <p>
+              Für Unternehmen in Berlin ist lokale Sichtbarkeit entscheidend. Wir optimieren Ihre Website für lokale Suchanfragen, damit potenzielle Kunden Sie in Ihrer Region leicht finden können.
+            </p>
+            <h3 className="text-xl font-semibold text-gray-900 mt-6">Fazit</h3>
+            <p>
+              Mit unserer umfassenden Expertise als <strong>SEO Agentur Berlin</strong> unterstützen wir Sie dabei, Ihre Online-Präsenz zu stärken und nachhaltige Erfolge in den Suchmaschinen zu erzielen. Kontaktieren Sie uns für eine individuelle Beratung und erfahren Sie, wie wir Ihr Unternehmen nach vorne bringen können.
             </p>
           </div>
         </div>
