@@ -26,12 +26,12 @@ export default function HomePage() {
         <span className="text-blue-600">
           CAIT Agentur Berlin
         </span>{" "}
-        – Ihre Top Marketing Agentur in Berlin
+        Ihre Top Marketing Agentur in Berlin
       </h1>
 
       {/* Hero-Text */}
       <p className="text-lg md:text-xl lg:text-2xl mb-6 md:mb-8 text-blue-800">
-        Als führende <span className="font-semibold text-blue-600">SEO Agentur Berlin</span>, <span className="font-semibold text-blue-500">Google Ads Agentur Berlin</span>, <span className="font-semibold text-blue-400">Webdesign Agentur Berlin</span> und <span className="font-semibold text-blue-300">Social Media Agentur Berlin</span> helfen wir Unternehmen in Berlin, online sichtbar zu werden und mehr Kunden zu gewinnen.
+        Als führende <span className="font-semibold text-blue-700">SEO Agentur Berlin</span>, <span className="font-semibold text-blue-700">Google Ads Agentur Berlin</span>, <span className="font-semibold text-blue-700">Webdesign Agentur Berlin</span> und <span className="font-semibold text-blue-700">Social Media Agentur Berlin</span> helfen wir Unternehmen in Berlin, online sichtbar zu werden und mehr Kunden zu gewinnen.
       </p>
 
       {/* Tags */}
