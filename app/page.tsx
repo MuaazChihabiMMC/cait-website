@@ -117,7 +117,7 @@ export default function HomePage() {
               }}
               whileTap={{ scale: 0.95 }}
               href="tel:+493022689840"
-              className="inline-block bg-transparent border-2 border-blue-600 text-blue-600 px-6 py-3 md:px-8 md:py-4 rounded-full font-bold hover:bg-blue-600 hover:text-white transition flex items-center gap-2 mx-auto"
+              className="inline-block bg-transparent border-2 border-blue-600 text-blue-600 px-6 py-3 md:px-8 md:py-4 rounded-full font-bold hover:bg-blue-600 hover:text-white transition items-center gap-2 mx-auto"
             >
               <span>030 2268 9840</span>
             </motion.a>
