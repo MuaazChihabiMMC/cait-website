@@ -55,9 +55,9 @@ export default function HomePage() {
           </motion.div>
           
           <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.4 }}
+             initial={false}
+  animate={{ opacity: 1 }}
+  transition={{ duration: 0 }}
             className="text-lg md:text-xl lg:text-2xl mb-6 md:mb-8 text-blue-800"
           >
             Als führende <span className="font-semibold text-blue-600">SEO Agentur Berlin</span>, <span className="font-semibold text-blue-500">Google Ads Agentur Berlin</span>, <span className="font-semibold text-blue-400">Webdesign Agentur Berlin</span> und <span className="font-semibold text-blue-300">Social Media Agentur Berlin</span> helfen wir Unternehmen in Berlin, online sichtbar zu werden und mehr Kunden zu gewinnen.
