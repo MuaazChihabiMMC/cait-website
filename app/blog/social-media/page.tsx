@@ -4,6 +4,9 @@ import Image from 'next/image';
 export const metadata = {
   title: 'Social Media Strategien | CAITSocialMedia Blog',
   description: 'Aktuelle Tipps für Instagram, TikTok & LinkedIn - Content-Strategien und organisches Wachstum',
+      alternates: {
+    canonical: 'https://www.caitsocialmedia.com/blog/social-media',
+  },
 };
 
 const socialMediaPosts = [

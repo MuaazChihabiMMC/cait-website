@@ -9,6 +9,9 @@ export const metadata = {
   title: 'Google Ads Agentur Berlin | CAIT für mehr Leads & Umsatz',
   description:
     'Kampagnen, Optimierung & Performance mit CAIT erreichst du deine Zielgruppe gezielt über Google Ads. Jetzt durchstarten!',
+      alternates: {
+    canonical: 'https://www.caitsocialmedia.com/google-ads',
+  },
 };
 
 export default function GoogleAdsPage() {

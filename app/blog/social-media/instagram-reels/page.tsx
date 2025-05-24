@@ -6,6 +6,9 @@ const instagramPost = {
   'instagram-strategien': {
     title: 'Content-Strategien für Instagram 2024',
     metaDescription: 'Bewährte Methoden für organische Reichweite auf Instagram - Algorithmus verstehen, Reels optimieren und Engagement steigern',
+        alternates: {
+    canonical: 'https://www.caitsocialmedia.com/blog/social-media/instagram-reels',
+  },
     content: `
       <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">Instagram Marketing im Jahr 2024</h2>
 <p class="text-gray-700 mb-6">Mit über 2 Milliarden monatlich aktiven Nutzern bleibt Instagram eine der wichtigsten Plattformen für Marken. Doch der Algorithmus hat sich verändert - wir zeigen Ihnen, wie Sie organische Reichweite erzielen.</p>

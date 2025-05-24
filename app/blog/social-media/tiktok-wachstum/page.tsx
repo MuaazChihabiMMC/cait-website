@@ -6,6 +6,9 @@ const tiktokPost = {
   'tiktok-wachstum': {
     title: 'TikTok Growth: Virale Reichweite erzielen',
     metaDescription: 'Wie Sie den TikTok-Algorithmus verstehen und für Ihr Business nutzen - Strategien für organisches Wachstum',
+          alternates: {
+    canonical: 'https://www.caitsocialmedia.com/blog/social-media/tiktok-wachstum',
+  },
     content: `
       <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">Warum TikTok für Ihr Business unverzichtbar ist</h2>
 <p class="text-gray-700 mb-6">Mit über 1 Milliarde aktiven Nutzern bietet TikTok einzigartige Möglichkeiten für virale Reichweite. Im Gegensatz zu anderen Plattformen kann hier auch ohne große Follower-Basis organisches Wachstum erzielt werden - wenn Sie den Algorithmus verstehen.</p>

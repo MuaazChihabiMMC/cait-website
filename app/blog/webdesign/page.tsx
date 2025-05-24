@@ -4,6 +4,9 @@ import Image from 'next/image';
 export const metadata = {
   title: 'Webdesign & Entwicklung | CAITSocialMedia Blog',
   description: 'Aktuelle Trends und Best Practices für modernes Webdesign und Webentwicklung',
+            alternates: {
+    canonical: 'https://www.caitsocialmedia.com/blog/webdesign',
+  },
 };
 
 const webDesignPosts = [

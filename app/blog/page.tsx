@@ -4,6 +4,9 @@ import Image from 'next/image';
 export const metadata = {
   title: 'Marketing Blog | CAIT SEO & Social Media Agentur Berlin',
   description: 'Aktuelle Insights zu SEO, Google Ads und Social Media Marketing aus Berlin. Experten-Tipps für bessere Rankings, mehr Conversions und erfolgreiche Online-Marketing Strategien.',
+         alternates: {
+    canonical: 'https://www.caitsocialmedia.com/blog',
+  },
 };
 
 const blogCategories = [

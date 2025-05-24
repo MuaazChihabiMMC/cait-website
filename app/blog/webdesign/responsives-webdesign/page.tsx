@@ -4,6 +4,9 @@ import Link from 'next/link';
 export const metadata = {
   title: 'Responsive Webdesign Best Practices 2024 | CAITSocialMedia',
   description: 'Umfassender Leitfaden zu modernen Responsive Webdesign Techniken für optimale Nutzererfahrung auf allen Geräten',
+              alternates: {
+    canonical: 'https://www.caitsocialmedia.com/blog/webdesign/responsives-webdesign',
+  },
 };
 
 const post = {

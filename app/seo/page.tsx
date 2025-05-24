@@ -12,6 +12,9 @@ import AnimatedSection from '@/components/AnimatedSection';
 export const metadata = {
   title: 'SEO mit CAITSocialMedia – Sichtbarkeit. Wachstum. Erfolg.',
   description: 'SEO-Dienstleistungen von CAITSocialMedia: OnPage, OffPage, Technik, Content, Monitoring und mehr. Wir bringen dich bei Google ganz nach vorne.',
+  alternates: {
+    canonical: 'https://www.caitsocialmedia.com/seo/',
+  },
 };
 export default function SeoPage() {
   return (

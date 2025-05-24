@@ -4,6 +4,9 @@ import Link from 'next/link';
 export const metadata = {
   title: 'Barrierefreies Webdesign | WCAG-Richtlinien 2024',
   description: 'Umfassender Leitfaden zur Erstellung zugänglicher Websites gemäß WCAG-Standards für inklusive Nutzererfahrung',
+                alternates: {
+    canonical: 'https://www.caitsocialmedia.com/blog/webdesign/web-accessibility',
+  },
 };
 
 const post = {

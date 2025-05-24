@@ -1,6 +1,9 @@
 export const metadata = {
     title: 'Impressum | CAITSocialMedia',
     description: 'Gesetzlich vorgeschriebene Anbieterkennzeichnung gemäß § 5 TMG für CAITSocialMedia.',
+        alternates: {
+    canonical: 'https://www.caitsocialmedia.com/impressum',
+  },
   };
   
   export default function ImpressumPage() {

@@ -10,6 +10,9 @@ export const metadata = {
   title: 'Webentwicklung & Design | CAITSocialMedia',
   description:
     'Maßgeschneiderte Websites mit modernen Technologien, klarer Struktur und optimaler Performance. Wir entwickeln digitale Erlebnisse, die funktionieren.',
+      alternates: {
+    canonical: 'https://www.caitsocialmedia.com/webentwicklung',
+  },
 };
 
 export default function WebDevPage() {

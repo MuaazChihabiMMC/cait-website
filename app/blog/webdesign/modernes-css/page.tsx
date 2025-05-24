@@ -4,6 +4,9 @@ import Link from 'next/link';
 export const metadata = {
   title: 'Moderne CSS-Techniken 2024 | CAITSocialMedia',
   description: 'Aktuelle CSS-Features wie Grid, Container Queries und neue Layout-Methoden für moderne Webentwicklung',
+            alternates: {
+    canonical: 'https://www.caitsocialmedia.com/blog/webdesign/modernes-css',
+  },
 };
 
 const post = {

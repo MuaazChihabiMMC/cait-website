@@ -6,6 +6,9 @@ const socialMediaPosts = {
   'content-strategien': {
     title: 'Social Media Content Strategien 2024',
     metaDescription: 'Aktuelle Content-Strategien für Instagram, TikTok & LinkedIn - Wie Sie organische Reichweite steigern',
+        alternates: {
+    canonical: 'https://www.caitsocialmedia.com/blog/social-media/content-strategien',
+  },
     content: `
       <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">Warum Content-Strategien entscheidend sind</h2>
 <p class="text-gray-700 mb-6">In der schnelllebigen Welt der sozialen Medien entscheidet Ihre Content-Strategie über Erfolg oder Unsichtbarkeit. Wir zeigen Ihnen bewährte Methoden, um organische Reichweite zu generieren und eine treue Community aufzubauen.</p>

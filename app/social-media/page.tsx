@@ -9,7 +9,10 @@ import SocialMediaSeoText from '@/components/SocialMediaSeoText';
 export const metadata = {
   title: 'Social Media Marketing | CAITSocialMedia',
   description:
-    'Content, Strategie und Performance: Wir bringen deine Marke auf Social Media nach vorn – auf Instagram, TikTok, LinkedIn & Co.',
+    'Content, Strategie und Performance: Wir bringen deine Marke auf Social Media nach vorn, auf Instagram, TikTok, LinkedIn & Co.',
+       alternates: {
+    canonical: 'https://www.caitsocialmedia.com/social-media',
+  },
 };
 
 export default function SocialMediaPage() {

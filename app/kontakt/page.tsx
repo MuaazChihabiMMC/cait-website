@@ -4,7 +4,10 @@ import KontaktForm from '@/components/KontaktForm';
 
 export const metadata = {
   title: 'Kontakt | CAIT Social Media Agentur Berlin',
-  description: 'Kontaktiere die CAIT Agentur für SEO, Google Ads, Webdesign & Social Media. Wir freuen uns auf deine Nachricht!'
+  description: 'Kontaktiere die CAIT Agentur für SEO, Google Ads, Webdesign & Social Media. Wir freuen uns auf deine Nachricht!',
+       alternates: {
+    canonical: 'https://www.caitsocialmedia.com/kontakt',
+  },
 
 };
 

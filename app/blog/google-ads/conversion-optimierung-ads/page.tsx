@@ -5,6 +5,9 @@ const googleAdsPosts = {
   'conversion-optimierung-ads': {
     title: 'Conversion-Optimierung in Google Ads',
     metaDescription: 'Erfahren Sie, wie Sie mit Landingpages, A/B-Tests und Anzeigenerweiterungen mehr aus Ihrem Budget holen.',
+             alternates: {
+    canonical: 'https://www.caitsocialmedia.com/blog/google-ads/conversion-optimierung-ads',
+  },
     content: `
       <h2 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">Warum Conversion-Optimierung entscheidend ist</h2>
 <p class="text-gray-700 mb-6">Die besten Google Ads bringen nichts, wenn Ihre Landingpage Besucher nicht in Kunden verwandelt. Conversion-Optimierung ist der Schlüssel, um Ihr Werbebudget effizient einzusetzen und Ihre Kampagnenrentabilität zu steigern.</p>

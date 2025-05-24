@@ -4,6 +4,9 @@ import Link from 'next/link';
 export const metadata = {
   title: 'Moderne WordPress-Entwicklung | CAITSocialMedia',
   description: 'Block-Themes, Headless CMS und Performance-Tuning für WordPress.',
+                  alternates: {
+    canonical: 'https://www.caitsocialmedia.com/blog/webdesign/wordpress-entwicklung',
+  },
 };
 
 const post = {

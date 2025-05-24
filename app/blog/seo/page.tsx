@@ -4,6 +4,9 @@ import Image from 'next/image';
 export const metadata = {
   title: 'SEO Agentur Berlin | SEO Optimierung & Strategien - CAIT Blog',
   description: 'Experten-Tipps Ihrer SEO Agentur Berlin: Technische SEO Optimierung, Content Marketing & Linkbuilding für bessere Rankings in Suchmaschinen',
+              alternates: {
+    canonical: 'https://www.caitsocialmedia.com/blog/seo',
+  },
 };
 
 const seoPosts = [

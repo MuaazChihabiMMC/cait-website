@@ -5,6 +5,9 @@ const googleAdsPosts = {
   'google-ads-budget-strategien': {
     title: 'Effektives Budgetmanagement in Google Ads',
     metaDescription: 'Lernen Sie, wie Sie Ihr Werbebudget gezielt einsetzen und Streuverluste vermeiden.',
+              alternates: {
+    canonical: 'https://www.caitsocialmedia.com/blog/google-ads/google-ads-budget-strategien',
+  },
     content: `
      <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">Warum Budgetmanagement über Erfolg oder Misserfolg entscheidet</h2>
 <p class="text-gray-700 mb-6">Die richtige Budgetverteilung in Google Ads ist entscheidend für den ROI Ihrer Werbekampagnen. Ohne strategische Planung verbrennen Sie schnell Budget ohne messbare Ergebnisse.</p>

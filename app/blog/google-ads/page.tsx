@@ -4,6 +4,9 @@ import Image from 'next/image';
 export const metadata = {
   title: 'Google Ads Agentur Berlin | SEA Strategien & Kampagnen - CAIT Blog',
   description: 'Ihre Google Ads Agentur in Berlin bietet professionelle SEA-Strategien, Kampagnenoptimierung und Conversion-Steigerung',
+             alternates: {
+    canonical: 'https://www.caitsocialmedia.com/blog/google-ads',
+  },
 };
 
 const googleAdsPosts = [

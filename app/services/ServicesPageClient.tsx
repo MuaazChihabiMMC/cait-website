@@ -5,6 +5,9 @@ import { FaSearch, FaAd, FaLaptopCode, FaHashtag, FaChartLine, FaLightbulb, FaUs
 export const metadata = {
   title: 'Leistungen | CAIT Marketing Agentur für SEO & Google Ads',
   description: 'Unsere Agentur bietet SEO, Google Ads, Webdesign & Social Media individuell abgestimmt auf dein Business. Jetzt Leistungen entdecken.',
+        alternates: {
+    canonical: 'https://www.caitsocialmedia.com/services',
+  },
 };
 
 export default function ServicesPage() {

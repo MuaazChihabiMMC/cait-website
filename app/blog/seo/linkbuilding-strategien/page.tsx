@@ -5,6 +5,9 @@ const seoPosts = {
   'linkbuilding-strategien': {
     title: 'Backlink-Strategien die wirklich funktionieren',
     metaDescription: 'Natürliches Linkbuilding ohne Risiko - bewährte Methoden für hochwertige Backlinks die Ihre Rankings verbessern',
+       alternates: {
+    canonical: 'https://www.caitsocialmedia.com/blog/seo/linkbuilding-strategien',
+  },
     content: `
      <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">Warum hochwertige Backlinks entscheidend sind</h2>
 <p class="text-gray-700 mb-6">Backlinks bleiben einer der wichtigsten Ranking-Faktoren bei Google. Doch nicht alle Links sind gleich wertvoll. Wir zeigen Ihnen strategische Ansätze, die nachhaltig und ohne Risiko hochwertige Backlinks generieren - ganz ohne Black-Hat-SEO oder Spam-Taktiken.</p>

@@ -4,6 +4,9 @@ import Link from 'next/link';
 export const metadata = {
   title: 'JavaScript Frameworks im Vergleich | CAITSocialMedia',
   description: 'React, Vue, Angular oder Svelte? Die beste Wahl für Ihr Projekt.',
+              alternates: {
+    canonical: 'https://www.caitsocialmedia.com/blog/webdesign/javascript-frameworks',
+  },
 };
 
 const post = {

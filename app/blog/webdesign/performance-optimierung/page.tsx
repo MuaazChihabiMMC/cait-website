@@ -4,6 +4,9 @@ import Link from 'next/link';
 export const metadata = {
   title: 'Website Performance Optimierung 2024 | CAITSocialMedia',
   description: 'Umfassender Leitfaden zur Performance-Optimierung für schnellere Ladezeiten und bessere User Experience',
+             alternates: {
+    canonical: 'https://www.caitsocialmedia.com/blog/webdesign/performance-optimierung',
+  },
 };
 
 const post = {

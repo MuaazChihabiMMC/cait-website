@@ -1,8 +1,11 @@
 'use client';
 import { motion } from 'framer-motion';
 import { FaSearch, FaAd, FaLaptopCode, FaHashtag, FaChartLine, FaLightbulb, FaUsers, FaMobileAlt, FaShoppingCart, FaArrowRight, FaPaintBrush, FaCode, FaServer, FaMapMarkerAlt, FaTrophy, FaHandshake, FaBullseye } from 'react-icons/fa';
+<link rel="canonical" href="https://www.caitsocialmedia.com/" />
 
 export default function HomePage() {
+ <link rel="canonical" href="https://www.caitsocialmedia.com/" />
+
   return (
     <main className="px-4 py-12 md:px-6 max-w-7xl mx-auto bg-white text-blue-900 space-y-12 md:space-y-24">
       {/* Hero Section */}

@@ -5,6 +5,9 @@ import OffPageSeoClient from './OffPageSeoClient';
 export const metadata: Metadata = {
   title: 'CAIT SEO Agentur Berlin | OffPage SEO & Linkaufbau',
   description: 'Mehr Sichtbarkeit durch gezielten Linkaufbau: CAIT ist deine OffPage SEO Agentur in Berlin. Backlinks, Autorität & Reichweite vom Profi.',
+     alternates: {
+    canonical: 'https://www.caitsocialmedia.com/seo/offpage-seo',
+  },
 };
 
 export default function OffPageSeoPage() {
