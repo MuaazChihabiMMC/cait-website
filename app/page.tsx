@@ -130,7 +130,7 @@ export default function HomePage() {
             className="mt-8 flex items-center justify-center gap-2 text-blue-700"
           >
             <FaMapMarkerAlt />
-            <span>Berlin Mitte - Prenzlauer Berg - Friedrichshain - Köpenick</span>
+            <span>Berlin Zehlendorf</span>
           </motion.div>
         </div>
       </motion.section>
@@ -350,7 +350,7 @@ export default function HomePage() {
               <motion.a
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.98 }}
-                href="/seo-berlin"
+                href="/seo"
                 className="inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-full px-6 py-3 md:px-8 md:py-3.5 transition-all w-full sm:w-auto"
               >
                 SEO-Strategie für Berlin entwickeln
@@ -579,7 +579,7 @@ export default function HomePage() {
                   scale: 1.03,
                   boxShadow: "0 5px 15px rgba(37, 99, 235, 0.3)"
                 }}
-                href="/google-ads-berlin"
+                href="/google-ads"
                 className="bg-blue-600 text-white px-5 py-2 md:px-6 md:py-3 rounded-lg font-semibold shadow hover:shadow-xl transition flex items-center gap-2 text-sm md:text-base w-full sm:w-auto justify-center"
               >
                 Kostenlose Google Ads Beratung
@@ -960,7 +960,7 @@ export default function HomePage() {
                   scale: 1.03,
                   boxShadow: "0 5px 15px rgba(37, 99, 235, 0.3)"
                 }}
-                href="/social-media-berlin"
+                href="/social-media"
                 className="bg-blue-600 text-white px-5 py-2 md:px-6 md:py-3 rounded-lg font-semibold shadow hover:shadow-xl transition flex items-center gap-2 text-sm md:text-base w-full sm:w-auto justify-center"
               >
                 Social Media Strategie entwickeln
@@ -1070,10 +1070,11 @@ export default function HomePage() {
             transition={{ delay: 0.6 }}
             className="mt-4 md:mt-6 text-blue-100 text-sm md:text-base"
           >
-            CAIT Agentur Berlin | Mittelstraße 12-14 | 12159 Berlin-Friedenau
+            CAIT Agentur Berlin | Berliner Straße 17 | 14169 Berlin-Zehlendorf
           </motion.p>
         </div>
       </motion.section>
     </main>
+    
   );
 }
