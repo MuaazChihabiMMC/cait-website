@@ -7,132 +7,74 @@ export default function HomePage() {
  <link rel="canonical" href="https://www.caitsocialmedia.com/" />
 
   return (
-    <main className="px-4 py-12 md:px-6 max-w-7xl mx-auto bg-white text-blue-900 space-y-12 md:space-y-24">
-      {/* Hero Section */}
-      <motion.section
-        initial={{ opacity: 0, y: 40 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        className="text-center py-12 md:py-20 bg-gradient-to-b from-blue-50 to-white rounded-3xl px-4 md:px-6 relative overflow-hidden"
-      >
-        <motion.div 
-          className="absolute inset-0 opacity-10"
-          animate={{
-            scale: [1, 1.2, 1],
-            rotate: [0, 5, 0]
-          }}
-          transition={{
-            duration: 15,
-            repeat: Infinity,
-            repeatType: "reverse"
-          }}
-        >
-          <div className="absolute top-0 left-0 w-32 h-32 bg-blue-400 rounded-full mix-blend-multiply filter blur-xl"></div>
-          <div className="absolute bottom-0 right-0 w-32 h-32 bg-blue-600 rounded-full mix-blend-multiply filter blur-xl"></div>
-        </motion.div>
-        
-        <div className="max-w-4xl mx-auto relative">
-          <motion.div
-            initial={{ scale: 0.9, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
+<main className="px-4 py-12 md:px-6 max-w-7xl mx-auto bg-white text-blue-900 space-y-12 md:space-y-24">
+
+  {/* Hero Section */}
+  <section className="text-center py-12 md:py-20 bg-gradient-to-b from-blue-50 to-white rounded-3xl px-4 md:px-6 relative overflow-hidden">
+
+    {/* Hintergrunddeko */}
+    <div className="absolute inset-0 opacity-10 pointer-events-none" aria-hidden="true">
+      <div className="absolute top-0 left-0 w-32 h-32 bg-blue-400 rounded-full blur-xl"></div>
+      <div className="absolute bottom-0 right-0 w-32 h-32 bg-blue-600 rounded-full blur-xl"></div>
+    </div>
+
+    <div className="max-w-4xl mx-auto relative z-10">
+
+      {/* Hauptüberschrift */}
+      <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 text-blue-900">
+        <span className="text-blue-600">
+          CAIT Agentur Berlin
+        </span>{" "}
+        – Ihre Top Marketing Agentur in Berlin
+      </h1>
+
+      {/* Hero-Text */}
+      <p className="text-lg md:text-xl lg:text-2xl mb-6 md:mb-8 text-blue-800">
+        Als führende <span className="font-semibold text-blue-600">SEO Agentur Berlin</span>, <span className="font-semibold text-blue-500">Google Ads Agentur Berlin</span>, <span className="font-semibold text-blue-400">Webdesign Agentur Berlin</span> und <span className="font-semibold text-blue-300">Social Media Agentur Berlin</span> helfen wir Unternehmen in Berlin, online sichtbar zu werden und mehr Kunden zu gewinnen.
+      </p>
+
+      {/* Tags */}
+      <div className="flex flex-wrap justify-center gap-4 mb-8">
+        {[
+          { text: "SEO Agentur Berlin", bg: "bg-blue-600" },
+          { text: "Google Ads Berlin", bg: "bg-blue-500" },
+          { text: "Webdesign Berlin", bg: "bg-blue-400" },
+          { text: "Social Media Berlin", bg: "bg-blue-300" }
+        ].map((tag, index) => (
+          <div
+            key={index}
+            className={`${tag.bg} text-white px-4 py-2 rounded-full text-sm font-medium shadow-md`}
           >
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 text-blue-900">
-              <motion.span 
-                className="text-blue-600"
-                animate={{ 
-                  textShadow: "0 0 10px rgba(37, 99, 235, 0.3)"
-                }}
-                transition={{
-                  duration: 2,
-                  repeat: Infinity,
-                  repeatType: "reverse"
-                }}
-              >
-                CAIT Agentur Berlin
-              </motion.span> - Ihre Top Marketing Agentur in Berlin
-            </h1>
-          </motion.div>
-          
-          
-          <p>
-            Als führende <span className="font-semibold text-blue-600">SEO Agentur Berlin</span>, <span className="font-semibold text-blue-500">Google Ads Agentur Berlin</span>, <span className="font-semibold text-blue-400">Webdesign Agentur Berlin</span> und <span className="font-semibold text-blue-300">Social Media Agentur Berlin</span> helfen wir Unternehmen in Berlin, online sichtbar zu werden und mehr Kunden zu gewinnen.
-          
-          </p>
-          <div className="flex flex-wrap justify-center gap-4 mb-8">
-            {[
-              { text: "SEO Agentur Berlin", bg: "bg-blue-600" },
-              { text: "Google Ads Berlin", bg: "bg-blue-500" },
-              { text: "Webdesign Berlin", bg: "bg-blue-400" },
-              { text: "Social Media Berlin", bg: "bg-blue-300" }
-            ].map((tag, index) => (
-              <motion.div
-                key={index}
-                initial={{ scale: 0 }}
-                animate={{ scale: 1 }}
-                transition={{ delay: 0.5 + index * 0.1 }}
-                className={`${tag.bg} text-white px-4 py-2 rounded-full text-sm font-medium shadow-md`}
-                whileHover={{ scale: 1.05 }}
-              >
-                {tag.text}
-              </motion.div>
-            ))}
+            {tag.text}
           </div>
-          
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.6 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center"
-          >
-            <motion.a
-              whileHover={{ 
-                scale: 1.05,
-                boxShadow: "0 5px 15px rgba(37, 99, 235, 0.4)"
-              }}
-              whileTap={{ scale: 0.95 }}
-              href="/kontakt"
-              className="inline-block bg-blue-600 text-white px-6 py-3 md:px-8 md:py-4 rounded-full font-bold shadow-lg hover:shadow-xl transition-all items-center gap-2 mx-auto"
-            >
-              Kostenlose Erstberatung in Berlin
-              <motion.span
-                animate={{
-                  x: [0, 5, 0]
-                }}
-                transition={{
-                  duration: 1.5,
-                  repeat: Infinity
-                }}
-                className="hidden sm:inline-block"
-              >
-                <FaArrowRight />
-              </motion.span>
-            </motion.a>
-            
-            <motion.a
-              whileHover={{ 
-                scale: 1.05,
-                backgroundColor: "rgba(255, 255, 255, 0.1)"
-              }}
-              whileTap={{ scale: 0.95 }}
-              href="tel:+493022689840"
-              className="inline-block bg-transparent border-2 border-blue-600 text-blue-600 px-6 py-3 md:px-8 md:py-4 rounded-full font-bold hover:bg-blue-600 hover:text-white transition items-center gap-2 mx-auto"
-            >
-              <span>030 2268 9840</span>
-            </motion.a>
-          </motion.div>
-          
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.8 }}
-            className="mt-8 flex items-center justify-center gap-2 text-blue-700"
-          >
-            <FaMapMarkerAlt />
-            <span>Berlin Zehlendorf</span>
-          </motion.div>
-        </div>
-      </motion.section>
+        ))}
+      </div>
+
+      {/* CTA Buttons */}
+      <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <a
+          href="/kontakt"
+          className="inline-block bg-blue-600 text-white px-6 py-3 md:px-8 md:py-4 rounded-full font-bold shadow-lg hover:shadow-xl transition-all items-center gap-2 mx-auto"
+        >
+          Kostenlose Erstberatung in Berlin
+        </a>
+
+        <a
+          href="tel:+493022689840"
+          className="inline-block bg-transparent border-2 border-blue-600 text-blue-600 px-6 py-3 md:px-8 md:py-4 rounded-full font-bold hover:bg-blue-600 hover:text-white transition items-center gap-2 mx-auto"
+        >
+          030 2268 9840
+        </a>
+      </div>
+
+      {/* Standort */}
+      <div className="mt-8 flex items-center justify-center gap-2 text-blue-700">
+        <FaMapMarkerAlt />
+        <span>Berlin Zehlendorf</span>
+      </div>
+
+    </div>
+  </section>
 
       {/* USP Section */}
       <motion.section
