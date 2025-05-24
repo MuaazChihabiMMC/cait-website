@@ -1,5 +1,6 @@
 'use client';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 import { FaSearch, FaAd, FaLaptopCode, FaHashtag, FaChartLine, FaLightbulb, FaUsers, FaMobileAlt, FaShoppingCart, FaArrowRight, FaPaintBrush, FaCode, FaServer, FaMapMarkerAlt, FaTrophy, FaHandshake, FaBullseye } from 'react-icons/fa';
 <link rel="canonical" href="https://www.caitsocialmedia.com/" />
 
@@ -35,20 +36,21 @@ export default function HomePage() {
 
       {/* Tags */}
       <div className="flex flex-wrap justify-center gap-4 mb-8">
-        {[
-          { text: "SEO Agentur Berlin", bg: "bg-blue-600" },
-          { text: "Google Ads Berlin", bg: "bg-blue-500" },
-          { text: "Webdesign Berlin", bg: "bg-blue-400" },
-          { text: "Social Media Berlin", bg: "bg-blue-300" }
-        ].map((tag, index) => (
-          <div
-            key={index}
-            className={`${tag.bg} text-white px-4 py-2 rounded-full text-sm font-medium shadow-md`}
-          >
-            {tag.text}
-          </div>
-        ))}
-      </div>
+  {[
+    { text: "SEO Agentur Berlin", bg: "bg-blue-700", href: "/seo" },
+    { text: "Google Ads Berlin", bg: "bg-blue-700", href: "/google-ads" },
+    { text: "Webdesign Berlin", bg: "bg-blue-700", href: "/webentwicklung" },
+    { text: "Social Media Berlin", bg: "bg-blue-700", href: "/social-media" }
+  ].map((tag, index) => (
+    <Link
+      key={index}
+      href={tag.href}
+      className={`${tag.bg} text-white px-4 py-2 rounded-full text-sm font-medium shadow-md hover:brightness-110 transition`}
+    >
+      {tag.text}
+    </Link>
+  ))}
+</div>
 
       {/* CTA Buttons */}
       <div className="flex flex-col sm:flex-row gap-4 justify-center">
