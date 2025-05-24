@@ -2,8 +2,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export const metadata = {
-  title: 'Google Ads Agentur Berlin | SEA Strategien & Kampagnen - CAIT Blog',
-  description: 'Ihre Google Ads Agentur in Berlin bietet professionelle SEA-Strategien, Kampagnenoptimierung und Conversion-Steigerung',
+  title: 'Google Ads Agentur Berlin | SEA Strategien & Kampagnen, CAIT Blog',
+  description: 'Ihre Google Ads Agentur in Berlin bietet professionelle SEA-Strategien.',
              alternates: {
     canonical: 'https://www.caitsocialmedia.com/blog/google-ads',
   },
@@ -145,7 +145,7 @@ export default function GoogleAdsBlogPage() {
       <div className="bg-white rounded-xl p-6 shadow-md border border-yellow-100 hover:shadow-lg transition">
         <h3 className="text-xl font-semibold text-gray-900 mb-2">Google Ads für Ärzte</h3>
         <p className="text-gray-700 mb-2">
-          Ihre <strong>Google Ads Agentur Berlin</strong> kennt die Herausforderungen in der Gesundheitsbranche. Wir helfen Arztpraxen, gezielt neue Patient:innen aus Berlin zu erreichen – mit lokaler Suchmaschinenwerbung, die Vertrauen schafft.
+          Ihre <strong>Google Ads Agentur Berlin</strong> kennt die Herausforderungen in der Gesundheitsbranche. Wir helfen Arztpraxen, gezielt neue Patient:innen aus Berlin zu erreichen, mit lokaler Suchmaschinenwerbung, die Vertrauen schafft.
         </p>
         <p className="text-sm text-yellow-700 font-medium">Gezielte Kampagnen für Fachärzt:innen & Hausärzt:innen</p>
       </div>
@@ -154,7 +154,7 @@ export default function GoogleAdsBlogPage() {
       <div className="bg-white rounded-xl p-6 shadow-md border border-yellow-100 hover:shadow-lg transition">
         <h3 className="text-xl font-semibold text-gray-900 mb-2">Google Ads für E-Commerce</h3>
         <p className="text-gray-700 mb-2">
-          Als erfahrene <strong>SEA Agentur Berlin</strong> entwickeln wir performante Kampagnen für Onlineshops – inklusive Google Shopping, Remarketing und Conversion-Tracking. Ideal für nachhaltiges Wachstum im E-Commerce.
+          Als erfahrene <strong>SEA Agentur Berlin</strong> entwickeln wir performante Kampagnen für Onlineshops, inklusive Google Shopping, Remarketing und Conversion-Tracking. Ideal für nachhaltiges Wachstum im E-Commerce.
         </p>
         <p className="text-sm text-yellow-700 font-medium">Mehr Umsatz durch datengetriebene Strategien</p>
       </div>
@@ -172,7 +172,7 @@ export default function GoogleAdsBlogPage() {
       <div className="bg-white rounded-xl p-6 shadow-md border border-yellow-100 hover:shadow-lg transition">
         <h3 className="text-xl font-semibold text-gray-900 mb-2">Google Ads für Anwälte</h3>
         <p className="text-gray-700 mb-2">
-          Ob Familienrecht, Strafrecht oder IT-Recht – mit unserer <strong>Google Ads Agentur Berlin</strong> erreichen Sie Mandant:innen, die gezielt nach rechtlicher Unterstützung suchen. Effektiv & konform mit Werberichtlinien.
+          Ob Familienrecht, Strafrecht oder IT-Recht, mit unserer <strong>Google Ads Agentur Berlin</strong> erreichen Sie Mandant:innen, die gezielt nach rechtlicher Unterstützung suchen. Effektiv & konform mit Werberichtlinien.
         </p>
         <p className="text-sm text-yellow-700 font-medium">Strategische SEA-Lösungen für Kanzleien</p>
       </div>
@@ -216,22 +216,22 @@ export default function GoogleAdsBlogPage() {
 
   <h3 className="text-2xl font-semibold mt-8">Fehler, die wir als erfahrene Agentur vermeiden:</h3>
   <p>
-    Viele Unternehmen verbrennen Werbebudget, weil sie ihre Kampagnen nicht regelmäßig prüfen. Oft fehlen Conversion-Ziele, das Keyword-Match ist zu breit oder Anzeigen haben keine Relevanz zur Landingpage. Als <strong>Google Ads Agentur Berlin</strong> wissen wir, wie man diese Fehler vermeidet – mit Erfahrung, Analyse und einem strukturierten Vorgehen.
+    Viele Unternehmen verbrennen Werbebudget, weil sie ihre Kampagnen nicht regelmäßig prüfen. Oft fehlen Conversion-Ziele, das Keyword-Match ist zu breit oder Anzeigen haben keine Relevanz zur Landingpage. Als <strong>Google Ads Agentur Berlin</strong> wissen wir, wie man diese Fehler vermeidet, mit Erfahrung, Analyse und einem strukturierten Vorgehen.
   </p>
 
   <h3 className="text-2xl font-semibold mt-8">Warum in Google Ads investieren?</h3>
   <p>
-    Google Ads ist eines der effektivsten Tools, um kurzfristig Sichtbarkeit und Leads zu generieren – gerade in einem wettbewerbsintensiven Umfeld wie Berlin. Es ermöglicht dir, gezielt Kunden zu erreichen, die bereits aktiv nach deinen Leistungen suchen. Als <Link href="/kontakt" className="text-yellow-600 hover:underline">SEA Agentur</Link> begleiten wir dich von der Planung bis zum Reporting.
+    Google Ads ist eines der effektivsten Tools, um kurzfristig Sichtbarkeit und Leads zu generieren, gerade in einem wettbewerbsintensiven Umfeld wie Berlin. Es ermöglicht dir, gezielt Kunden zu erreichen, die bereits aktiv nach deinen Leistungen suchen. Als <Link href="/kontakt" className="text-yellow-600 hover:underline">SEA Agentur</Link> begleiten wir dich von der Planung bis zum Reporting.
   </p>
 
   <h3 className="text-2xl font-semibold mt-8">Was kostet eine Google Ads Agentur in Berlin?</h3>
   <p>
-    Unsere Leistungen sind transparent und skalierbar. Du kannst bereits mit kleinen Budgets starten und diese nach Erfolg ausbauen. Wir bieten sowohl projektbezogene Unterstützung als auch laufende Betreuungspakete – perfekt abgestimmt auf Start-ups, KMUs und wachsende Unternehmen.
+    Unsere Leistungen sind transparent und skalierbar. Du kannst bereits mit kleinen Budgets starten und diese nach Erfolg ausbauen. Wir bieten sowohl projektbezogene Unterstützung als auch laufende Betreuungspakete, perfekt abgestimmt auf Start-ups, KMUs und wachsende Unternehmen.
   </p>
 
   <h3 className="text-2xl font-semibold mt-8">Jetzt durchstarten mit deiner Ads Agentur Berlin</h3>
   <p>
-    Möchtest du mehr qualifizierte Anfragen, mehr Verkäufe oder einfach nur mehr Sichtbarkeit? Dann sprich mit uns – deiner erfahrenen <strong>Google Ads Agentur Berlin</strong>. Wir analysieren deine aktuelle Situation, entwickeln eine passende Strategie und begleiten dich bei jedem Schritt.
+    Möchtest du mehr qualifizierte Anfragen, mehr Verkäufe oder einfach nur mehr Sichtbarkeit? Dann sprich mit uns, deiner erfahrenen <strong>Google Ads Agentur Berlin</strong>. Wir analysieren deine aktuelle Situation, entwickeln eine passende Strategie und begleiten dich bei jedem Schritt.
   </p>
 
   <div className="mt-8">

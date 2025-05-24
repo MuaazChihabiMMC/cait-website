@@ -19,7 +19,7 @@ export default function MonitoringReportingClient() {
         </h1>
 
         <p className="text-base text-blue-800 mt-2">
-          Als erfahrene <strong>SEO Monitoring Agentur in Berlin</strong> bieten die <strong>CAIT SEO Experten</strong> dir volle Transparenz, datenbasierte Entscheidungen und klare Handlungsempfehlungen – in Echtzeit.
+          Als erfahrene <strong>SEO Monitoring Agentur in Berlin</strong> bieten die <strong>CAIT SEO Experten</strong> dir volle Transparenz, datenbasierte Entscheidungen und klare Handlungsempfehlungen, in Echtzeit.
         </p>
 
         <p className="text-lg text-blue-800">
@@ -49,17 +49,17 @@ export default function MonitoringReportingClient() {
             Besonders wichtig ist uns dabei die Kombination aus technischer Präzision und unternehmerischem Nutzen. Jedes Reporting wird auf dein Business abgestimmt und liefert dir wertvolle Erkenntnisse für strategische Entscheidungen.
           </p>
           <p className="text-blue-800">
-            Ob Keyword-Entwicklung, Backlink-Wachstum oder Nutzerverhalten auf mobilen Geräten – du erhältst nicht nur Daten, sondern konkrete Handlungsempfehlungen.
+            Ob Keyword-Entwicklung, Backlink-Wachstum oder Nutzerverhalten auf mobilen Geräten, du erhältst nicht nur Daten, sondern konkrete Handlungsempfehlungen.
           </p>
         </div>
 
         <div className="space-y-6">
           <h2 className="text-2xl font-semibold">Warum SEO Monitoring entscheidend ist</h2>
           <p className="text-blue-800">
-            Der Google-Algorithmus verändert sich ständig, und was heute funktioniert, kann morgen schon überholt sein. Ohne Monitoring bleiben wichtige Entwicklungen oft unbemerkt – bis der Traffic plötzlich einbricht. Mit professionellem SEO Monitoring erkennst du Probleme, bevor sie sich auf dein Ranking auswirken.
+            Der Google-Algorithmus verändert sich ständig, und was heute funktioniert, kann morgen schon überholt sein. Ohne Monitoring bleiben wichtige Entwicklungen oft unbemerkt, bis der Traffic plötzlich einbricht. Mit professionellem SEO Monitoring erkennst du Probleme, bevor sie sich auf dein Ranking auswirken.
           </p>
           <p className="text-blue-800">
-            Neben technischen Faktoren wie Ladezeiten oder Indexierungsfehlern behalten wir auch deine Mitbewerber im Auge. Wer rankt besser und warum? Welche Keywords verlierst du? Wo entstehen Chancen? All das liefert dir unser Reporting – klar und verständlich.
+            Neben technischen Faktoren wie Ladezeiten oder Indexierungsfehlern behalten wir auch deine Mitbewerber im Auge. Wer rankt besser und warum? Welche Keywords verlierst du? Wo entstehen Chancen? All das liefert dir unser Reporting, klar und verständlich.
           </p>
         </div>
 
@@ -69,16 +69,16 @@ export default function MonitoringReportingClient() {
             Wir glauben an Transparenz, Klarheit und strategisches Handeln. Deshalb gestalten wir Monitoring nicht nur als reinen Datenabruf, sondern als aktiven Teil deiner Wachstumsstrategie. Die CAIT Agentur versteht Monitoring als Dialog: zwischen deinen Zielen, deinem aktuellen SEO-Status und den nächsten Schritten.
           </p>
           <p className="text-blue-800">
-            Jedes unserer Dashboards ist individuell konfigurierbar. Du entscheidest, welche KPIs du regelmäßig sehen möchtest. Wir helfen dir bei der Interpretation der Zahlen – und setzen direkt die Maßnahmen um, die dich weiterbringen.
+            Jedes unserer Dashboards ist individuell konfigurierbar. Du entscheidest, welche KPIs du regelmäßig sehen möchtest. Wir helfen dir bei der Interpretation der Zahlen, und setzen direkt die Maßnahmen um, die dich weiterbringen.
           </p>
         </div>
 
         <div className="space-y-6">
           <h2 className="text-2xl font-semibold">Beispiele aus der Praxis</h2>
           <ul className="list-disc pl-6 text-blue-800 space-y-2">
-            <li>Ein Online-Shop konnte durch frühzeitiges Erkennen von Ladezeitproblemen seine Mobile Conversion Rate um 27 % steigern.</li>
-            <li>Ein B2B-Dienstleister reagierte durch unser Monitoring auf Rankingverluste bei einem Hauptkeyword – noch bevor es zu Umsatzverlusten kam.</li>
-            <li>Ein lokales Unternehmen stellte mithilfe der Dashboard-Analysen fest, dass 40 % seines Traffics aus einer nicht relevanten Stadt kam – nach Anpassung der Zielregion stiegen die Kontaktanfragen um 38 %.</li>
+            <li>Ein Online-Shop konnte durch frühzeitiges Erkennen von Ladezeitproblemen seine Mobile Conversion Rate um 27% steigern.</li>
+            <li>Ein B2B-Dienstleister reagierte durch unser Monitoring auf Rankingverluste bei einem Hauptkeyword, noch bevor es zu Umsatzverlusten kam.</li>
+            <li>Ein lokales Unternehmen stellte mithilfe der Dashboard-Analysen fest, dass 40% seines Traffics aus einer nicht relevanten Stadt kam, nach Anpassung der Zielregion stiegen die Kontaktanfragen um 38%.</li>
           </ul>
         </div>
 

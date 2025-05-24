@@ -33,7 +33,7 @@ export default function OnPageSeoClient() {
             Struktur, Inhalt und Technik perfekt abgestimmt. So optimieren wir Ihre Website von innen heraus.
           </motion.p>
           <p className="text-base text-blue-800 mt-4">
-            Als erfahrene <strong>OnPage SEO Agentur</strong> übernehmen wir die <strong>technische & inhaltliche Optimierung</strong> deiner Website – für bessere Rankings, Nutzerfreundlichkeit und Conversion-Raten. Unsere Arbeit basiert auf langjähriger Erfahrung, datengetriebenen Tools und branchenspezifischem Know-how – egal ob E-Commerce, Gesundheitsbranche oder lokale Anbieter.
+            Als erfahrene <strong>OnPage SEO Agentur</strong> übernehmen wir die <strong>technische & inhaltliche Optimierung</strong> deiner Website, für bessere Rankings, Nutzerfreundlichkeit und Conversion-Raten. Unsere Arbeit basiert auf langjähriger Erfahrung, datengetriebenen Tools und branchenspezifischem Know-how, egal ob E-Commerce, Gesundheitsbranche oder lokale Anbieter.
           </p>
           <motion.a
             href="/kontakt"
@@ -169,7 +169,7 @@ export default function OnPageSeoClient() {
     <FaCheckCircle className="text-blue-600" /> E-E-A-T: Vertrauen aufbauen
   </h2>
   <p className="text-blue-800">
-    Google bewertet nicht nur Technik – sondern auch <strong>Erfahrung (Experience)</strong>, <strong>Fachwissen (Expertise)</strong>, <strong>Autorität (Authoritativeness)</strong> und <strong>Vertrauenswürdigkeit (Trust)</strong>. Deshalb integrieren wir Autorenboxen mit Qualifikationen, Kundenstimmen, Sicherheitszertifikate, Quellenangaben und aktualisierte Inhalte. Besonders bei sensiblen Themen (z. B. Gesundheit, Recht, Finanzen) ist E-E-A-T entscheidend.
+    Google bewertet nicht nur Technik, sondern auch <strong>Erfahrung (Experience)</strong>, <strong>Fachwissen (Expertise)</strong>, <strong>Autorität (Authoritativeness)</strong> und <strong>Vertrauenswürdigkeit (Trust)</strong>. Deshalb integrieren wir Autorenboxen mit Qualifikationen, Kundenstimmen, Sicherheitszertifikate, Quellenangaben und aktualisierte Inhalte. Besonders bei sensiblen Themen (z. B. Gesundheit, Recht, Finanzen) ist E-E-A-T entscheidend.
   </p>
 </motion.div>
 
@@ -199,7 +199,7 @@ export default function OnPageSeoClient() {
     <FaRocket className="text-blue-600" /> Content-Strategie aus SEO-Daten ableiten
   </h2>
   <p className="text-blue-800">
-    OnPage-SEO liefert mehr als technische Hinweise: Aus Keyword-Clustern, Nutzerfragen und Seitenanalysen leiten wir direkt neue Inhalte ab – z. B. Blogbeiträge, FAQ-Bereiche, Glossare oder Leistungsunterseiten. So wird deine Website nicht nur technisch, sondern auch redaktionell besser.
+    OnPage-SEO liefert mehr als technische Hinweise: Aus Keyword-Clustern, Nutzerfragen und Seitenanalysen leiten wir direkt neue Inhalte ab, z.B. Blogbeiträge, FAQ-Bereiche, Glossare oder Leistungsunterseiten. So wird deine Website nicht nur technisch, sondern auch redaktionell besser.
   </p>
 </motion.div>
 
@@ -233,7 +233,7 @@ export default function OnPageSeoClient() {
     <FaSitemap className="text-blue-600" /> UX & SEO: Nutzerführung als Rankingfaktor
   </h2>
   <p className="text-blue-800">
-    Eine klare Navigationsstruktur, aussagekräftige CTAs, und gut strukturierte Texte helfen nicht nur deinen Besuchern – sie signalisieren Google, dass deine Seite relevant, zugänglich und vertrauenswürdig ist. Gutes UX ist heute gutes SEO.
+    Eine klare Navigationsstruktur, aussagekräftige CTAs, und gut strukturierte Texte helfen nicht nur deinen Besuchern, sie signalisieren Google, dass deine Seite relevant, zugänglich und vertrauenswürdig ist. Gutes UX ist heute gutes SEO.
   </p>
 </motion.div>
 

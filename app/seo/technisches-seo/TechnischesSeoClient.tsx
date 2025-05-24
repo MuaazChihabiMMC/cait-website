@@ -34,7 +34,7 @@ export default function TechnischesSeoClient() {
           Von Ladezeit über Indexierung bis hin zu Mobile Performance: Als technische SEO Agentur sorgen wir für ein solides Fundament, das Rankings ermöglicht und Nutzern ein perfektes Erlebnis liefert.
         </p>
         <p className="text-blue-800 max-w-2xl mx-auto">
-          Wir analysieren deinen Code, deine Serverperformance und deine Seitengeschwindigkeit – und sorgen für eine einwandfreie Umsetzung der Google-Richtlinien. So holst du das Maximum aus deinem Content heraus.
+          Wir analysieren deinen Code, deine Serverperformance und deine Seitengeschwindigkeit, und sorgen für eine einwandfreie Umsetzung der Google-Richtlinien. So holst du das Maximum aus deinem Content heraus.
         </p>
         <Link
           href="/kontakt"
@@ -54,7 +54,7 @@ export default function TechnischesSeoClient() {
             Technisches SEO umfasst alle Maßnahmen, die dafür sorgen, dass Suchmaschinen deine Website fehlerfrei crawlen, indexieren und bewerten können. Dazu zählen Ladezeiten, Mobile-Optimierung, strukturierte Daten, saubere URLs, HTTPS, Canonicals und vieles mehr.
           </p>
           <p className="text-blue-800 text-lg">
-            Ohne diese Basis bleiben Inhalte oft unsichtbar – ganz gleich, wie hochwertig sie sind. Technisches SEO ist das Fundament erfolgreicher Sichtbarkeit.
+            Ohne diese Basis bleiben Inhalte oft unsichtbar, ganz gleich, wie hochwertig sie sind. Technisches SEO ist das Fundament erfolgreicher Sichtbarkeit.
           </p>
         </div>
       </section>
@@ -75,7 +75,7 @@ export default function TechnischesSeoClient() {
             <li><strong>INP (Interaction to Next Paint):</strong> Nachfolger von FID, misst Interaktionsqualität</li>
           </ul>
           <p className="text-blue-800">
-            Wir nutzen Tools wie <strong>PageSpeed Insights</strong>, <strong>Lighthouse</strong> und <strong>CrUX-Daten</strong>, um diese Werte zu messen und zu optimieren – z. B. durch Bildoptimierung, Lazy Loading, Code Splitting und Cache-Kontrolle.
+            Wir nutzen Tools wie <strong>PageSpeed Insights</strong>, <strong>Lighthouse</strong> und <strong>CrUX-Daten</strong>, um diese Werte zu messen und zu optimieren, z. B. durch Bildoptimierung, Lazy Loading, Code Splitting und Cache-Kontrolle.
           </p>
         </div>
       </section>
@@ -87,7 +87,7 @@ export default function TechnischesSeoClient() {
             <FaMobileAlt className="text-blue-600" /> Mobile-First SEO
           </h2>
           <p className="text-blue-800 text-lg">
-            Google bewertet deine Website primär in der mobilen Version – und das auf echten Geräten. Eine technisch saubere Mobile-Darstellung ist daher entscheidend für dein Ranking.
+            Google bewertet deine Website primär in der mobilen Version, und das auf echten Geräten. Eine technisch saubere Mobile-Darstellung ist daher entscheidend für dein Ranking.
           </p>
           <ul className="list-disc list-inside text-blue-800 space-y-2 pl-4">
             <li><strong>Responsives Design:</strong> Wir stellen sicher, dass deine Inhalte auf jedem Gerät optimal dargestellt werden</li>
@@ -105,7 +105,7 @@ export default function TechnischesSeoClient() {
             <FaBug className="text-blue-600" /> Fehleranalyse & technischer Audit
           </h2>
           <p className="text-blue-800 text-lg">
-            Technische Fehler können deine Rankings dramatisch verschlechtern. Wir führen gründliche Audits durch – mit Tools wie Screaming Frog, Ryte und GSC – und identifizieren:
+            Technische Fehler können deine Rankings dramatisch verschlechtern. Wir führen gründliche Audits durch, mit Tools wie Screaming Frog, Ryte und GSC, und identifizieren:
           </p>
           <ul className="list-disc list-inside text-blue-800 space-y-2 pl-4">
             <li><strong>HTTP-Fehler:</strong> 404, 500er, Redirect Chains & Loops</li>
@@ -149,7 +149,7 @@ export default function TechnischesSeoClient() {
             <FaShieldAlt className="text-blue-600" /> Technische Vertrauenssignale & E-E-A-T
           </h2>
           <p className="text-blue-800 text-lg">
-            Google bewertet nicht nur Inhalte – auch die technische Infrastruktur deiner Website beeinflusst das Vertrauen. Wir achten gezielt auf Signale, die Vertrauen aufbauen:
+            Google bewertet nicht nur Inhalte, auch die technische Infrastruktur deiner Website beeinflusst das Vertrauen. Wir achten gezielt auf Signale, die Vertrauen aufbauen:
           </p>
           <ul className="list-disc list-inside text-blue-800 space-y-2 pl-4">
             <li><strong>HTTPS:</strong> Standard für sichere, vertrauenswürdige Verbindungen</li>
@@ -159,7 +159,7 @@ export default function TechnischesSeoClient() {
             <li><strong>Transparenzseiten:</strong> Impressum, Datenschutz, Kontakt, Redaktion</li>
           </ul>
           <p className="text-blue-800">
-            Diese Aspekte stärken nicht nur das Ranking – sie fördern auch das Vertrauen deiner Nutzer.
+            Diese Aspekte stärken nicht nur das Ranking, sie fördern auch das Vertrauen deiner Nutzer.
           </p>
         </div>
       </section>
@@ -181,7 +181,7 @@ export default function TechnischesSeoClient() {
             <li><strong>Semrush / Ahrefs:</strong> Technisches Audit, Wettbewerbervergleich & Health Score</li>
           </ul>
           <p className="text-blue-800">
-            Wir kombinieren die Tools für einen ganzheitlichen technischen SEO-Audit – mit konkreten Maßnahmen für dein Dev-Team oder CMS.
+            Wir kombinieren die Tools für einen ganzheitlichen technischen SEO-Audit, mit konkreten Maßnahmen für dein Dev-Team oder CMS.
           </p>
         </div>
       </section>
@@ -219,7 +219,7 @@ export default function TechnischesSeoClient() {
             <FaBug className="text-blue-600" /> Häufige Fehler im technischen SEO
           </h2>
           <p className="text-blue-800 text-lg">
-            Viele Websites verlieren Sichtbarkeit, obwohl der Content gut ist – wegen technischer Hürden. Diese Fehler sehen wir regelmäßig:
+            Viele Websites verlieren Sichtbarkeit, obwohl der Content gut ist, wegen technischer Hürden. Diese Fehler sehen wir regelmäßig:
           </p>
           <ul className="list-disc list-inside text-blue-800 space-y-2 pl-4">
             <li><strong>Fehlende Canonical-Tags:</strong> Duplicate Content & Ranking-Verlust</li>
@@ -239,8 +239,8 @@ export default function TechnischesSeoClient() {
             <FaBook className="text-blue-600" /> Glossar: Technisches SEO erklärt
           </h2>
           <ul className="list-disc list-inside text-blue-800 space-y-2 pl-4">
-            <li><strong>LCP:</strong> Largest Contentful Paint – Ladezeit des größten sichtbaren Elements</li>
-            <li><strong>CLS:</strong> Cumulative Layout Shift – visuelle Stabilität beim Laden</li>
+            <li><strong>LCP:</strong> Largest Contentful Paint, Ladezeit des größten sichtbaren Elements</li>
+            <li><strong>CLS:</strong> Cumulative Layout Shift, visuelle Stabilität beim Laden</li>
             <li><strong>robots.txt:</strong> Datei zur Steuerung des Crawlings von Google</li>
             <li><strong>hreflang:</strong> Markierung für Sprach-/Länderversionen</li>
             <li><strong>Canonical:</strong> Verweis auf die Hauptversion einer Seite</li>
@@ -279,9 +279,9 @@ export default function TechnischesSeoClient() {
           </h2>
           <div className="space-y-3 text-blue-800">
             <p><strong>Wie oft sollte technisches SEO gemacht werden?</strong><br />Mindestens quartalsweise oder nach jedem Relaunch/Update.</p>
-            <p><strong>Was kostet technisches SEO?</strong><br />Das hängt vom Umfang ab – von kleinen Audits bis zu komplexen Shop-Analysen.</p>
-            <p><strong>Brauche ich das bei WordPress auch?</strong><br />Unbedingt – gerade Plugins und Themes verursachen oft Probleme.</p>
-            <p><strong>Wie schnell sehe ich Ergebnisse?</strong><br />Technische Verbesserungen wirken meist binnen 2–6 Wochen sichtbar.</p>
+            <p><strong>Was kostet technisches SEO?</strong><br />Das hängt vom Umfang ab, von kleinen Audits bis zu komplexen Shop-Analysen.</p>
+            <p><strong>Brauche ich das bei WordPress auch?</strong><br />Unbedingt, gerade Plugins und Themes verursachen oft Probleme.</p>
+            <p><strong>Wie schnell sehe ich Ergebnisse?</strong><br />Technische Verbesserungen wirken meist binnen 2-6 Wochen sichtbar.</p>
           </div>
         </div>
       </section>
@@ -291,7 +291,7 @@ export default function TechnischesSeoClient() {
         <div className="max-w-4xl mx-auto space-y-6">
           <h2 className="text-3xl font-bold">Bereit für technisches SEO, das Ergebnisse liefert?</h2>
           <p className="text-xl">
-            Wir finden technische Bremsen, beseitigen sie und holen das Maximum aus deinem Content heraus – für messbare Sichtbarkeit.
+            Wir finden technische Bremsen, beseitigen sie und holen das Maximum aus deinem Content heraus, für messbare Sichtbarkeit.
           </p>
           <Link
             href="/kontakt"

@@ -20,7 +20,7 @@ export default function SeoBenefits() {
           Warum CAITSocialMedia die richtige Wahl ist
         </h2>
         <p className="text-lg text-black mb-10">
-          Unsere Agentur verbindet Strategie, Technik und Content zu einem ganzheitlichen SEO-Ansatz, der funktioniert. Statt leeren Versprechen liefern wir echte Resultate – datenbasiert, transparent und nachhaltig.
+          Unsere Agentur verbindet Strategie, Technik und Content zu einem ganzheitlichen SEO-Ansatz, der funktioniert. Statt leeren Versprechen liefern wir echte Resultate, datenbasiert, transparent und nachhaltig.
         </p>
 
         <ul className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">

@@ -89,7 +89,7 @@ const seoPosts = {
 <p class="text-gray-700 mb-4">Die technische Basis Ihrer Website beginnt beim Hosting. Ein schneller, stabiler Server mit aktuellem PHP, HTTP/2 oder HTTP/3 und aktiviertem Caching sorgt für bessere Ladezeiten und weniger Ausfälle.</p>
 <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
   <li>Wähle ein Rechenzentrum möglichst nah an deiner Zielgruppe</li>
-  <li>Aktiviere Caching (z. B. Varnish oder NGINX Page Cache)</li>
+  <li>Aktiviere Caching (z.B. Varnish oder NGINX Page Cache)</li>
   <li>Stelle sicher, dass der Server regelmäßige Backups erstellt</li>
 </ul>
 
@@ -97,14 +97,14 @@ const seoPosts = {
 <p class="text-gray-700 mb-4">Eine logische Seitenarchitektur erleichtert nicht nur Google das Crawling, sondern verbessert auch die Usability für Besucher:</p>
 <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
   <li>Navigationsstruktur flach halten (max. 3 Ebenen)</li>
-  <li>Breadcrumbs einbauen – idealerweise mit <code>schema.org/BreadcrumbList</code></li>
+  <li>Breadcrumbs einbauen, idealerweise mit <code>schema.org/BreadcrumbList</code></li>
   <li>Jede Seite sollte ein eindeutiges <code>&lt;h1&gt;</code> enthalten</li>
 </ul>
 
 <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">8. Google Search Console zur Fehleranalyse</h3>
 <p class="text-gray-700 mb-4">Nutze die Google Search Console aktiv, um technische SEO-Fehler zu identifizieren. Wichtige Bereiche:</p>
 <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
-  <li><strong>Indexabdeckung:</strong> Welche Seiten wurden nicht indexiert – und warum?</li>
+  <li><strong>Indexabdeckung:</strong> Welche Seiten wurden nicht indexiert, und warum?</li>
   <li><strong>Core Web Vitals:</strong> Messwerte zu Ladeverhalten und Interaktivität</li>
   <li><strong>Strukturierte Daten:</strong> Wurden Rich Snippets korrekt erkannt?</li>
 </ul>
@@ -119,7 +119,7 @@ const seoPosts = {
 <p class="text-gray-700 mb-4">Achte besonders auf Weiterleitungsketten, doppelte Inhalte, Statuscodes, hreflang-Fehler und Mobilfreundlichkeit.</p>
 
 <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">10. Fazit: Technische SEO als langfristiger Ranking-Booster</h3>
-<p class="text-gray-700 mb-6">Technische SEO ist kein „One-and-Done“-Projekt. Die Algorithmen von Google entwickeln sich ständig weiter – und damit auch die Anforderungen an deine Website. Mit einem fundierten technischen Setup legst du die Grundlage für nachhaltigen SEO-Erfolg und profitierst langfristig von besserer Sichtbarkeit, mehr Vertrauen und höheren Conversions.</p>
+<p class="text-gray-700 mb-6">Technische SEO ist kein „One-and-Done“-Projekt. Die Algorithmen von Google entwickeln sich ständig weiter, und damit auch die Anforderungen an deine Website. Mit einem fundierten technischen Setup legst du die Grundlage für nachhaltigen SEO-Erfolg und profitierst langfristig von besserer Sichtbarkeit, mehr Vertrauen und höheren Conversions.</p>
 
 <div class="bg-blue-100 border-l-4 border-blue-500 p-4 my-6 rounded-r">
   <p class="font-semibold text-blue-900 mb-1">Unser Angebot:</p>

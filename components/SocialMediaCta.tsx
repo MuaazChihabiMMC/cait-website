@@ -8,7 +8,7 @@ export default function SocialMediaCta() {
             Jetzt auf Social Media sichtbar werden
           </h2>
           <p className="text-lg mb-8">
-            Lass uns gemeinsam deine Marke wachsen lassen. Wir entwickeln eine Social-Media-Strategie, die passt – zu dir, deinem Angebot und deiner Zielgruppe.
+            Lass uns gemeinsam deine Marke wachsen lassen. Wir entwickeln eine Social-Media-Strategie, die passt, zu dir, deinem Angebot und deiner Zielgruppe.
           </p>
           <a
             href="/kontakt"

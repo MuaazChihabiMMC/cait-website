@@ -35,11 +35,11 @@ const faqs = [
   },
   {
     question: 'Was bedeutet Qualitätsfaktor?',
-    answer: 'Der Qualitätsfaktor ist ein Wert (1–10), der die Relevanz von Anzeige, Keyword und Landingpage bewertet. Er beeinflusst den Anzeigenrang und Preis.',
+    answer: 'Der Qualitätsfaktor ist ein Wert (1-10), der die Relevanz von Anzeige, Keyword und Landingpage bewertet. Er beeinflusst den Anzeigenrang und Preis.',
   },
   {
     question: 'Kann ich mein Google Ads-Konto selbst verwalten?',
-    answer: 'Grundsätzlich ja – aber eine professionelle Betreuung steigert Performance, spart Budget und nutzt alle Optimierungsmöglichkeiten.',
+    answer: 'Grundsätzlich ja, aber eine professionelle Betreuung steigert Performance, spart Budget und nutzt alle Optimierungsmöglichkeiten.',
   },
   {
     question: 'Wie messe ich den Erfolg meiner Kampagne?',
@@ -47,15 +47,15 @@ const faqs = [
   },
   {
     question: 'Welche Branchen profitieren besonders von Google Ads?',
-    answer: 'Dienstleister, Online-Shops, Coaches, Berater, Agenturen, lokale Anbieter – eigentlich jedes Business mit klarem Ziel & Angebot.',
+    answer: 'Dienstleister, Online-Shops, Coaches, Berater, Agenturen, lokale Anbieter, eigentlich jedes Business mit klarem Ziel & Angebot.',
   },
   {
     question: 'Wie viel sollte ich monatlich investieren?',
-    answer: 'Ein Startbudget von 500–1.000 € ist oft sinnvoll. Wir beraten dich transparent – abhängig von Branche, Wettbewerb und Zielen.',
+    answer: 'Ein Startbudget von 500-1.000€ ist oft sinnvoll. Wir beraten dich transparent, abhängig von Branche, Wettbewerb und Zielen.',
   },
   {
     question: 'Was ist Remarketing?',
-    answer: 'Remarketing zeigt Anzeigen gezielt Besuchern, die deine Website bereits besucht haben – das erhöht die Conversion-Chance enorm.',
+    answer: 'Remarketing zeigt Anzeigen gezielt Besuchern, die deine Website bereits besucht haben, das erhöht die Conversion-Chance enorm.',
   },
   {
     question: 'Was sind negative Keywords?',
@@ -67,23 +67,23 @@ const faqs = [
   },
   {
     question: 'Betreut ihr auch bestehende Google Ads-Konten?',
-    answer: 'Ja, wir analysieren und optimieren bestehende Accounts – oft holen wir 30–50 % mehr aus deinem aktuellen Budget heraus.',
+    answer: 'Ja, wir analysieren und optimieren bestehende Accounts, oft holen wir 30-50% mehr aus deinem aktuellen Budget heraus.',
   },
   {
     question: 'Übernehmt ihr auch die Texterstellung für Anzeigen?',
-    answer: 'Ja, unsere Performance-Texter schreiben suchintensive und konversionsstarke Anzeigentexte – passend zur Zielgruppe.',
+    answer: 'Ja, unsere Performance-Texter schreiben suchintensive und konversionsstarke Anzeigentexte, passend zur Zielgruppe.',
   },
   {
     question: 'Erstellt ihr auch Anzeigen für YouTube oder das Displaynetzwerk?',
-    answer: 'Ja – inklusive Bannerdesign, Targeting, Budgetsteuerung und A/B-Tests.',
+    answer: 'Ja, inklusive Bannerdesign, Targeting, Budgetsteuerung und A/B-Tests.',
   },
   {
     question: 'Wie lange bindet man sich vertraglich?',
-    answer: 'Unsere Betreuung ist flexibel – monatlich kündbar oder mit festen Laufzeiten je nach Zielsetzung. Kein Risiko.',
+    answer: 'Unsere Betreuung ist flexibel, monatlich kündbar oder mit festen Laufzeiten je nach Zielsetzung. Kein Risiko.',
   },
   {
     question: 'Was unterscheidet eure Agentur von anderen?',
-    answer: 'Erfahrung, Fokus auf Performance, transparente Kommunikation, keine versteckten Kosten – und echte Ergebnisse. Wir zeigen dir, was zählt.',
+    answer: 'Erfahrung, Fokus auf Performance, transparente Kommunikation, keine versteckten Kosten, und echte Ergebnisse. Wir zeigen dir, was zählt.',
   },
 ];
 

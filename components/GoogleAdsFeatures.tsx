@@ -8,7 +8,7 @@ const adsFeatures = [
   {
     title: '📱 Responsive Anzeigen & Erweiterungen',
     description:
-      'Ihre Google Ads Agentur gestaltet hochperformante Anzeigentexte mit Sitelinks, Anruferweiterungen & mehr – angepasst an alle Geräte.',
+      'Ihre Google Ads Agentur gestaltet hochperformante Anzeigentexte mit Sitelinks, Anruferweiterungen & mehr, angepasst an alle Geräte.',
   },
   {
     title: '📈 Conversion-Tracking & Optimierung',
@@ -23,7 +23,7 @@ const adsFeatures = [
   {
     title: '🛠️ Komplett-Service: Setup & Betreuung',
     description:
-      'Von der ersten Anzeige bis zur Optimierung – Ihre Ads Agentur übernimmt alles für nachhaltigen Erfolg.',
+      'Von der ersten Anzeige bis zur Optimierung, Ihre Ads Agentur übernimmt alles für nachhaltigen Erfolg.',
   },
   {
     title: '🌍 Lokale & internationale Ads',

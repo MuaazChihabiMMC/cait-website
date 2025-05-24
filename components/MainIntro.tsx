@@ -8,7 +8,7 @@ export default function MainIntro() {
             Deine Marketing-Agentur für Strategie, Sichtbarkeit & Wachstum
           </h2>
           <p className="text-lg text-gray-800 leading-relaxed max-w-3xl mx-auto">
-            CAITSocialMedia ist deine Agentur für ganzheitliches Online-Marketing. Wir verbinden kreatives Design mit technischer Exzellenz und datengetriebener Strategie. Von SEO über Google Ads bis hin zu Webdesign und Social Media – alles aus einer Hand. Maßgeschneidert, transparent, performanceorientiert.
+            CAITSocialMedia ist deine Agentur für ganzheitliches Online-Marketing. Wir verbinden kreatives Design mit technischer Exzellenz und datengetriebener Strategie. Von SEO über Google Ads bis hin zu Webdesign und Social Media, alles aus einer Hand. Maßgeschneidert, transparent, performanceorientiert.
           </p>
         </div>
       </section>

@@ -37,15 +37,15 @@ export default function GoogleAdsBenefits() {
 
              <section className="max-w-5xl mx-auto px-6 py-20 text-gray-800 leading-relaxed text-lg space-y-6">
     <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-6">
-      Google Ads Agentur Berlin – gezielte Werbung, messbare Ergebnisse
+      Google Ads Agentur Berlin, gezielte Werbung, messbare Ergebnisse
     </h2>
 
     <p>
-      Als erfahrene <strong>Google Ads Agentur</strong> mit Sitz in Berlin wissen wir, worauf es ankommt, wenn du mit gezielter Suchmaschinenwerbung (SEA) neue Kunden gewinnen möchtest. Ob lokale Dienstleistung, E-Commerce oder B2B – wir entwickeln maßgeschneiderte Strategien, um dein Werbebudget effizient und zielführend einzusetzen.
+      Als erfahrene <strong>Google Ads Agentur</strong> mit Sitz in Berlin wissen wir, worauf es ankommt, wenn du mit gezielter Suchmaschinenwerbung (SEA) neue Kunden gewinnen möchtest. Ob lokale Dienstleistung, E-Commerce oder B2B, wir entwickeln maßgeschneiderte Strategien, um dein Werbebudget effizient und zielführend einzusetzen.
     </p>
 
     <p>
-      Im Gegensatz zur klassischen Werbung ermöglichen dir Google Ads eine direkte Sichtbarkeit bei konkretem Suchinteresse. Nutzer suchen bereits nach dem, was du anbietest – und genau hier setzt deine <strong>Google Ads Agentur Berlin</strong> an. Mit intelligentem Kampagnenaufbau, präzisem Targeting und kontinuierlicher Optimierung erreichen wir genau deine Zielgruppe.
+      Im Gegensatz zur klassischen Werbung ermöglichen dir Google Ads eine direkte Sichtbarkeit bei konkretem Suchinteresse. Nutzer suchen bereits nach dem, was du anbietest, und genau hier setzt deine <strong>Google Ads Agentur Berlin</strong> an. Mit intelligentem Kampagnenaufbau, präzisem Targeting und kontinuierlicher Optimierung erreichen wir genau deine Zielgruppe.
     </p>
 
     <h3 className="text-2xl font-semibold text-blue-800 mt-10">Warum Google Ads? Deine Vorteile auf einen Blick</h3>
@@ -59,7 +59,7 @@ export default function GoogleAdsBenefits() {
 
     <h3 className="text-2xl font-semibold text-blue-800 mt-10">Unsere Leistungen als SEA Agentur in Berlin</h3>
     <p>
-      Bei CAIT profitierst du von einem ganzheitlichen Google Ads Service – von der Analyse bis zur Skalierung:
+      Bei CAIT profitierst du von einem ganzheitlichen Google Ads Service, von der Analyse bis zur Skalierung:
     </p>
     <ul className="list-disc ml-6 space-y-2">
       <li><strong>Keyword-Recherche:</strong> Wir identifizieren relevante Suchbegriffe mit hoher Kaufabsicht.</li>
@@ -71,10 +71,10 @@ export default function GoogleAdsBenefits() {
 
     <h3 className="text-2xl font-semibold text-blue-800 mt-10">Warum eine spezialisierte Google Ads Agentur Berlin wählen?</h3>
     <p>
-      Der Wettbewerb in Google ist hart – besonders in Großstädten wie Berlin. Deshalb reicht es nicht, einfach Anzeigen zu schalten. Du brauchst eine Agentur, die den lokalen Markt versteht, datengetrieben arbeitet und langfristig denkt.
+      Der Wettbewerb in Google ist hart, besonders in Großstädten wie Berlin. Deshalb reicht es nicht, einfach Anzeigen zu schalten. Du brauchst eine Agentur, die den lokalen Markt versteht, datengetrieben arbeitet und langfristig denkt.
     </p>
     <p>
-      Als <strong>Google Ads Agentur Berlin</strong> sind wir direkt vor Ort, kennen die regionale Zielgruppe und bringen Erfahrung aus über 200 Kampagnen mit. Von Berliner Start-ups bis zu etablierten Mittelständlern – wir sorgen für mehr Sichtbarkeit und Umsatz.
+      Als <strong>Google Ads Agentur Berlin</strong> sind wir direkt vor Ort, kennen die regionale Zielgruppe und bringen Erfahrung aus über 200 Kampagnen mit. Von Berliner Start-ups bis zu etablierten Mittelständlern, wir sorgen für mehr Sichtbarkeit und Umsatz.
     </p>
 
     <h3 className="text-2xl font-semibold text-blue-800 mt-10">Zielgruppenanalyse & Buyer Personas</h3>
@@ -82,7 +82,7 @@ export default function GoogleAdsBenefits() {
       Je besser wir deine Zielgruppe verstehen, desto präziser funktionieren deine Google Ads. Deshalb starten wir jede Zusammenarbeit mit einer fundierten Zielgruppenanalyse. Wer sind deine Kunden? Wo wohnen sie? Welche Sprache sprechen sie? Welche Probleme wollen sie lösen?
     </p>
     <p>
-      Diese Informationen fließen direkt in die Kampagnenstruktur – ob durch geografisches Targeting, demografische Anpassung oder psychografische Ausrichtung. Das Ergebnis: weniger Streuverluste, mehr Conversion.
+      Diese Informationen fließen direkt in die Kampagnenstruktur, ob durch geografisches Targeting, demografische Anpassung oder psychografische Ausrichtung. Das Ergebnis: weniger Streuverluste, mehr Conversion.
     </p>
 
     <h3 className="text-2xl font-semibold text-blue-800 mt-10">Bessere Ergebnisse durch kontinuierliche Optimierung</h3>
@@ -103,7 +103,7 @@ export default function GoogleAdsBenefits() {
 
     <h3 className="text-2xl font-semibold text-blue-800 mt-10">Für wen ist Google Ads besonders geeignet?</h3>
     <p>
-      Unsere <strong>Google Ads Agentur Berlin</strong> betreut Unternehmen aus den unterschiedlichsten Branchen – darunter:
+      Unsere <strong>Google Ads Agentur Berlin</strong> betreut Unternehmen aus den unterschiedlichsten Branchen, darunter:
     </p>
     <ul className="list-disc ml-6 space-y-2">
       <li>Lokale Dienstleister (z. B. Handwerker, Ärzte, Coaches)</li>

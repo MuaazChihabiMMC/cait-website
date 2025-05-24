@@ -60,7 +60,7 @@ export default function ContentErstellungClient() {
         >
           <h2 className="text-2xl font-semibold mb-2">✍️ Conversion-orientiertes Copywriting</h2>
           <p className="text-blue-800">
-            Gute Inhalte verkaufen – und zwar ohne aufdringlich zu wirken. Unsere Texte leiten Leser mit gezielten Call-to-Actions, klaren Botschaften und emotionalem Storytelling durch die Seite.
+            Gute Inhalte verkaufen, und zwar ohne aufdringlich zu wirken. Unsere Texte leiten Leser mit gezielten Call-to-Actions, klaren Botschaften und emotionalem Storytelling durch die Seite.
           </p>
           <p className="text-blue-800">
             Dabei achten wir besonders auf Leserführung, Scannability und psychologische Trigger, immer abgestimmt auf dein Angebot.
@@ -109,7 +109,7 @@ export default function ContentErstellungClient() {
         >
           <h2 className="text-2xl font-semibold mb-2">🧠 Was uns von KI-generierten Texten unterscheidet</h2>
           <p className="text-blue-800">
-            KI kann helfen – aber nicht ersetzen. Unsere Inhalte sind menschlich, redaktionell überarbeitet und mit echten Insights angereichert. Wir schreiben individuell, statt generisch.
+            KI kann helfen, aber nicht ersetzen. Unsere Inhalte sind menschlich, redaktionell überarbeitet und mit echten Insights angereichert. Wir schreiben individuell, statt generisch.
           </p>
           <p className="text-blue-800">
             Jedes Projekt bekommt ein Redaktionsbriefing. Deine Werte, deine Sprache, deine Zielgruppe, all das fließt in jeden Text mit ein.

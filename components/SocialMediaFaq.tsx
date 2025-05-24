@@ -11,7 +11,7 @@ const faqs = [
   },
   {
     question: 'Welche Plattformen betreut ihr?',
-    answer: 'Wir betreuen alle gängigen Kanäle: Instagram, Facebook, LinkedIn, TikTok, Pinterest und YouTube – je nach Zielgruppe und Branche.',
+    answer: 'Wir betreuen alle gängigen Kanäle: Instagram, Facebook, LinkedIn, TikTok, Pinterest und YouTube, je nach Zielgruppe und Branche.',
   },
   {
     question: 'Warum ist Social Media für Unternehmen wichtig?',
@@ -23,11 +23,11 @@ const faqs = [
   },
   {
     question: 'Erstellt ihr auch Beiträge und Designs?',
-    answer: 'Ja. Wir übernehmen die komplette Content Creation: Grafiken, Reels, Texte, Story-Vorlagen – auf Wunsch mit Branding & Redaktionsplan.',
+    answer: 'Ja. Wir übernehmen die komplette Content Creation: Grafiken, Reels, Texte, Story-Vorlagen, auf Wunsch mit Branding & Redaktionsplan.',
   },
   {
     question: 'Wie oft wird gepostet?',
-    answer: 'Das hängt vom Paket ab – z. B. 3–5 Beiträge pro Woche inkl. Storys, Reels und Interaktion. Wir beraten dich zur optimalen Frequenz.',
+    answer: 'Das hängt vom Paket ab, z.B. 3-5 Beiträge pro Woche inkl. Storys, Reels und Interaktion. Wir beraten dich zur optimalen Frequenz.',
   },
   {
     question: 'Betreut ihr auch Social Ads (bezahlte Werbung)?',
@@ -35,7 +35,7 @@ const faqs = [
   },
   {
     question: 'Wie messt ihr Erfolge?',
-    answer: 'Wir tracken Reichweite, Engagement, Klicks, Leads & Sales – und erstellen monatlich transparente Berichte mit Handlungsempfehlungen.',
+    answer: 'Wir tracken Reichweite, Engagement, Klicks, Leads & Sales, und erstellen monatlich transparente Berichte mit Handlungsempfehlungen.',
   },
   {
     question: 'Wie läuft die Zusammenarbeit ab?',
@@ -43,15 +43,15 @@ const faqs = [
   },
   {
     question: 'Wie schnell sieht man Erfolge?',
-    answer: 'Das hängt vom Ziel ab. Reichweite & Engagement verbessern sich oft in den ersten Wochen, Sales meist nach 2–3 Monaten.',
+    answer: 'Das hängt vom Ziel ab. Reichweite & Engagement verbessern sich oft in den ersten Wochen, Sales meist nach 2-3 Monaten.',
   },
   {
     question: 'Übernehmt ihr auch Community Management?',
-    answer: 'Ja. Wir beantworten Kommentare, DMs und moderieren Diskussionen im Namen deiner Marke – schnell, empathisch & markenkonform.',
+    answer: 'Ja. Wir beantworten Kommentare, DMs und moderieren Diskussionen im Namen deiner Marke, schnell, empathisch & markenkonform.',
   },
   {
     question: 'Gibt es feste Laufzeiten?',
-    answer: 'Wir bieten flexible monatliche Pakete – ideal für langfristige Zusammenarbeit oder kurzfristige Kampagnenphasen.',
+    answer: 'Wir bieten flexible monatliche Pakete, ideal für langfristige Zusammenarbeit oder kurzfristige Kampagnenphasen.',
   },
   {
     question: 'Entwerft ihr auch Social Media Strategien?',
@@ -63,15 +63,15 @@ const faqs = [
   },
   {
     question: 'Was kostet professionelles Social Media Management?',
-    answer: 'Das hängt vom Leistungsumfang ab. Unsere Pakete starten ab 600 €/Monat – individuell skalierbar je nach Kanal und Ziel.',
+    answer: 'Das hängt vom Leistungsumfang ab. Unsere Pakete starten ab 600€/Monat, individuell skalierbar je nach Kanal und Ziel.',
   },
   {
     question: 'Erstellt ihr auch Instagram Reels und TikToks?',
-    answer: 'Ja. Wir entwickeln kreative Short-Form-Video-Strategien inklusive Skript, Schnitt und Musik – ideal für virale Reichweite.',
+    answer: 'Ja. Wir entwickeln kreative Short-Form-Video-Strategien inklusive Skript, Schnitt und Musik, ideal für virale Reichweite.',
   },
   {
     question: 'Habt ihr Erfahrung mit B2B-Social-Media?',
-    answer: 'Ja – besonders mit LinkedIn & YouTube für B2B-Branchen. Wir passen Inhalte gezielt für Entscheider, Fachkräfte & HR an.',
+    answer: 'Ja, besonders mit LinkedIn & YouTube für B2B-Branchen. Wir passen Inhalte gezielt für Entscheider, Fachkräfte & HR an.',
   },
   {
     question: 'Betreut ihr auch Influencer-Kooperationen?',
@@ -83,7 +83,7 @@ const faqs = [
   },
   {
     question: 'Was macht CaitSocialMedia besonders?',
-    answer: 'Individuelle Beratung, kreative Designs, datengetriebene Strategien & transparente Kommunikation – mit echten Ergebnissen.',
+    answer: 'Individuelle Beratung, kreative Designs, datengetriebene Strategien & transparente Kommunikation, mit echten Ergebnissen.',
   },
 ];
 

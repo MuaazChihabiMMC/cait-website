@@ -19,7 +19,7 @@ const benefits = [
             Warum CAITSocialMedia für Social Media?
           </h2>
           <p className="text-lg text-black mb-10">
-            Weil wir Social Media nicht nur posten – sondern verstehen. Wir bauen digitale Beziehungen auf, die deiner Marke Sichtbarkeit, Vertrauen und Umsatz bringen.
+            Weil wir Social Media nicht nur posten, sondern verstehen. Wir bauen digitale Beziehungen auf, die deiner Marke Sichtbarkeit, Vertrauen und Umsatz bringen.
           </p>
   
           <ul className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">

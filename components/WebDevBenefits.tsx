@@ -5,7 +5,7 @@ const benefits = [
     'Design & Technik aus einer Hand',
     'Performance-Optimierung inklusive SEO-Fundament',
     'Individuelles Webdesign mit klarer Nutzerführung',
-    'Beratung, Entwicklung & Support – alles intern',
+    'Beratung, Entwicklung & Support, alles intern',
     'Transparente Prozesse & direkte Ansprechpartner',
     'Erfahrung mit kleinen, mittleren & großen Projekten',
     'Verwendung moderner Frameworks wie Next.js, Tailwind & Headless CMS',

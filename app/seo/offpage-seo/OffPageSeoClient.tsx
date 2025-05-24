@@ -35,7 +35,7 @@ export default function OffPageSeoClient() {
           🌐 OffPage-SEO & Backlinkaufbau mit System
         </h1>
         <p className="text-lg md:text-xl text-blue-800 max-w-3xl mx-auto">
-          Sichtbarkeit, Vertrauen, Autorität – gezielte Backlinks bringen dich an die Spitze der Google-Suchergebnisse. Wir zeigen, wie echter Linkaufbau heute funktioniert.
+          Sichtbarkeit, Vertrauen, Autorität, gezielte Backlinks bringen dich an die Spitze der Google-Suchergebnisse. Wir zeigen, wie echter Linkaufbau heute funktioniert.
         </p>
         <p className="text-base text-blue-800 mt-4 max-w-2xl mx-auto">
           Als erfahrene SEO-Agentur in Berlin unterstützen wir Unternehmen mit nachhaltigen OffPage-Strategien, datengetriebenen Tools und journalistischem Netzwerk für starke Backlinks.
@@ -63,10 +63,10 @@ export default function OffPageSeoClient() {
             <FaChartLine className="text-blue-600" /> Was ist OffPage-SEO?
           </h2>
           <p className="text-blue-800 text-lg">
-            OffPage-SEO umfasst alle Maßnahmen außerhalb deiner eigenen Website, die dein Ranking bei Google positiv beeinflussen – allem voran durch sogenannte Backlinks. Sie gelten als digitale Empfehlungen und senden starke Vertrauenssignale an Suchmaschinen.
+            OffPage-SEO umfasst alle Maßnahmen außerhalb deiner eigenen Website, die dein Ranking bei Google positiv beeinflussen, allem voran durch sogenannte Backlinks. Sie gelten als digitale Empfehlungen und senden starke Vertrauenssignale an Suchmaschinen.
           </p>
           <p className="text-blue-800 text-lg">
-            Dabei geht es nicht nur um Masse – sondern um Qualität, Kontext und Glaubwürdigkeit. Mit einer professionellen Linkbuilding-Strategie kannst du langfristig Sichtbarkeit, Autorität und Relevanz aufbauen.
+            Dabei geht es nicht nur um Masse, sondern um Qualität, Kontext und Glaubwürdigkeit. Mit einer professionellen Linkbuilding-Strategie kannst du langfristig Sichtbarkeit, Autorität und Relevanz aufbauen.
           </p>
         </div>
 
@@ -75,7 +75,7 @@ export default function OffPageSeoClient() {
             <FaCogs className="text-blue-600" /> Wie Google Vertrauen bewertet
           </h2>
           <p className="text-blue-800 text-lg">
-            Google nutzt hunderte Rankingfaktoren – aber Backlinks zählen seit jeher zu den stärksten. Doch nicht jeder Link wirkt gleich. Wichtig ist:
+            Google nutzt hunderte Rankingfaktoren, aber Backlinks zählen seit jeher zu den stärksten. Doch nicht jeder Link wirkt gleich. Wichtig ist:
           </p>
           <ul className="list-disc list-inside space-y-2 pl-4 text-blue-800">
             <li><strong>Themenrelevanz:</strong> Die verlinkende Seite muss thematisch passen</li>
@@ -108,7 +108,7 @@ export default function OffPageSeoClient() {
             <li><strong>Link Entwertung:</strong> Wir nutzen das Google Disavow Tool bei toxischen Links.</li>
             <li><strong>Reputationsaufbau:</strong> Pressearbeit, Reviews & Erwähnungen zur Stärkung deiner Markenautorität.</li>
             <li><strong>Monitoring & Reporting:</strong> Monatliche Reports zu Linkentwicklung, Rankings & Trust-Werten.</li>
-            <li><strong>Wettbewerbsanalyse:</strong> Welche Linkquellen nutzt deine Konkurrenz – und wie holen wir auf?</li>
+            <li><strong>Wettbewerbsanalyse:</strong> Welche Linkquellen nutzt deine Konkurrenz, und wie holen wir auf?</li>
             <li><strong>Strategieentwicklung:</strong> Individuelle Roadmap abgestimmt auf deine Ziele & Branche.</li>
             <li><strong>Internationale Linkkampagnen:</strong> Aufbau von Backlinks in Fremdsprachen & länderspezifischen Märkten.</li>
           </ul>
@@ -236,7 +236,7 @@ export default function OffPageSeoClient() {
             <FaLightbulb className="text-blue-600" /> Best Practices & Fehler beim Linkaufbau
           </h2>
           <p className="text-blue-800 text-lg">
-            Linkaufbau ist sensibel – viele Methoden funktionieren, andere gefährden deine Sichtbarkeit. Unsere Empfehlungen:
+            Linkaufbau ist sensibel, viele Methoden funktionieren, andere gefährden deine Sichtbarkeit. Unsere Empfehlungen:
           </p>
           <ul className="list-disc list-inside space-y-3 pl-4 text-blue-800">
             <li><strong>Do:</strong> Setze auf Qualität, thematische Nähe und Diversität</li>
@@ -259,7 +259,7 @@ export default function OffPageSeoClient() {
       >
         <div className="max-w-4xl mx-auto space-y-6">
           <h2 className="text-3xl font-bold flex items-center gap-3">
-            <FaBook className="text-blue-600" /> Glossar: Linkaufbau von A–Z
+            <FaBook className="text-blue-600" /> Glossar: Linkaufbau von A-Z
           </h2>
           <ul className="list-disc list-inside space-y-2 pl-4 text-blue-800">
             <li><strong>Backlink:</strong> Ein eingehender Link von einer externen Website</li>
@@ -288,9 +288,9 @@ export default function OffPageSeoClient() {
           </h2>
           <div className="space-y-4 text-blue-800">
             <p><strong>Wie viele Backlinks braucht man?</strong><br />Nicht die Anzahl, sondern die Qualität zählt. 10 starke Links sind besser als 100 schwache.</p>
-            <p><strong>Wie lange dauert der Aufbau?</strong><br />Je nach Branche und Ziel zwischen 2–6 Monate, erste Rankings oft nach 4–8 Wochen.</p>
+            <p><strong>Wie lange dauert der Aufbau?</strong><br />Je nach Branche und Ziel zwischen 2-6 Monate, erste Rankings oft nach 4-8 Wochen.</p>
             <p><strong>Sind gekaufte Links erlaubt?</strong><br />Laut Google nein. Wir arbeiten transparent, journalistisch und ohne Risiko-Methoden.</p>
-            <p><strong>Wie erkenne ich schlechte Links?</strong><br />Spam-Domains, irrelevante Inhalte, reines Linknetzwerk – wir prüfen das regelmäßig für dich.</p>
+            <p><strong>Wie erkenne ich schlechte Links?</strong><br />Spam-Domains, irrelevante Inhalte, reines Linknetzwerk, wir prüfen das regelmäßig für dich.</p>
           </div>
         </div>
       </motion.section>
@@ -306,7 +306,7 @@ export default function OffPageSeoClient() {
         <div className="max-w-4xl mx-auto">
           <h3 className="text-3xl font-bold mb-4">Jetzt Autorität & Sichtbarkeit aufbauen</h3>
           <p className="text-xl mb-8">
-            Starte mit datenbasiertem Linkaufbau, individuell auf dein Unternehmen zugeschnitten. Unsere Strategien bringen nachhaltige SEO-Erfolge – transparent und wirkungsvoll.
+            Starte mit datenbasiertem Linkaufbau, individuell auf dein Unternehmen zugeschnitten. Unsere Strategien bringen nachhaltige SEO-Erfolge, transparent und wirkungsvoll.
           </p>
           <Link
             href="/kontakt"

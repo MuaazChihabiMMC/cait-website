@@ -8,7 +8,7 @@ export default function SeoCta() {
           Starte jetzt deine SEO-Erfolgsgeschichte
         </h2>
         <p className="text-lg mb-8">
-          Egal ob lokales Unternehmen, Online-Shop oder internationale Marke – mit CAITSocialMedia wirst du online sichtbar. Vereinbare dein kostenloses Erstgespräch und erfahre, wie wir dein Google-Ranking gezielt verbessern.
+          Egal ob lokales Unternehmen, Online-Shop oder internationale Marke, mit CAIT Agentur wirst du online sichtbar. Vereinbare dein kostenloses Erstgespräch und erfahre, wie wir dein Google-Ranking gezielt verbessern.
         </p>
         <a
           href="/kontakt"

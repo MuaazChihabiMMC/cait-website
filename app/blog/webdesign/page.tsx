@@ -97,13 +97,13 @@ export default function WebDesignBlogPage() {
             <h2 className="text-2xl font-bold text-gray-900 mb-4">Webdesign & Webentwicklung im Wandel</h2>
             <p className="mb-4">
               In einer digitalen Welt, die sich rasant verändert, ist modernes Webdesign mehr als nur Ästhetik. Es geht um Performance, Barrierefreiheit, Usability und technologische Innovation. 
-              Ob Sie eine Landingpage optimieren, ein komplettes CMS entwickeln oder Ihr Frontend mit React, Tailwind oder WordPress neu denken – hier finden Sie Impulse und bewährte Strategien.
+              Ob Sie eine Landingpage optimieren, ein komplettes CMS entwickeln oder Ihr Frontend mit React, Tailwind oder WordPress neu denken, hier finden Sie Impulse und bewährte Strategien.
             </p>
             <p className="mb-4">
               Als Agentur für <strong>Webdesign & Entwicklung</strong> begleiten wir Kunden vom Konzept über das Design bis zur technischen Umsetzung. Unser Blog behandelt Themen wie <strong>Responsive Design</strong>, <strong>Page Speed</strong>, <strong>Barrierefreiheit</strong>, <strong>JavaScript Frameworks</strong> und moderne <strong>WordPress-Entwicklung</strong>.
             </p>
             <p>
-              Dieser Bereich ist Teil unseres <Link href="/blog" className="text-blue-600 underline">CAIT Blogs</Link> – Ihrer Quelle für hochwertiges Wissen rund um professionelle Webseiten.
+              Dieser Bereich ist Teil unseres <Link href="/blog" className="text-blue-600 underline">CAIT Blogs</Link>, Ihrer Quelle für hochwertiges Wissen rund um professionelle Webseiten.
             </p>
           </div>
 
@@ -164,12 +164,12 @@ export default function WebDesignBlogPage() {
   ))}
 </div>
 
-{/* SEO Textblock – Sichtbarkeit für Webdesign Berlin erhöhen */}
+{/* SEO Textblock, Sichtbarkeit für Webdesign Berlin erhöhen */}
 <div className="mt-24 max-w-4xl mx-auto text-gray-800 text-lg leading-relaxed space-y-6">
   <h2 className="text-3xl font-bold text-gray-900">Professionelles Webdesign & Entwicklung für Berlin</h2>
 
   <p>
-    Als <strong>Webdesign Agentur in Berlin</strong> bieten wir maßgeschneiderte Lösungen für Unternehmen, Startups und Selbstständige, die Wert auf moderne Technologie, Design und Performance legen. Unser Fokus liegt auf Benutzerfreundlichkeit, Schnelligkeit und responsivem Design, das auf allen Geräten überzeugt – vom Smartphone bis zum Desktop.
+    Als <strong>Webdesign Agentur in Berlin</strong> bieten wir maßgeschneiderte Lösungen für Unternehmen, Startups und Selbstständige, die Wert auf moderne Technologie, Design und Performance legen. Unser Fokus liegt auf Benutzerfreundlichkeit, Schnelligkeit und responsivem Design, das auf allen Geräten überzeugt, vom Smartphone bis zum Desktop.
   </p>
 
   <p>
@@ -189,13 +189,13 @@ export default function WebDesignBlogPage() {
   </ul>
 
   <p>
-    Wir entwickeln nicht nur optisch ansprechende Seiten – sondern leistungsstarke digitale Erlebnisse. Besonders für Berliner Unternehmen ist eine <strong>moderne Website</strong> heute ein Muss, um Kunden zu gewinnen und online sichtbar zu bleiben. Dabei analysieren wir Nutzerverhalten, Wettbewerber und setzen technische Best Practices konsequent um.
+    Wir entwickeln nicht nur optisch ansprechende Seiten, sondern leistungsstarke digitale Erlebnisse. Besonders für Berliner Unternehmen ist eine <strong>moderne Website</strong> heute ein Muss, um Kunden zu gewinnen und online sichtbar zu bleiben. Dabei analysieren wir Nutzerverhalten, Wettbewerber und setzen technische Best Practices konsequent um.
   </p>
 
   <h3 className="text-2xl font-bold text-gray-900">Webentwicklung trifft Strategie</h3>
 
   <p>
-    Als erfahrene <strong>Webentwickler Berlin</strong> arbeiten wir eng mit unseren Kunden zusammen, um Websites zu bauen, die messbare Ergebnisse erzielen. Von der Konzeption bis zum Livegang – bei uns ist alles auf Conversion, Nutzerfreundlichkeit und Google-Ranking ausgelegt. Mit gezielten SEO-Maßnahmen und strukturiertem Code schaffen wir die Grundlage für langfristigen Erfolg.
+    Als erfahrene <strong>Webentwickler Berlin</strong> arbeiten wir eng mit unseren Kunden zusammen, um Websites zu bauen, die messbare Ergebnisse erzielen. Von der Konzeption bis zum Livegang, bei uns ist alles auf Conversion, Nutzerfreundlichkeit und Google-Ranking ausgelegt. Mit gezielten SEO-Maßnahmen und strukturiertem Code schaffen wir die Grundlage für langfristigen Erfolg.
   </p>
 
   <p>
@@ -214,7 +214,7 @@ export default function WebDesignBlogPage() {
   </ul>
 
   <p>
-    Besonders stolz sind wir auf unsere Partnerschaften mit Berliner Unternehmen aus den unterschiedlichsten Branchen – vom Einzelhandel über medizinische Einrichtungen bis hin zu kreativen Startups. Unsere Mission: <strong>Digitale Präsenz, die wirkt</strong>.
+    Besonders stolz sind wir auf unsere Partnerschaften mit Berliner Unternehmen aus den unterschiedlichsten Branchen, vom Einzelhandel über medizinische Einrichtungen bis hin zu kreativen Startups. Unsere Mission: <strong>Digitale Präsenz, die wirkt</strong>.
   </p>
 
   <h3 className="text-2xl font-bold text-gray-900">Mehr als nur Webdesign: Digitale Strategien, die funktionieren</h3>

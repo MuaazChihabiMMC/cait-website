@@ -8,7 +8,7 @@ export default function SeoHero() {
           Höher Ranken. Schneller Wachsen.
         </h1>
         <p className="text-lg md:text-xl text-blue-100 mb-10 max-w-3xl mx-auto">
-          CAITSocialMedia ist deine SEO-Agentur für langfristige Sichtbarkeit, nachhaltiges Wachstum und messbare Ergebnisse. Gemeinsam bringen wir dich nach vorn – lokal, national oder international.
+          CAITSocialMedia ist deine SEO-Agentur für langfristige Sichtbarkeit, nachhaltiges Wachstum und messbare Ergebnisse. Gemeinsam bringen wir dich nach vorn, lokal, national oder international.
         </p>
         <a
           href="/kontakt"

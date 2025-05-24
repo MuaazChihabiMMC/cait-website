@@ -13,7 +13,7 @@ const services = [
     },
     {
       title: '📢 Google Ads',
-      desc: 'Performance-orientierte Kampagnen auf Google – von der Recherche bis zur laufenden Optimierung.',
+      desc: 'Performance-orientierte Kampagnen auf Google, von der Recherche bis zur laufenden Optimierung.',
       link: '/google-ads',
     },
     {

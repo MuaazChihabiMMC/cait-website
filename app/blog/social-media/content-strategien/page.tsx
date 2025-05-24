@@ -187,11 +187,11 @@ export default function SocialMediaPage() {
   <h2 className="text-2xl font-bold text-gray-900 mb-4">Warum Content-Strategien auf Social Media über Erfolg entscheiden</h2>
   <p className="mb-4">
     In der heutigen digitalen Landschaft sind durchdachte <strong>Content-Strategien für Social Media</strong> der Schlüssel zu Sichtbarkeit, Vertrauen und Reichweite. 
-    Plattformen wie <strong>Instagram</strong>, <strong>TikTok</strong> und <strong>LinkedIn</strong> bieten enorme Chancen – doch nur wer gezielt kommuniziert, erzielt nachhaltige Ergebnisse.
+    Plattformen wie <strong>Instagram</strong>, <strong>TikTok</strong> und <strong>LinkedIn</strong> bieten enorme Chancen, doch nur wer gezielt kommuniziert, erzielt nachhaltige Ergebnisse.
   </p>
   <p>
     In diesem Beitrag zeigen wir dir datenbasierte Ansätze, um deine Contentplanung zu optimieren und mit relevanten Formaten auf jeder Plattform zu überzeugen. 
-    Von Posting-Zeiten bis Reels-Strategien – lerne, wie du Inhalte erstellst, die algorithmusfreundlich und gleichzeitig zielgruppengerecht sind.
+    Von Posting-Zeiten bis Reels-Strategien, lerne, wie du Inhalte erstellst, die algorithmusfreundlich und gleichzeitig zielgruppengerecht sind.
   </p>
 </section>
 

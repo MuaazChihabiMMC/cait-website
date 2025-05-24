@@ -12,7 +12,7 @@ export default function SeoWhy() {
             Sichtbarkeit im Netz entscheidet über den Erfolg deines Unternehmens. Ohne SEO verlierst du potenzielle Kunden an Wettbewerber, die digital präsenter sind. Gute Platzierungen bei Google schaffen Vertrauen, bringen qualifizierten Traffic und sorgen für messbaren Umsatz.
           </p>
           <p className="text-black text-lg">
-            Ob lokale Dienstleistung oder internationaler E-Commerce: Mit der richtigen Strategie wirst du gefunden – und zwar genau von denen, die nach deinem Angebot suchen.
+            Ob lokale Dienstleistung oder internationaler E-Commerce: Mit der richtigen Strategie wirst du gefunden, und zwar genau von denen, die nach deinem Angebot suchen.
           </p>
         </div>
 
@@ -20,7 +20,7 @@ export default function SeoWhy() {
           <div className="bg-blue-300 border border-blue-900 p-6 rounded-xl shadow hover:shadow-md transition">
             <h3 className="text-xl font-semibold mb-2 text-blue-900">Sichtbarkeit = Vertrauen</h3>
             <p className="text-black">
-              Top-Rankings bei Google erzeugen Autorität, Glaubwürdigkeit und Vertrauen – essenziell für jede Marke.
+              Top-Rankings bei Google erzeugen Autorität, Glaubwürdigkeit und Vertrauen, essenziell für jede Marke.
             </p>
           </div>
 
@@ -34,7 +34,7 @@ export default function SeoWhy() {
           <div className="bg-blue-300 border border-blue-900 p-6 rounded-xl shadow hover:shadow-md transition">
             <h3 className="text-xl font-semibold mb-2 text-blue-900">Gezielte Kundengewinnung</h3>
             <p className="text-black">
-              Du erreichst genau die Menschen, die nach dir suchen – ohne Streuverluste oder hohe Klickkosten.
+              Du erreichst genau die Menschen, die nach dir suchen, ohne Streuverluste oder hohe Klickkosten.
             </p>
           </div>
 

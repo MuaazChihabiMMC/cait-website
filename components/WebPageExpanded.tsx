@@ -39,7 +39,7 @@ export default function WebPageExpanded() {
             <div>
               <h3 className="text-2xl font-semibold text-blue-900 mb-2">Was uns auszeichnet</h3>
               <ul className="list-disc list-inside space-y-2">
-                <li>Individuelles Design – keine Templates</li>
+                <li>Individuelles Design, keine Templates</li>
                 <li>Skalierbare Lösungen für jedes Geschäftsmodell</li>
                 <li>Technisch modern: React, Vue, Next.js, Node</li>
                 <li>Responsives & barrierefreies Design</li>
@@ -53,7 +53,7 @@ export default function WebPageExpanded() {
   
           <div className="bg-blue-900 text-white p-10 rounded-xl text-center">
             <h2 className="text-3xl font-bold mb-4">Bereit für den nächsten Schritt?</h2>
-            <p className="mb-6">Ob Relaunch, Redesign oder Neuentwicklung – wir bauen Ihre Website so, dass sie Besucher begeistert und messbare Ergebnisse liefert.</p>
+            <p className="mb-6">Ob Relaunch, Redesign oder Neuentwicklung, wir bauen Ihre Website so, dass sie Besucher begeistert und messbare Ergebnisse liefert.</p>
             <a href="/kontakt" className="inline-block bg-white text-blue-900 px-8 py-4 rounded-full font-semibold hover:bg-blue-100 transition">
               Jetzt kostenlos beraten lassen
             </a>

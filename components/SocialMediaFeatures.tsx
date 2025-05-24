@@ -4,12 +4,12 @@ const socialFeatures = [
     {
       title: '📱 Plattformübergreifende Strategie',
       description:
-        'Wir entwickeln individuelle Konzepte für Instagram, TikTok, LinkedIn, Facebook, Pinterest & YouTube – zugeschnitten auf deine Zielgruppe.',
+        'Wir entwickeln individuelle Konzepte für Instagram, TikTok, LinkedIn, Facebook, Pinterest & YouTube, zugeschnitten auf deine Zielgruppe.',
     },
     {
       title: '🎯 Content-Konzeption & Postingpläne',
       description:
-        'Redaktionspläne, Hashtag-Strategien, Timing – alles aus einer Hand. Deine Kanäle werden strategisch bespielt und kontinuierlich weiterentwickelt.',
+        'Redaktionspläne, Hashtag-Strategien, Timing, alles aus einer Hand. Deine Kanäle werden strategisch bespielt und kontinuierlich weiterentwickelt.',
     },
     {
       title: '🎥 Reels, Shorts & Video-Formate',
@@ -19,7 +19,7 @@ const socialFeatures = [
     {
       title: '✍️ Copywriting & Community Management',
       description:
-        'Wir schreiben Texte, die klicken – und beantworten Kommentare, DMs und Bewertungen im Stil deiner Marke.',
+        'Wir schreiben Texte, die klicken, und beantworten Kommentare, DMs und Bewertungen im Stil deiner Marke.',
     },
     {
       title: '📈 Analyse & Reporting',

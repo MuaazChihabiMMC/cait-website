@@ -18,7 +18,7 @@ export default function KeywordRecherchePage() {
             <span className="text-blue-600">Keyword-Recherche</span> für gezielte Sichtbarkeit
           </motion.h1>
           <motion.p className="text-xl md:text-2xl mb-8 text-blue-800">
-            Wir finden heraus, wonach Ihre Zielgruppe sucht – für maximale Relevanz und Reichweite in Google.
+            Wir finden heraus, wonach Ihre Zielgruppe sucht, für maximale Relevanz und Reichweite in Google.
           </motion.p>
           <motion.a
             whileHover={{ scale: 1.05 }}
@@ -40,7 +40,7 @@ export default function KeywordRecherchePage() {
         className="max-w-5xl mx-auto text-blue-800 text-lg"
       >
         <p>
-          <strong>Erfahrung aus der Praxis:</strong> Als erfahrene SEO-Agentur mit Fokus auf datenbasierte Strategien helfen wir Unternehmen seit Jahren, durch gezielte Keyword-Recherche online sichtbar zu werden. Ob lokale Dienstleister wie Juweliere im Preußenpark, nationale E-Commerce-Shops oder spezialisierte Fachärzte – jedes Projekt beginnt mit den richtigen Keywords.
+          <strong>Erfahrung aus der Praxis:</strong> Als erfahrene SEO-Agentur mit Fokus auf datenbasierte Strategien helfen wir Unternehmen seit Jahren, durch gezielte Keyword-Recherche online sichtbar zu werden. Ob lokale Dienstleister wie Juweliere im Preußenpark, nationale E-Commerce-Shops oder spezialisierte Fachärzte, jedes Projekt beginnt mit den richtigen Keywords.
         </p>
       </motion.section>
 
@@ -65,7 +65,7 @@ export default function KeywordRecherchePage() {
           {[{
             icon: <FaSearch className="text-3xl" />,
             title: 'Suchintention verstehen',
-            text: 'Wir identifizieren nicht nur Begriffe, sondern verstehen den Kontext dahinter – ob Informationssuche, Kaufabsicht oder Vergleich.'
+            text: 'Wir identifizieren nicht nur Begriffe, sondern verstehen den Kontext dahinter, ob Informationssuche, Kaufabsicht oder Vergleich.'
           },{
             icon: <FaList className="text-3xl" />,
             title: 'Potenzial erkennen',
@@ -123,7 +123,7 @@ export default function KeywordRecherchePage() {
                   const descriptions = [
                     'Gemeinsam legen wir fest, wen Sie erreichen wollen, welche Produkte/Dienstleistungen im Fokus stehen und analysieren Ihre Top-Konkurrenz auf Rankingebene.',
                     'Mit Tools wie Ahrefs, SEMrush oder Google Keyword Planner extrahieren wir relevante Begriffe und ordnen sie nach Themen und Suchintention.',
-                    'Wir bewerten Keywords nach Relevanz, Suchvolumen, Wettbewerb und Conversion-Potenzial – so entstehen SEO-fokussierte Seitenstrukturen.',
+                    'Wir bewerten Keywords nach Relevanz, Suchvolumen, Wettbewerb und Conversion-Potenzial, so entstehen SEO-fokussierte Seitenstrukturen.',
                     'Aus den Clustern entstehen Blogartikel, Landingpages oder FAQs. Sie bilden die Grundlage für OnPage-Optimierung und Linkbuilding.',
                     'Google zeigt bei verschiedenen Keywords unterschiedliche SERP-Formate. Wir analysieren diese gezielt, um den Content-Typ exakt anzupassen.',
                     'Keyword-Trends verändern sich. Wir überprüfen regelmäßig Rankings, neue Begriffe und passen Ihre Content-Strategie entsprechend an.'
@@ -147,7 +147,7 @@ export default function KeywordRecherchePage() {
         <h2 className="text-3xl font-bold text-center mb-8">Unsere bewährten Tools für die Keyword-Recherche</h2>
         <ul className="text-blue-800 text-lg space-y-4 list-disc pl-6">
           <li><strong>Ahrefs & SEMrush:</strong> Wettbewerbsanalyse, Backlinkquellen, Keyword-Datenbanken</li>
-          <li><strong>Google Keyword Planner:</strong> direkt aus der Quelle – ideal für SEA & SEO</li>
+          <li><strong>Google Keyword Planner:</strong> direkt aus der Quelle, ideal für SEA & SEO</li>
           <li><strong>Google Trends:</strong> Trendanalysen über Zeiträume hinweg</li>
           <li><strong>AnswerThePublic & AlsoAsked:</strong> Fragen & Cluster aus echter Nutzerperspektive</li>
           <li><strong>SurferSEO & NeuronWriter:</strong> für semantisch optimierten Content basierend auf NLP</li>
@@ -164,8 +164,8 @@ export default function KeywordRecherchePage() {
       >
         <h2 className="text-3xl font-bold text-center mb-8">Beispiele aus der Praxis</h2>
         <div className="space-y-6 text-blue-800 text-lg">
-          <p><strong>E-Commerce:</strong> Clusterbildung für Produktkategorien wie „Sneaker Damen weiß“ oder „beste Smartwatch 2025“ – mit Conversion-orientierten Landingpages.</p>
-          <p><strong>Ärzte & Praxen:</strong> Kombination aus lokalen Keywords („Zahnarzt Berlin Zehlendorf“) und informativen Ratgeberseiten – unter Berücksichtigung von YMYL-Faktoren.</p>
+          <p><strong>E-Commerce:</strong> Clusterbildung für Produktkategorien wie „Sneaker Damen weiß“ oder „beste Smartwatch 2025“, mit Conversion-orientierten Landingpages.</p>
+          <p><strong>Ärzte & Praxen:</strong> Kombination aus lokalen Keywords („Zahnarzt Berlin Zehlendorf“) und informativen Ratgeberseiten, unter Berücksichtigung von YMYL-Faktoren.</p>
           <p><strong>Juwelier im Preußenpark:</strong> Optimierung auf Begriffe wie „Goldankauf Berlin“, „Altgold verkaufen Steglitz“ kombiniert mit Google-Business-Profil, um lokale Sichtbarkeit zu maximieren.</p>
         </div>
       </motion.section>

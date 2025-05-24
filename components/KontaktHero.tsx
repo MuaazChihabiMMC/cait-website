@@ -7,7 +7,7 @@ export default function KontaktHero() {
           Deine Agentur für SEO & Marketing . Kontaktiere uns
       </h1>
     <p className="text-lg md:text-xl text-blue-100 mb-10">
-  Wir freuen uns auf deine Anfrage. Egal ob Erstberatung, Projektidee oder Zusammenarbeit – schreib uns einfach oder ruf uns an.  
+  Wir freuen uns auf deine Anfrage. Egal ob Erstberatung, Projektidee oder Zusammenarbeit, schreib uns einfach oder ruf uns an.  
   <br />
   Die <strong>CAIT Social Media Agentur Berlin</strong> ist gerne für dich da.
 </p>

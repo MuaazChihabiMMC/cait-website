@@ -192,17 +192,17 @@ export default function InstagramStrategiesPage() {
 <section className="max-w-4xl mx-auto px-6 py-12 text-blue-900 text-lg leading-relaxed">
   <h2 className="text-2xl font-bold mb-4">Warum Instagram-Marketing 2024 mehr Strategie denn je erfordert</h2>
   <p className="mb-4">
-    Instagram bleibt auch im Jahr 2024 eine der wichtigsten Plattformen für Branding, Community-Aufbau und Conversion – vor allem im B2C-Bereich.
+    Instagram bleibt auch im Jahr 2024 eine der wichtigsten Plattformen für Branding, Community-Aufbau und Conversion, vor allem im B2C-Bereich.
     Doch durch <strong>algorithmische Veränderungen</strong>, steigende Konkurrenz und neue Features wie Reels oder Guides reicht es nicht mehr,
     einfach nur Bilder zu posten.
   </p>
   <p className="mb-4">
     Um <strong>organische Reichweite</strong> und <strong>Engagement</strong> zu erzielen, braucht es eine gezielte <strong>Content-Strategie für Instagram</strong>,
     abgestimmt auf Zielgruppe, Posting-Zeiten, Format-Mix und Hashtag-Nutzung. In diesem Beitrag lernst du, wie du deine Inhalte so planst und
-    optimierst, dass sie im Feed performen – und langfristig Vertrauen sowie Reichweite aufbauen.
+    optimierst, dass sie im Feed performen, und langfristig Vertrauen sowie Reichweite aufbauen.
   </p>
   <p>
-    Als <strong>CAIT Social Media Agentur</strong> entwickeln wir datengetriebene Instagram-Kampagnen für Unternehmen in ganz Deutschland – von
+    Als <strong>CAIT Social Media Agentur</strong> entwickeln wir datengetriebene Instagram-Kampagnen für Unternehmen in ganz Deutschland, von
     Reels-Konzepten über Content-Kalender bis zur algorithmusfreundlichen Optimierung.
   </p>
 </section>

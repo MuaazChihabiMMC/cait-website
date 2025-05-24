@@ -6,7 +6,7 @@ const features = [
     title: '🧠 Keyword-Recherche & Suchintention',
     description: (
       <>
-        Wir analysieren, wonach deine Kunden suchen – und warum. Damit du nicht nur Klicks bekommst, sondern
+        Wir analysieren, wonach deine Kunden suchen, und warum. Damit du nicht nur Klicks bekommst, sondern
         relevanten Traffic, der konvertiert.{' '}
         <Link href="/seo/keyword-recherche" className="text-blue-500 underline">
           Mehr erfahren
@@ -62,7 +62,7 @@ const features = [
     title: '📝 SEO-Content-Erstellung',
     description: (
       <>
-        Wir schreiben Inhalte, die Google liebt und Nutzer lesen wollen – von Blogbeiträgen bis zu Landingpages.{' '}
+        Wir schreiben Inhalte, die Google liebt und Nutzer lesen wollen, von Blogbeiträgen bis zu Landingpages.{' '}
         <Link href="/seo/content-erstellung" className="text-blue-500 underline">
           Mehr erfahren
         </Link>
@@ -73,7 +73,7 @@ const features = [
     title: '📊 Monitoring & Reporting',
     description: (
       <>
-        Echtzeit-Analysen, monatliche Reports, Handlungsempfehlungen: Du weißt jederzeit, was wir tun – und was es bringt.{' '}
+        Echtzeit-Analysen, monatliche Reports, Handlungsempfehlungen: Du weißt jederzeit, was wir tun, und was es bringt.{' '}
         <Link href="/seo/monitoring-reporting" className="text-blue-500 underline">
           Mehr erfahren
         </Link>

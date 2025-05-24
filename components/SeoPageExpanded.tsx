@@ -11,7 +11,7 @@ export default function SeoPageExpanded() {
           <div>
             <h2 className="text-3xl font-bold mb-4">Warum SEO?</h2>
             <p className="text-gray-800">
-              SEO ist kein Bonus – es ist der Grundstein digitaler Sichtbarkeit. Wer nicht gefunden wird, verliert Kunden. Unsere Strategien vereinen Keyword-Analyse, technisches SEO, hochwertige Inhalte und nachhaltigen Linkaufbau für dauerhafte Google-Rankings.
+              SEO ist kein Bonus, es ist der Grundstein digitaler Sichtbarkeit. Wer nicht gefunden wird, verliert Kunden. Unsere Strategien vereinen Keyword-Analyse, technisches SEO, hochwertige Inhalte und nachhaltigen Linkaufbau für dauerhafte Google-Rankings.
             </p>
           </div>
   
@@ -43,7 +43,7 @@ export default function SeoPageExpanded() {
           {/* CTA */}
           <div className="bg-blue-900 text-white p-10 rounded-xl text-center">
             <h2 className="text-3xl font-bold mb-4">Starten Sie Ihre SEO-Erfolgsgeschichte</h2>
-            <p className="mb-6">Unser Team begleitet Sie von der Analyse bis zur Umsetzung – mit fundiertem Fachwissen, smarten Tools und persönlichem Support.</p>
+            <p className="mb-6">Unser Team begleitet Sie von der Analyse bis zur Umsetzung, mit fundiertem Fachwissen, smarten Tools und persönlichem Support.</p>
             <a href="/kontakt" className="inline-block bg-white text-blue-900 px-8 py-4 rounded-full font-semibold hover:bg-blue-100 transition">
               Jetzt kostenlos beraten lassen
             </a>
@@ -55,7 +55,7 @@ export default function SeoPageExpanded() {
             <ul className="grid md:grid-cols-2 gap-4 list-disc list-inside">
               <li>✅ Maßgeschneiderte SEO-Strategien für Ihre Branche</li>
               <li>✅ Echtzeit-Monitoring & transparente Berichte</li>
-              <li>✅ White-Hat-Methoden – Google-konform & sicher</li>
+              <li>✅ White-Hat-Methoden, Google-konform & sicher</li>
               <li>✅ Vollständige Betreuung durch Inhouse-Expert:innen</li>
               <li>✅ Content + Technik aus einer Hand</li>
               <li>✅ Modernste Tools & Branchenstandards</li>

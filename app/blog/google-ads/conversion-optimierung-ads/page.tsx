@@ -149,16 +149,16 @@ const googleAdsPosts = {
   <p class="text-purple-700">Kombinieren Sie Smart Bidding mit Audience Targeting für beste Ergebnisse. Nutzen Sie Zielgruppen-Signale wie "Remarketing-Listen" oder "Ähnliche Zielgruppen" zusammen mit tCPA oder tROAS.</p>
 </div>
 <h2 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">Die Psychologie hinter dem Klick: Nutzer verstehen lernen</h2>
-<p class="text-gray-700 mb-4">Erfolgreiche Conversion-Optimierung beginnt mit dem Verständnis der Nutzerpsychologie. Warum klickt ein Mensch auf eine Anzeige? Was erwartet er auf der Zielseite? Psychologische Trigger wie Knappheit ("nur heute verfügbar"), Vertrauen (z. B. durch Gütesiegel), oder Reziprozität (kostenloser Mehrwert) spielen eine zentrale Rolle bei der Entscheidung, ob ein Nutzer konvertiert.</p>
+<p class="text-gray-700 mb-4">Erfolgreiche Conversion-Optimierung beginnt mit dem Verständnis der Nutzerpsychologie. Warum klickt ein Mensch auf eine Anzeige? Was erwartet er auf der Zielseite? Psychologische Trigger wie Knappheit ("nur heute verfügbar"), Vertrauen (z.B. durch Gütesiegel), oder Reziprozität (kostenloser Mehrwert) spielen eine zentrale Rolle bei der Entscheidung, ob ein Nutzer konvertiert.</p>
 <p class="text-gray-700 mb-6">Unternehmen, die ihre Zielgruppe wirklich kennen, können Botschaften besser formulieren, Barrieren abbauen und Vertrauen aufbauen. Dazu gehören Buyer Personas, Heatmaps, Scroll-Tracking und systematisches Feedback.</p>
 
 <h2 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">UX-Design als Conversion-Booster</h2>
-<p class="text-gray-700 mb-4">Eine überzeugende User Experience ist mehr als nur hübsches Design. Sie ist ein psychologischer Wegweiser, der Nutzer intuitiv zu Conversion-Zielen führt. White Space, klare Typografie und intuitive Navigation sind essenziell – insbesondere mobil.</p>
-<p class="text-gray-700 mb-6">Nutze F-Patterns und visuelle Hierarchien, um Blickverläufe gezielt zu lenken. Achte auf kognitive Leichtigkeit – je weniger ein Nutzer denken muss, desto eher schließt er eine Aktion ab.</p>
+<p class="text-gray-700 mb-4">Eine überzeugende User Experience ist mehr als nur hübsches Design. Sie ist ein psychologischer Wegweiser, der Nutzer intuitiv zu Conversion-Zielen führt. White Space, klare Typografie und intuitive Navigation sind essenziell, insbesondere mobil.</p>
+<p class="text-gray-700 mb-6">Nutze F-Patterns und visuelle Hierarchien, um Blickverläufe gezielt zu lenken. Achte auf kognitive Leichtigkeit, je weniger ein Nutzer denken muss, desto eher schließt er eine Aktion ab.</p>
 
 <h2 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">Retargeting &amp; Conversion: Wie verlorene Klicks zurückkommen</h2>
-<p class="text-gray-700 mb-4">Nicht jeder Klick führt sofort zu einer Conversion – das ist normal. Mit gezieltem Retargeting kannst du verlorene Nutzer erneut ansprechen und zurückholen. Dazu zählen Remarketing-Listen in Google Ads, dynamisches Retargeting im E-Commerce und personalisierte Banner-Kampagnen auf Drittseiten.</p>
-<p class="text-gray-700 mb-6">Die besten Ergebnisse erzielst du mit segmentierten Zielgruppen und individuellen Botschaften. Zum Beispiel: Zeige Warenkorbabbrechern gezielt Produktvorteile oder Rabatte. Retargeting ist kein Spam – es ist Erinnerungsmarketing.</p>
+<p class="text-gray-700 mb-4">Nicht jeder Klick führt sofort zu einer Conversion, das ist normal. Mit gezieltem Retargeting kannst du verlorene Nutzer erneut ansprechen und zurückholen. Dazu zählen Remarketing-Listen in Google Ads, dynamisches Retargeting im E-Commerce und personalisierte Banner-Kampagnen auf Drittseiten.</p>
+<p class="text-gray-700 mb-6">Die besten Ergebnisse erzielst du mit segmentierten Zielgruppen und individuellen Botschaften. Zum Beispiel: Zeige Warenkorbabbrechern gezielt Produktvorteile oder Rabatte. Retargeting ist kein Spam, es ist Erinnerungsmarketing.</p>
 
     `,
     author: {

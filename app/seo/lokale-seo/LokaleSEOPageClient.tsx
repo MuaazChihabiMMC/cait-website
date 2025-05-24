@@ -40,7 +40,7 @@ export default function LokaleSEOPageClient() {
     <strong>lokalen Content</strong> aufzubauen und deine Seite in <strong>regionalen Verzeichnissen</strong> sichtbar zu machen.
   </p>
   <p>
-    Besonders für Standorte mit viel Konkurrenz – z. B. in Großstädten – kann gezielte lokale Optimierung den entscheidenden Unterschied machen. 
+    Besonders für Standorte mit viel Konkurrenz, z.B. in Großstädten, kann gezielte lokale Optimierung den entscheidenden Unterschied machen. 
     Wir kombinieren <strong>technisches SEO</strong>, <strong>Content-Marketing</strong> und <strong>Backlink-Strategien</strong> für nachhaltige Sichtbarkeit.
   </p>
 </section>

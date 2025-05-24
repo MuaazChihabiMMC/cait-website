@@ -11,7 +11,7 @@ export default function KeywordContent() {
           Die Keyword-Recherche ist das Herzstück jeder erfolgreichen SEO-Strategie. Sie bildet die Basis, um
           Inhalte zu entwickeln, die nicht nur Besucher anziehen, sondern auch wirklich konvertieren. Statt
           blind Keywords zu sammeln, analysieren wir bei CAITSocialMedia die dahinterliegende Suchintention,
-          um sicherzustellen, dass du nicht nur gefunden wirst – sondern genau von den richtigen Menschen.
+          um sicherzustellen, dass du nicht nur gefunden wirst, sondern genau von den richtigen Menschen.
         </p>
   
         <h2 className="text-2xl font-semibold mt-10 text-blue-800">Was ist Keyword-Recherche?</h2>
@@ -63,14 +63,14 @@ export default function KeywordContent() {
   
         <h2 className="text-2xl font-semibold mt-10 text-blue-800">Content passend zur Suchintention</h2>
         <p>
-          Wir erstellen Inhalte, die perfekt zur Absicht des Suchenden passen – ob Ratgeberartikel,
+          Wir erstellen Inhalte, die perfekt zur Absicht des Suchenden passen, ob Ratgeberartikel,
           Landingpage oder Produktseite. Nur so wird aus einem Klick auch eine Conversion.
         </p>
   
-        <h2 className="text-2xl font-semibold mt-10 text-blue-800">Longtail-Keywords – der unterschätzte Traffic-Magnet</h2>
+        <h2 className="text-2xl font-semibold mt-10 text-blue-800">Longtail-Keywords, der unterschätzte Traffic-Magnet</h2>
         <p>
           Gerade Longtail-Keywords („günstige SEO Agentur für Startups in Berlin“) haben geringere Konkurrenz,
-          sind oft hochkonvertierend und bieten enormes Potenzial. Wir analysieren sie gezielt – und nutzen sie
+          sind oft hochkonvertierend und bieten enormes Potenzial. Wir analysieren sie gezielt, und nutzen sie
           strategisch.
         </p>
   
@@ -83,7 +83,7 @@ export default function KeywordContent() {
   
         <h2 className="text-2xl font-semibold mt-10 text-blue-800">Regelmäßige Updates &amp; Monitoring</h2>
         <p>
-          Die Google-Suche verändert sich ständig – genauso wie das Suchverhalten deiner Zielgruppe. Wir
+          Die Google-Suche verändert sich ständig, genauso wie das Suchverhalten deiner Zielgruppe. Wir
           überwachen deine Keywords laufend und passen die Strategie an, um dauerhaft ganz vorne mitzuspielen.
         </p>
   

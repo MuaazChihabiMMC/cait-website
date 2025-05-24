@@ -18,7 +18,7 @@ const faqItems = [
   {
     question: 'Was kostet professionelle SEO?',
     answer:
-      'Die Kosten hängen vom Umfang und den Zielen ab. Wir bieten individuelle Pakete an – vom einmaligen SEO-Audit bis zur laufenden Betreuung. Transparenz steht bei uns an erster Stelle.',
+      'Die Kosten hängen vom Umfang und den Zielen ab. Wir bieten individuelle Pakete an, vom einmaligen SEO-Audit bis zur laufenden Betreuung. Transparenz steht bei uns an erster Stelle.',
   },
   {
     question: 'Was ist der Unterschied zwischen OnPage- und OffPage-SEO?',
@@ -53,7 +53,7 @@ const faqItems = [
   {
     question: 'Gibt es eine Erfolgsgarantie?',
     answer:
-      'Eine seriöse SEO-Agentur gibt keine Platzierungsversprechen – Google ist ein unabhängiger Algorithmus. Aber: Mit der richtigen Strategie sind Top-10-Rankings für viele Keywords realistisch.',
+      'Eine seriöse SEO-Agentur gibt keine Platzierungsversprechen, Google ist ein unabhängiger Algorithmus. Aber: Mit der richtigen Strategie sind Top-10-Rankings für viele Keywords realistisch.',
   },
   {
     question: 'Wie unterscheidet sich eure Agentur von anderen?',
@@ -63,12 +63,12 @@ const faqItems = [
   {
     question: 'Was bedeutet White-Hat-SEO?',
     answer:
-      'White-Hat-SEO meint seriöse, nachhaltige Optimierung im Einklang mit den Google-Richtlinien. Keine Tricks, kein Risiko von Abstrafungen – stattdessen langfristige Sichtbarkeit.',
+      'White-Hat-SEO meint seriöse, nachhaltige Optimierung im Einklang mit den Google-Richtlinien. Keine Tricks, kein Risiko von Abstrafungen, stattdessen langfristige Sichtbarkeit.',
   },
   {
     question: 'Könnt ihr bestehende SEO-Projekte übernehmen oder optimieren?',
     answer:
-      'Ja. Egal ob Relaunch, stockende Rankings oder bestehende SEO-Betreuung – wir steigen ein, analysieren und verbessern gezielt mit einem neutralen Blick von außen.',
+      'Ja. Egal ob Relaunch, stockende Rankings oder bestehende SEO-Betreuung, wir steigen ein, analysieren und verbessern gezielt mit einem neutralen Blick von außen.',
   },
 ];
 

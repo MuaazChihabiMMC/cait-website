@@ -2,7 +2,7 @@ export default function SocialMediaSeoText() {
   return (
     <section className="bg-white py-24 px-6 text-gray-800 leading-relaxed text-lg">
       <div className="max-w-5xl mx-auto space-y-6">
-        <h2 className="text-3xl font-bold text-gray-900">Social Media Agentur Berlin – lokal stark, digital führend</h2>
+        <h2 className="text-3xl font-bold text-gray-900">Social Media Agentur Berlin, lokal stark, digital führend</h2>
 
         <p>
           Als <strong>Social Media Agentur in Berlin</strong> helfen wir Unternehmen, ihre Markenpräsenz auf Plattformen wie Instagram, TikTok, LinkedIn, Facebook und YouTube zu etablieren und gezielt auszubauen.
@@ -20,17 +20,17 @@ export default function SocialMediaSeoText() {
           <li>🚀 Performanceorientierung: Unsere Maßnahmen sind auf KPIs wie Reichweite, Engagement und Leads optimiert.</li>
           <li>🤳 Professioneller Content: Von Reels bis Stories, wir liefern Format-übergreifend hochwertigen Content.</li>
           <li>🔁 Strategie & Umsetzung: Full-Service von Redaktionsplan bis Reporting.</li>
-          <li>💡 Trendgetrieben: Wir setzen aktuelle Plattform-Features gezielt ein, z. B. TikTok Trends, Instagram Guides & LinkedIn Carousel-Posts.</li>
+          <li>💡 Trendgetrieben: Wir setzen aktuelle Plattform-Features gezielt ein, z.B. TikTok Trends, Instagram Guides & LinkedIn Carousel-Posts.</li>
         </ul>
 
         <h3 className="text-2xl font-semibold text-gray-900">Warum Unternehmen in Berlin mit uns zusammenarbeiten</h3>
         <p>
-          Die digitale Kommunikation verändert sich ständig – wir helfen Ihnen, stets am Puls der Zeit zu bleiben. Mit regelmäßiger Analyse, klarer Zieldefinition und agilen Methoden passen wir Ihre Social-Media-Strategie kontinuierlich an neue Trends an. Als Berliner Agentur sind wir nah an unseren Kunden und bieten persönliche Beratung, schnellen Support und transparente Prozesse.
+          Die digitale Kommunikation verändert sich ständig, wir helfen Ihnen, stets am Puls der Zeit zu bleiben. Mit regelmäßiger Analyse, klarer Zieldefinition und agilen Methoden passen wir Ihre Social-Media-Strategie kontinuierlich an neue Trends an. Als Berliner Agentur sind wir nah an unseren Kunden und bieten persönliche Beratung, schnellen Support und transparente Prozesse.
         </p>
 
         <h3 className="text-2xl font-semibold text-gray-900">Social Media Strategien für jede Branche</h3>
         <p>
-          Ob Gastronomie, Bildung, E-Commerce oder Handwerk – als erfahrene <strong>Social Media Agentur Berlin</strong> kennen wir die Besonderheiten unterschiedlicher Branchen und Zielgruppen.
+          Ob Gastronomie, Bildung, E-Commerce oder Handwerk, als erfahrene <strong>Social Media Agentur Berlin</strong> kennen wir die Besonderheiten unterschiedlicher Branchen und Zielgruppen.
           Wir entwickeln Strategien, die konvertieren: vom ersten Post bis zum Lead.
         </p>
 

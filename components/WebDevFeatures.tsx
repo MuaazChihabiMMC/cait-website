@@ -4,27 +4,27 @@ const webFeatures = [
     {
       title: '⚙️ Maßgeschneiderte Entwicklung',
       description:
-        'Keine Templates von der Stange – wir programmieren individuelle, performance-optimierte Websites exakt nach deinem Bedarf.',
+        'Keine Templates von der Stange, wir programmieren individuelle, performance-optimierte Websites exakt nach deinem Bedarf.',
     },
     {
       title: '📱 Responsive & mobiloptimiert',
       description:
-        'Deine Seite funktioniert auf allen Geräten – vom Smartphone bis zum Ultra-HD-Display, mit optimaler Usability.',
+        'Deine Seite funktioniert auf allen Geräten, vom Smartphone bis zum Ultra-HD-Display, mit optimaler Usability.',
     },
     {
       title: '🎨 UI/UX-Design inklusive',
       description:
-        'Visuelle Gestaltung mit Nutzerfokus: modern, klar, intuitiv – damit Besucher zu Kunden werden.',
+        'Visuelle Gestaltung mit Nutzerfokus: modern, klar, intuitiv, damit Besucher zu Kunden werden.',
     },
     {
       title: '🚀 Schnelle Ladezeiten & SEO-Basis',
       description:
-        'Wir setzen auf sauberen Code, moderne Frameworks und Core-Web-Vitals – Google liebt Geschwindigkeit.',
+        'Wir setzen auf sauberen Code, moderne Frameworks und Core-Web-Vitals, Google liebt Geschwindigkeit.',
     },
     {
       title: '🧩 CMS-Integration (WordPress, Webflow, Headless)',
       description:
-        'Flexible Content-Pflege dank moderner CMS-Lösungen – wir richten alles für dich ein.',
+        'Flexible Content-Pflege dank moderner CMS-Lösungen, wir richten alles für dich ein.',
     },
     {
       title: '🔒 DSGVO & Sicherheit inklusive',

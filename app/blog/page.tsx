@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export const metadata = {
   title: 'Marketing Blog | CAIT SEO & Social Media Agentur Berlin',
-  description: 'Aktuelle Insights zu SEO, Google Ads und Social Media Marketing aus Berlin. Experten-Tipps für bessere Rankings, mehr Conversions und erfolgreiche Online-Marketing Strategien.',
+  description: 'Aktuelle Insights zu SEO, Google Ads,Webdesign und SMM aus Berlin. Experten Tipps für bessere Rankings und mehr Conversions.',
          alternates: {
     canonical: 'https://www.caitsocialmedia.com/blog',
   },
@@ -13,7 +13,7 @@ const blogCategories = [
   {
     id: 'seo',
     title: 'SEO Strategien Berlin',
-    description: 'On-Page, Off-page und technische SEO für bessere Rankings – Expertenwissen speziell für Berliner Unternehmen',
+    description: 'On-Page, Off-page und technische SEO für bessere Rankings, Expertenwissen speziell für Berliner Unternehmen',
     image: '/seo-content.svg',
     color: 'from-green-500 to-green-700',
     icon: '🔍',
@@ -22,7 +22,7 @@ const blogCategories = [
   {
     id: 'social-media',
     title: 'Social Media Marketing',
-    description: 'Agentur-Einblicke zu Instagram, TikTok & LinkedIn – Erfolgsstrategien für Berliner Unternehmen',
+    description: 'Agentur-Einblicke zu Instagram, TikTok & LinkedIn, Erfolgsstrategien für Berliner Unternehmen',
     image: '/social-media-content.svg',
     color: 'from-blue-500 to-purple-600',
     icon: '📱',
@@ -40,7 +40,7 @@ const blogCategories = [
   {
     id: 'webdesign',
     title: 'Webentwicklung Berlin',
-    description: 'Professionelle Websites aus Berlin – UX-optimiertes Webdesign & Entwicklung für höhere Conversion-Raten',
+    description: 'Professionelle Websites aus Berlin, UX-optimiertes Webdesign & Entwicklung für höhere Conversion-Raten',
     image: '/webdesign-content.svg',
     color: 'from-indigo-500 to-blue-700',
     icon: '💻',
@@ -64,7 +64,7 @@ export default function BlogPage() {
             Expertenwissen aus Berlin
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Der CAIT Marketing Blog bietet strategische Insights zu Suchmaschinenoptimierung, bezahlter Werbung und Social Media – speziell für Unternehmen in Berlin. Erhalten Sie bewährte Strategien für bessere Online-Sichtbarkeit und höhere Conversion-Raten.
+            Der CAIT Marketing Blog bietet strategische Insights zu Suchmaschinenoptimierung, bezahlter Werbung und Social Media, speziell für Unternehmen in Berlin. Erhalten Sie bewährte Strategien für bessere Online-Sichtbarkeit und höhere Conversion-Raten.
           </p>
         </div>
       </section>

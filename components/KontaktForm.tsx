@@ -100,13 +100,13 @@ export default function KontaktForm() {
     <h2 className="text-2xl font-bold text-blue-800">Warum du uns kontaktieren solltest</h2>
     <p>
       Als erfahrene <strong>Online-Marketing-Agentur aus Berlin</strong> stehen wir dir mit Expertise in den Bereichen 
-      <strong> SEO, Google Ads, Social Media und Webdesign</strong> zur Seite. Ob du ein erstes Beratungsgespräch wünschst, konkrete Maßnahmen brauchst oder langfristige Zusammenarbeit suchst – bei uns bist du richtig.
+      <strong> SEO, Google Ads, Social Media und Webdesign</strong> zur Seite. Ob du ein erstes Beratungsgespräch wünschst, konkrete Maßnahmen brauchst oder langfristige Zusammenarbeit suchst, bei uns bist du richtig.
     </p>
     <p>
-      Die <strong>CAIT Social Media Agentur</strong> hat bereits über 100 erfolgreiche Projekte umgesetzt – von lokalen Dienstleistern bis zu internationalen Unternehmen. Unsere Beratung ist individuell, transparent und datenbasiert.
+      Die <strong>CAIT Social Media Agentur</strong> hat bereits über 100 erfolgreiche Projekte umgesetzt, von lokalen Dienstleistern bis zu internationalen Unternehmen. Unsere Beratung ist individuell, transparent und datenbasiert.
     </p>
     <p>
-      Wir freuen uns auf deine Nachricht – telefonisch, per E-Mail oder direkt über das Kontaktformular. Gemeinsam machen wir dein digitales Projekt sichtbar und erfolgreich.
+      Wir freuen uns auf deine Nachricht, telefonisch, per E-Mail oder direkt über das Kontaktformular. Gemeinsam machen wir dein digitales Projekt sichtbar und erfolgreich.
     </p>
   </div>
 </section>
