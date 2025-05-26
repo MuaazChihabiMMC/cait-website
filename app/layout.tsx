@@ -7,8 +7,12 @@ import LayoutWrapper from './LayoutWrapper'
 import Script from 'next/script'
 
 export const metadata: Metadata = {
+  
   title: 'CAIT | SEO Agentur, Google Ads, Webdesign & Social Media ',
   description: 'Sichtbarkeit, Reichweite & Umsatz steigern. mit CAIT, deiner SEO-Agentur für Google Ads, Webdesign und Social Media. Jetzt kostenlos beraten lassen.',
+   alternates: {
+    canonical: 'https://www.caitsocialmedia.com/',
+  },
   verification: {
     google: 'G-WFV8MYNPQ6', // Nur falls du Google Search Console nutzen willst
   },

@@ -2,7 +2,6 @@
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { FaSearch, FaAd, FaLaptopCode, FaHashtag, FaChartLine, FaLightbulb, FaUsers, FaMobileAlt, FaShoppingCart, FaArrowRight, FaPaintBrush, FaCode, FaServer, FaMapMarkerAlt, FaTrophy, FaHandshake, FaBullseye } from 'react-icons/fa';
-<link rel="canonical" href="https://www.caitsocialmedia.com/" />
 
 export default function HomePage() {
  <link rel="canonical" href="https://www.caitsocialmedia.com/" />
