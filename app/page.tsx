@@ -5,78 +5,75 @@ import { FaSearch, FaAd, FaLaptopCode, FaHashtag, FaChartLine, FaLightbulb, FaUs
 import ProSealWidget from "@/components/ProSealWidget";
 
 export default function HomePage() {
- <link rel="canonical" href="https://www.caitsocialmedia.com/" />
-
   return (
-<main className="px-4 py-12 md:px-6 max-w-7xl mx-auto bg-white text-blue-900 space-y-12 md:space-y-24">
+    <main className="px-4 py-12 md:px-6 max-w-7xl mx-auto bg-[#0c1832] text-white space-y-12 md:space-y-24">
 
-  {/* Hero Section */}
-  <section className="text-center py-12 md:py-20 bg-gradient-to-b from-blue-50 to-white rounded-3xl px-4 md:px-6 relative overflow-hidden">
+      {/* Hero Section */}
+      <section className="text-center py-12 md:py-20 bg-gradient-to-b from-blue-900/30 to-[#0c1832] rounded-3xl px-4 md:px-6 relative overflow-hidden">
 
-    {/* Hintergrunddeko */}
-    <div className="absolute inset-0 opacity-10 pointer-events-none" aria-hidden="true">
-      <div className="absolute top-0 left-0 w-32 h-32 bg-blue-400 rounded-full blur-xl"></div>
-      <div className="absolute bottom-0 right-0 w-32 h-32 bg-blue-600 rounded-full blur-xl"></div>
-    </div>
+        {/* Hintergrunddeko */}
+        <div className="absolute inset-0 opacity-10 pointer-events-none" aria-hidden="true">
+          <div className="absolute top-0 left-0 w-32 h-32 bg-blue-400 rounded-full blur-xl"></div>
+          <div className="absolute bottom-0 right-0 w-32 h-32 bg-blue-600 rounded-full blur-xl"></div>
+        </div>
 
-    <div className="max-w-4xl mx-auto relative z-10">
+        <div className="max-w-4xl mx-auto relative z-10">
 
-      {/* Hauptüberschrift */}
-      <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 text-blue-900">
-        <span className="text-blue-600">
-          CAIT Agentur Berlin
-        </span>{" "}
-        Ihre Top Marketing Agentur in Berlin
-      </h1>
+          {/* Hauptüberschrift */}
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 text-white">
+            <span className="text-blue-400">
+              CAIT Agentur Berlin
+            </span>{" "}
+            Ihre Top Marketing Agentur in Berlin
+          </h1>
 
-      {/* Hero-Text */}
-      <p className="text-lg md:text-xl lg:text-2xl mb-6 md:mb-8 text-blue-800">
-        Als führende <span className="font-semibold text-blue-700">SEO Agentur Berlin</span>, <span className="font-semibold text-blue-700">Google Ads Agentur Berlin</span>, <span className="font-semibold text-blue-700">Webdesign Agentur Berlin</span> und <span className="font-semibold text-blue-700">Social Media Agentur Berlin</span> helfen wir Unternehmen in Berlin, online sichtbar zu werden und mehr Kunden zu gewinnen.
-      </p>
+          {/* Hero-Text */}
+          <p className="text-lg md:text-xl lg:text-2xl mb-6 md:mb-8 text-blue-100">
+            Als führende <span className="font-semibold text-blue-300">SEO Agentur Berlin</span>, <span className="font-semibold text-blue-300">Google Ads Agentur Berlin</span>, <span className="font-semibold text-blue-300">Webdesign Agentur Berlin</span> und <span className="font-semibold text-blue-300">Social Media Agentur Berlin</span> helfen wir Unternehmen in Berlin, online sichtbar zu werden und mehr Kunden zu gewinnen.
+          </p>
 
-      {/* Tags */}
-      <div className="flex flex-wrap justify-center gap-4 mb-8">
-  {[
-    { text: "SEO Agentur Berlin", bg: "bg-blue-700", href: "/seo" },
-    { text: "Google Ads Berlin", bg: "bg-blue-700", href: "/google-ads" },
-    { text: "Webdesign Berlin", bg: "bg-blue-700", href: "/webentwicklung" },
-    { text: "Social Media Berlin", bg: "bg-blue-700", href: "/social-media" }
-  ].map((tag, index) => (
-    <Link
-      key={index}
-      href={tag.href}
-      className={`${tag.bg} text-white px-4 py-2 rounded-full text-sm font-medium shadow-md hover:brightness-110 transition`}
-    >
-      {tag.text}
-    </Link>
-  ))}
-</div>
+          {/* Tags */}
+          <div className="flex flex-wrap justify-center gap-4 mb-8">
+            {[
+              { text: "SEO Agentur Berlin", bg: "bg-blue-600", href: "/seo" },
+              { text: "Google Ads Berlin", bg: "bg-blue-600", href: "/google-ads" },
+              { text: "Webdesign Berlin", bg: "bg-blue-600", href: "/webentwicklung" },
+              { text: "Social Media Berlin", bg: "bg-blue-600", href: "/social-media" }
+            ].map((tag, index) => (
+              <Link
+                key={index}
+                href={tag.href}
+                className={`${tag.bg} text-white px-4 py-2 rounded-full text-sm font-medium shadow-md hover:brightness-110 transition`}
+              >
+                {tag.text}
+              </Link>
+            ))}
+          </div>
 
-      {/* CTA Buttons */}
-      <div className="flex flex-col sm:flex-row gap-4 justify-center">
-        <a
-          href="/kontakt"
-          className="inline-block bg-blue-600 text-white px-6 py-3 md:px-8 md:py-4 rounded-full font-bold shadow-lg hover:shadow-xl transition-all items-center gap-2 mx-auto"
-        >
-          Kostenlose Erstberatung in Berlin
-        </a>
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="/kontakt"
+              className="inline-block bg-blue-500 text-white px-6 py-3 md:px-8 md:py-4 rounded-full font-bold shadow-lg hover:shadow-xl transition-all items-center gap-2 mx-auto hover:bg-blue-400"
+            >
+              Kostenlose Erstberatung in Berlin
+            </a>
 
-        <a
-          href="tel:+493022689840"
-          className="inline-block bg-transparent border-2 border-blue-600 text-blue-600 px-6 py-3 md:px-8 md:py-4 rounded-full font-bold hover:bg-blue-600 hover:text-white transition items-center gap-2 mx-auto"
-        >
-          030 2268 9840
-        </a>
-      </div>
+            <a
+              href="tel:+493022689840"
+              className="inline-block bg-transparent border-2 border-blue-400 text-blue-400 px-6 py-3 md:px-8 md:py-4 rounded-full font-bold hover:bg-blue-400 hover:text-white transition items-center gap-2 mx-auto"
+            >
+              030 2268 9840
+            </a>
+          </div>
 
-      {/* Standort */}
-      <div className="mt-8 flex items-center justify-center gap-2 text-blue-700">
-        <FaMapMarkerAlt />
-        <span>Berlin Zehlendorf</span>
-      </div>
-
-    </div>
-  </section>
+          {/* Standort */}
+          <div className="mt-8 flex items-center justify-center gap-2 text-blue-300">
+            <FaMapMarkerAlt />
+            <span>Berlin Zehlendorf</span>
+          </div>
+        </div>
+      </section>
 
       {/* USP Section */}
       <motion.section
@@ -87,7 +84,7 @@ export default function HomePage() {
         className="max-w-6xl mx-auto px-4"
       >
         <motion.h2 
-          className="text-2xl md:text-3xl font-bold text-center mb-8 md:mb-12"
+          className="text-2xl md:text-3xl font-bold text-center mb-8 md:mb-12 text-white"
           initial={{ y: 20, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true }}
@@ -99,32 +96,32 @@ export default function HomePage() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
           {[
             {
-              icon: <FaTrophy className="text-3xl" />,
+              icon: <FaTrophy className="text-3xl text-blue-400" />,
               title: "Top-ranking SEO Agentur Berlin",
               content: "Als erfahrene SEO Agentur Berlin helfen wir Ihnen, in den organischen Suchergebnissen von Google auf Platz 1 zu ranken. Unsere datenbasierten Strategien steigern Ihre Sichtbarkeit nachhaltig."
             },
             {
-              icon: <FaChartLine className="text-3xl" />,
+              icon: <FaChartLine className="text-3xl text-blue-400" />,
               title: "Performance-starke Google Ads Berlin",
               content: "Als zertifizierte Google Ads Agentur Berlin erstellen wir hocheffiziente Kampagnen mit maximaler Conversion Rate. Wir optimieren kontinuierlich für den besten ROI."
             },
             {
-              icon: <FaUsers className="text-3xl" />,
+              icon: <FaUsers className="text-3xl text-blue-400" />,
               title: "Engagierende Social Media Agentur Berlin",
               content: "Als kreative Social Media Agentur Berlin entwickeln wir Content-Strategien, die Ihre Zielgruppe begeistern und echte Communities aufbauen."
             },
             {
-              icon: <FaLaptopCode className="text-3xl" />,
+              icon: <FaLaptopCode className="text-3xl text-blue-400" />,
               title: "Modernste Webdesign Agentur Berlin",
               content: "Als innovative Webdesign Agentur Berlin erstellen wir responsive Websites mit herausragender User Experience, die Besucher in Kunden verwandeln."
             },
             {
-              icon: <FaHandshake className="text-3xl" />,
+              icon: <FaHandshake className="text-3xl text-blue-400" />,
               title: "Lokale Expertise für Berliner Unternehmen",
               content: "Wir kennen die Berliner Märkte und Zielgruppen. Unsere Marketingstrategien sind perfekt auf die Bedürfnisse von Berliner Unternehmen zugeschnitten."
             },
             {
-              icon: <FaBullseye className="text-3xl" />,
+              icon: <FaBullseye className="text-3xl text-blue-400" />,
               title: "Transparente Erfolgsmessung",
               content: "Klare KPIs und regelmäßige Berichte zeigen Ihnen genau, wie wir Ihre Marketingziele erreichen. Sie sehen jederzeit den ROI Ihrer Investition."
             }
@@ -142,19 +139,19 @@ export default function HomePage() {
               }}
               whileHover={{ 
                 y: -5,
-                boxShadow: "0 10px 25px rgba(37, 99, 235, 0.1)"
+                boxShadow: "0 10px 25px rgba(59, 130, 246, 0.2)"
               }}
-              className="bg-white p-6 md:p-8 rounded-xl shadow-md border border-blue-100"
+              className="bg-[#1a2a4a] p-6 md:p-8 rounded-xl shadow-md border border-blue-900/50"
             >
-              <div className="text-blue-600 mb-4 flex justify-center">
+              <div className="text-blue-400 mb-4 flex justify-center">
                 <motion.div
                   whileHover={{ scale: 1.1 }}
                 >
                   {item.icon}
                 </motion.div>
               </div>
-              <h3 className="text-lg md:text-xl font-bold mb-3">{item.title}</h3>
-              <p className="text-blue-800 text-sm md:text-base">{item.content}</p>
+              <h3 className="text-lg md:text-xl font-bold mb-3 text-white">{item.title}</h3>
+              <p className="text-blue-100 text-sm md:text-base">{item.content}</p>
             </motion.div>
           ))}
         </div>
@@ -166,7 +163,7 @@ export default function HomePage() {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
-        className="bg-white rounded-3xl overflow-hidden border border-blue-100"
+        className="bg-[#1a2a4a] rounded-3xl overflow-hidden border border-blue-900/50"
       >
         <div className="flex flex-col lg:flex-row">
           <div className="w-full lg:w-1/2 p-6 md:p-8 lg:p-10 order-2 lg:order-1">
@@ -177,10 +174,10 @@ export default function HomePage() {
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
             >
-              <div className="bg-blue-100 p-2 md:p-3 rounded-full mr-3 md:mr-4">
-                <FaSearch className="text-blue-600 text-xl md:text-2xl" />
+              <div className="bg-blue-900/50 p-2 md:p-3 rounded-full mr-3 md:mr-4">
+                <FaSearch className="text-blue-400 text-xl md:text-2xl" />
               </div>
-              <h2 className="text-xl md:text-2xl lg:text-3xl font-bold">
+              <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-white">
                 SEO Agentur Berlin - Nachhaltig auf Platz 1 ranken
               </h2>
             </motion.div>
@@ -190,9 +187,9 @@ export default function HomePage() {
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="text-base md:text-lg mb-6 text-blue-600"
+              className="text-base md:text-lg mb-6 text-blue-200"
             >
-              <strong>93% aller Online-Erlebnisse beginnen mit einer Suchmaschine.</strong> Als erfahrene SEO Agentur Berlin helfen wir Ihnen, in den organischen Suchergebnissen für Ihre wichtigsten Keywords zu ranken - nachhaltig und kosteneffizient.
+              <strong className="text-blue-100">93% aller Online-Erlebnisse beginnen mit einer Suchmaschine.</strong> Als erfahrene SEO Agentur Berlin helfen wir Ihnen, in den organischen Suchergebnissen für Ihre wichtigsten Keywords zu ranken - nachhaltig und kosteneffizient.
             </motion.p>
             
             <div className="space-y-6">
@@ -237,15 +234,15 @@ export default function HomePage() {
                   whileInView={{ y: 0, opacity: 1 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1 }}
-                  className="bg-blue-50 p-4 md:p-5 rounded-lg"
+                  className="bg-blue-900/30 p-4 md:p-5 rounded-lg border border-blue-900/50"
                 >
-                  <h3 className="font-bold text-lg md:text-xl mb-3 text-blue-700">{section.title}</h3>
-                  <p className="text-blue-800 mb-3">{section.content}</p>
+                  <h3 className="font-bold text-lg md:text-xl mb-3 text-blue-300">{section.title}</h3>
+                  <p className="text-blue-100 mb-3">{section.content}</p>
                   <ul className="space-y-2 pl-5">
                     {section.items.map((item, i) => (
                       <motion.li 
                         key={i}
-                        className="text-blue-800 relative before:absolute before:left-0 before:top-2 before:w-1.5 before:h-1.5 before:bg-blue-500 before:rounded-full pl-4"
+                        className="text-blue-100 relative before:absolute before:left-0 before:top-2 before:w-1.5 before:h-1.5 before:bg-blue-400 before:rounded-full pl-4"
                         initial={{ x: -10, opacity: 0 }}
                         whileInView={{ x: 0, opacity: 1 }}
                         viewport={{ once: true }}
@@ -259,8 +256,8 @@ export default function HomePage() {
               ))}
             </div>
 
-            <div className="mt-8 bg-blue-100 p-4 rounded-lg border border-blue-200">
-              <h3 className="font-bold text-lg mb-2 text-blue-700">SEO Erfolge für Berliner Kunden</h3>
+            <div className="mt-8 bg-blue-900/30 p-4 rounded-lg border border-blue-900/50">
+              <h3 className="font-bold text-lg mb-2 text-blue-300">SEO Erfolge für Berliner Kunden</h3>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 {[
                   { value: "+240%", label: "Organische Sichtbarkeit" },
@@ -274,10 +271,10 @@ export default function HomePage() {
                     whileInView={{ scale: 1, opacity: 1 }}
                     viewport={{ once: true }}
                     transition={{ delay: i * 0.1 }}
-                    className="bg-white p-3 rounded-lg text-center shadow-sm"
+                    className="bg-[#0c1832] p-3 rounded-lg text-center shadow-sm border border-blue-900/50"
                   >
-                    <div className="text-2xl font-bold text-blue-600">{stat.value}</div>
-                    <div className="text-sm text-blue-800">{stat.label}</div>
+                    <div className="text-2xl font-bold text-blue-400">{stat.value}</div>
+                    <div className="text-sm text-blue-200">{stat.label}</div>
                   </motion.div>
                 ))}
               </div>
@@ -294,56 +291,50 @@ export default function HomePage() {
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.98 }}
                 href="/seo"
-                className="inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-full px-6 py-3 md:px-8 md:py-3.5 transition-all w-full sm:w-auto"
+                className="inline-flex items-center justify-center bg-blue-600 hover:bg-blue-500 text-white font-medium rounded-full px-6 py-3 md:px-8 md:py-3.5 transition-all w-full sm:w-auto"
               >
                 SEO-Strategie für Berlin entwickeln
                 <FaArrowRight className="ml-2" />
               </motion.a>
-              <p className="text-sm text-blue-700 mt-3 text-center sm:text-left">
+              <p className="text-sm text-blue-300 mt-3 text-center sm:text-left">
                 Als führende SEO Agentur Berlin helfen wir Ihnen, nachhaltig auf Platz 1 zu ranken.
               </p>
             </motion.div>
           </div>
 
           <div className="w-full lg:w-1/2 order-1 lg:order-2 relative min-h-[300px]">
-            <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-blue-100 flex items-center justify-center p-8">
+            <div className="absolute inset-0 bg-gradient-to-br from-blue-900/30 to-blue-900/50 flex items-center justify-center p-8">
               <div className="text-center max-w-md">
-                <motion.div
-                  animate={{
-                    y: [0, -10, 0],
-                    rotate: [0, 2, 0]
-                  }}
-                  transition={{
-                    duration: 8,
-                    repeat: Infinity,
-                    repeatType: "reverse"
-                  }}
-                >
-                  <h3 className="text-xl font-bold mb-4 text-blue-900">SEO Agentur Berlin - Unsere Leistungen</h3>
-                  <ul className="space-y-3 text-left">
-                    {[
-                      "Technische SEO-Analyse",
-                      "Content-Strategie mit Berlin-Bezug",
-                      "Lokale SEO für Berliner Unternehmen",
-                      "Shop-SEO für E-Commerce",
-                      "SEO-Beratung vor Ort in Berlin",
-                      "Regelmäßige Reporting-Gespräche"
-                    ].map((item, i) => (
-                      <motion.li 
-                        key={i}
-                        initial={{ x: 20, opacity: 0 }}
-                        whileInView={{ x: 0, opacity: 1 }}
-                        viewport={{ once: true }}
-                        transition={{ delay: i * 0.1 }}
-                        className="flex items-start"
-                      >
-                        <span className="text-blue-600 mr-2">✓</span>
-                        <span>{item}</span>
-                      </motion.li>
-                    ))}
-                  </ul>
-                </motion.div>
-              </div>
+  <div>
+    <h3 className="text-xl font-bold mb-4 text-white">SEO Agentur Berlin - Unsere Leistungen</h3>
+    <ul className="space-y-3 text-left text-blue-100">
+      {[
+        "Technische SEO-Analyse",
+        "Content-Strategie mit Berlin-Bezug",
+        "Lokale SEO für Berliner Unternehmen",
+        "Shop-SEO für E-Commerce",
+        "SEO-Beratung vor Ort in Berlin",
+        "Regelmäßige Reporting-Gespräche"
+      ].map((item, i) => (
+        <motion.li 
+          key={i}
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ 
+            duration: 0.5,
+            delay: i * 0.1,
+            ease: "easeOut"
+          }}
+          className="flex items-start"
+        >
+          <span className="text-blue-400 mr-2">✓</span>
+          <span>{item}</span>
+        </motion.li>
+      ))}
+    </ul>
+  </div>
+</div>
             </div>
           </div>
         </div>
@@ -355,7 +346,7 @@ export default function HomePage() {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
-        className="bg-white rounded-3xl overflow-hidden border border-blue-100"
+        className="bg-[#1a2a4a] rounded-3xl overflow-hidden border border-blue-900/50"
       >
         <div className="grid lg:grid-cols-2 gap-8 md:gap-12">
           <div className="h-full min-h-[300px] md:min-h-[500px] order-2 lg:order-1 relative">
@@ -364,9 +355,9 @@ export default function HomePage() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="absolute inset-0 bg-blue-100 flex items-center justify-center rounded-r-3xl overflow-hidden"
+              className="absolute inset-0 bg-blue-900/30 flex items-center justify-center rounded-r-3xl overflow-hidden"
             >
-              <div className="absolute inset-0 opacity-20 bg-gradient-to-l from-blue-400 to-blue-600"></div>
+              <div className="absolute inset-0 opacity-20 bg-gradient-to-l from-blue-700 to-blue-500"></div>
               <motion.div
                 animate={{
                   scale: [1, 1.05, 1],
@@ -380,8 +371,8 @@ export default function HomePage() {
                 className="relative z-10 text-center p-6 md:p-8"
               >
                 <div className="text-4xl md:text-6xl mb-3 md:mb-4">📈</div>
-                <h3 className="text-lg md:text-xl font-bold mb-2 text-blue-900">Google Ads Berlin - Unsere Erfolge</h3>
-                <ul className="text-left max-w-xs mx-auto space-y-2 text-blue-900 text-sm md:text-base">
+                <h3 className="text-lg md:text-xl font-bold mb-2 text-white">Google Ads Berlin - Unsere Erfolge</h3>
+                <ul className="text-left max-w-xs mx-auto space-y-2 text-blue-100 text-sm md:text-base">
                   {[
                     "Durchschnittlich 35% niedrigere CPA",
                     "Bis zu 300% mehr Conversions",
@@ -397,7 +388,7 @@ export default function HomePage() {
                       viewport={{ once: true }}
                       transition={{ delay: 0.1 * index }}
                     >
-                      <span className="text-blue-600">✔</span> {item}
+                      <span className="text-blue-400">✔</span> {item}
                     </motion.li>
                   ))}
                 </ul>
@@ -413,10 +404,10 @@ export default function HomePage() {
               transition={{ duration: 0.5 }}
               className="flex items-center mb-4 md:mb-6"
             >
-              <div className="bg-blue-100 p-2 md:p-3 rounded-full mr-3 md:mr-4">
-                <FaAd className="text-blue-600 text-xl md:text-2xl" />
+              <div className="bg-blue-900/50 p-2 md:p-3 rounded-full mr-3 md:mr-4">
+                <FaAd className="text-blue-400 text-xl md:text-2xl" />
               </div>
-              <h2 className="text-2xl md:text-3xl font-bold">Google Ads Agentur Berlin</h2>
+              <h2 className="text-2xl md:text-3xl font-bold text-white">Google Ads Agentur Berlin</h2>
             </motion.div>
             
             <motion.p
@@ -424,9 +415,9 @@ export default function HomePage() {
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="text-base md:text-lg mb-4 md:mb-6 text-blue-800"
+              className="text-base md:text-lg mb-4 md:mb-6 text-blue-100"
             >
-              <strong>Als zertifizierte Google Ads Agentur Berlin</strong> erstellen wir hocheffiziente Kampagnen, die messbare Ergebnisse liefern. Unternehmen in Berlin verdienen durchschnittlich 200% ROI mit unseren optimierten Google Ads Strategien.
+              <strong className="text-blue-300">Als zertifizierte Google Ads Agentur Berlin</strong> erstellen wir hocheffiziente Kampagnen, die messbare Ergebnisse liefern. Unternehmen in Berlin verdienen durchschnittlich 200% ROI mit unseren optimierten Google Ads Strategien.
             </motion.p>
             
             <div className="space-y-6 md:space-y-8">
@@ -479,10 +470,11 @@ export default function HomePage() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: 0.1 * index }}
+                  className="bg-[#0c1832] p-4 rounded-lg border border-blue-900/50"
                 >
-                  <h3 className="font-bold text-lg md:text-xl mb-2 md:mb-3">{section.title}</h3>
-                  <p className="text-blue-800 text-sm md:text-base mb-3 md:mb-4">{section.content}</p>
-                  <ul className="list-disc list-inside space-y-2 pl-4 text-blue-800 text-sm md:text-base">
+                  <h3 className="font-bold text-lg md:text-xl mb-2 md:mb-3 text-blue-300">{section.title}</h3>
+                  <p className="text-blue-100 text-sm md:text-base mb-3 md:mb-4">{section.content}</p>
+                  <ul className="list-disc list-inside space-y-2 pl-4 text-blue-100 text-sm md:text-base">
                     {section.items.map((item, i) => (
                       <motion.li
                         key={i}
@@ -501,9 +493,9 @@ export default function HomePage() {
                       whileInView={{ opacity: 1 }}
                       viewport={{ once: true }}
                       transition={{ delay: 0.3 }}
-                      className="mt-3 md:mt-4 p-3 md:p-4 bg-blue-100 rounded-lg border border-blue-200 text-sm md:text-base"
+                      className="mt-3 md:mt-4 p-3 md:p-4 bg-blue-900/30 rounded-lg border border-blue-900/50 text-sm md:text-base"
                     >
-                      <p className="text-blue-800"><strong>Erfolgsbeispiel aus Berlin:</strong> {section.example}</p>
+                      <p className="text-blue-100"><strong className="text-blue-300">Erfolgsbeispiel aus Berlin:</strong> {section.example}</p>
                     </motion.div>
                   )}
                 </motion.div>
@@ -520,15 +512,15 @@ export default function HomePage() {
               <motion.a
                 whileHover={{ 
                   scale: 1.03,
-                  boxShadow: "0 5px 15px rgba(37, 99, 235, 0.3)"
+                  boxShadow: "0 5px 15px rgba(59, 130, 246, 0.3)"
                 }}
                 href="/google-ads"
-                className="bg-blue-600 text-white px-5 py-2 md:px-6 md:py-3 rounded-lg font-semibold shadow hover:shadow-xl transition flex items-center gap-2 text-sm md:text-base w-full sm:w-auto justify-center"
+                className="bg-blue-600 text-white px-5 py-2 md:px-6 md:py-3 rounded-lg font-semibold shadow hover:shadow-xl transition flex items-center gap-2 text-sm md:text-base w-full sm:w-auto justify-center hover:bg-blue-500"
               >
                 Kostenlose Google Ads Beratung
                 <FaArrowRight />
               </motion.a>
-              <p className="text-xs md:text-sm text-blue-700 mt-2 text-center sm:text-left">
+              <p className="text-xs md:text-sm text-blue-300 mt-2 text-center sm:text-left">
                 Als Google Ads Agentur Berlin bieten wir Ihnen maßgeschneiderte Lösungen für Ihren Markterfolg.
               </p>
             </motion.div>
@@ -542,7 +534,7 @@ export default function HomePage() {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
-        className="bg-blue-50 rounded-3xl overflow-hidden"
+        className="bg-[#1a2a4a] rounded-3xl overflow-hidden border border-blue-900/50"
       >
         <div className="grid lg:grid-cols-2 gap-8 md:gap-12">
           <div className="p-6 md:p-10 lg:p-14">
@@ -553,10 +545,10 @@ export default function HomePage() {
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
             >
-              <div className="bg-blue-100 p-2 md:p-3 rounded-full mr-3 md:mr-4">
-                <FaLaptopCode className="text-blue-600 text-xl md:text-2xl" />
+              <div className="bg-blue-900/50 p-2 md:p-3 rounded-full mr-3 md:mr-4">
+                <FaLaptopCode className="text-blue-400 text-xl md:text-2xl" />
               </div>
-              <h2 className="text-2xl md:text-3xl font-bold">Webdesign Agentur Berlin</h2>
+              <h2 className="text-2xl md:text-3xl font-bold text-white">Webdesign Agentur Berlin</h2>
             </motion.div>
             
             <motion.p
@@ -564,9 +556,9 @@ export default function HomePage() {
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="text-base md:text-lg mb-4 md:mb-6 text-blue-800"
+              className="text-base md:text-lg mb-4 md:mb-6 text-blue-100"
             >
-              <strong>Als kreative Webdesign Agentur Berlin</strong> entwickeln wir moderne Websites, die Besucher begeistern und in Kunden verwandeln. Eine professionelle Website ist Ihr wichtigster Verkaufsmitarbeiter - 24/7 verfügbar.
+              <strong className="text-blue-300">Als kreative Webdesign Agentur Berlin</strong> entwickeln wir moderne Websites, die Besucher begeistern und in Kunden verwandeln. Eine professionelle Website ist Ihr wichtigster Verkaufsmitarbeiter - 24/7 verfügbar.
             </motion.p>
             
             <div className="space-y-6 md:space-y-8">
@@ -580,7 +572,7 @@ export default function HomePage() {
                     "Schnelle Ladezeiten",
                     "Barrierefreie Umsetzung"
                   ],
-                  icon: <FaMobileAlt className="text-blue-500" />
+                  icon: <FaMobileAlt className="text-blue-400" />
                 },
                 {
                   title: "2. Conversion-Optimierung",
@@ -591,7 +583,7 @@ export default function HomePage() {
                     "Vertrauenssignale & Social Proof",
                     "Checkout-Optimierung"
                   ],
-                  icon: <FaShoppingCart className="text-blue-500" />
+                  icon: <FaShoppingCart className="text-blue-400" />
                 },
                 {
                   title: "3. E-Commerce Lösungen für Berlin",
@@ -621,14 +613,14 @@ export default function HomePage() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: 0.1 * index }}
-                  className="bg-white p-4 rounded-lg border border-blue-100"
+                  className="bg-[#0c1832] p-4 rounded-lg border border-blue-900/50"
                 >
                   <div className="flex items-center gap-3 mb-2">
                     {section.icon && section.icon}
-                    <h3 className="font-bold text-lg md:text-xl">{section.title}</h3>
+                    <h3 className="font-bold text-lg md:text-xl text-blue-300">{section.title}</h3>
                   </div>
-                  <p className="text-blue-800 text-sm md:text-base mb-3">{section.content}</p>
-                  <ul className="list-disc list-inside space-y-2 pl-4 text-blue-800 text-sm md:text-base">
+                  <p className="text-blue-100 text-sm md:text-base mb-3">{section.content}</p>
+                  <ul className="list-disc list-inside space-y-2 pl-4 text-blue-100 text-sm md:text-base">
                     {section.items.map((item, i) => (
                       <motion.li
                         key={i}
@@ -647,9 +639,9 @@ export default function HomePage() {
                       whileInView={{ opacity: 1 }}
                       viewport={{ once: true }}
                       transition={{ delay: 0.3 }}
-                      className="mt-3 p-3 bg-blue-100 rounded border border-blue-200 text-sm md:text-base"
+                      className="mt-3 p-3 bg-blue-900/30 rounded border border-blue-900/50 text-sm md:text-base"
                     >
-                      <p className="text-blue-800"><strong>Berliner Erfolgsbeispiel:</strong> {section.example}</p>
+                      <p className="text-blue-100"><strong className="text-blue-300">Berliner Erfolgsbeispiel:</strong> {section.example}</p>
                     </motion.div>
                   )}
                 </motion.div>
@@ -671,9 +663,9 @@ export default function HomePage() {
                   whileInView={{ scale: 1, opacity: 1 }}
                   viewport={{ once: true }}
                   transition={{ delay: i * 0.1 + 0.3 }}
-                  className="bg-white p-3 rounded-lg border border-blue-200 text-center shadow-sm"
+                  className="bg-[#0c1832] p-3 rounded-lg border border-blue-900/50 text-center shadow-sm"
                 >
-                  <div className="text-blue-600 text-sm">{feature}</div>
+                  <div className="text-blue-400 text-sm">{feature}</div>
                 </motion.div>
               ))}
             </div>
@@ -685,9 +677,9 @@ export default function HomePage() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="absolute inset-0 bg-blue-100 flex items-center justify-center rounded-l-3xl overflow-hidden"
+              className="absolute inset-0 bg-blue-900/30 flex items-center justify-center rounded-l-3xl overflow-hidden"
             >
-              <div className="absolute inset-0 opacity-20 bg-gradient-to-r from-blue-400 to-blue-600"></div>
+              <div className="absolute inset-0 opacity-20 bg-gradient-to-r from-blue-700 to-blue-500"></div>
               <motion.div
                 animate={{
                   y: [0, -10, 0],
@@ -701,8 +693,8 @@ export default function HomePage() {
                 className="relative z-10 text-center p-6 md:p-8"
               >
                 <div className="text-4xl md:text-6xl mb-3 md:mb-4">💻</div>
-                <h3 className="text-lg md:text-xl font-bold mb-2 text-blue-900">Webdesign Berlin - Unsere Technologien</h3>
-                <ul className="text-left max-w-xs mx-auto space-y-2 text-blue-900 text-sm md:text-base">
+                <h3 className="text-lg md:text-xl font-bold mb-2 text-white">Webdesign Berlin - Unsere Technologien</h3>
+                <ul className="text-left max-w-xs mx-auto space-y-2 text-blue-100 text-sm md:text-base">
                   {[
                     "React.js / Next.js",
                     "WordPress / WooCommerce",
@@ -719,7 +711,7 @@ export default function HomePage() {
                       viewport={{ once: true }}
                       transition={{ delay: 0.1 * index }}
                     >
-                      <span className="text-blue-600">✔</span> {item}
+                      <span className="text-blue-400">✔</span> {item}
                     </motion.li>
                   ))}
                 </ul>
@@ -735,7 +727,7 @@ export default function HomePage() {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
-        className="bg-white rounded-3xl overflow-hidden border border-blue-100"
+        className="bg-[#1a2a4a] rounded-3xl overflow-hidden border border-blue-900/50"
       >
         <div className="grid lg:grid-cols-2 gap-8 md:gap-12">
           <div className="h-full min-h-[300px] md:min-h-[500px] order-2 lg:order-1 relative">
@@ -744,9 +736,9 @@ export default function HomePage() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="absolute inset-0 bg-blue-50 flex items-center justify-center rounded-r-3xl overflow-hidden"
+              className="absolute inset-0 bg-blue-900/30 flex items-center justify-center rounded-r-3xl overflow-hidden"
             >
-              <div className="absolute inset-0 opacity-20 bg-gradient-to-l from-blue-400 to-blue-600"></div>
+              <div className="absolute inset-0 opacity-20 bg-gradient-to-l from-blue-700 to-blue-500"></div>
               <motion.div
                 animate={{
                   scale: [1, 1.05, 1],
@@ -760,8 +752,8 @@ export default function HomePage() {
                 className="relative z-10 text-center p-6 md:p-8"
               >
                 <div className="text-4xl md:text-6xl mb-3 md:mb-4">📱</div>
-                <h3 className="text-lg md:text-xl font-bold mb-2 text-blue-900">Social Media Berlin - Unsere Plattformen</h3>
-                <ul className="text-left max-w-xs mx-auto space-y-2 text-blue-900 text-sm md:text-base">
+                <h3 className="text-lg md:text-xl font-bold mb-2 text-white">Social Media Berlin - Unsere Plattformen</h3>
+                <ul className="text-left max-w-xs mx-auto space-y-2 text-blue-100 text-sm md:text-base">
                   {[
                     "Instagram Marketing",
                     "Facebook Kampagnen",
@@ -777,7 +769,7 @@ export default function HomePage() {
                       viewport={{ once: true }}
                       transition={{ delay: 0.1 * index }}
                     >
-                      <span className="text-blue-600">✔</span> {item}
+                      <span className="text-blue-400">✔</span> {item}
                     </motion.li>
                   ))}
                 </ul>
@@ -793,10 +785,10 @@ export default function HomePage() {
               transition={{ duration: 0.5 }}
               className="flex items-center mb-4 md:mb-6"
             >
-              <div className="bg-blue-100 p-2 md:p-3 rounded-full mr-3 md:mr-4">
-                <FaHashtag className="text-blue-600 text-xl md:text-2xl" />
+              <div className="bg-blue-900/50 p-2 md:p-3 rounded-full mr-3 md:mr-4">
+                <FaHashtag className="text-blue-400 text-xl md:text-2xl" />
               </div>
-              <h2 className="text-2xl md:text-3xl font-bold">Social Media Agentur Berlin</h2>
+              <h2 className="text-2xl md:text-3xl font-bold text-white">Social Media Agentur Berlin</h2>
             </motion.div>
             
             <motion.p
@@ -804,9 +796,9 @@ export default function HomePage() {
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="text-base md:text-lg mb-4 md:mb-6 text-blue-800"
+              className="text-base md:text-lg mb-4 md:mb-6 text-blue-100"
             >
-              <strong>Als kreative Social Media Agentur Berlin</strong> entwickeln wir Content-Strategien, die Ihre Zielgruppe begeistern und echte Communities aufbauen. Social Media ist das neue Schaufenster Ihres Unternehmens.
+              <strong className="text-blue-300">Als kreative Social Media Agentur Berlin</strong> entwickeln wir Content-Strategien, die Ihre Zielgruppe begeistern und echte Communities aufbauen. Social Media ist das neue Schaufenster Ihres Unternehmens.
             </motion.p>
             
             <div className="space-y-6 md:space-y-8">
@@ -859,11 +851,11 @@ export default function HomePage() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: 0.1 * index }}
-                  className="bg-white p-4 rounded-lg border border-blue-100"
+                  className="bg-[#0c1832] p-4 rounded-lg border border-blue-900/50"
                 >
-                  <h3 className="font-bold text-lg md:text-xl mb-2">{section.title}</h3>
-                  <p className="text-blue-800 text-sm md:text-base mb-3">{section.content}</p>
-                  <ul className="list-disc list-inside space-y-2 pl-4 text-blue-800 text-sm md:text-base">
+                  <h3 className="font-bold text-lg md:text-xl mb-2 text-blue-300">{section.title}</h3>
+                  <p className="text-blue-100 text-sm md:text-base mb-3">{section.content}</p>
+                  <ul className="list-disc list-inside space-y-2 pl-4 text-blue-100 text-sm md:text-base">
                     {section.items.map((item, i) => (
                       <motion.li
                         key={i}
@@ -882,9 +874,9 @@ export default function HomePage() {
                       whileInView={{ opacity: 1 }}
                       viewport={{ once: true }}
                       transition={{ delay: 0.3 }}
-                      className="mt-3 p-3 bg-blue-100 rounded border border-blue-200 text-sm md:text-base"
+                      className="mt-3 p-3 bg-blue-900/30 rounded border border-blue-900/50 text-sm md:text-base"
                     >
-                      <p className="text-blue-800"><strong>Berliner Erfolgsbeispiel:</strong> {section.example}</p>
+                      <p className="text-blue-100"><strong className="text-blue-300">Berliner Erfolgsbeispiel:</strong> {section.example}</p>
                     </motion.div>
                   )}
                 </motion.div>
@@ -901,15 +893,15 @@ export default function HomePage() {
               <motion.a
                 whileHover={{ 
                   scale: 1.03,
-                  boxShadow: "0 5px 15px rgba(37, 99, 235, 0.3)"
+                  boxShadow: "0 5px 15px rgba(59, 130, 246, 0.3)"
                 }}
                 href="/social-media"
-                className="bg-blue-600 text-white px-5 py-2 md:px-6 md:py-3 rounded-lg font-semibold shadow hover:shadow-xl transition flex items-center gap-2 text-sm md:text-base w-full sm:w-auto justify-center"
+                className="bg-blue-600 text-white px-5 py-2 md:px-6 md:py-3 rounded-lg font-semibold shadow hover:shadow-xl transition flex items-center gap-2 text-sm md:text-base w-full sm:w-auto justify-center hover:bg-blue-500"
               >
                 Social Media Strategie entwickeln
                 <FaArrowRight />
               </motion.a>
-              <p className="text-xs md:text-sm text-blue-700 mt-2 text-center sm:text-left">
+              <p className="text-xs md:text-sm text-blue-300 mt-2 text-center sm:text-left">
                 Als Social Media Agentur Berlin helfen wir Ihnen, Ihre Zielgruppe zu begeistern.
               </p>
             </motion.div>
@@ -923,7 +915,7 @@ export default function HomePage() {
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
-        className="bg-blue-600 text-white rounded-3xl p-6 md:p-12 text-center relative overflow-hidden"
+        className="bg-gradient-to-r from-blue-700 to-blue-900 text-white rounded-3xl p-6 md:p-12 text-center relative overflow-hidden"
       >
         <motion.div 
           className="absolute inset-0 opacity-10"
@@ -976,7 +968,7 @@ export default function HomePage() {
               }}
               whileTap={{ scale: 0.95 }}
               href="/kontakt"
-              className="bg-white text-blue-600 px-6 py-3 md:px-8 md:py-4 rounded-full font-bold shadow-lg hover:shadow-xl transition flex items-center gap-2 text-sm md:text-base justify-center"
+              className="bg-white text-blue-700 px-6 py-3 md:px-8 md:py-4 rounded-full font-bold shadow-lg hover:shadow-xl transition flex items-center gap-2 text-sm md:text-base justify-center"
             >
               Jetzt Termin vereinbaren
               <motion.span
@@ -1000,7 +992,7 @@ export default function HomePage() {
               }}
               whileTap={{ scale: 0.95 }}
               href="tel:+493022689840"
-              className="bg-transparent border-2 border-white px-6 py-3 md:px-8 md:py-4 rounded-full font-bold hover:bg-white hover:text-blue-600 transition flex items-center gap-2 text-sm md:text-base justify-center"
+              className="bg-transparent border-2 border-white px-6 py-3 md:px-8 md:py-4 rounded-full font-bold hover:bg-white hover:text-blue-700 transition flex items-center gap-2 text-sm md:text-base justify-center"
             >
               <span>030 2268 9840</span>
             </motion.a>
@@ -1011,15 +1003,13 @@ export default function HomePage() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.6 }}
-            className="mt-4 md:mt-6 text-blue-100 text-sm md:text-base"
+            className="mt-4 md:mt-6 text-blue-200 text-sm md:text-base"
           >
             CAIT Agentur Berlin | Berliner Straße 17 | 14169 Berlin-Zehlendorf
           </motion.p>
         </div>
       </motion.section>
-            <ProSealWidget />
-
+      <ProSealWidget />
     </main>
-    
   );
 }
