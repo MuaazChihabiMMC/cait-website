@@ -5,26 +5,27 @@ export default function DatenschutzPageClient() {
   const [expanded, setExpanded] = useState(false);
 
   const introHTML = `
-    <h1>Datenschutzerklärung nach DSGVO, CAIT Marketing Berlin</h1>
-    <h2>1. Datenschutz auf einen Blick</h2>
-    <h3>Allgemeine Hinweise</h3>
-    <p>Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert ...</p>
-    <h3>Datenerfassung auf dieser Website</h3>
-    <h4>Wer ist verantwortlich für die Datenerfassung auf dieser Website?</h4>
-    <p>Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber ...</p>
-    <h4>Wie erfassen wir Ihre Daten?</h4>
-    <p>Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen ...</p>
-    <h4>Wofür nutzen wir Ihre Daten?</h4>
-    <p>Ein Teil der Daten wird erhoben, um eine fehlerfreie Bereitstellung der Website zu gewährleisten ...</p>
-    <h4>Welche Rechte haben Sie bezüglich Ihrer Daten?</h4>
-    <p>Sie haben jederzeit das Recht, unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten ...</p>
+    <h1 class="text-white text-3xl font-bold mb-6">Datenschutzerklärung nach DSGVO, CAIT Marketing Berlin</h1>
+    <h2 class="text-blue-300 text-2xl font-semibold mb-4">1. Datenschutz auf einen Blick</h2>
+    <h3 class="text-blue-200 text-xl font-medium mb-3">Allgemeine Hinweise</h3>
+    <p class="text-blue-100 mb-4">Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert ...</p>
+    <h3 class="text-blue-200 text-xl font-medium mb-3">Datenerfassung auf dieser Website</h3>
+    <h4 class="text-blue-200 text-lg font-medium mb-2">Wer ist verantwortlich für die Datenerfassung auf dieser Website?</h4>
+    <p class="text-blue-100 mb-4">Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber ...</p>
+    <h4 class="text-blue-200 text-lg font-medium mb-2">Wie erfassen wir Ihre Daten?</h4>
+    <p class="text-blue-100 mb-4">Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen ...</p>
+    <h4 class="text-blue-200 text-lg font-medium mb-2">Wofür nutzen wir Ihre Daten?</h4>
+    <p class="text-blue-100 mb-4">Ein Teil der Daten wird erhoben, um eine fehlerfreie Bereitstellung der Website zu gewährleisten ...</p>
+    <h4 class="text-blue-200 text-lg font-medium mb-2">Welche Rechte haben Sie bezüglich Ihrer Daten?</h4>
+    <p class="text-blue-100 mb-6">Sie haben jederzeit das Recht, unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten ...</p>
   `;
- const restHTML = `
-    <h3>Analyse-Tools und Tools von Drittanbietern</h3>
-    <p>Beim Besuch dieser Website kann Ihr Surf-Verhalten statistisch ausgewertet werden ...</p>
-    <h2>2. Hosting</h2>
-    <h3>Strato</h3>
-    <p>Anbieter ist die Strato AG, Otto-Ostrowski-Straße 7, 10249 Berlin ...</p>
+
+  const restHTML = `
+    <h3 class="text-blue-200 text-xl font-medium mb-3">Analyse-Tools und Tools von Drittanbietern</h3>
+    <p class="text-blue-100 mb-6">Beim Besuch dieser Website kann Ihr Surf-Verhalten statistisch ausgewertet werden ...</p>
+    <h2 class="text-blue-300 text-2xl font-semibold mb-4">2. Hosting</h2>
+    <h3 class="text-blue-200 text-xl font-medium mb-3">Strato</h3>
+    <p class="text-blue-100 mb-6">Anbieter ist die Strato AG, Otto-Ostrowski-Straße 7, 10249 Berlin ...</p>
   <h3>Analyse-Tools und Tools von Dritt&shy;anbietern</h3> <p>Beim Besuch dieser Website kann Ihr Surf-Verhalten statistisch ausgewertet werden. Das geschieht vor allem mit sogenannten Analyseprogrammen.</p> <p>Detaillierte Informationen zu diesen Analyseprogrammen finden Sie in der folgenden Datenschutzerkl&auml;rung.</p>
 <h2>2. Hosting</h2>
 <p>Wir hosten die Inhalte unserer Website bei folgendem Anbieter:</p>
@@ -74,35 +75,39 @@ E-Mail: info@caitsocialmedia.com</p>
 <p>Quelle: <a href="https://www.e-recht24.de">https://www.e-recht24.de</a></p>
 
   `;
-  return (
-    <section className="px-6 py-20 max-w-4xl mx-auto text-black leading-relaxed [&_a]:text-blue-800 [&_a:hover]:underline [&_h1]:text-3xl [&_h2]:text-2xl [&_h3]:text-xl [&_h4]:text-lg [&_ul]:list-disc [&_ul]:ml-6 [&_p]:mb-4">
-      <h1 className="text-3xl font-bold mb-8">Datenschutzerklärung</h1>
-      <p className="mb-6 text-gray-700">
-        Wir nehmen den Schutz deiner Daten ernst. Hier findest du unsere vollständige Datenschutzerklärung.
-      </p>
+ return (
+    <section className="px-6 py-20 max-w-4xl mx-auto">
+      <div className="bg-[#0c1832] p-8 rounded-xl border border-blue-400/30">
+        <h1 className="text-white text-3xl font-bold mb-6">Datenschutzerklärung</h1>
+        <p className="text-blue-300 mb-8 leading-relaxed">
+          Wir nehmen den Schutz deiner Daten ernst. Hier findest du unsere vollständige Datenschutzerklärung.
+        </p>
 
-      <div dangerouslySetInnerHTML={{ __html: introHTML }} />
+        <div className="text-blue-100 leading-relaxed [&_a]:text-blue-400 [&_a:hover]:text-blue-300 [&_a:hover]:underline [&_h1]:text-white [&_h2]:text-blue-300 [&_h3]:text-blue-200 [&_h4]:text-blue-200 [&_ul]:list-disc [&_ul]:ml-6 [&_ul]:space-y-2 [&_p]:mb-4">
+          <div dangerouslySetInnerHTML={{ __html: introHTML }} />
 
-      {!expanded && (
-        <button
-          onClick={() => setExpanded(true)}
-          className="text-blue-700 underline font-semibold mt-4 block"
-        >
-          Mehr anzeigen ▼
-        </button>
-      )}
+          {!expanded && (
+            <button
+              onClick={() => setExpanded(true)}
+              className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-medium mt-6 transition-colors"
+            >
+              Vollständige Datenschutzerklärung anzeigen ▼
+            </button>
+          )}
 
-      {expanded && (
-        <>
-          <div dangerouslySetInnerHTML={{ __html: restHTML }} />
-          <button
-            onClick={() => setExpanded(false)}
-            className="text-blue-700 underline font-semibold mt-4 block"
-          >
-            Weniger anzeigen ▲
-          </button>
-        </>
-      )}
+          {expanded && (
+            <>
+              <div dangerouslySetInnerHTML={{ __html: restHTML }} />
+              <button
+                onClick={() => setExpanded(false)}
+                className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-medium mt-6 transition-colors"
+              >
+                Weniger anzeigen ▲
+              </button>
+            </>
+          )}
+        </div>
+      </div>
     </section>
   );
 }

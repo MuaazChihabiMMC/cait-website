@@ -1,69 +1,80 @@
-// components/SeoPageExpanded.tsx
-
+'use client'
+import { motion } from 'framer-motion';
 export default function SeoPageExpanded() {
-    return (
-      <section className="bg-white text-black py-24 px-6">
-        <div className="max-w-6xl mx-auto space-y-14">
-  
-       
-  
-          {/* Warum SEO? */}
-          <div>
-            <h2 className="text-3xl font-bold mb-4">Warum SEO?</h2>
-            <p className="text-gray-800">
-              SEO ist kein Bonus, es ist der Grundstein digitaler Sichtbarkeit. Wer nicht gefunden wird, verliert Kunden. Unsere Strategien vereinen Keyword-Analyse, technisches SEO, hochwertige Inhalte und nachhaltigen Linkaufbau für dauerhafte Google-Rankings.
-            </p>
-          </div>
-  
-          {/* Leistungen */}
-          <div className="grid md:grid-cols-2 gap-10">
-            <div>
-              <h3 className="text-2xl font-semibold text-blue-900 mb-2">Unsere SEO-Schwerpunkte</h3>
-              <ul className="list-disc list-inside space-y-2">
-                <li>🔍 OnPage-SEO: Meta-Tags, Content, Struktur, Ladezeit</li>
-                <li>🔗 OffPage-SEO: Backlinks, Brand Mentions, Autorität</li>
-                <li>🛠️ Technisches SEO: Fehlerfrei, schnell, mobil</li>
-                <li>📍 Lokales SEO: Für regionale Suchergebnisse optimiert</li>
-                <li>📝 Content-SEO: Landingpages, Blog, Conversion-Texte</li>
-                <li>📊 SEO-Audits & Monitoring: Alles messbar im Überblick</li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="text-2xl font-semibold text-blue-900 mb-2">So arbeiten wir</h3>
-              <ul className="list-disc list-inside space-y-2">
-                <li>Individuelle Strategie statt Einheitslösung</li>
-                <li>Keyword-Recherche mit Tools wie Semrush & Ahrefs</li>
-                <li>Technische Analyse + UX-Optimierung (Heatmaps, Core Web Vitals)</li>
-                <li>Conversion-orientierte Texte & Content-Marketing</li>
-                <li>Monatliches Reporting inkl. Positionen & Traffic</li>
-              </ul>
-            </div>
-          </div>
-  
-          {/* CTA */}
-          <div className="bg-blue-900 text-white p-10 rounded-xl text-center">
-            <h2 className="text-3xl font-bold mb-4">Starten Sie Ihre SEO-Erfolgsgeschichte</h2>
-            <p className="mb-6">Unser Team begleitet Sie von der Analyse bis zur Umsetzung, mit fundiertem Fachwissen, smarten Tools und persönlichem Support.</p>
-            <a href="/kontakt" className="inline-block bg-white text-blue-900 px-8 py-4 rounded-full font-semibold hover:bg-blue-100 transition">
-              Jetzt kostenlos beraten lassen
-            </a>
-          </div>
-  
-          {/* Vertrauen & Qualität */}
-          <div>
-            <h3 className="text-2xl font-bold mb-4">Warum CAITSocialMedia für Ihre SEO?</h3>
-            <ul className="grid md:grid-cols-2 gap-4 list-disc list-inside">
-              <li>✅ Maßgeschneiderte SEO-Strategien für Ihre Branche</li>
-              <li>✅ Echtzeit-Monitoring & transparente Berichte</li>
-              <li>✅ White-Hat-Methoden, Google-konform & sicher</li>
-              <li>✅ Vollständige Betreuung durch Inhouse-Expert:innen</li>
-              <li>✅ Content + Technik aus einer Hand</li>
-              <li>✅ Modernste Tools & Branchenstandards</li>
+  return (
+    <section className="bg-[#0c1832] text-white py-20 md:py-28 px-6">
+      <div className="max-w-6xl mx-auto space-y-16">
+
+        {/* Warum SEO? */}
+        <div className="bg-[#1a2a4a] p-8 rounded-xl border border-[#2d3a5a]">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-blue-300">Warum SEO?</h2>
+          <p className="text-blue-100 text-lg leading-relaxed">
+            SEO ist kein Bonus, es ist der Grundstein digitaler Sichtbarkeit. Wer nicht gefunden wird, verliert Kunden. Unsere Strategien vereinen Keyword-Analyse, technisches SEO, hochwertige Inhalte und nachhaltigen Linkaufbau für dauerhafte Google-Rankings.
+          </p>
+        </div>
+
+        {/* Leistungen */}
+        <div className="grid md:grid-cols-2 gap-8">
+          <div className="bg-[#1a2a4a] p-8 rounded-xl border border-[#2d3a5a]">
+            <h3 className="text-2xl font-semibold text-blue-300 mb-4">Unsere SEO-Schwerpunkte</h3>
+            <ul className="space-y-4">
+              {[
+                "🔍 OnPage-SEO: Meta-Tags, Content, Struktur, Ladezeit",
+                "🔗 OffPage-SEO: Backlinks, Brand Mentions, Autorität",
+                "🛠️ Technisches SEO: Fehlerfrei, schnell, mobil",
+                "📍 Lokales SEO: Für regionale Suchergebnisse optimiert",
+                "📝 Content-SEO: Landingpages, Blog, Conversion-Texte",
+                "📊 SEO-Audits & Monitoring: Alles messbar im Überblick"
+              ].map((item, index) => (
+                <li key={index} className="flex items-start gap-3">
+                  <span className="text-blue-400">•</span>
+                  <span className="text-blue-100">{item}</span>
+                </li>
+              ))}
             </ul>
           </div>
-  
+          
+          <div className="bg-[#1a2a4a] p-8 rounded-xl border border-[#2d3a5a]">
+            <h3 className="text-2xl font-semibold text-blue-300 mb-4">So arbeiten wir</h3>
+            <ul className="space-y-4">
+              {[
+                "Individuelle Strategie statt Einheitslösung",
+                "Keyword-Recherche mit Tools wie Semrush & Ahrefs",
+                "Technische Analyse + UX-Optimierung (Heatmaps, Core Web Vitals)",
+                "Conversion-orientierte Texte & Content-Marketing",
+                "Monatliches Reporting inkl. Positionen & Traffic"
+              ].map((item, index) => (
+                <li key={index} className="flex items-start gap-3">
+                  <span className="text-blue-400">•</span>
+                  <span className="text-blue-100">{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
-      </section>
-    );
-  }
-  
+
+
+        {/* Vertrauen & Qualität */}
+        <div className="bg-[#1a2a4a] p-8 rounded-xl border border-[#2d3a5a]">
+          <h3 className="text-2xl md:text-3xl font-bold mb-6 text-blue-300">Warum CAIT Social Media für Ihre SEO?</h3>
+          <ul className="grid md:grid-cols-2 gap-4">
+            {[
+              "✅ Maßgeschneiderte SEO-Strategien für Ihre Branche",
+              "✅ Echtzeit-Monitoring & transparente Berichte",
+              "✅ White-Hat-Methoden, Google-konform & sicher",
+              "✅ Vollständige Betreuung durch Inhouse-Expert:innen",
+              "✅ Content + Technik aus einer Hand",
+              "✅ Modernste Tools & Branchenstandards"
+            ].map((item, index) => (
+              <li key={index} className="flex items-start gap-3">
+                <span className="text-blue-400">•</span>
+                <span className="text-blue-100">{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+      </div>
+    </section>
+  );
+}

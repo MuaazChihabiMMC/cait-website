@@ -1,80 +1,88 @@
-// components/SeoFeatures.tsx
+'use client'
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 
 const features = [
   {
-    title: '🧠 Keyword-Recherche & Suchintention',
+    title: 'Keyword-Recherche & Suchintention',
+    icon: '🔍',
     description: (
       <>
-        Wir analysieren, wonach deine Kunden suchen, und warum. Damit du nicht nur Klicks bekommst, sondern
+        Wir analysieren, wonach Ihre Kunden suchen, und warum. Damit Sie nicht nur Klicks bekommen, sondern
         relevanten Traffic, der konvertiert.{' '}
-        <Link href="/seo/keyword-recherche" className="text-blue-500 underline">
+        <Link href="/seo/keyword-recherche" className="text-blue-300 underline hover:text-blue-400 transition">
           Mehr erfahren
         </Link>
       </>
     ),
   },
   {
-    title: '🛠️ OnPage-SEO',
+    title: 'OnPage-SEO',
+    icon: '🛠️',
     description: (
       <>
-        Optimierung deiner Website-Struktur, Inhalte, Meta-Tags, internen Verlinkungen und technischen Basis. Schnell, sauber, suchmaschinenfreundlich.{' '}
-        <Link href="/seo/onpage-seo" className="text-blue-500 underline">
+        Optimierung Ihrer Website-Struktur, Inhalte, Meta-Tags, internen Verlinkungen und technischen Basis.{' '}
+        <Link href="/seo/onpage-seo" className="text-blue-300 underline hover:text-blue-400 transition">
           Mehr erfahren
         </Link>
       </>
     ),
   },
   {
-    title: '🌍 OffPage-SEO & Backlinkaufbau',
+    title: 'OffPage-SEO & Backlinkaufbau',
+    icon: '🌐',
     description: (
       <>
-        Wir stärken deine Domain-Autorität mit qualitativen Backlinks, PR-Erwähnungen und strategischer OffPage-Optimierung.{' '}
-        <Link href="/seo/offpage-seo" className="text-blue-500 underline">
+        Wir stärken Ihre Domain-Autorität mit qualitativen Backlinks, PR-Erwähnungen und strategischer OffPage-Optimierung.{' '}
+        <Link href="/seo/offpage-seo" className="text-blue-300 underline hover:text-blue-400 transition">
           Mehr erfahren
         </Link>
       </>
     ),
   },
   {
-    title: '⚙️ Technisches SEO',
+    title: 'Technisches SEO',
+    icon: '⚙️',
     description: (
       <>
-        Core Web Vitals, Mobile Optimierung, Fehleranalyse, Indexierung und Crawling: Wir sorgen für einen einwandfreien technischen Unterbau.{' '}
-        <Link href="/seo/technisches-seo" className="text-blue-500 underline">
+        Core Web Vitals, Mobile Optimierung, Fehleranalyse, Indexierung und Crawling.{' '}
+        <Link href="/seo/technisches-seo" className="text-blue-300 underline hover:text-blue-400 transition">
           Mehr erfahren
         </Link>
       </>
     ),
   },
   {
-    title: '📍 Lokale SEO',
+    title: 'Lokale SEO',
+    icon: '📍',
     description: (
       <>
-        Ideal für lokale Dienstleister: Optimierung deines Google-Profils, lokaler Content und Sichtbarkeit in deiner Region.{' '}
-        <Link href="/seo/lokale-seo" className="text-blue-500 underline">
+        Optimierung Ihres Google-Profils, lokaler Content und Sichtbarkeit in Ihrer Region.{' '}
+        <Link href="/seo/lokale-seo" className="text-blue-300 underline hover:text-blue-400 transition">
           Mehr erfahren
         </Link>
       </>
     ),
   },
   {
-    title: '📝 SEO-Content-Erstellung',
+    title: 'SEO-Content-Erstellung',
+    icon: '📝',
     description: (
       <>
-        Wir schreiben Inhalte, die Google liebt und Nutzer lesen wollen, von Blogbeiträgen bis zu Landingpages.{' '}
-        <Link href="/seo/content-erstellung" className="text-blue-500 underline">
+        Inhalte, die Google liebt und Nutzer lesen wollen, von Blogbeiträgen bis zu Landingpages.{' '}
+        <Link href="/seo/content-erstellung" className="text-blue-300 underline hover:text-blue-400 transition">
           Mehr erfahren
         </Link>
       </>
     ),
   },
   {
-    title: '📊 Monitoring & Reporting',
+    title: 'Monitoring & Reporting',
+    icon: '📊',
     description: (
       <>
-        Echtzeit-Analysen, monatliche Reports, Handlungsempfehlungen: Du weißt jederzeit, was wir tun, und was es bringt.{' '}
-        <Link href="/seo/monitoring-reporting" className="text-blue-500 underline">
+        Echtzeit-Analysen, monatliche Reports und Handlungsempfehlungen für Ihr SEO.{' '}
+        <Link href="/seo/monitoring-reporting" className="text-blue-300 underline hover:text-blue-400 transition">
           Mehr erfahren
         </Link>
       </>
@@ -84,20 +92,41 @@ const features = [
 
 export default function SeoFeatures() {
   return (
-    <section className="bg-white py-24 px-6">
-      <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-black">
-          Unsere SEO-Leistungen im Überblick
-        </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <section className="bg-[#0c1832] py-20 md:py-28 px-6">
+      <div className="max-w-6xl mx-auto">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-16"
+        >
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-blue-300">
+            Unsere SEO-Leistungen im Überblick
+          </h2>
+          <p className="text-blue-100 max-w-2xl mx-auto">
+            Umfassende SEO-Strategien für nachhaltige Sichtbarkeit und messbare Ergebnisse
+          </p>
+        </motion.div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((feature, index) => (
-            <div
+            <motion.div
               key={index}
-              className="bg-blue-300 border border-blue-900 p-6 rounded-xl text-left shadow hover:shadow-md transition"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              className="bg-[#1a2a4a] border border-[#2d3a5a] p-6 rounded-xl hover:border-blue-400 transition-all group"
             >
-              <h3 className="text-xl font-semibold mb-2 text-blue-900">{feature.title}</h3>
-              <p className="text-black leading-relaxed">{feature.description}</p>
-            </div>
+              <div className="text-3xl mb-4 text-blue-400">{feature.icon}</div>
+              <h3 className="text-xl font-semibold mb-3 text-blue-300 group-hover:text-blue-200 transition">
+                {feature.title}
+              </h3>
+              <p className="text-blue-100 leading-relaxed">
+                {feature.description}
+              </p>
+            </motion.div>
           ))}
         </div>
       </div>

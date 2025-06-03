@@ -1,8 +1,6 @@
-// components/SeoFaq.tsx
-
-'use client';
-
-import { useState } from 'react';
+'use client'
+import { useState } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
 
 const faqItems = [
   {
@@ -73,29 +71,73 @@ const faqItems = [
 ];
 
 export default function SeoFaq() {
-  return (
-    <section className="bg-white py-24 px-6">
-      <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center text-black">
-          Häufige Fragen zur Suchmaschinenoptimierung (FAQ)
-        </h2>
+  const [activeIndex, setActiveIndex] = useState<number | null>(null)
 
-        <div className="space-y-6">
+  const toggleAccordion = (index: number) => {
+    setActiveIndex(activeIndex === index ? null : index)
+  }
+
+  return (
+    <section className="bg-[#0c1832] py-20 md:py-28 px-6">
+      <div className="max-w-4xl mx-auto">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-12"
+        >
+          <h2 className="text-3xl md:text-4xl font-bold text-blue-300">
+            Häufige Fragen zur Suchmaschinenoptimierung
+          </h2>
+          <p className="text-blue-100 mt-4">
+            Antworten auf die wichtigsten Fragen zu unserer SEO-Arbeit
+          </p>
+        </motion.div>
+
+        <div className="space-y-4">
           {faqItems.map((item, index) => (
-            <details
+            <motion.div 
               key={index}
-              className="group bg-blue-300 border border-blue-900 rounded-lg p-5 hover:shadow-md transition"
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.4, delay: index * 0.05 }}
+              className="border border-[#2d3a5a] rounded-lg overflow-hidden"
             >
-              <summary className="cursor-pointer text-lg font-semibold text-blue-900 group-open:text-black">
-                {item.question}
-              </summary>
-              <p className="mt-3 text-black leading-relaxed">
-                {item.answer}
-              </p>
-            </details>
+              <button
+                onClick={() => toggleAccordion(index)}
+                className={`w-full text-left p-5 transition-all ${activeIndex === index ? 'bg-[#1a2a4a]' : 'bg-[#0c1832] hover:bg-[#1a2a4a]'}`}
+              >
+                <div className="flex justify-between items-center">
+                  <h3 className="text-lg font-semibold text-blue-300">
+                    {item.question}
+                  </h3>
+                  <span className="text-blue-400 text-xl">
+                    {activeIndex === index ? '−' : '+'}
+                  </span>
+                </div>
+              </button>
+
+              <AnimatePresence>
+                {activeIndex === index && (
+                  <motion.div
+                    initial={{ height: 0, opacity: 0 }}
+                    animate={{ height: 'auto', opacity: 1 }}
+                    exit={{ height: 0, opacity: 0 }}
+                    transition={{ duration: 0.3 }}
+                    className="bg-[#1a2a4a]"
+                  >
+                    <div className="p-5 text-blue-100">
+                      {item.answer}
+                    </div>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </motion.div>
           ))}
         </div>
       </div>
     </section>
-  );
+  )
 }
