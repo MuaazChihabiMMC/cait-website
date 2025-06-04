@@ -13,10 +13,13 @@ export default function CookieBanner() {
     }
   }, []);
 
-  const handleConsent = (value: 'accepted' | 'rejected') => {
-    Cookies.set('cookie-consent', value, { expires: 365 });
-    setVisible(false);
-  };
+const handleConsent = (value: 'accepted' | 'rejected') => {
+  Cookies.set('cookie-consent', value, { expires: 365 });
+  setVisible(false);
+  if (value === 'accepted') {
+    window.location.reload(); // lädt GTM beim nächsten Rendern sofort
+  }
+};
 
   if (!visible) return null;
 
