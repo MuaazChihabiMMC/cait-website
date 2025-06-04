@@ -1,7 +1,8 @@
 "use client";
 
 import Script from "next/script";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import Cookies from "js-cookie";
 
 declare global {
   interface Window {
@@ -12,26 +13,16 @@ declare global {
 }
 
 export default function ProSealWidget() {
+  const [consentGiven, setConsentGiven] = useState(false);
+
   useEffect(() => {
-    if (typeof window !== "undefined" && window.provenExpert?.proSeal) {
-      window.provenExpert.proSeal({
-        widgetId: "51edb6bf-51ee-4275-a2f8-8300c2134556",
-        language: "de-DE",
-        usePageLanguage: false,
-        bannerColor: "#2a54ba",
-        textColor: "#FFFFFF",
-        showReviews: true,
-        hideDate: true,
-        hideName: false,
-        hideOnMobile: false,
-        bottom: "250px",
-        stickyToSide: "right",
-        googleStars: true,
-        zIndex: "9999",
-        displayReviewerLastName: false,
-      });
+    const consent = Cookies.get("cookie-consent");
+    if (consent === "accepted") {
+      setConsentGiven(true);
     }
   }, []);
+
+  if (!consentGiven) return null;
 
   return (
     <>

@@ -276,7 +276,7 @@ export default function ResponsiveDesignPage() {
                 <Link href="/blog/webdesign/performance-optimierung" aria-label="Performance-Tipps lesen">
                   <span className="text-blue-300 font-medium flex items-center group-hover:translate-x-1 transition-transform">
                     Performance-Tipps
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg xmlns="https://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
                   </span>
@@ -308,7 +308,7 @@ export default function ResponsiveDesignPage() {
                 <Link href="/blog/webdesign/modernes-css" aria-label="CSS-Trends lesen">
                   <span className="text-blue-300 font-medium flex items-center group-hover:translate-x-1 transition-transform">
                     CSS-Trends
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg xmlns="https://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
                   </span>
@@ -340,7 +340,7 @@ export default function ResponsiveDesignPage() {
                 <Link href="/blog/webdesign/web-accessibility" aria-label="Accessibility Guide öffnen">
                   <span className="text-blue-300 font-medium flex items-center group-hover:translate-x-1 transition-transform">
                     Accessibility Guide
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg xmlns="https://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
                   </span>

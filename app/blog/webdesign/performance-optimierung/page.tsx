@@ -256,7 +256,7 @@ export default function PerformanceOptimizationPage() {
                 <Link href="/blog/webdesign/responsives-webdesign" aria-label="Responsive Techniken Artikel öffnen">
                   <span className="text-blue-300 font-medium flex items-center group-hover:translate-x-1 transition-transform">
                     Responsive Techniken
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg xmlns="https://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
                   </span>
@@ -288,7 +288,7 @@ export default function PerformanceOptimizationPage() {
                 <Link href="/blog/webdesign/javascript-frameworks" aria-label="Framework-Vergleich Artikel öffnen">
                   <span className="text-blue-300 font-medium flex items-center group-hover:translate-x-1 transition-transform">
                     Framework-Vergleich
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg xmlns="https://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
                   </span>
@@ -320,7 +320,7 @@ export default function PerformanceOptimizationPage() {
                 <Link href="/blog/webdesign/wordpress-entwicklung" aria-label="WordPress-Tipps Artikel öffnen">
                   <span className="text-blue-300 font-medium flex items-center group-hover:translate-x-1 transition-transform">
                     WordPress-Tipps
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg xmlns="https://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
                   </span>
