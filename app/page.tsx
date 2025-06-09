@@ -49,6 +49,9 @@ export default function HomePage() {
               </Link>
             ))}
           </div>
+<a href="https://www.google.com/partners/agency?id=4801646033" target="_blank">
+    <img src="https://www.gstatic.com/partners/badge/images/2025/PartnerBadgeClickable.svg"/>
+</a>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
