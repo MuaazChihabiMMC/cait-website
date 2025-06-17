@@ -7,6 +7,7 @@ import SeoWhy from '@/components/SeoWhy';
 import SeoBenefits from '@/components/SeoBenefits';
 import SeoFaq from '@/components/SeoFaq';
 import AnimatedSection from '@/components/AnimatedSection';
+import SeoIntroText from '@/components/SeoIntroText'
 
 
 export const metadata = {
@@ -20,6 +21,7 @@ export default function SeoPage() {
   return (
     <>
       <SeoHero />
+      <SeoIntroText />
 
       <AnimatedSection>
         <SeoPageExpanded />
