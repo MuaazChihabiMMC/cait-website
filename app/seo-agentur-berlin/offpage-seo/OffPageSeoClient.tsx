@@ -320,7 +320,7 @@ export default function OffPageSeoClient() {
       {/* Footer-Backlink */}
       <section className="text-center pt-12">
         <p className="text-blue-800">
-          Zurück zur <Link href="/seo" className="underline text-blue-600">SEO Übersicht</Link>
+          Zurück zur <Link href="/seo-agentur-berlin" className="underline text-blue-600">SEO Übersicht</Link>
         </p>
       </section>
     </main>

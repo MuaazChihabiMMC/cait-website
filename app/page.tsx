@@ -35,7 +35,7 @@ export default function HomePage() {
           {/* Tags */}
           <div className="flex flex-wrap justify-center gap-4 mb-8">
             {[
-              { text: "SEO Agentur Berlin", bg: "bg-blue-600", href: "/seo" },
+              { text: "SEO Agentur Berlin", bg: "bg-blue-600", href: "/seo-agentur-berlin" },
               { text: "Google Ads Berlin", bg: "bg-blue-600", href: "/google-ads" },
               { text: "Webdesign Berlin", bg: "bg-blue-600", href: "/webentwicklung" },
               { text: "Social Media Berlin", bg: "bg-blue-600", href: "/social-media" }
@@ -293,7 +293,7 @@ export default function HomePage() {
               <motion.a
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.98 }}
-                href="/seo"
+                href="/seo-agentur-berlin"
                 className="inline-flex items-center justify-center bg-blue-600 hover:bg-blue-500 text-white font-medium rounded-full px-6 py-3 md:px-8 md:py-3.5 transition-all w-full sm:w-auto"
               >
                 SEO-Strategie für Berlin entwickeln

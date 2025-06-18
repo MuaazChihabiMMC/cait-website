@@ -35,7 +35,7 @@ export default function SocialMediaSeoText() {
         </p>
 
         <p>
-          <strong className="text-white">Suchmaschinenoptimierter Content</strong> gehört ebenso zu unserem Ansatz wie die gezielte Kombination mit <a href="/google-ads-agentur-berlin" className="text-blue-400 hover:underline hover:text-blue-300">Google Ads</a> und <a href="/seo" className="text-blue-400 hover:underline hover:text-blue-300">SEO</a>. So schaffen wir kanalübergreifende Markenwelten und mehr Sichtbarkeit im digitalen Raum.
+          <strong className="text-white">Suchmaschinenoptimierter Content</strong> gehört ebenso zu unserem Ansatz wie die gezielte Kombination mit <a href="/google-ads-agentur-berlin" className="text-blue-400 hover:underline hover:text-blue-300">Google Ads</a> und <a href="/seo-agentur-berlin" className="text-blue-400 hover:underline hover:text-blue-300">SEO</a>. So schaffen wir kanalübergreifende Markenwelten und mehr Sichtbarkeit im digitalen Raum.
         </p>
 
         <p>

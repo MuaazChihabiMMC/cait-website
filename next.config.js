@@ -20,3 +20,15 @@ module.exports = {
     ];
   },
 };
+
+module.exports = {
+  async redirects() {
+    return [
+      {
+        source: '/seo',
+        destination: '/seo-agentur-berlin',
+        permanent: true,
+      },
+    ];
+  },
+};

@@ -10,7 +10,7 @@ const features = [
       <>
         Wir analysieren, wonach Ihre Kunden suchen, und warum. Damit Sie nicht nur Klicks bekommen, sondern
         relevanten Traffic, der konvertiert.{' '}
-        <Link href="/seo/keyword-recherche" className="text-blue-300 underline hover:text-blue-400 transition">
+        <Link href="/seo-agentur-berlin/keyword-recherche" className="text-blue-300 underline hover:text-blue-400 transition">
           Mehr erfahren
         </Link>
       </>
@@ -22,7 +22,7 @@ const features = [
     description: (
       <>
         Optimierung Ihrer Website-Struktur, Inhalte, Meta-Tags, internen Verlinkungen und technischen Basis.{' '}
-        <Link href="/seo/onpage-seo" className="text-blue-300 underline hover:text-blue-400 transition">
+        <Link href="/seo-agentur-berlin/onpage-seo" className="text-blue-300 underline hover:text-blue-400 transition">
           Mehr erfahren
         </Link>
       </>
@@ -34,7 +34,7 @@ const features = [
     description: (
       <>
         Wir stärken Ihre Domain-Autorität mit qualitativen Backlinks, PR-Erwähnungen und strategischer OffPage-Optimierung.{' '}
-        <Link href="/seo/offpage-seo" className="text-blue-300 underline hover:text-blue-400 transition">
+        <Link href="/seo-agentur-berlin/offpage-seo" className="text-blue-300 underline hover:text-blue-400 transition">
           Mehr erfahren
         </Link>
       </>
@@ -46,7 +46,7 @@ const features = [
     description: (
       <>
         Core Web Vitals, Mobile Optimierung, Fehleranalyse, Indexierung und Crawling.{' '}
-        <Link href="/seo/technisches-seo" className="text-blue-300 underline hover:text-blue-400 transition">
+        <Link href="/seo-agentur-berlin/technisches-seo" className="text-blue-300 underline hover:text-blue-400 transition">
           Mehr erfahren
         </Link>
       </>
@@ -58,7 +58,7 @@ const features = [
     description: (
       <>
         Optimierung Ihres Google-Profils, lokaler Content und Sichtbarkeit in Ihrer Region.{' '}
-        <Link href="/seo/lokale-seo" className="text-blue-300 underline hover:text-blue-400 transition">
+        <Link href="/seo-agentur-berlin/lokale-seo" className="text-blue-300 underline hover:text-blue-400 transition">
           Mehr erfahren
         </Link>
       </>
@@ -70,7 +70,7 @@ const features = [
     description: (
       <>
         Inhalte, die Google liebt und Nutzer lesen wollen, von Blogbeiträgen bis zu Landingpages.{' '}
-        <Link href="/seo/content-erstellung" className="text-blue-300 underline hover:text-blue-400 transition">
+        <Link href="/seo-agentur-berlin/content-erstellung" className="text-blue-300 underline hover:text-blue-400 transition">
           Mehr erfahren
         </Link>
       </>
@@ -82,7 +82,7 @@ const features = [
     description: (
       <>
         Echtzeit-Analysen, monatliche Reports und Handlungsempfehlungen für Ihr SEO.{' '}
-        <Link href="/seo/monitoring-reporting" className="text-blue-300 underline hover:text-blue-400 transition">
+        <Link href="/seo-agentur-berlin/monitoring-reporting" className="text-blue-300 underline hover:text-blue-400 transition">
           Mehr erfahren
         </Link>
       </>
