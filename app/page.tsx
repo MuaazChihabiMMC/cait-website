@@ -517,7 +517,7 @@ export default function HomePage() {
                   scale: 1.03,
                   boxShadow: "0 5px 15px rgba(59, 130, 246, 0.3)"
                 }}
-                href="/google-ads"
+                href="/google-ads-agentur-berlin"
                 className="bg-blue-600 text-white px-5 py-2 md:px-6 md:py-3 rounded-lg font-semibold shadow hover:shadow-xl transition flex items-center gap-2 text-sm md:text-base w-full sm:w-auto justify-center hover:bg-blue-500"
               >
                 Kostenlose Google Ads Beratung

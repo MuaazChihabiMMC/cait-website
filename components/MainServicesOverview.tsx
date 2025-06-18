@@ -14,7 +14,7 @@ const services = [
     {
       title: '📢 Google Ads',
       desc: 'Performance-orientierte Kampagnen auf Google, von der Recherche bis zur laufenden Optimierung.',
-      link: '/google-ads',
+      link: '/google-ads-agentur-berlin',
     },
     {
       title: '📱 Social Media Marketing',

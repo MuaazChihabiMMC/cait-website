@@ -10,7 +10,7 @@ export const metadata = {
   description:
     'Kampagnen, Optimierung & Performance mit CAIT erreichst du deine Zielgruppe gezielt über Google Ads. Jetzt durchstarten!',
       alternates: {
-    canonical: 'https://www.caitsocialmedia.com/google-ads',
+    canonical: 'https://www.caitsocialmedia.com/google-ads-agentur-berlin',
   },
 };
 

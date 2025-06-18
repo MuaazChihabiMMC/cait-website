@@ -9,3 +9,14 @@ module.exports = {
   reactStrictMode: true,
 };
 module.exports = nextConfig
+module.exports = {
+  async redirects() {
+    return [
+      {
+        source: '/google-ads',
+        destination: '/google-ads-agentur-berlin',
+        permanent: true,
+      },
+    ];
+  },
+};

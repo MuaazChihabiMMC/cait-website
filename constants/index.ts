@@ -9,7 +9,7 @@ export const NAV_LINKS = [
     href: '/services',
     children: [
       { key: 'seo', label: 'SEO Optimierung', href: '/seo' },
-      { key: 'google', label: 'Google Ads', href: '/google-ads' },
+      { key: 'google', label: 'Google Ads', href: '/google-ads-agentur-berlin' },
       { key: 'web', label: 'Webentwicklung', href: '/webentwicklung' },
       { key: 'social', label: 'Social Media', href: '/social-media' },
     ],
