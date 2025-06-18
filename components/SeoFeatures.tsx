@@ -4,86 +4,110 @@ import { motion } from 'framer-motion';
 
 const features = [
   {
-    title: 'Keyword-Recherche & Suchintention',
+    title: 'Berliner Keyword-Recherche',
     icon: '🔍',
     description: (
       <>
-        Wir analysieren, wonach Ihre Kunden suchen, und warum. Damit Sie nicht nur Klicks bekommen, sondern
-        relevanten Traffic, der konvertiert.{' '}
+        Wir analysieren Berlin-spezifische Suchanfragen und Intentions, damit Sie nicht nur Klicks bekommen, sondern
+        relevante Berliner Kunden.{' '}
         <Link href="/seo-agentur-berlin/keyword-recherche" className="text-blue-300 underline hover:text-blue-400 transition">
-          Mehr erfahren
+          Berliner SEO-Strategien
         </Link>
       </>
     ),
   },
   {
-    title: 'OnPage-SEO',
+    title: 'OnPage-SEO für Berlin',
     icon: '🛠️',
     description: (
       <>
-        Optimierung Ihrer Website-Struktur, Inhalte, Meta-Tags, internen Verlinkungen und technischen Basis.{' '}
+        Optimierung von Meta-Tags, Content und Struktur speziell für Berliner Websites und Zielgruppen.{' '}
         <Link href="/seo-agentur-berlin/onpage-seo" className="text-blue-300 underline hover:text-blue-400 transition">
-          Mehr erfahren
+          Berliner OnPage-Optimierung
         </Link>
       </>
     ),
   },
   {
-    title: 'OffPage-SEO & Backlinkaufbau',
+    title: 'Berliner Backlinkaufbau',
     icon: '🌐',
     description: (
       <>
-        Wir stärken Ihre Domain-Autorität mit qualitativen Backlinks, PR-Erwähnungen und strategischer OffPage-Optimierung.{' '}
+        Aufbau qualitativer Backlinks aus Berliner Medien, Blogs und lokalen Verzeichnissen.{' '}
         <Link href="/seo-agentur-berlin/offpage-seo" className="text-blue-300 underline hover:text-blue-400 transition">
-          Mehr erfahren
+          Backlinks aus Berlin
         </Link>
       </>
     ),
   },
   {
-    title: 'Technisches SEO',
+    title: 'Technisches SEO Berlin',
     icon: '⚙️',
     description: (
       <>
-        Core Web Vitals, Mobile Optimierung, Fehleranalyse, Indexierung und Crawling.{' '}
+        Core Web Vitals-Optimierung für Berliner Nutzer, Mobile First-Ansatz, Fehlerbehebung.{' '}
         <Link href="/seo-agentur-berlin/technisches-seo" className="text-blue-300 underline hover:text-blue-400 transition">
-          Mehr erfahren
+          Technische SEO Berlin
         </Link>
       </>
     ),
   },
   {
-    title: 'Lokale SEO',
+    title: 'Lokale SEO Berlin',
     icon: '📍',
     description: (
       <>
-        Optimierung Ihres Google-Profils, lokaler Content und Sichtbarkeit in Ihrer Region.{' '}
+        Google Business Profile Optimierung, lokale Keywords, Bewertungsmanagement für Berlin.{' '}
         <Link href="/seo-agentur-berlin/lokale-seo" className="text-blue-300 underline hover:text-blue-400 transition">
-          Mehr erfahren
+          Top in Berlin ranken
         </Link>
       </>
     ),
   },
   {
-    title: 'SEO-Content-Erstellung',
+    title: 'Berliner Content-Erstellung',
     icon: '📝',
     description: (
       <>
-        Inhalte, die Google liebt und Nutzer lesen wollen, von Blogbeiträgen bis zu Landingpages.{' '}
+        Berlin-relevante Inhalte, die lokale Kunden ansprechen und Google überzeugen.{' '}
         <Link href="/seo-agentur-berlin/content-erstellung" className="text-blue-300 underline hover:text-blue-400 transition">
-          Mehr erfahren
+          Content für Berlin
         </Link>
       </>
     ),
   },
   {
-    title: 'Monitoring & Reporting',
+    title: 'E-Commerce SEO Berlin',
+    icon: '🛒',
+    description: (
+      <>
+        Spezialstrategien für Berliner Online-Shops mit lokalem Fokus.{' '}
+        <Link href="/seo-agentur-berlin/ecommerce-seo" className="text-blue-300 underline hover:text-blue-400 transition">
+          Berliner Shops optimieren
+        </Link>
+      </>
+    ),
+  },
+  {
+    title: 'Berliner SEO-Monitoring',
     icon: '📊',
     description: (
       <>
-        Echtzeit-Analysen, monatliche Reports und Handlungsempfehlungen für Ihr SEO.{' '}
+        Gezieltes Tracking von Berliner Keywords und Wettbewerbern.{' '}
         <Link href="/seo-agentur-berlin/monitoring-reporting" className="text-blue-300 underline hover:text-blue-400 transition">
-          Mehr erfahren
+          Berlin Ranking-Reports
+        </Link>
+      </>
+    ),
+  },
+  {
+    title: 'Berliner SEO-Beratung',
+    icon: '💡',
+    description: (
+      <>
+        Individuelle Strategieentwicklung speziell für Berliner Unternehmen.{' '}
+        <Link href="/seo-agentur-berlin/beratung" className="text-blue-300 underline hover:text-blue-400 transition">
+          Kostenlose SEO-Analyse
         </Link>
       </>
     ),
@@ -102,10 +126,10 @@ export default function SeoFeatures() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-blue-300">
-            Unsere SEO-Leistungen im Überblick
+            Unsere Berliner SEO-Leistungen
           </h2>
           <p className="text-blue-100 max-w-2xl mx-auto">
-            Umfassende SEO-Strategien für nachhaltige Sichtbarkeit und messbare Ergebnisse
+            Maßgeschneiderte SEO-Strategien für Berliner Unternehmen - von lokal bis international
           </p>
         </motion.div>
 
@@ -116,19 +140,59 @@ export default function SeoFeatures() {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-[#1a2a4a] border border-[#2d3a5a] p-6 rounded-xl hover:border-blue-400 transition-all group"
+              transition={{ 
+                duration: 0.5, 
+                delay: index * 0.1,
+                type: "spring",
+                stiffness: 100
+              }}
+              className="bg-[#1a2a4a] border border-[#2d3a5a] p-6 rounded-xl hover:border-blue-400 transition-all group relative overflow-hidden"
             >
-              <div className="text-3xl mb-4 text-blue-400">{feature.icon}</div>
-              <h3 className="text-xl font-semibold mb-3 text-blue-300 group-hover:text-blue-200 transition">
-                {feature.title}
-              </h3>
-              <p className="text-blue-100 leading-relaxed">
-                {feature.description}
-              </p>
+              {/* Hover effect */}
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-900/10 to-blue-700/10 opacity-0 group-hover:opacity-100 transition-opacity z-0"></div>
+              
+              <div className="relative z-10">
+                <div className="text-3xl mb-4 text-blue-400 group-hover:text-blue-300 transition-colors">
+                  {feature.icon}
+                </div>
+                <h3 className="text-xl font-semibold mb-3 text-blue-300 group-hover:text-blue-200 transition-colors">
+                  {feature.title}
+                </h3>
+                <p className="text-blue-100 leading-relaxed">
+                  {feature.description}
+                </p>
+              </div>
             </motion.div>
           ))}
         </div>
+
+        {/* Berlin-Fokus Abschnitt */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mt-16 bg-gradient-to-r from-blue-800 to-blue-900 rounded-2xl p-8 border border-blue-700"
+        >
+          <div className="flex flex-col md:flex-row gap-8 items-center">
+            <div className="bg-white/10 p-4 rounded-xl flex items-center justify-center">
+              <div className="text-5xl">🏙️</div>
+            </div>
+            <div>
+              <h3 className="text-2xl font-bold text-blue-300 mb-4">
+                Warum Berlin-spezifische SEO wichtig ist
+              </h3>
+              <p className="text-blue-100 mb-4">
+                Als <strong>SEO Agentur Berlin</strong> wissen wir: Der Berliner Markt hat besondere Anforderungen. 
+                Von der Optimierung für Stadtteil-Keywords bis zur Kenntnis der lokalen Wettbewerbslandschaft 
+                - wir machen Ihr Unternehmen zum Top-Ergebnis für Berliner Suchanfragen.
+              </p>
+              <p className="text-blue-100">
+                Unsere Berliner SEO-Experten kombinieren lokales Know-how mit technischer Exzellenz für 
+                nachhaltige Rankings in der Hauptstadt.
+              </p>
+            </div>
+          </div>
+        </motion.div>
       </div>
     </section>
   );
