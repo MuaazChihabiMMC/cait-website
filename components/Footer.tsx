@@ -5,7 +5,7 @@ const footerLinks = [
   {
     title: 'Leistungen',
     links: [
-      { label: 'SEO Agentur Berlin', href: '/seo' },
+      { label: 'SEO Agentur Berlin', href: '/seo-agentur-berlin' },
       { label: 'Webdesign Berlin', href: '/webentwicklung' },
       { label: 'Google Ads Berlin', href: '/google-ads-agentur-berlin' },
       { label: 'Social Media Berlin', href: '/social-media' },

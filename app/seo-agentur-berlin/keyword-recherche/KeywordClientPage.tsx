@@ -166,7 +166,7 @@ export default function KeywordRecherchePage() {
         <div className="space-y-6 text-blue-800 text-lg">
           <p><strong>E-Commerce:</strong> Clusterbildung für Produktkategorien wie „Sneaker Damen weiß“ oder „beste Smartwatch 2025“, mit Conversion-orientierten Landingpages.</p>
           <p><strong>Ärzte & Praxen:</strong> Kombination aus lokalen Keywords („Zahnarzt Berlin Zehlendorf“) und informativen Ratgeberseiten, unter Berücksichtigung von YMYL-Faktoren.</p>
-          <p><strong>Juwelier im Preußenpark:</strong> Optimierung auf Begriffe wie „Goldankauf Berlin“, „Altgold verkaufen Steglitz“ kombiniert mit Google-Business-Profil, um lokale Sichtbarkeit zu maximieren.</p>
+          <p><strong>Juwelier am Preußenpark:</strong> Optimierung auf Begriffe wie „Goldankauf Berlin“, „Altgold verkaufen Steglitz“ kombiniert mit Google-Business-Profil, um lokale Sichtbarkeit zu maximieren.</p>
         </div>
       </motion.section>
 

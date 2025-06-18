@@ -176,7 +176,7 @@ export default function ServicesPage() {
             <motion.a
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
-              href="/seo"
+              href="/seo-agentur-berlin"
               className="inline-flex items-center text-blue-400 font-medium"
             >
               Mehr erfahren <FaArrowRight className="ml-2" />

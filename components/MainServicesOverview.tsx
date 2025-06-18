@@ -4,7 +4,7 @@ const services = [
     {
       title: '🔍 SEO-Optimierung',
       desc: 'Mehr Sichtbarkeit bei Google durch technische, inhaltliche und strategische Maßnahmen. Lokal & international.',
-      link: '/seo',
+      link: '/seo-agentur-berlin',
     },
     {
       title: '💻 Webentwicklung & Design',

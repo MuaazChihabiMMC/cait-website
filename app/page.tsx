@@ -36,7 +36,7 @@ export default function HomePage() {
           <div className="flex flex-wrap justify-center gap-4 mb-8">
             {[
               { text: "SEO Agentur Berlin", bg: "bg-blue-600", href: "/seo-agentur-berlin" },
-              { text: "Google Ads Berlin", bg: "bg-blue-600", href: "/google-ads" },
+              { text: "Google Ads Berlin", bg: "bg-blue-600", href: "/google-ads-agentur-berlin" },
               { text: "Webdesign Berlin", bg: "bg-blue-600", href: "/webentwicklung" },
               { text: "Social Media Berlin", bg: "bg-blue-600", href: "/social-media" }
             ].map((tag, index) => (

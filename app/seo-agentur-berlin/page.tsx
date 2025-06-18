@@ -11,10 +11,10 @@ import SeoIntroText from '@/components/SeoIntroText'
 
 
 export const metadata = {
-  title: 'SEO mit CAITSocialMedia, Sichtbarkeit. Wachstum. Erfolg.',
-  description: 'SEO-Dienstleistungen von CAITSocialMedia: OnPage, OffPage, Technik, Content, Monitoring und mehr. Wir bringen dich bei Google ganz nach vorne.',
+  title: 'SEO Agentur Berlin, Sichtbarkeit. Wachstum. Erfolg.',
+  description: 'SEO-Service von CAIT Agentur: OnPage, OffPage, Technik, Content, Monitoring und mehr. Wir bringen dich bei Google ganz nach vorne.',
   alternates: {
-    canonical: 'https://www.caitsocialmedia.com/seo',
+    canonical: 'https://www.caitsocialmedia.com/seo-agentur-berlin',
   },
 };
 export default function SeoPage() {
