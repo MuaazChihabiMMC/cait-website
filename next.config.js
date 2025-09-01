@@ -76,6 +76,36 @@ module.exports = {
         destination: '/seo-agentur-berlin/technisches-seo',
         permanent: true,
       },
+      {
+        source: '/social-media-marketing-berlin',
+        destination: '/social-media',
+        permanent: true,
+      },
+        {
+        source: '/webenticklung-webdesign',
+        destination: '/webentwicklung',
+        permanent: true,
+      },
+        {
+        source: '/seo-optimierung',
+        destination: '/seo-agentur-berlin',
+        permanent: true,
+      },
+        {
+        source: '/about',
+        destination: '/ueber-uns',
+        permanent: true,
+      },
+         {
+        source: '/content-writing-berlin',
+        destination: '/',
+        permanent: true,
+      },
+            {
+        source: '/ads-management-berlin',
+        destination: '/google-ads-agentur-berlin',
+        permanent: true,
+      },
     ];
   },
 };
