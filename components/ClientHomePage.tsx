@@ -916,6 +916,157 @@ export default function HomePage() {
         </div>
       </motion.section>
 
+         {/* Clients Section */}
+      <motion.section
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+        className="max-w-7xl mx-auto px-4 py-12 md:py-16"
+      >
+        <motion.div
+          initial={{ y: 20, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="text-center mb-8 md:mb-12"
+        >
+          <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
+            Kunden, die uns vertrauen
+          </h2>
+          <p className="text-blue-200 text-lg max-w-3xl mx-auto">
+            Wir arbeiten mit Unternehmen aus verschiedenen Branchen in Berlin zusammen. 
+            Hier sind einige unserer Kunden, denen wir zu mehr Online-Sichtbarkeit verholfen haben.
+          </p>
+        </motion.div>
+
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+          {[
+            {
+              name: "KFZ Gutachter Kayed",
+              url: "https://www.kfz-gutachten-berlin-kayed.de",
+              category: "KFZ Gutachten",
+              logo: "/logos/kfz-gutachter-kayed-logo.png" // Platzhalter - durch echten Pfad ersetzen
+            },
+            {
+              name: "ZK Unfallgutachten GmbH",
+              url: "https://zk-unfallgutachten.de",
+              category: "Unfallgutachten",
+              logo: "/logos/zk-unfallgutachten-logo.png"
+            },
+            {
+              name: "Juwelier Preußenpark",
+              url: "https://www.schmuck-gold-uhren-ankauf.de/",
+              category: "Juwelier",
+              logo: "/logos/juwelier-preussenpark-logo.png"
+            },
+            {
+              name: "Polsterei Marya",
+              url: "https://polsterei-marya.de/",
+              category: "Polsterei",
+              logo: "/logos/polsterei-marya-logo.png"
+            },
+            {
+              name: "Marya Möbel GmbH",
+              url: "https://marya-moebel.de/",
+              category: "Möbel",
+              logo: "/logos/marya-moebel-logo.png"
+            },
+            {
+              name: "Faucon Logistik",
+              url: "https://fauconlogistic.com/",
+              category: "Logistik",
+              logo: "/logos/faucon-logistik-logo.png"
+            },
+            {
+              name: "Autor Jessy-Ka-James",
+              url: "https://jessy-ka-james.com/",
+              category: "Autor",
+              logo: "/logos/jessy-ka-james-logo.png"
+            },
+            {
+              name: "Ursula Gupta Stiftung",
+              url: "https://www.ursula-gupta-stiftung.de/",
+              category: "Stiftung",
+              logo: "/logos/ursula-gupta-stiftung-logo.png"
+            },
+            {
+              name: "GO On Outlet",
+              url: "https://goonoutlet.eu/",
+              category: "Outlet",
+              logo: "/logos/go-on-outlet-logo.png"
+            },
+            {
+              name: "Elektro Azzam",
+              url: "https://elektro-azzam.de/",
+              category: "Elektro",
+              logo: "/logos/elektro-azzam-logo.png"
+            },
+            {
+              name: "Midan Werbeagentur",
+              url: "https://midan-textil.de/",
+              category: "Textil",
+              logo: "/logos/midan-werbeagentur-logo.png"
+            },
+            {
+              name: "Lumina Cafe & Bar",
+              url: "https://lumina-peach-eta.vercel.app/",
+              category: "Gastronomie",
+              logo: "/logos/lumina-cafe-bar-logo.png"
+            },
+            {
+              name: "Glanzity Gebäudereinigung",
+              url: "https://webseite-zeta.vercel.app/",
+              category: "Gebäudereinigung",
+              logo: "/logos/glanzity-gebaeudereinigung-logo.png"
+            }
+          ].map((client, index) => (
+            <motion.div
+              key={index}
+              initial={{ y: 30, opacity: 0, scale: 0.95 }}
+              whileInView={{ y: 0, opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ 
+                duration: 0.5, 
+                delay: index * 0.1,
+                type: "spring",
+                stiffness: 100
+              }}
+              whileHover={{ 
+                y: -5,
+                boxShadow: "0 10px 25px rgba(59, 130, 246, 0.2)"
+              }}
+              className="bg-[#1a2a4a] p-4 rounded-xl border border-blue-900/50 hover:border-blue-600/50 transition-all duration-300"
+            >
+              <a 
+                href={client.url} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="block text-center group"
+              >
+                <div className="h-16 mb-3 flex items-center justify-center">
+                  {/* Platzhalter für Logo - später durch echte Logos ersetzen */}
+                  <div className="relative w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center group-hover:bg-blue-500 transition-colors overflow-hidden">
+                    {/* Temporärer Platzhalter - Ersetzen Sie dies durch: <img src={client.logo} alt={`${client.name} Logo`} className="w-full h-full object-contain" /> */}
+                    <span className="text-white font-bold text-xs">
+                      {client.name.split(' ').map(word => word[0]).join('').toUpperCase()}
+                    </span>
+                  </div>
+                </div>
+                <h3 className="text-white font-semibold text-sm mb-1 group-hover:text-blue-300 transition-colors">
+                  {client.name}
+                </h3>
+                <span className="text-blue-300 text-xs bg-blue-900/30 px-2 py-1 rounded-full">
+                  {client.category}
+                </span>
+              </a>
+            </motion.div>
+          ))}
+        </div>
+
+  
+      </motion.section>
+
       {/* Final CTA Section */}
       <motion.section
         initial={{ opacity: 0, scale: 0.9 }}
