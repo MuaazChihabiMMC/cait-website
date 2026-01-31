@@ -116,16 +116,36 @@ export default function SocialMediaBlogPage() {
         {/* Erweiterter SEO-Text */}
         <div className="max-w-3xl mx-auto text-gray-300 text-lg leading-relaxed mb-16 space-y-6">
           <h2 className="text-2xl font-bold text-white">Warum Social Media Marketing so entscheidend ist</h2>
-          <p>Social Media ist nicht nur ein Kommunikationskanal, es ist heute einer der stärksten Hebel für Markenbekanntheit, Vertrauen und Kundengewinnung. Ob für Start-ups, etablierte Unternehmen oder Selbstständige, Plattformen wie Instagram, TikTok oder LinkedIn bieten enorme Potenziale zur Reichweitensteigerung und Kundenbindung.</p>
+          <p>
+            Social Media ist nicht nur ein Kommunikationskanal, es ist heute einer der stärksten Hebel für Markenbekanntheit, Vertrauen und Kundengewinnung. Ob für Start-ups, etablierte Unternehmen oder Selbstständige, Plattformen wie Instagram, TikTok oder LinkedIn bieten enorme Potenziale zur Reichweitensteigerung und Kundenbindung.
+          </p>
+          <p className="mt-4">
+            Aber Vorsicht: Die organische Reichweite ist kein Selbstläufer mehr. Algorithmen werden komplexer, und Nutzer erwarten hochwertige, unterhaltsame oder lehrreiche Inhalte (Edutainment). Wer heute noch plumpe Werbung postet, wird ignoriert. Erfolgreiche Marken erzählen Geschichten, interagieren mit ihrer Community und nutzen die technologischen Möglichkeiten der Plattformen voll aus.
+          </p>
 
-          <h3 className="text-xl font-semibold text-white mt-6">Instagram Marketing, mehr als nur schöne Bilder</h3>
-          <p>Instagram ist weiterhin eine der wichtigsten Plattformen für Branding und Community-Aufbau. Mit Reels, Stories, Karussells und Guides stehen vielseitige Formate zur Verfügung, um Inhalte kreativ und visuell ansprechend zu gestalten.</p>
+          <h3 className="text-xl font-semibold text-white mt-6">Instagram Marketing: Branding & Community</h3>
+          <p>
+            Instagram ist weiterhin eine der wichtigsten Plattformen für Branding und Community-Aufbau. Mit Reels, Stories, Karussell-Posts und Guides stehen vielseitige Formate zur Verfügung.
+          </p>
+          <p className="mt-2">
+            Der Schlüssel liegt im Mix: Reels sorgen für Reichweite bei neuen Nutzern (Discovery), während Stories die Bindung zu bestehenden Followern festigen. Karussell-Posts eignen sich hervorragend für Expertenwissen ("Slide-Content"), das häufig gespeichert wird – ein starkes Signal für den Algorithmus. Wir helfen Ihnen, eine visuelle Sprache zu entwickeln, die Ihre Marke unverwechselbar macht.
+          </p>
 
-          <h3 className="text-xl font-semibold text-white mt-6">TikTok, die Plattform für virales Wachstum</h3>
-          <p>TikTok hat sich zu einem der mächtigsten Tools für organisches Wachstum entwickelt. Der Algorithmus belohnt kreativen, plattformspezifischen Content, der Emotionen weckt oder unterhält.</p>
+          <h3 className="text-xl font-semibold text-white mt-6">TikTok: Virales Wachstum für Unternehmen</h3>
+          <p>
+            TikTok hat sich zu einem der mächtigsten Tools für organisches Wachstum entwickelt. Der Algorithmus ("For You Page") ist einzigartig: Er bewertet Content fast ausschließlich nach der Performance des einzelnen Videos, nicht nach der Follower-Zahl des Accounts.
+          </p>
+          <p className="mt-2">
+            Das bedeutet: Auch neue Accounts können über Nacht Millionen erreichen. Entscheidend sind die ersten 3 Sekunden (Hook), schnelle Schnitte, Trend-Sounds und Authentizität. Hochglanz-Werbung funktioniert hier nicht. Unternehmen müssen lernen, "TikTok-native" zu kommunizieren – unterhaltsam, schnell und nahbar.
+          </p>
 
-          <h3 className="text-xl font-semibold text-white mt-6">LinkedIn, Social Selling im B2B-Bereich</h3>
-          <p>LinkedIn ist das perfekte Netzwerk für B2B-Unternehmen, Berater, Agenturen und Coaches. Wer hier relevante Inhalte postet, positioniert sich als Thought Leader und baut Vertrauen auf.</p>
+          <h3 className="text-xl font-semibold text-white mt-6">LinkedIn: B2B Social Selling & Personal Branding</h3>
+          <p>
+            LinkedIn ist das perfekte Netzwerk für B2B-Unternehmen, Berater, Agenturen und Coaches. Wer hier relevante Inhalte postet, positioniert sich als Thought Leader und baut Vertrauen auf.
+          </p>
+          <p className="mt-2">
+            Hier funktionieren persönliche Einblicke, Case Studies und fundierte Meinungen zu Branchentrends am besten. Anders als bei Instagram steht hier der fachliche Austausch im Vordergrund. Social Selling bedeutet dabei nicht, plumpe Verkaufsnachrichten zu versenden, sondern durch Kompetenz Sogwirkung zu erzeugen (Inbound Marketing).
+          </p>
 
           <h3 className="text-xl font-semibold text-white mt-6">Fazit: Social Media braucht Strategie</h3>
           <p>Der Unterschied zwischen erfolgreichem und erfolglosem Social Media liegt in der Strategie. Wer seine Zielgruppe kennt, relevante Inhalte liefert und regelmäßig postet, baut nicht nur Follower, sondern auch Kundenbeziehungen auf.</p>

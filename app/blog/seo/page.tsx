@@ -143,22 +143,34 @@ export default function SeoBlogPage() {
           <div className="bg-blue-900/30 p-6 rounded-lg shadow-sm border border-blue-800/50 space-y-6 text-blue-200 text-lg leading-relaxed">
             <h2 className="text-2xl font-bold text-white">CAIT - Ihre SEO Agentur in Berlin</h2>
             <p>
-              Als erfahrene <strong className="text-white">SEO Agentur Berlin</strong> bieten wir ganzheitliche <strong className="text-white">SEO Optimierung</strong> für Unternehmen jeder Größe. Unsere <strong className="text-white">SEO Agentur</strong> Spezialisten kombinieren technisches Know-how mit strategischem Content Marketing und effektivem Linkbuilding.
+              Als erfahrene <strong className="text-white">SEO Agentur Berlin</strong> wissen wir: Suchmaschinenoptimierung ist kein einmaliges Projekt, sondern ein kontinuierlicher Prozess. Wir bieten ganzheitliche <strong className="text-white">SEO Optimierung</strong> für Unternehmen jeder Größe – vom lokalen Handwerker bis zum internationalen E-Commerce-Store. Unsere <strong className="text-white">SEO Agentur</strong> Spezialisten kombinieren technisches Deep-Dive-Know-how mit strategischem Content Marketing und effektivem Linkbuilding.
+            </p>
+            <p className="mt-4">
+              Dabei setzen wir auf messbare Ergebnisse. Keine Black-Box-Magie, sondern transparente Reportings und klare KPIs. Wir analysieren Ihre aktuelle Marktsituation, identifizieren ungenutzte Potenziale und entwickeln eine Roadmap, die Sie Schritt für Schritt an die Spitze der Suchergebnisse führt.
             </p>
             <p>
               Egal ob Sie eine <strong className="text-white">SEO Agentur</strong> für technische Optimierung suchen oder eine <strong className="text-white">SEO Optimierung Berlin</strong> für bessere Rankings benötigen - wir entwickeln maßgeschneiderte Lösungen für Ihr Business.
             </p>
-            <h3 className="text-xl font-semibold text-white mt-6">Technische SEO Optimierung</h3>
+            <h3 className="text-xl font-semibold text-white mt-6">Technische SEO Optimierung: Das Fundament</h3>
             <p>
-              Unsere technische SEO Beratung sorgt dafür, dass Ihre Website in puncto Crawling, Indexierung, Ladezeiten und interner Verlinkung Bestwerte erzielt. Wir analysieren und optimieren Ihre Seitenstruktur, um die Sichtbarkeit in Suchmaschinen zu erhöhen.
+              Ohne eine solide technische Basis nützt der beste Content nichts. Unsere technische SEO Beratung sorgt dafür, dass Ihre Website von Google problemlos gelesen (gecrawlt) und verstanden (indexiert) werden kann. Wir optimieren Ladezeiten (Core Web Vitals), beheben Crawling-Fehler und sorgen für eine saubere URL-Struktur.
             </p>
-            <h3 className="text-xl font-semibold text-white mt-6">Content Marketing Strategien</h3>
-            <p>
-              Mit gezieltem Content Marketing stärken wir Ihre Online-Präsenz. Wir erstellen hochwertige Inhalte, die sowohl für Ihre Zielgruppe als auch für Suchmaschinen relevant sind, und unterstützen Sie bei der Entwicklung einer effektiven Content-Strategie.
+            <p className="mt-2">
+              Ein besonderer Fokus liegt auf der Mobile-Optimierung, da Google den "Mobile First"-Index nutzt. Wir stellen sicher, dass Ihre Seite auf Smartphones genauso performant ist wie auf dem Desktop. Auch die Implementierung von strukturierten Daten (Schema Markup) gehört zu unserem Standard, um Rich Snippets in den Suchergebnissen zu generieren.
             </p>
-            <h3 className="text-xl font-semibold text-white mt-6">Linkbuilding Methoden</h3>
+            <h3 className="text-xl font-semibold text-white mt-6">Content Marketing: Inhalte, die überzeugen</h3>
             <p>
-              Natürliches Linkbuilding ist ein zentraler Bestandteil unserer SEO-Strategie. Wir setzen auf bewährte Methoden, um hochwertige Backlinks zu generieren, die Ihre Domain-Autorität stärken und Ihre Rankings verbessern.
+              "Content is King" ist mehr als eine Floskel. Google möchte Nutzern die besten Antworten auf ihre Fragen liefern. Mit gezieltem Content Marketing stärken wir Ihre Online-Präsenz. Wir erstellen hochwertige Inhalte, die sowohl für Ihre Zielgruppe als auch für Suchmaschinen relevant sind.
+            </p>
+            <p className="mt-2">
+              Dazu gehört eine tiefgehende Keyword-Recherche, die nicht nur Suchvolumen, sondern auch die Suchintention berücksichtigt. Wir produzieren Blogartikel, Landingpages, Whitepaper und Infografiken, die Ihre Expertise unterstreichen (E-E-A-T Prinzip) und Nutzer dazu bringen, länger auf Ihrer Seite zu verweilen.
+            </p>
+            <h3 className="text-xl font-semibold text-white mt-6">Linkbuilding & OffPage SEO</h3>
+            <p>
+              Backlinks sind Empfehlungen anderer Webseiten und nach wie vor einer der stärksten Rankingfaktoren. Doch Qualität geht heute vor Quantität. Wir setzen auf bewährte Methoden, um hochwertige Backlinks von themenrelevanten und autoritären Seiten zu generieren.
+            </p>
+            <p className="mt-2">
+              Unser Netzwerk umfasst Medienpartner, Branchenverzeichnisse und Fachblogs. Wir vermeiden riskante Spam-Methoden und bauen ein natürliches Linkprofil auf, das nachhaltig wirkt und vor Google-Abstrafungen sicher ist.
             </p>
             <h3 className="text-xl font-semibold text-white mt-6">Lokale SEO für Berliner Unternehmen</h3>
             <p>

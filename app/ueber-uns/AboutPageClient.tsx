@@ -92,7 +92,7 @@ export default function AboutPage() {
                 <div>
                   <h3 className="font-bold text-lg text-white">Akademische Ausbildung</h3>
                   <p className="text-blue-200">
-                    Master-Abschluss in Computer Science an der Technischen Universität Berlin mit Auszeichnung.
+                    Mein akademischer Hintergrund bildet das Fundament meiner Arbeit. Den Master-Abschluss in Computer Science habe ich an der renommierten Technischen Universität Berlin mit Auszeichnung absolviert. Dieser technische Background ermöglicht es mir, Marketing nicht nur als kreativen Prozess, sondern als präzise Wissenschaft zu verstehen. Ich analysiere Algorithmen, verstehe Datenstrukturen und nutze dieses Wissen, um Strategien zu entwickeln, die technisch fundiert und zukunftssicher sind.
                   </p>
                 </div>
               </div>
@@ -104,7 +104,11 @@ export default function AboutPage() {
                 <div>
                   <h3 className="font-bold text-lg text-white">Beruflicher Werdegang</h3>
                   <p className="text-blue-200">
-                    Über 5 Jahre Erfahrung in der Digitalbranche. 2022 Gründung von CAIT Agentur mit dem Ziel, Unternehmen effektive und messbare Marketinglösungen zu bieten.
+                    Meine Leidenschaft für digitales Marketing entdeckte ich bereits während meines Studiums. Über 5 Jahre sammelte ich intensive Erfahrung in verschiedenen Bereichen der Digitalbranche, von SEO-Strategien bis hin zu komplexen Webentwicklungen.
+                    <br /><br />
+                    2022 gründete ich die CAIT Agentur mit einer klaren Vision: Unternehmen in Berlin und deutschlandweit nicht nur Dienstleistungen, sondern echte, messbare Wachstumsimpulse zu bieten. In einer Branche, die oft von Undurchsichtigkeit geprägt ist, wollte ich einen Unterschied machen – durch Radikale Transparenz, datengetriebene Entscheidungen und eine persönliche Partnerschaft auf Augenhöhe.
+                    <br /><br />
+                    Heute bin ich stolz darauf, mit einem wachsenden Team von Spezialisten dutzende Unternehmen dabei zu unterstützen, ihre digitale Identität zu finden und ihre Marktposition nachhaltig zu festigen.
                   </p>
                 </div>
               </div>
@@ -213,7 +217,7 @@ export default function AboutPage() {
               <div>
                 <h3 className="font-bold text-lg text-white">Transparenz schafft Vertrauen</h3>
                 <p className="text-blue-200">
-                  Ich arbeite mit klaren Prozessen und regelmäßigen Reporting. Sie wissen stets, wo Ihr Geld investiert wird und welche Ergebnisse erzielt werden.
+                  In der Agenturwelt wird oft viel versprochen und wenig gehalten. Mein Ansatz ist anders: Radikale Ehrlichkeit. Ich arbeite mit klaren, dokumentierten Prozessen und regelmäßigen, verständlichen Reportings. Sie wissen zu jedem Zeitpunkt genau, wo Ihr Budget investiert wird, welche Maßnahmen wir ergreifen und – noch wichtiger – welche Ergebnisse damit erzielt werden. Es gibt keine versteckten Kosten und kein "Fachchinesisch", das Verschleierung dient.
                 </p>
               </div>
             </motion.div>
@@ -231,7 +235,7 @@ export default function AboutPage() {
               <div>
                 <h3 className="font-bold text-lg text-white">Daten statt Bauchgefühl</h3>
                 <p className="text-blue-200">
-                  Jede Entscheidung basiert auf Analysen und Fakten. Mein akademischer Hintergrund garantiert wissenschaftlich fundierte Herangehensweisen.
+                  Bauchgefühl ist gut, Daten sind besser. In einer Zeit, in der Big Data und KI den Markt bestimmen, darf Marketing kein Zufallsprodukt sein. Jede Strategie, die wir bei CAIT entwickeln, basiert auf fundierten Analysen. Wir nutzen modernste Tracking-Tools und Marktanalysen, um Zielgruppen exakt zu verstehen und Streuverluste zu minimieren. Mein akademischer Hintergrund in der Informatik garantiert dabei eine wissenschaftlich fundierte Herangehensweisen, die über bloßes "Ausprobieren" weit hinausgeht.
                 </p>
               </div>
             </motion.div>
@@ -249,7 +253,7 @@ export default function AboutPage() {
               <div>
                 <h3 className="font-bold text-lg text-white">Partnerschaftlicher Ansatz</h3>
                 <p className="text-blue-200">
-                  Als inhabergeführte Agentur erhalten Sie direkten Zugang zum Entscheider - ohne lange Wege oder anonyme Hotlines.
+                  Bei CAIT sind Sie keine Nummer. Als inhabergeführte Agentur garantiere ich Ihnen den direkten Zugang zu mir als Ihrem strategischen Partner. Wir pflegen flache Hierarchien und kurze Kommunikationswege. Das bedeutet für Sie: Schnelle Reaktionszeiten, flexible Anpassungen der Strategie und ein Ansprechpartner, der Ihr Geschäft wirklich versteht. Wir sehen uns nicht als externen Dienstleister, sondern als integrierten Teil Ihres Teams, der gemeinsam mit Ihnen für Ihren Erfolg kämpft.
                 </p>
               </div>
             </motion.div>
