@@ -7,7 +7,7 @@ import WebFaq from '@/components/WebFaq';
 import AnimatedSection from '@/components/AnimatedSection';
 
 export const metadata = {
-  title: 'Webdesign Agentur Berlin | Professionelle Webentwicklung | CAIT',
+  title: 'Webdesign & Webentwicklung Berlin | CAIT Agentur',
   description:
     'Webdesign Agentur Berlin: Maßgeschneiderte Websites mit modernen Technologien, klarer Struktur und optimaler Performance. Ihre Webdesign Agentur in Berlin für digitale Erlebnisse.',
   alternates: {

@@ -69,10 +69,10 @@ export default function TechnischesSeoClient() {
             Die Core Web Vitals sind ein zentraler Bestandteil der Google Page Experience. Sie messen, wie schnell, stabil und interaktiv deine Website ist. Wir helfen dir, diese Metriken gezielt zu verbessern:
           </p>
           <ul className="list-disc list-inside text-gray-300 space-y-2 pl-4">
-            <li><strong>LCP (Largest Contentful Paint):</strong> Messung der Ladezeit des größten sichtbaren Elements</li>
-            <li><strong>FID (First Input Delay):</strong> Zeit bis zur ersten Nutzerinteraktion</li>
-            <li><strong>CLS (Cumulative Layout Shift):</strong> Stabilität des Layouts bei Ladevorgängen</li>
-            <li><strong>INP (Interaction to Next Paint):</strong> Nachfolger von FID, misst Interaktionsqualität</li>
+            <li><span className="font-semibold text-white">LCP (Largest Contentful Paint):</span> Messung der Ladezeit des größten sichtbaren Elements</li>
+            <li><span className="font-semibold text-white">FID (First Input Delay):</span> Zeit bis zur ersten Nutzerinteraktion</li>
+            <li><span className="font-semibold text-white">CLS (Cumulative Layout Shift):</span> Stabilität des Layouts bei Ladevorgängen</li>
+            <li><span className="font-semibold text-white">INP (Interaction to Next Paint):</span> Nachfolger von FID, misst Interaktionsqualität</li>
           </ul>
           <p className="text-gray-300">
             Wir nutzen Tools wie <strong>PageSpeed Insights</strong>, <strong>Lighthouse</strong> und <strong>CrUX-Daten</strong>, um diese Werte zu messen und zu optimieren, z. B. durch Bildoptimierung, Lazy Loading, Code Splitting und Cache-Kontrolle.
@@ -90,10 +90,10 @@ export default function TechnischesSeoClient() {
             Google bewertet deine Website primär in der mobilen Version, und das auf echten Geräten. Eine technisch saubere Mobile-Darstellung ist daher entscheidend für dein Ranking.
           </p>
           <ul className="list-disc list-inside text-gray-300 space-y-2 pl-4">
-            <li><strong>Responsives Design:</strong> Wir stellen sicher, dass deine Inhalte auf jedem Gerät optimal dargestellt werden</li>
-            <li><strong>Mobilfreundliche Navigation:</strong> Buttons, Menüs und Inhalte sind touch-optimiert</li>
-            <li><strong>Viewport-Konfiguration:</strong> Richtige Skalierung für verschiedene Displaygrößen</li>
-            <li><strong>Mobile Ladezeiten:</strong> Minimierung von JS, CSS & Bildern speziell für mobile Nutzer</li>
+            <li><span className="font-semibold text-white">Responsives Design:</span> Wir stellen sicher, dass deine Inhalte auf jedem Gerät optimal dargestellt werden</li>
+            <li><span className="font-semibold text-white">Mobilfreundliche Navigation:</span> Buttons, Menüs und Inhalte sind touch-optimiert</li>
+            <li><span className="font-semibold text-white">Viewport-Konfiguration:</span> Richtige Skalierung für verschiedene Displaygrößen</li>
+            <li><span className="font-semibold text-white">Mobile Ladezeiten:</span> Minimierung von JS, CSS & Bildern speziell für mobile Nutzer</li>
           </ul>
         </div>
       </section>

@@ -239,12 +239,12 @@ export default function OffPageSeoClient() {
             Linkaufbau ist sensibel, viele Methoden funktionieren, andere gefährden deine Sichtbarkeit. Unsere Empfehlungen:
           </p>
           <ul className="list-disc list-inside space-y-3 pl-4 text-gray-300">
-            <li><strong>Do:</strong> Setze auf Qualität, thematische Nähe und Diversität</li>
-            <li><strong>Do:</strong> Verlinke gezielt Unterseiten mit Fokus-Keywords</li>
-            <li><strong>Don't:</strong> Vermeide Linktauschnetzwerke oder gekaufte Links ohne Kontext</li>
-            <li><strong>Don't:</strong> Finger weg von billigen Linkpaketen auf Fiverr & Co.</li>
-            <li><strong>Do:</strong> Nutze Branding-Links und kombiniere mit PR-Maßnahmen</li>
-            <li><strong>Do:</strong> Halte dein Linkprofil regelmäßig sauber (Disavow)</li>
+            <li><span className="font-semibold text-green-400">Do:</span> Setze auf Qualität, thematische Nähe und Diversität</li>
+            <li><span className="font-semibold text-green-400">Do:</span> Verlinke gezielt Unterseiten mit Fokus-Keywords</li>
+            <li><span className="font-semibold text-red-400">Don't:</span> Vermeide Linktauschnetzwerke oder gekaufte Links ohne Kontext</li>
+            <li><span className="font-semibold text-red-400">Don't:</span> Finger weg von billigen Linkpaketen auf Fiverr & Co.</li>
+            <li><span className="font-semibold text-green-400">Do:</span> Nutze Branding-Links und kombiniere mit PR-Maßnahmen</li>
+            <li><span className="font-semibold text-green-400">Do:</span> Halte dein Linkprofil regelmäßig sauber (Disavow)</li>
           </ul>
         </div>
       </motion.section>

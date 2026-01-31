@@ -126,6 +126,114 @@ export default function KeywordRecherchePage() {
         </div>
       </section>
 
+      {/* Unsere Tools */}
+      <section className="py-16 px-6 bg-primary-light/20">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-4">Professionelle SEO-Tools für präzise Keyword-Analysen</h2>
+          <p className="text-gray-400 text-center mb-12 max-w-3xl mx-auto">
+            Für eine fundierte Keyword-Recherche nutzen wir die führenden SEO-Tools der Branche. Diese ermöglichen uns, umfassende Daten zu Suchvolumen, Wettbewerb und Trends zu analysieren.
+          </p>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {['Ahrefs', 'SEMrush', 'Google Search Console', 'Sistrix', 'Keyword Planner', 'AnswerThePublic', 'Surfer SEO', 'Screaming Frog'].map((tool, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.05 }}
+                className="glass-panel p-4 rounded-xl text-center"
+              >
+                <span className="text-gold-300 font-medium">{tool}</span>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Keyword-Typen */}
+      <section className="py-16 px-6">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-4">Verschiedene Keyword-Typen für Ihre Strategie</h2>
+          <p className="text-gray-400 text-center mb-12 max-w-3xl mx-auto">
+            Eine erfolgreiche SEO-Strategie berücksichtigt verschiedene Keyword-Typen. Wir analysieren alle relevanten Kategorien für Ihr Unternehmen.
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-6">
+            {[
+              {
+                title: 'Short-Tail Keywords',
+                desc: 'Kurze, generische Begriffe mit hohem Suchvolumen wie "SEO Berlin" oder "Agentur Marketing". Hoher Wettbewerb, aber große Reichweite.'
+              },
+              {
+                title: 'Long-Tail Keywords',
+                desc: 'Spezifische Phrasen wie "SEO Agentur für kleine Unternehmen Berlin". Weniger Suchvolumen, aber höhere Conversion-Raten und weniger Wettbewerb.'
+              },
+              {
+                title: 'Transaktionale Keywords',
+                desc: 'Kaufbereite Suchanfragen wie "SEO Beratung buchen" oder "Keyword Recherche Angebot". Diese Keywords haben das höchste Conversion-Potenzial.'
+              },
+              {
+                title: 'Informationelle Keywords',
+                desc: 'Recherche-basierte Anfragen wie "Was ist Keyword-Recherche" oder "Wie funktioniert SEO". Ideal für Content-Marketing und Thought Leadership.'
+              }
+            ].map((type, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1 }}
+                className="glass-panel p-6 rounded-xl"
+              >
+                <h3 className="text-xl font-semibold mb-2 text-gold-300">{type.title}</h3>
+                <p className="text-gray-400">{type.desc}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-16 px-6">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-12">Häufige Fragen zur Keyword-Recherche</h2>
+
+          <div className="space-y-4">
+            {[
+              {
+                q: 'Wie lange dauert eine professionelle Keyword-Recherche?',
+                a: 'Eine gründliche Keyword-Recherche dauert typischerweise 1-2 Wochen. Dies umfasst die initiale Analyse, Wettbewerbsrecherche, Clusterung und Priorisierung. Für größere Projekte mit vielen Themenbereichen kann es auch länger dauern.'
+              },
+              {
+                q: 'Was kostet eine Keyword-Recherche bei CAIT?',
+                a: 'Unsere Keyword-Recherche-Pakete beginnen bei 890€ für kleine Projekte. Umfangreiche Analysen mit mehreren Themencluster und detaillierten Content-Empfehlungen liegen bei 1.500-2.500€. Kontaktieren Sie uns für ein individuelles Angebot.'
+              },
+              {
+                q: 'Wie oft sollte eine Keyword-Recherche aktualisiert werden?',
+                a: 'Wir empfehlen, die Keyword-Strategie mindestens quartalsweise zu überprüfen. Suchtrends ändern sich, neue Wettbewerber treten auf und Google passt seine Algorithmen an. Eine regelmäßige Aktualisierung sichert langfristigen SEO-Erfolg.'
+              },
+              {
+                q: 'Welche Daten erhalte ich nach der Keyword-Recherche?',
+                a: 'Sie erhalten ein umfassendes Keyword-Dokument mit: priorisierter Keyword-Liste, Suchvolumen und Wettbewerbsdaten, thematischen Clustern, Content-Empfehlungen pro Keyword-Gruppe, und einer Roadmap für die Umsetzung.'
+              }
+            ].map((faq, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1 }}
+                className="glass-panel p-6 rounded-xl"
+              >
+                <h3 className="text-lg font-semibold mb-2 text-gold-300">{faq.q}</h3>
+                <p className="text-gray-400">{faq.a}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-20 px-6">
         <motion.div
@@ -138,7 +246,7 @@ export default function KeywordRecherchePage() {
           <div className="relative z-10">
             <h3 className="text-3xl font-bold mb-4">Jetzt Keyword-Recherche starten</h3>
             <p className="text-gray-300 text-lg mb-8 max-w-2xl mx-auto">
-              Gewinnen Sie langfristig Sichtbarkeit und bauen Sie eine Content-Strategie mit echtem Rankingpotenzial auf.
+              Gewinnen Sie langfristig Sichtbarkeit und bauen Sie eine Content-Strategie mit echtem Rankingpotenzial auf. Unsere Experten analysieren Ihr Potenzial.
             </p>
             <Link
               href="/kontakt"

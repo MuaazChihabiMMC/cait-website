@@ -45,6 +45,9 @@ export default function HomePage() {
             <span className="text-gradient-gold drop-shadow-[0_0_25px_rgba(252,208,102,0.3)]">
               Berlin
             </span>
+            <span className="block text-2xl md:text-3xl mt-4 text-gray-300 font-normal tracking-normal">
+              Digital Marketing & SEO
+            </span>
           </motion.h1>
 
           {/* Subheadline */}
@@ -54,7 +57,7 @@ export default function HomePage() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            Wir verwandeln Ihre digitale Präsenz in eine <span className="text-[#d4af37] font-medium">Umsatzmaschine</span>.
+            <strong className="text-white">CAIT Agentur Berlin</strong> verwandelt Ihre digitale Präsenz in eine <span className="text-[#d4af37] font-medium">Umsatzmaschine</span>.
             Spezialisiert auf SEO, Google Ads und Premium Webdesign.
           </motion.p>
 
@@ -88,7 +91,11 @@ export default function HomePage() {
             transition={{ delay: 0.6 }}
           >
             <a href="https://www.google.com/partners/agency?id=4801646033" target="_blank" className="inline-block hover:scale-110 transition-transform duration-300">
-              <img src="https://www.gstatic.com/partners/badge/images/2025/PartnerBadgeClickable.svg" className="h-16 md:h-20 drop-shadow-xl" />
+              <img
+                src="https://www.gstatic.com/partners/badge/images/2025/PartnerBadgeClickable.svg"
+                className="h-16 md:h-20 drop-shadow-xl"
+                alt="Google Partner Badge"
+              />
             </a>
           </motion.div>
 
@@ -206,7 +213,7 @@ export default function HomePage() {
                     {item.icon}
                   </motion.div>
                 </div>
-                <h3 className="text-lg md:text-xl font-bold mb-3 text-white">{item.title}</h3>
+                <div className="text-lg md:text-xl font-bold mb-3 text-white">{item.title}</div>
                 <p className="text-gray-100 text-sm md:text-base">{item.content}</p>
               </motion.div>
             ))}
@@ -292,7 +299,7 @@ export default function HomePage() {
                     transition={{ delay: index * 0.1 }}
                     className="bg-white/5 p-4 md:p-5 rounded-lg border border-[#d4af37]/20"
                   >
-                    <h3 className="font-bold text-lg md:text-xl mb-3 text-[#d4af37]">{section.title}</h3>
+                    <div className="font-bold text-lg md:text-xl mb-3 text-[#d4af37]">{section.title}</div>
                     <p className="text-gray-100 mb-3">{section.content}</p>
                     <ul className="space-y-2 pl-5">
                       {section.items.map((item, i) => (
@@ -313,7 +320,7 @@ export default function HomePage() {
               </div>
 
               <div className="mt-8 bg-white/5 p-4 rounded-lg border border-[#d4af37]/20">
-                <h3 className="font-bold text-lg mb-2 text-[#d4af37]">SEO Erfolge für Berliner Kunden</h3>
+                <div className="font-bold text-lg mb-2 text-[#d4af37]">SEO Erfolge für Berliner Kunden</div>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                   {[
                     { value: "+240%", label: "Organische Sichtbarkeit" },
@@ -362,7 +369,7 @@ export default function HomePage() {
               <div className="absolute inset-0 bg-gradient-to-br from-[#151b2e] to-blue-900/50 flex items-center justify-center p-8">
                 <div className="text-center max-w-md">
                   <div>
-                    <h3 className="text-xl font-bold mb-4 text-white">SEO Agentur Berlin - Unsere Leistungen</h3>
+                    <div className="text-xl font-bold mb-4 text-white">SEO Agentur Berlin - Unsere Leistungen</div>
                     <ul className="space-y-3 text-left text-gray-100">
                       {[
                         "Technische SEO-Analyse",
@@ -427,7 +434,7 @@ export default function HomePage() {
                   className="relative z-10 text-center p-6 md:p-8"
                 >
                   <div className="text-4xl md:text-6xl mb-3 md:mb-4">📈</div>
-                  <h3 className="text-lg md:text-xl font-bold mb-2 text-white">Google Ads Berlin - Unsere Erfolge</h3>
+                  <div className="text-lg md:text-xl font-bold mb-2 text-white">Google Ads Berlin - Unsere Erfolge</div>
                   <ul className="text-left max-w-xs mx-auto space-y-2 text-gray-100 text-sm md:text-base">
                     {[
                       "Durchschnittlich 35% niedrigere CPA",
@@ -528,7 +535,7 @@ export default function HomePage() {
                     transition={{ delay: 0.1 * index }}
                     className="bg-[#0a0f1a] p-4 rounded-lg border border-[#d4af37]/20"
                   >
-                    <h3 className="font-bold text-lg md:text-xl mb-2 md:mb-3 text-[#d4af37]">{section.title}</h3>
+                    <div className="font-bold text-lg md:text-xl mb-2 md:mb-3 text-[#d4af37]">{section.title}</div>
                     <p className="text-gray-100 text-sm md:text-base mb-3 md:mb-4">{section.content}</p>
                     <ul className="list-disc list-inside space-y-2 pl-4 text-gray-100 text-sm md:text-base">
                       {section.items.map((item, i) => (
@@ -673,7 +680,7 @@ export default function HomePage() {
                   >
                     <div className="flex items-center gap-3 mb-2">
                       {section.icon && section.icon}
-                      <h3 className="font-bold text-lg md:text-xl text-[#d4af37]">{section.title}</h3>
+                      <div className="font-bold text-lg md:text-xl text-[#d4af37]">{section.title}</div>
                     </div>
                     <p className="text-gray-100 text-sm md:text-base mb-3">{section.content}</p>
                     <ul className="list-disc list-inside space-y-2 pl-4 text-gray-100 text-sm md:text-base">
@@ -749,7 +756,7 @@ export default function HomePage() {
                   className="relative z-10 text-center p-6 md:p-8"
                 >
                   <div className="text-4xl md:text-6xl mb-3 md:mb-4">💻</div>
-                  <h3 className="text-lg md:text-xl font-bold mb-2 text-white">Webdesign Berlin - Unsere Technologien</h3>
+                  <div className="text-lg md:text-xl font-bold mb-2 text-white">Webdesign Berlin - Unsere Technologien</div>
                   <ul className="text-left max-w-xs mx-auto space-y-2 text-gray-100 text-sm md:text-base">
                     {[
                       "React.js / Next.js",
@@ -1050,12 +1057,6 @@ export default function HomePage() {
                 url: "https://elektro-azzam.de/",
                 category: "Elektro",
                 logo: "/logos/elektro-azzam-logo.png"
-              },
-              {
-                name: "Midan Werbeagentur",
-                url: "https://midan-textil.de/",
-                category: "Textil",
-                logo: "/logos/midan-werbeagentur-logo.png"
               },
               {
                 name: "Lumina Cafe & Bar",

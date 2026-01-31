@@ -12,9 +12,9 @@ export default function SeoIntro() {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h1 className="text-3xl md:text-4xl font-bold mb-4 text-[#fcd066]">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#fcd066]">
             Ihre SEO Agentur aus Berlin für nachhaltigen Erfolg
-          </h1>
+          </h2>
           <p className="text-lg text-gray-100 leading-relaxed max-w-3xl mx-auto">
             Als erfahrene <strong className="text-gray-200">SEO Agentur in Berlin</strong> sorgt CAIT Social Media für Top-Platzierungen in den Suchergebnissen. Wir steigern Ihre Sichtbarkeit durch datenbasierte Strategien, technische Exzellenz und Inhalte, die Kunden wirklich erreichen.
           </p>

@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "SEO Beratung Berlin | Kostenlose Strategie-Analyse | CAIT",
   description: "Professionelle SEO-Beratung für Berliner Unternehmen ✓ Technische Analyse ✓ Strategieentwicklung ✓ Maßgeschneiderte Lösungen. Jetzt Termin vereinbaren!",
   alternates: {
-    canonical: "https://www.cait-socialmedia.de/beratung"
+    canonical: "https://www.caitsocialmedia.com/seo-agentur-berlin/beratung"
   },
   keywords: [
     "SEO Beratung Berlin",
@@ -23,7 +23,7 @@ export default function BeratungPage() {
       <section className="relative isolate bg-gradient-to-b from-blue-900 to-blue-700 py-24 md:py-32 px-6 overflow-hidden">
         <div className="absolute inset-0 bg-[url('/pattern-bg.png')] bg-cover opacity-5 z-0" />
         <div className="absolute inset-0 bg-gradient-to-r from-[#0c1832]/90 via-[#0c1832]/70 to-[#0c1832]/90 z-0" />
-        
+
         <div className="max-w-6xl mx-auto text-center relative z-10">
           <div className="mb-6 inline-block bg-blue-600 text-sm px-4 py-1.5 rounded-full">
             SEO-Strategieberatung
@@ -36,11 +36,11 @@ export default function BeratungPage() {
               für Berliner Unternehmen
             </span>
           </h1>
-          
+
           <p className="text-lg md:text-xl text-blue-100 mb-10 max-w-3xl mx-auto">
             Kostenlose Erstberatung mit individueller Strategieanalyse - Entdecken Sie Ihr ungenutztes SEO-Potenzial mit Experten aus Berlin.
           </p>
-          
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="/kontakt"
@@ -88,7 +88,7 @@ export default function BeratungPage() {
               </p>
             </div>
           </div>
-          
+
           <div className="bg-[#1a2a4a] p-8 rounded-xl border border-[#2d3a5a]">
             <h3 className="text-2xl font-semibold mb-6 text-blue-300 text-center">
               Ihr Weg zur kostenlosen Erstberatung
@@ -136,7 +136,7 @@ export default function BeratungPage() {
           <p className="text-blue-100 text-center max-w-2xl mx-auto mb-16">
             Wir analysieren gemeinsam Ihre aktuelle Situation und entwickeln eine maßgeschneiderte Strategie
           </p>
-          
+
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
@@ -186,7 +186,7 @@ export default function BeratungPage() {
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-blue-300 text-center">
             Was Sie von unserer Beratung erwarten können
           </h2>
-          
+
           <div className="mt-16 grid md:grid-cols-2 gap-12">
             <div className="bg-gradient-to-br from-blue-900 to-blue-800 rounded-2xl p-8 border border-blue-700">
               <h3 className="text-2xl font-bold mb-6 text-blue-300">Ihr Nutzen</h3>
@@ -205,7 +205,7 @@ export default function BeratungPage() {
                 ))}
               </ul>
             </div>
-            
+
             <div>
               <h3 className="text-2xl font-bold mb-6 text-blue-300">Ihre Vorteile</h3>
               <div className="space-y-6">
@@ -249,7 +249,7 @@ export default function BeratungPage() {
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-blue-300 text-center">
             Das sagen Berliner Unternehmen
           </h2>
-          
+
           <div className="mt-16 grid md:grid-cols-2 gap-8">
             {[
               {
@@ -285,7 +285,7 @@ export default function BeratungPage() {
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-blue-300 text-center">
             Häufige Fragen zur SEO-Beratung
           </h2>
-          
+
           <div className="mt-12 space-y-6">
             {[
               {

@@ -15,7 +15,7 @@ export default function SeoWhy() {
           >
             Warum SEO für Berliner Unternehmen essenziell ist
           </motion.h2>
-          
+
           <motion.p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -23,9 +23,9 @@ export default function SeoWhy() {
             transition={{ delay: 0.1 }}
             className="text-gray-100 text-lg leading-relaxed"
           >
-            In der dynamischen Wirtschaft Berlins entscheidet digitale Sichtbarkeit über Markterfolg. Ohne SEO verlieren Berliner Unternehmen täglich Kunden an besser platzierte Wettbewerber. 
+            In der dynamischen Wirtschaft Berlins entscheidet digitale Sichtbarkeit über Markterfolg. Ohne SEO verlieren Berliner Unternehmen täglich Kunden an besser platzierte Wettbewerber.
           </motion.p>
-          
+
           <motion.p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -33,9 +33,9 @@ export default function SeoWhy() {
             transition={{ delay: 0.2 }}
             className="text-gray-100 text-lg leading-relaxed"
           >
-            Als <strong>SEO Agentur Berlin</strong> wissen wir: Gute Rankings bei Google schaffen nicht nur Vertrauen, sondern bringen gezielt Berliner Kunden zu Ihnen - für mehr Anfragen und höhere Umsätze.
+            Als <span className="text-white font-semibold">SEO Agentur Berlin</span> wissen wir: Gute Rankings bei Google schaffen nicht nur Vertrauen, sondern bringen gezielt Berliner Kunden zu Ihnen - für mehr Anfragen und höhere Umsätze.
           </motion.p>
-          
+
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -70,7 +70,7 @@ export default function SeoWhy() {
               content: "Organischer Traffic aus Berlin bedeutet qualifizierte Leads und höhere Conversion-Raten."
             }
           ].map((benefit, index) => (
-            <motion.div 
+            <motion.div
               key={index}
               initial={{ opacity: 0, y: 30, scale: 0.95 }}
               whileInView={{ opacity: 1, y: 0, scale: 1 }}
@@ -91,7 +91,7 @@ export default function SeoWhy() {
           ))}
         </div>
       </div>
-      
+
       {/* Berliner Callout */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
@@ -109,7 +109,7 @@ export default function SeoWhy() {
           <div>
             <h3 className="text-xl font-bold text-[#fcd066] mb-2">Berliner Unternehmen im Fokus</h3>
             <p className="text-gray-100">
-              Als <strong>SEO Agentur Berlin</strong> kennen wir die lokalen Besonderheiten: Von der Optimierung für Berliner Stadtteil-Keywords bis zur Steigerung der Sichtbarkeit in lokalen Suchergebnissen. Wir machen Ihr Unternehmen zum Top-Ergebnis für Berliner Kunden.
+              Als <span className="text-white font-semibold">SEO Agentur Berlin</span> kennen wir die lokalen Besonderheiten: Von der Optimierung für Berliner Stadtteil-Keywords bis zur Steigerung der Sichtbarkeit in lokalen Suchergebnissen. Wir machen Ihr Unternehmen zum Top-Ergebnis für Berliner Kunden.
             </p>
           </div>
         </div>

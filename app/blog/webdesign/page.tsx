@@ -88,7 +88,7 @@ export default function WebDesignBlogPage() {
             für digitale Präsenz
           </h1>
           <p className="text-xl text-blue-200 max-w-2xl mx-auto">
-            Aktuelle Trends und Technologien für moderne Websites und Anwendungen
+            Moderne Webtechnologien für Ihre digitale Präsenz – aktuelle Trends und Technologien für erfolgreiche Websites und Anwendungen
           </p>
         </div>
 
@@ -96,7 +96,7 @@ export default function WebDesignBlogPage() {
         <div className="max-w-3xl mx-auto text-blue-200 text-lg leading-relaxed mb-16">
           <h2 className="text-2xl font-bold text-blue-100 mb-4">Webdesign & Webentwicklung im Wandel</h2>
           <p className="mb-4">
-            In einer digitalen Welt, die sich rasant verändert, ist modernes Webdesign mehr als nur Ästhetik. Es geht um Performance, Barrierefreiheit, Usability und technologische Innovation. 
+            In einer digitalen Welt, die sich rasant verändert, ist modernes Webdesign mehr als nur Ästhetik. Es geht um Performance, Barrierefreiheit, Usability und technologische Innovation.
             Ob Sie eine Landingpage optimieren, ein komplettes CMS entwickeln oder Ihr Frontend mit React, Tailwind oder WordPress neu denken, hier finden Sie Impulse und bewährte Strategien.
           </p>
           <p className="mb-4">
@@ -110,7 +110,7 @@ export default function WebDesignBlogPage() {
         {/* Blog Posts Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {webDesignPosts.map((post) => (
-            <article 
+            <article
               key={post.slug}
               className="group relative bg-blue-900/30 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-blue-800/50"
             >
@@ -128,26 +128,26 @@ export default function WebDesignBlogPage() {
               <div className="p-6">
                 <div className="flex flex-wrap gap-2 mb-3">
                   {post.tags.map((tag) => (
-                    <span 
-                      key={tag} 
+                    <span
+                      key={tag}
                       className="px-3 py-1 bg-blue-900/50 text-blue-300 text-xs font-medium rounded-full border border-blue-800"
                     >
                       {tag}
                     </span>
                   ))}
                 </div>
-                
+
                 <h2 className="text-xl font-bold text-blue-100 mb-2 group-hover:text-blue-300 transition-colors">
                   {post.title}
                 </h2>
-                
+
                 <p className="text-blue-200 mb-4">{post.excerpt}</p>
-                
+
                 <div className="flex items-center justify-between">
                   <span className="text-sm text-blue-300">{post.readTime} Lesezeit • {post.date}</span>
 
-                  <Link 
-                    href={`/blog/webdesign/${post.slug}`} 
+                  <Link
+                    href={`/blog/webdesign/${post.slug}`}
                     className="text-blue-300 font-medium flex items-center group-hover:translate-x-1 transition-transform"
                     aria-label={`Mehr erfahren über ${post.title}`}
                   >
@@ -236,13 +236,13 @@ export default function WebDesignBlogPage() {
             <h2 className="text-2xl md:text-3xl font-bold mb-4">Webdesign Updates erhalten</h2>
             <p className="text-blue-200 mb-6">Abonnieren Sie unseren Newsletter für exklusive Tipps und Trends</p>
             <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
-              <input 
-                type="email" 
-                placeholder="Ihre E-Mail-Adresse" 
+              <input
+                type="email"
+                placeholder="Ihre E-Mail-Adresse"
                 className="flex-grow px-4 py-3 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-300"
                 aria-label="E-Mail für Webdesign-Newsletter"
               />
-              <button 
+              <button
                 className="px-6 py-3 bg-white text-blue-700 font-semibold rounded-lg hover:bg-gray-100 transition-colors"
                 aria-label="Newsletter abonnieren"
               >

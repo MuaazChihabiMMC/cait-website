@@ -2,8 +2,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export const metadata = {
-  title: 'Google Ads Agentur Berlin | SEA Strategien & Kampagnen, CAIT Blog',
-  description: 'Ihre Google Ads Agentur in Berlin bietet professionelle SEA-Strategien.',
+  title: 'Google Ads Tipps & SEA Strategien | CAIT Blog',
+  description: 'Praxisnahe Google Ads Tipps: Kampagnenaufbau, Conversion-Optimierung und Budget-Strategien. Expertenwissen für erfolgreiche SEA-Kampagnen.',
   alternates: {
     canonical: 'https://www.caitsocialmedia.com/blog/google-ads',
   },
@@ -62,7 +62,7 @@ export default function GoogleAdsBlogPage() {
         {/* Blog Posts Grid with keyword optimization */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {googleAdsPosts.map((post) => (
-            <article 
+            <article
               key={post.slug}
               className="group relative bg-blue-900/30 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-blue-800/50"
             >
@@ -80,25 +80,25 @@ export default function GoogleAdsBlogPage() {
               <div className="p-6">
                 <div className="flex flex-wrap gap-2 mb-3">
                   {post.tags.map((tag) => (
-                    <span 
-                      key={tag} 
+                    <span
+                      key={tag}
                       className="px-3 py-1 bg-blue-800/50 text-blue-300 text-xs font-medium rounded-full backdrop-blur-sm"
                     >
                       {tag}
                     </span>
                   ))}
                 </div>
-                
+
                 <h2 className="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
                   {post.title}
                 </h2>
-                
+
                 <p className="text-blue-200 mb-4">{post.excerpt}</p>
-                
+
                 <div className="flex items-center justify-between">
                   <span className="text-sm text-blue-400">{post.readTime} Lesezeit</span>
-                  <Link 
-                    href={`/blog/google-ads/${post.slug}`} 
+                  <Link
+                    href={`/blog/google-ads/${post.slug}`}
                     className="text-blue-400 font-medium flex items-center group-hover:translate-x-1 transition-transform hover:text-blue-300"
                     aria-label={`Mehr erfahren über ${post.title} - Google Ads Agentur Berlin`}
                   >
@@ -119,13 +119,13 @@ export default function GoogleAdsBlogPage() {
             <h2 className="text-2xl md:text-3xl font-bold mb-4">Google Ads Updates für Berliner Unternehmen</h2>
             <p className="text-blue-100 mb-6">Ihre <strong className="text-white">SEA Agentur Berlin</strong> versorgt Sie mit exklusiven Tipps zu Kampagnenoptimierung</p>
             <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
-              <input 
-                type="email" 
-                placeholder="Ihre E-Mail-Adresse" 
+              <input
+                type="email"
+                placeholder="Ihre E-Mail-Adresse"
                 className="flex-grow px-4 py-3 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-300"
                 aria-label="E-Mail für Google Ads Agentur Newsletter"
               />
-              <button 
+              <button
                 className="px-6 py-3 bg-white text-blue-700 font-semibold rounded-lg hover:bg-gray-100 transition-colors"
                 aria-label="Google Ads Tipps erhalten"
               >
@@ -185,7 +185,7 @@ export default function GoogleAdsBlogPage() {
           </h2>
 
           <p>
-            Als <strong className="text-white">Google Ads Agentur Berlin</strong> bieten wir dir nicht nur standardisierte Anzeigenkampagnen, sondern individuelle, datengetriebene Strategien für nachhaltige Performance. In der heutigen digitalen Welt reicht es nicht aus, einfach nur online zu werben. Der Unterschied liegt in der richtigen Keyword-Auswahl, einer klugen Kampagnenstruktur und laufender Optimierung.
+            Als spezialisierte Agentur bieten wir dir nicht nur standardisierte Anzeigenkampagnen, sondern individuelle, datengetriebene Strategien für nachhaltige Performance. In der heutigen digitalen Welt reicht es nicht aus, einfach nur online zu werben. Der Unterschied liegt in der richtigen Keyword-Auswahl, einer klugen Kampagnenstruktur und laufender Optimierung.
           </p>
 
           <h3 className="text-2xl font-semibold text-white mt-8">Was macht unsere SEA Agentur besonders?</h3>
@@ -215,7 +215,7 @@ export default function GoogleAdsBlogPage() {
 
           <h3 className="text-2xl font-semibold text-white mt-8">Fehler, die wir als erfahrene Agentur vermeiden:</h3>
           <p>
-            Viele Unternehmen verbrennen Werbebudget, weil sie ihre Kampagnen nicht regelmäßig prüfen. Oft fehlen Conversion-Ziele, das Keyword-Match ist zu breit oder Anzeigen haben keine Relevanz zur Landingpage. Als <strong className="text-white">Google Ads Agentur Berlin</strong> wissen wir, wie man diese Fehler vermeidet, mit Erfahrung, Analyse und einem strukturierten Vorgehen.
+            Viele Unternehmen verbrennen Werbebudget, weil sie ihre Kampagnen nicht regelmäßig prüfen. Oft fehlen Conversion-Ziele, das Keyword-Match ist zu breit oder Anzeigen haben keine Relevanz zur Landingpage. Wir wissen, wie man diese Fehler vermeidet, mit Erfahrung, Analyse und einem strukturierten Vorgehen.
           </p>
 
           <h3 className="text-2xl font-semibold text-white mt-8">Warum in Google Ads investieren?</h3>
@@ -245,10 +245,10 @@ export default function GoogleAdsBlogPage() {
           <div className="bg-blue-900/30 p-6 rounded-lg shadow-sm border border-blue-800/50">
             <h2 className="text-2xl font-bold text-white mb-4">CAIT - Ihre Google Ads Agentur in Berlin</h2>
             <p className="text-blue-200 mb-3">
-              Als erfahrene <strong className="text-white">Google Ads Agentur Berlin</strong> bieten wir ganzheitliche SEA-Strategien für Unternehmen jeder Größe. Unsere <strong className="text-white">SEA Agentur</strong> Spezialisten kombinieren technisches Know-how mit strategischer Kampagnenführung und Conversion-Optimierung.
+              Als erfahrene Agentur bieten wir ganzheitliche SEA-Strategien für Unternehmen jeder Größe. Unsere SEA-Spezialisten kombinieren technisches Know-how mit strategischer Kampagnenführung und Conversion-Optimierung.
             </p>
             <p className="text-blue-200">
-              Egal ob Sie eine <strong className="text-white">Google Ads Agentur</strong> für Neukundengewinnung suchen oder eine <strong className="text-white">SEA Agentur Berlin</strong> für bessere Werbeergebnisse benötigen - wir entwickeln maßgeschneiderte Lösungen für Ihr Business.
+              Egal ob Sie Unterstützung für Neukundengewinnung suchen oder bessere Werbeergebnisse benötigen - wir entwickeln maßgeschneiderte Lösungen für Ihr Business.
             </p>
           </div>
         </div>

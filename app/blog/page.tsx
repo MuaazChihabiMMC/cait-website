@@ -2,8 +2,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export const metadata = {
-  title: 'Marketing Blog | CAIT SEO & Social Media Agentur Berlin',
-  description: 'Aktuelle Insights zu SEO, Google Ads,Webdesign und SMM aus Berlin. Experten Tipps für bessere Rankings und mehr Conversions.',
+  title: 'Marketing Tipps & Strategien | CAIT Blog für SEO, Ads & Social Media',
+  description: 'Praxisnahe Marketing-Tipps, SEO-Strategien, Google Ads Guides und Social Media Insights. Expertenwissen für Ihren digitalen Erfolg.',
   alternates: {
     canonical: 'https://www.caitsocialmedia.com/blog',
   },
@@ -73,7 +73,7 @@ export default function BlogPage() {
       <section className="py-12 px-6 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {blogCategories.map((category) => (
-            <div 
+            <div
               key={category.id}
               className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 h-80 border border-blue-800/50"
             >
@@ -88,7 +88,7 @@ export default function BlogPage() {
                 <p className="text-blue-100 mb-6 opacity-90 group-hover:opacity-100 transition-opacity">
                   {category.description}
                 </p>
-                <Link 
+                <Link
                   href={`/blog/${category.id}`}
                   className={`inline-flex items-center px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-sm font-medium group-hover:bg-white/30 transition-all bg-gradient-to-br ${category.color}`}
                   aria-label={`Mehr erfahren über ${category.title}`}
@@ -179,7 +179,7 @@ export default function BlogPage() {
       <section className="mt-20 max-w-4xl mx-auto text-blue-200 text-lg space-y-6 px-6 pb-20">
         <h2 className="text-3xl font-bold text-white">Warum ein Marketing-Blog für Berlin entscheidend ist</h2>
         <p>
-          In einer digitalisierten Welt, in der Sichtbarkeit über Erfolg oder Misserfolg entscheidet, ist ein strategisch geführter Marketing-Blog essenziell, besonders für Unternehmen in Berlin. Die Hauptstadt ist nicht nur kultureller und politischer Mittelpunkt, sondern auch einer der wettbewerbsintensivsten Märkte für Dienstleistungen und Produkte. Wer hier gefunden werden möchte, muss über klassische Werbung hinausdenken. Genau hier setzt der <strong className="text-white">CAIT Marketing Blog</strong> an: Er ist Informationsquelle, Ideengeber und SEO-Turbo in einem.
+          In einer digitalisierten Welt, in der Sichtbarkeit über Erfolg oder Misserfolg entscheidet, ist ein strategisch geführter Marketing-Blog essenziell, besonders für Unternehmen in Berlin. Die Hauptstadt ist nicht nur kultureller und politischer Mittelpunkt, sondern auch einer der wettbewerbsintensivsten Märkte für Dienstleistungen und Produkte. Wer hier gefunden werden möchte, muss über klassische Werbung hinausdenken. Genau hier setzt der CAIT Marketing Blog an: Er ist Informationsquelle, Ideengeber und SEO-Turbo in einem.
         </p>
         <p>
           Mit Beiträgen über <Link href="/blog/seo" className="text-blue-400 hover:underline">Suchmaschinenoptimierung</Link>, <Link href="/blog/google-ads" className="text-blue-400 hover:underline">Google Ads</Link>, <Link href="/blog/social-media" className="text-blue-400 hover:underline">Social Media Marketing</Link> und <Link href="/blog/webdesign" className="text-blue-400 hover:underline">Webdesign</Link> erhalten Leser fundierte Einblicke in aktuelle Trends, Algorithmen, Tools und Best Practices. Unsere Artikel basieren nicht auf Vermutungen, sondern auf echter Projekterfahrung mit Berliner Unternehmen aus verschiedenen Branchen.
@@ -189,11 +189,11 @@ export default function BlogPage() {
           SEO ist kein einmaliges Projekt, sondern ein kontinuierlicher Prozess. Gerade in Berlin, wo lokale Konkurrenz auf Bundesebene agiert, ist eine durchdachte Strategie entscheidend. Wir zeigen in unseren Blogartikeln, wie man mit gezielter Keyword-Recherche, einer klugen Seitenstruktur, technisch sauberem Aufbau und nutzerzentrierten Inhalten langfristig im Ranking steigt. Besonders wichtig ist dabei die Kombination aus lokalem Bezug (z.B. „Zahnarzt Berlin Charlottenburg") und fachlichem Mehrwert.
         </p>
         <p>
-          Unsere Tipps zu <strong className="text-white">technischem SEO</strong>, <strong className="text-white">Content-Optimierung</strong>, <strong className="text-white">Linkbuilding</strong> und <strong className="text-white">PageSpeed</strong> sind so formuliert, dass sie für Anfänger verständlich und für Fortgeschrittene hilfreich sind. Wir nehmen regelmäßig Tools wie Google Search Console, Screaming Frog oder Sistrix unter die Lupe, immer mit dem Ziel, unsere Leser:innen zum digitalen Erfolg zu führen.
+          Unsere Tipps zu technischem SEO, Content-Optimierung, Linkbuilding und PageSpeed sind so formuliert, dass sie für Anfänger verständlich und für Fortgeschrittene hilfreich sind. Wir nehmen regelmäßig Tools wie Google Search Console, Screaming Frog oder Sistrix unter die Lupe, immer mit dem Ziel, unsere Leser:innen zum digitalen Erfolg zu führen.
         </p>
         <h3 className="text-2xl font-semibold text-white mt-8">Google Ads, maximal effizient für Berliner Unternehmen</h3>
         <p>
-          Wer sofortige Sichtbarkeit will, kommt an Google Ads nicht vorbei. Aber hohe Klickkosten und niedrige Conversion-Rates sind keine Seltenheit, besonders in Berlin. In unseren Google Ads Beiträgen geben wir konkrete Tipps zur Kampagnenstruktur, Keyword-Gruppierung, Anzeigenerstellung, A/B-Tests und Conversion-Tracking. Auch Themen wie <strong className="text-white">Smart Bidding</strong>, <strong className="text-white">Performance Max</strong> und <strong className="text-white">Remarketing</strong> werden praxisnah erklärt.
+          Wer sofortige Sichtbarkeit will, kommt an Google Ads nicht vorbei. Aber hohe Klickkosten und niedrige Conversion-Rates sind keine Seltenheit, besonders in Berlin. In unseren Google Ads Beiträgen geben wir konkrete Tipps zur Kampagnenstruktur, Keyword-Gruppierung, Anzeigenerstellung, A/B-Tests und Conversion-Tracking. Auch Themen wie Smart Bidding, Performance Max und Remarketing werden praxisnah erklärt.
         </p>
         <p>
           Ob für Startups in Friedrichshain oder Dienstleister in Mitte, mit den richtigen Strategien holen wir aus jedem Budget das Maximum heraus. Unsere Blogartikel helfen dabei, typische Fehler zu vermeiden und nachhaltige Erfolge zu erzielen.
@@ -203,11 +203,11 @@ export default function BlogPage() {
           In einer Stadt wie Berlin, die von Events, Trends und Communitys lebt, ist Social Media mehr als nur ein netter Kanal. Es ist Sprachrohr, Branding-Plattform und Umsatztreiber zugleich. Wir zeigen in unserem Blog, wie Unternehmen durch organische Strategien auf Instagram, TikTok und LinkedIn Reichweite aufbauen, ohne auf Follower-Käufe oder Bots zurückzugreifen.
         </p>
         <p>
-          Mit Themen wie <strong className="text-white">Instagram Reels</strong>, <strong className="text-white">Content-Planung</strong>, <strong className="text-white">Hashtag-Recherche</strong> und <strong className="text-white">Community Management</strong> bieten wir einen Rundumblick auf die Welt der sozialen Medien, immer mit Fokus auf Berliner Zielgruppen. Ergänzt wird das Ganze durch echte Case Studies und Content-Ideen, die sich sofort umsetzen lassen.
+          Mit Themen wie Instagram Reels, Content-Planung, Hashtag-Recherche und Community Management bieten wir einen Rundumblick auf die Welt der sozialen Medien, immer mit Fokus auf Berliner Zielgruppen. Ergänzt wird das Ganze durch echte Case Studies und Content-Ideen, die sich sofort umsetzen lassen.
         </p>
         <h3 className="text-2xl font-semibold text-white mt-8">Webdesign & UX, damit aus Besuchern Kunden werden</h3>
         <p>
-          Die schönste Kampagne bringt nichts, wenn die Website nicht konvertiert. Deshalb widmen wir uns auch regelmäßig dem Thema <strong className="text-white">Webdesign</strong> und <strong className="text-white">User Experience</strong>. In unseren Beiträgen analysieren wir, wie Landingpages aufgebaut sein müssen, wie Vertrauen entsteht und welche Design-Trends 2024 wirklich konvertieren.
+          Die schönste Kampagne bringt nichts, wenn die Website nicht konvertiert. Deshalb widmen wir uns auch regelmäßig dem Thema Webdesign und User Experience. In unseren Beiträgen analysieren wir, wie Landingpages aufgebaut sein müssen, wie Vertrauen entsteht und welche Design-Trends 2024 wirklich konvertieren.
         </p>
         <p>
           Dabei achten wir besonders auf mobile Optimierung, Ladezeiten, Call-to-Actions und psychologische Trigger. Ob Dienstleister oder Onlineshop, wir zeigen, wie Design und Marketing zusammenarbeiten, um messbare Ergebnisse zu erzielen.

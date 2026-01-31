@@ -54,14 +54,14 @@ export default function SocialMediaBlogPage() {
             für Business-Wachstum
           </h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            Aktuelle Strategien für Instagram, TikTok und LinkedIn Marketing
+            Aktuelle Strategien für Instagram, TikTok und LinkedIn Marketing – für echtes Business-Wachstum und mehr Reichweite
           </p>
         </div>
 
         {/* Blog Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {socialMediaPosts.map((post) => (
-            <article 
+            <article
               key={post.slug}
               className="group relative bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden"
             >
@@ -79,26 +79,26 @@ export default function SocialMediaBlogPage() {
               <div className="p-6">
                 <div className="flex flex-wrap gap-2 mb-3">
                   {post.tags.map((tag) => (
-                    <span 
-                      key={tag} 
+                    <span
+                      key={tag}
                       className="px-3 py-1 bg-blue-900/50 text-blue-200 text-xs font-medium rounded-full"
                     >
                       {tag}
                     </span>
                   ))}
                 </div>
-                
+
                 <h2 className="text-xl font-bold text-white mb-2 group-hover:text-blue-300 transition-colors">
                   {post.title}
                 </h2>
-                
+
                 <p className="text-gray-300 mb-4">{post.excerpt}</p>
-                
+
                 <div className="flex items-center justify-between">
                   <span className="text-sm text-gray-400">{post.readTime} Lesezeit</span>
 
-                  <Link 
-                    href={`/blog/social-media/${post.slug}`} 
+                  <Link
+                    href={`/blog/social-media/${post.slug}`}
                     className="text-blue-400 font-medium flex items-center group-hover:translate-x-1 transition-transform"
                     aria-label={`Mehr erfahren über ${post.title}`}
                   >
@@ -117,10 +117,10 @@ export default function SocialMediaBlogPage() {
         <div className="max-w-3xl mx-auto text-gray-300 text-lg leading-relaxed mb-16 space-y-6">
           <h2 className="text-2xl font-bold text-white">Warum Social Media Marketing so entscheidend ist</h2>
           <p>Social Media ist nicht nur ein Kommunikationskanal, es ist heute einer der stärksten Hebel für Markenbekanntheit, Vertrauen und Kundengewinnung. Ob für Start-ups, etablierte Unternehmen oder Selbstständige, Plattformen wie Instagram, TikTok oder LinkedIn bieten enorme Potenziale zur Reichweitensteigerung und Kundenbindung.</p>
-          
+
           <h3 className="text-xl font-semibold text-white mt-6">Instagram Marketing, mehr als nur schöne Bilder</h3>
           <p>Instagram ist weiterhin eine der wichtigsten Plattformen für Branding und Community-Aufbau. Mit Reels, Stories, Karussells und Guides stehen vielseitige Formate zur Verfügung, um Inhalte kreativ und visuell ansprechend zu gestalten.</p>
-          
+
           <h3 className="text-xl font-semibold text-white mt-6">TikTok, die Plattform für virales Wachstum</h3>
           <p>TikTok hat sich zu einem der mächtigsten Tools für organisches Wachstum entwickelt. Der Algorithmus belohnt kreativen, plattformspezifischen Content, der Emotionen weckt oder unterhält.</p>
 
@@ -137,13 +137,13 @@ export default function SocialMediaBlogPage() {
             <h2 className="text-2xl md:text-3xl font-bold mb-4">Social Media Updates erhalten</h2>
             <p className="text-blue-200 mb-6">Abonnieren Sie unseren Newsletter für exklusive Strategien</p>
             <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
-              <input 
-                type="email" 
-                placeholder="Ihre E-Mail-Adresse" 
+              <input
+                type="email"
+                placeholder="Ihre E-Mail-Adresse"
                 className="flex-grow px-4 py-3 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-300"
                 aria-label="E-Mail für Social Media Newsletter"
               />
-              <button 
+              <button
                 className="px-6 py-3 bg-white text-blue-700 font-semibold rounded-lg hover:bg-gray-100 transition-colors"
                 aria-label="Newsletter abonnieren"
               >

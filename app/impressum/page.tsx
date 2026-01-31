@@ -1,5 +1,5 @@
 export const metadata = {
-  title: 'Impressum | CAIT',
+  title: 'Impressum & Rechtliches - CAIT Agentur Berlin',
   description: 'Gesetzlich vorgeschriebene Anbieterkennzeichnung gemäß § 5 TMG für CAIT.',
   alternates: {
     canonical: 'https://www.caitsocialmedia.com/impressum',
@@ -65,10 +65,10 @@ export default function ImpressumPage() {
 
         <p className="mt-8 text-sm text-blue-400">
           Quelle:{' '}
-          <a 
-            href="https://www.e-recht24.de" 
-            target="_blank" 
-            rel="noopener noreferrer" 
+          <a
+            href="https://www.e-recht24.de"
+            target="_blank"
+            rel="noopener noreferrer"
             className="underline hover:text-blue-300 transition"
           >
             www.e-recht24.de

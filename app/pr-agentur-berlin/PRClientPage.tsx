@@ -81,7 +81,7 @@ export default function PRClientPage() {
                         transition={{ delay: 0.2 }}
                         className="text-xl text-gray-300 mb-10 max-w-3xl mx-auto"
                     >
-                        Wir bringen Ihre Botschaft in die Öffentlichkeit. Als erfahrene PR Agentur in Berlin entwickeln wir Kommunikationsstrategien, die Ihre Marke stärken und Ihre Zielgruppe erreichen.
+                        Als Ihre PR Agentur Berlin sind wir <strong className="text-gold-300">Ihre Stimme in den Medien</strong>. Wir bringen Ihre Botschaft in die Öffentlichkeit und entwickeln Kommunikationsstrategien, die Ihre Marke stärken und Ihre Zielgruppe erreichen.
                     </motion.p>
 
                     <motion.div
@@ -230,10 +230,10 @@ export default function PRClientPage() {
 
                     <div className="space-y-6">
                         {[
-                            { title: 'Analyse & Strategie', desc: 'Wir analysieren Ihre aktuelle Positionierung und entwickeln eine maßgeschneiderte PR-Strategie.' },
-                            { title: 'Storytelling', desc: 'Wir finden Ihre einzigartige Geschichte und formulieren Kernbotschaften.' },
-                            { title: 'Medienarbeit', desc: 'Aktive Ansprache relevanter Journalisten und Platzierung in Zielmedien.' },
-                            { title: 'Monitoring & Reporting', desc: 'Kontinuierliche Erfolgsmessung und transparente Berichterstattung.' }
+                            { title: 'Analyse & Strategie', desc: 'Wir analysieren Ihre aktuelle Positionierung, Ihre Wettbewerber und entwickeln eine maßgeschneiderte PR-Strategie, die zu Ihren Unternehmenszielen passt.' },
+                            { title: 'Storytelling & Messaging', desc: 'Wir finden Ihre einzigartige Geschichte und formulieren Kernbotschaften, die bei Journalisten und Ihrer Zielgruppe resonieren.' },
+                            { title: 'Medienarbeit & Platzierung', desc: 'Aktive Ansprache relevanter Journalisten, Pressemitteilungen und systematische Platzierung in Print, Online und TV/Radio.' },
+                            { title: 'Monitoring & Reporting', desc: 'Kontinuierliche Erfolgsmessung mit Media Clippings, Reichweitenanalyse und transparente Berichterstattung.' }
                         ].map((step, i) => (
                             <motion.div
                                 key={i}
@@ -250,6 +250,99 @@ export default function PRClientPage() {
                                     <h3 className="text-lg font-semibold mb-1">{step.title}</h3>
                                     <p className="text-gray-400">{step.desc}</p>
                                 </div>
+                            </motion.div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* Branchen */}
+            <section className="py-16 px-6 bg-primary-light/20">
+                <div className="max-w-5xl mx-auto">
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        className="text-center mb-12"
+                    >
+                        <h2 className="text-3xl font-bold mb-4">Branchen, die wir als PR Agentur Berlin betreuen</h2>
+                        <p className="text-gray-400 max-w-2xl mx-auto">
+                            Unsere Berliner PR-Experten haben Erfahrung in verschiedensten Branchen und verstehen die spezifischen Kommunikationsanforderungen jedes Sektors.
+                        </p>
+                    </motion.div>
+
+                    <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                        {[
+                            'Tech & Startups',
+                            'Gesundheit & Pharma',
+                            'Finanzen & FinTech',
+                            'Immobilien',
+                            'E-Commerce & Retail',
+                            'Kultur & Entertainment',
+                            'NGOs & Stiftungen',
+                            'B2B & Industrie',
+                            'Food & Gastronomie'
+                        ].map((branche, i) => (
+                            <motion.div
+                                key={i}
+                                initial={{ opacity: 0, scale: 0.9 }}
+                                whileInView={{ opacity: 1, scale: 1 }}
+                                viewport={{ once: true }}
+                                transition={{ delay: i * 0.05 }}
+                                className="glass-panel p-4 rounded-xl text-center"
+                            >
+                                <span className="text-gray-300">{branche}</span>
+                            </motion.div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* FAQ */}
+            <section className="py-16 px-6">
+                <div className="max-w-4xl mx-auto">
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        className="text-center mb-12"
+                    >
+                        <h2 className="text-3xl font-bold mb-4">Häufige Fragen zu unserer PR Agentur Berlin</h2>
+                    </motion.div>
+
+                    <div className="space-y-4">
+                        {[
+                            {
+                                q: 'Was kostet eine PR Agentur in Berlin?',
+                                a: 'Die Kosten für PR-Dienstleistungen variieren je nach Umfang und Zielen. Wir bieten verschiedene Modelle: Projekt-basierte Betreuung ab 2.500€, monatliche Retainer ab 1.500€/Monat, oder stundenbasierte Beratung. Im kostenlosen Erstgespräch erstellen wir ein maßgeschneidertes Angebot für Ihre Bedürfnisse.'
+                            },
+                            {
+                                q: 'Wie lange dauert es, bis PR-Ergebnisse sichtbar werden?',
+                                a: 'Erste Medienpräsenz kann bereits nach 4-6 Wochen erreicht werden. Nachhaltige PR-Erfolge und der Aufbau einer starken Medienpräsenz benötigen typischerweise 3-6 Monate kontinuierlicher Arbeit. Wir setzen auf langfristige Beziehungen zu Journalisten, die über Jahre hinweg Früchte tragen.'
+                            },
+                            {
+                                q: 'Was unterscheidet PR von Werbung?',
+                                a: 'Werbung ist bezahlter Content, den Sie vollständig kontrollieren. PR hingegen generiert redaktionelle Berichterstattung durch Journalisten – dies hat eine höhere Glaubwürdigkeit, da Dritte über Sie berichten. Eine erfolgreiche Kommunikationsstrategie kombiniert oft beide Ansätze für maximale Wirkung.'
+                            },
+                            {
+                                q: 'Arbeitet Ihre PR Agentur auch überregional?',
+                                a: 'Ja, obwohl wir als PR Agentur Berlin lokal verankert sind, betreuen wir Kunden deutschlandweit und international. Unser Netzwerk umfasst Medienkontakte in allen deutschen Großstädten sowie internationale Redaktionen für globale Kampagnen.'
+                            },
+                            {
+                                q: 'Wie messen Sie den Erfolg von PR-Kampagnen?',
+                                a: 'Wir tracken verschiedene KPIs: Anzahl und Qualität der Medienplatzierungen, Reichweite und AVE (Advertising Value Equivalent), Share of Voice gegenüber Wettbewerbern, Website-Traffic aus PR-Aktivitäten, und qualitative Faktoren wie Sentiment-Analyse. Monatliche Reports halten Sie transparent auf dem Laufenden.'
+                            }
+                        ].map((faq, i) => (
+                            <motion.div
+                                key={i}
+                                initial={{ opacity: 0, y: 10 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ delay: i * 0.1 }}
+                                className="glass-panel p-6 rounded-xl"
+                            >
+                                <h3 className="text-lg font-semibold mb-2 text-gold-300">{faq.q}</h3>
+                                <p className="text-gray-400">{faq.a}</p>
                             </motion.div>
                         ))}
                     </div>

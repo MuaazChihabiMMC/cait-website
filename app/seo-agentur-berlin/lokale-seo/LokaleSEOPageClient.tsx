@@ -19,31 +19,31 @@ export default function LokaleSEOPageClient() {
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
             📍 Lokale SEO für mehr Sichtbarkeit in deiner Region
           </h1>
-         <p className="text-xl md:text-2xl text-gray-300">
-  Ideal für lokale Dienstleister: Wir optimieren deinen Google-Eintrag, erstellen regionalen Content und fügen lokale Backlinks hinzu.
-</p>
-<p className="text-base text-gray-300 mt-4">
-  Unsere <strong>lokale SEO Agentur in Berlin</strong>, die <strong>CAIT SEO Experten</strong> , bringt dein Unternehmen dorthin, wo Kunden dich wirklich finden: ganz oben bei Google in deiner Stadt.
-</p>
+          <p className="text-xl md:text-2xl text-gray-300">
+            Ideal für lokale Dienstleister: Wir optimieren deinen Google-Eintrag, erstellen regionalen Content und fügen lokale Backlinks hinzu.
+          </p>
+          <p className="text-base text-gray-300 mt-4">
+            Unsere <strong>lokale SEO Agentur in Berlin</strong>, die <strong>CAIT SEO Experten</strong> , bringt dein Unternehmen dorthin, wo Kunden dich wirklich finden: ganz oben bei Google in deiner Stadt.
+          </p>
         </div>
       </motion.section>
 
-{/* SEO-Fließtext mit lokalem Fokus */}
-<section className="max-w-3xl mx-auto text-white text-lg leading-relaxed px-4 md:px-0">
-  <h2 className="text-2xl font-bold mb-4 text-gray-300">Warum lokale SEO heute entscheidend ist</h2>
-  <p className="mb-4">
-    Wenn potenzielle Kunden nach <strong>„Friseur in Berlin-Mitte“</strong> oder <strong>„Zahnarzt Charlottenburg“</strong> suchen, entscheiden oft nur wenige Positionen in den Google-Ergebnissen über einen neuen Kundenkontakt.
-    Mit einer gezielten <strong>lokalen SEO-Strategie</strong> sorgen wir dafür, dass dein Unternehmen in der Kartenansicht („Local Pack“) und bei organischen Treffern sichtbar wird.
-  </p>
-  <p className="mb-4">
-    Als erfahrene <strong>Local SEO Agentur aus Berlin</strong> arbeiten wir mit kleinen und mittleren Unternehmen, Praxen, Kanzleien und lokalen Dienstleistern zusammen. Unsere Maßnahmen zielen darauf ab, deine <strong>Google-Unternehmensprofile zu optimieren</strong>, 
-    <strong>lokalen Content</strong> aufzubauen und deine Seite in <strong>regionalen Verzeichnissen</strong> sichtbar zu machen.
-  </p>
-  <p>
-    Besonders für Standorte mit viel Konkurrenz, z.B. in Großstädten, kann gezielte lokale Optimierung den entscheidenden Unterschied machen. 
-    Wir kombinieren <strong>technisches SEO</strong>, <strong>Content-Marketing</strong> und <strong>Backlink-Strategien</strong> für nachhaltige Sichtbarkeit.
-  </p>
-</section>
+      {/* SEO-Fließtext mit lokalem Fokus */}
+      <section className="max-w-3xl mx-auto text-white text-lg leading-relaxed px-4 md:px-0">
+        <h2 className="text-2xl font-bold mb-4 text-gray-300">Warum lokale SEO heute entscheidend ist</h2>
+        <p className="mb-4">
+          Wenn potenzielle Kunden nach „Friseur in Berlin-Mitte“ oder „Zahnarzt Charlottenburg“ suchen, entscheiden oft nur wenige Positionen in den Google-Ergebnissen über einen neuen Kundenkontakt.
+          Mit einer gezielten <span className="font-semibold text-white">lokalen SEO-Strategie</span> sorgen wir dafür, dass dein Unternehmen in der Kartenansicht („Local Pack“) und bei organischen Treffern sichtbar wird.
+        </p>
+        <p className="mb-4">
+          Als erfahrene <span className="font-semibold text-white">Local SEO Agentur aus Berlin</span> arbeiten wir mit kleinen und mittleren Unternehmen, Praxen, Kanzleien und lokalen Dienstleistern zusammen. Unsere Maßnahmen zielen darauf ab, deine Google-Unternehmensprofile zu optimieren,
+          lokalen Content aufzubauen und deine Seite in regionalen Verzeichnissen sichtbar zu machen.
+        </p>
+        <p>
+          Besonders für Standorte mit viel Konkurrenz, z.B. in Großstädten, kann gezielte lokale Optimierung den entscheidenden Unterschied machen.
+          Wir kombinieren technisches SEO, Content-Marketing und Backlink-Strategien für nachhaltige Sichtbarkeit.
+        </p>
+      </section>
 
       <section className="space-y-12">
         <div className="space-y-4">

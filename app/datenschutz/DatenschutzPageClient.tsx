@@ -5,7 +5,7 @@ export default function DatenschutzPageClient() {
   const [expanded, setExpanded] = useState(false);
 
   const introHTML = `
-    <h1 class="text-white text-3xl font-bold mb-6">Datenschutzerklärung nach DSGVO, CAIT Marketing Berlin</h1>
+    <h2 class="text-blue-300 text-2xl font-semibold mb-4">Datenschutzerklärung nach DSGVO, CAIT Marketing Berlin</h2>
     <h2 class="text-blue-300 text-2xl font-semibold mb-4">1. Datenschutz auf einen Blick</h2>
     <h3 class="text-blue-200 text-xl font-medium mb-3">Allgemeine Hinweise</h3>
     <p class="text-blue-100 mb-4">Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert ...</p>
@@ -75,10 +75,10 @@ E-Mail: info@caitsocialmedia.com</p>
 <p>Quelle: <a href="https://www.e-recht24.de">https://www.e-recht24.de</a></p>
 
   `;
- return (
+  return (
     <section className="px-6 py-20 max-w-4xl mx-auto">
       <div className="bg-[#0c1832] p-8 rounded-xl border border-blue-400/30">
-        <h1 className="text-white text-3xl font-bold mb-6">Datenschutzerklärung</h1>
+        <h1 className="text-white text-3xl font-bold mb-6">Datenschutzerklärung nach DSGVO - CAIT Agentur Berlin</h1>
         <p className="text-blue-300 mb-8 leading-relaxed">
           Wir nehmen den Schutz deiner Daten ernst. Hier findest du unsere vollständige Datenschutzerklärung.
         </p>

@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "E-Commerce SEO Berlin | Shop-Optimierung & Top-Rankings | CAIT",
   description: "Spezial-SEO für Berliner Online-Shops ✓ Technische Optimierung ✓ Lokale SEO ✓ Content-Strategie. Jetzt kostenlose Analyse anfordern!",
   alternates: {
-    canonical: "https://www.cait-socialmedia.de/ecommerce-seo-berlin"
+    canonical: "https://www.caitsocialmedia.com/seo-agentur-berlin/ecommerce-seo"
   },
   keywords: [
     "E-Commerce SEO Berlin",
@@ -24,7 +24,7 @@ export default function EcommerceSeoBerlin() {
       <section className="relative isolate bg-gradient-to-b from-blue-900 to-blue-700 py-24 md:py-32 px-6 overflow-hidden">
         <div className="absolute inset-0 bg-[url('/pattern-bg.png')] bg-cover opacity-5 z-0" />
         <div className="absolute inset-0 bg-gradient-to-r from-[#0c1832]/90 via-[#0c1832]/70 to-[#0c1832]/90 z-0" />
-        
+
         <div className="max-w-6xl mx-auto text-center relative z-10">
           <div className="mb-6 inline-block bg-blue-600 text-sm px-4 py-1.5 rounded-full">
             E-Commerce SEO Berlin
@@ -37,11 +37,11 @@ export default function EcommerceSeoBerlin() {
               Mehr Berliner Umsatz.
             </span>
           </h1>
-          
+
           <p className="text-lg md:text-xl text-blue-100 mb-10 max-w-3xl mx-auto">
             Spezial-SEO für Berliner Online-Shops: Wir optimieren Ihre Produktseiten, Kategorien und technische Basis für mehr Sichtbarkeit bei Google und mehr Verkäufe aus Berlin.
           </p>
-          
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="#kontakt"
@@ -89,7 +89,7 @@ export default function EcommerceSeoBerlin() {
               </p>
             </div>
           </div>
-          
+
           <div className="bg-[#1a2a4a] p-8 rounded-xl border border-[#2d3a5a]">
             <h3 className="text-2xl font-semibold mb-4 text-blue-300">Vorteile für Berliner Shops</h3>
             <div className="space-y-6">
@@ -135,7 +135,7 @@ export default function EcommerceSeoBerlin() {
           <p className="text-blue-100 text-center max-w-2xl mx-auto mb-16">
             Maßgeschneiderte Lösungen für Berliner Online-Shops - von der technischen Basis bis zur Conversion-Optimierung
           </p>
-          
+
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
@@ -185,7 +185,7 @@ export default function EcommerceSeoBerlin() {
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-blue-300 text-center">
             Unser 5-Stufen-Plan für Berliner E-Commerce SEO
           </h2>
-          
+
           <div className="mt-16 space-y-12">
             {[
               {
@@ -232,7 +232,7 @@ export default function EcommerceSeoBerlin() {
           <p className="text-blue-100 text-center max-w-2xl mx-auto mb-16">
             Wie wir einem Berliner Fashion-Online-Shop zu mehr Sichtbarkeit und Umsatz verholfen haben
           </p>
-          
+
           <div className="bg-gradient-to-br from-blue-900 to-blue-800 rounded-2xl p-8 border border-blue-700">
             <div className="grid md:grid-cols-2 gap-12">
               <div>
@@ -255,7 +255,7 @@ export default function EcommerceSeoBerlin() {
                     <span className="text-blue-100">Duplicate Content durch Produktvarianten</span>
                   </li>
                 </ul>
-                
+
                 <h3 className="text-2xl font-bold mb-4 text-blue-300">Unsere Maßnahmen</h3>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
@@ -276,7 +276,7 @@ export default function EcommerceSeoBerlin() {
                   </li>
                 </ul>
               </div>
-              
+
               <div>
                 <h3 className="text-2xl font-bold mb-4 text-blue-300">Ergebnisse nach 6 Monaten</h3>
                 <div className="space-y-6">
@@ -305,7 +305,7 @@ export default function EcommerceSeoBerlin() {
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-blue-300 text-center">
             Häufige Fragen zu E-Commerce SEO in Berlin
           </h2>
-          
+
           <div className="mt-12 space-y-6">
             {[
               {
@@ -334,7 +334,7 @@ export default function EcommerceSeoBerlin() {
         </div>
       </section>
 
-   
+
     </article>
   )
 }

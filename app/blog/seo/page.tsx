@@ -2,8 +2,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export const metadata = {
-  title: 'SEO Agentur Berlin | SEO Optimierung & Strategien - CAIT Blog',
-  description: 'Experten-Tipps Ihrer SEO Agentur Berlin: Technische SEO Optimierung, Content Marketing & Linkbuilding für bessere Rankings in Suchmaschinen',
+  title: 'SEO Tipps & Strategien-Guide | Content, Technik & Linkbuilding - CAIT Blog',
+  description: 'Praxisnahe SEO-Tipps: Technische Optimierung, Content-Strategien und Linkbuilding-Methoden für bessere Google-Rankings.',
   alternates: {
     canonical: 'https://www.caitsocialmedia.com/blog/seo',
   },
@@ -65,7 +65,7 @@ export default function SeoBlogPage() {
         {/* Blog Posts Grid with keyword-rich content */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {seoPosts.map((post) => (
-            <article 
+            <article
               key={post.slug}
               className="group relative bg-blue-900/30 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-blue-800/50"
             >
@@ -83,25 +83,25 @@ export default function SeoBlogPage() {
               <div className="p-6">
                 <div className="flex flex-wrap gap-2 mb-3">
                   {post.tags.map((tag) => (
-                    <span 
-                      key={tag} 
+                    <span
+                      key={tag}
                       className="px-3 py-1 bg-blue-800/50 text-blue-300 text-xs font-medium rounded-full backdrop-blur-sm"
                     >
                       {tag}
                     </span>
                   ))}
                 </div>
-                
+
                 <h2 className="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
                   {post.title}
                 </h2>
-                
+
                 <p className="text-blue-200 mb-4">{post.excerpt}</p>
-                
+
                 <div className="flex items-center justify-between">
                   <span className="text-sm text-blue-400">{post.readTime} Lesezeit</span>
-                  <Link 
-                    href={`/blog/seo/${post.slug}`} 
+                  <Link
+                    href={`/blog/seo/${post.slug}`}
                     className="text-blue-400 font-medium flex items-center group-hover:translate-x-1 transition-transform hover:text-blue-300"
                     aria-label={`Mehr erfahren über ${post.title} - SEO Agentur Berlin`}
                   >
@@ -122,13 +122,13 @@ export default function SeoBlogPage() {
             <h2 className="text-2xl md:text-3xl font-bold mb-4">SEO Updates für Berliner Unternehmen</h2>
             <p className="text-blue-100 mb-6">Ihre <strong className="text-white">SEO Agentur Berlin</strong> versorgt Sie mit exklusiven Tipps zu <strong className="text-white">SEO Optimierung</strong></p>
             <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
-              <input 
-                type="email" 
-                placeholder="Ihre E-Mail-Adresse" 
+              <input
+                type="email"
+                placeholder="Ihre E-Mail-Adresse"
                 className="flex-grow px-4 py-3 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-300"
                 aria-label="E-Mail für SEO Agentur Newsletter"
               />
-              <button 
+              <button
                 className="px-6 py-3 bg-white text-blue-700 font-semibold rounded-lg hover:bg-gray-100 transition-colors"
                 aria-label="SEO Optimierung Tipps erhalten"
               >

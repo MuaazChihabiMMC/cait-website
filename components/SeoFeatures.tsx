@@ -140,8 +140,8 @@ export default function SeoFeatures() {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ 
-                duration: 0.5, 
+              transition={{
+                duration: 0.5,
                 delay: index * 0.1,
                 type: "spring",
                 stiffness: 100
@@ -150,14 +150,14 @@ export default function SeoFeatures() {
             >
               {/* Hover effect */}
               <div className="absolute inset-0 bg-gradient-to-br from-[#1a2a4a]/10 to-blue-700/10 opacity-0 group-hover:opacity-100 transition-opacity z-0"></div>
-              
+
               <div className="relative z-10">
                 <div className="text-3xl mb-4 text-[#fcd066] group-hover:text-[#fcd066] transition-colors">
                   {feature.icon}
                 </div>
-                <h3 className="text-xl font-semibold mb-3 text-[#fcd066] group-hover:text-gray-200 transition-colors">
+                <div className="text-xl font-semibold mb-3 text-[#fcd066] group-hover:text-gray-200 transition-colors">
                   {feature.title}
-                </h3>
+                </div>
                 <p className="text-gray-100 leading-relaxed">
                   {feature.description}
                 </p>
@@ -182,12 +182,12 @@ export default function SeoFeatures() {
                 Warum Berlin-spezifische SEO wichtig ist
               </h3>
               <p className="text-gray-100 mb-4">
-                Als <strong>SEO Agentur Berlin</strong> wissen wir: Der Berliner Markt hat besondere Anforderungen. 
-                Von der Optimierung für Stadtteil-Keywords bis zur Kenntnis der lokalen Wettbewerbslandschaft 
+                Als <strong>SEO Agentur Berlin</strong> wissen wir: Der Berliner Markt hat besondere Anforderungen.
+                Von der Optimierung für Stadtteil-Keywords bis zur Kenntnis der lokalen Wettbewerbslandschaft
                 - wir machen Ihr Unternehmen zum Top-Ergebnis für Berliner Suchanfragen.
               </p>
               <p className="text-gray-100">
-                Unsere Berliner SEO-Experten kombinieren lokales Know-how mit technischer Exzellenz für 
+                Unsere Berliner SEO-Experten kombinieren lokales Know-how mit technischer Exzellenz für
                 nachhaltige Rankings in der Hauptstadt.
               </p>
             </div>
