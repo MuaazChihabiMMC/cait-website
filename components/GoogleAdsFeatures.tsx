@@ -43,7 +43,7 @@ export default function GoogleAdsFeatures() {
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-blue-100">
             Leistungen Ihrer Google Ads Agentur Berlin
           </h2>
-          <p className="text-blue-100 max-w-2xl mx-auto text-lg">
+          <p className="text-gray-100 max-w-2xl mx-auto text-lg">
             Umfassende Google Ads Strategien für mehr Leads und Umsatz
           </p>
         </motion.div>
@@ -71,16 +71,16 @@ export default function GoogleAdsFeatures() {
               
               {/* Icon mit Animation */}
               <motion.div 
-                className="w-14 h-14 rounded-full bg-blue-500/10 flex items-center justify-center mb-6 group-hover:bg-blue-500/20 transition-colors"
+                className="w-14 h-14 rounded-full bg-[#fcd066] text-[#0c1832]/10 flex items-center justify-center mb-6 group-hover:bg-[#fcd066] text-[#0c1832]/20 transition-colors"
                 whileHover={{ rotate: 10, scale: 1.1 }}
               >
-                <CheckCircle2 className="text-blue-400 w-7 h-7" strokeWidth={1.5} />
+                <CheckCircle2 className="text-[#fcd066] w-7 h-7" strokeWidth={1.5} />
               </motion.div>
               
-              <h3 className="text-xl font-bold mb-3 text-blue-200 group-hover:text-white transition-colors">
+              <h3 className="text-xl font-bold mb-3 text-gray-200 group-hover:text-white transition-colors">
                 {feature.title}
               </h3>
-              <p className="text-blue-100 leading-relaxed">
+              <p className="text-gray-100 leading-relaxed">
                 {feature.description}
               </p>
               
@@ -95,12 +95,12 @@ export default function GoogleAdsFeatures() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.6 }}
-          className="mt-16 bg-gradient-to-r from-blue-500/10 to-cyan-500/10 border border-blue-400/30 rounded-2xl p-8 text-center"
+          className="mt-16 bg-gradient-to-r from-blue-500/10 to-cyan-500/10 border border-[#fcd066]/30 rounded-2xl p-8 text-center"
         >
-          <h3 className="text-2xl font-bold text-blue-200 mb-4">
+          <h3 className="text-2xl font-bold text-gray-200 mb-4">
             Ihr Vorteil als Berliner Kunde
           </h3>
-          <p className="text-blue-100 text-lg max-w-3xl mx-auto">
+          <p className="text-gray-100 text-lg max-w-3xl mx-auto">
             Als lokale Google Ads Agentur in Berlin bieten wir persönliche Beratung vor Ort und 
             tiefes Verständnis für den Berliner Markt - kombiniert mit internationaler SEA-Expertise.
           </p>

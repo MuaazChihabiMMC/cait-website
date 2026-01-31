@@ -34,7 +34,7 @@ export default function CookieConsent() {
           <button onClick={declineCookies} className="px-4 py-2 border rounded">
             Ablehnen
           </button>
-          <button onClick={acceptCookies} className="px-4 py-2 bg-blue-600 text-white rounded">
+          <button onClick={acceptCookies} className="px-4 py-2 bg-[#fcd066] text-[#0c1832] text-white rounded">
             Akzeptieren
           </button>
         </div>

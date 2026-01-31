@@ -6,7 +6,7 @@ export default function SeoCta() {
     <section className="relative bg-gradient-to-r from-[#0c1832] to-[#1a2a4a] py-20 md:py-28 px-6 overflow-hidden">
       {/* Decorative elements */}
       <div className="absolute inset-0 opacity-10 bg-[url('/pattern-bg.png')] bg-cover" />
-      <div className="absolute top-0 left-0 w-32 h-32 bg-blue-600 rounded-full filter blur-3xl opacity-20" />
+      <div className="absolute top-0 left-0 w-32 h-32 bg-[#fcd066] text-[#0c1832] rounded-full filter blur-3xl opacity-20" />
       <div className="absolute bottom-0 right-0 w-32 h-32 bg-blue-400 rounded-full filter blur-3xl opacity-20" />
       
       <div className="max-w-4xl mx-auto text-center relative z-10">
@@ -25,7 +25,7 @@ export default function SeoCta() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="text-lg md:text-xl text-blue-100 mb-10 max-w-3xl mx-auto"
+          className="text-lg md:text-xl text-gray-100 mb-10 max-w-3xl mx-auto"
         >
           Egal ob lokales Unternehmen, Online-Shop oder internationale Marke - mit CAIT Agentur werden Sie online sichtbar. Vereinbaren Sie Ihr kostenloses Erstgespräch und erfahren Sie, wie wir Ihr Google-Ranking gezielt verbessern.
         </motion.p>

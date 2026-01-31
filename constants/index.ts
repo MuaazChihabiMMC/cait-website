@@ -12,6 +12,7 @@ export const NAV_LINKS = [
       { key: 'google', label: 'Google Ads', href: '/google-ads-agentur-berlin' },
       { key: 'web', label: 'Webentwicklung', href: '/webentwicklung' },
       { key: 'social', label: 'Social Media', href: '/social-media' },
+      { key: 'pr', label: 'PR Agentur Berlin', href: '/pr-agentur-berlin' },
     ],
   },
   { href: '/ueber-uns', key: 'Über uns', label: 'Über uns' },

@@ -15,7 +15,7 @@ export default function AboutPage() {
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="text-center py-12 md:py-20 bg-gradient-to-b from-blue-500/10 to-[#0c1832] rounded-3xl px-6 relative overflow-hidden"
+        className="text-center py-12 md:py-20 bg-gradient-to-b from-primary-light0/10 to-[#0c1832] rounded-3xl px-6 relative overflow-hidden"
       >
         <motion.div 
           className="absolute inset-0 opacity-20"
@@ -30,7 +30,7 @@ export default function AboutPage() {
           }}
         >
           <div className="absolute top-0 left-0 w-32 h-32 bg-blue-400 rounded-full mix-blend-multiply filter blur-xl"></div>
-          <div className="absolute bottom-0 right-0 w-32 h-32 bg-blue-600 rounded-full mix-blend-multiply filter blur-xl"></div>
+          <div className="absolute bottom-0 right-0 w-32 h-32 bg-gold-300 rounded-full mix-blend-multiply filter blur-xl"></div>
         </motion.div>
         
         <div className="max-w-4xl mx-auto relative">
@@ -70,7 +70,7 @@ export default function AboutPage() {
             transition={{ duration: 0.5 }}
             className="md:w-1/3"
           >
-            <div className="bg-blue-500/10 rounded-2xl p-4 aspect-square flex items-center justify-center border border-blue-400/30">
+            <div className="bg-primary-light0/10 rounded-2xl p-4 aspect-square flex items-center justify-center border border-blue-400/30">
               <div className="text-8xl">👔</div> {/* Platzhalter für Ihr Foto */}
             </div>
           </motion.div>
@@ -86,7 +86,7 @@ export default function AboutPage() {
             
             <div className="space-y-6">
               <div className="flex items-start gap-4">
-                <div className="bg-blue-500/20 p-2 rounded-full mt-1 border border-blue-400/30">
+                <div className="bg-primary-light0/20 p-2 rounded-full mt-1 border border-blue-400/30">
                   <FaGraduationCap className="text-blue-400" />
                 </div>
                 <div>
@@ -98,7 +98,7 @@ export default function AboutPage() {
               </div>
               
               <div className="flex items-start gap-4">
-                <div className="bg-blue-500/20 p-2 rounded-full mt-1 border border-blue-400/30">
+                <div className="bg-primary-light0/20 p-2 rounded-full mt-1 border border-blue-400/30">
                   <FaUserTie className="text-blue-400" />
                 </div>
                 <div>
@@ -110,7 +110,7 @@ export default function AboutPage() {
               </div>
               
               <div className="flex items-start gap-4">
-                <div className="bg-blue-500/20 p-2 rounded-full mt-1 border border-blue-400/30">
+                <div className="bg-primary-light0/20 p-2 rounded-full mt-1 border border-blue-400/30">
                   <FaMedal className="text-blue-400" />
                 </div>
                 <div>
@@ -131,7 +131,7 @@ export default function AboutPage() {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
-        className="bg-blue-500/10 rounded-3xl p-8 md:p-12 border border-blue-400/30"
+        className="bg-primary-light0/10 rounded-3xl p-8 md:p-12 border border-blue-400/30"
       >
         <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center text-white">Was einen exzellenten Agenturinhaber ausmacht</h2>
         
@@ -174,10 +174,10 @@ export default function AboutPage() {
               whileInView={{ y: 0, opacity: 1 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 * index }}
-              className="bg-blue-500/10 p-6 rounded-xl border border-blue-400/30 hover:bg-blue-500/20 transition-colors"
+              className="bg-primary-light0/10 p-6 rounded-xl border border-blue-400/30 hover:bg-primary-light0/20 transition-colors"
             >
               <div className="flex items-center mb-4">
-                <div className="bg-blue-500/20 p-3 rounded-full mr-4 border border-blue-400/30">
+                <div className="bg-primary-light0/20 p-3 rounded-full mr-4 border border-blue-400/30">
                   {item.icon}
                 </div>
                 <h3 className="text-xl font-bold text-white">{item.title}</h3>
@@ -196,7 +196,7 @@ export default function AboutPage() {
         transition={{ duration: 0.8 }}
         className="max-w-4xl mx-auto"
       >
-        <div className="bg-blue-500/10 rounded-3xl border border-blue-400/30 p-8 md:p-10">
+        <div className="bg-primary-light0/10 rounded-3xl border border-blue-400/30 p-8 md:p-10">
           <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white">Meine Philosophie</h2>
           
           <div className="space-y-6">
@@ -207,7 +207,7 @@ export default function AboutPage() {
               transition={{ duration: 0.5 }}
               className="flex items-start gap-4"
             >
-              <div className="bg-blue-500/20 p-2 rounded-full mt-1 border border-blue-400/30">
+              <div className="bg-primary-light0/20 p-2 rounded-full mt-1 border border-blue-400/30">
                 <FaLightbulb className="text-blue-400" />
               </div>
               <div>
@@ -225,7 +225,7 @@ export default function AboutPage() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="flex items-start gap-4"
             >
-              <div className="bg-blue-500/20 p-2 rounded-full mt-1 border border-blue-400/30">
+              <div className="bg-primary-light0/20 p-2 rounded-full mt-1 border border-blue-400/30">
                 <FaChartLine className="text-blue-400" />
               </div>
               <div>
@@ -243,7 +243,7 @@ export default function AboutPage() {
               transition={{ duration: 0.5, delay: 0.4 }}
               className="flex items-start gap-4"
             >
-              <div className="bg-blue-500/20 p-2 rounded-full mt-1 border border-blue-400/30">
+              <div className="bg-primary-light0/20 p-2 rounded-full mt-1 border border-blue-400/30">
                 <FaHandshake className="text-blue-400" />
               </div>
               <div>
@@ -263,7 +263,7 @@ export default function AboutPage() {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
-        className="bg-blue-500 text-white rounded-3xl p-8 md:p-12 text-center"
+        className="bg-primary-light0 text-white rounded-3xl p-8 md:p-12 text-center"
       >
         <h2 className="text-2xl md:text-3xl font-bold mb-6">Persönliche Beratung durch den Inhaber</h2>
         <p className="text-xl mb-8 max-w-2xl mx-auto text-blue-100">
@@ -274,7 +274,7 @@ export default function AboutPage() {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           href="/kontakt"
-          className="inline-block bg-white text-blue-600 px-8 py-4 rounded-full font-bold shadow-lg hover:shadow-blue-500/30 transition-all"
+          className="inline-block bg-primary text-gold-300 px-8 py-4 rounded-full font-bold shadow-lg hover:shadow-blue-500/30 transition-all"
         >
           Termin vereinbaren
         </motion.a>

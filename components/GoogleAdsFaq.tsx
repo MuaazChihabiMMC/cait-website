@@ -96,26 +96,26 @@ export default function GoogleAdsFaq() {
   return (
     <section className="bg-[#0c1832] py-24 px-6">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-blue-400">
+        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-[#fcd066]">
           Häufige Fragen zu Google Ads
         </h2>
         <div className="space-y-4">
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="border border-blue-400/30 rounded-lg overflow-hidden bg-blue-500/10 shadow-lg hover:shadow-blue-500/20 transition-all"
+              className="border border-[#fcd066]/30 rounded-lg overflow-hidden bg-[#fcd066] text-[#0c1832]/10 shadow-lg hover:shadow-blue-500/20 transition-all"
             >
               <button
-                className="w-full text-left px-6 py-5 bg-blue-500/20 hover:bg-blue-500/30 transition-all text-lg font-medium text-white flex items-center"
+                className="w-full text-left px-6 py-5 bg-[#fcd066] text-[#0c1832]/20 hover:bg-[#fcd066] text-[#0c1832]/30 transition-all text-lg font-medium text-white flex items-center"
                 onClick={() => toggle(index)}
               >
-                <span className="mr-3 text-blue-300">
+                <span className="mr-3 text-[#fcd066]">
                   {openIndex === index ? '▼' : '►'}
                 </span>
                 {faq.question}
               </button>
               {openIndex === index && (
-                <div className="px-6 py-5 text-gray-200 bg-blue-500/10 border-t border-blue-400/30">
+                <div className="px-6 py-5 text-gray-200 bg-[#fcd066] text-[#0c1832]/10 border-t border-[#fcd066]/30">
                   {faq.answer}
                 </div>
               )}

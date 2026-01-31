@@ -27,7 +27,7 @@ export default function GoogleAdsHero() {
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-300 via-blue-200 to-blue-100 block">
             Ihre Google Ads Agentur Berlin
           </span>
-          <span className="block mt-3 text-xl md:text-2xl lg:text-3xl font-medium text-blue-100">
+          <span className="block mt-3 text-xl md:text-2xl lg:text-3xl font-medium text-gray-100">
             für mehr Leads & Umsatz
           </span>
         </motion.h1>
@@ -40,7 +40,7 @@ export default function GoogleAdsHero() {
             delay: 0.15,
             ease: "easeOut"
           }}
-          className="text-lg md:text-xl text-blue-100 mb-10 max-w-3xl mx-auto leading-relaxed"
+          className="text-lg md:text-xl text-gray-100 mb-10 max-w-3xl mx-auto leading-relaxed"
         >
           Als führende <strong className="text-white">SEA Agentur</strong> in Berlin erstellen wir hochperformante Google Ads Kampagnen, die nicht nur Klicks bringen, sondern <strong className="text-white">echte Kunden</strong>. Zielgerichtet. Messbar. Skalierbar.
         </motion.p>
@@ -62,7 +62,7 @@ export default function GoogleAdsHero() {
             }}
             whileTap={{ scale: 0.97 }}
             href="/kontakt"
-            className="inline-block bg-blue-600 text-white font-semibold px-8 py-4 rounded-full shadow-lg shadow-blue-500/20 transition-all text-lg"
+            className="inline-block bg-[#fcd066] text-[#0c1832] text-white font-semibold px-8 py-4 rounded-full shadow-lg shadow-blue-500/20 transition-all text-lg"
           >
             Jetzt Strategiegespräch buchen
           </motion.a>
@@ -75,7 +75,7 @@ export default function GoogleAdsHero() {
             }}
             whileTap={{ scale: 0.97 }}
             href="tel:+493022689840"
-            className="inline-block border-2 border-blue-400 text-blue-300 font-semibold px-8 py-4 rounded-full transition-all text-lg"
+            className="inline-block border-2 border-[#fcd066] text-[#fcd066] font-semibold px-8 py-4 rounded-full transition-all text-lg"
           >
             030 2268 9840
           </motion.a>
@@ -89,11 +89,11 @@ export default function GoogleAdsHero() {
             delay: 0.45,
             ease: "easeOut"
           }}
-          className="mt-16 md:mt-20 text-blue-100 text-base md:text-lg max-w-4xl mx-auto bg-gradient-to-r from-[#1a2a4a]/70 to-[#1a2a5a]/60 p-6 rounded-xl border border-[#2d3a5a] backdrop-blur-sm"
+          className="mt-16 md:mt-20 text-gray-100 text-base md:text-lg max-w-4xl mx-auto bg-gradient-to-r from-[#1a2a4a]/70 to-[#1a2a5a]/60 p-6 rounded-xl border border-[#2d3a5a] backdrop-blur-sm"
         >
           <p>
-            Als zertifizierte <strong className="text-blue-300 font-semibold">Google Ads Agentur Berlin</strong> kombinieren wir technisches Know-how mit kreativer Performance-Strategie. 
-            Unsere <strong className="text-blue-300 font-semibold">SEA Experten</strong> optimieren jeden Aspekt Ihrer Kampagnen, vom ersten Klick bis zum Kaufabschluss.
+            Als zertifizierte <strong className="text-[#fcd066] font-semibold">Google Ads Agentur Berlin</strong> kombinieren wir technisches Know-how mit kreativer Performance-Strategie. 
+            Unsere <strong className="text-[#fcd066] font-semibold">SEA Experten</strong> optimieren jeden Aspekt Ihrer Kampagnen, vom ersten Klick bis zum Kaufabschluss.
           </p>
         </motion.div>
       </div>

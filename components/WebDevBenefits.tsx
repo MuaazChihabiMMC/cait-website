@@ -17,7 +17,7 @@ export default function WebDevBenefits() {
         <h2 className="text-3xl md:text-4xl font-bold mb-8 text-white">
           Warum CAIT für dein Webprojekt?
         </h2>
-        <p className="text-lg text-blue-300 mb-12 max-w-3xl mx-auto">
+        <p className="text-lg text-[#fcd066] mb-12 max-w-3xl mx-auto">
           Weil wir ganzheitlich denken, individuell entwickeln und modern umsetzen. Wir liefern keine Seiten von der Stange, sondern digitale Erlebnisse mit echtem Mehrwert.
         </p>
 
@@ -25,9 +25,9 @@ export default function WebDevBenefits() {
           {benefits.map((benefit, index) => (
             <li
               key={index}
-              className="flex gap-4 items-start bg-blue-500/10 border border-blue-400/30 p-6 rounded-xl shadow-lg hover:shadow-blue-500/20 hover:translate-y-[-4px] transition-all duration-300"
+              className="flex gap-4 items-start bg-[#fcd066] text-[#0c1832]/10 border border-[#fcd066]/30 p-6 rounded-xl shadow-lg hover:shadow-blue-500/20 hover:translate-y-[-4px] transition-all duration-300"
             >
-              <span className="text-blue-400 text-xl mt-1">✓</span>
+              <span className="text-[#fcd066] text-xl mt-1">✓</span>
               <p className="text-white leading-relaxed text-lg">{benefit}</p>
             </li>
           ))}
@@ -36,7 +36,7 @@ export default function WebDevBenefits() {
         <div className="mt-16">
           <a 
             href="/kontakt" 
-            className="inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold px-8 py-4 rounded-full shadow-lg hover:shadow-blue-500/30 transition-all hover:translate-y-[-2px]"
+            className="inline-block bg-[#fcd066] text-[#0c1832] hover:bg-[#fcd066] text-[#0c1832] text-white font-semibold px-8 py-4 rounded-full shadow-lg hover:shadow-blue-500/30 transition-all hover:translate-y-[-2px]"
           >
             Kostenlose Beratung anfordern
           </a>

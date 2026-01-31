@@ -37,52 +37,52 @@ export default function KontaktForm() {
         ) : (
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
-              <label htmlFor="name" className="block mb-2 font-medium text-blue-300">Name</label>
+              <label htmlFor="name" className="block mb-2 font-medium text-[#fcd066]">Name</label>
               <input
                 type="text"
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
                 required
-                className="w-full p-4 border border-blue-400/30 rounded-lg bg-blue-500/10 text-white placeholder-blue-300/50 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full p-4 border border-[#fcd066]/30 rounded-lg bg-[#fcd066] text-[#0c1832]/10 text-white placeholder-blue-300/50 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                 placeholder="Dein Name"
               />
             </div>
 
             <div>
-              <label htmlFor="email" className="block mb-2 font-medium text-blue-300">E-Mail</label>
+              <label htmlFor="email" className="block mb-2 font-medium text-[#fcd066]">E-Mail</label>
               <input
                 type="email"
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
                 required
-                className="w-full p-4 border border-blue-400/30 rounded-lg bg-blue-500/10 text-white placeholder-blue-300/50 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full p-4 border border-[#fcd066]/30 rounded-lg bg-[#fcd066] text-[#0c1832]/10 text-white placeholder-blue-300/50 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                 placeholder="deine@email.de"
               />
             </div>
 
             <div>
-              <label htmlFor="phone" className="block mb-2 font-medium text-blue-300">Telefon (optional)</label>
+              <label htmlFor="phone" className="block mb-2 font-medium text-[#fcd066]">Telefon (optional)</label>
               <input
                 type="text"
                 name="phone"
                 value={formData.phone}
                 onChange={handleChange}
-                className="w-full p-4 border border-blue-400/30 rounded-lg bg-blue-500/10 text-white placeholder-blue-300/50 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full p-4 border border-[#fcd066]/30 rounded-lg bg-[#fcd066] text-[#0c1832]/10 text-white placeholder-blue-300/50 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                 placeholder="+49 123 456789"
               />
             </div>
 
             <div>
-              <label htmlFor="message" className="block mb-2 font-medium text-blue-300">Nachricht</label>
+              <label htmlFor="message" className="block mb-2 font-medium text-[#fcd066]">Nachricht</label>
               <textarea
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
                 required
                 rows={5}
-                className="w-full p-4 border border-blue-400/30 rounded-lg bg-blue-500/10 text-white placeholder-blue-300/50 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full p-4 border border-[#fcd066]/30 rounded-lg bg-[#fcd066] text-[#0c1832]/10 text-white placeholder-blue-300/50 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                 placeholder="Wie können wir dir helfen?"
               ></textarea>
             </div>
@@ -90,7 +90,7 @@ export default function KontaktForm() {
             <div className="text-center pt-4">
               <button
                 type="submit"
-                className="bg-blue-500 hover:bg-blue-600 text-white px-10 py-4 rounded-full font-semibold shadow-lg hover:shadow-blue-500/30 transition-all hover:translate-y-[-2px]"
+                className="bg-[#fcd066] text-[#0c1832] hover:bg-[#fcd066] text-[#0c1832] text-white px-10 py-4 rounded-full font-semibold shadow-lg hover:shadow-blue-500/30 transition-all hover:translate-y-[-2px]"
               >
                 Nachricht senden
               </button>
@@ -99,7 +99,7 @@ export default function KontaktForm() {
         )}
       </div>
 
-      <section className="bg-blue-500/10 text-blue-100 py-16 px-6 mt-16 rounded-xl">
+      <section className="bg-[#fcd066] text-[#0c1832]/10 text-gray-100 py-16 px-6 mt-16 rounded-xl">
         <div className="max-w-4xl mx-auto space-y-6 text-lg leading-relaxed">
           <h2 className="text-2xl font-bold text-white">Warum du uns kontaktieren solltest</h2>
           <p>

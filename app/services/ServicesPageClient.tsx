@@ -33,7 +33,7 @@ export default function ServicesPage() {
           }}
         >
           <div className="absolute top-0 left-0 w-32 h-32 bg-blue-400 rounded-full mix-blend-multiply filter blur-xl"></div>
-          <div className="absolute bottom-0 right-0 w-32 h-32 bg-blue-600 rounded-full mix-blend-multiply filter blur-xl"></div>
+          <div className="absolute bottom-0 right-0 w-32 h-32 bg-gold-300 rounded-full mix-blend-multiply filter blur-xl"></div>
         </motion.div>
         
         <div className="max-w-4xl mx-auto relative">
@@ -358,7 +358,7 @@ export default function ServicesPage() {
               transition={{ delay: 0.1 * index }}
               className="bg-blue-800/50 p-6 rounded-xl text-center border border-blue-700/50"
             >
-              <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-xl font-bold mb-4 mx-auto">
+              <div className="w-12 h-12 bg-gold-300 text-white rounded-full flex items-center justify-center text-xl font-bold mb-4 mx-auto">
                 {item.step}
               </div>
               <h3 className="text-xl font-bold mb-2 text-white">{item.title}</h3>
@@ -374,7 +374,7 @@ export default function ServicesPage() {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
-        className="bg-blue-600 text-white rounded-3xl p-8 md:p-12 text-center border border-blue-400/50"
+        className="bg-gold-300 text-white rounded-3xl p-8 md:p-12 text-center border border-blue-400/50"
       >
         <h2 className="text-2xl md:text-3xl font-bold mb-6">Bereit für den nächsten Schritt?</h2>
         <p className="text-xl mb-8 max-w-2xl mx-auto text-blue-100">
@@ -385,7 +385,7 @@ export default function ServicesPage() {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           href="/kontakt"
-          className="inline-block bg-white text-blue-600 px-8 py-4 rounded-full font-bold shadow-lg transition-all"
+          className="inline-block bg-primary text-gold-300 px-8 py-4 rounded-full font-bold shadow-lg transition-all"
         >
           Kostenlose Beratung anfordern
         </motion.a>

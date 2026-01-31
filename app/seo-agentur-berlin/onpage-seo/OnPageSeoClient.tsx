@@ -7,13 +7,13 @@ import Link from 'next/link';
 
 export default function OnPageSeoClient() {
   return (
-    <main className="px-4 py-12 md:px-6 max-w-7xl mx-auto bg-white text-blue-900 space-y-24">
+    <main className="px-4 py-12 md:px-6 max-w-7xl mx-auto bg-primary text-white space-y-24">
       {/* Hero Section */}
       <motion.section
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="text-center py-20 bg-gradient-to-b from-blue-50 to-white rounded-3xl px-6 relative overflow-hidden"
+        className="text-center py-20 bg-mesh-dark rounded-3xl px-6 relative overflow-hidden"
       >
         <div className="max-w-4xl mx-auto relative">
           <motion.h1
@@ -22,24 +22,24 @@ export default function OnPageSeoClient() {
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.6 }}
           >
-            <span className="text-blue-600">OnPage-SEO</span> für maximale Sichtbarkeit
+            <span className="text-gold-300">OnPage-SEO</span> für maximale Sichtbarkeit
           </motion.h1>
           <motion.p
-            className="text-xl md:text-2xl mb-8 text-blue-800"
+            className="text-xl md:text-2xl mb-8 text-gray-300"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2 }}
           >
             Struktur, Inhalt und Technik perfekt abgestimmt. So optimieren wir Ihre Website von innen heraus.
           </motion.p>
-          <p className="text-base text-blue-800 mt-4">
+          <p className="text-base text-gray-300 mt-4">
             Als erfahrene <strong>OnPage SEO Agentur</strong> übernehmen wir die <strong>technische & inhaltliche Optimierung</strong> deiner Website, für bessere Rankings, Nutzerfreundlichkeit und Conversion-Raten. Unsere Arbeit basiert auf langjähriger Erfahrung, datengetriebenen Tools und branchenspezifischem Know-how, egal ob E-Commerce, Gesundheitsbranche oder lokale Anbieter.
           </p>
           <motion.a
             href="/kontakt"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="inline-block bg-blue-600 text-white px-8 py-4 rounded-full font-bold shadow-lg hover:shadow-xl transition-all items-center gap-2 mt-6"
+            className="inline-block bg-gold-300 text-primary px-8 py-4 rounded-full font-bold shadow-lg hover:shadow-gold-300/20 transition-all items-center gap-2 mt-6"
           >
             Jetzt SEO-Beratung starten <FaArrowRight />
           </motion.a>
@@ -63,11 +63,11 @@ export default function OnPageSeoClient() {
             className="space-y-4"
           >
             <h2 className="text-3xl font-bold flex items-center gap-2">
-              <FaRocket className="text-blue-600" /> Technische Optimierung
+              <FaRocket className="text-gold-300" /> Technische Optimierung
             </h2>
-            <ul className="list-disc list-inside text-blue-800 space-y-2">
+            <ul className="list-disc list-inside text-gray-300 space-y-2">
               <li>Optimierung von Ladezeiten durch Lazy Loading und Komprimierung</li>
-              <li>Mobile-First Design für alle Endgeräte <FaMobileAlt className="inline ml-1 text-blue-600" /></li>
+              <li>Mobile-First Design für alle Endgeräte <FaMobileAlt className="inline ml-1 text-gold-300" /></li>
               <li>Core Web Vitals als Rankingfaktor berücksichtigen</li>
               <li>HTTPS-Verschlüsselung und strukturierter Code</li>
               <li>Serverantwortzeiten analysieren und reduzieren</li>
@@ -83,13 +83,13 @@ export default function OnPageSeoClient() {
             className="space-y-4"
           >
             <h2 className="text-3xl font-bold flex items-center gap-2">
-              <FaCode className="text-blue-600" /> HTML & Struktur
+              <FaCode className="text-gold-300" /> HTML & Struktur
             </h2>
-            <ul className="list-disc list-inside text-blue-800 space-y-2">
+            <ul className="list-disc list-inside text-gray-300 space-y-2">
               <li>Saubere Überschriftenstruktur (H1 bis H6)</li>
               <li>Sprechende URLs mit Keywords</li>
               <li>Strukturierte Daten (Schema.org) für Rich Snippets</li>
-              <li>Interne Verlinkung und klare Informationsarchitektur <FaSitemap className="inline ml-1 text-blue-600" /></li>
+              <li>Interne Verlinkung und klare Informationsarchitektur <FaSitemap className="inline ml-1 text-gold-300" /></li>
               <li>Barrierefreiheit (Accessibility-Standards wie ARIA beachten)</li>
               <li>Canonical Tags und Meta Robots korrekt einsetzen</li>
             </ul>
@@ -103,9 +103,9 @@ export default function OnPageSeoClient() {
             className="space-y-4"
           >
             <h2 className="text-3xl font-bold flex items-center gap-2">
-              <FaLink className="text-blue-600" /> Content & Relevanz
+              <FaLink className="text-gold-300" /> Content & Relevanz
             </h2>
-            <ul className="list-disc list-inside text-blue-800 space-y-2">
+            <ul className="list-disc list-inside text-gray-300 space-y-2">
               <li>Einzigartige, zielgerichtete Inhalte mit Fokus auf Suchintention</li>
               <li>Einbindung von Bildern, Videos & interaktiven Elementen</li>
               <li>Keyword-Dichte, WDF*IDF-Analyse & semantische Optimierung</li>
@@ -120,10 +120,10 @@ export default function OnPageSeoClient() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="bg-blue-100 rounded-xl p-6 border border-blue-200"
+            className="bg-primary-light rounded-xl p-6 border border-gold-300/20"
           >
-            <p className="text-blue-900 text-lg">
-              <FaCheckCircle className="inline mr-2 text-blue-600" />
+            <p className="text-white text-lg">
+              <FaCheckCircle className="inline mr-2 text-gold-300" />
               <strong>Praxisbeispiel:</strong> Ein Online-Shop erhöhte seine Verweildauer um 48 % und die Conversion-Rate um 21 %, allein durch technische & inhaltliche OnPage-Optimierung. Besonders die Verbesserung der mobilen Ladezeit und gezielter Content zu „Lieferzeit & Rückgabe“ führte zu mehr Vertrauen bei potenziellen Käufern.
             </p>
           </motion.div>
@@ -136,9 +136,9 @@ export default function OnPageSeoClient() {
             className="space-y-4"
           >
             <h2 className="text-3xl font-bold flex items-center gap-2">
-              <FaTools className="text-blue-600" /> Unsere Tools & Erfahrung
+              <FaTools className="text-gold-300" /> Unsere Tools & Erfahrung
             </h2>
-            <p className="text-blue-800">
+            <p className="text-gray-300">
               Für die OnPage-Analyse setzen wir auf erprobte Tools wie <strong>SEMrush</strong>, <strong>Screaming Frog</strong>, <strong>PageSpeed Insights</strong> und <strong>Google Search Console</strong>. In Kombination mit unserer Erfahrung aus über 100 Projekten entsteht eine datenbasierte Strategie mit echter Wirkung.
             </p>
           </motion.div>
@@ -151,9 +151,9 @@ export default function OnPageSeoClient() {
   className="space-y-4"
 >
   <h2 className="text-3xl font-bold flex items-center gap-2">
-    <FaChartLine className="text-blue-600" /> SEO-Audit & Fehleranalyse
+    <FaChartLine className="text-gold-300" /> SEO-Audit & Fehleranalyse
   </h2>
-  <p className="text-blue-800">
+  <p className="text-gray-300">
     Jede Optimierung beginnt mit einem fundierten SEO-Audit. Wir identifizieren Crawling-Fehler, doppelte Inhalte, fehlende Meta-Tags, langsame Seiten und Barrierefreiheitsprobleme. Mit Tools wie Screaming Frog, Sitebulb oder der Google Search Console erstellen wir detaillierte Reports und Maßnahmenpläne.
   </p>
 </motion.div>
@@ -166,9 +166,9 @@ export default function OnPageSeoClient() {
   className="space-y-4"
 >
   <h2 className="text-3xl font-bold flex items-center gap-2">
-    <FaCheckCircle className="text-blue-600" /> E-E-A-T: Vertrauen aufbauen
+    <FaCheckCircle className="text-gold-300" /> E-E-A-T: Vertrauen aufbauen
   </h2>
-  <p className="text-blue-800">
+  <p className="text-gray-300">
     Google bewertet nicht nur Technik, sondern auch <strong>Erfahrung (Experience)</strong>, <strong>Fachwissen (Expertise)</strong>, <strong>Autorität (Authoritativeness)</strong> und <strong>Vertrauenswürdigkeit (Trust)</strong>. Deshalb integrieren wir Autorenboxen mit Qualifikationen, Kundenstimmen, Sicherheitszertifikate, Quellenangaben und aktualisierte Inhalte. Besonders bei sensiblen Themen (z. B. Gesundheit, Recht, Finanzen) ist E-E-A-T entscheidend.
   </p>
 </motion.div>
@@ -181,9 +181,9 @@ export default function OnPageSeoClient() {
   className="space-y-4"
 >
   <h2 className="text-3xl font-bold flex items-center gap-2">
-    <FaCheckCircle className="text-blue-600" /> Fallstudie: Zahnarzt Berlin
+    <FaCheckCircle className="text-gold-300" /> Fallstudie: Zahnarzt Berlin
   </h2>
-  <p className="text-blue-800">
+  <p className="text-gray-300">
     Ein Zahnarzt aus Berlin konnte durch gezielte OnPage-Optimierung (Ladezeitverbesserung, mobile Struktur, Patienten-Content) seine Google-Top-10-Rankings um 38% steigern. Besonders effektiv war eine neue Unterseite zum Thema „Angstpatienten“, kombiniert mit einem FAQ-Bereich, Google-Bewertungen und strukturierten Daten für Öffnungszeiten.
   </p>
 </motion.div>
@@ -196,9 +196,9 @@ export default function OnPageSeoClient() {
   className="space-y-4"
 >
   <h2 className="text-3xl font-bold flex items-center gap-2">
-    <FaRocket className="text-blue-600" /> Content-Strategie aus SEO-Daten ableiten
+    <FaRocket className="text-gold-300" /> Content-Strategie aus SEO-Daten ableiten
   </h2>
-  <p className="text-blue-800">
+  <p className="text-gray-300">
     OnPage-SEO liefert mehr als technische Hinweise: Aus Keyword-Clustern, Nutzerfragen und Seitenanalysen leiten wir direkt neue Inhalte ab, z.B. Blogbeiträge, FAQ-Bereiche, Glossare oder Leistungsunterseiten. So wird deine Website nicht nur technisch, sondern auch redaktionell besser.
   </p>
 </motion.div>
@@ -211,9 +211,9 @@ export default function OnPageSeoClient() {
   className="space-y-4"
 >
   <h2 className="text-3xl font-bold flex items-center gap-2">
-    <FaCode className="text-blue-600" /> Häufige Fehler & wie wir sie beheben
+    <FaCode className="text-gold-300" /> Häufige Fehler & wie wir sie beheben
   </h2>
-  <ul className="list-disc list-inside text-blue-800 space-y-2">
+  <ul className="list-disc list-inside text-gray-300 space-y-2">
     <li>Fehlende H1-Tags oder doppelte H1s</li>
     <li>Seiten ohne Meta-Description oder mit Duplicate-Titles</li>
     <li>Verwaiste Seiten ohne interne Verlinkung</li>
@@ -230,9 +230,9 @@ export default function OnPageSeoClient() {
   className="space-y-4"
 >
   <h2 className="text-3xl font-bold flex items-center gap-2">
-    <FaSitemap className="text-blue-600" /> UX & SEO: Nutzerführung als Rankingfaktor
+    <FaSitemap className="text-gold-300" /> UX & SEO: Nutzerführung als Rankingfaktor
   </h2>
-  <p className="text-blue-800">
+  <p className="text-gray-300">
     Eine klare Navigationsstruktur, aussagekräftige CTAs, und gut strukturierte Texte helfen nicht nur deinen Besuchern, sie signalisieren Google, dass deine Seite relevant, zugänglich und vertrauenswürdig ist. Gutes UX ist heute gutes SEO.
   </p>
 </motion.div>
@@ -245,9 +245,9 @@ export default function OnPageSeoClient() {
   className="space-y-4"
 >
   <h2 className="text-3xl font-bold flex items-center gap-2">
-    <FaChartLine className="text-blue-600" /> Monitoring & regelmäßige Updates
+    <FaChartLine className="text-gold-300" /> Monitoring & regelmäßige Updates
   </h2>
-  <p className="text-blue-800">
+  <p className="text-gray-300">
     SEO ist kein Einmalprojekt. Wir kontrollieren regelmäßig Rankings, PageSpeed-Werte, Crawling-Fehler und neue Wettbewerberbewegungen. So bleibt deine Website dauerhaft sichtbar, performant und relevant.
   </p>
 </motion.div>
@@ -261,7 +261,7 @@ export default function OnPageSeoClient() {
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
-        className="bg-blue-600 text-white rounded-3xl p-12 text-center"
+        className="bg-gold-300 text-white rounded-3xl p-12 text-center"
       >
         <div className="max-w-4xl mx-auto">
           <h3 className="text-3xl font-bold mb-4">OnPage-SEO bringt Struktur & Erfolg</h3>
@@ -270,7 +270,7 @@ export default function OnPageSeoClient() {
           </p>
           <Link 
             href="/kontakt" 
-            className="inline-block bg-white text-blue-600 px-8 py-4 rounded-full font-bold shadow-lg hover:shadow-xl transition items-center gap-2"
+            className="inline-block bg-primary text-gold-300 px-8 py-4 rounded-full font-bold shadow-lg hover:shadow-gold-300/20 transition items-center gap-2"
           >
             Jetzt optimieren <FaArrowRight />
           </Link>
@@ -279,3 +279,4 @@ export default function OnPageSeoClient() {
     </main>
   );
 }
+

@@ -27,10 +27,10 @@ export default function SeoBenefits() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-blue-300">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#fcd066]">
             Warum Berliner Unternehmen uns wählen
           </h2>
-          <p className="text-lg text-blue-100 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-100 max-w-3xl mx-auto">
             Als führende <strong>SEO Agentur Berlin</strong> kombinieren wir lokale Expertise mit technischer Exzellenz für nachhaltige Top-Rankings in der Hauptstadt.
           </p>
         </motion.div>
@@ -45,10 +45,10 @@ export default function SeoBenefits() {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="flex gap-3 items-start bg-[#1a2a4a] border border-[#2d3a5a] p-4 rounded-lg hover:border-blue-400 transition-all group"
+                  className="flex gap-3 items-start bg-[#1a2a4a] border border-[#2d3a5a] p-4 rounded-lg hover:border-[#fcd066] transition-all group"
                 >
-                  <span className="text-blue-400 mt-0.5 group-hover:text-blue-300 transition-colors">✓</span>
-                  <p className="text-blue-100 leading-relaxed group-hover:text-blue-200 transition-colors">
+                  <span className="text-[#fcd066] mt-0.5 group-hover:text-[#fcd066] transition-colors">✓</span>
+                  <p className="text-gray-100 leading-relaxed group-hover:text-gray-200 transition-colors">
                     {benefit}
                   </p>
                 </motion.li>
@@ -60,9 +60,9 @@ export default function SeoBenefits() {
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            className="bg-gradient-to-br from-blue-900 to-blue-700 p-8 rounded-2xl border border-blue-600"
+            className="bg-gradient-to-br from-[#1a2a4a] to-blue-700 p-8 rounded-2xl border border-blue-600"
           >
-            <h3 className="text-2xl font-bold text-blue-300 mb-4">
+            <h3 className="text-2xl font-bold text-[#fcd066] mb-4">
               Berliner SEO-Erfolge
             </h3>
             <div className="space-y-4">
@@ -73,8 +73,8 @@ export default function SeoBenefits() {
                 { metric: "98%", text: "Kundenzufriedenheit in Berlin" }
               ].map((item, index) => (
                 <div key={index} className="flex items-center gap-4">
-                  <div className="text-4xl font-bold text-blue-300 shrink-0 w-20">{item.metric}</div>
-                  <div className="text-blue-100">{item.text}</div>
+                  <div className="text-4xl font-bold text-[#fcd066] shrink-0 w-20">{item.metric}</div>
+                  <div className="text-gray-100">{item.text}</div>
                 </div>
               ))}
             </div>
@@ -89,10 +89,10 @@ export default function SeoBenefits() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.15 }}
-              className="flex gap-3 items-start bg-[#1a2a4a] border border-[#2d3a5a] p-4 rounded-lg hover:border-blue-400 transition-all group"
+              className="flex gap-3 items-start bg-[#1a2a4a] border border-[#2d3a5a] p-4 rounded-lg hover:border-[#fcd066] transition-all group"
             >
-              <span className="text-blue-400 mt-0.5 group-hover:text-blue-300 transition-colors">✓</span>
-              <p className="text-blue-100 leading-relaxed group-hover:text-blue-200 transition-colors">
+              <span className="text-[#fcd066] mt-0.5 group-hover:text-[#fcd066] transition-colors">✓</span>
+              <p className="text-gray-100 leading-relaxed group-hover:text-gray-200 transition-colors">
                 {benefit}
               </p>
             </motion.li>
@@ -106,13 +106,13 @@ export default function SeoBenefits() {
           viewport={{ once: true }}
           className="mt-16 max-w-3xl mx-auto p-8 bg-[#1a2a4a] rounded-2xl border border-blue-600 relative"
         >
-          <div className="absolute top-0 left-8 -translate-y-1/2 bg-[#0c1832] px-4 text-blue-300 font-bold">
+          <div className="absolute top-0 left-8 -translate-y-1/2 bg-[#0c1832] px-4 text-[#fcd066] font-bold">
             Berliner Stimme
           </div>
-          <blockquote className="text-blue-100 italic text-lg mb-4">
+          <blockquote className="text-gray-100 italic text-lg mb-4">
             "Als Berliner Startup haben wir mit CAIT Social Media unsere organische Sichtbarkeit in der Hauptstadt verdreifacht. Die lokale SEO-Expertise und das Verständnis für den Berliner Markt machen den entscheidenden Unterschied."
           </blockquote>
-          <div className="text-blue-300 font-semibold">
+          <div className="text-[#fcd066] font-semibold">
             Markus 
           </div>
         </motion.div>

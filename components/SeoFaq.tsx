@@ -87,10 +87,10 @@ export default function SeoFaq() {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-blue-300">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#fcd066]">
             Häufige Fragen zur Suchmaschinenoptimierung
           </h2>
-          <p className="text-blue-100 mt-4">
+          <p className="text-gray-100 mt-4">
             Antworten auf die wichtigsten Fragen zu unserer SEO-Arbeit
           </p>
         </motion.div>
@@ -110,10 +110,10 @@ export default function SeoFaq() {
                 className={`w-full text-left p-5 transition-all ${activeIndex === index ? 'bg-[#1a2a4a]' : 'bg-[#0c1832] hover:bg-[#1a2a4a]'}`}
               >
                 <div className="flex justify-between items-center">
-                  <h3 className="text-lg font-semibold text-blue-300">
+                  <h3 className="text-lg font-semibold text-[#fcd066]">
                     {item.question}
                   </h3>
-                  <span className="text-blue-400 text-xl">
+                  <span className="text-[#fcd066] text-xl">
                     {activeIndex === index ? '−' : '+'}
                   </span>
                 </div>
@@ -128,7 +128,7 @@ export default function SeoFaq() {
                     transition={{ duration: 0.3 }}
                     className="bg-[#1a2a4a]"
                   >
-                    <div className="p-5 text-blue-100">
+                    <div className="p-5 text-gray-100">
                       {item.answer}
                     </div>
                   </motion.div>

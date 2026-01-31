@@ -1,8 +1,8 @@
 import ClientHomePage from "@/components/ClientHomePage";
 
 export const metadata = {
-  title: "SEO Agentur Berlin, Google Ads Agentur , Webdesign Agentur & Social Media",
-  description: "Ihre Top Marketing Agentur in Berlin: spezialisiert auf SEO, Google Ads, Webdesign und Social Media.",
+  title: "CAIT Social Media Agentur Berlin | SEO, Google Ads & Webdesign",
+  description: "Ihre Premium Marketing Agentur in Berlin. Spezialisiert auf SEO, Google Ads, Social Media und Webdesign.",
 };
 
 export default function HomePage() {

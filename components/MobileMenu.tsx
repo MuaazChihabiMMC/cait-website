@@ -39,7 +39,7 @@ const MobileMenu = () => {
       >
         {/* Close Button */}
         <div className="flex justify-between items-center mb-8">
-          <span className="text-xl font-semibold text-blue-100">Menü</span>
+          <span className="text-xl font-semibold text-gray-100">Menü</span>
           <button 
             onClick={() => setIsOpen(false)}
             aria-label="Close menu"
@@ -62,11 +62,11 @@ const MobileMenu = () => {
                 <button
                   onClick={() => toggleDropdown(link.key)}
                   className={`w-full text-left flex justify-between items-center text-lg ${
-                    openDropdown === link.key ? 'text-blue-300' : 'text-blue-100'
+                    openDropdown === link.key ? 'text-[#fcd066]' : 'text-gray-100'
                   }`}
                 >
                   {link.label}
-                  <span className="text-blue-400">
+                  <span className="text-[#fcd066]">
                     {openDropdown === link.key ? '▴' : '▾'}
                   </span>
                 </button>
@@ -76,7 +76,7 @@ const MobileMenu = () => {
                       <li key={child.key}>
                         <Link
                           href={child.href}
-                          className="block text-blue-100 hover:text-blue-300 pl-2 py-1.5 border-l-2 border-[#2d3a5a] hover:border-blue-400 transition-all"
+                          className="block text-gray-100 hover:text-[#fcd066] pl-2 py-1.5 border-l-2 border-[#2d3a5a] hover:border-[#fcd066] transition-all"
                           onClick={() => setIsOpen(false)}
                         >
                           {child.label}
@@ -90,7 +90,7 @@ const MobileMenu = () => {
               <Link
                 key={link.key}
                 href={link.href}
-                className="text-lg text-blue-100 hover:text-blue-300 py-2 border-b border-[#1a2a4a]"
+                className="text-lg text-gray-100 hover:text-[#fcd066] py-2 border-b border-[#1a2a4a]"
                 onClick={() => setIsOpen(false)}
               >
                 {link.label}

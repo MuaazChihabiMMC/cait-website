@@ -89,7 +89,7 @@ E-Mail: info@caitsocialmedia.com</p>
           {!expanded && (
             <button
               onClick={() => setExpanded(true)}
-              className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-medium mt-6 transition-colors"
+              className="bg-primary-light0 hover:bg-gold-300 text-white px-6 py-3 rounded-lg font-medium mt-6 transition-colors"
             >
               Vollständige Datenschutzerklärung anzeigen ▼
             </button>
@@ -100,7 +100,7 @@ E-Mail: info@caitsocialmedia.com</p>
               <div dangerouslySetInnerHTML={{ __html: restHTML }} />
               <button
                 onClick={() => setExpanded(false)}
-                className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-medium mt-6 transition-colors"
+                className="bg-primary-light0 hover:bg-gold-300 text-white px-6 py-3 rounded-lg font-medium mt-6 transition-colors"
               >
                 Weniger anzeigen ▲
               </button>

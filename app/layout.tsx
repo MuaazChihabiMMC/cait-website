@@ -1,54 +1,85 @@
-'use client';
-
 import './globals.css';
-import { useEffect, useState } from 'react';
 import LayoutWrapper from './LayoutWrapper';
-import Script from 'next/script';
-import CookieBanner from '../components/CookieBanner';
-import Cookies from 'js-cookie';
+import ClientProviders from '@/components/ClientProviders';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'SEO Agentur Berlin | CAIT Social Media',
+  description: 'Ihre Top Marketing Agentur in Berlin: spezialisiert auf SEO, Google Ads, Webdesign und Social Media.',
+  authors: [{ name: 'CAIT Social Media' }],
+  keywords: 'SEO Agentur Berlin, Google Ads Agentur Berlin, Webdesign Agentur Berlin, Social Media Agentur Berlin, Online Marketing Berlin, Marketing Agentur Berlin',
+  robots: 'index, follow',
+  openGraph: {
+    type: 'website',
+    locale: 'de_DE',
+    siteName: 'CAIT Social Media - Marketing Agentur Berlin',
+    images: [
+      {
+        url: '/opengraph-image.png', // Fallback image if available
+        width: 1200,
+        height: 630,
+        alt: 'CAIT Social Media Agency Berlin',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+  },
+  alternates: {
+    canonical: 'https://www.caitsocialmedia.com',
+  },
+  verification: {
+    other: {
+      seobility: '1c042f5ea33996f2bddc2b223ead5944',
+    },
+  },
+};
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  const [showGTM, setShowGTM] = useState(false);
-
-  useEffect(() => {
-    const consent = Cookies.get('cookie-consent');
-    if (consent === 'accepted') {
-      setShowGTM(true);
-    }
-  }, []);
+  // JSON-LD structured data
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "CAIT Social Media - Marketing Agentur Berlin",
+    "description": "Ihre Top Marketing Agentur in Berlin: SEO Agentur Berlin, Google Ads Agentur Berlin, Webdesign Agentur Berlin und Social Media Agentur Berlin.",
+    "url": "https://www.caitsocialmedia.com",
+    "telephone": "+493022689840",
+    "email": "info@caitsocialmedia.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Berliner Straße 17",
+      "addressLocality": "Berlin",
+      "addressRegion": "Berlin",
+      "postalCode": "14169",
+      "addressCountry": "DE"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "52.4422",
+      "longitude": "13.2612"
+    },
+    "openingHours": "Mo-Fr 09:00-18:00",
+    "priceRange": "€€",
+    "areaServed": {
+      "@type": "City",
+      "name": "Berlin"
+    },
+    "sameAs": [],
+    "serviceType": ["SEO Agentur Berlin", "Google Ads Agentur Berlin", "Webdesign Agentur Berlin", "Social Media Agentur Berlin"]
+  };
 
   return (
     <html lang="de">
       <head>
-        <meta name="seobility" content="1c042f5ea33996f2bddc2b223ead5944" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
       </head>
       <body>
-        {/* GTM wird nur bei Zustimmung geladen */}
-        {showGTM && (
-          <>
-            <Script id="gtm-script" strategy="afterInteractive">
-              {`
-              (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-              })(window,document,'script','dataLayer','GTM-NP9D459K');
-            `}
-            </Script>
-            <noscript>
-              <iframe
-                src="https://www.googletagmanager.com/ns.html?id=GTM-NP9D459K"
-                height="0"
-                width="0"
-                style={{ display: 'none', visibility: 'hidden' }}
-              ></iframe>
-            </noscript>
-          </>
-        )}
-
-        {/* Layout und Cookie-Banner */}
-        <LayoutWrapper>{children}</LayoutWrapper>
-        <CookieBanner />
+        <ClientProviders>
+          <LayoutWrapper>{children}</LayoutWrapper>
+        </ClientProviders>
       </body>
     </html>
   );

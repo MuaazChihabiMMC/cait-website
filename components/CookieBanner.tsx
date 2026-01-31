@@ -37,7 +37,7 @@ const handleConsent = (value: 'accepted' | 'rejected') => {
         </button>
         <button
           onClick={() => handleConsent('accepted')}
-          className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded"
+          className="bg-[#fcd066] text-[#0c1832] hover:bg-[#d4a84a] text-white px-4 py-2 rounded"
         >
           Akzeptieren
         </button>

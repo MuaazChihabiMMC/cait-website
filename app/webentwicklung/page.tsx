@@ -7,10 +7,10 @@ import WebFaq from '@/components/WebFaq';
 import AnimatedSection from '@/components/AnimatedSection';
 
 export const metadata = {
-  title: 'Webentwicklung & Design | CAITSocialMedia',
+  title: 'Webdesign Agentur Berlin | Professionelle Webentwicklung | CAIT',
   description:
-    'Maßgeschneiderte Websites mit modernen Technologien, klarer Struktur und optimaler Performance. Wir entwickeln digitale Erlebnisse, die funktionieren.',
-      alternates: {
+    'Webdesign Agentur Berlin: Maßgeschneiderte Websites mit modernen Technologien, klarer Struktur und optimaler Performance. Ihre Webdesign Agentur in Berlin für digitale Erlebnisse.',
+  alternates: {
     canonical: 'https://www.caitsocialmedia.com/webentwicklung',
   },
 };

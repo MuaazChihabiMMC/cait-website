@@ -19,21 +19,21 @@ export default function SeoHero() {
           </span>
         </h1>
         
-        <p className="text-lg md:text-xl text-blue-100 mb-10 max-w-3xl mx-auto">
+        <p className="text-lg md:text-xl text-gray-100 mb-10 max-w-3xl mx-auto">
           CAIT Social Media ist Ihre <strong>SEO Agentur in Berlin</strong> für #1 Platzierungen bei Google. Wir kombinieren lokale Expertise mit datenbasierten Strategien für mehr Sichtbarkeit, qualifizierte Leads und messbare Umsatzsteigerungen.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
             href="/kontakt"
-            className="inline-block bg-blue-600 hover:bg-blue-500 text-white font-semibold px-8 py-3.5 rounded-full shadow-lg hover:shadow-xl transition-all"
+            className="inline-block bg-[#fcd066] text-[#0c1832] hover:bg-[#fcd066] text-[#0c1832] text-white font-semibold px-8 py-3.5 rounded-full shadow-lg hover:shadow-xl transition-all"
             aria-label="Kostenlose SEO-Beratung für Berliner Unternehmen"
           >
             Kostenlose SEO-Analyse
           </a>
           <a
             href="tel:+493022689840"
-            className="inline-block border-2 border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-[#0c1832] font-semibold px-8 py-3.5 rounded-full transition-all"
+            className="inline-block border-2 border-[#fcd066] text-[#fcd066] hover:bg-[#d4a84a] hover:text-[#0c1832] font-semibold px-8 py-3.5 rounded-full transition-all"
             aria-label="SEO Agentur Berlin telefonisch kontaktieren"
           >
             <span className="hidden sm:inline">Berlin </span>030 2268 9840
@@ -41,7 +41,7 @@ export default function SeoHero() {
         </div>
 
         {/* Local trust signals */}
-        <div className="mt-12 flex flex-wrap justify-center gap-6 items-center text-blue-200 text-sm md:text-base">
+        <div className="mt-12 flex flex-wrap justify-center gap-6 items-center text-gray-200 text-sm md:text-base">
           <div className="flex items-center gap-2">
             <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/><path fillRule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clipRule="evenodd"/></svg>
             <span>SEO Experten aus Berlin</span>

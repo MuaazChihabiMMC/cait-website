@@ -23,16 +23,16 @@ const footerLinks = [
 
 const contactInfo = [
   {
-    icon: <FaMapMarkerAlt className="text-blue-300" />,
+    icon: <FaMapMarkerAlt className="text-[#d4af37]" />,
     text: 'Berliner Straße 17, 14169 Berlin-Zehlendorf',
   },
   {
-    icon: <FaPhone className="text-blue-300" />,
+    icon: <FaPhone className="text-[#d4af37]" />,
     text: '030 2268 9840',
     href: 'tel:+493022689840',
   },
   {
-    icon: <FaEnvelope className="text-blue-300" />,
+    icon: <FaEnvelope className="text-[#d4af37]" />,
     text: 'info@caitsocialmedia.com',
     href: 'mailto:info@caitsocialmedia.com',
   },
@@ -40,7 +40,7 @@ const contactInfo = [
 
 export default function Footer() {
   return (
-    <footer className="bg-[#0c1832] text-blue-100 border-t border-[#1a2a4a]">
+    <footer className="bg-[#0a0f1a] text-gray-100 border-t border-[#151b2e]">
       <div className="max-w-7xl mx-auto px-6 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Logo & About */}
@@ -52,7 +52,7 @@ export default function Footer() {
                 className="h-10"
               />
             </Link>
-            <p className="text-blue-200 mb-6">
+            <p className="text-gray-200 mb-6">
               Ihre digitale Marketingagentur in Berlin. Wir helfen Unternehmen, online sichtbar zu werden und mehr Kunden zu gewinnen.
             </p>
             
@@ -61,7 +61,7 @@ export default function Footer() {
                 <div key={index} className="flex items-start gap-3">
                   <span className="mt-0.5">{item.icon}</span>
                   {item.href ? (
-                    <Link href={item.href} className="hover:text-blue-300 transition">
+                    <Link href={item.href} className="hover:text-[#d4af37] transition">
                       {item.text}
                     </Link>
                   ) : (
@@ -81,7 +81,7 @@ export default function Footer() {
                   <li key={i}>
                     <Link
                       href={link.href}
-                      className="text-blue-200 hover:text-blue-300 transition hover:pl-1 block"
+                      className="text-gray-200 hover:text-[#d4af37] transition hover:pl-1 block"
                     >
                       {link.label}
                     </Link>
@@ -93,16 +93,16 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-[#1a2a4a] mt-16 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <div className="text-sm text-blue-300">
+        <div className="border-t border-[#151b2e] mt-16 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+          <div className="text-sm text-[#d4af37]">
             &copy; {new Date().getFullYear()} CAIT Social Media. Alle Rechte vorbehalten.
           </div>
           
           <div className="flex gap-6">
-            <Link href="/datenschutz" className="text-sm hover:underline hover:text-blue-300">
+            <Link href="/datenschutz" className="text-sm hover:underline hover:text-[#d4af37]">
               Datenschutz
             </Link>
-            <Link href="/impressum" className="text-sm hover:underline hover:text-blue-300">
+            <Link href="/impressum" className="text-sm hover:underline hover:text-[#d4af37]">
               Impressum
             </Link>
           </div>
