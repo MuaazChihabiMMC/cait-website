@@ -1,6 +1,16 @@
-# *
+# Robots.txt for caitsocialmedia.com
 User-agent: *
 Allow: /
+
+# Block search parameter URLs (duplicate content prevention)
+Disallow: /*?s=*
+Disallow: /*?search=*
+Disallow: /*?q=*
+
+# Block other common parameter URLs
+Disallow: /*?utm_*
+Disallow: /*?ref=*
+Disallow: /*?source=*
 
 # Host
 Host: https://www.caitsocialmedia.com

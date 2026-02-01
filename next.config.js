@@ -92,6 +92,16 @@ const nextConfig = {
         destination: '/google-ads-agentur-berlin',
         permanent: true,
       },
+      {
+        source: '/services',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/services/',
+        destination: '/',
+        permanent: true,
+      },
     ];
   },
 

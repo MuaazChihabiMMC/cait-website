@@ -187,11 +187,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     "name": "CAIT Social Media - Marketing Agentur Berlin",
     "publisher": {
       "@id": "https://www.caitsocialmedia.com/#organization"
-    },
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://www.caitsocialmedia.com/suche?q={search_term_string}",
-      "query-input": "required name=search_term_string"
     }
   };
 
