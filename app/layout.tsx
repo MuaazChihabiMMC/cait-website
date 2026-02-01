@@ -65,7 +65,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       "name": "Berlin"
     },
     "sameAs": [],
-    "serviceType": ["SEO Agentur Berlin", "Google Ads Agentur Berlin", "Webdesign Agentur Berlin", "Social Media Agentur Berlin"]
+    "knowsAbout": ["SEO Agentur Berlin", "Google Ads Agentur Berlin", "Webdesign Agentur Berlin", "Social Media Agentur Berlin"]
   };
 
   return (
