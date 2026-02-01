@@ -4,12 +4,13 @@ import GoogleAdsBenefits from '@/components/GoogleAdsBenefits';
 import GoogleAdsFaq from '@/components/GoogleAdsFaq';
 import GoogleAdsCta from '@/components/GoogleAdsCta';
 import AnimatedSection from '@/components/AnimatedSection';
+import GoogleAdsSeoText from '@/components/GoogleAdsSeoText';
 
 export const metadata = {
   title: 'Google Ads Agentur Berlin | CAIT für mehr Leads & Umsatz',
   description:
     'Kampagnen, Optimierung & Performance mit CAIT erreichst du deine Zielgruppe gezielt über Google Ads. Jetzt durchstarten!',
-      alternates: {
+  alternates: {
     canonical: 'https://www.caitsocialmedia.com/google-ads-agentur-berlin',
   },
 };
@@ -19,10 +20,14 @@ export default function GoogleAdsPage() {
     <>
       <GoogleAdsHero />
 
-     
+
 
       <AnimatedSection delay={0.1}>
         <GoogleAdsFeatures />
+      </AnimatedSection>
+
+      <AnimatedSection delay={0.15}>
+        <GoogleAdsSeoText />
       </AnimatedSection>
 
       <AnimatedSection delay={0.2}>

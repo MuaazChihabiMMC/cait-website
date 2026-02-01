@@ -136,6 +136,22 @@ const googleAdsPosts = {
   <p class="font-semibold text-purple-200 mb-1">Experten-Tipp:</p>
   <p class="text-purple-100">Nutzen Sie Google Ads Scripts für automatische Budgetanpassungen basierend auf Performance-Kennzahlen. So können Sie z.B. Budget von unterperformenden Kampagnen automatisch zu Top-Performern umverteilen.</p>
 </div>
+
+<h3 class="text-xl font-bold text-white mt-8 mb-4">Häufige Fragen zum Google Ads Budget (FAQ)</h3>
+<div class="space-y-4 mb-8">
+  <div class="bg-gray-800 p-4 rounded-lg">
+    <h4 class="font-bold text-white mb-2">Wie viel Budget brauche ich für den Start?</h4>
+    <p class="text-gray-300 text-sm">Für lokale Kampagnen in Berlin empfehlen wir ein Testbudget von mind. 500-1.000€ im ersten Monat, um genügend Daten für Optimierungen zu sammeln.</p>
+  </div>
+  <div class="bg-gray-800 p-4 rounded-lg">
+    <h4 class="font-bold text-white mb-2">Was passiert, wenn mein Tagesbudget aufgebraucht ist?</h4>
+    <p class="text-gray-300 text-sm">Google stoppt die Ausspielung Ihrer Anzeigen für den Rest des Tages. Daher ist es wichtig, entweder das Budget zu erhöhen oder die CPCs zu senken, um den ganzen Tag sichtbar zu sein.</p>
+  </div>
+  <div class="bg-gray-800 p-4 rounded-lg">
+    <h4 class="font-bold text-white mb-2">Kann ich mein Budget jederzeit ändern?</h4>
+    <p class="text-gray-300 text-sm">Ja, in Google Ads haben Sie volle Flexibilität und können Tagesbudgets jederzeit nach oben oder unten anpassen oder Kampagnen pausieren.</p>
+  </div>
+</div>
     `,
     author: {
       name: 'Muaaz Chihabi',
@@ -184,7 +200,7 @@ export default function GoogleAdsPage() {
         </div>
 
         {/* Article Content */}
-        <div 
+        <div
           className="prose prose-lg max-w-none"
           dangerouslySetInnerHTML={{ __html: post.content }}
         />
@@ -231,7 +247,14 @@ export default function GoogleAdsPage() {
       <section className="max-w-4xl mx-auto px-6 mb-20">
         <h2 className="text-2xl font-bold text-white mb-8">Weitere Artikel zu Google Ads</h2>
         <div className="grid md:grid-cols-2 gap-6">
-          {/* Hier würden verwandte Artikel eingefügt werden */}
+          <a href="/google-ads-agentur-berlin" className="block p-6 bg-gray-800 rounded-lg hover:bg-gray-750 transition border border-gray-700 hover:border-blue-400 group">
+            <h3 className="font-bold text-white mb-2 group-hover:text-blue-400">Google Ads Agentur Berlin</h3>
+            <p className="text-gray-400 text-sm">Lassen Sie Ihre Kampagnen von Profis betreuen.</p>
+          </a>
+          <a href="/blog/google-ads" className="block p-6 bg-gray-800 rounded-lg hover:bg-gray-750 transition border border-gray-700 hover:border-blue-400 group">
+            <h3 className="font-bold text-white mb-2 group-hover:text-blue-400">Mehr Google Ads Tipps</h3>
+            <p className="text-gray-400 text-sm">Alle Artikel zu SEA Strategien und Optimierung.</p>
+          </a>
         </div>
       </section>
     </div>

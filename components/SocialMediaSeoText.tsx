@@ -42,9 +42,21 @@ export default function SocialMediaSeoText() {
           Bereit für echtes Wachstum? Als <strong className="text-white">Social Media Agentur aus Berlin</strong> setzen wir auf messbare Erfolge. Wir beraten Sie gerne in einem kostenlosen Erstgespräch!
         </p>
 
+        <h3 className="text-2xl font-semibold text-[#fcd066]">Community Management: Der Schlüssel zur Bindung</h3>
+        <p>
+          Social Media ist keine Einbahnstraße. Echte Fans gewinnt man nur durch Interaktion. Unser Team übernimmt für Sie das Community Management: Wir antworten auf Kommentare, moderieren Diskussionen und pflegen den direkten Draht zu Ihrer Zielgruppe.
+          Das stärkt das Vertrauen in Ihre Marke und sorgt dafür, dass aus Followern loyale Kunden werden.
+        </p>
+
+        <h3 className="text-2xl font-semibold text-[#fcd066]">B2B Social Media Marketing mit LinkedIn</h3>
+        <p>
+          Für B2B-Unternehmen ist LinkedIn heute unverzichtbar. Als Ihre Agentur positionieren wir Ihre Experten als Thought Leader, schalten zielgerichtete LinkedIn Ads zur Leadgenerierung und bauen Ihr Employer Branding auf.
+          So erreichen Sie Entscheider direkt und effizient, ohne Streuverluste in privaten Netzwerken.
+        </p>
+
         <div className="pt-8">
-          <a 
-            href="/kontakt" 
+          <a
+            href="/kontakt"
             className="inline-block bg-[#fcd066] text-[#0c1832] hover:bg-[#fcd066] text-[#0c1832] text-white font-semibold px-8 py-4 rounded-full shadow-lg hover:shadow-blue-500/30 transition-all hover:translate-y-[-2px]"
           >
             Kostenlose Beratung anfordern

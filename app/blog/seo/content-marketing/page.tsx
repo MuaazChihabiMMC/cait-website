@@ -3,7 +3,8 @@ import { notFound } from 'next/navigation';
 
 const seoPosts = {
   'content-marketing': {
-    title: 'Content Marketing Guide: So ranken Ihre Inhalte | CAIT',
+    title: 'Content Marketing: So ranken Inhalte',
+    metaTitle: 'Content Marketing Guide: So ranken Ihre Inhalte | CAIT',
     metaDescription: 'Content-SEO mit Strategie: für Top Rankings einfach erklärt.',
     alternates: {
       canonical: 'https://www.caitsocialmedia.com/blog/seo/content-marketing',
@@ -106,6 +107,30 @@ const seoPosts = {
   <li><span class="font-medium text-white">Transparenz:</span> Über den Autor/Unternehmen</li>
   <li><span class="font-medium text-white">Aktualität:</span> Regelmäßige Content-Updates</li>
 </ul>
+
+<h3 class="text-xl font-bold text-white mt-8 mb-4">6. Der Content-Audit</h3>
+<p class="text-blue-200 mb-4">Bevor neuer Content erstellt wird, lohnt sich oft ein Blick auf das Bestehende:</p>
+<ul class="list-disc pl-6 mb-6 space-y-2 text-blue-200">
+  <li>Welche Seiten haben Traffic, aber keine Conversions?</li>
+  <li>Wo ist der Content "thin" (zu kurz/oberflächlich)?</li>
+  <li>Gibt es Keyword-Kannibalisierung (mehrere Seiten ranken zum gleichen Begriff)?</li>
+</ul>
+<p class="text-blue-200">
+  Durch gezieltes <strong>Content Recycling</strong> können bestehende URLs oft mit wenig Aufwand signifikant verbessert werden. Aktualisierungen signalisieren Google "Frische" (Freshness Update).
+</p>
+
+<h3 class="text-xl font-bold text-white mt-8 mb-4">7. Erfolgsmessung (ROI)</h3>
+<p class="text-blue-200 mb-4">Content Marketing ist eine Investition. So messen Sie den Ertrag:</p>
+<div class="grid md:grid-cols-2 gap-6 my-6">
+    <div class="bg-blue-900/30 p-4 rounded-lg">
+        <h4 class="font-bold text-blue-400">Soft KPIs</h4>
+        <p class="text-sm text-blue-200">Markenbekanntheit, Traffic, Social Shares, Verweildauer.</p>
+    </div>
+    <div class="bg-blue-900/30 p-4 rounded-lg">
+        <h4 class="font-bold text-blue-400">Hard KPIs</h4>
+        <p class="text-sm text-blue-200">Leads, Verkäufe, Cost-per-Acquisition (CPA), Customer Lifetime Value (CLV).</p>
+    </div>
+</div>
     `,
     author: {
       name: 'Muaaz Chihabi',
@@ -201,7 +226,14 @@ export default function ContentMarketingPage() {
       <section className="max-w-4xl mx-auto px-6 mb-20">
         <h2 className="text-2xl font-bold text-white mb-8">Weitere Content-Marketing Artikel</h2>
         <div className="grid md:grid-cols-2 gap-6">
-          {/* Hier würden verwandte Artikel eingefügt werden */}
+          <a href="/seo-agentur-berlin" className="block p-6 bg-blue-900/30 rounded-lg hover:bg-blue-900/50 transition border border-blue-800/50 hover:border-blue-400 group">
+            <h3 className="font-bold text-white mb-2 group-hover:text-blue-400">SEO Agentur Berlin</h3>
+            <p className="text-blue-200 text-sm">Professionelle Suchmaschinenoptimierung für Ihr Business.</p>
+          </a>
+          <a href="/blog/seo" className="block p-6 bg-blue-900/30 rounded-lg hover:bg-blue-900/50 transition border border-blue-800/50 hover:border-blue-400 group">
+            <h3 className="font-bold text-white mb-2 group-hover:text-blue-400">SEO Blog</h3>
+            <p className="text-blue-200 text-sm">Weitere Guides zu OnPage, OffPage und Technical SEO.</p>
+          </a>
         </div>
       </section>
     </div>
@@ -211,11 +243,11 @@ export default function ContentMarketingPage() {
 export async function generateMetadata() {
   const post = seoPosts['content-marketing'];
   return {
-    title: `${post.title} `,
+    title: post.metaTitle,
     description: post.metaDescription,
     alternates: post.alternates,
     openGraph: {
-      title: post.title,
+      title: post.metaTitle,
       description: post.metaDescription,
       url: post.alternates.canonical,
       images: [
@@ -229,7 +261,7 @@ export async function generateMetadata() {
     },
     twitter: {
       card: 'summary_large_image',
-      title: post.title,
+      title: post.metaTitle,
       description: post.metaDescription,
       images: ['/content-marketing-hero.webp'],
     },

@@ -13,6 +13,16 @@ const footerLinks = [
   },
 
   {
+    title: 'Ressourcen',
+    links: [
+      { label: 'Blog', href: '/blog' },
+      { label: 'Referenzen', href: '/referenzen' },
+      { label: 'SEO Guide', href: '/blog/seo' },
+      { label: 'Ads Strategien', href: '/blog/google-ads' },
+      { label: 'Webdesign Tipps', href: '/blog/webdesign' },
+    ],
+  },
+  {
     title: 'Rechtliches',
     links: [
       { label: 'Impressum', href: '/impressum' },
@@ -42,20 +52,20 @@ export default function Footer() {
   return (
     <footer className="bg-[#0a0f1a] text-gray-100 border-t border-[#151b2e]">
       <div className="max-w-7xl mx-auto px-6 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
           {/* Logo & About */}
           <div>
             <Link href="/" className="block mb-6">
-              <img 
-                src="/cait logo tran black.svg" 
-                alt="CAIT Social Media" 
+              <img
+                src="/cait logo tran black.svg"
+                alt="CAIT Social Media"
                 className="h-10"
               />
             </Link>
             <p className="text-gray-200 mb-6">
               Ihre digitale Marketingagentur in Berlin. Wir helfen Unternehmen, online sichtbar zu werden und mehr Kunden zu gewinnen.
             </p>
-            
+
             <div className="space-y-3">
               {contactInfo.map((item, index) => (
                 <div key={index} className="flex items-start gap-3">
@@ -97,7 +107,7 @@ export default function Footer() {
           <div className="text-sm text-[#d4af37]">
             &copy; {new Date().getFullYear()} CAIT Social Media. Alle Rechte vorbehalten.
           </div>
-          
+
           <div className="flex gap-6">
             <Link href="/datenschutz" className="text-sm hover:underline hover:text-[#d4af37]">
               Datenschutz

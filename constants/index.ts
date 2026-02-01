@@ -16,6 +16,7 @@ export const NAV_LINKS = [
     ],
   },
   { href: '/ueber-uns', key: 'Über uns', label: 'Über uns' },
+  { href: '/referenzen', key: 'referenzen', label: 'Referenzen' },
   { href: '/kontakt', key: 'kontakt', label: 'kontakt' },
 ];
 
