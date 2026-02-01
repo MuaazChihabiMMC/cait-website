@@ -35,8 +35,11 @@ export default function KontaktForm() {
     // Initialize Turnstile when script loads
     script.onload = () => {
       if (window.turnstile && turnstileRef.current) {
+        const siteKey = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY;
+        console.log('Turnstile Site Key:', siteKey); // Debug log
+
         window.turnstile.render(turnstileRef.current, {
-          sitekey: process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY || '1x00000000000000000000AA', // Test key for development
+          sitekey: siteKey || '0x4AAAAAACWdQjOMloLjgkMR',
           callback: (token: string) => {
             setTurnstileToken(token);
           },
