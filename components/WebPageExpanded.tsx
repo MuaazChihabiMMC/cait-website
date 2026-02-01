@@ -90,6 +90,18 @@ export default function WebPageExpanded() {
           </div>
         </div>
 
+        <div className="bg-[#fcd066] text-[#0c1832]/10 p-8 rounded-xl border border-[#fcd066]/30">
+          <h3 className="text-2xl font-semibold text-[#fcd066] mb-4">SEO-freundliches Webdesign</h3>
+          <p className="text-gray-100 mb-4">
+            Eine schöne Website ist nur der Anfang. Wir entwickeln Websites, die nicht nur gut aussehen, sondern auch bei Google ranken. Kombinieren Sie unser Webdesign mit unserer{' '}
+            <a href="/seo-agentur-berlin" className="text-white hover:underline font-semibold">SEO-Optimierung</a> für maximale Sichtbarkeit.
+          </p>
+          <p className="text-sm text-gray-200">
+            Weitere Tipps finden Sie in unserem{' '}
+            <a href="/blog/webdesign" className="text-white hover:underline font-semibold">Webdesign Blog</a>.
+          </p>
+        </div>
+
         <div className="bg-[#fcd066] text-[#0c1832]/20 p-10 rounded-xl text-center border border-[#fcd066]/30 shadow-lg">
           <h2 className="text-3xl font-bold mb-6 text-white">Bereit für den nächsten Schritt?</h2>
           <p className="text-gray-200 mb-8 text-lg max-w-2xl mx-auto">

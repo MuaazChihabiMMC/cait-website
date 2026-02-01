@@ -54,6 +54,11 @@ export default function SocialMediaSeoText() {
           So erreichen Sie Entscheider direkt und effizient, ohne Streuverluste in privaten Netzwerken.
         </p>
 
+        <p className="text-sm text-gray-400 mt-4">
+          Mehr Tipps und Strategien finden Sie in unserem{' '}
+          <a href="/blog/social-media" className="text-[#fcd066] hover:underline">Social Media Blog</a>.
+        </p>
+
         <div className="pt-8">
           <a
             href="/kontakt"

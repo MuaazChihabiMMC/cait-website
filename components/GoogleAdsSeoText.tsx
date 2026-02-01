@@ -54,6 +54,11 @@ export default function GoogleAdsSeoText() {
                 <p>
                     Lassen Sie uns gemeinsam Ihr Google Ads Konto auditieren. Oft finden wir schon im ersten Gespräch Einsparpotenziale von 20-30%, die sofort reinvestiert werden können.
                 </p>
+                <p className="text-sm text-gray-400 mt-4">
+                    Tipp: Kombinieren Sie Google Ads mit unserer{' '}
+                    <a href="/seo-agentur-berlin" className="text-[#fcd066] hover:underline">SEO-Optimierung</a> für maximale Sichtbarkeit. Mehr Strategien finden Sie in unserem{' '}
+                    <a href="/blog/google-ads" className="text-[#fcd066] hover:underline">Google Ads Blog</a>.
+                </p>
 
                 <div className="pt-8">
                     <a

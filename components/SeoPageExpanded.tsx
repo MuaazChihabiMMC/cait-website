@@ -6,7 +6,7 @@ export default function SeoPageExpanded() {
       <div className="max-w-6xl mx-auto space-y-16">
 
         {/* Warum SEO? mit Berlin-Fokus */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -16,13 +16,16 @@ export default function SeoPageExpanded() {
             Warum SEO für Berliner Unternehmen?
           </h2>
           <p className="text-gray-100 text-lg leading-relaxed">
-            SEO ist der entscheidende Wettbewerbsvorteil im digitalen Berlin. Wer in der Hauptstadt nicht bei Google sichtbar ist, verliert Kunden an die Konkurrenz. Unsere <strong>Berlin-spezifischen SEO-Strategien</strong> kombinieren lokale Keyword-Analyse, technische Optimierung und Content-Marketing für dauerhafte Top-Platzierungen in der Region.
+            SEO ist der entscheidende Wettbewerbsvorteil im digitalen Berlin. Wer in der Hauptstadt nicht bei Google sichtbar ist, verliert Kunden an die Konkurrenz. Unsere <strong>Berlin-spezifischen SEO-Strategien</strong> kombinieren{' '}
+            <a href="/seo-agentur-berlin/lokale-seo" className="text-[#fcd066] hover:underline">lokale Keyword-Analyse</a>,{' '}
+            <a href="/seo-agentur-berlin/technisches-seo" className="text-[#fcd066] hover:underline">technische Optimierung</a> und{' '}
+            <a href="/seo-agentur-berlin/content-erstellung" className="text-[#fcd066] hover:underline">Content-Marketing</a> für dauerhafte Top-Platzierungen in der Region.
           </p>
         </motion.div>
 
         {/* Leistungen mit Berlin-Bezug */}
         <div className="grid md:grid-cols-2 gap-8">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -40,7 +43,7 @@ export default function SeoPageExpanded() {
                 "📝 Content-SEO: Berlin-spezifische Landingpages & Blogs",
                 "📊 Local Ranking Monitoring: Positionsverfolgung in Berlin"
               ].map((item, index) => (
-                <motion.li 
+                <motion.li
                   key={index}
                   initial={{ opacity: 0, y: 10 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -54,8 +57,8 @@ export default function SeoPageExpanded() {
               ))}
             </ul>
           </motion.div>
-          
-          <motion.div 
+
+          <motion.div
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -73,7 +76,7 @@ export default function SeoPageExpanded() {
                 "Lokales Citation Building in Berliner Verzeichnissen",
                 "Monatliches Reporting mit Berliner Ranking-Daten"
               ].map((item, index) => (
-                <motion.li 
+                <motion.li
                   key={index}
                   initial={{ opacity: 0, y: 10 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -90,7 +93,7 @@ export default function SeoPageExpanded() {
         </div>
 
         {/* Berlin-spezifische Vorteile */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -108,7 +111,7 @@ export default function SeoPageExpanded() {
               "✅ Kenntnis der Berliner Wettbewerbslandschaft",
               "✅ Optimierung für Berlin-spezifische Suchanfragen"
             ].map((item, index) => (
-              <motion.div 
+              <motion.div
                 key={index}
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
@@ -121,7 +124,7 @@ export default function SeoPageExpanded() {
               </motion.div>
             ))}
           </div>
-          
+
           {/* Berliner Case Study */}
           <motion.div
             initial={{ opacity: 0 }}
@@ -150,6 +153,41 @@ export default function SeoPageExpanded() {
               </div>
             </div>
           </motion.div>
+        </motion.div>
+
+        {/* SEO Services Overview with Links */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="bg-[#1a2a4a] p-8 rounded-xl border border-[#2d3a5a]"
+        >
+          <h3 className="text-2xl md:text-3xl font-bold mb-6 text-[#fcd066]">
+            Unsere SEO-Leistungen im Detail
+          </h3>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {[
+              { title: 'OnPage SEO', href: '/seo-agentur-berlin/onpage-seo' },
+              { title: 'OffPage SEO', href: '/seo-agentur-berlin/offpage-seo' },
+              { title: 'Technisches SEO', href: '/seo-agentur-berlin/technisches-seo' },
+              { title: 'Lokale SEO', href: '/seo-agentur-berlin/lokale-seo' },
+              { title: 'Content-Erstellung', href: '/seo-agentur-berlin/content-erstellung' },
+              { title: 'Keyword-Recherche', href: '/seo-agentur-berlin/keyword-recherche' },
+              { title: 'SEO Beratung', href: '/seo-agentur-berlin/beratung' },
+              { title: 'E-Commerce SEO', href: '/seo-agentur-berlin/ecommerce-seo' },
+              { title: 'SEO Blog', href: '/blog/seo' },
+            ].map((service, index) => (
+              <a
+                key={index}
+                href={service.href}
+                className="block p-4 bg-[#0c1832] rounded-lg border border-blue-900/50 hover:border-[#fcd066] transition-all group"
+              >
+                <span className="text-white group-hover:text-[#fcd066] transition-colors">
+                  {service.title} →
+                </span>
+              </a>
+            ))}
+          </div>
         </motion.div>
 
       </div>
