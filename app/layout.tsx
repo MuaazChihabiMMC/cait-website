@@ -25,8 +25,9 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
   },
+  metadataBase: new URL('https://www.caitsocialmedia.com'),
   alternates: {
-    canonical: 'https://www.caitsocialmedia.com',
+    canonical: './',
   },
   verification: {
     other: {

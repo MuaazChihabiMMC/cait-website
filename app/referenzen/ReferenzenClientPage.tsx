@@ -103,10 +103,27 @@ export default function ReferenzenClientPage() {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ delay: 0.2 }}
-                        className="text-xl text-gray-300 mb-10 max-w-3xl mx-auto"
+                        className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto"
                     >
                         Entdecken Sie unsere erfolgreichen Projekte. Von SEO über Google Ads bis hin zu Social Media – hier sehen Sie, was wir für Berliner Unternehmen erreicht haben.
                     </motion.p>
+
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ delay: 0.3 }}
+                        className="text-gray-300 mb-10 max-w-4xl mx-auto leading-relaxed space-y-4 text-base"
+                    >
+                        <p>
+                            Bei CAIT Social Media glauben wir daran, dass jedes Unternehmen eine einzigartige Geschichte zu erzählen hat. Unsere Aufgabe ist es, diese Geschichte sichtbar zu machen – sei es durch technisch perfekte Websites, kreative Social Media Kampagnen oder messerscharfe Google Ads Strategien.
+                            Wir arbeiten nicht nach "Schema F", sondern entwickeln für jeden Kunden maßgeschneiderte Konzepte, die genau auf die jeweilige Zielgruppe und Branche zugeschnitten sind.
+                        </p>
+                        <p>
+                            Unsere Referenzen zeigen einen Querschnitt unserer Expertise: Vom lokalen Handwerksbetrieb in Berlin-Spandau bis zum international agierenden E-Commerce Start-up.
+                            Wir helfen unseren Partnern dabei, digital zu wachsen, messbare Umsätze zu generieren und sich langfristig gegen den Wettbewerb durchzusetzen.
+                            Transparenz, messbare KPIs und eine Kommunikation auf Augenhöhe sind dabei unser Schlüssel zum gemeinsamen Erfolg.
+                        </p>
+                    </motion.div>
                 </div>
             </section>
 

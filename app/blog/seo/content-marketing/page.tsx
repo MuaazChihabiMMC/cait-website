@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation';
 
 const seoPosts = {
   'content-marketing': {
-    title: 'Content Marketing: So ranken Inhalte',
+    title: 'Content Marketing Guide: So ranken Ihre Inhalte | CAIT',
     metaDescription: 'Content-SEO mit Strategie: für Top Rankings einfach erklärt.',
     alternates: {
       canonical: 'https://www.caitsocialmedia.com/blog/seo/content-marketing',
@@ -154,7 +154,7 @@ export default function ContentMarketingPage() {
         </div>
 
         {/* Article Content */}
-        <div 
+        <div
           className="prose prose-lg max-w-none"
           dangerouslySetInnerHTML={{ __html: post.content }}
         />

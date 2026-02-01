@@ -14,13 +14,26 @@ export default function KontaktHero() {
           <br />
           <span className="text-[#fcd066]">Kontaktiere uns</span>
         </h1>
-        
-        <p className="text-xl text-[#fcd066] mb-12 max-w-3xl mx-auto leading-relaxed">
+
+        <p className="text-xl text-[#fcd066] mb-8 max-w-3xl mx-auto leading-relaxed">
           Wir freuen uns auf deine Anfrage. Egal ob Erstberatung, Projektidee oder Zusammenarbeit - schreib uns einfach oder ruf uns an.
           <br />
           Die <strong className="text-white">CAIT Agentur Berlin</strong> ist gerne für dich da.
         </p>
-        
+
+        <div className="mb-12 text-gray-300 max-w-3xl mx-auto space-y-4">
+          <p>
+            Als führende <strong>Digitalagentur in Berlin</strong> sind wir darauf spezialisiert, Unternehmen durch gezieltes <strong>Online-Marketing</strong> sichtbar zu machen.
+            Egal, ob du deine Rankings durch <strong>SEO</strong> verbessern, mit <strong>Google Ads</strong> sofortigen Traffic generieren oder durch <strong>Social Media Marketing</strong>
+            eine Community aufbauen möchtest – wir haben die passende Strategie für dich.
+          </p>
+          <p>
+            Unser Team aus Experten für Webdesign, Content Marketing und technischen SEO-Lösungen steht bereit, um dein Projekt zum Erfolg zu führen.
+            Wir arbeiten transparent, datengetrieben und immer mit dem Fokus auf deinen ROI (Return on Investment).
+            Vereinbare jetzt ein unverbindliches Kennenlerngespräch und lass uns gemeinsam herausfinden, wie wir dein Business skalieren können.
+          </p>
+        </div>
+
         <div className="flex flex-col sm:flex-row justify-center gap-6">
           <a
             href="mailto:info@caitsocialmedia.com"
@@ -31,7 +44,7 @@ export default function KontaktHero() {
             </svg>
             info@caitsocialmedia.com
           </a>
-          
+
           <a
             href="tel:+493022689840"
             className="inline-flex items-center justify-center border-2 border-[#fcd066] text-[#fcd066] hover:text-white hover:border-blue-500 font-semibold px-8 py-4 rounded-full transition-all hover:translate-y-[-2px]"
@@ -44,7 +57,7 @@ export default function KontaktHero() {
         </div>
 
         <div className="mt-16">
-          <a 
+          <a
             href="https://www.google.com/maps?cid=1767528556497609092"
             className="inline-flex items-center text-[#fcd066] hover:text-white transition-colors"
           >

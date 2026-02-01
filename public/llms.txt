@@ -1,0 +1,22 @@
+# CAIT Social Media Agentur Berlin
+
+## About Us
+CAIT Social Media is a premier digital marketing agency based in Berlin, Germany. We specialize in helping businesses grow their online presence through data-driven strategies and creative execution.
+
+## Our Services
+- **SEO (Search Engine Optimization)**: Comprehensive on-page, off-page, and technical SEO services to improve search rankings and organic traffic. Focus on local SEO for Berlin businesses.
+- **Google Ads (SEA)**: Strategic campaign management for Google Ads to maximize ROI and lead generation.
+- **Social Media Marketing**: Content creation, community management, and paid social campaigns on platforms like Instagram, TikTok, and LinkedIn.
+- **Web Design & Development**: Creating modern, responsive, and performance-optimized websites using the latest technologies (Next.js, React).
+
+## Key Expertise
+- Local SEO for Berlin districts (Spandau, Charlottenburg, Mitte, etc.)
+- Content Marketing strategies that rank
+- Conversion Rate Optimization (CRO)
+- Branding and Identity
+
+## Contact Information
+- **Website**: https://www.caitsocialmedia.com
+- **Email**: info@caitsocialmedia.com
+- **Phone**: +49 30 22689840
+- **Address**: Berliner Straße 17, 14169 Berlin, Germany
