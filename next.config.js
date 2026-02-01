@@ -1,15 +1,20 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
- // output: 'export'
-}
-const { i18n } = require('./next-i18next.config');
 
-module.exports = {
-  i18n,
+const nextConfig = {
   reactStrictMode: true,
-};
-module.exports = nextConfig
-module.exports = {
+
+  // Performance optimizations
+  compiler: {
+    removeConsole: process.env.NODE_ENV === 'production',
+  },
+
+  images: {
+    formats: ['image/avif', 'image/webp'],
+    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048],
+    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
+  },
+
+  // Consolidated redirects
   async redirects() {
     return [
       {
@@ -17,25 +22,6 @@ module.exports = {
         destination: '/google-ads-agentur-berlin',
         permanent: true,
       },
-    ];
-  },
-};
-
-module.exports = {
-  async redirects() {
-    return [
-      {
-        source: '/seo',
-        destination: '/seo-agentur-berlin',
-        permanent: true,
-      },
-    ];
-  },
-};
-
-module.exports = {
-  async redirects() {
-    return [
       {
         source: '/seo',
         destination: '/seo-agentur-berlin',
@@ -81,31 +67,48 @@ module.exports = {
         destination: '/social-media',
         permanent: true,
       },
-        {
+      {
         source: '/webenticklung-webdesign',
         destination: '/webentwicklung',
         permanent: true,
       },
-        {
+      {
         source: '/seo-optimierung',
         destination: '/seo-agentur-berlin',
         permanent: true,
       },
-        {
+      {
         source: '/about',
         destination: '/ueber-uns',
         permanent: true,
       },
-         {
+      {
         source: '/content-writing-berlin',
         destination: '/',
         permanent: true,
       },
-            {
+      {
         source: '/ads-management-berlin',
         destination: '/google-ads-agentur-berlin',
         permanent: true,
       },
     ];
   },
+
+  // Security headers
+  async headers() {
+    return [
+      {
+        source: '/:path*',
+        headers: [
+          { key: 'X-Frame-Options', value: 'DENY' },
+          { key: 'X-Content-Type-Options', value: 'nosniff' },
+          { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
+          { key: 'X-XSS-Protection', value: '1; mode=block' },
+        ],
+      },
+    ];
+  },
 };
+
+module.exports = nextConfig;
