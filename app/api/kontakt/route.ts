@@ -83,32 +83,7 @@ function sanitizeInput(input: string): string {
     .slice(0, 5000); // Limit length
 }
 
-async function verifyTurnstile(token: string): Promise<boolean> {
-  const secretKey = process.env.TURNSTILE_SECRET_KEY;
 
-  // Skip verification in development if no key is set
-  if (!secretKey || secretKey === 'test') {
-    console.log('Turnstile verification skipped (development mode)');
-    return true;
-  }
-
-  try {
-    const response = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: new URLSearchParams({
-        secret: secretKey,
-        response: token,
-      }),
-    });
-
-    const data = await response.json();
-    return data.success === true;
-  } catch (error) {
-    console.error('Turnstile verification error:', error);
-    return false;
-  }
-}
 
 export async function POST(req: Request) {
   const ip = getClientIP(req);
@@ -123,7 +98,7 @@ export async function POST(req: Request) {
 
   try {
     const body = await req.json();
-    const { name, email, phone, message, turnstileToken, timestamp } = body;
+    const { name, email, phone, message, timestamp } = body;
 
     // Timestamp validation (prevent replay attacks)
     const now = Date.now();
@@ -188,21 +163,7 @@ export async function POST(req: Request) {
       );
     }
 
-    // Turnstile verification
-    if (!turnstileToken) {
-      return NextResponse.json(
-        { error: 'Bitte bestätigen Sie, dass Sie kein Roboter sind.' },
-        { status: 400 }
-      );
-    }
 
-    const turnstileValid = await verifyTurnstile(turnstileToken);
-    if (!turnstileValid) {
-      return NextResponse.json(
-        { error: 'Captcha-Verifizierung fehlgeschlagen. Bitte versuchen Sie es erneut.' },
-        { status: 400 }
-      );
-    }
 
     // Create email transporter
     const transporter = nodemailer.createTransport({
