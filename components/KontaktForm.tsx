@@ -21,41 +21,8 @@ export default function KontaktForm() {
   const [submitted, setSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [error, setError] = useState('');
-  const [turnstileToken, setTurnstileToken] = useState<string | null>(null);
-  const turnstileRef = useRef<HTMLDivElement>(null);
 
-  // Load Turnstile script
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js';
-    script.async = true;
-    script.defer = true;
-    document.head.appendChild(script);
 
-    // Initialize Turnstile when script loads
-    script.onload = () => {
-      if (window.turnstile && turnstileRef.current) {
-        const siteKey = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY;
-        console.log('Turnstile Site Key:', siteKey); // Debug log
-
-        window.turnstile.render(turnstileRef.current, {
-          sitekey: siteKey || '0x4AAAAAACWdQjOMloLjgkMR',
-          callback: (token: string) => {
-            setTurnstileToken(token);
-          },
-          'error-callback': () => {
-            setError('Captcha-Fehler. Bitte Seite neu laden.');
-          },
-        });
-      }
-    };
-
-    return () => {
-      if (document.head.contains(script)) {
-        document.head.removeChild(script);
-      }
-    };
-  }, []);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -106,12 +73,6 @@ export default function KontaktForm() {
       return;
     }
 
-    // Turnstile check
-    if (!turnstileToken) {
-      setError('Bitte bestätigen Sie, dass Sie kein Roboter sind.');
-      return;
-    }
-
     setIsSubmitting(true);
 
     try {
@@ -123,7 +84,6 @@ export default function KontaktForm() {
           email: formData.email.trim(),
           phone: formData.phone.trim(),
           message: formData.message.trim(),
-          turnstileToken,
           timestamp: Date.now(),
         }),
       });
@@ -134,11 +94,6 @@ export default function KontaktForm() {
         setSubmitted(true);
       } else {
         setError(data.error || 'Fehler beim Senden. Bitte versuchen Sie es später erneut.');
-        // Reset Turnstile on error
-        if (window.turnstile) {
-          window.turnstile.reset();
-        }
-        setTurnstileToken(null);
       }
     } catch {
       setError('Netzwerkfehler. Bitte überprüfen Sie Ihre Verbindung.');
@@ -240,11 +195,6 @@ export default function KontaktForm() {
                 className="w-full p-4 border border-[#fcd066]/30 rounded-lg bg-[#1a2a4a] text-white placeholder-gray-400 focus:ring-2 focus:ring-[#fcd066] focus:border-transparent transition-all resize-y"
                 placeholder="Wie können wir Ihnen helfen?"
               ></textarea>
-            </div>
-
-            {/* Cloudflare Turnstile Widget */}
-            <div className="flex justify-center">
-              <div ref={turnstileRef} className="cf-turnstile" data-theme="dark"></div>
             </div>
 
             {/* Error message */}

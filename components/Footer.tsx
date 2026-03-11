@@ -9,6 +9,7 @@ const footerLinks = [
       { label: 'Webdesign Berlin', href: '/webentwicklung' },
       { label: 'Google Ads Berlin', href: '/google-ads-agentur-berlin' },
       { label: 'Social Media Berlin', href: '/social-media' },
+      { label: 'Bewertungen löschen', href: '/google-bewertungen-loeschen' },
     ],
   },
 

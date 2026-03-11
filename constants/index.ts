@@ -13,6 +13,7 @@ export const NAV_LINKS = [
       { key: 'web', label: 'Webentwicklung', href: '/webentwicklung' },
       { key: 'social', label: 'Social Media', href: '/social-media' },
       { key: 'pr', label: 'PR Agentur Berlin', href: '/pr-agentur-berlin' },
+      { key: 'bewertungen', label: 'Bewertungen löschen', href: '/google-bewertungen-loeschen' },
     ],
   },
   { href: '/ueber-uns', key: 'Über uns', label: 'Über uns' },
