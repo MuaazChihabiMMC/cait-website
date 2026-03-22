@@ -1069,6 +1069,18 @@ export default function HomePage() {
                 url: "https://webseite-zeta.vercel.app/",
                 category: "Gebäudereinigung",
                 logo: "/logos/glanzity-gebaeudereinigung-logo.png"
+              },
+              {
+                name: "Azzam Supermarkt",
+                url: "https://www.azzam-supermarkt.de/",
+                category: "Supermarkt",
+                logo: "/logos/azzam-supermarkt-logo.png"
+              },
+              {
+                name: "Only One GmbH",
+                url: "http://onlyonegmbh.de/",
+                category: "Unternehmen",
+                logo: "/logos/only-one-gmbh-logo.png"
               }
             ].map((client, index) => (
               <motion.div
