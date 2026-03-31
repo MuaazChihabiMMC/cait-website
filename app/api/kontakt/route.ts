@@ -102,7 +102,9 @@ export async function POST(req: Request) {
 
     // Timestamp validation (prevent replay attacks)
     const now = Date.now();
-    if (!timestamp || now - timestamp > 5 * 60 * 1000 || timestamp > now) {
+    const MAX_AGE = 30 * 60 * 1000; // 30 minutes - allow time for form filling
+    const CLOCK_SKEW_TOLERANCE = 10 * 1000; // 10 seconds tolerance for clock differences
+    if (!timestamp || now - timestamp > MAX_AGE || timestamp > now + CLOCK_SKEW_TOLERANCE) {
       return NextResponse.json(
         { error: 'Ungültige Anfrage. Bitte laden Sie die Seite neu.' },
         { status: 400 }
