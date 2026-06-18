@@ -1081,6 +1081,36 @@ export default function HomePage() {
                 url: "http://onlyonegmbh.de/",
                 category: "Unternehmen",
                 logo: "/logos/only-one-gmbh-logo.png"
+              },
+              {
+                name: "Ocean Fisch Restaurant",
+                url: "http://ocean-fisch-restaurant.de/",
+                category: "Gastronomie",
+                logo: "/logos/ocean-fisch-restaurant-logo.png"
+              },
+              {
+                name: "Azzam Frühstückshaus",
+                url: "https://www.azzam-fruehstueckshaus.de/",
+                category: "Gastronomie",
+                logo: "/logos/azzam-fruehstueckshaus-logo.png"
+              },
+              {
+                name: "Lüx Event Center",
+                url: "https://www.luxeventcenter.de/",
+                category: "Event Location",
+                logo: "/logos/lux-event-center-logo.png"
+              },
+              {
+                name: "Sultan Event Center",
+                url: "https://sultaneventcenter.de/",
+                category: "Event Location",
+                logo: "/logos/sultan-event-center-logo.png"
+              },
+              {
+                name: "Alt und Gesund",
+                url: "https://altundgesund.vercel.app/",
+                category: "Gesundheit",
+                logo: "/logos/alt-und-gesund-logo.png"
               }
             ].map((client, index) => (
               <motion.div
