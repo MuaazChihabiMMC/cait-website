@@ -18,7 +18,7 @@ import Link from 'next/link';
 
 export default function TechnischesSeoClient() {
   return (
-    <main className="px-4 py-12 md:px-6 max-w-6xl mx-auto bg-primary text-white space-y-24">
+    <div className="px-4 py-12 md:px-6 max-w-6xl mx-auto bg-primary text-white space-y-24">
 
       {/* HERO */}
       <section className="pt-32 md:pt-40 bg-primary-light rounded-3xl p-8 md:p-12 shadow-lg text-center space-y-6">
@@ -27,7 +27,7 @@ export default function TechnischesSeoClient() {
             <FaTools className="text-gold-300 text-3xl" />
           </div>
         </div>
-        <h1 className="text-4xl md:text-5xl font-bold text-blue-700">
+        <h1 className="text-4xl md:text-5xl font-bold text-ink-muted">
           🔧 Technisches SEO, das Google & Nutzer lieben
         </h1>
         <p className="text-lg text-gray-300 max-w-3xl mx-auto">
@@ -38,7 +38,7 @@ export default function TechnischesSeoClient() {
         </p>
         <Link
           href="/kontakt"
-          className="inline-flex items-center gap-2 bg-gold-300 text-white px-6 py-3 mt-4 rounded-lg font-semibold shadow hover:bg-blue-700 transition"
+          className="inline-flex items-center gap-2 bg-gold-300 text-night px-6 py-3 mt-4 rounded-lg font-semibold shadow hover:bg-night-600 transition"
         >
           Jetzt technische Analyse starten <FaArrowRight />
         </Link>
@@ -186,32 +186,6 @@ export default function TechnischesSeoClient() {
         </div>
       </section>
 
-      {/* Fallstudien */}
-      <section className="space-y-10 max-w-4xl mx-auto">
-        <div className="space-y-6">
-          <h2 className="text-3xl font-bold flex items-center gap-3">
-            <FaCogs className="text-gold-300" /> Praxisbeispiele: Technisches SEO im Einsatz
-          </h2>
-
-          <div className="space-y-3">
-            <h3 className="text-xl font-bold">🛒 Fallstudie: Shopify-Shop (Fashion)</h3>
-            <p className="text-gray-300">
-              Ausgangssituation: langsame Ladezeit, viele Duplicate Pages, mobile UX-Probleme.
-              <br /> Maßnahmen: Lazy Loading, Bildoptimierung, Canonical Tags, neue strukturierte Navigation.
-              <br /> Ergebnis: <strong>+112 % mehr organischer Traffic</strong> in 3 Monaten.
-            </p>
-          </div>
-
-          <div className="space-y-3">
-            <h3 className="text-xl font-bold">🏥 Fallstudie: Zahnarztpraxis Berlin</h3>
-            <p className="text-gray-300">
-              Ausgangssituation: keine HTTPS, veraltete Technik, nicht mobilfreundlich.
-              <br /> Maßnahmen: Relaunch, HTTPS-Einführung, Mobile Design, PageSpeed-Boost.
-              <br /> Ergebnis: <strong>Top-5 Rankings für „Zahnarzt Berlin + Ortsteil“</strong> & <strong>+80 % Sichtbarkeit</strong>.
-            </p>
-          </div>
-        </div>
-      </section>
       {/* Best Practices & Fehler */}
       <section className="space-y-10 max-w-4xl mx-auto">
         <div className="space-y-4">
@@ -287,7 +261,7 @@ export default function TechnischesSeoClient() {
       </section>
 
       {/* CTA Abschluss */}
-      <section className="bg-gold-300 text-white rounded-3xl p-12 text-center">
+      <section className="bg-gold-300 text-night rounded-3xl p-12 text-center">
         <div className="max-w-4xl mx-auto space-y-6">
           <h2 className="text-3xl font-bold">Bereit für technisches SEO, das Ergebnisse liefert?</h2>
           <p className="text-xl">
@@ -308,7 +282,7 @@ export default function TechnischesSeoClient() {
           Zurück zur <Link href="/seo-agentur-berlin" className="underline text-gold-300">SEO Übersicht</Link>
         </p>
       </section>
-    </main>
+    </div>
   );
 }
 

@@ -34,7 +34,7 @@ export default function GoogleBewertungLoeschenFaq() {
   const [open, setOpen] = useState<number | null>(null)
 
   return (
-    <section className="bg-gradient-to-b from-[#0c1832] to-[#0d1a36] py-16 md:py-24 px-4">
+    <section className="bg-gradient-to-b from-[#0c1527] to-[#0d1a36] py-16 md:py-24 px-4">
       <div className="max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -42,7 +42,7 @@ export default function GoogleBewertungLoeschenFaq() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-blue-100">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-gold-400">
             Häufige Fragen (FAQ)
           </h2>
           <p className="text-xl text-gray-100">
@@ -58,13 +58,13 @@ export default function GoogleBewertungLoeschenFaq() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.05 }}
-              className="bg-gradient-to-br from-[#1a2a4a] to-[#15203a] border border-blue-500/20 rounded-xl overflow-hidden"
+              className="bg-gradient-to-br from-[#131f38] to-[#15203a] border border-gold-300/40/20 rounded-xl overflow-hidden"
             >
               <button
                 onClick={() => setOpen(open === i ? null : i)}
                 className="w-full flex items-center justify-between p-6 text-left group"
               >
-                <span className="text-white font-semibold pr-4 group-hover:text-[#fcd066] transition-colors">
+                <span className="text-white font-semibold pr-4 group-hover:text-[#d4af37] transition-colors">
                   {faq.q}
                 </span>
                 <motion.div
@@ -72,7 +72,7 @@ export default function GoogleBewertungLoeschenFaq() {
                   transition={{ duration: 0.3 }}
                   className="flex-shrink-0"
                 >
-                  <ChevronDown className="w-5 h-5 text-[#fcd066]" />
+                  <ChevronDown className="w-5 h-5 text-[#d4af37]" />
                 </motion.div>
               </button>
               <AnimatePresence>
@@ -84,7 +84,7 @@ export default function GoogleBewertungLoeschenFaq() {
                     transition={{ duration: 0.3, ease: 'easeInOut' }}
                     className="overflow-hidden"
                   >
-                    <div className="px-6 pb-6 text-gray-300 leading-relaxed border-t border-blue-500/10 pt-4">
+                    <div className="px-6 pb-6 text-gray-300 leading-relaxed border-t border-gold-300/40/10 pt-4">
                       {faq.a}
                     </div>
                   </motion.div>

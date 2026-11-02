@@ -1,19 +1,11 @@
-# Robots.txt for caitsocialmedia.com
+# robots.txt – caitsocialmedia.com
 User-agent: *
 Allow: /
+Disallow: /api/
 
-# Block search parameter URLs (duplicate content prevention)
+# Parameter-URLs ohne eigenen Inhalt nicht crawlen (Duplicate Content vermeiden)
 Disallow: /*?s=*
 Disallow: /*?search=*
 Disallow: /*?q=*
 
-# Block other common parameter URLs
-Disallow: /*?utm_*
-Disallow: /*?ref=*
-Disallow: /*?source=*
-
-# Host
-Host: https://www.caitsocialmedia.com
-
-# Sitemaps
 Sitemap: https://www.caitsocialmedia.com/sitemap.xml

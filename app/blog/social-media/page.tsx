@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export const metadata = {
-  title: 'Social Media Strategien | CAITSocialMedia Blog',
+  title: { absolute: 'Social Media Strategien | CAITSocialMedia Blog' },
   description: 'Aktuelle Tipps für Instagram, TikTok & LinkedIn - Content-Strategien und organisches Wachstum',
   alternates: {
     canonical: 'https://www.caitsocialmedia.com/blog/social-media',
@@ -41,14 +41,14 @@ const socialMediaPosts = [
 
 export default function SocialMediaBlogPage() {
   return (
-    <section className="bg-gradient-to-b from-[#0c1832] to-[#1a2b5a] py-20 px-6">
+    <section className="bg-gradient-to-b from-[#0c1527] to-[#131f38] py-20 px-6">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16 animate-fade-in">
-          <span className="inline-block px-4 py-2 bg-blue-900/50 text-blue-200 rounded-full text-sm font-semibold mb-4">
+          <span className="inline-block px-4 py-2 bg-night-700/50 text-ink-soft rounded-full text-sm font-semibold mb-4">
             Social Media
           </span>
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">
-            <span className="bg-gradient-to-r from-blue-400 to-blue-300 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-gold-300 to-gold-400 bg-clip-text text-transparent">
               Social Media
             </span>{' '}
             für Business-Wachstum
@@ -81,14 +81,14 @@ export default function SocialMediaBlogPage() {
                   {post.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="px-3 py-1 bg-blue-900/50 text-blue-200 text-xs font-medium rounded-full"
+                      className="px-3 py-1 bg-night-700/50 text-ink-soft text-xs font-medium rounded-full"
                     >
                       {tag}
                     </span>
                   ))}
                 </div>
 
-                <h2 className="text-xl font-bold text-white mb-2 group-hover:text-blue-300 transition-colors">
+                <h2 className="text-xl font-bold text-white mb-2 group-hover:text-gold-200 transition-colors">
                   {post.title}
                 </h2>
 
@@ -99,7 +99,7 @@ export default function SocialMediaBlogPage() {
 
                   <Link
                     href={`/blog/social-media/${post.slug}`}
-                    className="text-blue-400 font-medium flex items-center group-hover:translate-x-1 transition-transform"
+                    className="text-gold-300 font-medium flex items-center group-hover:translate-x-1 transition-transform"
                     aria-label={`Mehr erfahren über ${post.title}`}
                   >
                     {post.ctaText}
@@ -152,10 +152,10 @@ export default function SocialMediaBlogPage() {
         </div>
 
         {/* Newsletter CTA */}
-        <div className="mt-20 bg-gradient-to-r from-blue-700 to-blue-600 rounded-xl p-8 md:p-10 text-white shadow-lg animate-float">
+        <div className="mt-20 bg-gradient-to-r from-blue-700 to-night rounded-xl p-8 md:p-10 text-white shadow-lg animate-float">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-2xl md:text-3xl font-bold mb-4">Social Media Updates erhalten</h2>
-            <p className="text-blue-200 mb-6">Abonnieren Sie unseren Newsletter für exklusive Strategien</p>
+            <p className="text-ink-soft mb-6">Abonnieren Sie unseren Newsletter für exklusive Strategien</p>
             <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
               <input
                 type="email"
@@ -164,7 +164,7 @@ export default function SocialMediaBlogPage() {
                 aria-label="E-Mail für Social Media Newsletter"
               />
               <button
-                className="px-6 py-3 bg-white text-blue-700 font-semibold rounded-lg hover:bg-gray-100 transition-colors"
+                className="px-6 py-3 bg-white text-ink-muted font-semibold rounded-lg hover:bg-gray-100 transition-colors"
                 aria-label="Newsletter abonnieren"
               >
                 Abonnieren

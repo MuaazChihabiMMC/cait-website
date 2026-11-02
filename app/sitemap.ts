@@ -11,8 +11,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
         '/impressum',
         '/datenschutz',
         '/referenzen',
-        '/services',
+        '/leistungen',
         '/webentwicklung',
+        '/softwareentwicklung',
+        '/ki-loesungen',
         '/social-media',
         '/google-ads-agentur-berlin',
         '/pr-agentur-berlin',
@@ -66,10 +68,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     const allRoutes = [...routes, ...seoRoutes, ...blogRoutes, ...blogPosts];
 
+    const core = ['/leistungen', '/seo-agentur-berlin', '/webentwicklung', '/google-ads-agentur-berlin', '/social-media', '/softwareentwicklung', '/ki-loesungen', '/kontakt'];
+    const legal = ['/impressum', '/datenschutz'];
+
     return allRoutes.map((route) => ({
         url: `${baseUrl}${route}`,
         lastModified: new Date(),
-        changeFrequency: 'weekly',
-        priority: route === '' ? 1 : 0.8,
+        changeFrequency: legal.includes(route) ? 'yearly' : route.startsWith('/blog') ? 'monthly' : 'weekly',
+        priority: route === '' ? 1 : core.includes(route) ? 0.9 : legal.includes(route) ? 0.3 : 0.7,
     }));
 }

@@ -22,7 +22,7 @@ import Link from 'next/link';
 
 export default function OffPageSeoClient() {
   return (
-    <main className="px-4 py-12 md:px-6 max-w-6xl mx-auto bg-primary text-white space-y-24">
+    <div className="px-4 py-12 md:px-6 max-w-6xl mx-auto bg-primary text-white space-y-24">
 
       {/* HERO */}
       <motion.section
@@ -31,7 +31,7 @@ export default function OffPageSeoClient() {
         transition={{ duration: 0.8 }}
         className="text-center pt-32 md:pt-40"
       >
-        <h1 className="text-4xl md:text-5xl font-bold mb-6 text-blue-700">
+        <h1 className="text-4xl md:text-5xl font-bold mb-6 text-ink-muted">
           🌐 OffPage-SEO & Backlinkaufbau mit System
         </h1>
         <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
@@ -44,7 +44,7 @@ export default function OffPageSeoClient() {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           href="/kontakt"
-          className="inline-flex items-center gap-2 mt-8 bg-gold-300 text-white px-6 py-3 rounded-full font-semibold shadow hover:shadow-lg transition"
+          className="inline-flex items-center gap-2 mt-8 bg-gold-300 text-night px-6 py-3 rounded-full font-semibold shadow hover:shadow-lg transition"
         >
           Jetzt OffPage-Beratung starten <FaArrowRight />
         </motion.a>
@@ -206,23 +206,6 @@ export default function OffPageSeoClient() {
         </div>
       </motion.section>
 
-      {/* Fallstudie 2 */}
-      <motion.section
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.8 }}
-        className="space-y-12"
-      >
-        <div className="max-w-4xl mx-auto space-y-6">
-          <h2 className="text-3xl font-bold flex items-center gap-3">
-            <FaStar className="text-gold-300" /> Case Study: B2B-SaaS Anbieter
-          </h2>
-          <p className="text-gray-300 text-lg">
-            Für einen SaaS-Anbieter führten wir eine internationale Linkkampagne in DACH, UK und den USA durch. Über <strong>120 relevante Backlinks</strong> aus Tech-Magazinen, Startup-Verzeichnissen und Content Hubs führten zu einem Sichtbarkeitszuwachs von <strong>+387 %</strong> in 6 Monaten.
-          </p>
-        </div>
-      </motion.section>
       {/* Best Practices */}
       <motion.section
         initial={{ opacity: 0 }}
@@ -301,7 +284,7 @@ export default function OffPageSeoClient() {
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
-        className="bg-gold-300 text-white rounded-3xl p-12 text-center"
+        className="bg-gold-300 text-night rounded-3xl p-12 text-center"
       >
         <div className="max-w-4xl mx-auto">
           <h3 className="text-3xl font-bold mb-4">Jetzt Autorität & Sichtbarkeit aufbauen</h3>
@@ -323,7 +306,7 @@ export default function OffPageSeoClient() {
           Zurück zur <Link href="/seo-agentur-berlin" className="underline text-gold-300">SEO Übersicht</Link>
         </p>
       </section>
-    </main>
+    </div>
   );
 }
 

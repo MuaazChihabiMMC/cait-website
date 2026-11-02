@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 export default function ContentErstellungClient() {
   return (
-    <main className="max-w-4xl mx-auto px-4 pt-32 md:pt-40 pb-16 text-white">
+    <div className="max-w-4xl mx-auto px-4 pt-32 md:pt-40 pb-16 text-white">
       <motion.h1
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -124,23 +124,23 @@ export default function ContentErstellungClient() {
         >
           <h2 className="text-2xl font-semibold mb-2">📊 So läuft die Content-Erstellung bei CAIT ab</h2>
           <div className="space-y-4 mt-4">
-            <div className="bg-[#1a2a4a] p-4 rounded-lg border border-blue-800">
+            <div className="bg-[#131f38] p-4 rounded-lg border border-night-600">
               <strong className="block text-gold-300 mb-1">1. Briefing & Strategie</strong>
               Wir analysieren deine Zielgruppe, deine Marke und deine Ziele. Welches Problem lösen wir für den Kunden?
             </div>
-            <div className="bg-[#1a2a4a] p-4 rounded-lg border border-blue-800">
+            <div className="bg-[#131f38] p-4 rounded-lg border border-night-600">
               <strong className="block text-gold-300 mb-1">2. Keyword- & Themenrecherche</strong>
               Wir finden die Suchbegriffe mit dem größten Potenzial und dem geringsten Wettbewerb (Low Hanging Fruits).
             </div>
-            <div className="bg-[#1a2a4a] p-4 rounded-lg border border-blue-800">
+            <div className="bg-[#131f38] p-4 rounded-lg border border-night-600">
               <strong className="block text-gold-300 mb-1">3. Erstellung & Optimierung</strong>
               Unsere Fachredakteure schreiben den Text, inkl. Meta-Tags, Überschriftenstruktur (H1-H6) und interner Verlinkung.
             </div>
-            <div className="bg-[#1a2a4a] p-4 rounded-lg border border-blue-800">
+            <div className="bg-[#131f38] p-4 rounded-lg border border-night-600">
               <strong className="block text-gold-300 mb-1">4. Feedback & Feinschliff</strong>
               Du erhältst den Text zur Ansicht. Änderungswünsche arbeiten wir schnell und präzise ein.
             </div>
-            <div className="bg-[#1a2a4a] p-4 rounded-lg border border-blue-800">
+            <div className="bg-[#131f38] p-4 rounded-lg border border-night-600">
               <strong className="block text-gold-300 mb-1">5. Veröffentlichung</strong>
               Auf Wunsch pflegen wir den Content direkt in dein CMS (WordPress, TYPO3, Shopify) ein.
             </div>
@@ -156,13 +156,13 @@ export default function ContentErstellungClient() {
         >
           <Link
             href="/kontakt"
-            className="inline-flex items-center gap-2 bg-gold-300 text-white px-6 py-3 rounded-lg font-semibold shadow hover:bg-blue-700 transition"
+            className="inline-flex items-center gap-2 bg-gold-300 text-night px-6 py-3 rounded-lg font-semibold shadow hover:bg-night-600 transition"
           >
             Jetzt Content-Angebot anfordern
           </Link>
         </motion.div>
       </motion.section>
-    </main>
+    </div>
   );
 }
 

@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Moderne WordPress-Entwicklung | CAITSocialMedia',
+  title: { absolute: 'Moderne WordPress-Entwicklung | CAITSocialMedia' },
   description: 'Block-Themes, Headless CMS und Performance-Tuning für WordPress.',
   alternates: {
     canonical: 'https://www.caitsocialmedia.com/blog/webdesign/wordpress-entwicklung',
@@ -27,9 +27,9 @@ const post = {
     <h2 class="text-2xl font-bold text-white mt-8 mb-4">Die Evolution von WordPress</h2>
 <p class="text-gray-300 mb-6">WordPress hat sich vom einfachen Blogging-System zum vollwertigen Content-Management-System entwickelt. Mit dem Block-Editor, Full Site Editing und modernen API-Möglichkeiten bietet WordPress heute Technologien für anspruchsvolle Webprojekte.</p>
 
-<div class="bg-blue-900/30 border-l-4 border-blue-400 p-4 my-6 rounded-r">
-  <p class="font-semibold text-blue-200 mb-1">Statistik:</p>
-  <p class="text-blue-100">Laut W3Techs nutzen 43% aller Websites WordPress - das sind über 810 Millionen Websites weltweit (Stand 2024).</p>
+<div class="bg-night-700/30 border-l-4 border-gold-300/40 p-4 my-6 rounded-r">
+  <p class="font-semibold text-ink-soft mb-1">Statistik:</p>
+  <p class="text-ink-soft">Laut W3Techs nutzen 43% aller Websites WordPress - das sind über 810 Millionen Websites weltweit (Stand 2024).</p>
 </div>
 
 <h3 class="text-xl font-bold text-white mt-8 mb-4">1. Block-Themes und Full Site Editing</h3>
@@ -37,7 +37,7 @@ const post = {
 
 <div class="grid md:grid-cols-2 gap-6 my-8">
   <div class="bg-gray-800 p-6 rounded-lg shadow border border-gray-700">
-    <h4 class="font-bold text-blue-400 mb-3">Vorteile von Block-Themes</h4>
+    <h4 class="font-bold text-gold-300 mb-3">Vorteile von Block-Themes</h4>
     <ul class="space-y-2 text-gray-300">
       <li>• Kein Theme-Code mehr notwendig</li>
       <li>• Visuelles Bearbeiten aller Website-Bereiche</li>
@@ -46,7 +46,7 @@ const post = {
     </ul>
   </div>
   <div class="bg-gray-800 p-6 rounded-lg shadow border border-gray-700">
-    <h4 class="font-bold text-blue-400 mb-3">Wichtige Block-Typen</h4>
+    <h4 class="font-bold text-gold-300 mb-3">Wichtige Block-Typen</h4>
     <ul class="space-y-2 text-gray-300">
       <li>• Template Parts (Header, Footer etc.)</li>
       <li>• Query Loop für dynamische Inhalte</li>
@@ -111,7 +111,7 @@ const post = {
 
 <div class="grid md:grid-cols-2 gap-6 my-8">
   <div class="bg-gray-800 p-6 rounded-lg shadow border border-gray-700">
-    <h4 class="font-bold text-blue-400 mb-3">Server & Caching</h4>
+    <h4 class="font-bold text-gold-300 mb-3">Server & Caching</h4>
     <ul class="space-y-2 text-gray-300">
       <li>• Object Caching (Redis, Memcached)</li>
       <li>• Page Caching (FastCGI, Nginx)</li>
@@ -120,7 +120,7 @@ const post = {
     </ul>
   </div>
   <div class="bg-gray-800 p-6 rounded-lg shadow border border-gray-700">
-    <h4 class="font-bold text-blue-400 mb-3">Frontend</h4>
+    <h4 class="font-bold text-gold-300 mb-3">Frontend</h4>
     <ul class="space-y-2 text-gray-300">
       <li>• Critical CSS und Lazy Loading</li>
       <li>• WebP-Bilder und AVIF-Unterstützung</li>
@@ -160,15 +160,15 @@ const post = {
 
 export default function WordPressPage() {
   return (
-    <div className="bg-[#0c1832] min-h-screen">
+    <div className="bg-[#0c1527] min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-20 px-6">
+      <section className="bg-gradient-to-r from-night-700 to-night text-white py-20 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <span className="inline-block px-4 py-2 bg-white/20 rounded-full text-sm font-semibold mb-4">
             CMS
           </span>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">{post.title}</h1>
-          <div className="flex items-center justify-center space-x-4 text-blue-100">
+          <div className="flex items-center justify-center space-x-4 text-ink-soft">
             <span>{post.date}</span>
             <span>•</span>
             <span>{post.readTime} Lesezeit</span>
@@ -191,14 +191,14 @@ export default function WordPressPage() {
 
         {/* Article Content */}
         <div 
-          className="prose prose-lg max-w-none prose-headings:text-white prose-p:text-gray-300 prose-strong:text-white prose-li:text-gray-300 prose-a:text-blue-400 hover:prose-a:text-blue-300 prose-pre:bg-gray-900 prose-code:text-gray-300 prose-table:text-gray-300 prose-th:text-white prose-td:border-gray-700"
+          className="prose prose-lg max-w-none prose-headings:text-white prose-p:text-gray-300 prose-strong:text-white prose-li:text-gray-300 prose-a:text-gold-300 hover:prose-a:text-gold-200 prose-pre:bg-gray-900 prose-code:text-gray-300 prose-table:text-gray-300 prose-th:text-white prose-td:border-gray-700"
           dangerouslySetInnerHTML={{ __html: post.content }}
         />
 
         {/* Tags */}
         <div className="flex flex-wrap gap-2 mt-12">
           {post.tags.map(tag => (
-            <span key={tag} className="px-3 py-1 bg-blue-900/50 text-blue-200 text-sm rounded-full">
+            <span key={tag} className="px-3 py-1 bg-night-700/50 text-ink-soft text-sm rounded-full">
               #{tag}
             </span>
           ))}
@@ -219,10 +219,10 @@ export default function WordPressPage() {
             </div>
             <div className="text-center md:text-left">
               <h3 className="text-xl font-bold text-white">{post.author.name}</h3>
-              <p className="text-blue-400 font-medium mb-2 md:mb-3">{post.author.role}</p>
+              <p className="text-gold-300 font-medium mb-2 md:mb-3">{post.author.role}</p>
               <p className="text-gray-300 text-sm md:text-base">{post.author.bio}</p>
               <div className="flex justify-center md:justify-start space-x-4 mt-4">
-                <a href="https://www.linkedin.com/in/muaaz-chihabi/" className="text-blue-400 hover:text-blue-300 transition-colors">
+                <a href="https://www.linkedin.com/in/muaaz-chihabi/" className="text-gold-300 hover:text-gold-200 transition-colors">
                   <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
                   </svg>
@@ -251,15 +251,15 @@ export default function WordPressPage() {
             </div>
             <div className="p-6">
               <div className="flex flex-wrap gap-2 mb-3">
-                <span className="px-3 py-1 bg-blue-900/50 text-blue-200 text-xs font-medium rounded-full">CSS</span>
-                <span className="px-3 py-1 bg-blue-900/50 text-blue-200 text-xs font-medium rounded-full">Frontend</span>
+                <span className="px-3 py-1 bg-night-700/50 text-ink-soft text-xs font-medium rounded-full">CSS</span>
+                <span className="px-3 py-1 bg-night-700/50 text-ink-soft text-xs font-medium rounded-full">Frontend</span>
               </div>
               <h3 className="text-xl font-bold text-white mb-2">Moderne CSS-Techniken 2024</h3>
               <p className="text-gray-300 mb-4">CSS Grid, Container Queries und neue Features effektiv nutzen.</p>
               <div className="flex items-center justify-between">
                 <span className="text-sm text-gray-400">8 min Lesezeit</span>
                 <Link href="/blog/webdesign/modernes-css" aria-label="CSS-Trends entdecken">
-                  <span className="text-blue-400 font-medium flex items-center group-hover:translate-x-1 transition-transform">
+                  <span className="text-gold-300 font-medium flex items-center group-hover:translate-x-1 transition-transform">
                     CSS-Trends entdecken
                     <svg xmlns="https://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -283,15 +283,15 @@ export default function WordPressPage() {
             </div>
             <div className="p-6">
               <div className="flex flex-wrap gap-2 mb-3">
-                <span className="px-3 py-1 bg-blue-900/50 text-blue-200 text-xs font-medium rounded-full">JavaScript</span>
-                <span className="px-3 py-1 bg-blue-900/50 text-blue-200 text-xs font-medium rounded-full">Frameworks</span>
+                <span className="px-3 py-1 bg-night-700/50 text-ink-soft text-xs font-medium rounded-full">JavaScript</span>
+                <span className="px-3 py-1 bg-night-700/50 text-ink-soft text-xs font-medium rounded-full">Frameworks</span>
               </div>
               <h3 className="text-xl font-bold text-white mb-2">JavaScript Frameworks im Vergleich</h3>
               <p className="text-gray-300 mb-4">React, Vue, Angular oder Svelte? Die beste Wahl für Ihr Projekt.</p>
               <div className="flex items-center justify-between">
                 <span className="text-sm text-gray-400">10 min Lesezeit</span>
                 <Link href="/blog/webdesign/javascript-frameworks" aria-label="Frameworks vergleichen">
-                  <span className="text-blue-400 font-medium flex items-center group-hover:translate-x-1 transition-transform">
+                  <span className="text-gold-300 font-medium flex items-center group-hover:translate-x-1 transition-transform">
                     Frameworks vergleichen
                     <svg xmlns="https://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -315,15 +315,15 @@ export default function WordPressPage() {
             </div>
             <div className="p-6">
               <div className="flex flex-wrap gap-2 mb-3">
-                <span className="px-3 py-1 bg-blue-900/50 text-blue-200 text-xs font-medium rounded-full">Performance</span>
-                <span className="px-3 py-1 bg-blue-900/50 text-blue-200 text-xs font-medium rounded-full">Optimierung</span>
+                <span className="px-3 py-1 bg-night-700/50 text-ink-soft text-xs font-medium rounded-full">Performance</span>
+                <span className="px-3 py-1 bg-night-700/50 text-ink-soft text-xs font-medium rounded-full">Optimierung</span>
               </div>
               <h3 className="text-xl font-bold text-white mb-2">Website Performance Optimierung</h3>
               <p className="text-gray-300 mb-4">Moderne Techniken für Websites, die auf allen Geräten perfekt aussehen.</p>
               <div className="flex items-center justify-between">
                 <span className="text-sm text-gray-400">7 min Lesezeit</span>
                 <Link href="/blog/webdesign/performance-optimierung" aria-label="Performance Tipps ansehen">
-                  <span className="text-blue-400 font-medium flex items-center group-hover:translate-x-1 transition-transform">
+                  <span className="text-gold-300 font-medium flex items-center group-hover:translate-x-1 transition-transform">
                     Performance-Tipps
                     <svg xmlns="https://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -336,10 +336,10 @@ export default function WordPressPage() {
         </div>
 
         {/* Newsletter CTA */}
-        <div className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-xl p-8 md:p-10 text-white shadow-lg">
+        <div className="bg-gradient-to-r from-gold-300 to-night rounded-xl p-8 md:p-10 text-white shadow-lg">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-2xl md:text-3xl font-bold mb-4">Webentwicklung Updates erhalten</h2>
-            <p className="text-blue-100 mb-6">Abonnieren Sie unseren Newsletter für exklusive Technologie-Tipps</p>
+            <p className="text-ink-soft mb-6">Abonnieren Sie unseren Newsletter für exklusive Technologie-Tipps</p>
             <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
               <input 
                 type="email" 
@@ -348,7 +348,7 @@ export default function WordPressPage() {
                 aria-label="E-Mail für Webentwicklungs-Newsletter"
               />
               <button 
-                className="px-6 py-3 bg-white text-blue-700 font-semibold rounded-lg hover:bg-gray-100 transition-colors"
+                className="px-6 py-3 bg-white text-ink-muted font-semibold rounded-lg hover:bg-gray-100 transition-colors"
                 aria-label="Newsletter abonnieren"
               >
                 Jetzt anmelden

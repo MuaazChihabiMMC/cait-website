@@ -2,7 +2,7 @@
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: "SEO Beratung Berlin | Kostenlose Strategie-Analyse | CAIT",
+  title: { absolute: "SEO Beratung Berlin | Kostenlose Strategie-Analyse | CAIT" },
   description: "Professionelle SEO-Beratung für Berliner Unternehmen ✓ Technische Analyse ✓ Strategieentwicklung ✓ Maßgeschneiderte Lösungen. Jetzt Termin vereinbaren!",
   alternates: {
     canonical: "https://www.caitsocialmedia.com/seo-agentur-berlin/beratung"
@@ -18,39 +18,39 @@ export const metadata: Metadata = {
 
 export default function BeratungPage() {
   return (
-    <article className="bg-[#0c1832] text-white">
+    <article className="bg-[#0c1527] text-white">
       {/* Hero Section */}
-      <section className="relative isolate bg-gradient-to-b from-blue-900 to-blue-700 py-24 md:py-32 px-6 overflow-hidden">
+      <section className="relative isolate bg-gradient-to-b from-night-700 to-night py-24 md:py-32 px-6 overflow-hidden">
         <div className="absolute inset-0 bg-[url('/pattern-bg.png')] bg-cover opacity-5 z-0" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0c1832]/90 via-[#0c1832]/70 to-[#0c1832]/90 z-0" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0c1527]/90 via-[#0c1527]/70 to-[#0c1527]/90 z-0" />
 
         <div className="max-w-6xl mx-auto text-center relative z-10">
-          <div className="mb-6 inline-block bg-blue-600 text-sm px-4 py-1.5 rounded-full">
+          <div className="mb-6 inline-block bg-night-600 text-sm px-4 py-1.5 rounded-full">
             SEO-Strategieberatung
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-300 to-blue-100">
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-300 to-gold-400">
               SEO-Beratung
             </span>{' '}
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-100 to-blue-300">
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-100 to-gold-400">
               für Berliner Unternehmen
             </span>
           </h1>
 
-          <p className="text-lg md:text-xl text-blue-100 mb-10 max-w-3xl mx-auto">
+          <p className="text-lg md:text-xl text-ink-soft mb-10 max-w-3xl mx-auto">
             Kostenlose Erstberatung mit individueller Strategieanalyse - Entdecken Sie Ihr ungenutztes SEO-Potenzial mit Experten aus Berlin.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="/kontakt"
-              className="inline-block bg-blue-600 hover:bg-blue-500 text-white font-semibold px-8 py-3.5 rounded-full shadow-lg hover:shadow-xl transition-all"
+              className="inline-block bg-night-600 hover:bg-gold-300 text-night font-semibold px-8 py-3.5 rounded-full shadow-lg hover:shadow-xl transition-all"
             >
               Termin vereinbaren
             </a>
             <a
               href="tel:+493022689840"
-              className="inline-block border-2 border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-[#0c1832] font-semibold px-8 py-3.5 rounded-full transition-all"
+              className="inline-block border-2 border-gold-300/40 text-gold-300 hover:bg-gold-300 hover:text-[#0c1527] font-semibold px-8 py-3.5 rounded-full transition-all"
             >
               Berlin 030 2268 9840
             </a>
@@ -62,10 +62,10 @@ export default function BeratungPage() {
       <section className="py-20 px-6">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-blue-300">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gold-200">
               Warum eine SEO-Beratung in Berlin?
             </h2>
-            <p className="text-blue-100 mb-6 text-lg">
+            <p className="text-ink-soft mb-6 text-lg">
               In der dynamischen Berliner Wirtschaft entscheidet digitale Sichtbarkeit über Erfolg oder Misserfolg. Eine professionelle SEO-Beratung gibt Ihnen:
             </p>
             <ul className="space-y-3 mb-8">
@@ -77,20 +77,20 @@ export default function BeratungPage() {
                 "Transparente Einschätzung des Investitionsbedarfs"
               ].map((item, index) => (
                 <li key={index} className="flex items-start gap-3">
-                  <span className="text-blue-400 mt-1">•</span>
-                  <span className="text-blue-100">{item}</span>
+                  <span className="text-gold-300 mt-1">•</span>
+                  <span className="text-ink-soft">{item}</span>
                 </li>
               ))}
             </ul>
-            <div className="bg-blue-900/30 p-5 rounded-lg border border-blue-700">
-              <p className="text-blue-100">
-                <strong>Berliner Unternehmen berichten:</strong> Nach unserer SEO-Beratung sehen 89% der Kunden innerhalb von 3 Monaten erste positive Veränderungen.
+            <div className="bg-night-700/30 p-5 rounded-lg border border-night-600">
+              <p className="text-ink-soft">
+                <strong>Gut zu wissen:</strong> Erste Effekte technischer Korrekturen zeigen sich oft nach einigen Wochen; inhaltliche Maßnahmen brauchen meist mehrere Monate.
               </p>
             </div>
           </div>
 
-          <div className="bg-[#1a2a4a] p-8 rounded-xl border border-[#2d3a5a]">
-            <h3 className="text-2xl font-semibold mb-6 text-blue-300 text-center">
+          <div className="bg-[#131f38] p-8 rounded-xl border border-[#1b2a4a]">
+            <h3 className="text-2xl font-semibold mb-6 text-gold-200 text-center">
               Ihr Weg zur kostenlosen Erstberatung
             </h3>
             <div className="space-y-6">
@@ -113,12 +113,12 @@ export default function BeratungPage() {
                 }
               ].map((item, index) => (
                 <div key={index} className="flex gap-4 items-start">
-                  <div className="bg-blue-900 w-12 h-12 rounded-full flex items-center justify-center text-blue-300 font-bold shrink-0 mt-1">
+                  <div className="bg-night-700 w-12 h-12 rounded-full flex items-center justify-center text-gold-200 font-bold shrink-0 mt-1">
                     {index + 1}
                   </div>
                   <div>
-                    <h4 className="text-lg font-semibold text-blue-300 mb-1">{item.step}</h4>
-                    <p className="text-blue-100">{item.content}</p>
+                    <h4 className="text-lg font-semibold text-gold-200 mb-1">{item.step}</h4>
+                    <p className="text-ink-soft">{item.content}</p>
                   </div>
                 </div>
               ))}
@@ -128,12 +128,12 @@ export default function BeratungPage() {
       </section>
 
       {/* Consultation Topics */}
-      <section className="py-20 bg-[#0c1832] px-6">
+      <section className="py-20 bg-[#0c1527] px-6">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-blue-300 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gold-200 text-center">
             Themen unserer SEO-Beratung in Berlin
           </h2>
-          <p className="text-blue-100 text-center max-w-2xl mx-auto mb-16">
+          <p className="text-ink-soft text-center max-w-2xl mx-auto mb-16">
             Wir analysieren gemeinsam Ihre aktuelle Situation und entwickeln eine maßgeschneiderte Strategie
           </p>
 
@@ -170,10 +170,10 @@ export default function BeratungPage() {
                 description: "Benchmarking gegen Ihre Berliner Wettbewerber"
               }
             ].map((service, index) => (
-              <div key={index} className="bg-[#1a2a4a] border border-[#2d3a5a] p-8 rounded-xl hover:border-blue-400 transition-all">
-                <div className="text-3xl mb-4 text-blue-400">{service.icon}</div>
-                <h3 className="text-xl font-semibold mb-3 text-blue-300">{service.title}</h3>
-                <p className="text-blue-100">{service.description}</p>
+              <div key={index} className="bg-[#131f38] border border-[#1b2a4a] p-8 rounded-xl hover:border-gold-300/40 transition-all">
+                <div className="text-3xl mb-4 text-gold-300">{service.icon}</div>
+                <h3 className="text-xl font-semibold mb-3 text-gold-200">{service.title}</h3>
+                <p className="text-ink-soft">{service.description}</p>
               </div>
             ))}
           </div>
@@ -183,13 +183,13 @@ export default function BeratungPage() {
       {/* Consultation Process */}
       <section className="py-20 px-6">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-blue-300 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gold-200 text-center">
             Was Sie von unserer Beratung erwarten können
           </h2>
 
           <div className="mt-16 grid md:grid-cols-2 gap-12">
-            <div className="bg-gradient-to-br from-blue-900 to-blue-800 rounded-2xl p-8 border border-blue-700">
-              <h3 className="text-2xl font-bold mb-6 text-blue-300">Ihr Nutzen</h3>
+            <div className="bg-gradient-to-br from-night-700 to-night rounded-2xl p-8 border border-night-600">
+              <h3 className="text-2xl font-bold mb-6 text-gold-200">Ihr Nutzen</h3>
               <ul className="space-y-4">
                 {[
                   "Kostenlose Erstanalyse Ihres SEO-Potenzials",
@@ -199,20 +199,20 @@ export default function BeratungPage() {
                   "Keine Vertragsbindung oder weitere Verpflichtungen"
                 ].map((item, index) => (
                   <li key={index} className="flex gap-3">
-                    <span className="text-blue-400 mt-0.5">✓</span>
-                    <span className="text-blue-100">{item}</span>
+                    <span className="text-gold-300 mt-0.5">✓</span>
+                    <span className="text-ink-soft">{item}</span>
                   </li>
                 ))}
               </ul>
             </div>
 
             <div>
-              <h3 className="text-2xl font-bold mb-6 text-blue-300">Ihre Vorteile</h3>
+              <h3 className="text-2xl font-bold mb-6 text-gold-200">Ihre Vorteile</h3>
               <div className="space-y-6">
                 {[
                   {
                     title: "Expertenwissen aus Berlin",
-                    content: "15+ Jahre SEO-Erfahrung speziell mit Berliner Unternehmen"
+                    content: "SEO-Erfahrung mit Unternehmen aus Berlin und ganz Deutschland"
                   },
                   {
                     title: "Branchenkenntnis",
@@ -228,12 +228,12 @@ export default function BeratungPage() {
                   }
                 ].map((item, index) => (
                   <div key={index} className="flex gap-4 items-start">
-                    <div className="bg-blue-900 w-12 h-12 rounded-full flex items-center justify-center text-blue-300 font-bold shrink-0">
+                    <div className="bg-night-700 w-12 h-12 rounded-full flex items-center justify-center text-gold-200 font-bold shrink-0">
                       {index + 1}
                     </div>
                     <div>
-                      <h4 className="text-lg font-semibold text-blue-300 mb-1">{item.title}</h4>
-                      <p className="text-blue-100">{item.content}</p>
+                      <h4 className="text-lg font-semibold text-gold-200 mb-1">{item.title}</h4>
+                      <p className="text-ink-soft">{item.content}</p>
                     </div>
                   </div>
                 ))}
@@ -243,46 +243,11 @@ export default function BeratungPage() {
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section className="py-20 bg-[#0c1832] px-6">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-blue-300 text-center">
-            Das sagen Berliner Unternehmen
-          </h2>
-
-          <div className="mt-16 grid md:grid-cols-2 gap-8">
-            {[
-              {
-                quote: "Die SEO-Beratung hat uns völlig neue Perspektiven eröffnet. Innerhalb von 3 Monaten nach Umsetzung der Empfehlungen konnten wir unseren organischen Traffic verdoppeln.",
-                author: "Sarah Meier, Geschäftsführerin BerlinMarketing GmbH"
-              },
-              {
-                quote: "Endlich verstehen wir, wie SEO wirklich funktioniert! Die maßgeschneiderte Strategie speziell für unseren Berliner Markt war der Game-Changer für unser Business.",
-                author: "Thomas Vogel, CTO TechStart Berlin"
-              },
-              {
-                quote: "Die kompetente Beratung hat uns geholfen, unsere Ressourcen gezielt einzusetzen. Die vorgeschlagenen Maßnahmen zeigen bereits nach kurzer Zeit Wirkung.",
-                author: "Julia Hoffmann, Online-Marketing Leiterin FashionBerlin"
-              },
-              {
-                quote: "Als Berliner Startup hatten wir begrenzte Budgets. Die Beratung zeigte uns, welche SEO-Maßnahmen den größten Hebel für uns haben - mit beeindruckenden Ergebnissen.",
-                author: "Markus Weber, Gründer FoodDelivery Berlin"
-              }
-            ].map((testimonial, index) => (
-              <div key={index} className="bg-[#1a2a4a] p-6 rounded-xl border border-[#2d3a5a]">
-                <div className="text-blue-400 text-5xl mb-4">„</div>
-                <p className="text-blue-100 italic mb-6">{testimonial.quote}</p>
-                <div className="text-blue-300 font-semibold">{testimonial.author}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* FAQ */}
       <section className="py-20 px-6">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-blue-300 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gold-200 text-center">
             Häufige Fragen zur SEO-Beratung
           </h2>
 
@@ -309,9 +274,9 @@ export default function BeratungPage() {
                 answer: "Nein, unsere Beratung ist für alle Wissensstände geeignet. Wir erklären komplexe Sachverhalte verständlich und fokussieren uns auf die für Ihr Unternehmen relevanten Aspekte. Egal ob SEO-Anfänger oder erfahrener Marketer - wir passen uns Ihrem Kenntnisstand an."
               }
             ].map((faq, index) => (
-              <div key={index} className="bg-[#1a2a4a] p-6 rounded-xl border border-[#2d3a5a]">
-                <h3 className="text-xl font-semibold mb-3 text-blue-300">{faq.question}</h3>
-                <p className="text-blue-100">{faq.answer}</p>
+              <div key={index} className="bg-[#131f38] p-6 rounded-xl border border-[#1b2a4a]">
+                <h3 className="text-xl font-semibold mb-3 text-gold-200">{faq.question}</h3>
+                <p className="text-ink-soft">{faq.answer}</p>
               </div>
             ))}
           </div>

@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 export default function OnPageSeoClient() {
   return (
-    <main className="px-4 py-12 md:px-6 max-w-7xl mx-auto bg-primary text-white space-y-24">
+    <div className="px-4 py-12 md:px-6 max-w-7xl mx-auto bg-primary text-white space-y-24">
       {/* Hero Section */}
       <motion.section
         initial={{ opacity: 0, y: 40 }}
@@ -139,7 +139,7 @@ export default function OnPageSeoClient() {
               <FaTools className="text-gold-300" /> Unsere Tools & Erfahrung
             </h2>
             <p className="text-gray-300">
-              Für die OnPage-Analyse setzen wir auf erprobte Tools wie <strong>SEMrush</strong>, <strong>Screaming Frog</strong>, <strong>PageSpeed Insights</strong> und <strong>Google Search Console</strong>. In Kombination mit unserer Erfahrung aus über 100 Projekten entsteht eine datenbasierte Strategie mit echter Wirkung.
+              Für die OnPage-Analyse setzen wir auf erprobte Tools wie <strong>SEMrush</strong>, <strong>Screaming Frog</strong>, <strong>PageSpeed Insights</strong> und <strong>Google Search Console</strong>. In Kombination mit unserer Projekterfahrung entsteht eine datenbasierte Strategie mit echter Wirkung.
             </p>
           </motion.div>
 
@@ -173,20 +173,6 @@ export default function OnPageSeoClient() {
   </p>
 </motion.div>
 
-<motion.div
-  initial={{ y: 20, opacity: 0 }}
-  whileInView={{ y: 0, opacity: 1 }}
-  viewport={{ once: true }}
-  transition={{ duration: 0.5 }}
-  className="space-y-4"
->
-  <h2 className="text-3xl font-bold flex items-center gap-2">
-    <FaCheckCircle className="text-gold-300" /> Fallstudie: Zahnarzt Berlin
-  </h2>
-  <p className="text-gray-300">
-    Ein Zahnarzt aus Berlin konnte durch gezielte OnPage-Optimierung (Ladezeitverbesserung, mobile Struktur, Patienten-Content) seine Google-Top-10-Rankings um 38% steigern. Besonders effektiv war eine neue Unterseite zum Thema „Angstpatienten“, kombiniert mit einem FAQ-Bereich, Google-Bewertungen und strukturierten Daten für Öffnungszeiten.
-  </p>
-</motion.div>
 
 <motion.div
   initial={{ y: 20, opacity: 0 }}
@@ -261,7 +247,7 @@ export default function OnPageSeoClient() {
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
-        className="bg-gold-300 text-white rounded-3xl p-12 text-center"
+        className="bg-gold-300 text-night rounded-3xl p-12 text-center"
       >
         <div className="max-w-4xl mx-auto">
           <h3 className="text-3xl font-bold mb-4">OnPage-SEO bringt Struktur & Erfolg</h3>
@@ -276,7 +262,7 @@ export default function OnPageSeoClient() {
           </Link>
         </div>
       </motion.section>
-    </main>
+    </div>
   );
 }
 

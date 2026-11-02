@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export const metadata = {
-  title: 'Google Ads Tipps & SEA Strategien | CAIT Blog',
+  title: { absolute: 'Google Ads Tipps & SEA Strategien | CAIT Blog' },
   description: 'Praxisnahe Google Ads Tipps: Kampagnenaufbau, Conversion-Optimierung und Budget-Strategien. Expertenwissen für erfolgreiche SEA-Kampagnen.',
   alternates: {
     canonical: 'https://www.caitsocialmedia.com/blog/google-ads',
@@ -41,20 +41,20 @@ const googleAdsPosts = [
 
 export default function GoogleAdsBlogPage() {
   return (
-    <section className="bg-[#0c1832] py-20 px-6">
+    <section className="bg-[#0c1527] py-20 px-6">
       <div className="max-w-6xl mx-auto">
         {/* Hero Header with optimized keywords */}
         <div className="text-center mb-16 animate-fade-in">
-          <span className="inline-block px-4 py-2 bg-blue-900/50 text-blue-300 rounded-full text-sm font-semibold mb-4 backdrop-blur-sm">
+          <span className="inline-block px-4 py-2 bg-night-700/50 text-gold-200 rounded-full text-sm font-semibold mb-4 backdrop-blur-sm">
             SEA Agentur Expertise
           </span>
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">
-            <span className="bg-gradient-to-r from-blue-400 to-blue-300 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-gold-300 to-gold-400 bg-clip-text text-transparent">
               Google Ads Agentur
             </span>{' '}
             Wissen aus Berlin
           </h1>
-          <p className="text-xl text-blue-200 max-w-2xl mx-auto">
+          <p className="text-xl text-ink-soft max-w-2xl mx-auto">
             Als <strong className="text-white">Google Ads Agentur Berlin</strong> teilen wir unsere besten Strategien für Kampagnenaufbau und Conversion-Optimierung
           </p>
         </div>
@@ -64,7 +64,7 @@ export default function GoogleAdsBlogPage() {
           {googleAdsPosts.map((post) => (
             <article
               key={post.slug}
-              className="group relative bg-blue-900/30 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-blue-800/50"
+              className="group relative bg-night-700/30 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-night-600/50"
             >
               <div className="relative h-48 overflow-hidden">
                 <Image
@@ -74,7 +74,7 @@ export default function GoogleAdsBlogPage() {
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                   priority={post.slug === 'google-ads-einsteiger-guide'}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-blue-900/60 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-night-700/60 to-transparent" />
               </div>
 
               <div className="p-6">
@@ -82,24 +82,24 @@ export default function GoogleAdsBlogPage() {
                   {post.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="px-3 py-1 bg-blue-800/50 text-blue-300 text-xs font-medium rounded-full backdrop-blur-sm"
+                      className="px-3 py-1 bg-night-600/50 text-gold-200 text-xs font-medium rounded-full backdrop-blur-sm"
                     >
                       {tag}
                     </span>
                   ))}
                 </div>
 
-                <h2 className="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
+                <h2 className="text-xl font-bold text-white mb-2 group-hover:text-gold-300 transition-colors">
                   {post.title}
                 </h2>
 
-                <p className="text-blue-200 mb-4">{post.excerpt}</p>
+                <p className="text-ink-soft mb-4">{post.excerpt}</p>
 
                 <div className="flex items-center justify-between">
-                  <span className="text-sm text-blue-400">{post.readTime} Lesezeit</span>
+                  <span className="text-sm text-gold-300">{post.readTime} Lesezeit</span>
                   <Link
                     href={`/blog/google-ads/${post.slug}`}
-                    className="text-blue-400 font-medium flex items-center group-hover:translate-x-1 transition-transform hover:text-blue-300"
+                    className="text-gold-300 font-medium flex items-center group-hover:translate-x-1 transition-transform hover:text-gold-200"
                     aria-label={`Mehr erfahren über ${post.title} - Google Ads Agentur Berlin`}
                   >
                     {post.ctaText}
@@ -114,10 +114,10 @@ export default function GoogleAdsBlogPage() {
         </div>
 
         {/* Newsletter CTA with location reference */}
-        <div className="mt-20 bg-gradient-to-r from-blue-600 to-blue-500 rounded-xl p-8 md:p-10 text-white shadow-lg animate-float border border-blue-400/50">
+        <div className="mt-20 bg-gradient-to-r from-gold-300 to-gold-400 rounded-xl p-8 md:p-10 text-white shadow-lg animate-float border border-gold-300/40/50">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-2xl md:text-3xl font-bold mb-4">Google Ads Updates für Berliner Unternehmen</h2>
-            <p className="text-blue-100 mb-6">Ihre <strong className="text-white">SEA Agentur Berlin</strong> versorgt Sie mit exklusiven Tipps zu Kampagnenoptimierung</p>
+            <p className="text-ink-soft mb-6">Ihre <strong className="text-white">SEA Agentur Berlin</strong> versorgt Sie mit exklusiven Tipps zu Kampagnenoptimierung</p>
             <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
               <input
                 type="email"
@@ -126,7 +126,7 @@ export default function GoogleAdsBlogPage() {
                 aria-label="E-Mail für Google Ads Agentur Newsletter"
               />
               <button
-                className="px-6 py-3 bg-white text-blue-700 font-semibold rounded-lg hover:bg-gray-100 transition-colors"
+                className="px-6 py-3 bg-white text-ink-muted font-semibold rounded-lg hover:bg-gray-100 transition-colors"
                 aria-label="Google Ads Tipps erhalten"
               >
                 Jetzt abonnieren
@@ -137,49 +137,49 @@ export default function GoogleAdsBlogPage() {
 
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-white mb-10 text-center">
-            Branchenlösungen unserer <span className="text-blue-400">Google Ads Agentur Berlin</span>
+            Branchenlösungen unserer <span className="text-gold-300">Google Ads Agentur Berlin</span>
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Ärzte */}
-            <div className="bg-blue-900/30 rounded-xl p-6 shadow-md border border-blue-800/50 hover:shadow-lg transition">
+            <div className="bg-night-700/30 rounded-xl p-6 shadow-md border border-night-600/50 hover:shadow-lg transition">
               <h3 className="text-xl font-semibold text-white mb-2">Google Ads für Ärzte</h3>
-              <p className="text-blue-200 mb-2">
+              <p className="text-ink-soft mb-2">
                 Ihre <strong className="text-white">Google Ads Agentur Berlin</strong> kennt die Herausforderungen in der Gesundheitsbranche. Wir helfen Arztpraxen, gezielt neue Patient:innen aus Berlin zu erreichen, mit lokaler Suchmaschinenwerbung, die Vertrauen schafft.
               </p>
-              <p className="text-sm text-blue-400 font-medium">Gezielte Kampagnen für Fachärzt:innen & Hausärzt:innen</p>
+              <p className="text-sm text-gold-300 font-medium">Gezielte Kampagnen für Fachärzt:innen & Hausärzt:innen</p>
             </div>
 
             {/* E-Commerce */}
-            <div className="bg-blue-900/30 rounded-xl p-6 shadow-md border border-blue-800/50 hover:shadow-lg transition">
+            <div className="bg-night-700/30 rounded-xl p-6 shadow-md border border-night-600/50 hover:shadow-lg transition">
               <h3 className="text-xl font-semibold text-white mb-2">Google Ads für E-Commerce</h3>
-              <p className="text-blue-200 mb-2">
+              <p className="text-ink-soft mb-2">
                 Als erfahrene <strong className="text-white">SEA Agentur Berlin</strong> entwickeln wir performante Kampagnen für Onlineshops, inklusive Google Shopping, Remarketing und Conversion-Tracking. Ideal für nachhaltiges Wachstum im E-Commerce.
               </p>
-              <p className="text-sm text-blue-400 font-medium">Mehr Umsatz durch datengetriebene Strategien</p>
+              <p className="text-sm text-gold-300 font-medium">Mehr Umsatz durch datengetriebene Strategien</p>
             </div>
 
             {/* Juwelier */}
-            <div className="bg-blue-900/30 rounded-xl p-6 shadow-md border border-blue-800/50 hover:shadow-lg transition">
+            <div className="bg-night-700/30 rounded-xl p-6 shadow-md border border-night-600/50 hover:shadow-lg transition">
               <h3 className="text-xl font-semibold text-white mb-2">Google Ads für Juweliere</h3>
-              <p className="text-blue-200 mb-2">
+              <p className="text-ink-soft mb-2">
                 Unsere <strong className="text-white">Google Ads Agentur</strong> bringt hochwertige Schmuckstücke ins Rampenlicht. Mit lokaler Werbung und exklusiven Suchbegriffen positionieren wir Juweliere erfolgreich in der Google-Suche.
               </p>
-              <p className="text-sm text-blue-400 font-medium">Ideale Sichtbarkeit für Schmuckgeschäfte in Berlin</p>
+              <p className="text-sm text-gold-300 font-medium">Ideale Sichtbarkeit für Schmuckgeschäfte in Berlin</p>
             </div>
 
             {/* Anwälte */}
-            <div className="bg-blue-900/30 rounded-xl p-6 shadow-md border border-blue-800/50 hover:shadow-lg transition">
+            <div className="bg-night-700/30 rounded-xl p-6 shadow-md border border-night-600/50 hover:shadow-lg transition">
               <h3 className="text-xl font-semibold text-white mb-2">Google Ads für Anwälte</h3>
-              <p className="text-blue-200 mb-2">
+              <p className="text-ink-soft mb-2">
                 Ob Familienrecht, Strafrecht oder IT-Recht, mit unserer <strong className="text-white">Google Ads Agentur Berlin</strong> erreichen Sie Mandant:innen, die gezielt nach rechtlicher Unterstützung suchen. Effektiv & konform mit Werberichtlinien.
               </p>
-              <p className="text-sm text-blue-400 font-medium">Strategische SEA-Lösungen für Kanzleien</p>
+              <p className="text-sm text-gold-300 font-medium">Strategische SEA-Lösungen für Kanzleien</p>
             </div>
           </div>
         </div>
 
         {/* SEO-Textblock für Google Ads Agentur Berlin */}
-        <section className="mt-24 max-w-5xl mx-auto text-blue-200 text-lg leading-relaxed space-y-6 px-4 md:px-0">
+        <section className="mt-24 max-w-5xl mx-auto text-ink-soft text-lg leading-relaxed space-y-6 px-4 md:px-0">
           <h2 className="text-3xl font-bold text-white">
             Deine Google Ads Agentur Berlin für messbare Erfolge
           </h2>
@@ -194,7 +194,7 @@ export default function GoogleAdsBlogPage() {
           </p>
 
           <h3 className="text-2xl font-semibold text-white mt-8">Welche Branchen profitieren besonders?</h3>
-          <ul className="list-disc ml-6 text-blue-200">
+          <ul className="list-disc ml-6 text-ink-soft">
             <li><strong className="text-white">Ärzte & Praxen:</strong> Lokale Sichtbarkeit in Berlin für neue Patienten.</li>
             <li><strong className="text-white">Onlineshops:</strong> Skalierung mit Google Shopping & Performance Max.</li>
             <li><strong className="text-white">Rechtsanwälte:</strong> Hochkonvertierende Suchanzeigen mit rechtssicherer Ansprache.</li>
@@ -202,7 +202,7 @@ export default function GoogleAdsBlogPage() {
           </ul>
 
           <h3 className="text-2xl font-semibold text-white mt-8">Unsere Leistungen als Google Ads Agentur:</h3>
-          <ul className="list-disc ml-6 text-blue-200">
+          <ul className="list-disc ml-6 text-ink-soft">
             <li>Marktanalyse & Zielgruppenbestimmung</li>
             <li>Keyword-Recherche & Anzeigengruppen-Struktur</li>
             <li>Responsive Suchanzeigen & Erweiterungen</li>
@@ -220,7 +220,7 @@ export default function GoogleAdsBlogPage() {
 
           <h3 className="text-2xl font-semibold text-white mt-8">Warum in Google Ads investieren?</h3>
           <p>
-            Google Ads ist eines der effektivsten Tools, um kurzfristig Sichtbarkeit und Leads zu generieren, gerade in einem wettbewerbsintensiven Umfeld wie Berlin. Es ermöglicht dir, gezielt Kunden zu erreichen, die bereits aktiv nach deinen Leistungen suchen. Als <Link href="/kontakt" className="text-blue-400 hover:underline">SEA Agentur</Link> begleiten wir dich von der Planung bis zum Reporting.
+            Google Ads ist eines der effektivsten Tools, um kurzfristig Sichtbarkeit und Leads zu generieren, gerade in einem wettbewerbsintensiven Umfeld wie Berlin. Es ermöglicht dir, gezielt Kunden zu erreichen, die bereits aktiv nach deinen Leistungen suchen. Als <Link href="/kontakt" className="text-gold-300 hover:underline">SEA Agentur</Link> begleiten wir dich von der Planung bis zum Reporting.
           </p>
 
           <h3 className="text-2xl font-semibold text-white mt-8">Was kostet eine Google Ads Agentur in Berlin?</h3>
@@ -234,7 +234,7 @@ export default function GoogleAdsBlogPage() {
           </p>
 
           <div className="mt-8">
-            <Link href="/kontakt" className="inline-block bg-blue-600 text-white px-6 py-3 rounded-full font-bold hover:bg-blue-500 transition">
+            <Link href="/kontakt" className="inline-block bg-night-600 text-night px-6 py-3 rounded-full font-bold hover:bg-gold-300 transition">
               Jetzt Google Ads Beratung sichern
             </Link>
           </div>
@@ -242,12 +242,12 @@ export default function GoogleAdsBlogPage() {
 
         {/* Additional SEO text block (hidden on mobile) */}
         <div className="mt-16 hidden md:block">
-          <div className="bg-blue-900/30 p-6 rounded-lg shadow-sm border border-blue-800/50">
+          <div className="bg-night-700/30 p-6 rounded-lg shadow-sm border border-night-600/50">
             <h2 className="text-2xl font-bold text-white mb-4">CAIT - Ihre Google Ads Agentur in Berlin</h2>
-            <p className="text-blue-200 mb-3">
+            <p className="text-ink-soft mb-3">
               Als erfahrene Agentur bieten wir ganzheitliche SEA-Strategien für Unternehmen jeder Größe. Unsere SEA-Spezialisten kombinieren technisches Know-how mit strategischer Kampagnenführung und Conversion-Optimierung.
             </p>
-            <p className="text-blue-200">
+            <p className="text-ink-soft">
               Egal ob Sie Unterstützung für Neukundengewinnung suchen oder bessere Werbeergebnisse benötigen - wir entwickeln maßgeschneiderte Lösungen für Ihr Business.
             </p>
           </div>

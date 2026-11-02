@@ -12,9 +12,9 @@ const googleAdsPosts = {
      <h2 class="text-2xl font-bold text-white mt-8 mb-4">Warum Budgetmanagement über Erfolg oder Misserfolg entscheidet</h2>
 <p class="text-gray-300 mb-6">Die richtige Budgetverteilung in Google Ads ist entscheidend für den ROI Ihrer Werbekampagnen. Ohne strategische Planung verbrennen Sie schnell Budget ohne messbare Ergebnisse.</p>
 
-<div class="bg-blue-900/50 border-l-4 border-blue-400 p-4 my-6 rounded-r">
-  <p class="font-semibold text-blue-200 mb-1">Statistik:</p>
-  <p class="text-blue-100">Über 60% der Google Ads-Nutzer verschwenden Budget durch falsche Kampagnenstruktur und ineffiziente Gebote.</p>
+<div class="bg-night-700/50 border-l-4 border-gold-300/40 p-4 my-6 rounded-r">
+  <p class="font-semibold text-ink-soft mb-1">Statistik:</p>
+  <p class="text-ink-soft">Über 60% der Google Ads-Nutzer verschwenden Budget durch falsche Kampagnenstruktur und ineffiziente Gebote.</p>
 </div>
 
 <h3 class="text-xl font-bold text-white mt-8 mb-4">1. Budgetplanung: So legen Sie Ihr Budget richtig fest</h3>
@@ -28,14 +28,14 @@ const googleAdsPosts = {
 
 <div class="grid md:grid-cols-2 gap-6 my-8">
   <div class="bg-gray-800 p-6 rounded-lg shadow border border-gray-700">
-    <h4 class="font-bold text-blue-400 mb-3">Budget-Kalkulationsformel</h4>
+    <h4 class="font-bold text-gold-300 mb-3">Budget-Kalkulationsformel</h4>
     <div class="text-gray-300">
       <p>Tagesbudget = (Gewünschte Conversions × Durchschnittlicher CPA) / 30</p>
       <p class="mt-2 text-sm text-gray-400">CPA = Kosten pro Acquisition</p>
     </div>
   </div>
   <div class="bg-gray-800 p-6 rounded-lg shadow border border-gray-700">
-    <h4 class="font-bold text-blue-400 mb-3">Budget-Fallen</h4>
+    <h4 class="font-bold text-gold-300 mb-3">Budget-Fallen</h4>
     <ul class="space-y-2 text-gray-300">
       <li>• Zu kleine Budgets für aussagekräftige Daten</li>
       <li>• Gleichmäßige Verteilung ohne Priorisierung</li>
@@ -48,7 +48,7 @@ const googleAdsPosts = {
 <h3 class="text-xl font-bold text-white mt-8 mb-4">2. Kampagnenbudgets strategisch verteilen</h3>
 <p class="text-gray-300 mb-4">Priorisieren Sie nach Performance und Potenzial:</p>
 
-<div class="bg-blue-900/50 border-l-4 border-orange-400 p-4 my-6 rounded-r">
+<div class="bg-night-700/50 border-l-4 border-orange-400 p-4 my-6 rounded-r">
   <p class="font-semibold text-orange-200 mb-1">Tipp:</p>
   <p class="text-orange-100">Verwenden Sie die 70-20-10 Regel: 70% des Budgets für bewährte Kampagnen, 20% für Optimierungen, 10% für Tests.</p>
 </div>
@@ -103,7 +103,7 @@ const googleAdsPosts = {
 
 <div class="grid md:grid-cols-2 gap-6 my-6">
   <div class="bg-gray-800 p-6 rounded-lg shadow border border-gray-700">
-    <h4 class="font-bold text-blue-400 mb-3">Proaktive Kontrollen</h4>
+    <h4 class="font-bold text-gold-300 mb-3">Proaktive Kontrollen</h4>
     <ul class="space-y-2 text-gray-300">
       <li>• Tägliche Budgetüberprüfungen</li>
       <li>• Alarme bei ungewöhnlichen Ausgaben</li>
@@ -112,7 +112,7 @@ const googleAdsPosts = {
     </ul>
   </div>
   <div class="bg-gray-800 p-6 rounded-lg shadow border border-gray-700">
-    <h4 class="font-bold text-blue-400 mb-3">Google Ads-Tools</h4>
+    <h4 class="font-bold text-gold-300 mb-3">Google Ads-Tools</h4>
     <ul class="space-y-2 text-gray-300">
       <li>• Budgetgruppen</li>
       <li>• Automatische Regeln</li>
@@ -170,15 +170,15 @@ export default function GoogleAdsPage() {
   if (!post) return notFound();
 
   return (
-    <div className="bg-[#0c1832]">
+    <div className="bg-[#0c1527]">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-[#0c1832] to-[#1a2b5a] text-white py-20 px-6">
+      <section className="bg-gradient-to-r from-[#0c1527] to-[#131f38] text-white py-20 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <span className="inline-block px-4 py-2 bg-white/20 rounded-full text-sm font-semibold mb-4">
             SEA Budgetierung
           </span>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">{post.title}</h1>
-          <div className="flex items-center justify-center space-x-4 text-blue-200">
+          <div className="flex items-center justify-center space-x-4 text-ink-soft">
             <span>{post.date}</span>
             <span>•</span>
             <span>{post.readTime} Lesezeit</span>
@@ -208,7 +208,7 @@ export default function GoogleAdsPage() {
         {/* Tags */}
         <div className="flex flex-wrap gap-2 mt-12">
           {post.tags.map(tag => (
-            <span key={tag} className="px-3 py-1 bg-blue-900 text-blue-200 text-sm rounded-full">
+            <span key={tag} className="px-3 py-1 bg-night-700 text-ink-soft text-sm rounded-full">
               #{tag}
             </span>
           ))}
@@ -229,10 +229,10 @@ export default function GoogleAdsPage() {
             </div>
             <div className="text-center md:text-left">
               <h3 className="text-xl font-bold text-white">{post.author.name}</h3>
-              <p className="text-blue-400 font-medium mb-2 md:mb-3">{post.author.role}</p>
+              <p className="text-gold-300 font-medium mb-2 md:mb-3">{post.author.role}</p>
               <p className="text-gray-300 text-sm md:text-base">{post.author.bio}</p>
               <div className="flex justify-center md:justify-start space-x-4 mt-4">
-                <a href="https://www.linkedin.com/in/muaaz-chihabi/" className="text-blue-400 hover:text-blue-300 transition-colors">
+                <a href="https://www.linkedin.com/in/muaaz-chihabi/" className="text-gold-300 hover:text-gold-200 transition-colors">
                   <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
                   </svg>
@@ -247,12 +247,12 @@ export default function GoogleAdsPage() {
       <section className="max-w-4xl mx-auto px-6 mb-20">
         <h2 className="text-2xl font-bold text-white mb-8">Weitere Artikel zu Google Ads</h2>
         <div className="grid md:grid-cols-2 gap-6">
-          <a href="/google-ads-agentur-berlin" className="block p-6 bg-gray-800 rounded-lg hover:bg-gray-750 transition border border-gray-700 hover:border-blue-400 group">
-            <h3 className="font-bold text-white mb-2 group-hover:text-blue-400">Google Ads Agentur Berlin</h3>
+          <a href="/google-ads-agentur-berlin" className="block p-6 bg-gray-800 rounded-lg hover:bg-gray-750 transition border border-gray-700 hover:border-gold-300/40 group">
+            <h3 className="font-bold text-white mb-2 group-hover:text-gold-300">Google Ads Agentur Berlin</h3>
             <p className="text-gray-400 text-sm">Lassen Sie Ihre Kampagnen von Profis betreuen.</p>
           </a>
-          <a href="/blog/google-ads" className="block p-6 bg-gray-800 rounded-lg hover:bg-gray-750 transition border border-gray-700 hover:border-blue-400 group">
-            <h3 className="font-bold text-white mb-2 group-hover:text-blue-400">Mehr Google Ads Tipps</h3>
+          <a href="/blog/google-ads" className="block p-6 bg-gray-800 rounded-lg hover:bg-gray-750 transition border border-gray-700 hover:border-gold-300/40 group">
+            <h3 className="font-bold text-white mb-2 group-hover:text-gold-300">Mehr Google Ads Tipps</h3>
             <p className="text-gray-400 text-sm">Alle Artikel zu SEA Strategien und Optimierung.</p>
           </a>
         </div>
@@ -264,7 +264,7 @@ export default function GoogleAdsPage() {
 export async function generateMetadata() {
   const post = googleAdsPosts['google-ads-budget-strategien'];
   return {
-    title: `${post.title} | CAITSocialMedia`,
+    title: { absolute: `${post.title} | CAITSocialMedia` },
     description: post.metaDescription,
     openGraph: {
       title: post.title,

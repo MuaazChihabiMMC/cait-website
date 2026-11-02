@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export const metadata = {
-  title: 'Marketing Tipps & Strategien | CAIT Blog für SEO, Ads & Social Media',
+  title: { absolute: 'Marketing Tipps & Strategien | CAIT Blog für SEO, Ads & Social Media' },
   description: 'Praxisnahe Marketing-Tipps, SEO-Strategien, Google Ads Guides und Social Media Insights. Expertenwissen für Ihren digitalen Erfolg.',
   alternates: {
     canonical: 'https://www.caitsocialmedia.com/blog',
@@ -15,7 +15,7 @@ const blogCategories = [
     title: 'SEO Strategien Berlin',
     description: 'On-Page, Off-page und technische SEO für bessere Rankings, Expertenwissen speziell für Berliner Unternehmen',
     image: '/seo-content.svg',
-    color: 'from-green-500 to-green-700',
+    color: 'from-night-700 to-night-600',
     icon: '🔍',
     buttonText: 'SEO Tipps lesen'
   },
@@ -24,7 +24,7 @@ const blogCategories = [
     title: 'Social Media Marketing',
     description: 'Agentur-Einblicke zu Instagram, TikTok & LinkedIn, Erfolgsstrategien für Berliner Unternehmen',
     image: '/social-media-content.svg',
-    color: 'from-blue-500 to-purple-600',
+    color: 'from-night-700 to-night-600',
     icon: '📱',
     buttonText: 'Social Media Guide'
   },
@@ -33,7 +33,7 @@ const blogCategories = [
     title: 'Google Ads Berlin',
     description: 'Google Ads Agentur-Tipps: Kampagnen-Optimierung & Conversion-Strategien für Berliner Unternehmen',
     image: '/google-ads-content.svg',
-    color: 'from-red-500 to-orange-500',
+    color: 'from-night-700 to-night-600',
     icon: '📈',
     buttonText: 'Zu Google Ads'
   },
@@ -42,7 +42,7 @@ const blogCategories = [
     title: 'Webentwicklung Berlin',
     description: 'Professionelle Websites aus Berlin, UX-optimiertes Webdesign & Entwicklung für höhere Conversion-Raten',
     image: '/webdesign-content.svg',
-    color: 'from-indigo-500 to-blue-700',
+    color: 'from-night-700 to-night-600',
     icon: '💻',
     buttonText: 'Web-Tipps'
   },
@@ -50,20 +50,20 @@ const blogCategories = [
 
 export default function BlogPage() {
   return (
-    <div className="min-h-screen bg-[#0c1832] text-blue-100">
+    <div className="min-h-screen bg-[#0c1527] text-ink-soft">
       {/* Hero Section - Enhanced with SEO keywords */}
-      <section className="bg-[#0c1832] py-16 px-6 border-b border-blue-800/50">
+      <section className="bg-[#0c1527] py-16 px-6 border-b border-night-600/50">
         <div className="max-w-4xl mx-auto text-center">
-          <span className="inline-block px-4 py-2 bg-blue-900/50 text-blue-300 rounded-full text-sm font-semibold mb-4 backdrop-blur-sm">
+          <span className="inline-block px-4 py-2 bg-night-700/50 text-gold-200 rounded-full text-sm font-semibold mb-4 backdrop-blur-sm">
             Deine Marketing Agentur aus Berlin
           </span>
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">
-            <span className="bg-gradient-to-r from-blue-400 to-blue-300 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-gold-300 to-gold-400 bg-clip-text text-transparent">
               SEO, Google Ads & Social Media
             </span>{' '}
             Expertenwissen aus Berlin
           </h1>
-          <p className="text-xl text-blue-200 max-w-2xl mx-auto">
+          <p className="text-xl text-ink-soft max-w-2xl mx-auto">
             Der CAIT Marketing Blog bietet strategische Insights zu Suchmaschinenoptimierung, bezahlter Werbung und Social Media, speziell für Unternehmen in Berlin. Erhalten Sie bewährte Strategien für bessere Online-Sichtbarkeit und höhere Conversion-Raten.
           </p>
         </div>
@@ -75,7 +75,7 @@ export default function BlogPage() {
           {blogCategories.map((category) => (
             <div
               key={category.id}
-              className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 h-80 border border-blue-800/50"
+              className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 h-80 border border-night-600/50"
             >
               <div className={`absolute inset-0 bg-gradient-to-br ${category.color} opacity-90 z-0`}></div>
               <div className="relative z-10 h-full flex flex-col items-center justify-center p-6 text-white text-center">
@@ -85,7 +85,7 @@ export default function BlogPage() {
                 <h2 className="text-2xl font-bold mb-2 group-hover:text-white transition-colors">
                   {category.title}
                 </h2>
-                <p className="text-blue-100 mb-6 opacity-90 group-hover:opacity-100 transition-opacity">
+                <p className="text-ink-soft mb-6 opacity-90 group-hover:opacity-100 transition-opacity">
                   {category.description}
                 </p>
                 <Link
@@ -108,7 +108,7 @@ export default function BlogPage() {
         <div className="mt-20">
           <h2 className="text-3xl font-bold text-white mb-8 text-center">Aktuelle Blog-Highlights</h2>
           <div className="grid md:grid-cols-2 gap-8">
-            <article className="bg-blue-900/30 rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow border border-blue-800/50">
+            <article className="bg-night-700/30 rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow border border-night-600/50">
               <div className="relative h-48">
                 <Image
                   src="/seo-technical.webp"
@@ -123,8 +123,8 @@ export default function BlogPage() {
                   SEO Optimierung
                 </span>
                 <h3 className="text-xl font-bold text-white mb-2">Technische SEO 2024: Die wichtigsten Ranking-Faktoren</h3>
-                <p className="text-blue-200 mb-4">Erfahren Sie, welche technischen SEO-Faktoren 2024 entscheidend für Ihr Ranking in Berlin sind.</p>
-                <Link href="/blog/seo/technische-seo" className="text-blue-400 hover:text-blue-300 font-medium flex items-center" aria-label="Technische SEO lernen">
+                <p className="text-ink-soft mb-4">Erfahren Sie, welche technischen SEO-Faktoren 2024 entscheidend für Ihr Ranking in Berlin sind.</p>
+                <Link href="/blog/seo/technische-seo" className="text-gold-300 hover:text-gold-200 font-medium flex items-center" aria-label="Technische SEO lernen">
                   Jetzt lesen
                   <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
@@ -132,7 +132,7 @@ export default function BlogPage() {
                 </Link>
               </div>
             </article>
-            <article className="bg-blue-900/30 rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow border border-blue-800/50">
+            <article className="bg-night-700/30 rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow border border-night-600/50">
               <div className="relative h-48">
                 <Image
                   src="/google-ads-guide.webp"
@@ -143,15 +143,15 @@ export default function BlogPage() {
                 />
               </div>
               <div className="p-6">
-                <span className="inline-block px-3 py-1 bg-blue-900/50 text-blue-300 rounded-full text-xs font-medium mb-2 backdrop-blur-sm">
+                <span className="inline-block px-3 py-1 bg-night-700/50 text-gold-200 rounded-full text-xs font-medium mb-2 backdrop-blur-sm">
                   Google Ads
                 </span>
-                <span className="inline-block px-3 py-1 bg-blue-900/50 text-blue-300 rounded-full text-xs font-medium mb-2 backdrop-blur-sm">
+                <span className="inline-block px-3 py-1 bg-night-700/50 text-gold-200 rounded-full text-xs font-medium mb-2 backdrop-blur-sm">
                   SEA Strategien
                 </span>
                 <h3 className="text-xl font-bold text-white mb-2">Google Ads Guide 2024: Professioneller Einstieg für Berliner Unternehmen</h3>
-                <p className="text-blue-200 mb-4">Der komplette Leitfaden für erfolgreiche Google Ads Kampagnen - speziell für Unternehmen aus Berlin.</p>
-                <Link href="/blog/google-ads/google-ads-einsteiger-guide" className="text-blue-400 hover:text-blue-300 font-medium flex items-center" aria-label="Zum Google Ads Guide">
+                <p className="text-ink-soft mb-4">Der komplette Leitfaden für erfolgreiche Google Ads Kampagnen - speziell für Unternehmen aus Berlin.</p>
+                <Link href="/blog/google-ads/google-ads-einsteiger-guide" className="text-gold-300 hover:text-gold-200 font-medium flex items-center" aria-label="Zum Google Ads Guide">
                   Guide ansehen
                   <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
@@ -163,26 +163,26 @@ export default function BlogPage() {
         </div>
 
         {/* SEO Textblock - Enhanced with semantic HTML and keywords */}
-        <section className="mt-20 max-w-4xl mx-auto text-blue-200 text-lg space-y-6">
+        <section className="mt-20 max-w-4xl mx-auto text-ink-soft text-lg space-y-6">
           <h2 className="text-3xl font-bold text-white">CAIT - Ihre Marketing Agentur für Berlin</h2>
           <p>
-            Als führende <strong className="text-white">SEO Agentur Berlin</strong> und <strong className="text-white">Google Ads Spezialisten</strong> kombinieren wir technisches Know-how mit kreativen Marketing-Strategien. Unsere Expertise umfasst <strong className="text-white">Suchmaschinenoptimierung</strong>, <strong className="text-white">Conversion Optimierung</strong> und datengetriebenes <strong className="text-white">Online Marketing</strong>.
+            Als <strong className="text-white">SEO Agentur Berlin</strong> und <strong className="text-white">Google Ads Spezialisten</strong> kombinieren wir technisches Know-how mit kreativen Marketing-Strategien. Unsere Expertise umfasst <strong className="text-white">Suchmaschinenoptimierung</strong>, <strong className="text-white">Conversion Optimierung</strong> und datengetriebenes <strong className="text-white">Online Marketing</strong>.
           </p>
           <p>
             Ob Sie eine <strong className="text-white">SEO Agentur in Berlin</strong>, <strong className="text-white">Social Media Experten</strong> oder eine <strong className="text-white">Webagentur</strong> suchen - wir entwickeln maßgeschneiderte Lösungen für Ihr Unternehmen. Unser Fokus liegt auf nachhaltigen Ergebnissen und messbarem Erfolg.
           </p>
           <p>
-            Entdecken Sie in unserem Blog praxiserprobte Strategien für <Link href="/blog/seo" className="text-blue-400 hover:underline">SEO in Berlin</Link>, effektive <Link href="/blog/google-ads" className="text-blue-400 hover:underline">Google Ads Kampagnen</Link> und erfolgreiches <Link href="/blog/social-media" className="text-blue-400 hover:underline">Social Media Marketing</Link>. Alle Tipps stammen aus unserer täglichen Arbeit mit Berliner Unternehmen.
+            Entdecken Sie in unserem Blog praxiserprobte Strategien für <Link href="/blog/seo" className="text-gold-300 hover:underline">SEO in Berlin</Link>, effektive <Link href="/blog/google-ads" className="text-gold-300 hover:underline">Google Ads Kampagnen</Link> und erfolgreiches <Link href="/blog/social-media" className="text-gold-300 hover:underline">Social Media Marketing</Link>. Alle Tipps stammen aus unserer täglichen Arbeit mit Berliner Unternehmen.
           </p>
         </section>
       </section>
-      <section className="mt-20 max-w-4xl mx-auto text-blue-200 text-lg space-y-6 px-6 pb-20">
+      <section className="mt-20 max-w-4xl mx-auto text-ink-soft text-lg space-y-6 px-6 pb-20">
         <h2 className="text-3xl font-bold text-white">Warum ein Marketing-Blog für Berlin entscheidend ist</h2>
         <p>
           In einer digitalisierten Welt, in der Sichtbarkeit über Erfolg oder Misserfolg entscheidet, ist ein strategisch geführter Marketing-Blog essenziell, besonders für Unternehmen in Berlin. Die Hauptstadt ist nicht nur kultureller und politischer Mittelpunkt, sondern auch einer der wettbewerbsintensivsten Märkte für Dienstleistungen und Produkte. Wer hier gefunden werden möchte, muss über klassische Werbung hinausdenken. Genau hier setzt der CAIT Marketing Blog an: Er ist Informationsquelle, Ideengeber und SEO-Turbo in einem.
         </p>
         <p>
-          Mit Beiträgen über <Link href="/blog/seo" className="text-blue-400 hover:underline">Suchmaschinenoptimierung</Link>, <Link href="/blog/google-ads" className="text-blue-400 hover:underline">Google Ads</Link>, <Link href="/blog/social-media" className="text-blue-400 hover:underline">Social Media Marketing</Link> und <Link href="/blog/webdesign" className="text-blue-400 hover:underline">Webdesign</Link> erhalten Leser fundierte Einblicke in aktuelle Trends, Algorithmen, Tools und Best Practices. Unsere Artikel basieren nicht auf Vermutungen, sondern auf echter Projekterfahrung mit Berliner Unternehmen aus verschiedenen Branchen.
+          Mit Beiträgen über <Link href="/blog/seo" className="text-gold-300 hover:underline">Suchmaschinenoptimierung</Link>, <Link href="/blog/google-ads" className="text-gold-300 hover:underline">Google Ads</Link>, <Link href="/blog/social-media" className="text-gold-300 hover:underline">Social Media Marketing</Link> und <Link href="/blog/webdesign" className="text-gold-300 hover:underline">Webdesign</Link> erhalten Leser fundierte Einblicke in aktuelle Trends, Algorithmen, Tools und Best Practices. Unsere Artikel basieren nicht auf Vermutungen, sondern auf echter Projekterfahrung mit Berliner Unternehmen aus verschiedenen Branchen.
         </p>
         <h3 className="text-2xl font-semibold text-white mt-8">Suchmaschinenoptimierung für Berlin, lokal gedacht, strategisch umgesetzt</h3>
         <p>

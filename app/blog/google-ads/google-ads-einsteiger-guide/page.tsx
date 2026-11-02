@@ -12,9 +12,9 @@ const googleAdsPosts = {
      <h2 class="text-2xl font-bold text-white mt-8 mb-4">Warum Google Ads für Ihr Business unverzichtbar ist</h2>
 <p class="text-gray-300 mb-6">Google Ads ist das leistungsstärkste Tool für gezielte Werbung im Suchmaschinenmarkt. Mit einem Marktanteil von über 90% bei Suchanfragen bietet Google Ihnen Zugang zu potenziellen Kunden genau dann, wenn sie nach Ihren Produkten oder Dienstleistungen suchen.</p>
 
-<div class="bg-blue-900/50 border-l-4 border-blue-400 p-4 my-6 rounded-r">
-  <p class="font-semibold text-blue-200 mb-1">Statistik:</p>
-  <p class="text-blue-100">Unternehmen, die Google Ads nutzen, verzeichnen durchschnittlich 2x mehr Conversions als mit organischem Traffic allein.</p>
+<div class="bg-night-700/50 border-l-4 border-gold-300/40 p-4 my-6 rounded-r">
+  <p class="font-semibold text-ink-soft mb-1">Statistik:</p>
+  <p class="text-ink-soft">Unternehmen, die Google Ads nutzen, verzeichnen durchschnittlich 2x mehr Conversions als mit organischem Traffic allein.</p>
 </div>
 
 <h3 class="text-xl font-bold text-white mt-8 mb-4">1. Kontoerstellung und erste Schritte</h3>
@@ -28,7 +28,7 @@ const googleAdsPosts = {
 
 <div class="grid md:grid-cols-2 gap-6 my-8">
   <div class="bg-gray-800 p-6 rounded-lg shadow border border-gray-700">
-    <h4 class="font-bold text-blue-400 mb-3">Konto-Typen</h4>
+    <h4 class="font-bold text-gold-300 mb-3">Konto-Typen</h4>
     <ul class="space-y-2 text-gray-300">
       <li>• Standard-Konto</li>
       <li>• Manager-Konto (für Agenturen)</li>
@@ -36,7 +36,7 @@ const googleAdsPosts = {
     </ul>
   </div>
   <div class="bg-gray-800 p-6 rounded-lg shadow border border-gray-700">
-    <h4 class="font-bold text-blue-400 mb-3">Wichtige Einstellungen</h4>
+    <h4 class="font-bold text-gold-300 mb-3">Wichtige Einstellungen</h4>
     <ul class="space-y-2 text-gray-300">
       <li>• Zielgruppe definieren</li>
       <li>• Tagesbudget festlegen</li>
@@ -49,7 +49,7 @@ const googleAdsPosts = {
 <h3 class="text-xl font-bold text-white mt-8 mb-4">2. Kampagnentypen im Überblick</h3>
 <p class="text-gray-300 mb-4">Wählen Sie den passenden Kampagnentyp für Ihre Ziele:</p>
 
-<div class="bg-blue-900/50 border-l-4 border-orange-400 p-4 my-6 rounded-r">
+<div class="bg-night-700/50 border-l-4 border-orange-400 p-4 my-6 rounded-r">
   <p class="font-semibold text-orange-200 mb-1">Tipp:</p>
   <p class="text-orange-100">Für Einsteiger empfehlen wir Suchnetzwerk-Kampagnen mit manuellen Geboten für maximale Kontrolle.</p>
 </div>
@@ -109,8 +109,8 @@ const googleAdsPosts = {
 
 <div class="grid md:grid-cols-2 gap-6 my-6">
   <div class="bg-gray-800 p-6 rounded-lg shadow border border-gray-700">
-    <h4 class="font-bold text-blue-400 mb-3">Aufbau einer Textanzeige</h4>
-    <div class="border-l-2 border-blue-400 pl-4">
+    <h4 class="font-bold text-gold-300 mb-3">Aufbau einer Textanzeige</h4>
+    <div class="border-l-2 border-gold-300/40 pl-4">
       <p class="font-medium text-gray-200">Überschrift 1 (max 30 Zeichen)</p>
       <p class="font-medium text-gray-200">Überschrift 2 (max 30 Zeichen)</p>
       <p class="font-medium text-gray-200">Überschrift 3 (max 30 Zeichen)</p>
@@ -119,7 +119,7 @@ const googleAdsPosts = {
     </div>
   </div>
   <div class="bg-gray-800 p-6 rounded-lg shadow border border-gray-700">
-    <h4 class="font-bold text-blue-400 mb-3">Best Practices</h4>
+    <h4 class="font-bold text-gold-300 mb-3">Best Practices</h4>
     <ul class="space-y-2 text-gray-300">
       <li>• Keywords in Überschriften verwenden</li>
       <li>• Einzigartige Verkaufsargumente (USPs)</li>
@@ -161,15 +161,15 @@ export default function GoogleAdsPage() {
   if (!post) return notFound();
 
   return (
-    <div className="bg-[#0c1832]">
+    <div className="bg-[#0c1527]">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-[#0c1832] to-[#1a2b5a] text-white py-20 px-6">
+      <section className="bg-gradient-to-r from-[#0c1527] to-[#131f38] text-white py-20 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <span className="inline-block px-4 py-2 bg-white/20 rounded-full text-sm font-semibold mb-4">
             SEA Basics
           </span>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">{post.title}</h1>
-          <div className="flex items-center justify-center space-x-4 text-blue-200">
+          <div className="flex items-center justify-center space-x-4 text-ink-soft">
             <span>{post.date}</span>
             <span>•</span>
             <span>{post.readTime} Lesezeit</span>
@@ -199,7 +199,7 @@ export default function GoogleAdsPage() {
         {/* Tags */}
         <div className="flex flex-wrap gap-2 mt-12">
           {post.tags.map(tag => (
-            <span key={tag} className="px-3 py-1 bg-blue-900 text-blue-200 text-sm rounded-full">
+            <span key={tag} className="px-3 py-1 bg-night-700 text-ink-soft text-sm rounded-full">
               #{tag}
             </span>
           ))}
@@ -220,10 +220,10 @@ export default function GoogleAdsPage() {
             </div>
             <div className="text-center md:text-left">
               <h3 className="text-xl font-bold text-white">{post.author.name}</h3>
-              <p className="text-blue-400 font-medium mb-2 md:mb-3">{post.author.role}</p>
+              <p className="text-gold-300 font-medium mb-2 md:mb-3">{post.author.role}</p>
               <p className="text-gray-300 text-sm md:text-base">{post.author.bio}</p>
               <div className="flex justify-center md:justify-start space-x-4 mt-4">
-                <a href="https://www.linkedin.com/in/muaaz-chihabi/" className="text-blue-400 hover:text-blue-300 transition-colors">
+                <a href="https://www.linkedin.com/in/muaaz-chihabi/" className="text-gold-300 hover:text-gold-200 transition-colors">
                   <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
                   </svg>
@@ -248,7 +248,7 @@ export default function GoogleAdsPage() {
 export async function generateMetadata() {
   const post = googleAdsPosts['google-ads-einsteiger-guide'];
   return {
-    title: `${post.title} | CAITSocialMedia`,
+    title: { absolute: `${post.title} | CAITSocialMedia` },
     description: post.metaDescription,
     openGraph: {
       title: post.title,

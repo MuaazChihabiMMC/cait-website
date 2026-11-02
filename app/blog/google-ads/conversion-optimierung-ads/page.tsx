@@ -12,9 +12,9 @@ const googleAdsPosts = {
       <h2 class="text-2xl font-semibold text-white mt-8 mb-4">Warum Conversion-Optimierung entscheidend ist</h2>
 <p class="text-gray-300 mb-6">Die besten Google Ads bringen nichts, wenn Ihre Landingpage Besucher nicht in Kunden verwandelt. Conversion-Optimierung ist der Schlüssel, um Ihr Werbebudget effizient einzusetzen und Ihre Kampagnenrentabilität zu steigern.</p>
 
-<div class="bg-blue-900/50 border-l-4 border-blue-400 p-4 my-6 rounded-r">
-  <p class="font-medium text-blue-200">Statistik:</p>
-  <p class="text-blue-100">Eine Verbesserung der Conversion Rate von 2% auf 4% halbiert effektiv Ihre Kosten pro Conversion - bei gleichem Budget!</p>
+<div class="bg-night-700/50 border-l-4 border-gold-300/40 p-4 my-6 rounded-r">
+  <p class="font-medium text-ink-soft">Statistik:</p>
+  <p class="text-ink-soft">Eine Verbesserung der Conversion Rate von 2% auf 4% halbiert effektiv Ihre Kosten pro Conversion - bei gleichem Budget!</p>
 </div>
 
 <h3 class="text-xl font-semibold text-white mt-8 mb-4">1. Landingpage-Optimierung für höhere Conversions</h3>
@@ -29,7 +29,7 @@ const googleAdsPosts = {
 
 <div class="grid md:grid-cols-2 gap-6 my-8">
   <div class="bg-gray-800 p-6 rounded-lg shadow border border-gray-700">
-    <h4 class="font-semibold text-blue-400 mb-3">Must-haves für Conversion-Landingpages</h4>
+    <h4 class="font-semibold text-gold-300 mb-3">Must-haves für Conversion-Landingpages</h4>
     <ul class="space-y-2 text-gray-300">
       <li>Überschrift die zum Suchbegriff passt</li>
       <li>Benefit-orientierter Haupttext</li>
@@ -39,7 +39,7 @@ const googleAdsPosts = {
     </ul>
   </div>
   <div class="bg-gray-800 p-6 rounded-lg shadow border border-gray-700">
-    <h4 class="font-semibold text-blue-400 mb-3">Conversion-Killer vermeiden</h4>
+    <h4 class="font-semibold text-gold-300 mb-3">Conversion-Killer vermeiden</h4>
     <ul class="space-y-2 text-gray-300">
       <li>Ablenkende Navigation</li>
       <li>Zu viele Optionen/Abzweigungen</li>
@@ -53,7 +53,7 @@ const googleAdsPosts = {
 <h3 class="text-xl font-semibold text-white mt-8 mb-4">2. A/B-Testing für systematische Verbesserungen</h3>
 <p class="text-gray-300 mb-4">Testen Sie systematisch verschiedene Elemente:</p>
 
-<div class="bg-blue-900/50 border-l-4 border-orange-400 p-4 my-6 rounded-r">
+<div class="bg-night-700/50 border-l-4 border-orange-400 p-4 my-6 rounded-r">
   <p class="font-medium text-orange-200">Tipp:</p>
   <p class="text-orange-100">Testen Sie immer nur ein Element gleichzeitig, um klare Ergebnisse zu erhalten. Nutzen Sie Google Optimize oder andere A/B-Testing-Tools.</p>
 </div>
@@ -113,7 +113,7 @@ const googleAdsPosts = {
 
 <div class="grid md:grid-cols-2 gap-6 my-6">
   <div class="bg-gray-800 p-6 rounded-lg shadow border border-gray-700">
-    <h4 class="font-semibold text-blue-400 mb-3">Wichtige Conversion-Typen</h4>
+    <h4 class="font-semibold text-gold-300 mb-3">Wichtige Conversion-Typen</h4>
     <ul class="space-y-2 text-gray-300">
       <li>Website-Konversionen (Formulare, Käufe)</li>
       <li>Telefonanrufe (Call Tracking)</li>
@@ -123,7 +123,7 @@ const googleAdsPosts = {
     </ul>
   </div>
   <div class="bg-gray-800 p-6 rounded-lg shadow border border-gray-700">
-    <h4 class="font-semibold text-blue-400 mb-3">Best Practices</h4>
+    <h4 class="font-semibold text-gold-300 mb-3">Best Practices</h4>
     <ul class="space-y-2 text-gray-300">
       <li>Google Tag Manager verwenden</li>
       <li>Conversion-Werte zuweisen</li>
@@ -177,15 +177,15 @@ export default function GoogleAdsPage() {
   if (!post) return notFound();
 
   return (
-    <div className="bg-[#0c1832]">
+    <div className="bg-[#0c1527]">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-[#0c1832] to-[#1a2b5a] text-white py-20 px-6">
+      <section className="bg-gradient-to-r from-[#0c1527] to-[#131f38] text-white py-20 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <span className="inline-block px-4 py-2 bg-white/20 rounded-full text-sm font-semibold mb-4">
             SEA Optimierung
           </span>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">{post.title}</h1>
-          <div className="flex items-center justify-center space-x-4 text-blue-200">
+          <div className="flex items-center justify-center space-x-4 text-ink-soft">
             <span>{post.date}</span>
             <span>•</span>
             <span>{post.readTime} Lesezeit</span>
@@ -215,7 +215,7 @@ export default function GoogleAdsPage() {
         {/* Tags */}
         <div className="flex flex-wrap gap-2 mt-12">
           {post.tags.map(tag => (
-            <span key={tag} className="px-3 py-1 bg-blue-900 text-blue-200 text-sm rounded-full">
+            <span key={tag} className="px-3 py-1 bg-night-700 text-ink-soft text-sm rounded-full">
               #{tag}
             </span>
           ))}
@@ -236,10 +236,10 @@ export default function GoogleAdsPage() {
             </div>
             <div className="text-center md:text-left">
               <h3 className="text-xl font-bold text-white">{post.author.name}</h3>
-              <p className="text-blue-400 font-medium mb-2 md:mb-3">{post.author.role}</p>
+              <p className="text-gold-300 font-medium mb-2 md:mb-3">{post.author.role}</p>
               <p className="text-gray-300 text-sm md:text-base">{post.author.bio}</p>
               <div className="flex justify-center md:justify-start space-x-4 mt-4">
-                <a href="https://www.linkedin.com/in/muaaz-chihabi/" className="text-blue-400 hover:text-blue-300 transition-colors">
+                <a href="https://www.linkedin.com/in/muaaz-chihabi/" className="text-gold-300 hover:text-gold-200 transition-colors">
                   <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
                   </svg>
@@ -264,7 +264,7 @@ export default function GoogleAdsPage() {
 export async function generateMetadata() {
   const post = googleAdsPosts['conversion-optimierung-ads'];
   return {
-    title: `${post.title} | CAITSocialMedia`,
+    title: { absolute: `${post.title} | CAITSocialMedia` },
     description: post.metaDescription,
     openGraph: {
       title: post.title,

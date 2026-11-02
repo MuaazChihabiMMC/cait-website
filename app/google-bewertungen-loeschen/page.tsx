@@ -7,7 +7,7 @@ import GoogleBewertungLoeschenFaq from '@/components/GoogleBewertungLoeschenFaq'
 import GoogleBewertungLoeschenCta from '@/components/GoogleBewertungLoeschenCta';
 
 export const metadata = {
-  title: 'Google Bewertung löschen | Rezension entfernen lassen | CAIT',
+  title: { absolute: 'Google Bewertung löschen | Rezension entfernen lassen | CAIT' },
   description:
     'Sie möchten eine negative Google Bewertung löschen? Wir lassen ungerechtfertigte und schlechte Google Bewertungen entfernen. DSGVO-konform, mit anwaltlicher Prüfung.',
   keywords:

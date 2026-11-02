@@ -1,21 +1,20 @@
-// components/LayoutWrapper.tsx
-'use client';
-import CookieBanner from '../components/CookieBanner';
-import StickyButtons from '../components/StickyButtons';
-
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
+import CookieBanner from '@/components/CookieBanner';
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
+import RevealObserver from '@/components/site/RevealObserver';
+import StickyButtons from '@/components/StickyButtons';
 
 export default function LayoutWrapper({ children }: { children: React.ReactNode }) {
   return (
     <>
       <Navbar />
-      <main className="relative overflow-hidden">
+      <main id="inhalt" tabIndex={-1} className="relative outline-none">
         {children}
       </main>
       <Footer />
-      <CookieBanner />
       <StickyButtons />
+      <CookieBanner />
+      <RevealObserver />
     </>
   );
 }

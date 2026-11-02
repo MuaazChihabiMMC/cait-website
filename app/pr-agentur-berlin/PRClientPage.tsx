@@ -49,7 +49,7 @@ const benefits = [
 
 export default function PRClientPage() {
     return (
-        <main className="bg-primary min-h-screen text-white">
+        <div className="bg-primary min-h-screen text-white">
 
             {/* Hero Section */}
             <section className="relative py-24 md:py-32 overflow-hidden">
@@ -110,7 +110,7 @@ export default function PRClientPage() {
             <section className="py-12 border-y border-white/5">
                 <div className="max-w-6xl mx-auto px-6">
                     <div className="flex flex-wrap justify-center gap-8 md:gap-12">
-                        {['Standort Berlin', '10+ Jahre Erfahrung', '200+ Medienkontakte', 'Full-Service PR'].map((item, i) => (
+                        {['Standort Berlin', 'Pressearbeit', 'Medienarbeit', 'Full-Service PR'].map((item, i) => (
                             <motion.div
                                 key={i}
                                 className="flex items-center gap-3 text-gray-400"
@@ -373,6 +373,6 @@ export default function PRClientPage() {
                 </motion.div>
             </section>
 
-        </main>
+        </div>
     );
 }

@@ -1,214 +1,126 @@
 import './globals.css';
+import type { Metadata, Viewport } from 'next';
+import { Bodoni_Moda, Inter } from 'next/font/google';
 import LayoutWrapper from './LayoutWrapper';
 import ClientProviders from '@/components/ClientProviders';
-import { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import JsonLd from '@/components/site/JsonLd';
+import { SITE, CORE_SERVICES, absoluteUrl } from '@/lib/site';
 
-// Optimize font loading with next/font
+// Fließtext: Inter (bisherige Schrift, bleibt für Kontinuität)
 const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
-  variable: '--font-inter',
+  variable: '--font-sans',
 });
 
+// Überschriften: Bodoni Moda – greift die kontrastreiche Antiqua der CAIT-Wortmarke auf
+const bodoni = Bodoni_Moda({
+  subsets: ['latin'],
+  style: ['normal', 'italic'],
+  axes: ['opsz'],
+  display: 'swap',
+  variable: '--font-display',
+});
+
+export const viewport: Viewport = {
+  themeColor: '#0c1527',
+  colorScheme: 'dark',
+};
+
 export const metadata: Metadata = {
-  title: 'SEO Agentur Berlin | CAIT Social Media',
-  description: 'Ihre Top Marketing Agentur in Berlin: spezialisiert auf SEO, Google Ads, Webdesign und Social Media. Über 100 erfolgreiche Projekte.',
-  authors: [{ name: 'CAIT Social Media' }],
-  keywords: 'SEO Agentur Berlin, Google Ads Agentur Berlin, Webdesign Agentur Berlin, Social Media Agentur Berlin, Online Marketing Berlin, Marketing Agentur Berlin',
-  robots: 'index, follow',
+  metadataBase: new URL(SITE.url),
+  title: {
+    default: 'CAIT – Digitalagentur in Berlin für SEO, Web, Ads, Software & KI',
+    template: '%s | CAIT',
+  },
+  description:
+    'CAIT aus Berlin-Zehlendorf plant und baut, was Unternehmen online brauchen: SEO, Websites, Google Ads, Social Media, individuelle Software und KI-Lösungen.',
+  applicationName: 'CAIT',
+  authors: [{ name: SITE.owner }],
+  creator: SITE.legalName,
+  robots: { index: true, follow: true },
+  formatDetection: { telephone: false },
   openGraph: {
     type: 'website',
     locale: 'de_DE',
-    siteName: 'CAIT Social Media - Marketing Agentur Berlin',
-    images: [
-      {
-        url: '/opengraph-image.png',
-        width: 1200,
-        height: 630,
-        alt: 'CAIT Social Media - Marketing Agentur Berlin',
-      },
-    ],
+    siteName: 'CAIT',
+    images: [{ url: '/opengraph-image.png', width: 1200, height: 630, alt: 'CAIT – Digitalagentur in Berlin' }],
   },
-  twitter: {
-    card: 'summary_large_image',
-    site: '@caitsocialmedia',
-  },
-  metadataBase: new URL('https://www.caitsocialmedia.com'),
-  alternates: {
-    canonical: './',
-  },
+  twitter: { card: 'summary_large_image' },
   verification: {
-    other: {
-      seobility: '1c042f5ea33996f2bddc2b223ead5944',
-    },
+    other: { seobility: '1c042f5ea33996f2bddc2b223ead5944' },
   },
 };
 
+// Strukturierte Daten ausschließlich auf Basis belegter Angaben (Impressum, bisherige Website)
+const organizationGraph = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'ProfessionalService',
+      '@id': `${SITE.url}/#organization`,
+      name: 'CAIT',
+      legalName: SITE.legalName,
+      url: SITE.url,
+      logo: `${SITE.url}/logo.png`,
+      image: `${SITE.url}/opengraph-image.png`,
+      email: SITE.email,
+      telephone: SITE.phoneE164,
+      foundingDate: SITE.founded,
+      founder: { '@type': 'Person', name: SITE.owner },
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: SITE.address.street,
+        postalCode: SITE.address.postalCode,
+        addressLocality: SITE.address.city,
+        addressCountry: SITE.address.country,
+      },
+      geo: { '@type': 'GeoCoordinates', latitude: SITE.geo.lat, longitude: SITE.geo.lng },
+      openingHoursSpecification: [
+        {
+          '@type': 'OpeningHoursSpecification',
+          dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+          opens: '09:00',
+          closes: '18:00',
+        },
+      ],
+      areaServed: [
+        { '@type': 'City', name: 'Berlin' },
+        { '@type': 'Country', name: 'Deutschland' },
+      ],
+      sameAs: SITE.sameAs,
+      hasOfferCatalog: {
+        '@type': 'OfferCatalog',
+        name: 'Leistungen',
+        itemListElement: CORE_SERVICES.map((s) => ({
+          '@type': 'Offer',
+          itemOffered: { '@type': 'Service', name: s.label, url: absoluteUrl(s.href) },
+        })),
+      },
+    },
+    {
+      '@type': 'WebSite',
+      '@id': `${SITE.url}/#website`,
+      url: SITE.url,
+      name: 'CAIT',
+      inLanguage: 'de-DE',
+      publisher: { '@id': `${SITE.url}/#organization` },
+    },
+  ],
+};
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  // Enhanced JSON-LD structured data
-  const localBusinessSchema = {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "@id": "https://www.caitsocialmedia.com/#organization",
-    "name": "CAIT Social Media - Marketing Agentur Berlin",
-    "description": "Ihre Top Marketing Agentur in Berlin: SEO Agentur Berlin, Google Ads Agentur Berlin, Webdesign Agentur Berlin und Social Media Agentur Berlin. Über 100 erfolgreiche Projekte.",
-    "url": "https://www.caitsocialmedia.com",
-    "logo": "https://www.caitsocialmedia.com/logo.png",
-    "image": "https://www.caitsocialmedia.com/opengraph-image.png",
-    "telephone": "+493022689840",
-    "email": "info@caitsocialmedia.com",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Berliner Straße 17",
-      "addressLocality": "Berlin",
-      "addressRegion": "Berlin",
-      "postalCode": "14169",
-      "addressCountry": "DE"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": "52.4422",
-      "longitude": "13.2612"
-    },
-    "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-        "opens": "09:00",
-        "closes": "18:00"
-      }
-    ],
-    "priceRange": "€€",
-    "areaServed": [
-      {
-        "@type": "City",
-        "name": "Berlin"
-      },
-      {
-        "@type": "AdministrativeArea",
-        "name": "Berlin-Mitte"
-      },
-      {
-        "@type": "AdministrativeArea",
-        "name": "Berlin-Charlottenburg"
-      },
-      {
-        "@type": "AdministrativeArea",
-        "name": "Berlin-Kreuzberg"
-      },
-      {
-        "@type": "AdministrativeArea",
-        "name": "Berlin-Neukölln"
-      },
-      {
-        "@type": "AdministrativeArea",
-        "name": "Berlin-Prenzlauer Berg"
-      }
-    ],
-    "sameAs": [
-      "https://www.instagram.com/caitsocialmedia",
-      "https://www.linkedin.com/company/caitsocialmedia",
-      "https://www.facebook.com/caitsocialmedia"
-    ],
-    "knowsAbout": [
-      "SEO Agentur Berlin",
-      "Suchmaschinenoptimierung",
-      "Google Ads",
-      "Performance Marketing",
-      "Webdesign",
-      "Webentwicklung",
-      "Social Media Marketing",
-      "Content Marketing",
-      "Local SEO",
-      "E-Commerce SEO"
-    ],
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Marketing Services",
-      "itemListElement": [
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "SEO Optimierung",
-            "description": "Professionelle Suchmaschinenoptimierung für bessere Google Rankings"
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Google Ads Management",
-            "description": "Profitables Google Ads Kampagnenmanagement"
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Webdesign & Entwicklung",
-            "description": "Moderne, responsive Websites mit Next.js und React"
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Social Media Marketing",
-            "description": "Strategisches Social Media Marketing für Instagram, TikTok und LinkedIn"
-          }
-        }
-      ]
-    }
-  };
-
-  const organizationSchema = {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "@id": "https://www.caitsocialmedia.com/#organization",
-    "name": "CAIT Social Media",
-    "url": "https://www.caitsocialmedia.com",
-    "logo": "https://www.caitsocialmedia.com/logo.png",
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+493022689840",
-      "contactType": "customer service",
-      "areaServed": "DE",
-      "availableLanguage": ["German", "English"]
-    }
-  };
-
-  const websiteSchema = {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "@id": "https://www.caitsocialmedia.com/#website",
-    "url": "https://www.caitsocialmedia.com",
-    "name": "CAIT Social Media - Marketing Agentur Berlin",
-    "publisher": {
-      "@id": "https://www.caitsocialmedia.com/#organization"
-    }
-  };
-
   return (
-    <html lang="de" className={inter.variable}>
+    <html lang="de" className={`${inter.variable} ${bodoni.variable}`} suppressHydrationWarning>
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
-        />
+        {/* Markiert, dass JavaScript läuft – erst dann werden Scroll-Einblendungen aktiv */}
+        <script dangerouslySetInnerHTML={{ __html: "document.documentElement.classList.add('js')" }} />
+        <JsonLd data={organizationGraph} />
       </head>
-      <body className={inter.className}>
+      <body>
+        <a href="#inhalt" className="skip-link">
+          Zum Inhalt springen
+        </a>
         <ClientProviders>
           <LayoutWrapper>{children}</LayoutWrapper>
         </ClientProviders>

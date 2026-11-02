@@ -1,208 +1,240 @@
-'use client'
-import { NAV_LINKS } from "@/constants";
-import Image from "next/image";
-import Link from "next/link";
-import { useEffect, useState } from "react";
+'use client';
 
-const Navbar = () => {
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { useCallback, useEffect, useRef, useState } from 'react';
+import Logo from '@/components/site/Logo';
+import { CORE_SERVICES, MAIN_NAV, MORE_SERVICES, SITE } from '@/lib/site';
+
+export default function Navbar() {
+  const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
-  const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [mobileDropdown, setMobileDropdown] = useState<string | null>(null);
+  const [menuOpen, setMenuOpen] = useState(false); // mobil
+  const [panelOpen, setPanelOpen] = useState(false); // Desktop-Leistungen
+  const panelRef = useRef<HTMLDivElement>(null);
+  const triggerRef = useRef<HTMLButtonElement>(null);
+  const hoverTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 10);
-    };
-
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
+    const onScroll = () => setScrolled(window.scrollY > 12);
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
+  // Bei Seitenwechsel alles schließen
+  useEffect(() => {
+    setMenuOpen(false);
+    setPanelOpen(false);
+  }, [pathname]);
+
+  // Mobilmenü: Scrollen der Seite sperren, Escape schließt
+  useEffect(() => {
+    document.documentElement.style.overflow = menuOpen ? 'hidden' : '';
+    return () => {
+      document.documentElement.style.overflow = '';
+    };
+  }, [menuOpen]);
+
+  const closeAll = useCallback(() => {
+    setMenuOpen(false);
+    setPanelOpen(false);
+  }, []);
+
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key !== 'Escape') return;
+      if (panelOpen) triggerRef.current?.focus();
+      closeAll();
+    };
+    const onClick = (e: MouseEvent) => {
+      if (!panelOpen) return;
+      const t = e.target as Node;
+      if (panelRef.current?.contains(t) || triggerRef.current?.contains(t)) return;
+      setPanelOpen(false);
+    };
+    document.addEventListener('keydown', onKey);
+    document.addEventListener('mousedown', onClick);
+    return () => {
+      document.removeEventListener('keydown', onKey);
+      document.removeEventListener('mousedown', onClick);
+    };
+  }, [panelOpen, closeAll]);
+
+  const openWithHover = () => {
+    if (hoverTimer.current) clearTimeout(hoverTimer.current);
+    hoverTimer.current = setTimeout(() => setPanelOpen(true), 80);
+  };
+  const closeWithHover = () => {
+    if (hoverTimer.current) clearTimeout(hoverTimer.current);
+    hoverTimer.current = setTimeout(() => setPanelOpen(false), 180);
+  };
+
+  const isActive = (href: string) => (href === '/' ? pathname === '/' : pathname?.startsWith(href));
+  const servicesActive = [...CORE_SERVICES, ...MORE_SERVICES].some((s) => isActive(s.href)) || pathname === '/leistungen';
+  const solid = scrolled || panelOpen || menuOpen;
+
+  // Das Mobilmenü liegt außerhalb des Headers: dessen backdrop-filter würde sonst
+  // den Bezugsrahmen für position: fixed bilden und das Menü auf Headerhöhe beschneiden.
   return (
     <>
-      {/* Navbar Container */}
-      <nav className={`fixed top-0 left-0 right-0 w-full transition-all duration-500 z-50 ${scrolled
-        ? "bg-[#0a0f1a]/80 backdrop-blur-xl border-b border-[#d4af37]/20 shadow-[0_4px_30px_rgba(0,0,0,0.1)]"
-        : "bg-transparent py-4"
-        }`}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 relative flex items-center justify-between">
-          {/* Mobile Menu Button */}
-          <button
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="lg:hidden z-60 p-2 text-[#d4af37]"
-            aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
-          >
-            <Image
-              src={mobileMenuOpen ? "/close.svg" : "/menu.svg"}
-              alt="Menu"
-              width={28}
-              height={28}
-              className="filter invert sepia saturate-[5] hue-rotate-[5deg]"
-            />
-          </button>
+    <header
+      className={`fixed inset-x-0 top-0 z-50 transition-[background-color,border-color] duration-300 ${
+        solid ? 'border-b border-[var(--line-dark)] bg-night/95 backdrop-blur-md' : 'border-b border-transparent bg-transparent'
+      }`}
+    >
+      <div className="wrap flex h-[var(--header-h)] items-center justify-between gap-6">
+        <Link href="/" className="relative z-10 -ml-1 p-1 text-ink" aria-label="CAIT – zur Startseite">
+          <Logo className="h-7 w-auto sm:h-8" title="CAIT" />
+        </Link>
 
-          {/* Logo - centered on mobile */}
-          <Link
-            href="/"
-            className="absolute left-1/2 transform -translate-x-1/2 lg:static lg:transform-none z-50"
-            aria-label="Home"
-          >
-            <Image
-              src="/cait logo tran black.svg"
-              alt="CAIT Logo"
-              width={scrolled ? 90 : 100}
-              height={scrolled ? 26 : 30}
-              priority
-              className="transition-all duration-300"
-            />
-          </Link>
-
-          {/* Desktop Navigation */}
-          <ul className="hidden lg:flex gap-8">
-            {NAV_LINKS.map((link) =>
-              link.children ? (
-                <li
-                  key={link.key}
-                  className="relative px-2 pb-2"
-                  onMouseEnter={() => setActiveDropdown(link.key)}
-                  onMouseLeave={() => setActiveDropdown(null)}
-                >
-                  <span className={`text-lg flex items-center cursor-pointer pb-1.5 transition-all duration-300 font-medium ${activeDropdown === link.key
-                    ? 'text-[#d4af37] drop-shadow-[0_0_8px_rgba(252,208,102,0.5)]'
-                    : 'text-gray-100 hover:text-[#d4af37]'
-                    }`}>
-                    {link.label}
-                    <span className={`ml-1 transition-transform duration-300 ${activeDropdown === link.key ? 'rotate-180 text-[#d4af37]' : 'text-[#d4af37]/70'
-                      }`}>▾</span>
-                  </span>
-
-                  <ul
-                    className={`absolute top-full left-0 flex flex-col glass-panel rounded-xl py-2 w-56 z-50 transition-all duration-300 origin-top transform pt-4 -mt-2 ${activeDropdown === link.key
-                      ? 'scale-y-100 opacity-100'
-                      : 'scale-y-95 opacity-0 pointer-events-none'
-                      }`}
-                  >
-                    {link.children.map((child) => (
-                      <li key={child.key}>
-                        <Link
-                          href={child.href}
-                          onClick={() => setActiveDropdown(null)}
-                          className="block px-4 py-3 text-gray-200 hover:text-white hover:bg-[#d4af37]/10 transition-colors duration-200 border-l-2 border-transparent hover:border-[#d4af37]"
-                        >
-                          {child.label}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </li>
-              ) : (
-                <li key={link.key}>
-                  <Link
-                    href={link.href}
-                    className="text-lg text-gray-100 flex items-center cursor-pointer pb-1.5 transition-all hover:text-[#d4af37] duration-300"
-                  >
-                    <span className="relative group font-medium">
-                      {link.label}
-                      <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-gradient-to-r from-[#d4af37] to-[#b8973a] transition-all duration-300 group-hover:w-full shadow-[0_0_8px_rgba(252,208,102,0.8)]"></span>
-                    </span>
-                  </Link>
-                </li>
-              )
-            )}
-          </ul>
-        </div>
-      </nav>
-
-      {/* Mobile Menu - Outside of nav to prevent z-index issues */}
-      <div className={`lg:hidden fixed inset-0 z-40 transition-all duration-300 ${mobileMenuOpen
-        ? 'opacity-100 visible'
-        : 'opacity-0 invisible delay-300'
-        }`}>
-        {/* Overlay */}
-        <div
-          className={`absolute inset-0 bg-black/50 backdrop-blur-sm transition-opacity duration-300 ${mobileMenuOpen ? 'opacity-100' : 'opacity-0'
-            }`}
-          onClick={() => {
-            setMobileMenuOpen(false);
-            setMobileDropdown(null);
-          }}
-        />
-
-        {/* Menu Content */}
-        <div
-          className={`absolute top-0 left-0 h-full w-4/5 max-w-sm bg-[#0a0f1a] border-r border-[#151b2e] p-6 overflow-y-auto transition-transform duration-300 ${mobileMenuOpen ? 'translate-x-0' : '-translate-x-full'
-            }`}
-        >
-          {/* Close Button */}
-          <div className="flex justify-between items-center mb-8">
-            <span className="text-xl font-semibold text-gray-100">Menü</span>
+        {/* Desktop */}
+        <nav aria-label="Hauptnavigation" className="hidden items-center gap-1 lg:flex">
+          <div onMouseEnter={openWithHover} onMouseLeave={closeWithHover} className="relative">
             <button
-              onClick={() => setMobileMenuOpen(false)}
-              aria-label="Close menu"
-              className="p-2"
+              ref={triggerRef}
+              type="button"
+              aria-expanded={panelOpen}
+              aria-controls="leistungen-panel"
+              onClick={() => setPanelOpen((v) => !v)}
+              className={`flex h-11 items-center gap-2 px-4 text-[0.95rem] transition-colors hover:text-gold-200 ${
+                servicesActive || panelOpen ? 'text-gold-200' : 'text-ink'
+              }`}
             >
-              <Image
-                src="/close.svg"
-                alt="Close"
-                width={24}
-                height={24}
-                className="filter invert"
-              />
+              Leistungen
+              <svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true" className={`transition-transform duration-300 ${panelOpen ? 'rotate-180' : ''}`}>
+                <path d="M1 3.5 5 7l4-3.5" fill="none" stroke="currentColor" strokeWidth="1.4" />
+              </svg>
             </button>
+
+            <div
+              id="leistungen-panel"
+              ref={panelRef}
+              hidden={!panelOpen}
+              className="absolute left-1/2 top-full w-[min(760px,90vw)] -translate-x-1/2 pt-3"
+            >
+              <div className="border border-[var(--line-dark)] bg-night-700 p-2 shadow-[0_30px_80px_-20px_rgba(0,0,0,0.6)]">
+                <ul className="grid grid-cols-2">
+                  {CORE_SERVICES.map((s) => (
+                    <li key={s.href}>
+                      <Link
+                        href={s.href}
+                        aria-current={isActive(s.href) ? 'page' : undefined}
+                        className="group block p-4 transition-colors hover:bg-night-600 focus-visible:bg-night-600"
+                      >
+                        <span className="font-display text-xl text-ink group-hover:text-gold-200">{s.label}</span>
+                        <span className="mt-1 block text-sm text-ink-muted">{s.description}</span>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+                <div className="mt-2 flex flex-wrap items-center justify-between gap-3 border-t border-[var(--line-dark)] px-4 pb-2 pt-4 text-sm">
+                  <div className="flex flex-wrap gap-x-6 gap-y-2 text-ink-muted">
+                    {MORE_SERVICES.map((s) => (
+                      <Link key={s.href} href={s.href} className="link hover:text-ink">
+                        {s.label}
+                      </Link>
+                    ))}
+                  </div>
+                  <Link href="/leistungen" className="link text-gold-200">
+                    Alle Leistungen im Überblick
+                  </Link>
+                </div>
+              </div>
+            </div>
           </div>
 
-          {/* Mobile Nav Items */}
-          <nav className="flex flex-col gap-6">
-            {NAV_LINKS.map((link) => (
-              <div key={link.key} className="border-b border-[#151b2e] pb-4">
-                {link.children ? (
-                  <>
-                    <button
-                      onClick={() => setMobileDropdown(mobileDropdown === link.key ? null : link.key)}
-                      className={`w-full text-left flex justify-between items-center text-lg ${mobileDropdown === link.key ? 'text-[#d4af37]' : 'text-gray-100'
-                        }`}
-                    >
-                      {link.label}
-                      <span className="text-[#d4af37]">
-                        {mobileDropdown === link.key ? '▴' : '▾'}
-                      </span>
-                    </button>
-                    {mobileDropdown === link.key && (
-                      <ul className="mt-3 ml-3 space-y-3">
-                        {link.children.map((child) => (
-                          <li key={child.key}>
-                            <Link
-                              href={child.href}
-                              className="block text-gray-100 hover:text-[#d4af37] pl-2 py-1.5 border-l-2 border-[#2d3a5a] hover:border-[#d4af37] transition-all"
-                              onClick={() => {
-                                setMobileMenuOpen(false);
-                                setMobileDropdown(null);
-                              }}
-                            >
-                              {child.label}
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-                    )}
-                  </>
-                ) : (
-                  <Link
-                    href={link.href}
-                    className="block text-lg text-gray-100 hover:text-[#d4af37] py-2"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    {link.label}
-                  </Link>
-                )}
-              </div>
-            ))}
-          </nav>
+          {MAIN_NAV.filter((n) => n.href !== '/kontakt').map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              aria-current={isActive(item.href) ? 'page' : undefined}
+              className={`flex h-11 items-center px-4 text-[0.95rem] transition-colors hover:text-gold-200 ${
+                isActive(item.href) ? 'text-gold-200' : 'text-ink'
+              }`}
+            >
+              {item.label}
+            </Link>
+          ))}
+        </nav>
+
+        <div className="hidden items-center gap-5 lg:flex">
+          <a href={SITE.phoneHref} className="link text-sm text-ink-muted hover:text-ink">
+            {SITE.phoneDisplay}
+          </a>
+          <Link href="/kontakt" className="btn btn-gold min-h-[44px] px-5 text-[0.95rem]">
+            Projekt besprechen
+          </Link>
         </div>
+
+        {/* Mobil */}
+        <button
+          type="button"
+          className="relative z-10 -mr-2 flex h-11 w-11 items-center justify-center text-ink lg:hidden"
+          aria-expanded={menuOpen}
+          aria-controls="mobilmenue"
+          aria-label={menuOpen ? 'Menü schließen' : 'Menü öffnen'}
+          onClick={() => setMenuOpen((v) => !v)}
+        >
+          <span className="relative block h-3 w-6" aria-hidden="true">
+            <span className={`absolute left-0 top-0 h-px w-6 bg-current transition-transform duration-300 ${menuOpen ? 'translate-y-[6px] rotate-45' : ''}`} />
+            <span className={`absolute bottom-0 left-0 h-px w-6 bg-current transition-transform duration-300 ${menuOpen ? '-translate-y-[5px] -rotate-45' : ''}`} />
+          </span>
+        </button>
+      </div>
+
+    </header>
+      <div
+        id="mobilmenue"
+        hidden={!menuOpen}
+        className="fixed inset-x-0 bottom-0 top-[var(--header-h)] z-40 overflow-y-auto bg-night lg:hidden"
+      >
+        <nav aria-label="Mobile Navigation" className="wrap flex min-h-full flex-col py-8">
+          <p className="text-sm text-ink-muted">Leistungen</p>
+          <ul className="mt-3">
+            {CORE_SERVICES.map((s) => (
+              <li key={s.href} className="border-b border-[var(--line-dark)]">
+                <Link href={s.href} onClick={closeAll} className="flex items-baseline justify-between gap-4 py-4">
+                  <span className="font-display text-2xl text-ink">{s.label}</span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <ul className="mt-4 flex flex-wrap gap-x-6 gap-y-3 text-ink-muted">
+            {MORE_SERVICES.map((s) => (
+              <li key={s.href}>
+                <Link href={s.href} onClick={closeAll} className="link-static">
+                  {s.label}
+                </Link>
+              </li>
+            ))}
+            <li>
+              <Link href="/leistungen" onClick={closeAll} className="link-static text-gold-200">
+                Alle Leistungen
+              </Link>
+            </li>
+          </ul>
+
+          <ul className="mt-10 grid grid-cols-2 gap-3">
+            {MAIN_NAV.map((item) => (
+              <li key={item.href}>
+                <Link href={item.href} onClick={closeAll} className="block py-2 text-lg text-ink">
+                  {item.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+
+          <div className="mt-auto flex flex-col gap-3 pt-10">
+            <Link href="/kontakt" onClick={closeAll} className="btn btn-gold w-full">
+              Projekt besprechen
+            </Link>
+            <a href={SITE.phoneHref} className="btn btn-line w-full">
+              Anrufen: {SITE.phoneDisplay}
+            </a>
+          </div>
+        </nav>
       </div>
     </>
   );
-};
-
-export default Navbar;
+}

@@ -8,7 +8,7 @@ import Link from 'next/link';
 
 export default function LokaleSEOPageClient() {
   return (
-    <main className="px-4 py-12 md:px-6 max-w-6xl mx-auto bg-primary text-white space-y-16">
+    <div className="px-4 py-12 md:px-6 max-w-6xl mx-auto bg-primary text-white space-y-16">
       <motion.section
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
@@ -47,7 +47,7 @@ export default function LokaleSEOPageClient() {
 
       <section className="space-y-16">
         {/* Google Unternehmensprofil Detailed */}
-        <div className="bg-[#1a2a4a] p-8 rounded-2xl border border-blue-800">
+        <div className="bg-[#131f38] p-8 rounded-2xl border border-night-600">
           <h2 className="text-2xl md:text-3xl font-bold flex items-center gap-3 mb-6 text-white">
             <FaMapMarkerAlt className="text-gold-300 text-4xl" />
             Das Fundament: Dein Google Unternehmensprofil
@@ -102,7 +102,7 @@ export default function LokaleSEOPageClient() {
               <li>Strukturierte Daten (LocalBusiness Schema) für bessere Lesbarkeit durch Google</li>
             </ul>
           </div>
-          <div className="bg-primary-light0/10 p-8 rounded-2xl border border-blue-800/50">
+          <div className="bg-gold-300/10 p-8 rounded-2xl border border-night-600/50">
             <h3 className="text-xl font-bold text-gold-300 mb-4 bg-clip-text">Wusstest du schon?</h3>
             <p className="text-gray-200 italic mb-4">
               "46% aller Google-Suchen haben eine lokale Absicht."
@@ -114,15 +114,15 @@ export default function LokaleSEOPageClient() {
         </div>
 
         {/* Citations & Trust */}
-        <div className="bg-[#1a2a4a] p-8 rounded-2xl border border-blue-800">
+        <div className="bg-[#131f38] p-8 rounded-2xl border border-night-600">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-6">🔗 Lokale Autorität aufbauen</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <ul className="space-y-4 text-gray-300 order-2 md:order-1">
-              <li className="bg-primary-light0/20 p-4 rounded-lg border border-blue-900">
+              <li className="bg-gold-300/20 p-4 rounded-lg border border-night-600">
                 <strong className="text-white block mb-1">Konsistente Citations</strong>
                 Deine Firmendaten müssen überall im Netz identisch sein. Wir bereinigen Einträge in Branchenbüchern wie Das Örtliche, Gelbe Seiten, Yelp etc.
               </li>
-              <li className="bg-primary-light0/20 p-4 rounded-lg border border-blue-900">
+              <li className="bg-gold-300/20 p-4 rounded-lg border border-night-600">
                 <strong className="text-white block mb-1">Regionales Linkbuilding</strong>
                 Wir besorgen Links von anderen Berliner Websites, Partnern, Vereinen oder lokalen Zeitungen. Das stärkt den lokalen Bezug deiner Domain massiv.
               </li>
@@ -140,32 +140,32 @@ export default function LokaleSEOPageClient() {
       </section>
 
       {/* FAQ Section */}
-      <section className="max-w-4xl mx-auto pt-10 border-t border-blue-900">
+      <section className="max-w-4xl mx-auto pt-10 border-t border-night-600">
         <h2 className="text-3xl font-bold text-center text-white mb-10">Häufige Fragen zu Local SEO</h2>
 
         <div className="space-y-6">
-          <div className="bg-[#1a2a4a] p-6 rounded-xl border border-blue-800/50">
+          <div className="bg-[#131f38] p-6 rounded-xl border border-night-600/50">
             <h3 className="text-xl font-bold text-white mb-2">Wie lange dauert es, bis Local SEO wirkt?</h3>
             <p className="text-gray-300">
               Erste Verbesserungen im Google Unternehmensprofil sieht man oft schon nach 2-4 Wochen. Bis man sich in den Top 3 des Local Packs etabliert hat, vergehen in kompetitiven Branchen in Berlin meist 3 bis 6 Monate kontinuierlicher Arbeit.
             </p>
           </div>
 
-          <div className="bg-[#1a2a4a] p-6 rounded-xl border border-blue-800/50">
+          <div className="bg-[#131f38] p-6 rounded-xl border border-night-600/50">
             <h3 className="text-xl font-bold text-white mb-2">Brauche ich Local SEO, wenn ich keinen Kundenverkehr im Büro habe?</h3>
             <p className="text-gray-300">
               Absolut. Auch als Dienstleister, Handwerker oder Berater, der zum Kunden fährt (Service Area Business), ist lokale Sichtbarkeit entscheidend. Du wirst dann für dein Einzugsgebiet gerankt, ohne dass deine Privatadresse öffentlich sichtbar sein muss.
             </p>
           </div>
 
-          <div className="bg-[#1a2a4a] p-6 rounded-xl border border-blue-800/50">
+          <div className="bg-[#131f38] p-6 rounded-xl border border-night-600/50">
             <h3 className="text-xl font-bold text-white mb-2">Wie wichtig sind Google Bewertungen?</h3>
             <p className="text-gray-300">
               Extrem wichtig. Sie sind ein direkter Rankingfaktor. Aber nicht nur die Anzahl zählt, sondern auch die Aktualität, der Text (Keywords in Bewertungen!) und deine Antworten darauf. Wir helfen dir, Strategien zu entwickeln, um mehr echte Bewertungen zu erhalten.
             </p>
           </div>
 
-          <div className="bg-[#1a2a4a] p-6 rounded-xl border border-blue-800/50">
+          <div className="bg-[#131f38] p-6 rounded-xl border border-night-600/50">
             <h3 className="text-xl font-bold text-white mb-2">Was ist der Unterschied zwischen normalem SEO und Local SEO?</h3>
             <p className="text-gray-300">
               Normales SEO zielt auf die organischen Suchergebnisse (die Liste mit Links). Local SEO zielt primär auf das Kartenpaket (Google Maps) und lokale Suchanfragen ("in der Nähe"). Die Rankingfaktoren unterscheiden sich: Bei Local SEO spielen geografische Nähe, Prominenz des Unternehmensprofils und Zitate eine größere Rolle.
@@ -177,14 +177,14 @@ export default function LokaleSEOPageClient() {
       <div className="text-center pt-6">
         <Link
           href="/kontakt"
-          className="inline-flex items-center gap-2 bg-gold-300 text-white px-6 py-3 rounded-full font-bold shadow hover:bg-blue-700 transition"
+          className="inline-flex items-center gap-2 bg-gold-300 text-night px-6 py-3 rounded-full font-bold shadow hover:bg-night-600 transition"
         >
           Jetzt lokale SEO-Beratung anfordern <FaArrowRight />
         </Link>
-        <p className="text-sm text-blue-700 mt-2">
-          Bereits <strong>70%</strong> unserer Kunden steigern durch Local SEO ihre Ladenbesuche und Anfragen.
+        <p className="text-sm text-ink-muted mt-2">
+          Im Erstgespräch prüfen wir, wo Ihr Unternehmenseintrag heute steht.
         </p>
       </div>
-    </main>
+    </div>
   );
 }

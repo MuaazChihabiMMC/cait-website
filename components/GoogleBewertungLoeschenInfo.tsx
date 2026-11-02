@@ -21,17 +21,17 @@ const nichtLoeschbar = [
 
 const rechtsbasis = [
   {
-    icon: <Shield className="w-6 h-6 text-[#fcd066]" />,
+    icon: <Shield className="w-6 h-6 text-[#d4af37]" />,
     title: 'Art. 17 DSGVO',
     desc: 'Recht auf Löschung personenbezogener Daten ohne berechtigtes Interesse der Gegenseite.',
   },
   {
-    icon: <Scale className="w-6 h-6 text-[#fcd066]" />,
+    icon: <Scale className="w-6 h-6 text-[#d4af37]" />,
     title: 'Art. 6 DSGVO',
     desc: 'Ohne geschäftliche Beziehung ist die Datenverarbeitung durch den Bewerter unzulässig.',
   },
   {
-    icon: <Users className="w-6 h-6 text-[#fcd066]" />,
+    icon: <Users className="w-6 h-6 text-[#d4af37]" />,
     title: 'Persönlichkeitsrecht',
     desc: 'Beleidigungen und unwahre Tatsachenbehauptungen verletzen das allgemeine Persönlichkeitsrecht.',
   },
@@ -39,7 +39,7 @@ const rechtsbasis = [
 
 export default function GoogleBewertungLoeschenInfo() {
   return (
-    <section className="bg-gradient-to-b from-[#0d1a36] to-[#0c1832] py-16 md:py-24 px-4">
+    <section className="bg-gradient-to-b from-[#0d1a36] to-[#0c1527] py-16 md:py-24 px-4">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <motion.div
@@ -49,7 +49,7 @@ export default function GoogleBewertungLoeschenInfo() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-blue-100">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-gold-400">
             Wann kann man eine Google Bewertung entfernen lassen?
           </h2>
           <p className="text-xl text-gray-100 max-w-3xl mx-auto">
@@ -65,7 +65,7 @@ export default function GoogleBewertungLoeschenInfo() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="bg-gradient-to-br from-[#1a2a4a] to-[#15203a] border border-green-500/30 rounded-2xl p-8"
+            className="bg-gradient-to-br from-[#131f38] to-[#15203a] border border-green-500/30 rounded-2xl p-8"
           >
             <div className="flex items-center gap-3 mb-6">
               <div className="bg-green-500/20 p-3 rounded-full">
@@ -95,7 +95,7 @@ export default function GoogleBewertungLoeschenInfo() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="bg-gradient-to-br from-[#1a2a4a] to-[#15203a] border border-red-500/30 rounded-2xl p-8"
+            className="bg-gradient-to-br from-[#131f38] to-[#15203a] border border-red-500/30 rounded-2xl p-8"
           >
             <div className="flex items-center gap-3 mb-6">
               <div className="bg-red-500/20 p-3 rounded-full">
@@ -141,14 +141,14 @@ export default function GoogleBewertungLoeschenInfo() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className="bg-gradient-to-br from-[#1a2a4a] to-[#15203a] border border-blue-500/20 rounded-xl p-6 text-center"
+                className="bg-gradient-to-br from-[#131f38] to-[#15203a] border border-gold-300/40/20 rounded-xl p-6 text-center"
               >
                 <div className="flex justify-center mb-4">
-                  <div className="bg-[#fcd066]/10 p-3 rounded-full border border-[#fcd066]/20">
+                  <div className="bg-[#d4af37]/10 p-3 rounded-full border border-[#d4af37]/20">
                     {item.icon}
                   </div>
                 </div>
-                <h4 className="text-[#fcd066] font-bold text-lg mb-2">{item.title}</h4>
+                <h4 className="text-[#d4af37] font-bold text-lg mb-2">{item.title}</h4>
                 <p className="text-gray-300 text-sm leading-relaxed">{item.desc}</p>
               </motion.div>
             ))}
@@ -160,11 +160,11 @@ export default function GoogleBewertungLoeschenInfo() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className="bg-[#fcd066]/5 border border-[#fcd066]/20 rounded-xl p-6 text-center"
+          className="bg-[#d4af37]/5 border border-[#d4af37]/20 rounded-xl p-6 text-center"
         >
-          <Scale className="w-6 h-6 text-[#fcd066] inline-block mb-2" />
+          <Scale className="w-6 h-6 text-[#d4af37] inline-block mb-2" />
           <p className="text-gray-300 text-sm max-w-2xl mx-auto">
-            <strong className="text-[#fcd066]">Rechtssicher mit Anwalt:</strong> Wir arbeiten
+            <strong className="text-[#d4af37]">Rechtssicher mit Anwalt:</strong> Wir arbeiten
             mit erfahrenen Rechtsanwälten für IT- und Medienrecht zusammen. Jeder komplexe Fall
             wird anwaltlich geprüft, und der DSGVO-Löschantrag wird auf Wunsch direkt über unsere
             Partner-Kanzlei eingereicht – für Sie ohne rechtliches Risiko.

@@ -1,249 +1,170 @@
 // app/api/kontakt/route.ts
+// Versendet Anfragen aus dem Kontaktformular per SMTP (Strato).
+// Benötigte Umgebungsvariablen: EMAIL_USER, EMAIL_PASS
+// Optional: CONTACT_TO (Empfänger, Standard: EMAIL_USER)
 
 import nodemailer from 'nodemailer';
 import { NextResponse } from 'next/server';
 
-// Rate limiting storage (in production, use Redis or similar)
+export const runtime = 'nodejs';
+export const dynamic = 'force-dynamic';
+
 const rateLimitMap = new Map<string, { count: number; timestamp: number }>();
-const RATE_LIMIT_WINDOW = 60 * 1000; // 1 minute
-const MAX_REQUESTS = 3; // Max 3 requests per minute per IP
+const RATE_LIMIT_WINDOW = 60 * 1000;
+const MAX_REQUESTS = 3;
 
-// Spam keywords to block
 const SPAM_KEYWORDS = [
-  'viagra', 'casino', 'lottery', 'bitcoin', 'crypto', 'pills',
-  'cheap', 'free money', 'winner', 'prize', 'click here',
-  '.ru/', '.cn/', 'buy now', 'make money', 'work from home',
-  'earn extra', 'double your', 'no obligation', 'act now',
-  'limited time', 'congratulations', 'you have been selected'
+  'viagra', 'casino', 'lottery', 'free money', 'you have been selected',
+  'make money fast', 'work from home', 'earn extra cash', 'double your',
 ];
 
-// Disposable email domains to block
 const BLOCKED_EMAIL_DOMAINS = [
-  'tempmail.com', 'throwaway.email', '10minutemail.com',
-  'guerrillamail.com', 'mailinator.com', 'temp-mail.org',
-  'fakeinbox.com', 'trashmail.com'
+  'tempmail.com', 'throwaway.email', '10minutemail.com', 'guerrillamail.com',
+  'mailinator.com', 'temp-mail.org', 'fakeinbox.com', 'trashmail.com',
 ];
+
+const ALLOWED_INTERESTS = new Set([
+  'Suchmaschinenoptimierung',
+  'Webdesign & Webentwicklung',
+  'Google Ads',
+  'Social Media',
+  'Softwareentwicklung',
+  'KI-Lösungen',
+  'Noch unklar',
+]);
 
 function getClientIP(req: Request): string {
   const forwarded = req.headers.get('x-forwarded-for');
-  const realIP = req.headers.get('x-real-ip');
-  return forwarded?.split(',')[0] || realIP || 'unknown';
+  return forwarded?.split(',')[0].trim() || req.headers.get('x-real-ip') || 'unbekannt';
 }
 
 function isRateLimited(ip: string): boolean {
   const now = Date.now();
+  for (const [key, rec] of Array.from(rateLimitMap.entries())) {
+    if (now - rec.timestamp > RATE_LIMIT_WINDOW * 2) rateLimitMap.delete(key);
+  }
   const record = rateLimitMap.get(ip);
-
-  if (!record) {
+  if (!record || now - record.timestamp > RATE_LIMIT_WINDOW) {
     rateLimitMap.set(ip, { count: 1, timestamp: now });
     return false;
   }
-
-  if (now - record.timestamp > RATE_LIMIT_WINDOW) {
-    rateLimitMap.set(ip, { count: 1, timestamp: now });
-    return false;
-  }
-
-  if (record.count >= MAX_REQUESTS) {
-    return true;
-  }
-
+  if (record.count >= MAX_REQUESTS) return true;
   record.count++;
   return false;
 }
 
-function containsSpam(text: string): boolean {
-  const lowerText = text.toLowerCase();
-  return SPAM_KEYWORDS.some(keyword => lowerText.includes(keyword));
-}
+const clean = (v: unknown, max: number) =>
+  typeof v === 'string' ? v.replace(/[\u0000-\u0008\u000B\u000C\u000E-\u001F]/g, '').trim().slice(0, max) : '';
 
-function isBlockedEmailDomain(email: string): boolean {
-  const domain = email.split('@')[1]?.toLowerCase();
-  return BLOCKED_EMAIL_DOMAINS.some(blocked => domain?.includes(blocked));
-}
+const escapeHtml = (s: string) =>
+  s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
 
-function isValidEmail(email: string): boolean {
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  if (!emailRegex.test(email)) return false;
-  if (email.length > 254) return false;
+const isValidEmail = (email: string) =>
+  email.length <= 254 && /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email) && email.split('@')[0].length <= 64;
 
-  // Check for common spam patterns
-  const localPart = email.split('@')[0];
-  if (localPart.length > 64) return false;
-  if (/^\d+$/.test(localPart)) return false; // All numbers
-
-  return true;
-}
-
-function sanitizeInput(input: string): string {
-  return input
-    .replace(/<[^>]*>/g, '') // Remove HTML tags
-    .replace(/[<>]/g, '') // Remove angle brackets
-    .trim()
-    .slice(0, 5000); // Limit length
-}
-
-
+const bad = (error: string, status = 400) => NextResponse.json({ error }, { status });
 
 export async function POST(req: Request) {
   const ip = getClientIP(req);
+  if (isRateLimited(ip)) return bad('Zu viele Anfragen in kurzer Zeit. Bitte warten Sie eine Minute.', 429);
 
-  // Rate limiting check
-  if (isRateLimited(ip)) {
-    return NextResponse.json(
-      { error: 'Zu viele Anfragen. Bitte warten Sie einen Moment.' },
-      { status: 429 }
-    );
+  let body: Record<string, unknown>;
+  try {
+    body = await req.json();
+  } catch {
+    return bad('Ungültige Anfrage.');
   }
+
+  // Honeypot: Bots füllen das versteckte Feld aus. Antwort wirkt erfolgreich, es wird nichts versendet.
+  if (clean(body.website, 200)) return NextResponse.json({ success: true });
+
+  // Zeitprüfung: Formulare, die in unter 3 Sekunden ausgefüllt werden, stammen fast immer von Bots.
+  const now = Date.now();
+  const startedAt = Number(body.startedAt) || 0;
+  const timestamp = Number(body.timestamp) || 0;
+  if (!timestamp || Math.abs(now - timestamp) > 2 * 60 * 60 * 1000) {
+    return bad('Die Seite war zu lange geöffnet. Bitte laden Sie sie neu und senden Sie die Anfrage erneut.');
+  }
+  if (startedAt && timestamp - startedAt < 3000) return NextResponse.json({ success: true });
+
+  const name = clean(body.name, 100);
+  const email = clean(body.email, 254).toLowerCase();
+  const phone = clean(body.phone, 30);
+  const company = clean(body.company, 120);
+  const message = clean(body.message, 5000);
+  const interests = Array.isArray(body.interests)
+    ? body.interests.filter((i): i is string => typeof i === 'string' && ALLOWED_INTERESTS.has(i))
+    : [];
+
+  if (name.length < 2) return bad('Bitte geben Sie Ihren Namen an.');
+  if (!isValidEmail(email)) return bad('Bitte geben Sie eine gültige E-Mail-Adresse an.');
+  if (BLOCKED_EMAIL_DOMAINS.some((d) => email.endsWith(`@${d}`))) return bad('Bitte verwenden Sie eine dauerhafte E-Mail-Adresse.');
+  if (message.length < 10) return bad('Bitte beschreiben Sie Ihr Anliegen in mindestens 10 Zeichen.');
+
+  const haystack = `${name} ${message}`.toLowerCase();
+  if (SPAM_KEYWORDS.some((k) => haystack.includes(k))) {
+    console.warn(`Kontaktformular: Spam-Verdacht (IP ${ip})`);
+    return NextResponse.json({ success: true });
+  }
+
+  const user = process.env.EMAIL_USER;
+  const pass = process.env.EMAIL_PASS;
+  if (!user || !pass) {
+    console.error('Kontaktformular: EMAIL_USER oder EMAIL_PASS ist nicht gesetzt.');
+    return bad('Das Formular ist gerade nicht erreichbar. Bitte schreiben Sie an info@caitsocialmedia.com oder rufen Sie uns an.', 503);
+  }
+
+  const rows: [string, string][] = [
+    ['Name', name],
+    ['Unternehmen', company],
+    ['E-Mail', email],
+    ['Telefon', phone],
+    ['Interesse', interests.join(', ')],
+  ];
+
+  const html = `
+    <div style="font-family: Arial, sans-serif; max-width: 640px; margin: 0 auto; color: #0c1527;">
+      <h2 style="border-bottom: 2px solid #d4af37; padding-bottom: 10px;">Neue Anfrage über caitsocialmedia.com</h2>
+      <table style="width: 100%; border-collapse: collapse; margin-top: 16px;">
+        ${rows
+          .filter(([, v]) => v)
+          .map(
+            ([k, v]) => `<tr>
+              <td style="padding: 8px 10px; background: #eceef2; font-weight: bold; width: 130px; vertical-align: top;">${k}</td>
+              <td style="padding: 8px 10px; background: #f5f6f9;">${escapeHtml(v)}</td>
+            </tr>`,
+          )
+          .join('')}
+      </table>
+      <h3 style="margin-top: 24px;">Nachricht</h3>
+      <div style="background: #f5f6f9; padding: 14px; border-left: 4px solid #d4af37; white-space: pre-wrap;">${escapeHtml(message)}</div>
+      <p style="font-size: 12px; color: #4a5468; margin-top: 24px;">
+        Eingegangen am ${new Date().toLocaleString('de-DE', { timeZone: 'Europe/Berlin' })}
+      </p>
+    </div>`;
+
+  const text = [...rows.filter(([, v]) => v).map(([k, v]) => `${k}: ${v}`), '', 'Nachricht:', message].join('\n');
 
   try {
-    const body = await req.json();
-    const { name, email, phone, message, timestamp } = body;
-
-    // Timestamp validation (prevent replay attacks)
-    const now = Date.now();
-    const MAX_AGE = 30 * 60 * 1000; // 30 minutes - allow time for form filling
-    const CLOCK_SKEW_TOLERANCE = 10 * 1000; // 10 seconds tolerance for clock differences
-    if (!timestamp || now - timestamp > MAX_AGE || timestamp > now + CLOCK_SKEW_TOLERANCE) {
-      return NextResponse.json(
-        { error: 'Ungültige Anfrage. Bitte laden Sie die Seite neu.' },
-        { status: 400 }
-      );
-    }
-
-    // Required fields validation
-    if (!name || !email || !message) {
-      return NextResponse.json(
-        { error: 'Bitte füllen Sie alle Pflichtfelder aus.' },
-        { status: 400 }
-      );
-    }
-
-    // Sanitize inputs
-    const sanitizedName = sanitizeInput(name);
-    const sanitizedEmail = email.trim().toLowerCase();
-    const sanitizedMessage = sanitizeInput(message);
-    const sanitizedPhone = phone ? sanitizeInput(phone) : '';
-
-    // Validate lengths
-    if (sanitizedName.length < 2 || sanitizedName.length > 100) {
-      return NextResponse.json(
-        { error: 'Der Name muss zwischen 2 und 100 Zeichen lang sein.' },
-        { status: 400 }
-      );
-    }
-
-    if (sanitizedMessage.length < 10) {
-      return NextResponse.json(
-        { error: 'Die Nachricht muss mindestens 10 Zeichen enthalten.' },
-        { status: 400 }
-      );
-    }
-
-    // Email validation
-    if (!isValidEmail(sanitizedEmail)) {
-      return NextResponse.json(
-        { error: 'Bitte geben Sie eine gültige E-Mail-Adresse ein.' },
-        { status: 400 }
-      );
-    }
-
-    // Blocked email domains
-    if (isBlockedEmailDomain(sanitizedEmail)) {
-      return NextResponse.json(
-        { error: 'Bitte verwenden Sie eine permanente E-Mail-Adresse.' },
-        { status: 400 }
-      );
-    }
-
-    // Spam check
-    if (containsSpam(sanitizedName) || containsSpam(sanitizedMessage)) {
-      console.log(`Spam detected from IP: ${ip}`);
-      return NextResponse.json(
-        { error: 'Ihre Nachricht konnte nicht gesendet werden.' },
-        { status: 400 }
-      );
-    }
-
-
-
-    // Create email transporter
     const transporter = nodemailer.createTransport({
-      host: 'smtp.strato.de',
-      port: 465,
+      host: process.env.SMTP_HOST || 'smtp.strato.de',
+      port: Number(process.env.SMTP_PORT) || 465,
       secure: true,
-      auth: {
-        user: process.env.EMAIL_USER!,
-        pass: process.env.EMAIL_PASS!,
-      },
+      auth: { user, pass },
     });
 
-    // Send email
     await transporter.sendMail({
-      from: `"Website Kontakt" <${process.env.EMAIL_USER}>`,
-      to: process.env.EMAIL_USER!,
-      replyTo: sanitizedEmail,
-      subject: `Neue Kontaktanfrage von ${sanitizedName}`,
-      html: `
-        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-          <h2 style="color: #0c1832; border-bottom: 2px solid #fcd066; padding-bottom: 10px;">
-            Neue Kontaktanfrage
-          </h2>
-          
-          <table style="width: 100%; border-collapse: collapse; margin-top: 20px;">
-            <tr>
-              <td style="padding: 10px; background: #f5f5f5; font-weight: bold; width: 120px;">Name:</td>
-              <td style="padding: 10px; background: #fafafa;">${sanitizedName}</td>
-            </tr>
-            <tr>
-              <td style="padding: 10px; background: #f5f5f5; font-weight: bold;">E-Mail:</td>
-              <td style="padding: 10px; background: #fafafa;">
-                <a href="mailto:${sanitizedEmail}">${sanitizedEmail}</a>
-              </td>
-            </tr>
-            ${sanitizedPhone ? `
-            <tr>
-              <td style="padding: 10px; background: #f5f5f5; font-weight: bold;">Telefon:</td>
-              <td style="padding: 10px; background: #fafafa;">${sanitizedPhone}</td>
-            </tr>
-            ` : ''}
-          </table>
-          
-          <div style="margin-top: 20px;">
-            <h3 style="color: #0c1832;">Nachricht:</h3>
-            <div style="background: #fafafa; padding: 15px; border-left: 4px solid #fcd066; white-space: pre-wrap;">
-              ${sanitizedMessage}
-            </div>
-          </div>
-          
-          <hr style="margin-top: 30px; border: none; border-top: 1px solid #ddd;" />
-          <p style="font-size: 12px; color: #666;">
-            Gesendet über das Kontaktformular auf caitsocialmedia.com<br />
-            IP: ${ip} | Zeit: ${new Date().toLocaleString('de-DE', { timeZone: 'Europe/Berlin' })}
-          </p>
-        </div>
-      `,
+      from: `"Website CAIT" <${user}>`,
+      to: process.env.CONTACT_TO || user,
+      replyTo: { name, address: email },
+      subject: `Neue Anfrage von ${name}${company ? ` (${company})` : ''}${interests.length ? ` – ${interests.join(', ')}` : ''}`,
+      text,
+      html,
     });
 
-    console.log(`Contact form submission successful from IP: ${ip}`);
     return NextResponse.json({ success: true });
-
   } catch (error) {
-    console.error('Fehler beim Senden:', error);
-    return NextResponse.json(
-      { error: 'Ein Fehler ist aufgetreten. Bitte versuchen Sie es später erneut.' },
-      { status: 500 }
-    );
+    console.error('Kontaktformular: Versand fehlgeschlagen', error);
+    return bad('Die Anfrage konnte gerade nicht versendet werden. Bitte versuchen Sie es erneut oder schreiben Sie an info@caitsocialmedia.com.', 502);
   }
 }
-
-// Clean up old rate limit entries periodically
-setInterval(() => {
-  const now = Date.now();
-  const entries = Array.from(rateLimitMap.entries());
-  for (const [ip, record] of entries) {
-    if (now - record.timestamp > RATE_LIMIT_WINDOW * 2) {
-      rateLimitMap.delete(ip);
-    }
-  }
-}, 60000);

@@ -1,122 +1,98 @@
 import Link from 'next/link';
-import { FaMapMarkerAlt, FaPhone, FaEnvelope } from 'react-icons/fa';
+import Logo from '@/components/site/Logo';
+import { CORE_SERVICES, MORE_SERVICES, SITE } from '@/lib/site';
 
-const footerLinks = [
-  {
-    title: 'Leistungen',
-    links: [
-      { label: 'SEO Agentur Berlin', href: '/seo-agentur-berlin' },
-      { label: 'Webdesign Berlin', href: '/webentwicklung' },
-      { label: 'Google Ads Berlin', href: '/google-ads-agentur-berlin' },
-      { label: 'Social Media Berlin', href: '/social-media' },
-      { label: 'Bewertungen löschen', href: '/google-bewertungen-loeschen' },
-    ],
-  },
-
-  {
-    title: 'Ressourcen',
-    links: [
-      { label: 'Blog', href: '/blog' },
-      { label: 'Referenzen', href: '/referenzen' },
-      { label: 'SEO Guide', href: '/blog/seo' },
-      { label: 'Ads Strategien', href: '/blog/google-ads' },
-      { label: 'Webdesign Tipps', href: '/blog/webdesign' },
-    ],
-  },
-  {
-    title: 'Rechtliches',
-    links: [
-      { label: 'Impressum', href: '/impressum' },
-      { label: 'Datenschutz', href: '/datenschutz' },
-    ],
-  },
-];
-
-const contactInfo = [
-  {
-    icon: <FaMapMarkerAlt className="text-[#d4af37]" />,
-    text: 'Berliner Straße 17, 14169 Berlin-Zehlendorf',
-  },
-  {
-    icon: <FaPhone className="text-[#d4af37]" />,
-    text: '030 2268 9840',
-    href: 'tel:+493022689840',
-  },
-  {
-    icon: <FaEnvelope className="text-[#d4af37]" />,
-    text: 'info@caitsocialmedia.com',
-    href: 'mailto:info@caitsocialmedia.com',
-  },
+const company = [
+  { href: '/leistungen', label: 'Alle Leistungen' },
+  { href: '/referenzen', label: 'Referenzen' },
+  { href: '/ueber-uns', label: 'Über uns' },
+  { href: '/blog', label: 'Blog' },
+  { href: '/kontakt', label: 'Kontakt' },
 ];
 
 export default function Footer() {
   return (
-    <footer className="bg-[#0a0f1a] text-gray-100 border-t border-[#151b2e]">
-      <div className="max-w-7xl mx-auto px-6 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
-          {/* Logo & About */}
-          <div>
-            <Link href="/" className="block mb-6">
-              <img
-                src="/cait logo tran black.svg"
-                alt="CAIT Social Media"
-                className="h-10"
-              />
+    <footer className="relative border-t border-[var(--line-dark)] bg-night-900 text-ink">
+      <div className="wrap py-16 sm:py-20">
+        <div className="grid gap-12 lg:grid-cols-12">
+          <div className="lg:col-span-5">
+            <Link href="/" aria-label="CAIT – zur Startseite" className="inline-block text-ink">
+              <Logo className="h-9 w-auto" />
             </Link>
-            <p className="text-gray-200 mb-6">
-              Ihre digitale Marketingagentur in Berlin. Wir helfen Unternehmen, online sichtbar zu werden und mehr Kunden zu gewinnen.
+            <p className="mt-6 max-w-sm text-ink-muted">
+              Digitalagentur aus Berlin-Zehlendorf für Suchmaschinenoptimierung, Websites, Google Ads, Social Media,
+              individuelle Software und KI-Lösungen.
             </p>
-
-            <div className="space-y-3">
-              {contactInfo.map((item, index) => (
-                <div key={index} className="flex items-start gap-3">
-                  <span className="mt-0.5">{item.icon}</span>
-                  {item.href ? (
-                    <Link href={item.href} className="hover:text-[#d4af37] transition">
-                      {item.text}
-                    </Link>
-                  ) : (
-                    <span>{item.text}</span>
-                  )}
-                </div>
-              ))}
-            </div>
+            <address className="mt-8 space-y-1 not-italic text-ink-soft">
+              <p>{SITE.legalName}</p>
+              <p>{SITE.address.street}</p>
+              <p>
+                {SITE.address.postalCode} {SITE.address.city}
+              </p>
+              <p className="pt-3">
+                <a href={SITE.phoneHref} className="link">
+                  {SITE.phoneDisplay}
+                </a>
+              </p>
+              <p>
+                <a href={`mailto:${SITE.email}`} className="link">
+                  {SITE.email}
+                </a>
+              </p>
+            </address>
           </div>
 
-          {/* Footer Links */}
-          {footerLinks.map((section, idx) => (
-            <div key={idx}>
-              <h3 className="text-lg font-semibold text-white mb-4">{section.title}</h3>
-              <ul className="space-y-3">
-                {section.links.map((link, i) => (
-                  <li key={i}>
-                    <Link
-                      href={link.href}
-                      className="text-gray-200 hover:text-[#d4af37] transition hover:pl-1 block"
-                    >
-                      {link.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+          <nav aria-label="Leistungen" className="lg:col-span-4">
+            <h2 className="text-sm text-ink-muted">Leistungen</h2>
+            <ul className="mt-4 space-y-2.5">
+              {[...CORE_SERVICES, ...MORE_SERVICES].map((s) => (
+                <li key={s.href}>
+                  <Link href={s.href} className="link text-ink-soft hover:text-ink">
+                    {s.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+
+          <nav aria-label="Unternehmen" className="lg:col-span-3">
+            <h2 className="text-sm text-ink-muted">CAIT</h2>
+            <ul className="mt-4 space-y-2.5">
+              {company.map((s) => (
+                <li key={s.href}>
+                  <Link href={s.href} className="link text-ink-soft hover:text-ink">
+                    {s.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            <a
+              href={SITE.googlePartnerUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="link mt-8 inline-block text-sm text-ink-muted hover:text-ink"
+            >
+              Google Partner – Profil bei Google
+            </a>
+          </nav>
         </div>
 
-        {/* Bottom Bar */}
-        <div className="border-t border-[#151b2e] mt-16 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <div className="text-sm text-[#d4af37]">
-            &copy; {new Date().getFullYear()} CAIT Social Media. Alle Rechte vorbehalten.
-          </div>
+        <div className="cut mt-16" aria-hidden="true" />
 
-          <div className="flex gap-6">
-            <Link href="/datenschutz" className="text-sm hover:underline hover:text-[#d4af37]">
-              Datenschutz
-            </Link>
-            <Link href="/impressum" className="text-sm hover:underline hover:text-[#d4af37]">
-              Impressum
-            </Link>
-          </div>
+        <div className="mt-8 flex flex-col gap-4 text-sm text-ink-muted sm:flex-row sm:items-center sm:justify-between">
+          <p>© {new Date().getFullYear()} {SITE.legalName}</p>
+          <ul className="flex gap-6">
+            <li>
+              <Link href="/impressum" className="link hover:text-ink">
+                Impressum
+              </Link>
+            </li>
+            <li>
+              <Link href="/datenschutz" className="link hover:text-ink">
+                Datenschutz
+              </Link>
+            </li>
+          </ul>
         </div>
       </div>
     </footer>

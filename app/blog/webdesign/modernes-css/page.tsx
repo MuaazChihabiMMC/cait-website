@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Moderne CSS-Techniken 2024 | CAITSocialMedia',
+  title: { absolute: 'Moderne CSS-Techniken 2024 | CAITSocialMedia' },
   description: 'Aktuelle CSS-Features wie Grid, Container Queries und neue Layout-Methoden für moderne Webentwicklung',
   alternates: {
     canonical: 'https://www.caitsocialmedia.com/blog/webdesign/modernes-css',
@@ -27,9 +27,9 @@ const post = {
    <h2 class="text-2xl font-bold text-white mt-8 mb-4">Die Evolution von CSS</h2>
 <p class="text-gray-300 mb-6">CSS hat sich in den letzten Jahren rasant weiterentwickelt. Während wir früher mit Float-basierten Layouts kämpften, stehen uns heute mächtige Tools wie Grid, Flexbox und Container Queries zur Verfügung, die das Webdesign revolutioniert haben.</p>
 
-<div class="bg-blue-900/30 border-l-4 border-blue-400 p-4 my-6 rounded-r">
-  <p class="font-semibold text-blue-300 mb-1">Statistik:</p>
-  <p class="text-blue-200">Laut State of CSS 2023 verwenden bereits 87% der Entwickler CSS Grid und 92% Flexbox in ihren Projekten.</p>
+<div class="bg-night-700/30 border-l-4 border-gold-300/40 p-4 my-6 rounded-r">
+  <p class="font-semibold text-gold-200 mb-1">Statistik:</p>
+  <p class="text-ink-soft">Laut State of CSS 2023 verwenden bereits 87% der Entwickler CSS Grid und 92% Flexbox in ihren Projekten.</p>
 </div>
 
 <h3 class="text-xl font-bold text-white mt-8 mb-4">1. CSS Grid: Das ultimative Layout-Tool</h3>
@@ -37,7 +37,7 @@ const post = {
 
 <div class="grid md:grid-cols-2 gap-6 my-8">
   <div class="bg-gray-800/50 p-6 rounded-lg shadow border border-gray-700">
-    <h4 class="font-bold text-blue-400 mb-3">Grid-Grundlagen</h4>
+    <h4 class="font-bold text-gold-300 mb-3">Grid-Grundlagen</h4>
     <ul class="space-y-2 text-gray-300">
       <li>• <code class="bg-gray-700 px-1 rounded">display: grid</code> aktiviert Grid</li>
       <li>• <code class="bg-gray-700 px-1 rounded">grid-template-columns</code> definiert Spalten</li>
@@ -46,7 +46,7 @@ const post = {
     </ul>
   </div>
   <div class="bg-gray-800/50 p-6 rounded-lg shadow border border-gray-700">
-    <h4 class="font-bold text-blue-400 mb-3">Fortgeschrittene Techniken</h4>
+    <h4 class="font-bold text-gold-300 mb-3">Fortgeschrittene Techniken</h4>
     <ul class="space-y-2 text-gray-300">
       <li>• <code class="bg-gray-700 px-1 rounded">grid-template-areas</code> für semantische Layouts</li>
       <li>• <code class="bg-gray-700 px-1 rounded">minmax()</code> für flexible Größen</li>
@@ -56,9 +56,9 @@ const post = {
   </div>
 </div>
 
-<div class="bg-blue-900/30 border-l-4 border-blue-400 p-4 my-6 rounded-r">
-  <p class="font-semibold text-blue-300 mb-1">Beispiel:</p>
-  <pre class="text-blue-200 bg-gray-800 p-4 rounded overflow-x-auto">
+<div class="bg-night-700/30 border-l-4 border-gold-300/40 p-4 my-6 rounded-r">
+  <p class="font-semibold text-gold-200 mb-1">Beispiel:</p>
+  <pre class="text-ink-soft bg-gray-800 p-4 rounded overflow-x-auto">
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -103,7 +103,7 @@ const post = {
 
 <div class="grid md:grid-cols-2 gap-6 my-8">
   <div class="bg-gray-800/50 p-6 rounded-lg shadow border border-gray-700">
-    <h4 class="font-bold text-blue-400 mb-3">Layout & Design</h4>
+    <h4 class="font-bold text-gold-300 mb-3">Layout & Design</h4>
     <ul class="space-y-2 text-gray-300">
       <li>• <span class="font-medium">CSS Nesting:</span> Verschachtelung von Selektoren</li>
       <li>• <span class="font-medium">:has():</span> Elternselektor für komplexe Bedingungen</li>
@@ -112,7 +112,7 @@ const post = {
     </ul>
   </div>
   <div class="bg-gray-800/50 p-6 rounded-lg shadow border border-gray-700">
-    <h4 class="font-bold text-blue-400 mb-3">Animation & Interaktion</h4>
+    <h4 class="font-bold text-gold-300 mb-3">Animation & Interaktion</h4>
     <ul class="space-y-2 text-gray-300">
       <li>• <span class="font-medium">View Transitions API:</span> Native Seitenübergänge</li>
       <li>• <span class="font-medium">@scroll-timeline:</span> Animationen basierend auf Scroll</li>
@@ -152,15 +152,15 @@ const post = {
 
 export default function ModernCSSPage() {
   return (
-    <div className="bg-[#0c1832] min-h-screen">
+    <div className="bg-[#0c1527] min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-20 px-6">
+      <section className="bg-gradient-to-r from-night-700 to-night text-white py-20 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <span className="inline-block px-4 py-2 bg-white/20 rounded-full text-sm font-semibold mb-4">
             Frontend
           </span>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">{post.title}</h1>
-          <div className="flex items-center justify-center space-x-4 text-blue-100">
+          <div className="flex items-center justify-center space-x-4 text-ink-soft">
             <span>{post.date}</span>
             <span>•</span>
             <span>{post.readTime} Lesezeit</span>
@@ -183,14 +183,14 @@ export default function ModernCSSPage() {
 
         {/* Article Content */}
         <div 
-          className="prose prose-lg max-w-none prose-headings:text-white prose-p:text-gray-300 prose-strong:text-white prose-code:bg-gray-800 prose-code:text-blue-300 prose-pre:bg-gray-800 prose-pre:text-blue-200 prose-li:text-gray-300 prose-a:text-blue-400 hover:prose-a:text-blue-300 prose-table:text-gray-300 prose-th:text-gray-300 prose-td:text-gray-300"
+          className="prose prose-lg max-w-none prose-headings:text-white prose-p:text-gray-300 prose-strong:text-white prose-code:bg-gray-800 prose-code:text-gold-200 prose-pre:bg-gray-800 prose-pre:text-ink-soft prose-li:text-gray-300 prose-a:text-gold-300 hover:prose-a:text-gold-200 prose-table:text-gray-300 prose-th:text-gray-300 prose-td:text-gray-300"
           dangerouslySetInnerHTML={{ __html: post.content }}
         />
 
         {/* Tags */}
         <div className="flex flex-wrap gap-2 mt-12">
           {post.tags.map(tag => (
-            <span key={tag} className="px-3 py-1 bg-blue-900/50 text-blue-300 text-sm rounded-full border border-blue-800">
+            <span key={tag} className="px-3 py-1 bg-night-700/50 text-gold-200 text-sm rounded-full border border-night-600">
               #{tag}
             </span>
           ))}
@@ -211,10 +211,10 @@ export default function ModernCSSPage() {
             </div>
             <div className="text-center md:text-left">
               <h3 className="text-xl font-bold text-white">{post.author.name}</h3>
-              <p className="text-blue-400 font-medium mb-2 md:mb-3">{post.author.role}</p>
+              <p className="text-gold-300 font-medium mb-2 md:mb-3">{post.author.role}</p>
               <p className="text-gray-300 text-sm md:text-base">{post.author.bio}</p>
               <div className="flex justify-center md:justify-start space-x-4 mt-4">
-                <a href="https://www.linkedin.com/in/muaaz-chihabi/" className="text-blue-400 hover:text-blue-300 transition-colors">
+                <a href="https://www.linkedin.com/in/muaaz-chihabi/" className="text-gold-300 hover:text-gold-200 transition-colors">
                   <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
                   </svg>
@@ -231,24 +231,24 @@ export default function ModernCSSPage() {
         <div className="grid md:grid-cols-3 gap-6 mb-16">
 
           {/* Artikel 1 */}
-          <article className="group relative bg-gray-800/80 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-700 hover:border-blue-500">
+          <article className="group relative bg-gray-800/80 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-700 hover:border-gold-300/40">
             <div className="relative h-48 overflow-hidden">
               <Image src="/responsive-design.svg" alt="Responsive Design Techniken für alle Bildschirmgrößen" fill className="object-cover transition-transform duration-500 group-hover:scale-105" />
               <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent" />
             </div>
             <div className="p-6">
               <div className="flex flex-wrap gap-2 mb-3">
-                <span className="px-3 py-1 bg-blue-900/30 text-blue-300 text-xs font-medium rounded-full border border-blue-800">Responsive</span>
-                <span className="px-3 py-1 bg-blue-900/30 text-blue-300 text-xs font-medium rounded-full border border-blue-800">UI/UX</span>
+                <span className="px-3 py-1 bg-night-700/30 text-gold-200 text-xs font-medium rounded-full border border-night-600">Responsive</span>
+                <span className="px-3 py-1 bg-night-700/30 text-gold-200 text-xs font-medium rounded-full border border-night-600">UI/UX</span>
               </div>
-              <h3 className="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
+              <h3 className="text-xl font-bold text-white mb-2 group-hover:text-gold-300 transition-colors">
                 Responsive Webdesign: Best Practices 2024
               </h3>
               <p className="text-gray-300 mb-4">Moderne Techniken für Websites, die auf allen Geräten perfekt aussehen.</p>
               <div className="flex items-center justify-between">
                 <span className="text-sm text-gray-400">7 min Lesezeit</span>
                 <Link href="/blog/webdesign/responsives-webdesign" aria-label="Responsive Webdesign Artikel öffnen">
-                  <span className="text-blue-400 font-medium flex items-center group-hover:translate-x-1 transition-transform">
+                  <span className="text-gold-300 font-medium flex items-center group-hover:translate-x-1 transition-transform">
                     Best Practices ansehen
                     <svg xmlns="https://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -260,24 +260,24 @@ export default function ModernCSSPage() {
           </article>
 
           {/* Artikel 2 */}
-          <article className="group relative bg-gray-800/80 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-700 hover:border-blue-500">
+          <article className="group relative bg-gray-800/80 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-700 hover:border-gold-300/40">
             <div className="relative h-48 overflow-hidden">
               <Image src="/js-frameworks.webp" alt="Vergleich von JavaScript Frameworks: React, Vue, Angular, Svelte" fill className="object-cover transition-transform duration-500 group-hover:scale-105" />
               <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent" />
             </div>
             <div className="p-6">
               <div className="flex flex-wrap gap-2 mb-3">
-                <span className="px-3 py-1 bg-blue-900/30 text-blue-300 text-xs font-medium rounded-full border border-blue-800">JavaScript</span>
-                <span className="px-3 py-1 bg-blue-900/30 text-blue-300 text-xs font-medium rounded-full border border-blue-800">Frameworks</span>
+                <span className="px-3 py-1 bg-night-700/30 text-gold-200 text-xs font-medium rounded-full border border-night-600">JavaScript</span>
+                <span className="px-3 py-1 bg-night-700/30 text-gold-200 text-xs font-medium rounded-full border border-night-600">Frameworks</span>
               </div>
-              <h3 className="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
+              <h3 className="text-xl font-bold text-white mb-2 group-hover:text-gold-300 transition-colors">
                 JavaScript Frameworks im Vergleich
               </h3>
               <p className="text-gray-300 mb-4">React, Vue, Angular oder Svelte? Die beste Wahl für Ihr Projekt.</p>
               <div className="flex items-center justify-between">
                 <span className="text-sm text-gray-400">10 min Lesezeit</span>
                 <Link href="/blog/webdesign/javascript-frameworks" aria-label="JS Framework Artikel öffnen">
-                  <span className="text-blue-400 font-medium flex items-center group-hover:translate-x-1 transition-transform">
+                  <span className="text-gold-300 font-medium flex items-center group-hover:translate-x-1 transition-transform">
                     Frameworks vergleichen
                     <svg xmlns="https://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -289,24 +289,24 @@ export default function ModernCSSPage() {
           </article>
 
           {/* Artikel 3 */}
-          <article className="group relative bg-gray-800/80 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-700 hover:border-blue-500">
+          <article className="group relative bg-gray-800/80 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-700 hover:border-gold-300/40">
             <div className="relative h-48 overflow-hidden">
               <Image src="/website-speed.webp" alt="Website Performance Optimierung - Ladezeiten verbessern" fill className="object-cover transition-transform duration-500 group-hover:scale-105" />
               <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent" />
             </div>
             <div className="p-6">
               <div className="flex flex-wrap gap-2 mb-3">
-                <span className="px-3 py-1 bg-blue-900/30 text-blue-300 text-xs font-medium rounded-full border border-blue-800">Performance</span>
-                <span className="px-3 py-1 bg-blue-900/30 text-blue-300 text-xs font-medium rounded-full border border-blue-800">Optimierung</span>
+                <span className="px-3 py-1 bg-night-700/30 text-gold-200 text-xs font-medium rounded-full border border-night-600">Performance</span>
+                <span className="px-3 py-1 bg-night-700/30 text-gold-200 text-xs font-medium rounded-full border border-night-600">Optimierung</span>
               </div>
-              <h3 className="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
+              <h3 className="text-xl font-bold text-white mb-2 group-hover:text-gold-300 transition-colors">
                 Website-Performance maximieren
               </h3>
               <p className="text-gray-300 mb-4">Wie Sie Ladezeiten reduzieren und die User Experience verbessern.</p>
               <div className="flex items-center justify-between">
                 <span className="text-sm text-gray-400">9 min Lesezeit</span>
                 <Link href="/blog/webdesign/performance-optimierung" aria-label="Performance-Optimierung Artikel öffnen">
-                  <span className="text-blue-400 font-medium flex items-center group-hover:translate-x-1 transition-transform">
+                  <span className="text-gold-300 font-medium flex items-center group-hover:translate-x-1 transition-transform">
                     Performance-Tipps
                     <svg xmlns="https://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

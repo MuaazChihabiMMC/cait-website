@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export default function KeywordRecherchePage() {
   return (
-    <main className="bg-primary min-h-screen text-white">
+    <div className="bg-primary min-h-screen text-white">
 
       {/* Hero Section */}
       <section className="relative py-24 md:py-32 overflow-hidden">
@@ -258,6 +258,6 @@ export default function KeywordRecherchePage() {
         </motion.div>
       </section>
 
-    </main>
+    </div>
   );
 }

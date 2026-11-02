@@ -7,7 +7,7 @@ import { FaChartLine, FaArrowRight } from 'react-icons/fa';
 
 export default function MonitoringReportingClient() {
   return (
-    <main className="px-4 pt-32 md:pt-40 pb-12 md:px-6 max-w-5xl mx-auto text-white">
+    <div className="px-4 pt-32 md:pt-40 pb-12 md:px-6 max-w-5xl mx-auto text-white">
       <motion.section
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -74,11 +74,11 @@ export default function MonitoringReportingClient() {
         </div>
 
         <div className="space-y-6">
-          <h2 className="text-2xl font-semibold">Beispiele aus der Praxis</h2>
+          <h2 className="text-2xl font-semibold">Wofür Monitoring in der Praxis nützt</h2>
           <ul className="list-disc pl-6 text-gray-300 space-y-2">
-            <li>Ein Online-Shop konnte durch frühzeitiges Erkennen von Ladezeitproblemen seine Mobile Conversion Rate um 27% steigern.</li>
-            <li>Ein B2B-Dienstleister reagierte durch unser Monitoring auf Rankingverluste bei einem Hauptkeyword, noch bevor es zu Umsatzverlusten kam.</li>
-            <li>Ein lokales Unternehmen stellte mithilfe der Dashboard-Analysen fest, dass 40% seines Traffics aus einer nicht relevanten Stadt kam, nach Anpassung der Zielregion stiegen die Kontaktanfragen um 38%.</li>
+            <li>Ladezeitprobleme werden früh erkannt, bevor sie mobile Nutzer und Umsätze kosten.</li>
+            <li>Rankingverluste bei wichtigen Suchbegriffen fallen auf, bevor sie sich in den Anfragen bemerkbar machen.</li>
+            <li>Auswertungen zeigen, aus welchen Regionen und Kanälen Besucher kommen – und ob das zu Ihrem Einzugsgebiet passt.</li>
           </ul>
         </div>
 
@@ -101,13 +101,13 @@ export default function MonitoringReportingClient() {
         <div className="mt-6">
           <Link 
             href="/kontakt" 
-            className="inline-flex items-center gap-2 bg-gold-300 text-white px-6 py-3 rounded-full font-semibold shadow hover:bg-blue-700 transition"
+            className="inline-flex items-center gap-2 bg-gold-300 text-night px-6 py-3 rounded-full font-semibold shadow hover:bg-night-600 transition"
           >
             Beratung anfordern <FaArrowRight />
           </Link>
         </div>
       </motion.section>
-    </main>
+    </div>
   );
 }
 

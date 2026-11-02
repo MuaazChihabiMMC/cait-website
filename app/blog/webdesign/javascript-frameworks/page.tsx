@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'JavaScript Frameworks im Vergleich | CAITSocialMedia',
+  title: { absolute: 'JavaScript Frameworks im Vergleich | CAITSocialMedia' },
   description: 'React, Vue, Angular oder Svelte? Die beste Wahl für Ihr Projekt.',
   alternates: {
     canonical: 'https://www.caitsocialmedia.com/blog/webdesign/javascript-frameworks',
@@ -27,9 +27,9 @@ const post = {
     <h2 class="text-2xl font-bold text-white mt-8 mb-4">Die JavaScript-Framework-Landschaft 2024</h2>
 <p class="text-gray-300 mb-6">Die Wahl des richtigen JavaScript-Frameworks kann über den Erfolg Ihres Projekts entscheiden. Während React nach wie vor Marktführer ist, haben sich Vue, Angular und Svelte zu ernstzunehmenden Alternativen entwickelt, die jeweils ihre eigenen Stärken haben.</p>
 
-<div class="bg-blue-900/30 border-l-4 border-blue-500 p-4 my-6 rounded-r">
-  <p class="font-semibold text-blue-300 mb-1">Statistik:</p>
-  <p class="text-blue-200">Laut State of JS 2023 verwenden 82% der Entwickler React, 46% Vue, 23% Angular und 18% Svelte in ihren Projekten.</p>
+<div class="bg-night-700/30 border-l-4 border-gold-300/40 p-4 my-6 rounded-r">
+  <p class="font-semibold text-gold-200 mb-1">Statistik:</p>
+  <p class="text-ink-soft">Laut State of JS 2023 verwenden 82% der Entwickler React, 46% Vue, 23% Angular und 18% Svelte in ihren Projekten.</p>
 </div>
 
 <h3 class="text-xl font-bold text-white mt-8 mb-4">1. React: Der unangefochtene Marktführer</h3>
@@ -37,7 +37,7 @@ const post = {
 
 <div class="grid md:grid-cols-2 gap-6 my-8">
   <div class="bg-gray-800 p-6 rounded-lg shadow border border-gray-700">
-    <h4 class="font-bold text-blue-400 mb-3">Vorteile</h4>
+    <h4 class="font-bold text-gold-300 mb-3">Vorteile</h4>
     <ul class="space-y-2 text-gray-300">
       <li>• Große Community und Ökosystem</li>
       <li>• Flexibles, komponentenbasiertes Design</li>
@@ -46,7 +46,7 @@ const post = {
     </ul>
   </div>
   <div class="bg-gray-800 p-6 rounded-lg shadow border border-gray-700">
-    <h4 class="font-bold text-blue-400 mb-3">Nachteile</h4>
+    <h4 class="font-bold text-gold-300 mb-3">Nachteile</h4>
     <ul class="space-y-2 text-gray-300">
       <li>• JSX hat steile Lernkurve</li>
       <li>• Häufige Breaking Changes</li>
@@ -56,9 +56,9 @@ const post = {
   </div>
 </div>
 
-<div class="bg-blue-900/20 border-l-4 border-blue-400 p-4 my-6 rounded-r">
-  <p class="font-semibold text-blue-300 mb-1">Beispiel:</p>
-  <pre class="text-blue-200 bg-gray-800 p-4 rounded overflow-x-auto">
+<div class="bg-night-700/20 border-l-4 border-gold-300/40 p-4 my-6 rounded-r">
+  <p class="font-semibold text-gold-200 mb-1">Beispiel:</p>
+  <pre class="text-ink-soft bg-gray-800 p-4 rounded overflow-x-auto">
 function Counter() {
   const [count, setCount] = useState(0);
   return (
@@ -106,7 +106,7 @@ function Counter() {
 
 <div class="grid md:grid-cols-2 gap-6 my-8">
   <div class="bg-gray-800 p-6 rounded-lg shadow border border-gray-700">
-    <h4 class="font-bold text-blue-400 mb-3">Stärken</h4>
+    <h4 class="font-bold text-gold-300 mb-3">Stärken</h4>
     <ul class="space-y-2 text-gray-300">
       <li>• All-in-One-Lösung (Routing, Forms etc.)</li>
       <li>• TypeScript-first</li>
@@ -115,7 +115,7 @@ function Counter() {
     </ul>
   </div>
   <div class="bg-gray-800 p-6 rounded-lg shadow border border-gray-700">
-    <h4 class="font-bold text-blue-400 mb-3">Schwächen</h4>
+    <h4 class="font-bold text-gold-300 mb-3">Schwächen</h4>
     <ul class="space-y-2 text-gray-300">
       <li>• Steile Lernkurve</li>
       <li>• Komplexe Konzepte (Zones, Change Detection)</li>
@@ -155,15 +155,15 @@ function Counter() {
 
 export default function JavaScriptFrameworksPage() {
   return (
-    <div className="bg-[#0c1832] min-h-screen">
+    <div className="bg-[#0c1527] min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-20 px-6">
+      <section className="bg-gradient-to-r from-night-700 to-night text-white py-20 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <span className="inline-block px-4 py-2 bg-white/20 rounded-full text-sm font-semibold mb-4">
             Frontend
           </span>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">{post.title}</h1>
-          <div className="flex items-center justify-center space-x-4 text-blue-200">
+          <div className="flex items-center justify-center space-x-4 text-ink-soft">
             <span>{post.date}</span>
             <span>•</span>
             <span>{post.readTime} Lesezeit</span>
@@ -186,14 +186,14 @@ export default function JavaScriptFrameworksPage() {
 
         {/* Article Content */}
         <div 
-          className="prose prose-lg max-w-none prose-headings:text-white prose-p:text-gray-300 prose-strong:text-white prose-li:text-gray-300 prose-a:text-blue-400 hover:prose-a:text-blue-300 prose-blockquote:text-gray-300 prose-pre:bg-gray-900/50 prose-pre:text-gray-200"
+          className="prose prose-lg max-w-none prose-headings:text-white prose-p:text-gray-300 prose-strong:text-white prose-li:text-gray-300 prose-a:text-gold-300 hover:prose-a:text-gold-200 prose-blockquote:text-gray-300 prose-pre:bg-gray-900/50 prose-pre:text-gray-200"
           dangerouslySetInnerHTML={{ __html: post.content }}
         />
 
         {/* Tags */}
         <div className="flex flex-wrap gap-2 mt-12">
           {post.tags.map(tag => (
-            <span key={tag} className="px-3 py-1 bg-blue-900/50 text-blue-300 text-sm rounded-full">
+            <span key={tag} className="px-3 py-1 bg-night-700/50 text-gold-200 text-sm rounded-full">
               #{tag}
             </span>
           ))}
@@ -214,10 +214,10 @@ export default function JavaScriptFrameworksPage() {
             </div>
             <div className="text-center md:text-left">
               <h3 className="text-xl font-bold text-white">{post.author.name}</h3>
-              <p className="text-blue-400 font-medium mb-2 md:mb-3">{post.author.role}</p>
+              <p className="text-gold-300 font-medium mb-2 md:mb-3">{post.author.role}</p>
               <p className="text-gray-300 text-sm md:text-base">{post.author.bio}</p>
               <div className="flex justify-center md:justify-start space-x-4 mt-4">
-                <a href="https://www.linkedin.com/in/muaaz-chihabi/" className="text-blue-400 hover:text-blue-300 transition-colors">
+                <a href="https://www.linkedin.com/in/muaaz-chihabi/" className="text-gold-300 hover:text-gold-200 transition-colors">
                   <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
                   </svg>
@@ -246,10 +246,10 @@ export default function JavaScriptFrameworksPage() {
             </div>
             <div className="p-6">
               <div className="flex flex-wrap gap-2 mb-3">
-                <span className="px-3 py-1 bg-blue-900/50 text-blue-300 text-xs font-medium rounded-full">Responsive</span>
-                <span className="px-3 py-1 bg-blue-900/50 text-blue-300 text-xs font-medium rounded-full">UI/UX</span>
+                <span className="px-3 py-1 bg-night-700/50 text-gold-200 text-xs font-medium rounded-full">Responsive</span>
+                <span className="px-3 py-1 bg-night-700/50 text-gold-200 text-xs font-medium rounded-full">UI/UX</span>
               </div>
-              <h3 className="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
+              <h3 className="text-xl font-bold text-white mb-2 group-hover:text-gold-300 transition-colors">
                 Responsive Webdesign: Best Practices 2024
               </h3>
               <p className="text-gray-400 mb-4">Moderne Techniken für Websites, die auf allen Geräten perfekt aussehen.</p>
@@ -257,7 +257,7 @@ export default function JavaScriptFrameworksPage() {
                 <span className="text-sm text-gray-500">7 min Lesezeit</span>
                 <Link 
                   href="/blog/webdesign/responsives-webdesign" 
-                  className="text-blue-400 font-medium flex items-center group-hover:translate-x-1 transition-transform"
+                  className="text-gold-300 font-medium flex items-center group-hover:translate-x-1 transition-transform"
                   aria-label="Zu Responsive Webdesign Best Practices"
                 >
                   Best Practices entdecken
@@ -282,10 +282,10 @@ export default function JavaScriptFrameworksPage() {
             </div>
             <div className="p-6">
               <div className="flex flex-wrap gap-2 mb-3">
-                <span className="px-3 py-1 bg-blue-900/50 text-blue-300 text-xs font-medium rounded-full">CSS</span>
-                <span className="px-3 py-1 bg-blue-900/50 text-blue-300 text-xs font-medium rounded-full">Frontend</span>
+                <span className="px-3 py-1 bg-night-700/50 text-gold-200 text-xs font-medium rounded-full">CSS</span>
+                <span className="px-3 py-1 bg-night-700/50 text-gold-200 text-xs font-medium rounded-full">Frontend</span>
               </div>
-              <h3 className="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
+              <h3 className="text-xl font-bold text-white mb-2 group-hover:text-gold-300 transition-colors">
                 Moderne CSS-Techniken 2024
               </h3>
               <p className="text-gray-400 mb-4">CSS Grid, Container Queries und neue Features effektiv nutzen.</p>
@@ -293,7 +293,7 @@ export default function JavaScriptFrameworksPage() {
                 <span className="text-sm text-gray-500">8 min Lesezeit</span>
                 <Link 
                   href="/blog/webdesign/modernes-css" 
-                  className="text-blue-400 font-medium flex items-center group-hover:translate-x-1 transition-transform"
+                  className="text-gold-300 font-medium flex items-center group-hover:translate-x-1 transition-transform"
                   aria-label="Zu modernen CSS-Techniken"
                 >
                   CSS-Trends ansehen
@@ -318,10 +318,10 @@ export default function JavaScriptFrameworksPage() {
             </div>
             <div className="p-6">
               <div className="flex flex-wrap gap-2 mb-3">
-                <span className="px-3 py-1 bg-blue-900/50 text-blue-300 text-xs font-medium rounded-full">Performance</span>
-                <span className="px-3 py-1 bg-blue-900/50 text-blue-300 text-xs font-medium rounded-full">Optimierung</span>
+                <span className="px-3 py-1 bg-night-700/50 text-gold-200 text-xs font-medium rounded-full">Performance</span>
+                <span className="px-3 py-1 bg-night-700/50 text-gold-200 text-xs font-medium rounded-full">Optimierung</span>
               </div>
-              <h3 className="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
+              <h3 className="text-xl font-bold text-white mb-2 group-hover:text-gold-300 transition-colors">
                 Website-Performance maximieren
               </h3>
               <p className="text-gray-400 mb-4">Wie Sie Ladezeiten reduzieren und die User Experience verbessern.</p>
@@ -329,7 +329,7 @@ export default function JavaScriptFrameworksPage() {
                 <span className="text-sm text-gray-500">9 min Lesezeit</span>
                 <Link 
                   href="/blog/webdesign/performance-optimierung" 
-                  className="text-blue-400 font-medium flex items-center group-hover:translate-x-1 transition-transform"
+                  className="text-gold-300 font-medium flex items-center group-hover:translate-x-1 transition-transform"
                   aria-label="Zu Website Performance Optimierung"
                 >
                   Optimierungstipps
@@ -343,19 +343,19 @@ export default function JavaScriptFrameworksPage() {
         </div>
 
         {/* Newsletter CTA */}
-        <div className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-xl p-8 md:p-10 text-white shadow-lg">
+        <div className="bg-gradient-to-r from-gold-300 to-night rounded-xl p-8 md:p-10 text-white shadow-lg">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-2xl md:text-3xl font-bold mb-4">Frontend Updates erhalten</h2>
-            <p className="text-blue-200 mb-6">Abonnieren Sie unseren Newsletter für exklusive Technologie-Tipps</p>
+            <p className="text-ink-soft mb-6">Abonnieren Sie unseren Newsletter für exklusive Technologie-Tipps</p>
             <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
               <input 
                 type="email" 
                 placeholder="Ihre E-Mail-Adresse" 
-                className="flex-grow px-4 py-3 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                className="flex-grow px-4 py-3 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-gold-300"
                 aria-label="E-Mail-Adresse für Newsletter"
               />
               <button 
-                className="px-6 py-3 bg-white text-blue-700 font-semibold rounded-lg hover:bg-gray-100 transition-colors"
+                className="px-6 py-3 bg-white text-ink-muted font-semibold rounded-lg hover:bg-gray-100 transition-colors"
                 aria-label="Newsletter abonnieren"
               >
                 Jetzt anmelden

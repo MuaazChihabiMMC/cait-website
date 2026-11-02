@@ -1,28 +1,29 @@
-'use client';
-
 import { FaWhatsapp, FaPhoneAlt } from 'react-icons/fa';
+import { SITE } from '@/lib/site';
 
+// Schnellkontakt nur auf kleinen Bildschirmen, wo Anrufen und WhatsApp am häufigsten genutzt werden.
 export default function StickyButtons() {
   return (
-    <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
-      {/* WhatsApp Button */}
+    <div
+      className="fixed bottom-[max(1rem,env(safe-area-inset-bottom))] right-4 z-40 flex flex-col gap-2 lg:hidden"
+      aria-label="Schnellkontakt"
+      role="group"
+    >
       <a
-        href="https://wa.me/493022689840"
+        href={SITE.whatsapp}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="WhatsApp Nachricht senden"
-        className="group flex items-center justify-center w-14 h-14 rounded-full bg-[#25D366] text-white shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300"
+        aria-label="Nachricht per WhatsApp senden"
+        className="flex h-12 w-12 items-center justify-center bg-[#1f9d55] text-white shadow-lg transition-transform active:scale-95"
       >
-        <FaWhatsapp className="text-2xl group-hover:scale-110 transition-transform duration-300" />
+        <FaWhatsapp className="text-xl" aria-hidden="true" />
       </a>
-
-      {/* Call Button */}
       <a
-        href="tel:+493022689840"
-        aria-label="Jetzt anrufen"
-        className="group flex items-center justify-center w-14 h-14 rounded-full bg-[#d4af37] text-white shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300"
+        href={SITE.phoneHref}
+        aria-label={`Anrufen: ${SITE.phoneDisplay}`}
+        className="flex h-12 w-12 items-center justify-center bg-gold-300 text-night shadow-lg transition-transform active:scale-95"
       >
-        <FaPhoneAlt className="text-xl group-hover:scale-110 transition-transform duration-300" />
+        <FaPhoneAlt className="text-lg" aria-hidden="true" />
       </a>
     </div>
   );
