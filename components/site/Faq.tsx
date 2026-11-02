@@ -19,7 +19,7 @@ export default function Faq({
         {items.map((item) => (
           <details key={item.q} className={`faq-item group border-b ${line}`}>
             <summary className="flex items-start justify-between gap-6 py-6 text-left">
-              <h3 className="font-display text-xl leading-snug sm:text-2xl">{item.q}</h3>
+              <h3 className="font-display font-semibold text-lg leading-snug sm:text-xl">{item.q}</h3>
               <span
                 aria-hidden="true"
                 className="faq-icon mt-1.5 flex h-6 w-6 shrink-0 items-center justify-center text-gold-300"

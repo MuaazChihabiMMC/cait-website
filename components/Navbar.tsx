@@ -122,7 +122,7 @@ export default function Navbar() {
                         aria-current={isActive(s.href) ? 'page' : undefined}
                         className="group block p-4 transition-colors hover:bg-night-600 focus-visible:bg-night-600"
                       >
-                        <span className="font-display text-xl text-ink group-hover:text-gold-200">{s.label}</span>
+                        <span className="font-display font-semibold text-xl text-ink group-hover:text-gold-200">{s.label}</span>
                         <span className="mt-1 block text-sm text-ink-muted">{s.description}</span>
                       </Link>
                     </li>
@@ -187,7 +187,7 @@ export default function Navbar() {
       <div
         id="mobilmenue"
         hidden={!menuOpen}
-        className="fixed inset-x-0 bottom-0 top-[var(--header-h)] z-40 overflow-y-auto bg-night lg:hidden"
+        className="fixed inset-x-0 bottom-0 top-[var(--header-h)] z-[45] overflow-y-auto bg-night lg:hidden"
       >
         <nav aria-label="Mobile Navigation" className="wrap flex min-h-full flex-col py-8">
           <p className="text-sm text-ink-muted">Leistungen</p>
@@ -195,7 +195,7 @@ export default function Navbar() {
             {CORE_SERVICES.map((s) => (
               <li key={s.href} className="border-b border-[var(--line-dark)]">
                 <Link href={s.href} onClick={closeAll} className="flex items-baseline justify-between gap-4 py-4">
-                  <span className="font-display text-2xl text-ink">{s.label}</span>
+                  <span className="font-display font-semibold text-2xl text-ink">{s.label}</span>
                 </Link>
               </li>
             ))}

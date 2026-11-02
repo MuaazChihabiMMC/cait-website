@@ -45,7 +45,7 @@ export default function ReferenzenPage() {
                   rel="noopener noreferrer"
                   className="group flex h-full flex-col justify-between gap-6 p-6 transition-colors hover:bg-kalk-100 sm:p-8"
                 >
-                  <span className="font-display text-[1.75rem] leading-tight group-hover:text-gold-500">{c.name}</span>
+                  <span className="font-display font-semibold text-[1.75rem] leading-tight group-hover:text-gold-500">{c.name}</span>
                   <span className="flex items-center justify-between text-sm text-slate-muted">
                     {c.industry}
                     <span className="link-static">
@@ -66,7 +66,7 @@ export default function ReferenzenPage() {
           </h2>
           <ul className="space-y-6 lg:col-span-7">
             <li className="border-t border-[var(--line-dark)] pt-6" data-reveal>
-              <h3 className="font-display text-2xl">Google Partner</h3>
+              <h3 className="font-display font-semibold text-2xl">Google Partner</h3>
               <p className="mt-2 text-ink-muted">
                 CAIT ist im Partnerverzeichnis von Google gelistet.{' '}
                 <a href={SITE.googlePartnerUrl} target="_blank" rel="noopener noreferrer" className="link-static text-ink">
@@ -75,7 +75,7 @@ export default function ReferenzenPage() {
               </p>
             </li>
             <li className="border-t border-[var(--line-dark)] pt-6" data-reveal>
-              <h3 className="font-display text-2xl">Kundenbewertungen</h3>
+              <h3 className="font-display font-semibold text-2xl">Kundenbewertungen</h3>
               <p className="mt-2 text-ink-muted">
                 Bewertungen unserer Kunden sammeln wir bei ProvenExpert.{' '}
                 <a href={SITE.provenExpertUrl} target="_blank" rel="noopener noreferrer" className="link-static text-ink">

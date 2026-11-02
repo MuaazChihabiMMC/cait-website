@@ -11,7 +11,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['var(--font-sans)', 'Inter', 'system-ui', 'sans-serif'],
-        display: ['var(--font-display)', 'Bodoni Moda', 'Georgia', 'serif'],
+        display: ['var(--font-display)', 'Inter', 'system-ui', 'sans-serif'],
       },
       colors: {
         // Markenfarben CAIT – Nachtblau und Gold, für Kontrast verfeinert
@@ -40,12 +40,12 @@ module.exports = {
         },
         ink: {
           DEFAULT: '#edf0f5',
-          muted: '#a3adc2',
-          soft: '#c9d0de',
+          muted: '#b6bfd0',
+          soft: '#dbe1ec',
         },
         slate: {
           ink: '#0c1527',
-          muted: '#4a5468',
+          muted: '#3f4a5e',
         },
         // Ältere Seiten verwenden diese Tokens noch
         primary: {

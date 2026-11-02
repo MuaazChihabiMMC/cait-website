@@ -93,7 +93,7 @@ export default function KontaktForm() {
   if (status === 'sent') {
     return (
       <div ref={successRef} tabIndex={-1} role="status" className="outline-none">
-        <p className="font-display text-3xl leading-tight sm:text-4xl">Anfrage gesendet.</p>
+        <p className="font-display font-semibold text-3xl leading-tight sm:text-4xl">Anfrage gesendet.</p>
         <p className="muted mt-4 max-w-md">
           Danke, {values.name.split(' ')[0]}. Ihre Nachricht ist bei uns angekommen. Wir melden uns per E-Mail
           {values.phone ? ' oder telefonisch' : ''} bei Ihnen.

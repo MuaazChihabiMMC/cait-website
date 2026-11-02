@@ -14,14 +14,14 @@ export default function StickyButtons() {
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Nachricht per WhatsApp senden"
-        className="flex h-12 w-12 items-center justify-center bg-[#1f9d55] text-white shadow-lg transition-transform active:scale-95"
+        className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#1f9d55] text-white shadow-lg transition-transform active:scale-95"
       >
         <FaWhatsapp className="text-xl" aria-hidden="true" />
       </a>
       <a
         href={SITE.phoneHref}
         aria-label={`Anrufen: ${SITE.phoneDisplay}`}
-        className="flex h-12 w-12 items-center justify-center bg-gold-300 text-night shadow-lg transition-transform active:scale-95"
+        className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gold-300 text-night shadow-lg transition-transform active:scale-95"
       >
         <FaPhoneAlt className="text-lg" aria-hidden="true" />
       </a>

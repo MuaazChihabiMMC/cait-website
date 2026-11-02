@@ -4,7 +4,7 @@ import Breadcrumbs from './Breadcrumbs';
 import CtaBand from './CtaBand';
 import Faq from './Faq';
 import JsonLd from './JsonLd';
-import ServiceEmblem from './ServiceEmblem';
+import ServiceVisual from './ServiceVisual';
 import Arrow from './Arrow';
 import { SERVICES, type Service } from '@/lib/services';
 import { SITE, absoluteUrl } from '@/lib/site';
@@ -25,7 +25,6 @@ export function serviceMetadata(s: Service): Metadata {
 }
 
 export default function ServicePage({ service: s }: { service: Service }) {
-  const index = SERVICES.findIndex((x) => x.href === s.href);
   const related = s.related.map((h) => SERVICES.find((x) => x.href === h)!).filter(Boolean);
 
   return (
@@ -47,14 +46,14 @@ export default function ServicePage({ service: s }: { service: Service }) {
       />
 
       {/* Hero */}
-      <section className="relative overflow-hidden pb-16 pt-[calc(var(--header-h)+3rem)] sm:pb-24 sm:pt-[calc(var(--header-h)+4.5rem)]">
+      <section className="bg-grid relative overflow-hidden pb-16 pt-[calc(var(--header-h)+3rem)] sm:pb-24 sm:pt-[calc(var(--header-h)+4.5rem)]">
         <div className="wrap grid gap-12 lg:grid-cols-12 lg:items-center">
-          <div className="lg:col-span-8">
+          <div className="lg:col-span-7">
             <Breadcrumbs items={[{ href: '/leistungen', label: 'Leistungen' }, { href: s.href, label: s.label }]} />
-            <p className="hero-fade mt-10 text-gold-200" style={heroDelay(0)}>
+            <p className="hero-fade eyebrow mt-10" style={heroDelay(0)}>
               {s.label}
             </p>
-            <h1 className="t-h1 mt-4 max-w-[19ch]">
+            <h1 className="t-h1 mt-5 max-w-[20ch]">
               <span className="hero-line">
                 <span style={heroDelay(60)}>{s.h1}</span>
               </span>
@@ -72,11 +71,8 @@ export default function ServicePage({ service: s }: { service: Service }) {
               </a>
             </div>
           </div>
-          <div className="hidden lg:col-span-4 lg:block">
-            <ServiceEmblem active={Math.max(0, index)} className="parallax-slow mx-auto w-full max-w-[340px]" />
-            <p className="mt-4 text-center text-sm text-ink-muted">
-              Eine von sechs Disziplinen, abgestimmt aus einer Hand
-            </p>
+          <div className="hero-fade lg:col-span-5" style={heroDelay(300)}>
+            <ServiceVisual href={s.href} />
           </div>
         </div>
       </section>
@@ -97,7 +93,7 @@ export default function ServicePage({ service: s }: { service: Service }) {
                 data-reveal
                 style={revealDelay(i * 60)}
               >
-                <h3 className="font-display text-2xl leading-snug">{a.title}</h3>
+                <h3 className="font-display font-semibold text-2xl leading-snug">{a.title}</h3>
                 <p className="muted">{a.text}</p>
               </li>
             ))}
@@ -111,11 +107,11 @@ export default function ServicePage({ service: s }: { service: Service }) {
           <h2 id="probleme" className="t-h2 max-w-[20ch]" data-reveal>
             Typische Ausgangslagen – und was wir tun
           </h2>
-          <dl className="mt-14 grid gap-px overflow-hidden border border-[var(--line-dark)] bg-[var(--line-dark)] md:grid-cols-2">
+          <dl className="mt-14 grid gap-4 md:grid-cols-2">
             {s.problems.map((p, i) => (
-              <div key={p.problem} className="bg-night p-7 sm:p-10" data-reveal style={revealDelay((i % 2) * 80)}>
-                <dt className="font-display text-2xl leading-snug">{p.problem}</dt>
-                <dd className="mt-4 text-ink-muted">{p.answer}</dd>
+              <div key={p.problem} className="rounded-2xl border border-white/10 bg-night-700/60 p-7 transition-colors hover:border-gold-300/40 sm:p-9" data-reveal style={revealDelay((i % 2) * 80)}>
+                <dt className="flex gap-4 font-display text-xl font-semibold leading-snug"><span aria-hidden="true" className="mt-1 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-gold-300/15 text-sm text-gold-200">?</span>{p.problem}</dt>
+                <dd className="mt-4 pl-11 text-ink-muted">{p.answer}</dd>
               </div>
             ))}
           </dl>
@@ -136,9 +132,8 @@ export default function ServicePage({ service: s }: { service: Service }) {
           </div>
           <div className="mt-14 grid gap-10 md:grid-cols-3">
             {s.deliverables.map((d, i) => (
-              <div key={d.title} data-reveal style={revealDelay(i * 90)}>
-                <div className="cut" aria-hidden="true" />
-                <h3 className="t-h3 mt-6">{d.title}</h3>
+              <div key={d.title} className="rounded-2xl border border-white/10 bg-night p-7" data-reveal style={revealDelay(i * 90)}>
+                <h3 className="t-h3">{d.title}</h3>
                 <ul className="mt-5 space-y-3">
                   {d.items.map((item) => (
                     <li key={item} className="flex gap-3 text-ink-soft">
@@ -160,14 +155,14 @@ export default function ServicePage({ service: s }: { service: Service }) {
             So läuft die Zusammenarbeit
           </h2>
           <div className="relative mt-14">
-          <span aria-hidden="true" className="draw-line absolute left-0 right-0 top-[1.15rem] hidden h-px bg-[var(--night)] lg:block" />
+          <span aria-hidden="true" className="draw-line absolute left-0 right-0 top-6 hidden h-px bg-[var(--night)]/30 lg:block" />
           <ol className="relative grid gap-10 md:grid-cols-2 lg:grid-flow-col lg:grid-cols-none lg:auto-cols-fr lg:gap-8">
             {s.process.map((step, i) => (
               <li key={step.title} className="relative" data-reveal style={revealDelay(i * 90)}>
-                <span className="relative z-10 inline-flex h-9 min-w-9 items-center justify-center bg-[var(--kalk)] pr-3 font-display text-2xl text-[var(--night)]">
+                <span className="relative z-10 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-[var(--night)] font-display text-xl font-bold text-gold-200 ring-8 ring-[var(--kalk)]">
                   {i + 1}
                 </span>
-                <h3 className="mt-5 font-display text-2xl leading-snug">{step.title}</h3>
+                <h3 className="mt-5 font-display font-semibold text-2xl leading-snug">{step.title}</h3>
                 <p className="muted mt-3">{step.text}</p>
               </li>
             ))}
@@ -243,7 +238,7 @@ export default function ServicePage({ service: s }: { service: Service }) {
               <li key={r.href} className="bg-night-700">
                 <Link href={r.href} className="row-link group flex h-full flex-col gap-3 p-6 sm:p-8">
                   <span className="flex items-center justify-between gap-4">
-                    <span className="hyph font-display text-3xl transition-colors group-hover:text-gold-200">{r.label}</span>
+                    <span className="hyph font-display font-semibold text-3xl transition-colors group-hover:text-gold-200">{r.label}</span>
                     <Arrow className="text-gold-300" />
                   </span>
                   <span className="text-ink-muted">{r.short}</span>

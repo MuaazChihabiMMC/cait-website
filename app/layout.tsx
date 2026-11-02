@@ -1,6 +1,6 @@
 import './globals.css';
 import type { Metadata, Viewport } from 'next';
-import { Bodoni_Moda, Inter } from 'next/font/google';
+import { Bricolage_Grotesque, Inter } from 'next/font/google';
 import LayoutWrapper from './LayoutWrapper';
 import ClientProviders from '@/components/ClientProviders';
 import JsonLd from '@/components/site/JsonLd';
@@ -13,11 +13,9 @@ const inter = Inter({
   variable: '--font-sans',
 });
 
-// Überschriften: Bodoni Moda – greift die kontrastreiche Antiqua der CAIT-Wortmarke auf
-const bodoni = Bodoni_Moda({
+// Überschriften: Bricolage Grotesque – kräftig, eigenständig und auch auf dunklem Grund gut lesbar
+const display = Bricolage_Grotesque({
   subsets: ['latin'],
-  style: ['normal', 'italic'],
-  axes: ['opsz'],
   display: 'swap',
   variable: '--font-display',
 });
@@ -111,7 +109,7 @@ const organizationGraph = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="de" className={`${inter.variable} ${bodoni.variable}`} suppressHydrationWarning>
+    <html lang="de" className={`${inter.variable} ${display.variable}`} suppressHydrationWarning>
       <head>
         {/* Markiert, dass JavaScript läuft – erst dann werden Scroll-Einblendungen aktiv */}
         <script dangerouslySetInnerHTML={{ __html: "document.documentElement.classList.add('js')" }} />

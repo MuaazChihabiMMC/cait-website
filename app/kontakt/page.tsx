@@ -45,7 +45,7 @@ export default function KontaktPage() {
           <aside className="space-y-10 lg:col-span-4">
             <div>
               <h2 className="text-sm text-ink-muted">Telefon</h2>
-              <a href={SITE.phoneHref} className="link mt-2 inline-block font-display text-3xl">
+              <a href={SITE.phoneHref} className="link mt-2 inline-block font-display font-semibold text-3xl">
                 {SITE.phoneDisplay}
               </a>
               <p className="mt-1 text-sm text-ink-muted">{SITE.openingHours}</p>
@@ -92,8 +92,8 @@ export default function KontaktPage() {
           <ol className="mt-12 grid gap-10 md:grid-cols-3">
             {NEXT.map((n, i) => (
               <li key={n.title} data-reveal>
-                <span className="font-display text-2xl text-gold-200">{i + 1}</span>
-                <h3 className="mt-3 font-display text-2xl">{n.title}</h3>
+                <span className="font-display font-semibold text-2xl text-gold-200">{i + 1}</span>
+                <h3 className="mt-3 font-display font-semibold text-2xl">{n.title}</h3>
                 <p className="mt-2 text-ink-muted">{n.text}</p>
               </li>
             ))}

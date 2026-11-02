@@ -48,7 +48,7 @@ export default function AboutPage() {
         }}
       />
 
-      <section className="pb-16 pt-[calc(var(--header-h)+3rem)] sm:pb-24 sm:pt-[calc(var(--header-h)+4.5rem)]">
+      <section className="bg-grid pb-16 pt-[calc(var(--header-h)+3rem)] sm:pb-24 sm:pt-[calc(var(--header-h)+4.5rem)]">
         <div className="wrap">
           <Breadcrumbs items={[{ href: '/ueber-uns', label: 'Über uns' }]} />
           <div className="mt-10 grid gap-12 lg:grid-cols-12 lg:items-end">
@@ -64,7 +64,7 @@ export default function AboutPage() {
               </p>
             </div>
             <figure className="hero-fade lg:col-span-4 lg:col-start-9" style={heroDelay(320)}>
-              <div className="relative aspect-[4/5] overflow-hidden bg-night-700">
+              <div className="relative aspect-[4/5] overflow-hidden rounded-3xl bg-night-700 shadow-[0_40px_100px_-30px_rgba(0,0,0,0.7)]">
                 <Image
                   src="/author-muaaz.webp"
                   alt={`${SITE.owner}, Gründer und Inhaber von CAIT`}

@@ -58,7 +58,7 @@ export default function LeistungenPage() {
                 >
                   <Link href={s.href} className="row-link group grid gap-6 py-10 md:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
                     <div>
-                      <h3 className="flex items-center gap-4 font-display text-[2rem] leading-tight">
+                      <h3 className="flex items-center gap-4 font-display font-semibold text-[2rem] leading-tight">
                         <span className={pi % 2 === 0 ? 'group-hover:text-gold-500' : 'group-hover:text-gold-200'}>{s.label}</span>
                         <Arrow className={pi % 2 === 0 ? 'text-gold-500' : 'text-gold-300'} />
                       </h3>

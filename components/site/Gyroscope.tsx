@@ -286,8 +286,11 @@ export default function Gyroscope({ className = '', scrollTarget }: { className?
       const target = (scrollTarget && document.getElementById(scrollTarget)) || wrap;
       let align = 0;
       const readScroll = () => {
+        // 0, wenn der Abschnitt unten ins Bild kommt; 1, wenn seine Mitte die Bildschirmmitte erreicht
         const rect = target.getBoundingClientRect();
-        return Math.min(1, Math.max(0, -rect.top / Math.max(1, rect.height * 0.55)));
+        const vh = window.innerHeight;
+        const p = (vh - rect.top) / Math.max(1, vh * 0.5 + rect.height * 0.5);
+        return Math.min(1, Math.max(0, p));
       };
 
       const ease = (t: number) => 1 - Math.pow(1 - t, 3);
