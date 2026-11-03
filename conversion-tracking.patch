@@ -1,0 +1,197 @@
+From cdcb99e52a1aa29d8a351aa7dca773e4ad9c6172 Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Tue, 3 Nov 2026 22:55:12 +0100
+Subject: [PATCH] Conversion-Tracking: generate_lead nach Formularversand,
+ contact_click fuer Telefon/E-Mail/WhatsApp, Consent Mode v2
+
+---
+ app/api/kontakt/route.ts       |  3 ++-
+ components/ClientProviders.tsx | 28 ++++++++++++++++++++++++++--
+ components/CookieBanner.tsx    | 16 +++++++++++-----
+ components/KontaktForm.tsx     |  8 ++++++++
+ lib/analytics.ts               | 32 ++++++++++++++++++++++++++++++++
+ 5 files changed, 79 insertions(+), 8 deletions(-)
+ create mode 100644 lib/analytics.ts
+
+diff --git a/app/api/kontakt/route.ts b/app/api/kontakt/route.ts
+index 230c86c..87ebd50 100644
+--- a/app/api/kontakt/route.ts
++++ b/app/api/kontakt/route.ts
+@@ -162,7 +162,8 @@ export async function POST(req: Request) {
+       html,
+     });
+ 
+-    return NextResponse.json({ success: true });
++    // delivered: nur echte, versendete Anfragen werden im Browser als Lead gemessen (nicht Bots/Spam).
++    return NextResponse.json({ success: true, delivered: true });
+   } catch (error) {
+     console.error('Kontaktformular: Versand fehlgeschlagen', error);
+     return bad('Die Anfrage konnte gerade nicht versendet werden. Bitte versuchen Sie es erneut oder schreiben Sie an info@caitsocialmedia.com.', 502);
+diff --git a/components/ClientProviders.tsx b/components/ClientProviders.tsx
+index 1d39c58..79c7dad 100644
+--- a/components/ClientProviders.tsx
++++ b/components/ClientProviders.tsx
+@@ -3,21 +3,45 @@
+ import { useEffect, useState } from 'react';
+ import Script from 'next/script';
+ import Cookies from 'js-cookie';
++import { CONSENT_COOKIE, CONSENT_VERSION, CONSENT_VERSION_COOKIE, contactMethodFromHref, trackEvent } from '@/lib/analytics';
+ 
+ // Lädt den Google Tag Manager erst nach ausdrücklicher Einwilligung.
+ // Der Cookie-Banner selbst wird einmalig im LayoutWrapper gerendert.
+ export default function ClientProviders({ children }: { children: React.ReactNode }) {
+   const [showGTM, setShowGTM] = useState(false);
++  const [adsConsent, setAdsConsent] = useState(false);
+ 
+   useEffect(() => {
+-    if (Cookies.get('cookie-consent') === 'accepted') setShowGTM(true);
++    if (Cookies.get(CONSENT_COOKIE) === 'accepted') {
++      // Nur Einwilligungen aus dem aktuellen Banner (Version 2) decken die Werbeerfolgsmessung ab.
++      setAdsConsent(Cookies.get(CONSENT_VERSION_COOKIE) === CONSENT_VERSION);
++      setShowGTM(true);
++    }
+   }, []);
+ 
++  // Klicks auf Telefon-, E-Mail- und WhatsApp-Links als Kontaktaufnahme messen.
++  useEffect(() => {
++    if (!showGTM) return;
++    const onClick = (e: MouseEvent) => {
++      const link = (e.target as Element | null)?.closest?.('a[href]') as HTMLAnchorElement | null;
++      if (!link) return;
++      const method = contactMethodFromHref(link.getAttribute('href') || '');
++      if (method) trackEvent('contact_click', { contact_method: method, page_path: window.location.pathname });
++    };
++    document.addEventListener('click', onClick, { capture: true });
++    return () => document.removeEventListener('click', onClick, { capture: true });
++  }, [showGTM]);
++
++  const granted = (on: boolean) => (on ? 'granted' : 'denied');
++
+   return (
+     <>
+       {showGTM && (
++        // Google Consent Mode v2: Der Einwilligungsstatus wird im selben Skript vor dem Tag Manager gesetzt.
+         <Script id="gtm-script" strategy="afterInteractive">
+-          {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
++          {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
++gtag('consent','default',{analytics_storage:'granted',ad_storage:'${granted(adsConsent)}',ad_user_data:'${granted(adsConsent)}',ad_personalization:'denied'});
++(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+ 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+diff --git a/components/CookieBanner.tsx b/components/CookieBanner.tsx
+index 5be8860..3c863d6 100644
+--- a/components/CookieBanner.tsx
++++ b/components/CookieBanner.tsx
+@@ -3,16 +3,22 @@
+ import { useEffect, useState } from 'react';
+ import Link from 'next/link';
+ import Cookies from 'js-cookie';
++import { CONSENT_COOKIE, CONSENT_VERSION, CONSENT_VERSION_COOKIE } from '@/lib/analytics';
+ 
+ export default function CookieBanner() {
+   const [visible, setVisible] = useState(false);
+ 
+   useEffect(() => {
+-    if (!Cookies.get('cookie-consent')) setVisible(true);
++    const consent = Cookies.get(CONSENT_COOKIE);
++    // Wer nur dem alten Banner (reine Statistik) zugestimmt hat, wird einmal neu gefragt.
++    const outdated = consent === 'accepted' && Cookies.get(CONSENT_VERSION_COOKIE) !== CONSENT_VERSION;
++    if (!consent || outdated) setVisible(true);
+   }, []);
+ 
+   const handleConsent = (value: 'accepted' | 'rejected') => {
+-    Cookies.set('cookie-consent', value, { expires: 365, sameSite: 'Lax' });
++    const opts = { expires: 365, sameSite: 'Lax' as const };
++    Cookies.set(CONSENT_COOKIE, value, opts);
++    Cookies.set(CONSENT_VERSION_COOKIE, CONSENT_VERSION, opts);
+     setVisible(false);
+     if (value === 'accepted') window.location.reload();
+   };
+@@ -26,8 +32,8 @@ export default function CookieBanner() {
+       className="fixed inset-x-3 bottom-3 z-[60] mx-auto max-w-2xl border border-[var(--line-gold)] bg-night-900/95 p-5 text-sm shadow-2xl backdrop-blur-md sm:inset-x-6 sm:bottom-6 sm:p-6"
+     >
+       <p className="text-ink-soft">
+-        Wir nutzen Statistik-Cookies (Google Tag Manager), um die Website zu verbessern – nur mit Ihrer Zustimmung.
+-        Details stehen in der{' '}
++        Mit Ihrer Zustimmung nutzen wir Google Analytics und Google Ads (über den Google Tag Manager), um die Website
++        zu verbessern und zu messen, welche Anzeigen zu Anfragen führen. Details stehen in der{' '}
+         <Link href="/datenschutz" className="link-static text-ink">
+           Datenschutzerklärung
+         </Link>
+@@ -38,7 +44,7 @@ export default function CookieBanner() {
+           Nur notwendige
+         </button>
+         <button type="button" onClick={() => handleConsent('accepted')} className="btn btn-gold min-h-[44px] flex-1 whitespace-nowrap px-4 text-[0.95rem] sm:flex-none sm:px-5">
+-          Statistik erlauben
++          Statistik & Messung erlauben
+         </button>
+       </div>
+     </div>
+diff --git a/components/KontaktForm.tsx b/components/KontaktForm.tsx
+index 4ae8469..a35158a 100644
+--- a/components/KontaktForm.tsx
++++ b/components/KontaktForm.tsx
+@@ -3,6 +3,7 @@
+ import Link from 'next/link';
+ import { useRef, useState } from 'react';
+ import { SITE } from '@/lib/site';
++import { trackEvent } from '@/lib/analytics';
+ 
+ export const INTERESTS = [
+   'Suchmaschinenoptimierung',
+@@ -82,6 +83,13 @@ export default function KontaktForm() {
+         );
+         return;
+       }
++      if (data.delivered) {
++        trackEvent('generate_lead', {
++          form_name: 'kontakt',
++          lead_topics: interests.length ? interests.join(', ') : 'keine Angabe',
++          page_path: window.location.pathname,
++        });
++      }
+       setStatus('sent');
+       requestAnimationFrame(() => successRef.current?.focus());
+     } catch {
+diff --git a/lib/analytics.ts b/lib/analytics.ts
+new file mode 100644
+index 0000000..7f9fa5b
+--- /dev/null
++++ b/lib/analytics.ts
+@@ -0,0 +1,32 @@
++// Messung von Anfragen für Google Analytics 4 und Google Ads (über den Google Tag Manager).
++// Ereignisse landen nur im dataLayer, wenn der Tag Manager nach Einwilligung geladen wurde.
++// Bewusst ohne personenbezogene Daten (kein Name, keine E-Mail, keine Telefonnummer).
++
++export const CONSENT_COOKIE = 'cookie-consent';
++export const CONSENT_VERSION_COOKIE = 'cookie-consent-v';
++// Version 2: Einwilligung umfasst Statistik UND Werbeerfolgsmessung (Google Ads).
++export const CONSENT_VERSION = '2';
++
++type DataLayerEvent = Record<string, unknown> & { event: string };
++
++declare global {
++  interface Window {
++    dataLayer?: unknown[];
++  }
++}
++
++export function trackEvent(event: string, params: Record<string, unknown> = {}) {
++  if (typeof window === 'undefined' || !Array.isArray(window.dataLayer)) return;
++  const payload: DataLayerEvent = { event, ...params };
++  window.dataLayer.push(payload);
++}
++
++export type ContactMethod = 'phone' | 'email' | 'whatsapp';
++
++export function contactMethodFromHref(href: string): ContactMethod | null {
++  const h = href.trim().toLowerCase();
++  if (h.startsWith('tel:')) return 'phone';
++  if (h.startsWith('mailto:')) return 'email';
++  if (h.includes('wa.me/') || h.includes('api.whatsapp.com') || h.startsWith('whatsapp:')) return 'whatsapp';
++  return null;
++}
+-- 
+2.43.0
+
