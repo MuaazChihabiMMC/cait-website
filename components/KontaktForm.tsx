@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useRef, useState } from 'react';
 import { SITE } from '@/lib/site';
+import { trackEvent } from '@/lib/analytics';
 
 export const INTERESTS = [
   'Suchmaschinenoptimierung',
@@ -81,6 +82,13 @@ export default function KontaktForm() {
             `Die Anfrage konnte nicht gesendet werden. Bitte versuchen Sie es erneut oder schreiben Sie direkt an ${SITE.email}.`,
         );
         return;
+      }
+      if (data.delivered) {
+        trackEvent('generate_lead', {
+          form_name: 'kontakt',
+          lead_topics: interests.length ? interests.join(', ') : 'keine Angabe',
+          page_path: window.location.pathname,
+        });
       }
       setStatus('sent');
       requestAnimationFrame(() => successRef.current?.focus());

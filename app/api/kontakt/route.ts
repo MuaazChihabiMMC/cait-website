@@ -162,7 +162,8 @@ export async function POST(req: Request) {
       html,
     });
 
-    return NextResponse.json({ success: true });
+    // delivered: nur echte, versendete Anfragen werden im Browser als Lead gemessen (nicht Bots/Spam).
+    return NextResponse.json({ success: true, delivered: true });
   } catch (error) {
     console.error('Kontaktformular: Versand fehlgeschlagen', error);
     return bad('Die Anfrage konnte gerade nicht versendet werden. Bitte versuchen Sie es erneut oder schreiben Sie an info@caitsocialmedia.com.', 502);
